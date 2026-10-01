@@ -1,0 +1,320 @@
+{
+  "asOf": "2026-10-01",
+  "source": "docs/RESEARCH.md §b4 (state charity-care laws with mandated thresholds), fetched 2026-10-01",
+  "states": {
+    "WA": {
+      "state": "WA",
+      "hasMandate": true,
+      "verified": true,
+      "mechanism": "discount",
+      "mandateMaxPct": 400,
+      "summary": "Washington hospitals must give free care up to at least 200% of the poverty line; large systems (Tier A) must go further — free to 300% and discounts to 400%. Applies to the patient-responsibility portion, so insured patients' balances count too.",
+      "who": "All patients and their guarantors, including the patient-responsibility portion for insured patients.",
+      "hospitalsCovered": "All WA acute-care hospitals. Tier A = hospitals in 3+ hospital systems, or large hospitals in populous counties. Tier B = everyone else.",
+      "citation": "RCW 70.170.060(5); WAC 246-453",
+      "sourceUrl": "https://app.leg.wa.gov/RCW/default.aspx?cite=70.170.060&full=true",
+      "caveats": [
+        "Ask which tier your hospital is in: Tier A (large multi-hospital systems or certain large hospitals) is free ≤300% FPL with discounts to 400%; Tier B (most hospitals) is free ≤200% FPL with discounts to 300%.",
+        "WAC 246-453-040 still shows older, lower numbers (free ≤100%); the RCW thresholds above are the current law and override it.",
+        "Discount tiers (not the free tier) may be reduced for assets above statutory exclusions (first $5,000 individual / $8,000 family, home equity, one car, retirement accounts excluded)."
+      ]
+    },
+    "CA": {
+      "state": "CA",
+      "hasMandate": true,
+      "verified": true,
+      "mechanism": "discount",
+      "mandateMaxPct": 400,
+      "summary": "California hospitals must have a charity-care and discount-payment policy. Eligible patients at or below 400% FPL pay no more than the hospital's expected Medicare or Medi-Cal rate, whichever is greater.",
+      "who": "Uninsured patients, or insured patients with \"high medical costs\" (out-of-pocket at the hospital over 10% of family income), at or below 400% FPL.",
+      "hospitalsCovered": "General acute, acute psychiatric and special hospitals (not state, DDS or CDCR facilities). Rural hospitals may set a lower threshold.",
+      "citation": "Cal. Health & Safety Code §§127400, 127405 (amended by AB 2297, eff. 2025-01-01)",
+      "sourceUrl": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=HSC&sectionNum=127405",
+      "caveats": [
+        "Assets cannot be considered at all when deciding eligibility.",
+        "No time limit may be imposed on when you apply.",
+        "Emergency physicians must also discount at ≤400% FPL."
+      ]
+    },
+    "NY": {
+      "state": "NY",
+      "hasMandate": true,
+      "verified": true,
+      "mechanism": "discount",
+      "mandateMaxPct": 400,
+      "summary": "New York hospitals must fully waive charges below 200% FPL for uninsured and underinsured patients, and cap payment at 10% (200-300% FPL) or 20% (301-400% FPL) of what Medicaid would have paid, or of insurance cost-sharing.",
+      "who": "Uninsured patients up to 400% FPL; underinsured patients up to 400% FPL (out-of-pocket over 10% of gross income in the past year); patients who exhausted benefits.",
+      "hospitalsCovered": "All DOH-licensed hospitals, whether or not they participate in the Indigent Care Pool.",
+      "citation": "Public Health Law §2807-k(9-a); DOH DAL 25-04 (eff. 2024-10-20)",
+      "sourceUrl": "https://healthweb-back.health.ny.gov/facilities/hospital/financial_assist/",
+      "caveats": [
+        "Verified against DOH agency pages and letters; the statute text itself could not be fetched directly.",
+        "Under the 2024 rules: assets can't be considered, you can apply any time (including during collections), and no lawsuit is allowed against patients under 400% FPL.",
+        "Payment plans are capped at 5% of gross monthly income; interest capped at 2%."
+      ]
+    },
+    "IL": {
+      "state": "IL",
+      "hasMandate": true,
+      "verified": true,
+      "mechanism": "discount",
+      "mandateMaxPct": 600,
+      "summary": "Illinois urban hospitals must give a 100% discount at or below 200% FPL and some discount up to 600% FPL; rural and Critical Access Hospitals use lower numbers (100% at ≤125% FPL, discount to 300%). An overall cap limits collection to 20% of family income in any 12 months.",
+      "who": "Uninsured Illinois residents only (intend to live in-state; high-deductible plans count as insured).",
+      "hospitalsCovered": "All hospitals licensed under the Hospital Licensing Act, plus University of Illinois hospitals. Thresholds differ for rural / Critical Access Hospitals.",
+      "citation": "210 ILCS 89/5, 89/10 (P.A. 102-581; P.A. 103-492, eff. 2024-01-01)",
+      "sourceUrl": "https://www.ilga.gov/Documents/legislation/ilcs/documents/021000890K10.htm",
+      "caveats": [
+        "Rural and Critical Access Hospitals use lower thresholds: free ≤125% FPL, discount to 300% FPL only — ask which category your hospital is in.",
+        "The discount is defined so the hospital collects at most about 135% of its own cost, not of billed charges.",
+        "A 20%-of-income collection cap applies overall; hospitals may opt out above 600% FPL (or 300% FPL for CAH/non-metro) if the patient's assets are high enough."
+      ]
+    },
+    "MD": {
+      "state": "MD",
+      "hasMandate": true,
+      "verified": true,
+      "mechanism": "discount",
+      "mandateMaxPct": 500,
+      "summary": "Maryland hospitals must give free care at or below 200% FPL, reduced-cost care (at least 75%/60% off) from 201-300% FPL, and additional \"financial hardship\" discounts up to 500% FPL when medical debt exceeds 25% of family income.",
+      "who": "Patients who lack coverage, or whose coverage doesn't pay the full bill — insured patients are covered too.",
+      "hospitalsCovered": "Every acute-care and chronic-care hospital under HSCRC jurisdiction.",
+      "citation": "Md. Code, Health-General §19-214.1",
+      "sourceUrl": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=ghg&section=19-214.1&enactments=false",
+      "caveats": [
+        "The 301-500% FPL \"financial hardship\" tier only applies if medical debt is over 25% of family income in 12 months — it isn't automatic.",
+        "Presumptive free-care eligibility if your household is already in a means-tested program (e.g., free/reduced school meals).",
+        "The HSCRC may set even more generous thresholds than the statutory minimums above."
+      ]
+    },
+    "NJ": {
+      "state": "NJ",
+      "hasMandate": true,
+      "verified": true,
+      "mechanism": "discount",
+      "mandateMaxPct": 500,
+      "summary": "New Jersey charity care fully covers NJ residents at or below 200% FPL and phases down through 300% FPL. Separately, any uninsured NJ resident under 500% FPL can't be charged more than 115% of the Medicare rate.",
+      "who": "Charity care: NJ residents with no coverage, or coverage that pays only part of the bill, not eligible for Medicaid. The 115% cap: any uninsured NJ resident under 500% FPL.",
+      "hospitalsCovered": "Charity care: all NJ acute-care hospitals. The 115% cap: all DOH-licensed hospitals.",
+      "citation": "N.J.A.C. 10:52-11; N.J.S.A. 26:2H-12.52 and -12.53",
+      "sourceUrl": "https://www.nj.gov/health/hcf/charity-care/overview/",
+      "caveats": [
+        "Requires New Jersey residency and proof you were screened for other coverage first.",
+        "Physician, anesthesiology and similar professional fees are generally not covered by charity care, only facility charges.",
+        "Asset limits apply to charity care: $7,500 individual / $15,000 family (spend-down allowed)."
+      ]
+    },
+    "CO": {
+      "state": "CO",
+      "hasMandate": true,
+      "verified": true,
+      "mechanism": "cost_cap",
+      "mandateMaxPct": 250,
+      "summary": "Colorado doesn't set a free tier, but caps what hospitals can charge patients at or below 250% FPL to the greater of the Medicare or Medicaid rate — whether or not you have insurance.",
+      "who": "Uninsured patients must be screened (or formally decline). Insured patients can qualify too. Generally Colorado residents; lawful immigration status is not required.",
+      "hospitalsCovered": "General acute hospitals, critical access hospitals, freestanding EDs, and licensed professionals billing in those settings.",
+      "citation": "C.R.S. 25.5-3-501 to -506 (HB21-1198)",
+      "sourceUrl": "https://hcpf.colorado.gov/hospital-discounted-care",
+      "caveats": [
+        "Verified against HCPF agency pages; the C.R.S. statute text itself could not be fetched.",
+        "Payment plans are capped at 4% of monthly household income for facility bills, 2% for each professional's bill.",
+        "A documented decline-to-be-screened form is a complete defense for the hospital — so it's worth actually completing the screening."
+      ]
+    },
+    "OR": {
+      "state": "OR",
+      "hasMandate": true,
+      "verified": true,
+      "mechanism": "discount",
+      "mandateMaxPct": 400,
+      "summary": "Oregon nonprofit hospitals must fully adjust (effectively waive) charges at or below 200% FPL, with discounts of at least 75%, 50% and 25% stepping down through 400% FPL.",
+      "who": "The free/discount tiers (§442.614) aren't limited to the uninsured on the statute's face. Presumptive screening (§442.615) is required for uninsured patients, Medicaid enrollees, or anyone owing more than $500.",
+      "hospitalsCovered": "Nonprofit hospitals and their nonprofit affiliated clinics (discount tiers); every hospital licensed under ORS 441.025 (screening duty).",
+      "citation": "ORS 442.614; ORS 442.615",
+      "sourceUrl": "https://www.oregonlegislature.gov/bills_laws/ors/ors442.html",
+      "caveats": [
+        "A hospital may not require a Medicaid application before screening you for charity care.",
+        "Presumptive screening needs no documentation and must not affect your credit.",
+        "You can apply for assistance up to 12 months after you've already paid."
+      ]
+    },
+    "CT": {
+      "state": "CT",
+      "hasMandate": true,
+      "verified": true,
+      "mechanism": "cost_cap",
+      "mandateMaxPct": 250,
+      "summary": "Connecticut caps what an uninsured patient at or below 250% FPL can be charged at the hospital's own cost of providing the service (its published charges × its cost-to-charge ratio) — but only after a Medicaid denial.",
+      "who": "Uninsured only. You must have applied for and been denied Medicaid, and have no other coverage.",
+      "hospitalsCovered": "Hospitals as defined in C.G.S. §19a-490, plus entities they own or are affiliated with.",
+      "citation": "C.G.S. §19a-673",
+      "sourceUrl": "https://www.cga.ct.gov/current/pub/chap_368z.htm",
+      "caveats": [
+        "This is a cost cap, not free care — you can still owe the hospital's cost of providing the service.",
+        "You must apply for and be denied Medicaid first."
+      ]
+    },
+    "MA": {
+      "state": "MA",
+      "hasMandate": true,
+      "verified": false,
+      "mechanism": "discount",
+      "mandateMaxPct": 150,
+      "summary": "Massachusetts runs the Health Safety Net, a state-funded pool hospitals bill into. Per secondary sources, \"Low Income Patient\" status (about ≤150% FPL) gets full coverage with no deductible, and 150-300% FPL gets partial coverage with a deductible.",
+      "who": "Unverified: Massachusetts residents only; insured patients are covered via \"HSN — Secondary.\"",
+      "hospitalsCovered": "Unverified: acute hospitals and community health centers bill the Health Safety Net; it is a state pool, not a hospital-funded discount mandate.",
+      "citation": "101 CMR 613.00 (unverified — see caveats)",
+      "sourceUrl": "https://www.mass.gov/regulations/101-CMR-61300-health-safety-net-eligible-services",
+      "caveats": [
+        "UNVERIFIED — the official mass.gov regulation pages returned 403 to automated fetching; these numbers come from search-result snippets only, not the regulation text.",
+        "This is a state-funded pool billed by the hospital, not a hospital-funded discount like most other states on this list.",
+        "Ask the hospital directly about Health Safety Net / Medical Hardship enrollment."
+      ]
+    },
+    "RI": {
+      "state": "RI",
+      "hasMandate": true,
+      "verified": true,
+      "mechanism": "discount",
+      "mandateMaxPct": 300,
+      "summary": "Rhode Island hospitals must give full charity care at or below 200% FPL, and at least some discount — on a scale each hospital sets — from 200-300% FPL.",
+      "who": "Low-income, uninsured Rhode Island residents ineligible for state, federal or employer coverage.",
+      "hospitalsCovered": "Every licensed hospital.",
+      "citation": "216-RICR-40-10-23, §23.14.1",
+      "sourceUrl": "https://rules.sos.ri.gov/regulations/part/216-40-10-23",
+      "caveats": [
+        "Hospitals set their own 200-300% FPL discount scale; they may be more generous but not stricter than the floor.",
+        "The hospital must decide within 14 days of a complete application."
+      ]
+    },
+    "NV": {
+      "state": "NV",
+      "hasMandate": true,
+      "verified": true,
+      "mechanism": "flat_discount",
+      "mandateMaxPct": null,
+      "summary": "Nevada doesn't set an income-based threshold. Instead, \"major hospitals\" must discount total billed charges by at least 30% for uninsured inpatients who make reasonable payment arrangements within 30 days of notice — regardless of income.",
+      "who": "Uninsured inpatients not eligible for public programs.",
+      "hospitalsCovered": "\"Major hospitals\" (a defined term in NRS 439B; not every hospital qualifies).",
+      "citation": "NRS 439B.260",
+      "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-439B.html",
+      "caveats": [
+        "Not income-based — worth asking regardless of your FPL%.",
+        "Applies to inpatient uninsured billing at \"major hospitals\" only; confirm your hospital qualifies."
+      ]
+    },
+    "ME": {
+      "state": "ME",
+      "hasMandate": true,
+      "verified": true,
+      "mechanism": "discount",
+      "mandateMaxPct": 150,
+      "summary": "Maine hospitals must give free medically-necessary care to Maine residents at or below 150% FPL who have no insurance and aren't eligible for public coverage.",
+      "who": "Maine residents with no insurance and no public-coverage eligibility.",
+      "hospitalsCovered": "Every hospital must adopt and follow a free-care policy.",
+      "citation": "10-144 CMR ch. 150 (Free Care Guidelines)",
+      "sourceUrl": "https://www11.maine.gov/sos/sites/maine.gov.sos/files/content/assets/144c150.doc",
+      "caveats": [
+        "Uninsured only — and not eligible for Medicaid or other public coverage.",
+        "A 2024 bill (LD 1955) that would have raised this to 200% FPL did not become law, per secondary reporting."
+      ]
+    },
+    "NM": {
+      "state": "NM",
+      "hasMandate": true,
+      "verified": true,
+      "mechanism": "collection_bar",
+      "mandateMaxPct": 200,
+      "summary": "New Mexico doesn't mandate a charity-care discount. Instead, for \"indigent patients\" at or below 200% FPL, charges and medical debt can't be pursued through collection actions at all — and existing collection actions must stop.",
+      "who": "\"Indigent patients\" (household income ≤200% FPL, measured with Medicaid methods).",
+      "hospitalsCovered": "Health care facilities, and some independently billing providers.",
+      "citation": "Patients' Debt Collection Protection Act, NMSA 1978 §57-32-1 et seq.",
+      "sourceUrl": "https://www.nmlegis.gov/Sessions/21%20Regular/final/SB0071.pdf",
+      "caveats": [
+        "This bars debt collection — it does not require a price discount.",
+        "Before billing, uninsured patients must be screened for public coverage, other programs and facility financial assistance first."
+      ]
+    },
+    "DE": {
+      "state": "DE",
+      "hasMandate": true,
+      "verified": true,
+      "mechanism": "discount",
+      "mandateMaxPct": 400,
+      "effectiveDate": "2027-01-01",
+      "summary": "Starting 2027-01-01, Delaware hospitals must give full financial assistance at or below 300% FPL, with discounts of at least 75%/50% through 400% FPL. This law is not yet in effect.",
+      "who": "\"Financially qualified patients\": Delaware residents under the income threshold. Applies to the patient-responsibility portion, so insured patients are covered too.",
+      "hospitalsCovered": "Hospitals defined in 16 Del. C. §1001, excluding psychiatric-only, rehab-only and long-term-acute-care hospitals.",
+      "citation": "16 Del. C. §§9961-9963 (85 Del. Laws c. 349)",
+      "sourceUrl": "https://delcode.delaware.gov/title16/c099/sc07/index.html",
+      "caveats": [
+        "NOT YET IN EFFECT as of 2026-10-01 — the law starts 2027-01-01.",
+        "Requires Delaware residency.",
+        "Each hospital must also have a medical-hardship policy reaching at least 500% FPL."
+      ]
+    },
+    "MN": {
+      "state": "MN",
+      "hasMandate": false,
+      "verified": true,
+      "mechanism": "discount",
+      "mandateMaxPct": null,
+      "summary": "Minnesota law requires hospitals to screen uninsured patients for presumptive eligibility and charity care, and to give notice — but it sets no specific income-based discount tiers.",
+      "who": "n/a — no FPL-based mandate found.",
+      "hospitalsCovered": "n/a",
+      "citation": "Minn. Stat. §144.587",
+      "sourceUrl": "https://www.revisor.mn.gov/statutes/cite/144.587",
+      "caveats": [
+        "Confirmed: no FPL-based discount tier in this statute — ask the hospital for its own financial assistance policy."
+      ]
+    },
+    "VA": {
+      "state": "VA",
+      "hasMandate": false,
+      "verified": false,
+      "mechanism": "discount",
+      "mandateMaxPct": null,
+      "summary": "No statewide FPL-based hospital charity-care mandate was found. Virginia has some state indigent-care program activity, per unverified secondary sources.",
+      "who": "Unverified.",
+      "hospitalsCovered": "Unverified.",
+      "citation": "No statute identified (quick search only)",
+      "sourceUrl": "",
+      "caveats": [
+        "UNVERIFIED — a quick search only, no official source fetched.",
+        "Ask the hospital directly for its Financial Assistance Policy."
+      ]
+    },
+    "PA": {
+      "state": "PA",
+      "hasMandate": false,
+      "verified": false,
+      "mechanism": "discount",
+      "mandateMaxPct": null,
+      "summary": "No statewide FPL-based hospital charity-care mandate was found for Pennsylvania in the time available.",
+      "who": "Unverified.",
+      "hospitalsCovered": "Unverified.",
+      "citation": "No statute identified (quick search only)",
+      "sourceUrl": "",
+      "caveats": [
+        "UNVERIFIED — a quick search only, no official source fetched.",
+        "Ask the hospital directly for its Financial Assistance Policy."
+      ]
+    },
+    "TX": {
+      "state": "TX",
+      "hasMandate": false,
+      "verified": false,
+      "mechanism": "discount",
+      "mandateMaxPct": null,
+      "summary": "No statewide FPL-based hospital discount mandate was confirmed for Texas. Nonprofit hospitals have community-benefit obligations tied to their tax-exempt status, per unverified secondary information.",
+      "who": "Unverified.",
+      "hospitalsCovered": "Unverified.",
+      "citation": "Health & Safety Code ch. 311 (text not obtained)",
+      "sourceUrl": "",
+      "caveats": [
+        "UNVERIFIED — the official statutes.capitol.texas.gov page did not return usable text.",
+        "Ask about the hospital's own Financial Assistance Policy, especially at nonprofit hospitals."
+      ]
+    }
+  }
+}
