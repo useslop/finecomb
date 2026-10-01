@@ -1,0 +1,13 @@
+{
+  "name": "finecomb",
+  "private": true,
+  "type": "module",
+  "description": "Finecomb: a private medical bill checker. Every check runs in your browser.",
+  "license": "MIT",
+  "workspaces": ["engine", "app", "corpus"],
+  "scripts": {
+    "test": "npm run test --workspaces --if-present && node --test data/loader.test.ts",
+    "build": "npm run build -w app"
+  },
+  "engines": { "node": ">=22" }
+}
