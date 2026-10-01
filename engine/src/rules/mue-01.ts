@@ -1,0 +1,51 @@
+import type { Bill, BillLine, Context, Datasets, Finding, Skipped } from '../types.js';
+import { mkFinding, round2 } from '../lib/util.js';
+import { cite } from '../citations.js';
+
+export const id = 'MUE-01';
+
+export function evaluate(bill: Bill, ctx: Context, data: Datasets): { findings: Finding[]; skipped?: Skipped } {
+  if (!data.mue) {
+    return { findings: [], skipped: { ruleId: id, needs: ['Medicare unit-limit (MUE) reference data'] } };
+  }
+  if (ctx.admitted === true) {
+    // Inpatient claims aren't subject to practitioner/outpatient MUEs.
+    return { findings: [] };
+  }
+  const setting: 'practitioner' | 'outpatient' = ctx.observation === true ? 'outpatient' : 'practitioner';
+
+  const byCodeDate = new Map<string, BillLine[]>();
+  for (const l of bill.lines) {
+    if (!l.code || !l.date) continue;
+    const key = `${l.code}|${l.date}`;
+    const arr = byCodeDate.get(key) ?? [];
+    arr.push(l);
+    byCodeDate.set(key, arr);
+  }
+
+  const findings: Finding[] = [];
+  for (const [key, group] of byCodeDate) {
+    const [code, date] = key.split('|') as [string, string];
+    const lookup = data.mue(code, setting);
+    if (!lookup) continue;
+    const totalUnits = group.reduce((a, l) => a + (l.qty ?? 1), 0);
+    if (totalUnits <= lookup.mue) continue;
+    const confidence = lookup.mai === 2 ? 'high' : 'medium';
+    const unitPrice = group.find((l) => l.unitPrice != null)?.unitPrice ?? null;
+    findings.push(
+      mkFinding({
+        ruleId: id,
+        discriminator: key,
+        title: `${code}: more units billed than Medicare's usual daily maximum`,
+        why: `${totalUnits} units of ${code} were billed on ${date}; Medicare's Medically Unlikely Edit for this code and setting is ${lookup.mue}.`,
+        userText: `${totalUnits} units of ${code} on one day is more than Medicare's usual maximum (${lookup.mue}). Ask for the records supporting this quantity.`,
+        verify: 'Ask for the medical record supporting this number of units on this date.',
+        evidenceLineIds: group.map((l) => l.id),
+        confidence,
+        dollarsAtStake: unitPrice != null ? round2((totalUnits - lookup.mue) * unitPrice) : null,
+        citations: cite('S20'),
+      }),
+    );
+  }
+  return { findings };
+}
