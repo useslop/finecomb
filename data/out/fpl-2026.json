@@ -1,0 +1,63 @@
+{
+  "year": 2026,
+  "source": {
+    "url": "https://www.federalregister.gov/documents/2026/01/15/2026-00755/annual-update-of-the-hhs-poverty-guidelines",
+    "pdfUrl": "https://www.govinfo.gov/content/pkg/FR-2026-01-15/pdf/2026-00755.pdf",
+    "citation": "91 FR 1797",
+    "documentNumber": "2026-00755",
+    "publicationDate": "2026-01-15",
+    "effectiveDate": "2026-01-13",
+    "fetchedDate": "2026-10-01",
+    "license": "U.S. Government work, public domain (17 U.S.C. 105)."
+  },
+  "guidelines": {
+    "48states_dc": {
+      "label": "48 Contiguous States and the District of Columbia",
+      "base": 15960,
+      "increment": 5680,
+      "note": "For households above 8 persons, add `increment` for each additional person.",
+      "bySize": {
+        "1": 15960,
+        "2": 21640,
+        "3": 27320,
+        "4": 33000,
+        "5": 38680,
+        "6": 44360,
+        "7": 50040,
+        "8": 55720
+      }
+    },
+    "alaska": {
+      "label": "Alaska",
+      "base": 19950,
+      "increment": 7100,
+      "note": "For households above 8 persons, add `increment` for each additional person.",
+      "bySize": {
+        "1": 19950,
+        "2": 27050,
+        "3": 34150,
+        "4": 41250,
+        "5": 48350,
+        "6": 55450,
+        "7": 62550,
+        "8": 69650
+      }
+    },
+    "hawaii": {
+      "label": "Hawaii",
+      "base": 18360,
+      "increment": 6530,
+      "note": "For households above 8 persons, add `increment` for each additional person.",
+      "bySize": {
+        "1": 18360,
+        "2": 24890,
+        "3": 31420,
+        "4": 37950,
+        "5": 44480,
+        "6": 51010,
+        "7": 57540,
+        "8": 64070
+      }
+    }
+  }
+}
