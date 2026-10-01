@@ -1,0 +1,16 @@
+{
+  "name": "@finecomb/engine",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Finecomb rules engine: pure functions over a confirmed bill, no I/O.",
+  "exports": "./src/index.ts",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}
