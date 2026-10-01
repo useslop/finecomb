@@ -1,0 +1,98 @@
+[
+  {
+    "id": "DUP-01",
+    "file": "DUP-01.json"
+  },
+  {
+    "id": "DUP-02",
+    "file": "DUP-02.json"
+  },
+  {
+    "id": "MATH-01",
+    "file": "MATH-01.json"
+  },
+  {
+    "id": "MATH-02",
+    "file": "MATH-02.json"
+  },
+  {
+    "id": "MUE-01",
+    "file": "MUE-01.json"
+  },
+  {
+    "id": "QTY-01",
+    "file": "QTY-01.json"
+  },
+  {
+    "id": "RB-01",
+    "file": "RB-01.json"
+  },
+  {
+    "id": "DATE-01",
+    "file": "DATE-01.json"
+  },
+  {
+    "id": "NCCI-01",
+    "file": "NCCI-01.json"
+  },
+  {
+    "id": "CANC-01",
+    "file": "CANC-01.json"
+  },
+  {
+    "id": "RX-01",
+    "file": "RX-01.json"
+  },
+  {
+    "id": "EOB-01",
+    "file": "EOB-01.json"
+  },
+  {
+    "id": "EOB-02",
+    "file": "EOB-02.json"
+  },
+  {
+    "id": "INS-01",
+    "file": "INS-01.json"
+  },
+  {
+    "id": "MCD-01",
+    "file": "MCD-01.json"
+  },
+  {
+    "id": "NSA-01",
+    "file": "NSA-01.json"
+  },
+  {
+    "id": "NSA-02",
+    "file": "NSA-02.json"
+  },
+  {
+    "id": "GFE-01",
+    "file": "GFE-01.json"
+  },
+  {
+    "id": "ECA-01",
+    "file": "ECA-01.json"
+  },
+  {
+    "id": "PPDR-01",
+    "file": "PPDR-01.json"
+  },
+  {
+    "id": "CR-01",
+    "file": "CR-01.json"
+  },
+  {
+    "id": "FAP-01",
+    "file": "FAP-01.json"
+  },
+  {
+    "id": "ID-01",
+    "file": "ID-01.json"
+  },
+  {
+    "id": "FAC-01",
+    "file": "FAC-01.json"
+  }
+]

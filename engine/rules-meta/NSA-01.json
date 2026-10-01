@@ -1,0 +1,16 @@
+{
+  "id": "NSA-01",
+  "version": 1,
+  "title": "No Surprises Act: emergency or air-ambulance balance billing",
+  "requiredInputs": [
+    "insurance status",
+    "whether this was emergency or air-ambulance care",
+    "whether the facility was in-network",
+    "EOB numbers"
+  ],
+  "confidencePolicy": "high",
+  "citations": [
+    "S6",
+    "S8"
+  ]
+}

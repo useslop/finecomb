@@ -1,0 +1,11 @@
+{
+  "id": "FAP-01",
+  "version": 1,
+  "title": "Check charity care and financial assistance",
+  "requiredInputs": [
+    "hospital CCN (optional)",
+    "household size and income (optional)"
+  ],
+  "confidencePolicy": "info; always on",
+  "citations": []
+}

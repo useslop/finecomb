@@ -1,0 +1,10 @@
+{
+  "id": "DUP-01",
+  "version": 1,
+  "title": "Exact duplicate charge",
+  "requiredInputs": [
+    "bill lines"
+  ],
+  "confidencePolicy": "high",
+  "citations": []
+}

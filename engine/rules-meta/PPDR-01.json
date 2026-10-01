@@ -1,0 +1,14 @@
+{
+  "id": "PPDR-01",
+  "version": 1,
+  "title": "Collections or late fees during a federal bill dispute",
+  "requiredInputs": [
+    "PPDR filing date",
+    "collections/late-fee event dates"
+  ],
+  "confidencePolicy": "high",
+  "citations": [
+    "S4",
+    "S3"
+  ]
+}

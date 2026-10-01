@@ -1,0 +1,13 @@
+{
+  "id": "RX-01",
+  "version": 1,
+  "title": "Pharmacy markup vs. national average acquisition cost",
+  "requiredInputs": [
+    "NDC on the line",
+    "NADAC reference data"
+  ],
+  "confidencePolicy": "info",
+  "citations": [
+    "S26"
+  ]
+}

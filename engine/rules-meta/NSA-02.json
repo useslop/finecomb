@@ -1,0 +1,15 @@
+{
+  "id": "NSA-02",
+  "version": 1,
+  "title": "No Surprises Act: ancillary out-of-network clinician at an in-network facility",
+  "requiredInputs": [
+    "whether the facility was in-network",
+    "out-of-network clinician types",
+    "insurance status"
+  ],
+  "confidencePolicy": "medium",
+  "citations": [
+    "S7",
+    "S8"
+  ]
+}

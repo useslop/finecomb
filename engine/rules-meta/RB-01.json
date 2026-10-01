@@ -1,0 +1,13 @@
+{
+  "id": "RB-01",
+  "version": 1,
+  "title": "Room-and-board days exceed nights stayed (the discharge-day charge)",
+  "requiredInputs": [
+    "admission and discharge dates",
+    "room-and-board lines"
+  ],
+  "confidencePolicy": "high when Medicare, medium otherwise",
+  "citations": [
+    "S28"
+  ]
+}

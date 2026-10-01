@@ -1,0 +1,11 @@
+{
+  "id": "DATE-01",
+  "version": 1,
+  "title": "Charges dated after discharge",
+  "requiredInputs": [
+    "inpatient-stay flag",
+    "discharge date"
+  ],
+  "confidencePolicy": "medium",
+  "citations": []
+}

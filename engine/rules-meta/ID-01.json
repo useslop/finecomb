@@ -1,0 +1,11 @@
+{
+  "id": "ID-01",
+  "version": 1,
+  "title": "Identifying-details checklist",
+  "requiredInputs": [],
+  "confidencePolicy": "info; always on",
+  "citations": [
+    "S15",
+    "S16"
+  ]
+}

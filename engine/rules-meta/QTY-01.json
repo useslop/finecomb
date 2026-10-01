@@ -1,0 +1,11 @@
+{
+  "id": "QTY-01",
+  "version": 1,
+  "title": "Implausible quantity for the stay",
+  "requiredInputs": [
+    "bill lines",
+    "admit/discharge dates (for per-day items only)"
+  ],
+  "confidencePolicy": "medium",
+  "citations": []
+}

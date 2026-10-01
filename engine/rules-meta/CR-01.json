@@ -1,0 +1,13 @@
+{
+  "id": "CR-01",
+  "version": 1,
+  "title": "Medical debt on credit report against bureau policy",
+  "requiredInputs": [
+    "whether this is on your credit report",
+    "paid/balance/age details"
+  ],
+  "confidencePolicy": "medium",
+  "citations": [
+    "CRB2023"
+  ]
+}

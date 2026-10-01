@@ -1,0 +1,13 @@
+{
+  "id": "EOB-01",
+  "version": 1,
+  "title": "Balance due exceeds your EOB's patient responsibility",
+  "requiredInputs": [
+    "your EOB numbers",
+    "the bill's balance due"
+  ],
+  "confidencePolicy": "high",
+  "citations": [
+    "S8 (only cited when emergency or air-ambulance care)"
+  ]
+}

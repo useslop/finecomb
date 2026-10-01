@@ -1,0 +1,12 @@
+{
+  "id": "MATH-01",
+  "version": 1,
+  "title": "Line arithmetic error",
+  "requiredInputs": [
+    "line quantity, unit price and amount"
+  ],
+  "confidencePolicy": "high",
+  "citations": [
+    "S41"
+  ]
+}

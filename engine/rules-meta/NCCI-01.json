@@ -1,0 +1,12 @@
+{
+  "id": "NCCI-01",
+  "version": 1,
+  "title": "Unbundling (NCCI procedure-to-procedure edit)",
+  "requiredInputs": [
+    "procedure codes, modifiers, dates"
+  ],
+  "confidencePolicy": "medium (skipped when the NCCI modifier indicator is 9, or a bypass modifier is present on an indicator-1 pair)",
+  "citations": [
+    "S19"
+  ]
+}

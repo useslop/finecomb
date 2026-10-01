@@ -1,0 +1,10 @@
+{
+  "id": "MATH-02",
+  "version": 1,
+  "title": "Bill totals don't reconcile",
+  "requiredInputs": [
+    "bill totals: total charges, payments, adjustments, balance due"
+  ],
+  "confidencePolicy": "high",
+  "citations": []
+}

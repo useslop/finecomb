@@ -5,8 +5,8 @@ export function round2(n: number): number {
 }
 
 function toUtcMs(d: string): number {
-  const [y, m, day] = d.split('-').map(Number);
-  return Date.UTC(y, m - 1, day);
+  const parts = d.split('-').map(Number);
+  return Date.UTC(parts[0]!, parts[1]! - 1, parts[2]!);
 }
 
 /** Whole days between two ISO dates (b - a); negative if b is earlier. */
@@ -15,8 +15,8 @@ export function daysBetween(a: string, b: string): number {
 }
 
 export function addDays(d: string, n: number): string {
-  const [y, m, day] = d.split('-').map(Number);
-  const dt = new Date(Date.UTC(y, m - 1, day + n));
+  const parts = d.split('-').map(Number);
+  const dt = new Date(Date.UTC(parts[0]!, parts[1]! - 1, parts[2]! + n));
   return dt.toISOString().slice(0, 10);
 }
 
@@ -117,4 +117,4 @@ export function isFacilityFeeLine(l: BillLine): boolean {
   return FACILITY_FEE_KEYWORDS.test(l.description);
 }
 
-export const CANCEL_KEYWORDS = /\b(CANCEL(?:LED)?|CANC|D\/?C'?D|NOT GIVEN|RETURNED|WASTE(?:D)?)\b/i;
+export const CANCEL_KEYWORDS = /\bCANCEL\w*|\bCANC\b|D\/?C'?D|\bNOT GIVEN\b|\bRETURNED\b|\bWASTE\w*/i;

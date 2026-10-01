@@ -1,0 +1,10 @@
+{
+  "id": "INS-01",
+  "version": 1,
+  "title": "Possibly not billed to insurance",
+  "requiredInputs": [
+    "insurance status"
+  ],
+  "confidencePolicy": "medium",
+  "citations": []
+}

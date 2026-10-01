@@ -1,0 +1,13 @@
+{
+  "id": "MUE-01",
+  "version": 1,
+  "title": "Units above Medicare's Medically Unlikely Edit (MUE)",
+  "requiredInputs": [
+    "HCPCS code, units, date of service",
+    "MUE reference data"
+  ],
+  "confidencePolicy": "high for MAI 2, medium for MAI 1/3; not applicable to inpatient claims",
+  "citations": [
+    "S20"
+  ]
+}

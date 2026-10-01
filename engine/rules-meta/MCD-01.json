@@ -1,0 +1,13 @@
+{
+  "id": "MCD-01",
+  "version": 1,
+  "title": "Medicaid balance-billing",
+  "requiredInputs": [
+    "insurance status (medicaid)",
+    "the bill's balance due"
+  ],
+  "confidencePolicy": "medium",
+  "citations": [
+    "S29"
+  ]
+}

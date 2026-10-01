@@ -1,0 +1,13 @@
+{
+  "id": "CANC-01",
+  "version": 1,
+  "title": "Canceled, not received, or phantom service",
+  "requiredInputs": [
+    "bill lines; user \"not received\" marks"
+  ],
+  "confidencePolicy": "medium when user-marked, low from description keywords",
+  "citations": [
+    "S15",
+    "S16"
+  ]
+}

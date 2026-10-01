@@ -1,0 +1,12 @@
+{
+  "id": "FAC-01",
+  "version": 1,
+  "title": "Facility-fee explainer",
+  "requiredInputs": [
+    "bill lines"
+  ],
+  "confidencePolicy": "info; fires only when a facility fee line is present",
+  "citations": [
+    "S41"
+  ]
+}

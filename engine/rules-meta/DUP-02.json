@@ -1,0 +1,12 @@
+{
+  "id": "DUP-02",
+  "version": 1,
+  "title": "Near-duplicate charge (same code, different price or description)",
+  "requiredInputs": [
+    "bill lines with codes and dates"
+  ],
+  "confidencePolicy": "medium",
+  "citations": [
+    "S19"
+  ]
+}
