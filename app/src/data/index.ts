@@ -1,4 +1,4 @@
-import type { Datasets, ISODate } from '../types/engine';
+import type { Datasets, ISODate, StateCharityDoc } from '../types/engine';
 
 // Loads every reference dataset the app needs, up front, in one fixed Promise.all() call —
 // never a per-code or per-NDC fetch — so network traffic is identical regardless of bill
@@ -59,6 +59,7 @@ export interface AppData {
   hospitals: HospitalRecord[];
   hospitalIndex: HospitalIndexEntry[];
   hcpcs2: Hcpcs2Entry[];
+  stateCharity: StateCharityDoc | null;
   datasets: Datasets;
 }
 
@@ -68,6 +69,7 @@ const DATA_FILES = [
   'hospitals-search-index.json',
   'hcpcs2.json',
   'nadac-all.json',
+  'state-charity.json',
 ] as const;
 
 async function fetchJson<T>(file: string): Promise<T | null> {
@@ -88,12 +90,13 @@ function toIsoDate(mdY: string): ISODate {
 
 export async function loadAppData(): Promise<AppData> {
   // Fixed order, all requested in the same tick — see module doc comment above.
-  const [fpl, hospitals, hospitalIndex, hcpcs2, nadac] = await Promise.all([
+  const [fpl, hospitals, hospitalIndex, hcpcs2, nadac, stateCharity] = await Promise.all([
     fetchJson<FplDoc>(DATA_FILES[0]),
     fetchJson<HospitalRecord[]>(DATA_FILES[1]),
     fetchJson<HospitalIndexEntry[]>(DATA_FILES[2]),
     fetchJson<Hcpcs2Entry[]>(DATA_FILES[3]),
     fetchJson<NadacShardRecord[]>(DATA_FILES[4]),
+    fetchJson<StateCharityDoc>(DATA_FILES[5]),
   ]);
 
   const hospitalsByCcn = new Map<string, HospitalRecord>();
@@ -127,6 +130,7 @@ export async function loadAppData(): Promise<AppData> {
     hospitals: hospitals ?? [],
     hospitalIndex: hospitalIndex ?? [],
     hcpcs2: hcpcs2 ?? [],
+    stateCharity,
     datasets,
   };
 }

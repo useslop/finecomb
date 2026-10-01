@@ -11,6 +11,9 @@ import { fileURLToPath } from 'node:url';
 const here = path.dirname(fileURLToPath(import.meta.url));
 const srcDir = path.resolve(here, '../../data/out');
 const outDir = path.resolve(here, '../public/data');
+// B4's charity-care screener table lives in engine/data (hand-authored from RESEARCH.md §b4,
+// not A2's fetched-dataset pipeline), so it's copied from a second source directory below.
+const engineDataDir = path.resolve(here, '../../engine/data');
 
 const FLAT_FILES = ['fpl-2026.json', 'hospitals.json', 'hospitals-search-index.json', 'hcpcs2.json'];
 
@@ -29,6 +32,13 @@ async function main() {
     } else {
       console.warn(`[copy-data] missing ${file}, skipped.`);
     }
+  }
+
+  const stateCharity = path.join(engineDataDir, 'state-charity.json');
+  if (existsSync(stateCharity)) {
+    await copyFile(stateCharity, path.join(outDir, 'state-charity.json'));
+  } else {
+    console.warn('[copy-data] missing engine/data/state-charity.json, skipped.');
   }
 
   const nadacDir = path.join(srcDir, 'nadac');
