@@ -1,0 +1,288 @@
+{
+ "id": "fc-v1-114",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21163767,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 114",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0104181",
+   "totalCharges": 5422.29,
+   "statementDate": "2026-08-22",
+   "payments": 875.29,
+   "adjustments": 3502.03,
+   "balanceDue": 1044.97
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-02",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 1,
+    "unitPrice": 1341.57,
+    "amount": 1341.57,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-02",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 109.7,
+    "amount": 109.7,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-02",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 65.19,
+    "amount": 65.19,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-02",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 183.2,
+    "amount": 183.2,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-02",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 34.5,
+    "amount": 34.5,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2026-08-02",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 2,
+    "unitPrice": 93.81,
+    "amount": 187.62,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L07",
+    "date": "2026-08-02",
+    "description": "CAPILLARY BLOOD DRAW",
+    "qty": 1,
+    "unitPrice": 8.97,
+    "amount": 8.97,
+    "code": "36416",
+    "revCode": "0300"
+   },
+   {
+    "id": "L08",
+    "date": "2026-08-02",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2925.47,
+    "amount": 2925.47,
+    "code": "74177",
+    "revCode": "0352"
+   },
+   {
+    "id": "L09",
+    "date": "2026-08-02",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 403.65,
+    "amount": 403.65,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L10",
+    "date": "2026-08-02",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 81.21,
+    "amount": 162.42,
+    "code": "J2270",
+    "revCode": "0636"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "firstPostDischargeStatementDate": "2026-08-11",
+  "firstBillDate": "2026-08-08",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 5422.29,
+   "allowed": 1920.26,
+   "planPaid": 875.29,
+   "deductible": 947.71,
+   "copay": 0,
+   "coinsurance": 97.26,
+   "patientResponsibility": 1044.97,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 3502.03
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 947.71
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 97.26
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "36416": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "36415",
+    "col2": "36416",
+    "mi": 9,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:mue-setting",
+  "hn:ncci-mi9"
+ ]
+}

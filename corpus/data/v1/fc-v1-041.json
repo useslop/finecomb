@@ -1,0 +1,693 @@
+{
+ "id": "fc-v1-041",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20585680,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 041",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0101480",
+   "admitDate": "2026-03-11",
+   "dischargeDate": "2026-03-17",
+   "totalCharges": 35754.37,
+   "statementDate": "2026-04-22",
+   "payments": 8776.67,
+   "adjustments": 23461.48,
+   "balanceDue": 3516.22
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-11",
+    "description": "ED VISIT LVL 3",
+    "qty": 1,
+    "unitPrice": 822.09,
+    "amount": 822.09,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-11",
+    "description": "PRIVATE RM DAILY",
+    "qty": 6,
+    "unitPrice": 5182.98,
+    "amount": 31097.88,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-11",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 33.68,
+    "amount": 33.68,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-12",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 159.55,
+    "amount": 159.55,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-13",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 118.18,
+    "amount": 118.18,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-13",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 44.9,
+    "amount": 44.9,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-03-14",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 54.21,
+    "amount": 54.21,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L08",
+    "date": "2026-03-14",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 82.39,
+    "amount": 82.39,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-03-14",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 65.1,
+    "amount": 65.1,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L10",
+    "date": "2026-03-15",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 67.24,
+    "amount": 67.24,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L11",
+    "date": "2026-03-16",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 34.27,
+    "amount": 34.27,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L12",
+    "date": "2026-03-16",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 135.16,
+    "amount": 135.16,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L13",
+    "date": "2026-03-16",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 49.94,
+    "amount": 49.94,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L14",
+    "date": "2026-03-11",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 47.47,
+    "amount": 47.47,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L15",
+    "date": "2026-03-12",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 55.28,
+    "amount": 110.56,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L16",
+    "date": "2026-03-15",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 146.33,
+    "amount": 146.33,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L29",
+    "date": "2026-03-15",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 177.67,
+    "amount": 177.67,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L17",
+    "date": "2026-03-14",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 218.46,
+    "amount": 218.46,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L18",
+    "date": "2026-03-12",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 24.91,
+    "amount": 124.55,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L19",
+    "date": "2026-03-11",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 1360.03,
+    "amount": 1360.03,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L20",
+    "date": "2026-03-11",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 35.3,
+    "amount": 35.3,
+    "revCode": "0270"
+   },
+   {
+    "id": "L21",
+    "date": "2026-03-12",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 429.96,
+    "amount": 429.96,
+    "revCode": "0424"
+   },
+   {
+    "id": "L22",
+    "date": "2026-03-11",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 5,
+    "unitPrice": 23.87,
+    "amount": 119.35,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L23",
+    "date": "2026-03-12",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 5,
+    "unitPrice": 24.1,
+    "amount": 120.5,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L24",
+    "date": "2026-03-13",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 6,
+    "unitPrice": 32.79,
+    "amount": 196.74,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L25",
+    "date": "2026-03-14",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 6,
+    "unitPrice": 24.12,
+    "amount": 144.72,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L26",
+    "date": "2026-03-15",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 3,
+    "unitPrice": 20.47,
+    "amount": 61.41,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L27",
+    "date": "2026-03-16",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 6,
+    "unitPrice": 19.02,
+    "amount": 114.12,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L28",
+    "date": "2026-03-17",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 5,
+    "unitPrice": 26.55,
+    "amount": 132.75,
+    "code": "82962",
+    "revCode": "0300"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-03-26",
+  "firstBillDate": "2026-04-01",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 36304.51,
+   "allowed": 12843.03,
+   "planPaid": 8776.67,
+   "deductible": 304.93,
+   "copay": 0,
+   "coinsurance": 3761.43,
+   "patientResponsibility": 4066.36,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 531.27,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 20096.74,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 21.77,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 103.11,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 76.37,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 29.02,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 35.03,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 53.24,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 42.07,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 43.45,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 22.15,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 87.35,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 32.27,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 30.68,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 71.45,
+     "lineId": "L15"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 94.56,
+     "lineId": "L16"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 114.82,
+     "lineId": "L29"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 141.18,
+     "lineId": "L17"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 80.49,
+     "lineId": "L18"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 878.91,
+     "lineId": "L19"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 22.81,
+     "lineId": "L20"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 277.86,
+     "lineId": "L21"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 77.13,
+     "lineId": "L22"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 77.87,
+     "lineId": "L23"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 127.14,
+     "lineId": "L24"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 93.52,
+     "lineId": "L25"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 39.69,
+     "lineId": "L26"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 73.75,
+     "lineId": "L27"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 85.78,
+     "lineId": "L28"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 304.93
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 3761.43
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-04-28",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "82962": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L16",
+    "L29"
+   ]
+  },
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "DUP-02",
+  "MATH-02"
+ ],
+ "tags": [
+  "hn:mue-inpatient",
+  "hn:eca-agency-referral",
+  "plant:DUP-02:price",
+  "variant:eob-line-level-co",
+  "plant:MATH-02:total-off"
+ ]
+}

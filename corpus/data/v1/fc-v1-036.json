@@ -1,0 +1,405 @@
+{
+ "id": "fc-v1-036",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20546085,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 036",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0101295",
+   "admitDate": "2026-02-16",
+   "dischargeDate": "2026-02-20",
+   "totalCharges": 21252.25,
+   "statementDate": "2026-03-17",
+   "payments": 9860.52,
+   "adjustments": 8666.48,
+   "balanceDue": 2725.25
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-02-16",
+    "description": "PRIVATE RM DAILY",
+    "qty": 4,
+    "unitPrice": 4257.07,
+    "amount": 17028.28,
+    "revCode": "0110"
+   },
+   {
+    "id": "L02",
+    "date": "2026-02-16",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 27.19,
+    "amount": 27.19,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L03",
+    "date": "2026-02-16",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 148.2,
+    "amount": 148.2,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-02-17",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 39.26,
+    "amount": 39.26,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-02-17",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 104.94,
+    "amount": 104.94,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-02-18",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 237.1,
+    "amount": 237.1,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-02-19",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 113.3,
+    "amount": 113.3,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L08",
+    "date": "2026-02-19",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 117.35,
+    "amount": 117.35,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-02-19",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 99.89,
+    "amount": 99.89,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2026-02-18",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 16.95,
+    "amount": 135.6,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-02-19",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 17.1,
+    "amount": 68.4,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-02-20",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 88.73,
+    "amount": 177.46,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-02-18",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 23.49,
+    "amount": 117.45,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2026-02-17",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 37.26,
+    "amount": 74.52,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2026-02-16",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 1447.55,
+    "amount": 1447.55,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L16",
+    "date": "2026-02-16",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 69.8,
+    "amount": 69.8,
+    "revCode": "0272"
+   },
+   {
+    "id": "L17",
+    "date": "2026-02-16",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 128.02,
+    "amount": 128.02,
+    "revCode": "0270"
+   },
+   {
+    "id": "L18",
+    "date": "2026-02-16",
+    "description": "OXYGEN PER DAY",
+    "qty": 4,
+    "unitPrice": 279.27,
+    "amount": 1117.08,
+    "revCode": "0412"
+   },
+   {
+    "id": "L19",
+    "date": "2026-02-16",
+    "description": "ATORVASTATIN 40MG TAB",
+    "qty": 2,
+    "unitPrice": 0.43,
+    "amount": 0.86,
+    "revCode": "0250",
+    "ndc": "47437671078"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-03-02",
+  "firstBillDate": "2026-03-15",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 21252.25,
+   "allowed": 12585.77,
+   "planPaid": 9734.44,
+   "deductible": 355.22,
+   "copay": 50,
+   "coinsurance": 2446.11,
+   "patientResponsibility": 2851.33,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 8666.48
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 355.22
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 2446.11
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-08-28",
+    "kind": "lawsuit",
+    "noticeDate": "2026-07-19"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {
+   "47437671078": {
+    "unitPrice": 0.054813,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:eca-proper",
+  "hn:rx-below-10",
+  "hn:eob-prepaid"
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "id": "fc-v1-272",
+ "kind": "professional",
+ "sub": "air",
+ "seed": 22414969,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 272",
+   "providerName": "Example Air Medical Transport",
+   "accountNumber": "TEST-0110027",
+   "totalCharges": 241457.62,
+   "statementDate": "2026-06-30",
+   "payments": 58110.3,
+   "adjustments": 0,
+   "balanceDue": 183347.32
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-04",
+    "description": "ROTOR AIR TRANSPORT BASE",
+    "qty": 4,
+    "unitPrice": 54659.93,
+    "amount": 218639.72,
+    "code": "A0431"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-04",
+    "description": "ROTOR AIR MILES",
+    "qty": 73,
+    "unitPrice": 308.35,
+    "amount": 22817.9,
+    "code": "A0436"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "airAmbulance": true,
+  "emergency": true,
+  "firstBillDate": "2026-06-27",
+  "state": "AZ",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 241457.62,
+   "allowed": 73479.77,
+   "planPaid": 58110.3,
+   "deductible": 841.89,
+   "copay": 0,
+   "coinsurance": 14527.58,
+   "patientResponsibility": 15369.47,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 167977.85
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 841.89
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 14527.58
+    }
+   ]
+  },
+  "onCreditReport": false,
+  "paidInFull": false,
+  "originalBalance": 869.98
+ },
+ "data": {
+  "mue": {
+   "A0431": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "A0436": {
+    "practitioner": {
+     "mue": 250,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L02"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L01"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-01",
+  "MATH-01",
+  "MUE-01"
+ ],
+ "tags": [
+  "hn:cr-not-reported",
+  "plant:MATH-01:extra-unit",
+  "plant:MUE-01"
+ ]
+}

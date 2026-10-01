@@ -1,0 +1,129 @@
+{
+ "id": "fc-v1-230",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22082371,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 230",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0108473",
+   "totalCharges": 950.32,
+   "statementDate": "2026-09-29",
+   "payments": 261.35,
+   "adjustments": 0,
+   "balanceDue": 688.97
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-09-08",
+    "description": "OFFICE VISIT EST LEVEL 3",
+    "qty": 1,
+    "unitPrice": 385.68,
+    "amount": 385.68,
+    "code": "99213"
+   },
+   {
+    "id": "L02",
+    "date": "2026-09-08",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 20.82,
+    "amount": 22.9,
+    "code": "81003"
+   },
+   {
+    "id": "L03",
+    "date": "2026-09-08",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 270.87,
+    "amount": 270.87,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L04",
+    "date": "2026-09-08",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 270.87,
+    "amount": 270.87,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "firstBillDate": "2026-09-23",
+  "state": "OK",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": []
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99213": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L02"
+   ]
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01",
+  "MATH-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "variant:bilateral-same-price",
+  "plant:MATH-01:wrong-total",
+  "plant:MCD-01:no-eob",
+  "variant:medicaid-no-eob"
+ ]
+}

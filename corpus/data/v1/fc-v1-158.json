@@ -1,0 +1,305 @@
+{
+ "id": "fc-v1-158",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21512203,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 158",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0105809",
+   "admitDate": "2026-04-24",
+   "dischargeDate": "2026-04-24",
+   "totalCharges": 3971.63,
+   "statementDate": "2026-05-21",
+   "payments": 980.65,
+   "adjustments": 2493.22,
+   "balanceDue": 497.76
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-24",
+    "description": "ER VISIT LEVEL 5",
+    "qty": 1,
+    "unitPrice": 2923.66,
+    "amount": 2923.66,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-24",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 186.24,
+    "amount": 186.24,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-24",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 24.36,
+    "amount": 24.36,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-24",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 108.16,
+    "amount": 108.16,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-24",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 179.5,
+    "amount": 179.5,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-24",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 2,
+    "unitPrice": 15.21,
+    "amount": 30.42,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-24",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 416,
+    "amount": 416,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-24",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 41.2,
+    "amount": 41.2,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-24",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 62.09,
+    "amount": 62.09,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "emergency": true,
+  "admitted": false,
+  "firstPostDischargeStatementDate": "2026-05-04",
+  "firstBillDate": "2026-04-30",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Medicare",
+  "eob": {
+   "billed": 3971.63,
+   "allowed": 1478.41,
+   "planPaid": 920.72,
+   "deductible": 15.01,
+   "copay": 250,
+   "coinsurance": 292.68,
+   "patientResponsibility": 557.69,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1835.35,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 116.91,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 15.29,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 67.9,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 112.68,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 19.1,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 261.15,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 25.86,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 38.98,
+     "lineId": "L09"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 15.01
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 292.68
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 250
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:eob-prepaid",
+  "hn:mue-setting",
+  "variant:eob-line-level-co"
+ ]
+}

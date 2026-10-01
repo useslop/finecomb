@@ -1,0 +1,279 @@
+{
+ "id": "fc-v1-157",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21504284,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 157",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0105772",
+   "totalCharges": 4281.22,
+   "statementDate": "2025-04-14",
+   "payments": 965.31,
+   "adjustments": 3312.91,
+   "balanceDue": 3
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-03-27",
+    "description": "EMERGENCY ROOM LVL 5",
+    "qty": 1,
+    "unitPrice": 2231.1,
+    "amount": 2231.1,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-03-27",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 64.6,
+    "amount": 64.6,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-03-27",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 141.05,
+    "amount": 141.05,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2025-03-27",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 23.25,
+    "amount": 23.25,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2025-03-27",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 664.92,
+    "amount": 664.92,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L06",
+    "date": "2025-03-27",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 2,
+    "unitPrice": 254.17,
+    "amount": 508.34,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2025-03-27",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 99.3,
+    "amount": 198.6,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L08",
+    "date": "2025-03-27",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 216.51,
+    "amount": 216.51,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L09",
+    "date": "2025-03-27",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 17.72,
+    "amount": 141.76,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2025-03-27",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 91.09,
+    "amount": 91.09,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2025-04-05",
+  "firstBillDate": "2025-04-13",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 4281.22,
+   "allowed": 968.31,
+   "planPaid": 965.31,
+   "deductible": 0,
+   "copay": 3,
+   "coinsurance": 0,
+   "patientResponsibility": 3,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 3312.91
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 3
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 500
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L07"
+   ]
+  }
+ ],
+ "plants": [
+  "MATH-01"
+ ],
+ "tags": [
+  "hn:medicaid-copay",
+  "hn:cr-legit",
+  "plant:MATH-01:extra-unit"
+ ]
+}

@@ -1,0 +1,414 @@
+{
+ "id": "fc-v1-084",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20926197,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 084",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0103071",
+   "admitDate": "2025-10-20",
+   "dischargeDate": "2025-10-21",
+   "totalCharges": 10351.37,
+   "statementDate": "2025-11-11",
+   "payments": 4767.76,
+   "adjustments": 5067.34,
+   "balanceDue": 516.27
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-10-20",
+    "description": "ICU DAILY CHARGE",
+    "qty": 1,
+    "unitPrice": 8451.24,
+    "amount": 8451.24,
+    "revCode": "0200"
+   },
+   {
+    "id": "L02",
+    "date": "2025-10-20",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 140.86,
+    "amount": 140.86,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2025-10-20",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 66.72,
+    "amount": 66.72,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-10-20",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 70.48,
+    "amount": 70.48,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L05",
+    "date": "2025-10-21",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 50.69,
+    "amount": 50.69,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L06",
+    "date": "2025-10-20",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 22.61,
+    "amount": 22.61,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2025-10-20",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 22.61,
+    "amount": 22.61,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2025-10-21",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 8,
+    "unitPrice": 23.28,
+    "amount": 186.24,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2025-10-21",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 12.05,
+    "amount": 48.2,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2025-10-20",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 76.7,
+    "amount": 153.4,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2025-10-20",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 215.46,
+    "amount": 215.46,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L11",
+    "date": "2025-10-20",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 213.46,
+    "amount": 213.46,
+    "revCode": "0270"
+   },
+   {
+    "id": "L12",
+    "date": "2025-10-20",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 53.47,
+    "amount": 53.47,
+    "revCode": "0270"
+   },
+   {
+    "id": "L13",
+    "date": "2025-10-20",
+    "description": "OXYGEN PER DAY",
+    "qty": 1,
+    "unitPrice": 184.94,
+    "amount": 184.94,
+    "revCode": "0412"
+   },
+   {
+    "id": "L14",
+    "date": "2025-10-21",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 470.99,
+    "amount": 470.99,
+    "revCode": "0424"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2025-10-31",
+  "firstBillDate": "2025-11-12",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Marketplace Plan",
+  "eob": {
+   "billed": 10351.37,
+   "allowed": 5284.03,
+   "planPaid": 4738.82,
+   "deductible": 18.67,
+   "copay": 0,
+   "coinsurance": 526.54,
+   "patientResponsibility": 545.21,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 4137.16,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 68.96,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 32.66,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 34.5,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 24.81,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 11.07,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 11.07,
+     "lineId": "L15"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 91.17,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 23.6,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 75.09,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 105.47,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 104.5,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 26.18,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 90.53,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 230.57,
+     "lineId": "L14"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 18.67
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 526.54
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-04-26",
+    "kind": "wage_garnishment"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L06",
+    "L15"
+   ]
+  },
+  {
+   "ruleId": "ECA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "ECA-01",
+  "DUP-01"
+ ],
+ "tags": [
+  "hn:eob-prepaid",
+  "plant:DUP-01",
+  "variant:eob-line-level-co",
+  "plant:ECA-01:no-notice"
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "id": "fc-v1-205",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 21884396,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 205",
+   "providerName": "Sample Pathology Associates",
+   "accountNumber": "TEST-0107548",
+   "totalCharges": 662.28,
+   "statementDate": "2026-07-16",
+   "payments": 43.02,
+   "adjustments": 0,
+   "balanceDue": 619.26
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-22",
+    "description": "TISSUE EXAM SURGICAL",
+    "qty": 1,
+    "unitPrice": 144.41,
+    "amount": 144.41,
+    "code": "88305"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-22",
+    "description": "TISSUE EXAM SURGICAL",
+    "qty": 1,
+    "unitPrice": 144.41,
+    "amount": 144.41,
+    "code": "88305"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": false,
+  "emergency": false,
+  "firstBillDate": "2026-07-12",
+  "state": "AZ",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "pathology"
+  ],
+  "eob": {
+   "billed": 288.82,
+   "allowed": 154.68,
+   "planPaid": 43.02,
+   "deductible": 79.1,
+   "copay": 25,
+   "coinsurance": 7.56,
+   "patientResponsibility": 111.66,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 134.14
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 79.1
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 7.56
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 25
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "88305": {
+    "practitioner": {
+     "mue": 6,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 6,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L01",
+    "L02"
+   ]
+  },
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-02",
+  "MATH-02",
+  "DUP-01"
+ ],
+ "tags": [
+  "plant:DUP-01",
+  "plant:MATH-02:total-off"
+ ]
+}

@@ -1,0 +1,357 @@
+{
+ "id": "fc-v1-118",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21195443,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 118",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0104329",
+   "admitDate": "2026-07-12",
+   "dischargeDate": "2026-07-13",
+   "totalCharges": 11325.15,
+   "statementDate": "2026-08-18",
+   "payments": 2549.76,
+   "adjustments": 0,
+   "balanceDue": 8775.39
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-12",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 1657.56,
+    "amount": 1657.56,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-12",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 89.46,
+    "amount": 89.46,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-12",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 51.21,
+    "amount": 51.21,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-12",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 5019.43,
+    "amount": 5019.43,
+    "code": "74177",
+    "revCode": "0352"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-12",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 455.8,
+    "amount": 455.8,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-12",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 3,
+    "unitPrice": 241.78,
+    "amount": 725.34,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-12",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 3.47,
+    "amount": 24.29,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-12",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 21,
+    "unitPrice": 91.04,
+    "amount": 1911.84,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-13",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 8,
+    "unitPrice": 121.07,
+    "amount": 968.56,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-13",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 81.05,
+    "amount": 81.05,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-13",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 116.98,
+    "amount": 116.98,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-12",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 174.53,
+    "amount": 174.53,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L13",
+    "date": "2026-07-12",
+    "description": "BLOOD COUNT COMPLETE NO DIFF",
+    "qty": 1,
+    "unitPrice": 49.1,
+    "amount": 49.1,
+    "code": "85027",
+    "revCode": "0305"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-07-21",
+  "firstBillDate": "2026-07-19",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 11325.15,
+   "allowed": 4594.19,
+   "planPaid": 2549.76,
+   "deductible": 1406.99,
+   "copay": 0,
+   "coinsurance": 637.44,
+   "patientResponsibility": 2044.43,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 6730.96
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1406.99
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 637.44
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85027": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "85025",
+    "col2": "85027",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L12",
+    "L13"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-01",
+  "NCCI-01"
+ ],
+ "tags": [
+  "hn:hourly-overlap",
+  "hn:obs-room-hours",
+  "plant:NCCI-01:mi0"
+ ]
+}

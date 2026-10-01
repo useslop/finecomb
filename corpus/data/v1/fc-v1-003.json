@@ -1,0 +1,212 @@
+{
+ "id": "fc-v1-003",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20284758,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 003",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0100074",
+   "admitDate": "2026-05-16",
+   "dischargeDate": "2026-05-16",
+   "totalCharges": 5973.33,
+   "statementDate": "2026-06-07",
+   "payments": 1165.31,
+   "adjustments": 0,
+   "balanceDue": 4808.02
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-16",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 2503.79,
+    "amount": 2503.79,
+    "revCode": "0121"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-16",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 44.16,
+    "amount": 44.16,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-16",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 69.2,
+    "amount": 69.2,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-16",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 18.1,
+    "amount": 144.8,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-16",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 2585.2,
+    "amount": 2585.2,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-16",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 53.1,
+    "amount": 53.1,
+    "revCode": "0270"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-16",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 117.09,
+    "amount": 117.09,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-05-25",
+  "firstBillDate": "2026-05-27",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 5517.34,
+   "allowed": 2579.64,
+   "planPaid": 1165.31,
+   "deductible": 772.06,
+   "copay": 100,
+   "coinsurance": 542.27,
+   "patientResponsibility": 1414.33,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2937.7
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 772.06
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 542.27
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 100
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02",
+  "MATH-02"
+ ],
+ "tags": [
+  "hn:same-day-admit-discharge",
+  "plant:EOB-02:co-billed",
+  "plant:MATH-02:total-off"
+ ]
+}

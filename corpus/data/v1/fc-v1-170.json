@@ -1,0 +1,376 @@
+{
+ "id": "fc-v1-170",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21607231,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 170",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0106253",
+   "admitDate": "2025-12-03",
+   "dischargeDate": "2025-12-04",
+   "totalCharges": 10326.69,
+   "statementDate": "2026-01-11",
+   "payments": 3247.69,
+   "adjustments": 5288.31,
+   "balanceDue": 1790.69
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-12-03",
+    "description": "ED VISIT LVL 5",
+    "qty": 1,
+    "unitPrice": 3088.34,
+    "amount": 3088.34,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-12-03",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 131.66,
+    "amount": 131.66,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2025-12-03",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 60.88,
+    "amount": 60.88,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-12-03",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 95.41,
+    "amount": 95.41,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2025-12-03",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 83.52,
+    "amount": 83.52,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2025-12-03",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 22.69,
+    "amount": 22.69,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2025-12-03",
+    "description": "CAPILLARY BLOOD DRAW",
+    "qty": 1,
+    "unitPrice": 18.45,
+    "amount": 18.45,
+    "code": "36416",
+    "revCode": "0300"
+   },
+   {
+    "id": "L08",
+    "date": "2025-12-03",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 3282.65,
+    "amount": 3282.65,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L09",
+    "date": "2025-12-03",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 287.37,
+    "amount": 287.37,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L10",
+    "date": "2025-12-03",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 19.48,
+    "amount": 136.36,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2025-12-03",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 29.75,
+    "amount": 59.5,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2025-12-03",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 20,
+    "unitPrice": 118.74,
+    "amount": 2374.8,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2025-12-04",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 10,
+    "unitPrice": 61.84,
+    "amount": 618.4,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L14",
+    "date": "2025-12-04",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 66.66,
+    "amount": 66.66,
+    "code": "81003",
+    "revCode": "0300"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2025-12-22",
+  "firstBillDate": "2025-12-22",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 10326.69,
+   "allowed": 5038.38,
+   "planPaid": 3541.44,
+   "deductible": 611.58,
+   "copay": 0,
+   "coinsurance": 885.36,
+   "patientResponsibility": 1496.94,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 5288.31
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 611.58
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 885.36
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-04-07",
+    "kind": "wage_garnishment"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "36416": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "36415",
+    "col2": "36416",
+    "mi": 9,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "ECA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-01",
+  "ECA-01"
+ ],
+ "tags": [
+  "hn:ncci-mi9",
+  "plant:EOB-01:unposted-payment",
+  "plant:ECA-01:early"
+ ]
+}

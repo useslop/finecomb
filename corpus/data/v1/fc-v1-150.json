@@ -1,0 +1,193 @@
+{
+ "id": "fc-v1-150",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21448851,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 150",
+   "providerName": "Example Outpatient Imaging Center",
+   "accountNumber": "TEST-0105513",
+   "totalCharges": 2744.01,
+   "statementDate": "2026-06-08",
+   "payments": 298.46,
+   "adjustments": 0,
+   "balanceDue": 2445.55
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-30",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2430.45,
+    "amount": 2430.45,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-30",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 28.85,
+    "amount": 28.85,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-30",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 28.85,
+    "amount": 28.85,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-30",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 109.62,
+    "amount": 109.62,
+    "code": "80053",
+    "revCode": "0301",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-30",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 175.09,
+    "amount": 175.09,
+    "code": "80053",
+    "revCode": "0301",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-30",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": -1,
+    "unitPrice": 28.85,
+    "amount": -28.85,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-30",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 46.52,
+    "amount": 46.52,
+    "revCode": "0250"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-30",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": -1,
+    "unitPrice": 46.52,
+    "amount": -46.52,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-05-15",
+  "firstBillDate": "2026-08-01",
+  "state": "GA",
+  "ppdrFiledDate": "2026-08-20",
+  "collections": [
+   {
+    "date": "2026-08-30",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L03",
+    "L08"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L03",
+    "L08"
+   ]
+  },
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01",
+  "DUP-02"
+ ],
+ "tags": [
+  "hn:cancel-reversed",
+  "hn:credit-reversal",
+  "variant:sched-imaging",
+  "variant:credit:negqty",
+  "variant:cancel-credit:negqty",
+  "plant:DUP-02:price",
+  "plant:PPDR-01"
+ ]
+}

@@ -1,0 +1,208 @@
+{
+ "id": "fc-v1-229",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22074452,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 229",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0108436",
+   "totalCharges": 1207.11,
+   "statementDate": "2026-04-09",
+   "payments": 168.15,
+   "adjustments": 752.53,
+   "balanceDue": 286.43
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-15",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 405.67,
+    "amount": 405.67,
+    "code": "99214"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-15",
+    "description": "FLU TEST RAPID NOT GIVEN",
+    "qty": 1,
+    "unitPrice": 33.45,
+    "amount": 33.45,
+    "code": "87804"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-15",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 151.86,
+    "amount": 151.86,
+    "code": "85025"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-15",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 271.03,
+    "amount": 271.03,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-15",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 271.03,
+    "amount": 271.03,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-15",
+    "description": "BLOOD COUNT COMPLETE NO DIFF",
+    "qty": 1,
+    "unitPrice": 74.07,
+    "amount": 74.07,
+    "code": "85027"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "firstBillDate": "2026-04-08",
+  "state": "OK",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 1207.11,
+   "allowed": 454.58,
+   "planPaid": 336.3,
+   "deductible": 34.21,
+   "copay": 0,
+   "coinsurance": 84.07,
+   "patientResponsibility": 118.28,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 752.53
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 34.21
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 84.07
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85027": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "87804": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "85025",
+    "col2": "85027",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L03",
+    "L06"
+   ]
+  },
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L02"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "CANC-01",
+  "EOB-01",
+  "NCCI-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "variant:bilateral-same-price",
+  "plant:CANC-01:keyword",
+  "plant:NCCI-01:mi0",
+  "plant:EOB-01:unposted-payment"
+ ]
+}

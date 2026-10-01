@@ -1,0 +1,177 @@
+{
+ "id": "fc-v1-240",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 22161561,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 240",
+   "providerName": "Sample Family Clinic",
+   "accountNumber": "TEST-0108843",
+   "totalCharges": 931.23,
+   "statementDate": "2026-09-10",
+   "payments": 111.78,
+   "adjustments": 610.69,
+   "balanceDue": 208.76
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-08",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 275,
+    "amount": 275,
+    "code": "99214",
+    "modifiers": [
+     "25"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-08",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 255.87,
+    "amount": 255.87,
+    "code": "20610"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-08",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 255.87,
+    "amount": 255.87,
+    "code": "20610"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-08",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 3,
+    "unitPrice": 14.83,
+    "amount": 44.49,
+    "code": "J3301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-08",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "firstBillDate": "2026-08-19",
+  "state": "TN",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 931.23,
+   "allowed": 320.54,
+   "planPaid": 175.92,
+   "deductible": 69.22,
+   "copay": 0,
+   "coinsurance": 75.4,
+   "patientResponsibility": 144.62,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 610.69
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 69.22
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 75.4
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 221.24
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "20610",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L02",
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-01",
+  "CR-01",
+  "DUP-01"
+ ],
+ "tags": [
+  "hn:ncci-mod25",
+  "hn:rounding",
+  "plant:DUP-01",
+  "plant:EOB-01:unposted-payment",
+  "plant:CR-01:small"
+ ]
+}

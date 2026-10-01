@@ -1,0 +1,568 @@
+{
+ "id": "fc-v1-077",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20870764,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 077",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0102812",
+   "admitDate": "2026-09-08",
+   "dischargeDate": "2026-09-14",
+   "totalCharges": 37063.77,
+   "statementDate": "2026-09-29",
+   "payments": 8295.29,
+   "adjustments": 28767.48,
+   "balanceDue": 1
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-09-08",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 6,
+    "unitPrice": 5749.65,
+    "amount": 34497.9,
+    "revCode": "0206"
+   },
+   {
+    "id": "L02",
+    "date": "2026-09-08",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 186.82,
+    "amount": 186.82,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-09-08",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 74.19,
+    "amount": 74.19,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-09-09",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 232.09,
+    "amount": 232.09,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-09-09",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 30.36,
+    "amount": 30.36,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2026-09-09",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 49.62,
+    "amount": 49.62,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-09-10",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 161.59,
+    "amount": 161.59,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2026-09-10",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 43.7,
+    "amount": 43.7,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-09-10",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 198.35,
+    "amount": 198.35,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2026-09-11",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 93.47,
+    "amount": 93.47,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L23",
+    "date": "2026-09-11",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 135.41,
+    "amount": 135.41,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L11",
+    "date": "2026-09-12",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 62.25,
+    "amount": 62.25,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L12",
+    "date": "2026-09-12",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 155.33,
+    "amount": 155.33,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2026-09-13",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 20.33,
+    "amount": 20.33,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2026-09-14",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 40.1,
+    "amount": 40.1,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L15",
+    "date": "2026-09-14",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 62.95,
+    "amount": 62.95,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L16",
+    "date": "2026-09-10",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 197.54,
+    "amount": 197.54,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L17",
+    "date": "2026-09-12",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 57.91,
+    "amount": 115.82,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L18",
+    "date": "2026-09-08",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 31.36,
+    "amount": 62.72,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L19",
+    "date": "2026-09-09",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 60.47,
+    "amount": 120.94,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L20",
+    "date": "2026-09-08",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 120.98,
+    "amount": 241.96,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L21",
+    "date": "2026-09-08",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 108.31,
+    "amount": 108.31,
+    "revCode": "0270"
+   },
+   {
+    "id": "L22",
+    "date": "2026-09-08",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 172.02,
+    "amount": 172.02,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-09-26",
+  "firstBillDate": "2026-09-22",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "State Medicaid",
+  "eob": {
+   "billed": 37063.77,
+   "allowed": 8296.29,
+   "planPaid": 8295.29,
+   "deductible": 0,
+   "copay": 1,
+   "coinsurance": 0,
+   "patientResponsibility": 1,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 26775.95,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 145,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 57.58,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 180.14,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 23.56,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 38.51,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 125.42,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 33.92,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 153.95,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 72.55,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 105.1,
+     "lineId": "L23"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 48.32,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 120.56,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 15.78,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 31.12,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 48.86,
+     "lineId": "L15"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 153.32,
+     "lineId": "L16"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 89.9,
+     "lineId": "L17"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 48.68,
+     "lineId": "L18"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 93.87,
+     "lineId": "L19"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 187.8,
+     "lineId": "L20"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 84.07,
+     "lineId": "L21"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 133.52,
+     "lineId": "L22"
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 1
+    }
+   ]
+  },
+  "onCreditReport": false,
+  "paidInFull": true,
+  "originalBalance": 860.62
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L10",
+    "L23"
+   ]
+  }
+ ],
+ "plants": [
+  "DUP-02"
+ ],
+ "tags": [
+  "hn:medicaid-copay",
+  "hn:cr-not-reported",
+  "plant:DUP-02:price",
+  "variant:eob-line-level-co"
+ ]
+}

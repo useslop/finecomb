@@ -1,0 +1,287 @@
+{
+ "id": "fc-v1-100",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 21052901,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 100",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0103663",
+   "admitDate": "2026-03-13",
+   "dischargeDate": "2026-03-15",
+   "totalCharges": 8877.62,
+   "statementDate": "2026-04-15",
+   "payments": 1377.39,
+   "adjustments": 7434.64,
+   "balanceDue": 65.59
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-13",
+    "description": "MED SURG BED DAILY",
+    "qty": 2,
+    "unitPrice": 3310.87,
+    "amount": 6621.74,
+    "revCode": "0121"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-13",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 232.92,
+    "amount": 232.92,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-13",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 62.19,
+    "amount": 62.19,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-13",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 43.56,
+    "amount": 43.56,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-14",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 77.63,
+    "amount": 77.63,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-14",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 89.71,
+    "amount": 89.71,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-03-15",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 6,
+    "unitPrice": 39.99,
+    "amount": 239.94,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-03-13",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 88.46,
+    "amount": 176.92,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-03-13",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 34.5,
+    "amount": 207,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-03-15",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 29.71,
+    "amount": 148.55,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-03-15",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 20.44,
+    "amount": 102.2,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-03-14",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 9,
+    "unitPrice": 14.05,
+    "amount": 126.45,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-03-13",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 214.76,
+    "amount": 214.76,
+    "revCode": "0270"
+   },
+   {
+    "id": "L14",
+    "date": "2026-03-14",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 534.05,
+    "amount": 534.05,
+    "revCode": "0424"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-03-21",
+  "firstBillDate": "2026-04-03",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "State Medicaid",
+  "collections": [
+   {
+    "date": "2026-06-23",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01"
+ ],
+ "tags": [
+  "hn:eca-agency-referral",
+  "variant:eob-line-level-co",
+  "plant:MCD-01:no-eob",
+  "variant:medicaid-no-eob"
+ ]
+}

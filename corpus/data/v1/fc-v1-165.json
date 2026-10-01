@@ -1,0 +1,310 @@
+{
+ "id": "fc-v1-165",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21567636,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 165",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0106068",
+   "admitDate": "2025-09-07",
+   "dischargeDate": "2025-09-08",
+   "totalCharges": 6070.66,
+   "statementDate": "2025-09-28",
+   "payments": 1571.14,
+   "adjustments": 2599.97,
+   "balanceDue": 1899.55
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-09-07",
+    "description": "ER VISIT LEVEL 3",
+    "qty": 1,
+    "unitPrice": 1253.9,
+    "amount": 1253.9,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-09-07",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 92.49,
+    "amount": 92.49,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-09-07",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 41.76,
+    "amount": 41.76,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2025-09-07",
+    "description": "CAPILLARY BLOOD DRAW",
+    "qty": 1,
+    "unitPrice": 10.44,
+    "amount": 10.44,
+    "code": "36416",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2025-09-07",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 456.04,
+    "amount": 456.04,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L06",
+    "date": "2025-09-07",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 401.32,
+    "amount": 401.32,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2025-09-07",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 31.99,
+    "amount": 255.92,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2025-09-07",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 27.43,
+    "amount": 54.86,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2025-09-07",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 52.24,
+    "amount": 52.24,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2025-09-07",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 56.48,
+    "amount": 56.48,
+    "revCode": "0270"
+   },
+   {
+    "id": "L11",
+    "date": "2025-09-07",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 20,
+    "unitPrice": 109.59,
+    "amount": 2191.8,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L12",
+    "date": "2025-09-08",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 8,
+    "unitPrice": 129.37,
+    "amount": 1034.96,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2025-09-08",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 168.45,
+    "amount": 168.45,
+    "code": "80048",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2025-09-15",
+  "firstBillDate": "2025-09-17",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "collections": [
+   {
+    "date": "2026-02-01",
+    "kind": "credit_report",
+    "noticeDate": "2025-12-05"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "36416": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "36415",
+    "col2": "36416",
+    "mi": 9,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:eca-proper",
+  "hn:obs-room-hours",
+  "hn:ins-paid-no-eob",
+  "hn:ncci-mi9",
+  "variant:eob-line-level-co"
+ ]
+}

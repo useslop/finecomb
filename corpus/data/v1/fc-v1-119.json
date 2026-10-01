@@ -1,0 +1,273 @@
+{
+ "id": "fc-v1-119",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21203362,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 119",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0104366",
+   "totalCharges": 8051.53,
+   "statementDate": "2026-04-25",
+   "payments": 2921.44,
+   "adjustments": 3787.08,
+   "balanceDue": 1343.01
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-01",
+    "description": "ED VISIT LVL 5",
+    "qty": 1,
+    "unitPrice": 2691.85,
+    "amount": 2691.85,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-01",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 117.07,
+    "amount": 117.07,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-01",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 46.68,
+    "amount": 46.68,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-01",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 2,
+    "unitPrice": 162.13,
+    "amount": 324.26,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-01",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 3777.76,
+    "amount": 3777.76,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-01",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 300.58,
+    "amount": 300.58,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-01",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 262.35,
+    "amount": 262.35,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "59"
+    ]
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-01",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 8,
+    "unitPrice": 45.88,
+    "amount": 367.04,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-01",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 81.97,
+    "amount": 163.94,
+    "code": "J1030",
+    "revCode": "0636"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-04-13",
+  "firstBillDate": "2026-04-13",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 8051.53,
+   "allowed": 4264.45,
+   "planPaid": 2921.44,
+   "deductible": 612.65,
+   "copay": 0,
+   "coinsurance": 730.36,
+   "patientResponsibility": 1343.01,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 3787.08
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 612.65
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 730.36
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:mue-setting",
+  "hn:ncci-mi1-59",
+  "hn:nsa-compliant"
+ ]
+}

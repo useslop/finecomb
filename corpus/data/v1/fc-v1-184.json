@@ -1,0 +1,160 @@
+{
+ "id": "fc-v1-184",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21718097,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 184",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0106771",
+   "totalCharges": 10366.91,
+   "statementDate": "2026-09-29",
+   "payments": 153.82,
+   "adjustments": 0,
+   "balanceDue": 10213.09
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-30",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 5468.19,
+    "amount": 5468.19,
+    "revCode": "0360",
+    "provider": "Example Community Medical Center"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-30",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1874.53,
+    "amount": 1874.53,
+    "revCode": "0710",
+    "provider": "Example Community Medical Center"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-30",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 625.49,
+    "amount": 625.49,
+    "revCode": "0272",
+    "provider": "Example Community Medical Center"
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-30",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 9.37,
+    "amount": 37.48,
+    "code": "J2405",
+    "revCode": "0636",
+    "provider": "Example Community Medical Center"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-30",
+    "description": "ANESTHESIA SERVICES",
+    "qty": 1,
+    "unitPrice": 2361.22,
+    "amount": 2361.22,
+    "code": "00790",
+    "provider": "Sample Anesthesia Associates"
+   },
+   {
+    "id": "L06",
+    "date": "2026-08-30",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 63.56,
+    "amount": 63.56,
+    "revCode": "0250",
+    "provider": "Example Community Medical Center"
+   },
+   {
+    "id": "L07",
+    "date": "2026-08-30",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 63.56,
+    "amount": -63.56,
+    "revCode": "0250",
+    "provider": "Example Community Medical Center"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-09-17",
+  "firstBillDate": "2026-09-11",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "gfe": [
+   {
+    "provider": "Example Community Medical Center",
+    "total": 3345.02
+   },
+   {
+    "provider": "Sample Anesthesia Associates",
+    "total": 2630.05
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "GFE-01",
+   "lineIds": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L06",
+    "L07"
+   ]
+  }
+ ],
+ "plants": [
+  "GFE-01"
+ ],
+ "tags": [
+  "hn:cancel-reversed",
+  "variant:sched-surgery-2-providers",
+  "variant:cancel-credit:posqty",
+  "plant:GFE-01"
+ ]
+}

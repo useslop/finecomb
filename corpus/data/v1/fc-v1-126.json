@@ -1,0 +1,189 @@
+{
+ "id": "fc-v1-126",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21258795,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 126",
+   "providerName": "Example Outpatient Imaging Center",
+   "accountNumber": "TEST-0104625",
+   "totalCharges": 11199.65,
+   "statementDate": "2026-04-19",
+   "payments": 0,
+   "adjustments": 4396.69,
+   "balanceDue": 6802.96
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-01",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2433.85,
+    "amount": 2433.85,
+    "revCode": "0360",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-01",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1003.45,
+    "amount": 1003.45,
+    "revCode": "0710",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-01",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1155.71,
+    "amount": 1155.71,
+    "revCode": "0272",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-01",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1155.71,
+    "amount": 1155.71,
+    "revCode": "0272",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-01",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 30.24,
+    "amount": 241.92,
+    "code": "J2405",
+    "revCode": "0636",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-01",
+    "description": "ONDANSETRON INJ PER 1MG ADDL",
+    "qty": 8,
+    "unitPrice": 30.24,
+    "amount": 241.92,
+    "code": "J2405",
+    "revCode": "0636",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-01",
+    "description": "ANESTHESIA SERVICES",
+    "qty": 1,
+    "unitPrice": 3061.4,
+    "amount": 3061.4,
+    "code": "00790",
+    "provider": "Sample Anesthesia Associates"
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-01",
+    "description": "ANESTHESIA SERVICES",
+    "qty": 1,
+    "unitPrice": 3061.4,
+    "amount": 3061.4,
+    "code": "00790",
+    "provider": "Sample Anesthesia Associates"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-04",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": -1,
+    "unitPrice": 1155.71,
+    "amount": -1155.71,
+    "revCode": "0272",
+    "provider": "Example Outpatient Imaging Center"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-04-12",
+  "firstBillDate": "2026-07-04",
+  "state": "OK",
+  "ppdrFiledDate": "2026-08-28",
+  "collections": [
+   {
+    "date": "2026-08-30",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L04",
+    "L08"
+   ]
+  },
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L05",
+    "L09"
+   ]
+  },
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L04",
+    "L08"
+   ]
+  },
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01",
+  "DUP-02",
+  "DUP-01"
+ ],
+ "tags": [
+  "hn:credit-reversal",
+  "variant:sched-surgery-2-providers",
+  "variant:credit:negqty",
+  "variant:credit-posted-later",
+  "plant:DUP-02:desc",
+  "plant:DUP-01",
+  "plant:PPDR-01"
+ ]
+}

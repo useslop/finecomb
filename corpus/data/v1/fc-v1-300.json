@@ -1,0 +1,125 @@
+{
+ "id": "fc-v1-300",
+ "kind": "professional",
+ "sub": "air",
+ "seed": 22636701,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 300",
+   "providerName": "Example Air Medical Transport",
+   "accountNumber": "TEST-0111063",
+   "totalCharges": 58246.12,
+   "statementDate": "2026-09-29",
+   "payments": 29149.71,
+   "adjustments": 0,
+   "balanceDue": 29096.41
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-09-07",
+    "description": "ROTOR AIR TRANSPORT BASE",
+    "qty": 1,
+    "unitPrice": 34450.04,
+    "amount": 34450.04,
+    "code": "A0431"
+   },
+   {
+    "id": "L02",
+    "date": "2026-09-07",
+    "description": "ROTOR AIR MILES",
+    "qty": 77,
+    "unitPrice": 309.04,
+    "amount": 23796.08,
+    "code": "A0436"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "airAmbulance": true,
+  "emergency": true,
+  "firstBillDate": "2026-09-19",
+  "state": "AL",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 58246.12,
+   "allowed": 34110.07,
+   "planPaid": 29149.71,
+   "deductible": 1693.73,
+   "copay": 25,
+   "coinsurance": 3241.63,
+   "patientResponsibility": 4960.36,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 24136.05
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1693.73
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 3241.63
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 25
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 260.03
+ },
+ "data": {
+  "mue": {
+   "A0431": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "A0436": {
+    "practitioner": {
+     "mue": 250,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-01",
+  "CR-01"
+ ],
+ "tags": [
+  "plant:CR-01:small"
+ ]
+}

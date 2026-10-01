@@ -1,0 +1,379 @@
+{
+ "id": "fc-v1-015",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20379786,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 015",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0100518",
+   "admitDate": "2026-05-21",
+   "dischargeDate": "2026-05-25",
+   "totalCharges": 19335.06,
+   "statementDate": "2026-07-01",
+   "payments": 4585.85,
+   "adjustments": 12890.26,
+   "balanceDue": 1858.95
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-21",
+    "description": "ED VISIT LVL 3",
+    "qty": 1,
+    "unitPrice": 1462.22,
+    "amount": 1462.22,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-21",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 3128.41,
+    "amount": 3128.41,
+    "revCode": "0121"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-22",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 3128.41,
+    "amount": 3128.41,
+    "revCode": "0121"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-23",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 3128.41,
+    "amount": 3128.41,
+    "revCode": "0121"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-24",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 3128.41,
+    "amount": 3128.41,
+    "revCode": "0121"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-21",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 44.34,
+    "amount": 44.34,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-21",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 81.07,
+    "amount": 81.07,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-22",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 71.22,
+    "amount": 71.22,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-05-22",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 52.12,
+    "amount": 52.12,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L10",
+    "date": "2026-05-23",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 149.24,
+    "amount": 149.24,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L11",
+    "date": "2026-05-24",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 53.33,
+    "amount": 53.33,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-05-21",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 31.08,
+    "amount": 31.08,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-05-21",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 20.18,
+    "amount": 20.18,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2026-05-22",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 36.91,
+    "amount": 36.91,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2026-05-21",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 443.75,
+    "amount": 443.75,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L16",
+    "date": "2026-05-21",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 87.48,
+    "amount": 87.48,
+    "revCode": "0270"
+   },
+   {
+    "id": "L17",
+    "date": "2026-05-21",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 48.65,
+    "amount": 48.65,
+    "revCode": "0270"
+   },
+   {
+    "id": "L18",
+    "date": "2026-05-22",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 490.49,
+    "amount": 490.49,
+    "revCode": "0424"
+   },
+   {
+    "id": "L19",
+    "date": "2026-05-21",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 127.67,
+    "amount": 127.67,
+    "revCode": "0250"
+   },
+   {
+    "id": "L20",
+    "date": "2026-05-21",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 127.67,
+    "amount": -127.67,
+    "revCode": "0250"
+   },
+   {
+    "id": "L21",
+    "date": "2026-05-21",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 6,
+    "unitPrice": 624.89,
+    "amount": 3749.34,
+    "revCode": "0731"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-06-03",
+  "firstBillDate": "2026-06-12",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 19335.06,
+   "allowed": 6444.24,
+   "planPaid": 4585.85,
+   "deductible": 1293.3,
+   "copay": 50,
+   "coinsurance": 515.09,
+   "patientResponsibility": 1858.39,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 12890.82
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1293.3
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 515.09
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "QTY-01",
+   "lineIds": [
+    "L21"
+   ]
+  }
+ ],
+ "plants": [
+  "QTY-01"
+ ],
+ "tags": [
+  "hn:cancel-reversed",
+  "hn:eob-under-1",
+  "variant:cancel-credit:posqty",
+  "plant:QTY-01:per-day"
+ ]
+}

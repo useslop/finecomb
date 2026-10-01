@@ -1,0 +1,271 @@
+{
+ "id": "fc-v1-007",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20316434,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 007",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0100222",
+   "admitDate": "2026-04-15",
+   "dischargeDate": "2026-04-17",
+   "totalCharges": 10476.74,
+   "statementDate": "2026-05-08",
+   "payments": 0,
+   "adjustments": 2851.18,
+   "balanceDue": 7625.56
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-15",
+    "description": "PRIVATE RM DAILY",
+    "qty": 2,
+    "unitPrice": 4256.41,
+    "amount": 8512.82,
+    "revCode": "0110"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-15",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 103.53,
+    "amount": 103.53,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-15",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 182.59,
+    "amount": 182.59,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-15",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 64.76,
+    "amount": 64.76,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-16",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 162.05,
+    "amount": 162.05,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-16",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 53.66,
+    "amount": 53.66,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-17",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 128.73,
+    "amount": 128.73,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-16",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 98.76,
+    "amount": 197.52,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-15",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 39.8,
+    "amount": 238.8,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-04-17",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 19.5,
+    "amount": 19.5,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-04-16",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 35.66,
+    "amount": 35.66,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-04-17",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 6,
+    "unitPrice": 58.55,
+    "amount": 351.3,
+    "code": "J0696",
+    "revCode": "0636",
+    "notReceived": true
+   },
+   {
+    "id": "L13",
+    "date": "2026-04-15",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 30.5,
+    "amount": 30.5,
+    "revCode": "0270"
+   },
+   {
+    "id": "L14",
+    "date": "2026-04-15",
+    "description": "OXYGEN PER DAY",
+    "qty": 2,
+    "unitPrice": 197.66,
+    "amount": 395.32,
+    "revCode": "0412"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-04-29",
+  "firstBillDate": "2026-05-10",
+  "state": "TX",
+  "hospitalCcn": "990102"
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L12"
+   ]
+  }
+ ],
+ "plants": [
+  "CANC-01"
+ ],
+ "tags": [
+  "hn:repeat-mod",
+  "plant:CANC-01:user-marked"
+ ]
+}

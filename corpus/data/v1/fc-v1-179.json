@@ -1,0 +1,366 @@
+{
+ "id": "fc-v1-179",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21678502,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 179",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0106586",
+   "totalCharges": 10091.79,
+   "statementDate": "2025-02-01",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 10091.79
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2024-12-24",
+    "description": "ER VISIT LEVEL 5",
+    "qty": 1,
+    "unitPrice": 2159.47,
+    "amount": 2159.47,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2024-12-24",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 55.41,
+    "amount": 55.41,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2024-12-24",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 177.62,
+    "amount": 177.62,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L04",
+    "date": "2024-12-24",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 179.01,
+    "amount": 179.01,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2024-12-24",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 44.68,
+    "amount": 44.68,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L06",
+    "date": "2024-12-24",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 33.1,
+    "amount": 33.1,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2024-12-24",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 2,
+    "unitPrice": 108.21,
+    "amount": 216.42,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L08",
+    "date": "2024-12-24",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 6373.87,
+    "amount": 6373.87,
+    "code": "74177",
+    "revCode": "0352"
+   },
+   {
+    "id": "L09",
+    "date": "2024-12-24",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 6,
+    "unitPrice": 82.34,
+    "amount": 494.04,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2024-12-24",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 27.08,
+    "amount": 54.16,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2024-12-24",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 36.15,
+    "amount": 36.15,
+    "revCode": "0270"
+   },
+   {
+    "id": "L12",
+    "date": "2024-12-24",
+    "description": "CEPHALEXIN 500MG CAP",
+    "qty": 4,
+    "unitPrice": 5.98,
+    "amount": 23.92,
+    "revCode": "0250",
+    "ndc": "72992779627"
+   },
+   {
+    "id": "L13",
+    "date": "2024-12-24",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 180.33,
+    "amount": 180.33,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2024-12-24",
+    "description": "CREATININE LEVEL",
+    "qty": 1,
+    "unitPrice": 63.61,
+    "amount": 63.61,
+    "code": "82565",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2025-01-03",
+  "firstBillDate": "2025-01-01",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Example Health Plan",
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 500
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "82565": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   },
+   {
+    "col1": "80053",
+    "col2": "82565",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {
+   "72992779627": {
+    "unitPrice": 0.08541599999999999,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L13",
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L13",
+    "L14"
+   ]
+  },
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "L12"
+   ]
+  },
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01",
+  "RX-01",
+  "NCCI-01"
+ ],
+ "tags": [
+  "hn:cr-legit",
+  "hn:mue-setting",
+  "plant:RX-01",
+  "plant:NCCI-01:mi0"
+ ]
+}

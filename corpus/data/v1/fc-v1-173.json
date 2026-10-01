@@ -1,0 +1,354 @@
+{
+ "id": "fc-v1-173",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21630988,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 173",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0106364",
+   "admitDate": "2025-10-08",
+   "dischargeDate": "2025-10-09",
+   "totalCharges": 7814.38,
+   "statementDate": "2025-11-17",
+   "payments": 3354.14,
+   "adjustments": 0,
+   "balanceDue": 4460.24
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-10-08",
+    "description": "EMERGENCY ROOM LVL 4",
+    "qty": 1,
+    "unitPrice": 1972.17,
+    "amount": 1972.17,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-10-08",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 108.02,
+    "amount": 108.02,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-10-08",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 27.24,
+    "amount": 27.24,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2025-10-08",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 173.32,
+    "amount": 173.32,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2025-10-08",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 173.32,
+    "amount": 173.32,
+    "code": "84484",
+    "revCode": "0301",
+    "modifiers": [
+     "91"
+    ]
+   },
+   {
+    "id": "L06",
+    "date": "2025-10-08",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 199.96,
+    "amount": 199.96,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L07",
+    "date": "2025-10-08",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 514.49,
+    "amount": 514.49,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2025-10-08",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 6,
+    "unitPrice": 57.51,
+    "amount": 345.06,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2025-10-08",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 57.3,
+    "amount": 114.6,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2025-10-08",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 37.02,
+    "amount": 148.08,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2025-10-08",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 26,
+    "unitPrice": 68.12,
+    "amount": 1771.12,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L12",
+    "date": "2025-10-09",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 19,
+    "unitPrice": 115.48,
+    "amount": 2194.12,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2025-10-09",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 72.88,
+    "amount": 72.88,
+    "code": "85610",
+    "revCode": "0305"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2025-10-26",
+  "firstBillDate": "2025-10-20",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 7814.38,
+   "allowed": 4148.46,
+   "planPaid": 3354.14,
+   "deductible": 393.86,
+   "copay": 25,
+   "coinsurance": 375.46,
+   "patientResponsibility": 794.32,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 3665.92
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 393.86
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 375.46
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 25
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-01-29",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "QTY-01",
+   "lineIds": [
+    "L11"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "QTY-01",
+  "NSA-01"
+ ],
+ "tags": [
+  "hn:eca-agency-referral",
+  "hn:repeat-mod",
+  "variant:troponin-91",
+  "plant:QTY-01:hourly"
+ ]
+}

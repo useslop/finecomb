@@ -1,0 +1,161 @@
+{
+ "id": "fc-v1-177",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21662664,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 177",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0106512",
+   "totalCharges": 6591.18,
+   "statementDate": "2026-07-15",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 6591.18
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-11",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 6474.45,
+    "amount": 6474.45,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-11",
+    "description": "CT ABD PELVIS W CONTRAST RETURNED",
+    "qty": 1,
+    "unitPrice": 6474.45,
+    "amount": 6474.45,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-11",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 19.45,
+    "amount": 19.45,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-11",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 97.28,
+    "amount": 97.28,
+    "code": "80053",
+    "revCode": "0301",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-11",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 6474.45,
+    "amount": -6474.45,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example Lakeside Hospital"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-06-25",
+  "firstBillDate": "2026-06-25",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "gfe": [
+   {
+    "provider": "Example Lakeside Hospital",
+    "total": 3337.18
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "GFE-01",
+   "lineIds": [
+    "L01",
+    "L04",
+    "L02",
+    "L03",
+    "L05"
+   ]
+  }
+ ],
+ "plants": [
+  "GFE-01",
+  "CANC-01"
+ ],
+ "tags": [
+  "hn:credit-reversal",
+  "variant:sched-imaging",
+  "variant:credit:posqty",
+  "plant:CANC-01:keyword",
+  "plant:GFE-01"
+ ]
+}

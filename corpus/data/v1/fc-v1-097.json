@@ -1,0 +1,292 @@
+{
+ "id": "fc-v1-097",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 21029144,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 097",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0103552",
+   "admitDate": "2026-08-14",
+   "dischargeDate": "2026-08-16",
+   "totalCharges": 9907.69,
+   "statementDate": "2026-09-05",
+   "payments": 2463.62,
+   "adjustments": 6202.65,
+   "balanceDue": 1241.42
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-14",
+    "description": "ER VISIT LEVEL 3",
+    "qty": 1,
+    "unitPrice": 1118.49,
+    "amount": 1118.49,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-14",
+    "description": "MED SURG BED DAILY",
+    "qty": 2,
+    "unitPrice": 2628.71,
+    "amount": 5257.42,
+    "revCode": "0121"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-14",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 71.05,
+    "amount": 71.05,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-15",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 21.74,
+    "amount": 21.74,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-15",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 109.1,
+    "amount": 109.1,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-08-15",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 28.56,
+    "amount": 28.56,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-08-14",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 16.26,
+    "amount": 113.82,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-08-15",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 27.75,
+    "amount": 194.25,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-08-14",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 1551.04,
+    "amount": 1551.04,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L10",
+    "date": "2026-08-14",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 35.75,
+    "amount": 35.75,
+    "revCode": "0270"
+   },
+   {
+    "id": "L11",
+    "date": "2026-08-14",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 141.33,
+    "amount": 141.33,
+    "revCode": "0270"
+   },
+   {
+    "id": "L12",
+    "date": "2026-08-14",
+    "description": "OXYGEN PER DAY",
+    "qty": 2,
+    "unitPrice": 139.44,
+    "amount": 278.88,
+    "revCode": "0412"
+   },
+   {
+    "id": "L13",
+    "date": "2026-08-14",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 2,
+    "unitPrice": 493.13,
+    "amount": 986.26,
+    "revCode": "0731"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-08-28",
+  "firstBillDate": "2026-08-27",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Health Plan",
+  "eob": {
+   "billed": 9907.69,
+   "allowed": 3705.04,
+   "planPaid": 2912.01,
+   "deductible": 469.47,
+   "copay": 0,
+   "coinsurance": 323.56,
+   "patientResponsibility": 793.03,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 6202.65
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 469.47
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 323.56
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": true,
+  "originalBalance": 1708.09
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "CR-01",
+  "EOB-01"
+ ],
+ "tags": [
+  "hn:per-day-multi",
+  "plant:EOB-01:unposted-payment",
+  "plant:CR-01:paid"
+ ]
+}

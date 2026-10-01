@@ -1,0 +1,314 @@
+{
+ "id": "fc-v1-074",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20847007,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 074",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0102701",
+   "admitDate": "2025-11-04",
+   "dischargeDate": "2025-11-07",
+   "totalCharges": 20263.82,
+   "statementDate": "2025-12-17",
+   "payments": 7904.26,
+   "adjustments": 0,
+   "balanceDue": 12359.56
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-11-04",
+    "description": "PRIVATE RM DAILY",
+    "qty": 4,
+    "unitPrice": 4744.35,
+    "amount": 18977.4,
+    "revCode": "0110"
+   },
+   {
+    "id": "L02",
+    "date": "2025-11-04",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 71.62,
+    "amount": 71.62,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-11-04",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 41.05,
+    "amount": 41.05,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2025-11-05",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 53.54,
+    "amount": 53.54,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2025-11-05",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 136.85,
+    "amount": 136.85,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2025-11-05",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 73.74,
+    "amount": 73.74,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L07",
+    "date": "2025-11-06",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 35.72,
+    "amount": 35.72,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2025-11-04",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 14.45,
+    "amount": 115.6,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2025-11-06",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 71.36,
+    "amount": 142.72,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2025-11-05",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 95.71,
+    "amount": 191.42,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2025-11-04",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 219.24,
+    "amount": 219.24,
+    "revCode": "0270"
+   },
+   {
+    "id": "L12",
+    "date": "2025-11-04",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 51.84,
+    "amount": 51.84,
+    "revCode": "0270"
+   },
+   {
+    "id": "L13",
+    "date": "2025-11-04",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 153.08,
+    "amount": 153.08,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2025-11-22",
+  "firstBillDate": "2025-11-12",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 20263.82,
+   "allowed": 10866.47,
+   "planPaid": 7904.26,
+   "deductible": 986.14,
+   "copay": 0,
+   "coinsurance": 1976.07,
+   "patientResponsibility": 2962.21,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 9397.35
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 986.14
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1976.07
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-01-08",
+    "kind": "credit_report"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "RB-01",
+   "lineIds": [
+    "L01"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02",
+  "RB-01"
+ ],
+ "tags": [
+  "hn:eca-forprofit",
+  "plant:RB-01:extra-unit",
+  "plant:EOB-02:co-billed"
+ ]
+}

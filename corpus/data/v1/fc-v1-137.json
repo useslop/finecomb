@@ -1,0 +1,294 @@
+{
+ "id": "fc-v1-137",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21345904,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 137",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0105032",
+   "admitDate": "2026-07-22",
+   "dischargeDate": "2026-07-22",
+   "totalCharges": 4234.33,
+   "statementDate": "2026-08-13",
+   "payments": 1103.8,
+   "adjustments": 2142.35,
+   "balanceDue": 988.18
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-22",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 2554.62,
+    "amount": 2554.62,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-22",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 87.8,
+    "amount": 87.8,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-22",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 58.49,
+    "amount": 58.49,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-22",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 42.31,
+    "amount": 42.31,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-22",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 16.84,
+    "amount": 16.84,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-22",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 2,
+    "unitPrice": 115.51,
+    "amount": 231.02,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-22",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 453.12,
+    "amount": 453.12,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-22",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 507.23,
+    "amount": 507.23,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-22",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 7,
+    "unitPrice": 25.53,
+    "amount": 178.71,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-22",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 104.19,
+    "amount": 104.19,
+    "code": "J1030",
+    "revCode": "0636"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-08-11",
+  "firstBillDate": "2026-07-28",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 4234.33,
+   "allowed": 2091.98,
+   "planPaid": 1103.8,
+   "deductible": 515.12,
+   "copay": 0,
+   "coinsurance": 473.06,
+   "patientResponsibility": 988.18,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 2142.35
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 515.12
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 473.06
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L09"
+   ]
+  }
+ ],
+ "plants": [
+  "MUE-01"
+ ],
+ "tags": [
+  "hn:mue-setting",
+  "hn:nsa-compliant",
+  "plant:MUE-01"
+ ]
+}

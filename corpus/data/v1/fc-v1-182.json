@@ -1,0 +1,260 @@
+{
+ "id": "fc-v1-182",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21702259,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 182",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0106697",
+   "totalCharges": 2987.79,
+   "statementDate": "2026-04-15",
+   "payments": 1435.49,
+   "adjustments": 1249.78,
+   "balanceDue": 302.52
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-03",
+    "description": "EMERGENCY ROOM LVL 3",
+    "qty": 1,
+    "unitPrice": 853.54,
+    "amount": 853.54,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-03",
+    "description": "EMERGENCY ROOM LVL 3",
+    "qty": 1,
+    "unitPrice": 1276.6,
+    "amount": 1276.6,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-03",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 72.08,
+    "amount": 72.08,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-03",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 117.54,
+    "amount": 117.54,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-03",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 41.13,
+    "amount": 41.13,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-03",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 445.36,
+    "amount": 445.36,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-03",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 29.54,
+    "amount": 177.24,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-03",
+    "description": "ONDANSETRON 4MG ODT",
+    "qty": 2,
+    "unitPrice": 2.15,
+    "amount": 4.3,
+    "revCode": "0250",
+    "ndc": "19690735944"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-04-11",
+  "firstBillDate": "2026-04-08",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 2987.79,
+   "allowed": 1738.01,
+   "planPaid": 1292.01,
+   "deductible": 24.67,
+   "copay": 250,
+   "coinsurance": 171.33,
+   "patientResponsibility": 446,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1249.78
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 24.67
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 171.33
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 250
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 1654.61
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "19690735944": {
+    "unitPrice": 0.23999,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L01",
+    "L08"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L01",
+    "L08"
+   ]
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "DUP-02",
+  "CR-01"
+ ],
+ "tags": [
+  "hn:eob-prepaid",
+  "hn:rx-below-10",
+  "plant:DUP-02:price",
+  "plant:CR-01:recent"
+ ]
+}

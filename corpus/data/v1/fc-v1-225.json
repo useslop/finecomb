@@ -1,0 +1,192 @@
+{
+ "id": "fc-v1-225",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 22042776,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 225",
+   "providerName": "Sample Family Clinic",
+   "accountNumber": "TEST-0108288",
+   "totalCharges": 5307.35,
+   "statementDate": "2026-06-30",
+   "payments": 0,
+   "adjustments": 1877.56,
+   "balanceDue": 3483.63
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-30",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 244.01,
+    "amount": 244.01,
+    "code": "99214",
+    "modifiers": [
+     "25"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-30",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 359.69,
+    "amount": 359.69,
+    "code": "20610",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-30",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 359.69,
+    "amount": 359.69,
+    "code": "20610",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-30",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 4,
+    "unitPrice": 39.76,
+    "amount": 159.04,
+    "code": "J3301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-30",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2092.46,
+    "amount": 2092.46,
+    "code": "74177"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-30",
+    "description": "CT ABD PELVIS W CONTRAST ADDL",
+    "qty": 1,
+    "unitPrice": 2092.46,
+    "amount": 2092.46,
+    "code": "74177"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-07-17",
+  "state": "KS",
+  "ppdrFiledDate": "2026-08-12",
+  "collections": [
+   {
+    "date": "2026-08-12",
+    "kind": "late_fee"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "20610",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L05",
+    "L06"
+   ]
+  },
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L05",
+    "L06"
+   ]
+  },
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L05",
+    "L06"
+   ]
+  },
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01",
+  "DUP-02",
+  "MATH-02"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "hn:ncci-mod25",
+  "variant:bilateral-same-price",
+  "plant:DUP-02:desc",
+  "plant:MATH-02:balance",
+  "plant:PPDR-01"
+ ]
+}

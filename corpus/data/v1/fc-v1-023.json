@@ -1,0 +1,435 @@
+{
+ "id": "fc-v1-023",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20443138,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 023",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0100814",
+   "admitDate": "2026-04-26",
+   "dischargeDate": "2026-04-28",
+   "totalCharges": 13569.51,
+   "statementDate": "2026-05-31",
+   "payments": 6397.65,
+   "adjustments": 5229.41,
+   "balanceDue": 1942.45
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-26",
+    "description": "ER VISIT LEVEL 5",
+    "qty": 1,
+    "unitPrice": 5160.13,
+    "amount": 5160.13,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-26",
+    "description": "MED SURG BED DAILY",
+    "qty": 2,
+    "unitPrice": 3429.95,
+    "amount": 6859.9,
+    "revCode": "0121"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-26",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 187.13,
+    "amount": 187.13,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-26",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 37.86,
+    "amount": 37.86,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-26",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 37.7,
+    "amount": 37.7,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-27",
+    "description": "LACTIC ACID D/C'D",
+    "qty": 1,
+    "unitPrice": 117,
+    "amount": 117,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-28",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 35.92,
+    "amount": 35.92,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-28",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 89.58,
+    "amount": 89.58,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-26",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 72.9,
+    "amount": 145.8,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-04-28",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 58.17,
+    "amount": 116.34,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-04-28",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 119.95,
+    "amount": 119.95,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L12",
+    "date": "2026-04-27",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 161.23,
+    "amount": 322.46,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L13",
+    "date": "2026-04-28",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 96.93,
+    "amount": 193.86,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L14",
+    "date": "2026-04-26",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 50.98,
+    "amount": 50.98,
+    "revCode": "0272"
+   },
+   {
+    "id": "L15",
+    "date": "2026-04-26",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 55.64,
+    "amount": 55.64,
+    "revCode": "0270"
+   },
+   {
+    "id": "L16",
+    "date": "2026-04-26",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 39.26,
+    "amount": 39.26,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-05-12",
+  "firstBillDate": "2026-05-14",
+  "state": "AZ",
+  "hospitalCcn": "990104",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 13569.51,
+   "allowed": 8340.1,
+   "planPaid": 6374.61,
+   "deductible": 979.42,
+   "copay": 250,
+   "coinsurance": 736.07,
+   "patientResponsibility": 1965.49,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1988.61,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2643.66,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 72.12,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 14.59,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 14.53,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 45.09,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 13.84,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 34.52,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 56.19,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 44.84,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 46.23,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 124.27,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 74.71,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 19.65,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 21.44,
+     "lineId": "L15"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 15.12,
+     "lineId": "L16"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 979.42
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 736.07
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 250
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L06"
+   ]
+  }
+ ],
+ "plants": [
+  "CANC-01"
+ ],
+ "tags": [
+  "hn:eob-prepaid",
+  "plant:CANC-01:keyword",
+  "variant:eob-line-level-co"
+ ]
+}

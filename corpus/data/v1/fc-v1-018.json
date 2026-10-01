@@ -1,0 +1,475 @@
+{
+ "id": "fc-v1-018",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20403543,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 018",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0100629",
+   "admitDate": "2026-05-13",
+   "dischargeDate": "2026-05-18",
+   "totalCharges": 16958.27,
+   "statementDate": "2026-06-16",
+   "payments": 3568.79,
+   "adjustments": 11095.72,
+   "balanceDue": 2293.76
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-13",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 5,
+    "unitPrice": 2464.88,
+    "amount": 12324.4,
+    "revCode": "0120"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-13",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 177.24,
+    "amount": 177.24,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-14",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 81.07,
+    "amount": 81.07,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-14",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 74.56,
+    "amount": 74.56,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-15",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 161.93,
+    "amount": 161.93,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-15",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 142.19,
+    "amount": 142.19,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-15",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 116.17,
+    "amount": 116.17,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-16",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 174.35,
+    "amount": 174.35,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L09",
+    "date": "2026-05-17",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 82.01,
+    "amount": 82.01,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2026-05-17",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 49.3,
+    "amount": 49.3,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L11",
+    "date": "2026-05-18",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 117.24,
+    "amount": 117.24,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-05-18",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 100.18,
+    "amount": 100.18,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2026-05-18",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 99.09,
+    "amount": 99.09,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L14",
+    "date": "2026-05-15",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 76.08,
+    "amount": 152.16,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2026-05-18",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 24.03,
+    "amount": 120.15,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2026-05-13",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 2774.07,
+    "amount": 2774.07,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L17",
+    "date": "2026-05-13",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 27.64,
+    "amount": 27.64,
+    "revCode": "0270"
+   },
+   {
+    "id": "L18",
+    "date": "2026-05-13",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 178.04,
+    "amount": 178.04,
+    "revCode": "0270"
+   },
+   {
+    "id": "L19",
+    "date": "2026-05-13",
+    "description": "METOPROLOL TART 25MG TAB",
+    "qty": 3,
+    "unitPrice": 2.16,
+    "amount": 6.48,
+    "revCode": "0250",
+    "ndc": "41989999129"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-05-23",
+  "firstBillDate": "2026-06-09",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 16958.27,
+   "allowed": 5862.55,
+   "planPaid": 3541,
+   "deductible": 803.98,
+   "copay": 0,
+   "coinsurance": 1517.57,
+   "patientResponsibility": 2321.55,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 8063.8,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 115.97,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 53.04,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 48.78,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 105.95,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 93.03,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 76.01,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 114.08,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 53.66,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 32.26,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 76.71,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 65.55,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 64.83,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 99.56,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 78.61,
+     "lineId": "L15"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1815.06,
+     "lineId": "L16"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 18.08,
+     "lineId": "L17"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 116.49,
+     "lineId": "L18"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 4.25,
+     "lineId": "L19"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 803.98
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1517.57
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "41989999129": {
+    "unitPrice": 0.055732000000000004,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "L19"
+   ]
+  }
+ ],
+ "plants": [
+  "RX-01"
+ ],
+ "tags": [
+  "hn:eob-prepaid",
+  "plant:RX-01",
+  "variant:eob-line-level-co"
+ ]
+}

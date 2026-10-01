@@ -1,0 +1,327 @@
+{
+ "id": "fc-v1-124",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21242957,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 124",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0104551",
+   "admitDate": "2026-07-27",
+   "dischargeDate": "2026-07-28",
+   "totalCharges": 7992.81,
+   "statementDate": "2026-09-03",
+   "payments": 145.84,
+   "adjustments": 1881.69,
+   "balanceDue": 5965.28
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-27",
+    "description": "ED VISIT LVL 3",
+    "qty": 1,
+    "unitPrice": 1534.22,
+    "amount": 1534.22,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-27",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 197.84,
+    "amount": 197.84,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-27",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 39.91,
+    "amount": 39.91,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-27",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 53.83,
+    "amount": 53.83,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-27",
+    "description": "CAPILLARY BLOOD DRAW",
+    "qty": 1,
+    "unitPrice": 12.12,
+    "amount": 12.12,
+    "code": "36416",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-27",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 510.23,
+    "amount": 510.23,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-27",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 574.25,
+    "amount": 574.25,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-27",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 402.79,
+    "amount": 402.79,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "XU"
+    ]
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-27",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 209.68,
+    "amount": 209.68,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-27",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 118.37,
+    "amount": 118.37,
+    "revCode": "0270"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-27",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 20,
+    "unitPrice": 152.48,
+    "amount": 3049.6,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-28",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 13,
+    "unitPrice": 79.37,
+    "amount": 1031.81,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2026-07-28",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 116.24,
+    "amount": 116.24,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2026-07-28",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 141.92,
+    "amount": 141.92,
+    "code": "87040",
+    "revCode": "0306"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-08-15",
+  "firstBillDate": "2026-08-08",
+  "state": "AZ",
+  "hospitalCcn": "990104"
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "36416": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   },
+   {
+    "col1": "36415",
+    "col2": "36416",
+    "mi": 9,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:ncci-mi1-59",
+  "hn:obs-room-hours",
+  "hn:ncci-mi9"
+ ]
+}

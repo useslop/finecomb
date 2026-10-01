@@ -1,0 +1,231 @@
+{
+ "id": "fc-v1-082",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20910359,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 082",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0102997",
+   "admitDate": "2025-12-10",
+   "dischargeDate": "2025-12-10",
+   "totalCharges": 7114.92,
+   "statementDate": "2026-01-13",
+   "payments": 3689.33,
+   "adjustments": 2515.2,
+   "balanceDue": 910.39
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-12-10",
+    "description": "ER VISIT LEVEL 5",
+    "qty": 1,
+    "unitPrice": 2608.71,
+    "amount": 2608.71,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-12-10",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 3402.18,
+    "amount": 3402.18,
+    "revCode": "0121"
+   },
+   {
+    "id": "L03",
+    "date": "2025-12-10",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 56.01,
+    "amount": 56.01,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-12-10",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 177.15,
+    "amount": 177.15,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2025-12-10",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 182.96,
+    "amount": 365.92,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L06",
+    "date": "2025-12-10",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 39.02,
+    "amount": 39.02,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2025-12-10",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 80.36,
+    "amount": 160.72,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2025-12-10",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 18.54,
+    "amount": 92.7,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2025-12-10",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 125.75,
+    "amount": 125.75,
+    "revCode": "0272"
+   },
+   {
+    "id": "L10",
+    "date": "2025-12-10",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 86.76,
+    "amount": 86.76,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-12-18",
+  "firstBillDate": "2025-12-30",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "collections": [
+   {
+    "date": "2026-01-10",
+    "kind": "late_fee"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:eca-late-fee",
+  "hn:ins-paid-no-eob",
+  "hn:same-day-admit-discharge"
+ ]
+}

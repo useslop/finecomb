@@ -1,0 +1,160 @@
+{
+ "id": "fc-v1-293",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22581268,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 293",
+   "providerName": "Sample Family Clinic",
+   "accountNumber": "TEST-0110804",
+   "totalCharges": 816.35,
+   "statementDate": "2025-01-15",
+   "payments": 260.27,
+   "adjustments": 0,
+   "balanceDue": 556.08
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2024-12-16",
+    "description": "OFFICE VISIT EST LEVEL 3",
+    "qty": 1,
+    "unitPrice": 283.99,
+    "amount": 283.99,
+    "code": "99213"
+   },
+   {
+    "id": "L02",
+    "date": "2024-12-16",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 142.81,
+    "amount": 142.81,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L03",
+    "date": "2024-12-16",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 142.81,
+    "amount": 142.81,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L04",
+    "date": "2024-12-16",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 177.85,
+    "amount": 177.85,
+    "code": "85025"
+   },
+   {
+    "id": "L05",
+    "date": "2024-12-16",
+    "description": "BLOOD COUNT COMPLETE NO DIFF",
+    "qty": 1,
+    "unitPrice": 68.89,
+    "amount": 68.89,
+    "code": "85027"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "firstBillDate": "2025-01-10",
+  "state": "KS",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 500
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85027": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99213": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "85025",
+    "col2": "85027",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L04",
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01",
+  "NCCI-01"
+ ],
+ "tags": [
+  "hn:cr-legit",
+  "hn:bilateral",
+  "variant:bilateral-same-price",
+  "plant:NCCI-01:mi0",
+  "plant:MCD-01:no-eob",
+  "variant:medicaid-no-eob"
+ ]
+}

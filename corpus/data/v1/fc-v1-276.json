@@ -1,0 +1,164 @@
+{
+ "id": "fc-v1-276",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22446645,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 276",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0110175",
+   "totalCharges": 1261.71,
+   "statementDate": "2026-06-14",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 1261.71
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-15",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 362.23,
+    "amount": 362.23,
+    "code": "99214"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-15",
+    "description": "OFFICE VISIT EST LEVEL 4 ADDL",
+    "qty": 1,
+    "unitPrice": 362.23,
+    "amount": 362.23,
+    "code": "99214"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-15",
+    "description": "STREP TEST RAPID",
+    "qty": 1,
+    "unitPrice": 79.13,
+    "amount": 79.13,
+    "code": "87880",
+    "notReceived": true
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-15",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 229.06,
+    "amount": 229.06,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-15",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 229.06,
+    "amount": 229.06,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "firstBillDate": "2026-05-25",
+  "state": "TX",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "onCreditReport": false,
+  "paidInFull": true,
+  "originalBalance": 1643.07
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87880": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L01",
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L01",
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L01",
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L02"
+   ]
+  },
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01",
+  "DUP-02",
+  "CANC-01"
+ ],
+ "tags": [
+  "hn:cr-not-reported",
+  "hn:bilateral",
+  "variant:bilateral-same-price",
+  "plant:DUP-02:desc",
+  "plant:CANC-01:user-marked"
+ ]
+}

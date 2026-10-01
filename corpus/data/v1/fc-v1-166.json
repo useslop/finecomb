@@ -1,0 +1,166 @@
+{
+ "id": "fc-v1-166",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21575555,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 166",
+   "providerName": "Example Outpatient Imaging Center",
+   "accountNumber": "TEST-0106105",
+   "totalCharges": 2488.57,
+   "statementDate": "2026-08-07",
+   "payments": 256.13,
+   "adjustments": 0,
+   "balanceDue": 2232.44
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-03",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2312.83,
+    "amount": 2312.83,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-03",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 59.26,
+    "amount": 59.26,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-03",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 116.48,
+    "amount": 116.48,
+    "code": "84484",
+    "revCode": "0301",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-03",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 116.48,
+    "amount": 116.48,
+    "code": "84484",
+    "revCode": "0301",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-03",
+    "description": "TROPONIN QUANT",
+    "qty": -1,
+    "unitPrice": 116.48,
+    "amount": -116.48,
+    "code": "84484",
+    "revCode": "0301",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-03",
+    "description": "IV BAG NOT GIVEN",
+    "qty": 1,
+    "unitPrice": 31.51,
+    "amount": 31.51,
+    "revCode": "0250"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-03",
+    "description": "IV BAG NOT GIVEN",
+    "qty": -1,
+    "unitPrice": 31.51,
+    "amount": -31.51,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-07-09",
+  "firstBillDate": "2026-04-28",
+  "state": "AL",
+  "ppdrFiledDate": "2026-08-06",
+  "collections": [
+   {
+    "date": "2026-08-18",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01"
+ ],
+ "tags": [
+  "hn:cancel-reversed",
+  "hn:credit-reversal",
+  "variant:sched-imaging",
+  "variant:credit:negqty",
+  "variant:cancel-credit:negqty",
+  "plant:PPDR-01"
+ ]
+}

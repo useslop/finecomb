@@ -1,0 +1,360 @@
+{
+ "id": "fc-v1-020",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20419381,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 020",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0100703",
+   "admitDate": "2025-10-29",
+   "dischargeDate": "2025-11-01",
+   "totalCharges": 16884.47,
+   "statementDate": "2025-12-05",
+   "payments": 4008.06,
+   "adjustments": 12876.41,
+   "balanceDue": 0
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-10-29",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 2440.48,
+    "amount": 2440.48,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-10-29",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 3326.42,
+    "amount": 3326.42,
+    "revCode": "0121"
+   },
+   {
+    "id": "L03",
+    "date": "2025-10-30",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 3326.42,
+    "amount": 3326.42,
+    "revCode": "0121"
+   },
+   {
+    "id": "L04",
+    "date": "2025-10-31",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 3326.42,
+    "amount": 3326.42,
+    "revCode": "0121"
+   },
+   {
+    "id": "L05",
+    "date": "2025-10-29",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 51.44,
+    "amount": 51.44,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2025-10-29",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 116.5,
+    "amount": 116.5,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L07",
+    "date": "2025-10-29",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 130.82,
+    "amount": 130.82,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2025-10-30",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 72.75,
+    "amount": 72.75,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L09",
+    "date": "2025-10-30",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 60.09,
+    "amount": 60.09,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2025-10-30",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 214.63,
+    "amount": 214.63,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2025-10-31",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 48.6,
+    "amount": 48.6,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2025-10-31",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 36.2,
+    "amount": 36.2,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L13",
+    "date": "2025-10-31",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 12.78,
+    "amount": 89.46,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2025-11-01",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 9,
+    "unitPrice": 22.38,
+    "amount": 201.42,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2025-10-30",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 48.68,
+    "amount": 48.68,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2025-10-29",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 26.34,
+    "amount": 105.36,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L17",
+    "date": "2025-10-29",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 71.01,
+    "amount": 71.01,
+    "revCode": "0270"
+   },
+   {
+    "id": "L18",
+    "date": "2025-10-29",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 116.48,
+    "amount": 116.48,
+    "revCode": "0270"
+   },
+   {
+    "id": "L19",
+    "date": "2025-10-29",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 3,
+    "unitPrice": 1000.43,
+    "amount": 3001.29,
+    "revCode": "0731"
+   },
+   {
+    "id": "L20",
+    "date": "2025-10-29",
+    "description": "PHARMACY MISC",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-11-12",
+  "firstBillDate": "2025-11-23",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "collections": [
+   {
+    "date": "2026-05-09",
+    "kind": "lawsuit",
+    "noticeDate": "2026-03-18"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:eca-proper",
+  "hn:rounding",
+  "hn:repeat-mod",
+  "hn:telemetry-monitor",
+  "variant:medicaid-no-eob"
+ ]
+}

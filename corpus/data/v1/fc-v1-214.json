@@ -1,0 +1,130 @@
+{
+ "id": "fc-v1-214",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 21955667,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 214",
+   "providerName": "Example Urgent Care",
+   "accountNumber": "TEST-0107881",
+   "totalCharges": 1087.01,
+   "statementDate": "2026-07-06",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 1087.01
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-03",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 214.26,
+    "amount": 214.26,
+    "code": "99214",
+    "modifiers": [
+     "25"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-03",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 412.36,
+    "amount": 412.36,
+    "code": "20610",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-03",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 412.36,
+    "amount": 412.36,
+    "code": "20610",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-03",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 3,
+    "unitPrice": 16.01,
+    "amount": 48.03,
+    "code": "J3301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "firstBillDate": "2026-06-12",
+  "state": "AZ",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": []
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "20610",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "hn:ncci-mod25",
+  "variant:bilateral-same-price"
+ ]
+}

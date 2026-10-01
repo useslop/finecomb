@@ -1,0 +1,339 @@
+{
+ "id": "fc-v1-168",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21591393,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 168",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0106179",
+   "admitDate": "2026-03-05",
+   "dischargeDate": "2026-03-06",
+   "totalCharges": 9216.36,
+   "statementDate": "2026-03-26",
+   "payments": 2854.75,
+   "adjustments": 0,
+   "balanceDue": 6361.61
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-05",
+    "description": "EMERGENCY ROOM LVL 5",
+    "qty": 1,
+    "unitPrice": 4126.15,
+    "amount": 4126.15,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-05",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 47.48,
+    "amount": 47.48,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-05",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 117.82,
+    "amount": 117.82,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-05",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 89.99,
+    "amount": 89.99,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-05",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 56.27,
+    "amount": 56.27,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-05",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 106.28,
+    "amount": 106.28,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L07",
+    "date": "2026-03-05",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 697.49,
+    "amount": 697.49,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2026-03-05",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 2,
+    "unitPrice": 248.82,
+    "amount": 497.64,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2026-03-05",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 50.76,
+    "amount": 50.76,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-03-05",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 14.71,
+    "amount": 88.26,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-03-05",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 22,
+    "unitPrice": 99.58,
+    "amount": 2190.76,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L12",
+    "date": "2026-03-06",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 11,
+    "unitPrice": 79.04,
+    "amount": 948.48,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2026-03-06",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 184.27,
+    "amount": 184.27,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L14",
+    "date": "2026-03-05",
+    "description": "ONDANSETRON DISCARDED",
+    "qty": 1,
+    "unitPrice": 14.71,
+    "amount": 14.71,
+    "code": "J2405",
+    "revCode": "0636",
+    "modifiers": [
+     "JW"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-03-24",
+  "firstBillDate": "2026-03-20",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "collections": [
+   {
+    "date": "2026-09-12",
+    "kind": "credit_report",
+    "noticeDate": "2026-09-02"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L12"
+   ]
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "ECA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "ECA-01",
+  "MCD-01",
+  "MATH-01"
+ ],
+ "tags": [
+  "hn:hourly-overlap",
+  "hn:jw-waste",
+  "variant:jw-discarded",
+  "plant:MATH-01:extra-unit",
+  "variant:eob-line-level-co",
+  "plant:MCD-01:no-eob",
+  "variant:medicaid-no-eob",
+  "plant:ECA-01:short-notice"
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "id": "fc-v1-261",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22327860,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 261",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0109620",
+   "totalCharges": 3590.56,
+   "statementDate": "2026-05-10",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 3590.56
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-23",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 312.19,
+    "amount": 312.19,
+    "code": "99214"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-23",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 153.53,
+    "amount": 153.53,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-23",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 153.53,
+    "amount": 153.53,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-23",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2971.31,
+    "amount": 2971.31,
+    "code": "74177"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-06-18",
+  "state": "TN",
+  "ppdrFiledDate": "2026-09-15",
+  "collections": [
+   {
+    "date": "2026-09-09",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:ppdr-before",
+  "hn:bilateral",
+  "variant:bilateral-same-price"
+ ]
+}

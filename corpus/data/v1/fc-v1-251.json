@@ -1,0 +1,125 @@
+{
+ "id": "fc-v1-251",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 22248670,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 251",
+   "providerName": "Sample Emergency Physicians",
+   "accountNumber": "TEST-0109250",
+   "totalCharges": 1002.87,
+   "statementDate": "2026-09-07",
+   "payments": 303.26,
+   "adjustments": 0,
+   "balanceDue": 699.61
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-02",
+    "description": "EMERGENCY PHYSICIAN LEVEL 4",
+    "qty": 1,
+    "unitPrice": 952.31,
+    "amount": 952.31,
+    "code": "99284"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-02",
+    "description": "EKG INTERPRETATION",
+    "qty": 1,
+    "unitPrice": 50.56,
+    "amount": 50.56,
+    "code": "93010"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": false,
+  "emergency": true,
+  "firstBillDate": "2026-08-24",
+  "state": "TX",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "emergency medicine"
+  ],
+  "eob": {
+   "billed": 1002.87,
+   "allowed": 594.33,
+   "planPaid": 303.26,
+   "deductible": 90.25,
+   "copay": 100,
+   "coinsurance": 100.82,
+   "patientResponsibility": 291.07,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 408.54
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 90.25
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 100.82
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 100
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": true,
+  "originalBalance": 5660.47
+ },
+ "data": {
+  "mue": {
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-02",
+  "CR-01"
+ ],
+ "tags": [
+  "plant:CR-01:paid"
+ ]
+}

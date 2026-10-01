@@ -1,0 +1,200 @@
+{
+ "id": "fc-v1-204",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21876477,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 204",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0107511",
+   "totalCharges": 2427.56,
+   "statementDate": "2024-12-20",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 2427.56
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2024-12-10",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 245.16,
+    "amount": 245.16,
+    "code": "99214",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L02",
+    "date": "2024-12-10",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 133.9,
+    "amount": 133.9,
+    "code": "85025",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L03",
+    "date": "2024-12-10",
+    "description": "STREP TEST RAPID",
+    "qty": 1,
+    "unitPrice": 27.36,
+    "amount": 27.36,
+    "code": "87880",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L04",
+    "date": "2024-12-10",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 27.55,
+    "amount": 27.55,
+    "code": "81003",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L05",
+    "date": "2024-12-10",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 109.52,
+    "amount": 109.52,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ],
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L06",
+    "date": "2024-12-10",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 109.52,
+    "amount": 109.52,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ],
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L07",
+    "date": "2024-12-10",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 1774.55,
+    "amount": 1774.55,
+    "code": "74177",
+    "provider": "Sample Internal Medicine Group"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-07-15",
+  "state": "KS",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Sample Internal Medicine Group",
+    "total": 1444.43
+   }
+  ],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 975.71
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87880": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "GFE-01",
+   "lineIds": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05",
+    "L06",
+    "L07"
+   ]
+  }
+ ],
+ "plants": [
+  "GFE-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "hn:cr-legit",
+  "variant:bilateral-same-price",
+  "plant:GFE-01"
+ ]
+}

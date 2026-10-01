@@ -1,0 +1,323 @@
+{
+ "id": "fc-v1-070",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20815331,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 070",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0102553",
+   "admitDate": "2026-03-25",
+   "dischargeDate": "2026-03-25",
+   "totalCharges": 11471.31,
+   "statementDate": "2026-04-04",
+   "payments": 3568.61,
+   "adjustments": 6286.52,
+   "balanceDue": 1616.18
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-25",
+    "description": "MED SURG BED DAILY",
+    "qty": 2,
+    "unitPrice": 3675.35,
+    "amount": 11026.05,
+    "revCode": "0121"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-25",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 178.39,
+    "amount": 178.39,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-25",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 78.06,
+    "amount": 78.06,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-25",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 53.37,
+    "amount": 53.37,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-25",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 71.95,
+    "amount": 71.95,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-25",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 6.76,
+    "amount": 27.04,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-03-25",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 27.44,
+    "amount": 27.44,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-03-25",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 146.84,
+    "amount": 146.84,
+    "revCode": "0272"
+   },
+   {
+    "id": "L09",
+    "date": "2026-03-25",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 148.11,
+    "amount": 148.11,
+    "revCode": "0270"
+   },
+   {
+    "id": "L10",
+    "date": "2026-03-25",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 111.77,
+    "amount": 111.77,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-04-03",
+  "firstBillDate": "2026-04-15",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 11869.02,
+   "allowed": 5582.5,
+   "planPaid": 3568.61,
+   "deductible": 1339.6,
+   "copay": 250,
+   "coinsurance": 424.29,
+   "patientResponsibility": 2013.89,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 5840.04,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 94.49,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 41.35,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 28.27,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 38.11,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 14.32,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 14.53,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 77.77,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 78.45,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 59.19,
+     "lineId": "L10"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1339.6
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 424.29
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 250
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L01"
+   ]
+  },
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "RB-01",
+   "lineIds": [
+    "L01"
+   ]
+  }
+ ],
+ "plants": [
+  "MATH-02",
+  "RB-01",
+  "MATH-01"
+ ],
+ "tags": [
+  "hn:same-day-admit-discharge",
+  "plant:RB-01:extra-unit",
+  "plant:MATH-01:extra-unit",
+  "variant:eob-line-level-co",
+  "plant:MATH-02:total-off"
+ ]
+}

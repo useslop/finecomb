@@ -1,0 +1,216 @@
+{
+ "id": "fc-v1-246",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22209075,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 246",
+   "providerName": "Example Urgent Care",
+   "accountNumber": "TEST-0109065",
+   "totalCharges": 2395.62,
+   "statementDate": "2026-07-03",
+   "payments": 165.18,
+   "adjustments": 0,
+   "balanceDue": 2230.44
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-21",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 286.28,
+    "amount": 286.28,
+    "code": "99214",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-21",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 44.42,
+    "amount": 44.42,
+    "code": "36415",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-21",
+    "description": "FLU TEST RAPID",
+    "qty": 1,
+    "unitPrice": 44.01,
+    "amount": 44.01,
+    "code": "87804",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-21",
+    "description": "INJECTION IM OR SUBQ",
+    "qty": 1,
+    "unitPrice": 31.33,
+    "amount": 31.33,
+    "code": "96372",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-21",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 25.79,
+    "amount": 25.79,
+    "code": "J1885",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-21",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 135.78,
+    "amount": 135.78,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ],
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L07",
+    "date": "2026-06-21",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 135.78,
+    "amount": 135.78,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ],
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L08",
+    "date": "2026-06-21",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L09",
+    "date": "2026-06-21",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 1592.23,
+    "amount": 1592.23,
+    "code": "74177",
+    "provider": "Example Urgent Care"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-07-05",
+  "state": "OH",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Example Urgent Care",
+    "total": 2009.07
+   }
+  ],
+  "onCreditReport": false,
+  "paidInFull": true,
+  "originalBalance": 857.31
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "87804": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96372": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-399",
+  "hn:cr-not-reported",
+  "hn:bilateral",
+  "hn:rounding",
+  "variant:bilateral-same-price"
+ ]
+}

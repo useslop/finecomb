@@ -1,0 +1,328 @@
+{
+ "id": "fc-v1-034",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20530247,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 034",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0101221",
+   "admitDate": "2026-09-07",
+   "dischargeDate": "2026-09-08",
+   "totalCharges": 7367.96,
+   "statementDate": "2026-09-24",
+   "payments": 2830.86,
+   "adjustments": 3640.22,
+   "balanceDue": 896.88
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-09-07",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4956.29,
+    "amount": 4956.29,
+    "revCode": "0206"
+   },
+   {
+    "id": "L02",
+    "date": "2026-09-07",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 145.39,
+    "amount": 145.39,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-09-07",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 60.67,
+    "amount": 60.67,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-09-07",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 11.62,
+    "amount": 46.48,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L05",
+    "date": "2026-09-08",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 12.5,
+    "amount": 50,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-09-08",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 12.5,
+    "amount": 50,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L06",
+    "date": "2026-09-07",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 228.79,
+    "amount": 228.79,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L07",
+    "date": "2026-09-07",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 1216.66,
+    "amount": 1216.66,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L08",
+    "date": "2026-09-07",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 101.71,
+    "amount": 101.71,
+    "revCode": "0270"
+   },
+   {
+    "id": "L09",
+    "date": "2026-09-07",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 58.39,
+    "amount": 58.39,
+    "revCode": "0270"
+   },
+   {
+    "id": "L10",
+    "date": "2026-09-08",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 403.58,
+    "amount": 403.58,
+    "revCode": "0424"
+   },
+   {
+    "id": "L11",
+    "date": "2026-09-07",
+    "description": "PHARMACY MISC",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "revCode": "0250"
+   },
+   {
+    "id": "L13",
+    "date": "2026-09-08",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": -4,
+    "unitPrice": 12.5,
+    "amount": -50,
+    "code": "J1100",
+    "revCode": "0636"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-09-14",
+  "firstBillDate": "2026-09-27",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 7367.96,
+   "allowed": 3727.08,
+   "planPaid": 2830.86,
+   "deductible": 188.51,
+   "copay": 0,
+   "coinsurance": 707.71,
+   "patientResponsibility": 896.22,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2449.15,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 71.84,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 29.98,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 22.97,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 24.71,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 24.71,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 113.06,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 601.21,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 50.26,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 28.85,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 199.43,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 24.71,
+     "lineId": "L11"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 188.51
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 707.71
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:rounding",
+  "hn:eob-under-1",
+  "hn:credit-reversal",
+  "variant:credit:negqty",
+  "variant:eob-line-level-co"
+ ]
+}

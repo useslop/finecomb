@@ -1,0 +1,131 @@
+{
+ "id": "fc-v1-268",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22383293,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 268",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0109879",
+   "totalCharges": 831.96,
+   "statementDate": "2026-09-29",
+   "payments": 288.6,
+   "adjustments": 292.67,
+   "balanceDue": 250.69
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-09-10",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 382.18,
+    "amount": 382.18,
+    "code": "99214"
+   },
+   {
+    "id": "L02",
+    "date": "2026-09-10",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 449.78,
+    "amount": 449.78,
+    "code": "99214"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "firstBillDate": "2026-09-28",
+  "state": "IN",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 831.96,
+   "allowed": 290.6,
+   "planPaid": 288.6,
+   "deductible": 0,
+   "copay": 2,
+   "coinsurance": 0,
+   "patientResponsibility": 2,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 248.69,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 292.67,
+     "lineId": "L02"
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 2
+    }
+   ]
+  },
+  "onCreditReport": false,
+  "paidInFull": false,
+  "originalBalance": 2111.77
+ },
+ "data": {
+  "mue": {
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L01",
+    "L02"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L01",
+    "L02"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01",
+  "DUP-02"
+ ],
+ "tags": [
+  "hn:cr-not-reported",
+  "plant:DUP-02:price",
+  "variant:eob-line-level-co",
+  "plant:MCD-01:with-eob"
+ ]
+}

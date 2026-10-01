@@ -1,0 +1,142 @@
+{
+ "id": "fc-v1-181",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21694340,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 181",
+   "providerName": "Example Outpatient Imaging Center",
+   "accountNumber": "TEST-0106660",
+   "totalCharges": 7970.18,
+   "statementDate": "2026-07-08",
+   "payments": 168.4,
+   "adjustments": 0,
+   "balanceDue": 7801.78
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-27",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2406.56,
+    "amount": 2406.56,
+    "revCode": "0360",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-27",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1727.31,
+    "amount": 1727.31,
+    "revCode": "0710",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-27",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1530.49,
+    "amount": 1530.49,
+    "revCode": "0272",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-27",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1530.49,
+    "amount": 1530.49,
+    "revCode": "0272",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-27",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 23.32,
+    "amount": 186.56,
+    "code": "J2405",
+    "revCode": "0636",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-27",
+    "description": "ANESTHESIA SERVICES",
+    "qty": 1,
+    "unitPrice": 2119.26,
+    "amount": 2119.26,
+    "code": "00790",
+    "provider": "Sample Anesthesia Associates"
+   },
+   {
+    "id": "L07",
+    "date": "2026-06-27",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1530.49,
+    "amount": -1530.49,
+    "revCode": "0272",
+    "provider": "Example Outpatient Imaging Center"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-07-03",
+  "firstBillDate": "2026-07-02",
+  "state": "OH",
+  "ppdrFiledDate": "2026-08-14",
+  "collections": [
+   {
+    "date": "2026-08-21",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01"
+ ],
+ "tags": [
+  "hn:credit-reversal",
+  "variant:sched-surgery-2-providers",
+  "variant:credit:posqty",
+  "plant:PPDR-01"
+ ]
+}

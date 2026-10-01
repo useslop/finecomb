@@ -1,0 +1,317 @@
+{
+ "id": "fc-v1-172",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21623069,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 172",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0106327",
+   "totalCharges": 3019,
+   "statementDate": "2026-03-15",
+   "payments": 722.95,
+   "adjustments": 0,
+   "balanceDue": 2296.05
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-02-27",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 1,
+    "unitPrice": 1838.49,
+    "amount": 1838.49,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-02-27",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 103.97,
+    "amount": 103.97,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-02-27",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 37.6,
+    "amount": 37.6,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L09",
+    "date": "2026-02-27",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 37.6,
+    "amount": 37.6,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-02-27",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 18.4,
+    "amount": 18.4,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-02-27",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 264.6,
+    "amount": 264.6,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L06",
+    "date": "2026-02-27",
+    "description": "IV PUSH EACH ADDL DRUG",
+    "qty": 1,
+    "unitPrice": 153.46,
+    "amount": 153.46,
+    "code": "96375",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-02-27",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 6,
+    "unitPrice": 77.48,
+    "amount": 464.88,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-02-27",
+    "description": "PHARMACY MISC",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-03-05",
+  "firstBillDate": "2026-03-22",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 3019,
+   "allowed": 725.95,
+   "planPaid": 722.95,
+   "deductible": 0,
+   "copay": 3,
+   "coinsurance": 0,
+   "patientResponsibility": 3,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1396.41,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 78.97,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 28.56,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 28.56,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 13.98,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 200.97,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 116.56,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 353.1,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 75.94,
+     "lineId": "L08"
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 3
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-04-12",
+    "kind": "late_fee"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96375": {
+    "practitioner": {
+     "mue": 6,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 6,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L03",
+    "L09"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01",
+  "DUP-01"
+ ],
+ "tags": [
+  "hn:eca-late-fee",
+  "hn:rounding",
+  "plant:DUP-01",
+  "variant:eob-line-level-co",
+  "plant:MCD-01:with-eob"
+ ]
+}

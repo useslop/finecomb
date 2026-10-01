@@ -1,0 +1,209 @@
+{
+ "id": "fc-v1-206",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 21892315,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 206",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0107585",
+   "totalCharges": 1321.44,
+   "statementDate": "2026-05-19",
+   "payments": 142.96,
+   "adjustments": 0,
+   "balanceDue": 1178.48
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-09",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 375.52,
+    "amount": 375.52,
+    "code": "99214",
+    "modifiers": [
+     "25"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-09",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 357.88,
+    "amount": 357.88,
+    "code": "20610",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-09",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 178.94,
+    "amount": 178.94,
+    "code": "20610",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-09",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 9,
+    "unitPrice": 22.11,
+    "amount": 198.99,
+    "code": "J3301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-09",
+    "description": "OFFICE VISIT EST LEVEL 3",
+    "qty": 1,
+    "unitPrice": 210.11,
+    "amount": 210.11,
+    "code": "99213"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "firstBillDate": "2026-04-18",
+  "state": "TX",
+  "insurerName": "Example Benefit Trust",
+  "eob": {
+   "billed": 1321.44,
+   "allowed": 688.21,
+   "planPaid": 142.96,
+   "deductible": 447.01,
+   "copay": 50,
+   "coinsurance": 48.24,
+   "patientResponsibility": 545.25,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 633.23
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 447.01
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 48.24
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "99213": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "20610",
+    "col2": "99213",
+    "mi": 1,
+    "effective": "2020-01-01"
+   },
+   {
+    "col1": "20610",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L02",
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L03",
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MUE-01",
+  "NCCI-01",
+  "EOB-02"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "hn:ncci-mod25",
+  "variant:bilateral-discounted",
+  "plant:MUE-01",
+  "plant:NCCI-01:mi1-no-modifier",
+  "plant:EOB-02:co-billed"
+ ]
+}

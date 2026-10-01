@@ -1,0 +1,369 @@
+{
+ "id": "fc-v1-030",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20498571,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 030",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0101073",
+   "admitDate": "2025-08-24",
+   "dischargeDate": "2025-08-26",
+   "totalCharges": 31108.83,
+   "statementDate": "2025-09-12",
+   "payments": 8466.43,
+   "adjustments": 18413.38,
+   "balanceDue": 4229.02
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-08-24",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 3839.22,
+    "amount": 3839.22,
+    "revCode": "0206"
+   },
+   {
+    "id": "L02",
+    "date": "2025-08-25",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 3839.22,
+    "amount": 3839.22,
+    "revCode": "0206"
+   },
+   {
+    "id": "L19",
+    "date": "2025-08-26",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 3839.22,
+    "amount": 3839.22,
+    "revCode": "0206"
+   },
+   {
+    "id": "L03",
+    "date": "2025-08-25",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 3075,
+    "amount": 3075,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2025-08-25",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 7,
+    "unitPrice": 949.92,
+    "amount": 6649.44,
+    "revCode": "0360"
+   },
+   {
+    "id": "L05",
+    "date": "2025-08-25",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1565.24,
+    "amount": 1565.24,
+    "revCode": "0710"
+   },
+   {
+    "id": "L06",
+    "date": "2025-08-25",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1456.76,
+    "amount": 1456.76,
+    "revCode": "0370"
+   },
+   {
+    "id": "L07",
+    "date": "2025-08-25",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1522.86,
+    "amount": 1522.86,
+    "revCode": "0272"
+   },
+   {
+    "id": "L08",
+    "date": "2025-08-24",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 54.69,
+    "amount": 54.69,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L09",
+    "date": "2025-08-24",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 73.93,
+    "amount": 73.93,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2025-08-24",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 20.38,
+    "amount": 20.38,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2025-08-25",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 124.87,
+    "amount": 124.87,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2025-08-24",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 64.93,
+    "amount": 64.93,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2025-08-25",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 62.42,
+    "amount": 62.42,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2025-08-24",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 8,
+    "unitPrice": 99.35,
+    "amount": 794.8,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2025-08-24",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 505.54,
+    "amount": 505.54,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L20",
+    "date": "2025-08-24",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 505.54,
+    "amount": 505.54,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L16",
+    "date": "2025-08-24",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 77.49,
+    "amount": 77.49,
+    "revCode": "0270"
+   },
+   {
+    "id": "L17",
+    "date": "2025-08-24",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 2,
+    "unitPrice": 1180.02,
+    "amount": 2360.04,
+    "revCode": "0731"
+   },
+   {
+    "id": "L18",
+    "date": "2025-08-25",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 677.24,
+    "amount": 677.24,
+    "revCode": "0424"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2025-09-07",
+  "firstBillDate": "2025-09-02",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 31108.83,
+   "allowed": 12695.45,
+   "planPaid": 8466.43,
+   "deductible": 2112.41,
+   "copay": 0,
+   "coinsurance": 2116.61,
+   "patientResponsibility": 4229.02,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 18413.38
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 2112.41
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 2116.61
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2025-11-22",
+    "kind": "credit_report"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L15",
+    "L20"
+   ]
+  },
+  {
+   "ruleId": "RB-01",
+   "lineIds": [
+    "L01",
+    "L02",
+    "L19"
+   ]
+  }
+ ],
+ "plants": [
+  "RB-01",
+  "DUP-01"
+ ],
+ "tags": [
+  "hn:eca-forprofit",
+  "hn:telemetry-monitor",
+  "plant:RB-01:discharge-day-line",
+  "plant:DUP-01"
+ ]
+}

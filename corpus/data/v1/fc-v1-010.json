@@ -1,0 +1,383 @@
+{
+ "id": "fc-v1-010",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20340191,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 010",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0100333",
+   "admitDate": "2026-07-09",
+   "dischargeDate": "2026-07-12",
+   "totalCharges": 24311.98,
+   "statementDate": "2026-08-17",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 24311.98
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-09",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 1,
+    "unitPrice": 1651.16,
+    "amount": 1651.16,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-09",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 2652.33,
+    "amount": 2652.33,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-10",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 2652.33,
+    "amount": 2652.33,
+    "revCode": "0110"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-11",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 2652.33,
+    "amount": 2652.33,
+    "revCode": "0110"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-10",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 5243.21,
+    "amount": 5243.21,
+    "revCode": "0360"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-10",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 5,
+    "unitPrice": 603.55,
+    "amount": 3017.75,
+    "revCode": "0360"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-10",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1760.19,
+    "amount": 1760.19,
+    "revCode": "0710"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-10",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1797.66,
+    "amount": 1797.66,
+    "revCode": "0370"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-10",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 989.78,
+    "amount": 989.78,
+    "revCode": "0272"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-09",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 169.73,
+    "amount": 169.73,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L24",
+    "date": "2026-07-09",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 169.73,
+    "amount": 169.73,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-10",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 101.83,
+    "amount": 101.83,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-10",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 71.8,
+    "amount": 71.8,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2026-07-11",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 82.44,
+    "amount": 82.44,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2026-07-11",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 113.8,
+    "amount": 113.8,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L15",
+    "date": "2026-07-11",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 174.75,
+    "amount": 174.75,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L16",
+    "date": "2026-07-10",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 34.53,
+    "amount": 241.71,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L17",
+    "date": "2026-07-11",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 7.24,
+    "amount": 36.2,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L18",
+    "date": "2026-07-12",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 91,
+    "amount": 91,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L19",
+    "date": "2026-07-10",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 151.64,
+    "amount": 151.64,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L20",
+    "date": "2026-07-12",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 24.18,
+    "amount": 48.36,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L21",
+    "date": "2026-07-09",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 322.59,
+    "amount": 322.59,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L22",
+    "date": "2026-07-09",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 90.09,
+    "amount": 90.09,
+    "revCode": "0270"
+   },
+   {
+    "id": "L23",
+    "date": "2026-07-09",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 199.3,
+    "amount": 199.3,
+    "revCode": "0270"
+   },
+   {
+    "id": "L25",
+    "date": "2026-07-09",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 169.73,
+    "amount": -169.73,
+    "code": "80053",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-07-20",
+  "firstBillDate": "2026-08-04",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Example Health Plan"
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01"
+ ],
+ "tags": [
+  "hn:repeat-mod",
+  "hn:credit-reversal",
+  "variant:credit:posqty"
+ ]
+}

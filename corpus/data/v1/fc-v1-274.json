@@ -1,0 +1,121 @@
+{
+ "id": "fc-v1-274",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22430807,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 274",
+   "providerName": "Sample Family Clinic",
+   "accountNumber": "TEST-0110101",
+   "totalCharges": 3393.79,
+   "statementDate": "2026-08-03",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 3393.79
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-23",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 155.98,
+    "amount": 155.98,
+    "code": "99214",
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-23",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 209.61,
+    "amount": 209.61,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ],
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-23",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 209.61,
+    "amount": 209.61,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ],
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-23",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2818.59,
+    "amount": 2818.59,
+    "code": "74177",
+    "provider": "Sample Family Clinic"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-08-05",
+  "state": "IN",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Sample Family Clinic",
+    "total": 3009.05
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-399",
+  "hn:bilateral",
+  "variant:bilateral-same-price"
+ ]
+}

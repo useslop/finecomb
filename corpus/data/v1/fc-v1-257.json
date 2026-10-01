@@ -1,0 +1,150 @@
+{
+ "id": "fc-v1-257",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22296184,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 257",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0109472",
+   "totalCharges": 568.15,
+   "statementDate": "2024-12-07",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 568.15
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2024-11-19",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 1,
+    "unitPrice": 173.3,
+    "amount": 173.3,
+    "code": "99204"
+   },
+   {
+    "id": "L05",
+    "date": "2024-11-19",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 1,
+    "unitPrice": 173.3,
+    "amount": 173.3,
+    "code": "99204"
+   },
+   {
+    "id": "L02",
+    "date": "2024-11-19",
+    "description": "STREP TEST RAPID",
+    "qty": 1,
+    "unitPrice": 63.32,
+    "amount": 63.32,
+    "code": "87880"
+   },
+   {
+    "id": "L03",
+    "date": "2024-11-19",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 58.23,
+    "amount": 58.23,
+    "code": "36415"
+   },
+   {
+    "id": "L04",
+    "date": "2024-11-19",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402",
+    "notReceived": true
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "firstBillDate": "2024-12-11",
+  "state": "KS",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 893.45
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "87880": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99204": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L01",
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L01",
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01",
+  "CANC-01",
+  "DUP-01"
+ ],
+ "tags": [
+  "hn:cr-legit",
+  "hn:rounding",
+  "plant:CANC-01:user-marked",
+  "plant:DUP-01"
+ ]
+}

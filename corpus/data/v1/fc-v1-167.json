@@ -1,0 +1,261 @@
+{
+ "id": "fc-v1-167",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21583474,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 167",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0106142",
+   "admitDate": "2026-02-28",
+   "dischargeDate": "2026-02-28",
+   "totalCharges": 2851.11,
+   "statementDate": "2026-03-31",
+   "payments": 254.89,
+   "adjustments": 1811.32,
+   "balanceDue": 784.9
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-02-28",
+    "description": "EMERGENCY ROOM LVL 3",
+    "qty": 1,
+    "unitPrice": 1715.34,
+    "amount": 1715.34,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-02-28",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 119.19,
+    "amount": 119.19,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-02-28",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 64.43,
+    "amount": 64.43,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-02-28",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 172.73,
+    "amount": 172.73,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-02-28",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 53.89,
+    "amount": 53.89,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L06",
+    "date": "2026-02-28",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 2,
+    "unitPrice": 51.4,
+    "amount": 102.8,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-02-28",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 302.43,
+    "amount": 302.43,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2026-02-28",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 103.88,
+    "amount": 207.76,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L09",
+    "date": "2026-02-28",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 112.54,
+    "amount": 112.54,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-03-10",
+  "firstBillDate": "2026-03-22",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 2851.11,
+   "allowed": 1039.79,
+   "planPaid": 254.89,
+   "deductible": 721.18,
+   "copay": 0,
+   "coinsurance": 63.72,
+   "patientResponsibility": 784.9,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 1811.32
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 721.18
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 63.72
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-07-18",
+    "kind": "lawsuit",
+    "noticeDate": "2026-06-08"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:nsa-compliant",
+  "hn:eca-proper",
+  "hn:mue-setting"
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "id": "fc-v1-264",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22351617,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 264",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0109731",
+   "totalCharges": 2893.34,
+   "statementDate": "2025-07-17",
+   "payments": 0,
+   "adjustments": 514.66,
+   "balanceDue": 2378.68
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-06-21",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 264.21,
+    "amount": 264.21,
+    "code": "99214",
+    "provider": "Sample Orthopedic Clinic"
+   },
+   {
+    "id": "L02",
+    "date": "2025-06-21",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 36.92,
+    "amount": 36.92,
+    "code": "81003",
+    "provider": "Sample Orthopedic Clinic"
+   },
+   {
+    "id": "L03",
+    "date": "2025-06-21",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402",
+    "provider": "Sample Orthopedic Clinic"
+   },
+   {
+    "id": "L04",
+    "date": "2025-06-21",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2492.21,
+    "amount": 2492.21,
+    "code": "74177",
+    "provider": "Sample Orthopedic Clinic"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-05-16",
+  "state": "GA",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Sample Orthopedic Clinic",
+    "total": 1202.01
+   }
+  ],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 1629.18
+ },
+ "data": {
+  "mue": {
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-121-days",
+  "hn:rounding",
+  "hn:cr-legit"
+ ]
+}

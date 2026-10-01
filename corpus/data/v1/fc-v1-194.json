@@ -1,0 +1,310 @@
+{
+ "id": "fc-v1-194",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21797287,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 194",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0107141",
+   "totalCharges": 8198.07,
+   "statementDate": "2026-04-08",
+   "payments": 2818.47,
+   "adjustments": 3590,
+   "balanceDue": 1789.6
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-25",
+    "description": "EMERGENCY ROOM LVL 5",
+    "qty": 1,
+    "unitPrice": 4027.4,
+    "amount": 4027.4,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-25",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 41.94,
+    "amount": 41.94,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-25",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 51.7,
+    "amount": 51.7,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-25",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 3242.47,
+    "amount": 3242.47,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-25",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 254.08,
+    "amount": 254.08,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-25",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 7,
+    "unitPrice": 46.56,
+    "amount": 325.92,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-03-25",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 51.05,
+    "amount": 102.1,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-03-25",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 52.46,
+    "amount": 52.46,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-03-25",
+    "description": "PHARMACY MISC",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-04-05",
+  "firstBillDate": "2026-04-02",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 8198.07,
+   "allowed": 4608.07,
+   "planPaid": 2669.64,
+   "deductible": 437.15,
+   "copay": 250,
+   "coinsurance": 1251.28,
+   "patientResponsibility": 1938.43,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1763.63,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 18.37,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 22.64,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1419.9,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 111.26,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 142.72,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 44.71,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 22.97,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 43.8,
+     "lineId": "L09"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 437.15
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1251.28
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 250
+    }
+   ]
+  },
+  "onCreditReport": false,
+  "paidInFull": true,
+  "originalBalance": 1543.6
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:eob-prepaid",
+  "hn:rounding",
+  "hn:cr-not-reported",
+  "variant:eob-line-level-co"
+ ]
+}

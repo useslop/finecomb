@@ -1,0 +1,331 @@
+{
+ "id": "fc-v1-059",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20728222,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 059",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0102146",
+   "admitDate": "2025-08-16",
+   "dischargeDate": "2025-08-18",
+   "totalCharges": 26499.9,
+   "statementDate": "2025-09-08",
+   "payments": 0,
+   "adjustments": 5743.9,
+   "balanceDue": 20756
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-08-16",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 2,
+    "unitPrice": 3186.46,
+    "amount": 6372.92,
+    "revCode": "0120"
+   },
+   {
+    "id": "L02",
+    "date": "2025-08-17",
+    "description": "OPERATING ROOM FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 3444.37,
+    "amount": 3444.37,
+    "revCode": "0360"
+   },
+   {
+    "id": "L03",
+    "date": "2025-08-17",
+    "description": "OPERATING ROOM EA ADDL 15 MIN",
+    "qty": 7,
+    "unitPrice": 1012.41,
+    "amount": 7086.87,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2025-08-17",
+    "description": "RECOVERY ROOM FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1885.49,
+    "amount": 1885.49,
+    "revCode": "0710"
+   },
+   {
+    "id": "L05",
+    "date": "2025-08-17",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1206.97,
+    "amount": 1206.97,
+    "revCode": "0370"
+   },
+   {
+    "id": "L06",
+    "date": "2025-08-17",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1646.12,
+    "amount": 1646.12,
+    "revCode": "0272"
+   },
+   {
+    "id": "L07",
+    "date": "2025-08-16",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 56.43,
+    "amount": 56.43,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2025-08-16",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 36.31,
+    "amount": 36.31,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2025-08-17",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 89.64,
+    "amount": 89.64,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L10",
+    "date": "2025-08-17",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 44.99,
+    "amount": 44.99,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2025-08-16",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 17.51,
+    "amount": 35.02,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2025-08-18",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 29.63,
+    "amount": 148.15,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2025-08-16",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 26.39,
+    "amount": 131.95,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2025-08-17",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 31.22,
+    "amount": 124.88,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2025-08-18",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 102.13,
+    "amount": 510.65,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2025-08-18",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 7.52,
+    "amount": 37.6,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L17",
+    "date": "2025-08-16",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 3314.11,
+    "amount": 3314.11,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L18",
+    "date": "2025-08-16",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 205.72,
+    "amount": 205.72,
+    "revCode": "0270"
+   },
+   {
+    "id": "L19",
+    "date": "2025-08-16",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 121.71,
+    "amount": 121.71,
+    "revCode": "0272"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2025-09-01",
+  "firstBillDate": "2025-08-27",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "collections": [
+   {
+    "date": "2026-03-19",
+    "kind": "wage_garnishment",
+    "noticeDate": "2026-03-07"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "ECA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "ECA-01"
+ ],
+ "tags": [
+  "hn:room-word",
+  "hn:repeat-mod",
+  "plant:ECA-01:short-notice"
+ ]
+}

@@ -1,0 +1,155 @@
+{
+ "id": "fc-v1-111",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21140010,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 111",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0104070",
+   "totalCharges": 7190.04,
+   "statementDate": "2026-09-05",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 7190.04
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-05",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 4070.5,
+    "amount": 4070.5,
+    "revCode": "0360",
+    "provider": "Example County Hospital"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-05",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 884.66,
+    "amount": 884.66,
+    "revCode": "0710",
+    "provider": "Example County Hospital"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-05",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 407.42,
+    "amount": 407.42,
+    "revCode": "0272",
+    "provider": "Example County Hospital"
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-05",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 19.31,
+    "amount": 154.48,
+    "code": "J2405",
+    "revCode": "0636",
+    "provider": "Example County Hospital"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-05",
+    "description": "ANESTHESIA SERVICES",
+    "qty": 1,
+    "unitPrice": 1672.98,
+    "amount": 1672.98,
+    "code": "00790",
+    "provider": "Sample Anesthesia Associates"
+   },
+   {
+    "id": "L06",
+    "date": "2026-08-05",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 81.46,
+    "amount": 81.46,
+    "revCode": "0250",
+    "provider": "Example County Hospital"
+   },
+   {
+    "id": "L07",
+    "date": "2026-08-05",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": -1,
+    "unitPrice": 81.46,
+    "amount": -81.46,
+    "revCode": "0250",
+    "provider": "Example County Hospital"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-08-13",
+  "firstBillDate": "2026-08-12",
+  "state": "AZ",
+  "hospitalCcn": "990104",
+  "gfe": [
+   {
+    "provider": "Example County Hospital",
+    "total": 5655.09
+   },
+   {
+    "provider": "Sample Anesthesia Associates",
+    "total": 1229.56
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "GFE-01",
+   "lineIds": [
+    "L05"
+   ]
+  }
+ ],
+ "plants": [
+  "GFE-01"
+ ],
+ "tags": [
+  "hn:cancel-reversed",
+  "variant:sched-surgery-2-providers",
+  "variant:cancel-credit:negqty",
+  "plant:GFE-01"
+ ]
+}

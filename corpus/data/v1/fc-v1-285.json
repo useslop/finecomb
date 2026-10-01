@@ -1,0 +1,115 @@
+{
+ "id": "fc-v1-285",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 22517916,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 285",
+   "providerName": "Sample Surgical Associates",
+   "accountNumber": "TEST-0110508",
+   "totalCharges": 2049.04,
+   "statementDate": "2026-05-24",
+   "payments": 279.71,
+   "adjustments": 0,
+   "balanceDue": 1769.33
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-11",
+    "description": "ASSISTANT AT SURGERY KNEE",
+    "qty": 1,
+    "unitPrice": 1024.52,
+    "amount": 1024.52,
+    "code": "27447",
+    "modifiers": [
+     "80"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-11",
+    "description": "ASSISTANT AT SURGERY KNEE",
+    "qty": 1,
+    "unitPrice": 1024.52,
+    "amount": 1024.52,
+    "code": "27447",
+    "modifiers": [
+     "80"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": false,
+  "emergency": false,
+  "firstBillDate": "2026-05-20",
+  "state": "KS",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "anesthesia"
+  ],
+  "eob": {
+   "billed": 2049.04,
+   "allowed": 947.22,
+   "planPaid": 279.71,
+   "deductible": 547.63,
+   "copay": 0,
+   "coinsurance": 119.88,
+   "patientResponsibility": 667.51,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 1101.82
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 547.63
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 119.88
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L01",
+    "L02"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-02",
+  "DUP-01"
+ ],
+ "tags": [
+  "plant:DUP-01"
+ ]
+}

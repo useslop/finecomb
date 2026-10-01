@@ -1,0 +1,156 @@
+{
+ "id": "fc-v1-113",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21155848,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 113",
+   "providerName": "Example Outpatient Imaging Center",
+   "accountNumber": "TEST-0104144",
+   "totalCharges": 6205.22,
+   "statementDate": "2026-04-30",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 6205.22
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-31",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 6121.08,
+    "amount": 6121.08,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-31",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 15.5,
+    "amount": 15.5,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-31",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 64.04,
+    "amount": 64.04,
+    "code": "85610",
+    "revCode": "0305",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-31",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 46.01,
+    "amount": 50.61,
+    "revCode": "0250"
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-31",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 46.01,
+    "amount": -46.01,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-04-11",
+  "firstBillDate": "2026-06-10",
+  "state": "TX",
+  "ppdrFiledDate": "2026-08-14",
+  "collections": [
+   {
+    "date": "2026-08-24",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01",
+  "MATH-01"
+ ],
+ "tags": [
+  "hn:cancel-reversed",
+  "variant:sched-imaging",
+  "variant:cancel-credit:posqty",
+  "plant:MATH-01:wrong-total",
+  "plant:PPDR-01"
+ ]
+}

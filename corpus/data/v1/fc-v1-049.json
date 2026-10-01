@@ -1,0 +1,370 @@
+{
+ "id": "fc-v1-049",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20649032,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 049",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0101776",
+   "admitDate": "2025-07-01",
+   "dischargeDate": "2025-07-04",
+   "totalCharges": 17296.22,
+   "statementDate": "2025-08-12",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 17296.22
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-07-01",
+    "description": "ER VISIT LEVEL 5",
+    "qty": 1,
+    "unitPrice": 3533.78,
+    "amount": 3533.78,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-07-01",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4134.25,
+    "amount": 4134.25,
+    "revCode": "0206"
+   },
+   {
+    "id": "L03",
+    "date": "2025-07-02",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4134.25,
+    "amount": 4134.25,
+    "revCode": "0206"
+   },
+   {
+    "id": "L04",
+    "date": "2025-07-03",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4134.25,
+    "amount": 4134.25,
+    "revCode": "0206"
+   },
+   {
+    "id": "L05",
+    "date": "2025-07-01",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 98.24,
+    "amount": 98.24,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2025-07-01",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 46.49,
+    "amount": 46.49,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2025-07-01",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 157.48,
+    "amount": 157.48,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2025-07-02",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 34.15,
+    "amount": 34.15,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2025-07-02",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 54.38,
+    "amount": 54.38,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L10",
+    "date": "2025-07-02",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 44.86,
+    "amount": 44.86,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2025-07-03",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 53.2,
+    "amount": 53.2,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2025-07-03",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 40.1,
+    "amount": 40.1,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L13",
+    "date": "2025-07-04",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 161.09,
+    "amount": 161.09,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L14",
+    "date": "2025-07-02",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 9,
+    "unitPrice": 14.61,
+    "amount": 131.49,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2025-07-03",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 9.75,
+    "amount": 68.25,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2025-07-04",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 53.13,
+    "amount": 53.13,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L17",
+    "date": "2025-07-02",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 73.48,
+    "amount": 73.48,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L18",
+    "date": "2025-07-04",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 155.71,
+    "amount": 311.42,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L19",
+    "date": "2025-07-01",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 31.93,
+    "amount": 31.93,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-07-15",
+  "firstBillDate": "2025-07-13",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 500
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01"
+ ],
+ "tags": [
+  "hn:cr-legit",
+  "hn:repeat-mod"
+ ]
+}

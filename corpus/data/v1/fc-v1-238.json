@@ -1,0 +1,138 @@
+{
+ "id": "fc-v1-238",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 22145723,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 238",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0108769",
+   "totalCharges": 732.84,
+   "statementDate": "2026-08-27",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 732.84
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-08",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 219.29,
+    "amount": 219.29,
+    "code": "99214",
+    "modifiers": [
+     "25"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-08",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 287.5,
+    "amount": 287.5,
+    "code": "20610",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-08",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 143.75,
+    "amount": 143.75,
+    "code": "20610",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-08",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 4,
+    "unitPrice": 22.86,
+    "amount": 82.3,
+    "code": "J3301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "firstBillDate": "2026-08-28",
+  "state": "IN",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": []
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "20610",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01",
+  "MATH-01"
+ ],
+ "tags": [
+  "hn:ncci-mod25",
+  "hn:bilateral",
+  "variant:bilateral-discounted",
+  "plant:MATH-01:wrong-total"
+ ]
+}

@@ -1,0 +1,251 @@
+{
+ "id": "fc-v1-189",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21757692,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 189",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0106956",
+   "admitDate": "2025-12-20",
+   "dischargeDate": "2025-12-21",
+   "totalCharges": 10921.2,
+   "statementDate": "2026-01-02",
+   "payments": 5652.78,
+   "adjustments": 3837.49,
+   "balanceDue": 1430.93
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-12-20",
+    "description": "EMERGENCY ROOM LVL 5",
+    "qty": 1,
+    "unitPrice": 3957.6,
+    "amount": 3957.6,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-12-20",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 76.43,
+    "amount": 76.43,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L03",
+    "date": "2025-12-20",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 73.99,
+    "amount": 73.99,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2025-12-20",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 41.87,
+    "amount": 41.87,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2025-12-20",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 4233.6,
+    "amount": 4233.6,
+    "code": "74177",
+    "revCode": "0352"
+   },
+   {
+    "id": "L06",
+    "date": "2025-12-20",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 37.68,
+    "amount": 37.68,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2025-12-20",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 9,
+    "unitPrice": 159.64,
+    "amount": 1436.76,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L08",
+    "date": "2025-12-21",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 8,
+    "unitPrice": 98.92,
+    "amount": 791.36,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L09",
+    "date": "2025-12-21",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 182.6,
+    "amount": 182.6,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2025-12-21",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 89.31,
+    "amount": 89.31,
+    "code": "83735",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-01-10",
+  "firstBillDate": "2026-01-12",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "collections": [
+   {
+    "date": "2026-04-18",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:ins-paid-no-eob",
+  "hn:eca-agency-referral",
+  "hn:obs-room-hours"
+ ]
+}

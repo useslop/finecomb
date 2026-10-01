@@ -1,0 +1,219 @@
+{
+ "id": "fc-v1-227",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22058614,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 227",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0108362",
+   "totalCharges": 825.34,
+   "statementDate": "2026-08-14",
+   "payments": 66.49,
+   "adjustments": 346.85,
+   "balanceDue": 412
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-14",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 2,
+    "unitPrice": 147.65,
+    "amount": 295.3,
+    "code": "99204"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-14",
+    "description": "FLU TEST RAPID",
+    "qty": 1,
+    "unitPrice": 72.41,
+    "amount": 72.41,
+    "code": "87804"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-14",
+    "description": "STREP TEST RAPID",
+    "qty": 1,
+    "unitPrice": 65.86,
+    "amount": 65.86,
+    "code": "87880"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-14",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 194.51,
+    "amount": 194.51,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-14",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 97.26,
+    "amount": 97.26,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-14",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "firstBillDate": "2026-07-23",
+  "state": "AL",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 825.34,
+   "allowed": 285.25,
+   "planPaid": 66.49,
+   "deductible": 190.27,
+   "copay": 0,
+   "coinsurance": 28.49,
+   "patientResponsibility": 218.76,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 193.24,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 47.38,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 43.1,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 127.28,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 63.65,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 65.44,
+     "lineId": "L06"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 190.27
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 28.49
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87804": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87880": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99204": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L01"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02",
+  "MUE-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "hn:rounding",
+  "variant:bilateral-discounted",
+  "plant:MUE-01",
+  "variant:eob-line-level-co",
+  "plant:EOB-02:co-billed"
+ ]
+}

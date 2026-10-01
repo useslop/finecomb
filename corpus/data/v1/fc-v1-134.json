@@ -1,0 +1,166 @@
+{
+ "id": "fc-v1-134",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21322147,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 134",
+   "providerName": "Example Outpatient Imaging Center",
+   "accountNumber": "TEST-0104921",
+   "totalCharges": 6612.29,
+   "statementDate": "2026-06-12",
+   "payments": 0,
+   "adjustments": 2495.99,
+   "balanceDue": 4116.3
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-18",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 6502.76,
+    "amount": 6502.76,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-18",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 26.44,
+    "amount": 26.44,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-18",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 83.09,
+    "amount": 83.09,
+    "code": "80053",
+    "revCode": "0301",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-18",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 83.09,
+    "amount": 83.09,
+    "code": "80053",
+    "revCode": "0301",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-18",
+    "description": "METABOLIC PANEL FULL",
+    "qty": -1,
+    "unitPrice": 83.09,
+    "amount": -83.09,
+    "code": "80053",
+    "revCode": "0301",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-18",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 75.59,
+    "amount": 75.59,
+    "revCode": "0250"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-18",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 75.59,
+    "amount": -75.59,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-06-04",
+  "firstBillDate": "2026-07-06",
+  "state": "OH",
+  "ppdrFiledDate": "2026-09-15",
+  "collections": [
+   {
+    "date": "2026-09-20",
+    "kind": "late_fee"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01"
+ ],
+ "tags": [
+  "hn:credit-reversal",
+  "hn:cancel-reversed",
+  "variant:sched-imaging",
+  "variant:credit:negqty",
+  "variant:cancel-credit:posqty",
+  "plant:PPDR-01"
+ ]
+}

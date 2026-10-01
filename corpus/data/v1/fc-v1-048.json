@@ -1,0 +1,498 @@
+{
+ "id": "fc-v1-048",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20641113,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 048",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0101739",
+   "admitDate": "2026-05-31",
+   "dischargeDate": "2026-06-05",
+   "totalCharges": 24042.06,
+   "statementDate": "2026-06-15",
+   "payments": 4016.12,
+   "adjustments": 0,
+   "balanceDue": 20025.94
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-31",
+    "description": "EMERGENCY ROOM LVL 5",
+    "qty": 1,
+    "unitPrice": 4736.65,
+    "amount": 4736.65,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-31",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 3317.67,
+    "amount": 3317.67,
+    "revCode": "0120"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-01",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 3317.67,
+    "amount": 3317.67,
+    "revCode": "0120"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-02",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 3317.67,
+    "amount": 3317.67,
+    "revCode": "0120"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-03",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 3317.67,
+    "amount": 3317.67,
+    "revCode": "0120"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-04",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 3317.67,
+    "amount": 3317.67,
+    "revCode": "0120"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-31",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 51.98,
+    "amount": 77.97,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-31",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 125.7,
+    "amount": 125.7,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-05-31",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 53.55,
+    "amount": 53.55,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L10",
+    "date": "2026-06-01",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 122.18,
+    "amount": 122.18,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2026-06-01",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 66.05,
+    "amount": 66.05,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-06-01",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 45.44,
+    "amount": 45.44,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L13",
+    "date": "2026-06-02",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 81.01,
+    "amount": 81.01,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2026-06-02",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 213.07,
+    "amount": 213.07,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L15",
+    "date": "2026-06-02",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 61.14,
+    "amount": 61.14,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L16",
+    "date": "2026-06-03",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 52.54,
+    "amount": 52.54,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L17",
+    "date": "2026-06-03",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 83.41,
+    "amount": 83.41,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L18",
+    "date": "2026-06-03",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 72.01,
+    "amount": 72.01,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L19",
+    "date": "2026-06-04",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 58.49,
+    "amount": 58.49,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L20",
+    "date": "2026-05-31",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 72.57,
+    "amount": 72.57,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L21",
+    "date": "2026-06-02",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 25.29,
+    "amount": 50.58,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L22",
+    "date": "2026-06-05",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 158.15,
+    "amount": 316.3,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L23",
+    "date": "2026-06-01",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 215.89,
+    "amount": 215.89,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L24",
+    "date": "2026-06-05",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 75.95,
+    "amount": 151.9,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L25",
+    "date": "2026-05-31",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 75.61,
+    "amount": 75.61,
+    "revCode": "0270"
+   },
+   {
+    "id": "L26",
+    "date": "2026-05-31",
+    "description": "OXYGEN PER DAY",
+    "qty": 5,
+    "unitPrice": 144.33,
+    "amount": 721.65,
+    "revCode": "0412"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-06-22",
+  "firstBillDate": "2026-06-22",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "State Medicaid",
+  "eob": {
+   "billed": 24042.06,
+   "allowed": 4017.12,
+   "planPaid": 4016.12,
+   "deductible": 0,
+   "copay": 1,
+   "coinsurance": 0,
+   "patientResponsibility": 1,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 20024.94
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 1
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 5147.63
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L07"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "CR-01",
+  "MATH-01",
+  "MCD-01"
+ ],
+ "tags": [
+  "hn:room-word",
+  "plant:MATH-01:wrong-total",
+  "plant:MCD-01:with-eob",
+  "plant:CR-01:recent"
+ ]
+}

@@ -1,0 +1,237 @@
+{
+ "id": "fc-v1-001",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20268920,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 001",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0100000",
+   "admitDate": "2026-04-02",
+   "dischargeDate": "2026-04-02",
+   "totalCharges": 9619.68,
+   "statementDate": "2026-05-09",
+   "payments": 3387.11,
+   "adjustments": 5061.54,
+   "balanceDue": 1171.03
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-02",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 2934.44,
+    "amount": 2934.44,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-02",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 5343.66,
+    "amount": 5343.66,
+    "revCode": "0206"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-02",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 161.84,
+    "amount": 161.84,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-02",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 33.26,
+    "amount": 33.26,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-02",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 89.33,
+    "amount": 89.33,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-02",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 8,
+    "unitPrice": 62.85,
+    "amount": 502.8,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-02",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 203.98,
+    "amount": 407.96,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-02",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 14.2,
+    "amount": 71,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-04-02",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 14.2,
+    "amount": 71,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-02",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 75.39,
+    "amount": 75.39,
+    "revCode": "0270"
+   },
+   {
+    "id": "L11",
+    "date": "2026-04-02",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": -5,
+    "unitPrice": 14.2,
+    "amount": -71,
+    "code": "J2405",
+    "revCode": "0636"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-04-08",
+  "firstBillDate": "2026-04-14",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Example Health Plan"
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:credit-reversal",
+  "hn:same-day-admit-discharge",
+  "hn:repeat-mod",
+  "hn:ins-paid-no-eob",
+  "variant:credit:negqty",
+  "variant:eob-line-level-co"
+ ]
+}

@@ -1,0 +1,293 @@
+{
+ "id": "fc-v1-200",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21844801,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 200",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0107363",
+   "admitDate": "2025-11-05",
+   "dischargeDate": "2025-11-06",
+   "totalCharges": 8137.46,
+   "statementDate": "2025-11-17",
+   "payments": 2647.35,
+   "adjustments": 4043.24,
+   "balanceDue": 1446.87
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-11-05",
+    "description": "EMERGENCY ROOM LVL 5",
+    "qty": 1,
+    "unitPrice": 3092.8,
+    "amount": 3092.8,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-11-05",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 41.23,
+    "amount": 41.23,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-11-05",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 24.59,
+    "amount": 24.59,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-11-05",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 41.09,
+    "amount": 41.09,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2025-11-05",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 336.97,
+    "amount": 336.97,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L06",
+    "date": "2025-11-05",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 2,
+    "unitPrice": 179.99,
+    "amount": 359.98,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2025-11-05",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 57.87,
+    "amount": 115.74,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2025-11-05",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 61.5,
+    "amount": 61.5,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2025-11-05",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 136.88,
+    "amount": 273.76,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2025-11-05",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 22,
+    "unitPrice": 106,
+    "amount": 2332,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L11",
+    "date": "2025-11-06",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 18,
+    "unitPrice": 73.1,
+    "amount": 1315.8,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L12",
+    "date": "2025-11-06",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 142,
+    "amount": 142,
+    "code": "80053",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2025-11-12",
+  "firstBillDate": "2025-11-23",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "collections": [
+   {
+    "date": "2026-04-09",
+    "kind": "credit_report",
+    "noticeDate": "2026-02-24"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:eca-proper",
+  "hn:ins-paid-no-eob",
+  "hn:hourly-overlap",
+  "variant:eob-line-level-co"
+ ]
+}

@@ -1,0 +1,175 @@
+{
+ "id": "fc-v1-269",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22391212,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 269",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0109916",
+   "totalCharges": 742.61,
+   "statementDate": "2024-11-11",
+   "payments": 321.26,
+   "adjustments": 0,
+   "balanceDue": 421.35
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2024-10-22",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 1,
+    "unitPrice": 402.51,
+    "amount": 402.51,
+    "code": "99204"
+   },
+   {
+    "id": "L02",
+    "date": "2024-10-22",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 148.7,
+    "amount": 148.7,
+    "code": "85025"
+   },
+   {
+    "id": "L03",
+    "date": "2024-10-22",
+    "description": "BLOOD COUNT COMPLETE NO DIFF",
+    "qty": 3,
+    "unitPrice": 63.8,
+    "amount": 191.4,
+    "code": "85027"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "firstBillDate": "2024-10-31",
+  "state": "GA",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 742.61,
+   "allowed": 422.96,
+   "planPaid": 321.26,
+   "deductible": 66,
+   "copay": 0,
+   "coinsurance": 35.7,
+   "patientResponsibility": 101.7,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 173.26,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 64.01,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 82.38,
+     "lineId": "L03"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 66
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 35.7
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 6984.49
+ },
+ "data": {
+  "mue": {
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85027": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99204": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "85025",
+    "col2": "85027",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L03"
+   ]
+  },
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L02",
+    "L03"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02",
+  "NCCI-01",
+  "MUE-01"
+ ],
+ "tags": [
+  "hn:cr-legit",
+  "plant:NCCI-01:mi0",
+  "plant:MUE-01",
+  "variant:eob-line-level-co",
+  "plant:EOB-02:co-billed"
+ ]
+}

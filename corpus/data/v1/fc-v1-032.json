@@ -1,0 +1,391 @@
+{
+ "id": "fc-v1-032",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20514409,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 032",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0101147",
+   "admitDate": "2026-03-04",
+   "dischargeDate": "2026-03-07",
+   "totalCharges": 28399.56,
+   "statementDate": "2026-03-19",
+   "payments": 5209.67,
+   "adjustments": 23189.89,
+   "balanceDue": 0
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-04",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 3110.28,
+    "amount": 3110.28,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-04",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2641.24,
+    "amount": 2641.24,
+    "revCode": "0120"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-05",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2641.24,
+    "amount": 2641.24,
+    "revCode": "0120"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-06",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2641.24,
+    "amount": 2641.24,
+    "revCode": "0120"
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-04",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 6188.71,
+    "amount": 6188.71,
+    "revCode": "0360"
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-04",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 4,
+    "unitPrice": 622.81,
+    "amount": 2491.24,
+    "revCode": "0360"
+   },
+   {
+    "id": "L07",
+    "date": "2026-03-04",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1455.86,
+    "amount": 1455.86,
+    "revCode": "0710"
+   },
+   {
+    "id": "L08",
+    "date": "2026-03-04",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1997.79,
+    "amount": 1997.79,
+    "revCode": "0370"
+   },
+   {
+    "id": "L09",
+    "date": "2026-03-04",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 703.94,
+    "amount": 703.94,
+    "revCode": "0272"
+   },
+   {
+    "id": "L10",
+    "date": "2026-03-04",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 90.09,
+    "amount": 90.09,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2026-03-05",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 145.68,
+    "amount": 145.68,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-03-05",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 188.16,
+    "amount": 188.16,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2026-03-05",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 121.08,
+    "amount": 121.08,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L14",
+    "date": "2026-03-06",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 132.9,
+    "amount": 132.9,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L15",
+    "date": "2026-03-06",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 209.67,
+    "amount": 209.67,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L16",
+    "date": "2026-03-04",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 64.66,
+    "amount": 129.32,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L17",
+    "date": "2026-03-07",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 15.09,
+    "amount": 15.09,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L18",
+    "date": "2026-03-06",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 8,
+    "unitPrice": 83.59,
+    "amount": 668.72,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L19",
+    "date": "2026-03-05",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 76.2,
+    "amount": 304.8,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L20",
+    "date": "2026-03-04",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 1139.66,
+    "amount": 1139.66,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L21",
+    "date": "2026-03-04",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 21.5,
+    "amount": 21.5,
+    "revCode": "0270"
+   },
+   {
+    "id": "L22",
+    "date": "2026-03-04",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 152.89,
+    "amount": 152.89,
+    "revCode": "0272"
+   },
+   {
+    "id": "L23",
+    "date": "2026-03-04",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 178.24,
+    "amount": 178.24,
+    "revCode": "0270"
+   },
+   {
+    "id": "L24",
+    "date": "2026-03-04",
+    "description": "OXYGEN PER DAY",
+    "qty": 3,
+    "unitPrice": 318.69,
+    "amount": 956.07,
+    "revCode": "0412"
+   },
+   {
+    "id": "L25",
+    "date": "2026-03-11",
+    "description": "PHARMACY MISC",
+    "qty": 1,
+    "unitPrice": 74.15,
+    "amount": 74.15,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-03-17",
+  "firstBillDate": "2026-03-31",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "collections": [
+   {
+    "date": "2026-09-30",
+    "kind": "credit_report",
+    "noticeDate": "2026-08-29"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DATE-01",
+   "lineIds": [
+    "L25"
+   ]
+  }
+ ],
+ "plants": [
+  "DATE-01"
+ ],
+ "tags": [
+  "hn:eca-proper",
+  "plant:DATE-01:added",
+  "variant:medicaid-no-eob"
+ ]
+}

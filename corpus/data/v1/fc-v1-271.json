@@ -1,0 +1,146 @@
+{
+ "id": "fc-v1-271",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 22407050,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 271",
+   "providerName": "Sample Family Clinic",
+   "accountNumber": "TEST-0109990",
+   "totalCharges": 3194.49,
+   "statementDate": "2026-06-22",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 3194.49
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-23",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 364.82,
+    "amount": 364.82,
+    "code": "99214",
+    "modifiers": [
+     "25"
+    ],
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-23",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 254.36,
+    "amount": 254.36,
+    "code": "20610",
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-23",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 2,
+    "unitPrice": 29.69,
+    "amount": 59.38,
+    "code": "J3301",
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-23",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2515.93,
+    "amount": 2515.93,
+    "code": "74177",
+    "provider": "Sample Family Clinic"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-06-03",
+  "state": "AL",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Sample Family Clinic",
+    "total": 1349.92
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "20610",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "GFE-01",
+   "lineIds": [
+    "L01",
+    "L02",
+    "L03",
+    "L04"
+   ]
+  }
+ ],
+ "plants": [
+  "GFE-01"
+ ],
+ "tags": [
+  "hn:ncci-mod25",
+  "plant:GFE-01:day-120"
+ ]
+}

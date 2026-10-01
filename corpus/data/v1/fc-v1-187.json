@@ -1,0 +1,274 @@
+{
+ "id": "fc-v1-187",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21741854,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 187",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0106882",
+   "totalCharges": 5582.2,
+   "statementDate": "2026-02-05",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 5582.2
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-12-26",
+    "description": "EMERGENCY ROOM LVL 4",
+    "qty": 1,
+    "unitPrice": 1914.25,
+    "amount": 1914.25,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-12-26",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 68.63,
+    "amount": 68.63,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L11",
+    "date": "2025-12-26",
+    "description": "URINALYSIS AUTO ADDL",
+    "qty": 1,
+    "unitPrice": 68.63,
+    "amount": 68.63,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L03",
+    "date": "2025-12-26",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 187.97,
+    "amount": 187.97,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-12-26",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 31.34,
+    "amount": 31.34,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2025-12-26",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 297.81,
+    "amount": 297.81,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L06",
+    "date": "2025-12-26",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 115.36,
+    "amount": 115.36,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L07",
+    "date": "2025-12-26",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 64.81,
+    "amount": 64.81,
+    "revCode": "0270"
+   },
+   {
+    "id": "L08",
+    "date": "2025-12-26",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 19,
+    "unitPrice": 65.64,
+    "amount": 1247.16,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L09",
+    "date": "2025-12-27",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 13,
+    "unitPrice": 112.16,
+    "amount": 1458.08,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L10",
+    "date": "2025-12-27",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 39.76,
+    "amount": 39.76,
+    "code": "83735",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-01-04",
+  "firstBillDate": "2026-01-12",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Benefit Trust",
+  "collections": [
+   {
+    "date": "2026-06-30",
+    "kind": "lawsuit",
+    "noticeDate": "2026-05-21"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L02",
+    "L11"
+   ]
+  },
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L02",
+    "L11"
+   ]
+  },
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "DUP-02",
+  "INS-01",
+  "MATH-02"
+ ],
+ "tags": [
+  "hn:eca-proper",
+  "plant:DUP-02:desc",
+  "plant:MATH-02:total-off"
+ ]
+}

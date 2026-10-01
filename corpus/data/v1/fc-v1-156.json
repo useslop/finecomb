@@ -1,0 +1,447 @@
+{
+ "id": "fc-v1-156",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21496365,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 156",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0105735",
+   "totalCharges": 8533.03,
+   "statementDate": "2026-08-18",
+   "payments": 3570.67,
+   "adjustments": 0,
+   "balanceDue": 4962.36
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-01",
+    "description": "EMERGENCY ROOM LVL 4",
+    "qty": 1,
+    "unitPrice": 2385.54,
+    "amount": 2385.54,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-01",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 79.22,
+    "amount": 79.22,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-01",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 43.51,
+    "amount": 43.51,
+    "code": "83735",
+    "revCode": "0301",
+    "notReceived": true
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-01",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 105.55,
+    "amount": 105.55,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-01",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 120.48,
+    "amount": 120.48,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-08-01",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 31.8,
+    "amount": 31.8,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-08-01",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 103.96,
+    "amount": 103.96,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2026-08-01",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 103.96,
+    "amount": 103.96,
+    "code": "84484",
+    "revCode": "0301",
+    "modifiers": [
+     "91"
+    ]
+   },
+   {
+    "id": "L09",
+    "date": "2026-08-01",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 229.33,
+    "amount": 229.33,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L10",
+    "date": "2026-08-01",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 16.13,
+    "amount": 96.78,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-08-01",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 97.72,
+    "amount": 97.72,
+    "revCode": "0270"
+   },
+   {
+    "id": "L12",
+    "date": "2026-08-01",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 18,
+    "unitPrice": 137.22,
+    "amount": 2469.96,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2026-08-02",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 18,
+    "unitPrice": 140.91,
+    "amount": 2536.38,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L14",
+    "date": "2026-08-02",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 59.08,
+    "amount": 59.08,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L15",
+    "date": "2026-08-02",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 69.76,
+    "amount": 69.76,
+    "code": "83735",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-08-07",
+  "firstBillDate": "2026-08-25",
+  "state": "AZ",
+  "hospitalCcn": "990104",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 8533.03,
+   "allowed": 4976.16,
+   "planPaid": 3570.67,
+   "deductible": 512.82,
+   "copay": 0,
+   "coinsurance": 892.67,
+   "patientResponsibility": 1405.49,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 994.38,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 33.02,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 18.14,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 44,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 50.22,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 13.26,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 43.33,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 43.33,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 95.59,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 40.34,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 40.73,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1029.57,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1057.25,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 24.63,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 29.08,
+     "lineId": "L15"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 512.82
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 892.67
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L03"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02",
+  "CANC-01"
+ ],
+ "tags": [
+  "hn:repeat-mod",
+  "variant:troponin-91",
+  "plant:CANC-01:user-marked",
+  "variant:eob-line-level-co",
+  "plant:EOB-02:co-billed"
+ ]
+}

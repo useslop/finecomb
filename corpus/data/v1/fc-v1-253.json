@@ -1,0 +1,224 @@
+{
+ "id": "fc-v1-253",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22264508,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 253",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0109324",
+   "totalCharges": 3076.17,
+   "statementDate": "2025-07-08",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 3076.17
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-06-22",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 224.97,
+    "amount": 224.97,
+    "code": "99214",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L02",
+    "date": "2025-06-22",
+    "description": "FLU TEST RAPID",
+    "qty": 1,
+    "unitPrice": 56.23,
+    "amount": 56.23,
+    "code": "87804",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L03",
+    "date": "2025-06-22",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 26.5,
+    "amount": 26.5,
+    "code": "36415",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L05",
+    "date": "2025-06-22",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 40.82,
+    "amount": 40.82,
+    "code": "36415",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L04",
+    "date": "2025-06-22",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2593.03,
+    "amount": 2593.03,
+    "code": "74177",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L06",
+    "date": "2025-06-22",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 86.65,
+    "amount": 86.65,
+    "code": "85025",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L07",
+    "date": "2025-06-22",
+    "description": "BLOOD COUNT COMPLETE NO DIFF",
+    "qty": 1,
+    "unitPrice": 47.97,
+    "amount": 47.97,
+    "code": "85027",
+    "provider": "Sample Internal Medicine Group"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-09-06",
+  "state": "MO",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Sample Internal Medicine Group",
+    "total": 2567.98
+   }
+  ],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 6016.98
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85027": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "87804": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "85025",
+    "col2": "85027",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L03",
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L03",
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L06",
+    "L07"
+   ]
+  },
+  {
+   "ruleId": "GFE-01",
+   "lineIds": [
+    "L01",
+    "L02",
+    "L03",
+    "L05",
+    "L04",
+    "L06",
+    "L07"
+   ]
+  }
+ ],
+ "plants": [
+  "GFE-01",
+  "DUP-02",
+  "NCCI-01"
+ ],
+ "tags": [
+  "hn:cr-legit",
+  "plant:DUP-02:price",
+  "plant:NCCI-01:mi0",
+  "plant:GFE-01"
+ ]
+}

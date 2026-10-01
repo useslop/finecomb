@@ -1,0 +1,655 @@
+{
+ "id": "fc-v1-093",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20997468,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 093",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0103404",
+   "admitDate": "2025-12-13",
+   "dischargeDate": "2025-12-16",
+   "totalCharges": 32411.34,
+   "statementDate": "2026-01-16",
+   "payments": 5408.93,
+   "adjustments": 0,
+   "balanceDue": 27002.41
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-12-13",
+    "description": "ER VISIT LEVEL 3",
+    "qty": 1,
+    "unitPrice": 1705.62,
+    "amount": 1705.62,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-12-13",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 3877.42,
+    "amount": 3877.42,
+    "revCode": "0206"
+   },
+   {
+    "id": "L03",
+    "date": "2025-12-14",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 3877.42,
+    "amount": 3877.42,
+    "revCode": "0206"
+   },
+   {
+    "id": "L04",
+    "date": "2025-12-15",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 3877.42,
+    "amount": 3877.42,
+    "revCode": "0206"
+   },
+   {
+    "id": "L05",
+    "date": "2025-12-13",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 4489.76,
+    "amount": 4489.76,
+    "revCode": "0360"
+   },
+   {
+    "id": "L06",
+    "date": "2025-12-13",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 7,
+    "unitPrice": 1126.7,
+    "amount": 7886.9,
+    "revCode": "0360"
+   },
+   {
+    "id": "L07",
+    "date": "2025-12-13",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1969.13,
+    "amount": 1969.13,
+    "revCode": "0710"
+   },
+   {
+    "id": "L08",
+    "date": "2025-12-13",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1523.07,
+    "amount": 1523.07,
+    "revCode": "0370"
+   },
+   {
+    "id": "L09",
+    "date": "2025-12-13",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 929.77,
+    "amount": 929.77,
+    "revCode": "0272"
+   },
+   {
+    "id": "L10",
+    "date": "2025-12-13",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 50.81,
+    "amount": 50.81,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L11",
+    "date": "2025-12-13",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 66.38,
+    "amount": 66.38,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2025-12-14",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 115.58,
+    "amount": 115.58,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2025-12-15",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 40.66,
+    "amount": 40.66,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2025-12-15",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 154.9,
+    "amount": 154.9,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L15",
+    "date": "2025-12-15",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 59.51,
+    "amount": 119.02,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2025-12-13",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 7,
+    "unitPrice": 20.23,
+    "amount": 141.61,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L17",
+    "date": "2025-12-15",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 8,
+    "unitPrice": 55.87,
+    "amount": 446.96,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L18",
+    "date": "2025-12-14",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 96.5,
+    "amount": 96.5,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L19",
+    "date": "2025-12-13",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 153.26,
+    "amount": 153.26,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L20",
+    "date": "2025-12-14",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 14.49,
+    "amount": 101.43,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L21",
+    "date": "2025-12-13",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 26.74,
+    "amount": 213.92,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L22",
+    "date": "2025-12-13",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 276.65,
+    "amount": 276.65,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L23",
+    "date": "2025-12-13",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 45.18,
+    "amount": 45.18,
+    "revCode": "0270"
+   },
+   {
+    "id": "L24",
+    "date": "2025-12-13",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 199.36,
+    "amount": 199.36,
+    "revCode": "0270"
+   },
+   {
+    "id": "L25",
+    "date": "2025-12-13",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 4,
+    "unitPrice": 28.28,
+    "amount": 113.12,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L26",
+    "date": "2025-12-14",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 6,
+    "unitPrice": 25.68,
+    "amount": 154.08,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L27",
+    "date": "2025-12-15",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 4,
+    "unitPrice": 36.68,
+    "amount": 146.72,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L28",
+    "date": "2025-12-16",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 5,
+    "unitPrice": 20.28,
+    "amount": 101.4,
+    "code": "82962",
+    "revCode": "0300"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-12-28",
+  "firstBillDate": "2025-12-25",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 32874.05,
+   "allowed": 5408.93,
+   "planPaid": 5408.93,
+   "deductible": 0,
+   "copay": 0,
+   "coinsurance": 0,
+   "patientResponsibility": 0,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1424.99,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 3239.45,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 3239.45,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 3239.45,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 3751.04,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 6589.23,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1645.14,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1272.47,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 776.79,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 42.45,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 55.46,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 96.56,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 33.97,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 129.41,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 99.44,
+     "lineId": "L15"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 118.31,
+     "lineId": "L16"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 373.42,
+     "lineId": "L17"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 80.62,
+     "lineId": "L18"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 128.04,
+     "lineId": "L19"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 84.74,
+     "lineId": "L20"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 178.72,
+     "lineId": "L21"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 231.13,
+     "lineId": "L22"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 37.75,
+     "lineId": "L23"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 166.56,
+     "lineId": "L24"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 94.51,
+     "lineId": "L25"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 128.73,
+     "lineId": "L26"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 122.58,
+     "lineId": "L27"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 84.71,
+     "lineId": "L28"
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-02-08",
+    "kind": "late_fee"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "82962": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01",
+  "MATH-02"
+ ],
+ "tags": [
+  "hn:mue-inpatient",
+  "hn:eca-late-fee",
+  "variant:eob-line-level-co",
+  "plant:MCD-01:with-eob",
+  "plant:MATH-02:total-off"
+ ]
+}

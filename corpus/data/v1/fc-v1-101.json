@@ -1,0 +1,177 @@
+{
+ "id": "fc-v1-101",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21060820,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 101",
+   "providerName": "Example Outpatient Imaging Center",
+   "accountNumber": "TEST-0103700",
+   "totalCharges": 7451.38,
+   "statementDate": "2026-05-21",
+   "payments": 0,
+   "adjustments": 2286.54,
+   "balanceDue": 5482.68
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-03",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2862.42,
+    "amount": 2862.42,
+    "revCode": "0360",
+    "provider": "Example Outpatient Imaging Center",
+    "notReceived": true
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-03",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1379.3,
+    "amount": 1379.3,
+    "revCode": "0710",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-03",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1162.34,
+    "amount": 1162.34,
+    "revCode": "0272",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-03",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 27.78,
+    "amount": 166.68,
+    "code": "J2405",
+    "revCode": "0636",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-03",
+    "description": "ANESTHESIA SERVICES",
+    "qty": 1,
+    "unitPrice": 1880.64,
+    "amount": 1880.64,
+    "code": "00790",
+    "provider": "Sample Anesthesia Associates"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-03",
+    "description": "ANESTHESIA SERVICES",
+    "qty": 1,
+    "unitPrice": 1880.64,
+    "amount": 1880.64,
+    "code": "00790",
+    "provider": "Sample Anesthesia Associates"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-03",
+    "description": "ANESTHESIA SERVICES",
+    "qty": -1,
+    "unitPrice": 1880.64,
+    "amount": -1880.64,
+    "code": "00790",
+    "provider": "Sample Anesthesia Associates"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-03",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 33.76,
+    "amount": 33.76,
+    "revCode": "0250"
+   },
+   {
+    "id": "L09",
+    "date": "2026-05-03",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": -1,
+    "unitPrice": 33.76,
+    "amount": -33.76,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-05-14",
+  "firstBillDate": "2026-06-03",
+  "state": "MO",
+  "ppdrFiledDate": "2026-08-31",
+  "collections": [
+   {
+    "date": "2026-09-04",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L01"
+   ]
+  },
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01",
+  "CANC-01",
+  "MATH-02"
+ ],
+ "tags": [
+  "hn:cancel-reversed",
+  "hn:credit-reversal",
+  "variant:sched-surgery-2-providers",
+  "variant:credit:negqty",
+  "variant:cancel-credit:negqty",
+  "plant:CANC-01:user-marked",
+  "plant:MATH-02:balance",
+  "plant:PPDR-01"
+ ]
+}

@@ -1,0 +1,512 @@
+{
+ "id": "fc-v1-075",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20854926,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 075",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0102738",
+   "admitDate": "2026-02-23",
+   "dischargeDate": "2026-02-26",
+   "totalCharges": 24774.36,
+   "statementDate": "2026-03-24",
+   "payments": 6059.03,
+   "adjustments": 14703.71,
+   "balanceDue": 4011.62
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-02-23",
+    "description": "ED VISIT LVL 3",
+    "qty": 1,
+    "unitPrice": 731.53,
+    "amount": 731.53,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-02-23",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 3,
+    "unitPrice": 6226.97,
+    "amount": 18680.91,
+    "revCode": "0206"
+   },
+   {
+    "id": "L03",
+    "date": "2026-02-23",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 148.68,
+    "amount": 148.68,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L04",
+    "date": "2026-02-23",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 102.82,
+    "amount": 102.82,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-02-24",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 48.31,
+    "amount": 48.31,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L06",
+    "date": "2026-02-25",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 51.61,
+    "amount": 51.61,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-02-25",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 55.79,
+    "amount": 55.79,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2026-02-25",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 152.11,
+    "amount": 152.11,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L09",
+    "date": "2026-02-23",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 102.74,
+    "amount": 205.48,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2026-02-25",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 73.59,
+    "amount": 73.59,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L11",
+    "date": "2026-02-25",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 78.12,
+    "amount": 312.48,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-02-24",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 80.88,
+    "amount": 161.76,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-02-26",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 19.91,
+    "amount": 159.28,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2026-02-23",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 22.38,
+    "amount": 89.52,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2026-02-23",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 3712.22,
+    "amount": 3712.22,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L16",
+    "date": "2026-02-23",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 32.83,
+    "amount": 32.83,
+    "revCode": "0270"
+   },
+   {
+    "id": "L17",
+    "date": "2026-02-23",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 50.64,
+    "amount": 50.64,
+    "revCode": "0270"
+   },
+   {
+    "id": "L18",
+    "date": "2026-02-23",
+    "description": "OXYCODONE 5MG TAB",
+    "qty": 4,
+    "unitPrice": 1.2,
+    "amount": 4.8,
+    "revCode": "0250",
+    "ndc": "86625673338"
+   },
+   {
+    "id": "L19",
+    "date": "2026-02-23",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 86.14,
+    "amount": 86.14,
+    "revCode": "0250"
+   },
+   {
+    "id": "L20",
+    "date": "2026-02-23",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 86.14,
+    "amount": -86.14,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-03-05",
+  "firstBillDate": "2026-03-08",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 24774.36,
+   "allowed": 10070.25,
+   "planPaid": 6059.03,
+   "deductible": 1271.64,
+   "copay": 100,
+   "coinsurance": 2639.58,
+   "patientResponsibility": 4011.22,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 434.18,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 11087.52,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 88.24,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 61.03,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 28.67,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 30.63,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 33.11,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 90.28,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 121.96,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 43.68,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 185.46,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 96.01,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 94.54,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 53.13,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2203.28,
+     "lineId": "L15"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 19.49,
+     "lineId": "L16"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 30.06,
+     "lineId": "L17"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2.85,
+     "lineId": "L18"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1271.64
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 2639.58
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 100
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-06-17",
+    "kind": "late_fee"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "86625673338": {
+    "unitPrice": 0.141983,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:eca-late-fee",
+  "hn:eob-under-1",
+  "hn:cancel-reversed",
+  "hn:rx-below-10",
+  "variant:cancel-credit:posqty",
+  "variant:eob-line-level-co"
+ ]
+}

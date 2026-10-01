@@ -1,0 +1,262 @@
+{
+ "id": "fc-v1-210",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21923991,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 210",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0107733",
+   "totalCharges": 3313.66,
+   "statementDate": "2026-05-12",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 3313.66
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-29",
+    "description": "OFFICE VISIT EST LEVEL 3",
+    "qty": 1,
+    "unitPrice": 304.55,
+    "amount": 304.55,
+    "code": "99213"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-29",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 80.51,
+    "amount": 80.51,
+    "code": "85025"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-29",
+    "description": "STREP TEST RAPID",
+    "qty": 1,
+    "unitPrice": 35.87,
+    "amount": 35.87,
+    "code": "87880"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-29",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 38.86,
+    "amount": 38.86,
+    "code": "81003"
+   },
+   {
+    "id": "L11",
+    "date": "2026-04-29",
+    "description": "URINALYSIS AUTO ADDL",
+    "qty": 1,
+    "unitPrice": 38.86,
+    "amount": 38.86,
+    "code": "81003"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-29",
+    "description": "INJECTION IM OR SUBQ",
+    "qty": 1,
+    "unitPrice": 50.32,
+    "amount": 50.32,
+    "code": "96372"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-29",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 63.36,
+    "amount": 63.36,
+    "code": "J1030"
+   },
+   {
+    "id": "L10",
+    "date": "2026-04-29",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 63.36,
+    "amount": 63.36,
+    "code": "J1030"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-29",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 209.08,
+    "amount": 209.08,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-29",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 209.08,
+    "amount": 209.08,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-29",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2219.81,
+    "amount": 2219.81,
+    "code": "74177"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-05-12",
+  "state": "GA",
+  "ppdrFiledDate": "2026-08-18",
+  "collections": [
+   {
+    "date": "2026-08-22",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87880": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96372": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99213": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L04",
+    "L11"
+   ]
+  },
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L06",
+    "L10"
+   ]
+  },
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L04",
+    "L11"
+   ]
+  },
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01",
+  "DUP-01",
+  "DUP-02"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "variant:bilateral-same-price",
+  "plant:DUP-01",
+  "plant:DUP-02:desc",
+  "plant:PPDR-01"
+ ]
+}

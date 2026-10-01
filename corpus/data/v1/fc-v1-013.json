@@ -1,0 +1,290 @@
+{
+ "id": "fc-v1-013",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20363948,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 013",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0100444",
+   "admitDate": "2025-06-22",
+   "dischargeDate": "2025-06-22",
+   "totalCharges": 21228.77,
+   "statementDate": "2025-07-21",
+   "payments": 7236.17,
+   "adjustments": 10135.93,
+   "balanceDue": 3856.67
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-06-22",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 1,
+    "unitPrice": 1901.66,
+    "amount": 1901.66,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-06-22",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2296.25,
+    "amount": 2296.25,
+    "revCode": "0120"
+   },
+   {
+    "id": "L03",
+    "date": "2025-06-22",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 4670.86,
+    "amount": 4670.86,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2025-06-22",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 4,
+    "unitPrice": 1136.99,
+    "amount": 4547.96,
+    "revCode": "0360"
+   },
+   {
+    "id": "L05",
+    "date": "2025-06-22",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 930.86,
+    "amount": 930.86,
+    "revCode": "0710"
+   },
+   {
+    "id": "L06",
+    "date": "2025-06-22",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1531.79,
+    "amount": 1531.79,
+    "revCode": "0370"
+   },
+   {
+    "id": "L07",
+    "date": "2025-06-22",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 366.95,
+    "amount": 366.95,
+    "revCode": "0272"
+   },
+   {
+    "id": "L08",
+    "date": "2025-06-22",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 103.65,
+    "amount": 103.65,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2025-06-22",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 152.41,
+    "amount": 152.41,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2025-06-22",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 14.99,
+    "amount": 59.96,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2025-06-22",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 33.04,
+    "amount": 66.08,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2025-06-22",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 3763.45,
+    "amount": 3763.45,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L13",
+    "date": "2025-06-22",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 226.64,
+    "amount": 226.64,
+    "revCode": "0270"
+   },
+   {
+    "id": "L14",
+    "date": "2025-06-22",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 150.6,
+    "amount": 150.6,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-07-03",
+  "firstBillDate": "2025-07-01",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 20769.12,
+   "allowed": 10633.19,
+   "planPaid": 7236.17,
+   "deductible": 295.8,
+   "copay": 0,
+   "coinsurance": 3101.22,
+   "patientResponsibility": 3397.02,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 10135.93
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 295.8
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 3101.22
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 3302.82
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MATH-02"
+ ],
+ "tags": [
+  "hn:same-day-admit-discharge",
+  "hn:cr-legit",
+  "plant:MATH-02:total-off"
+ ]
+}

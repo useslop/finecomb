@@ -1,0 +1,161 @@
+{
+ "id": "fc-v1-219",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21995262,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 219",
+   "providerName": "Example Urgent Care",
+   "accountNumber": "TEST-0108066",
+   "totalCharges": 851.06,
+   "statementDate": "2025-07-08",
+   "payments": 206.98,
+   "adjustments": 0,
+   "balanceDue": 644.08
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-06-06",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 1,
+    "unitPrice": 152.44,
+    "amount": 152.44,
+    "code": "99204"
+   },
+   {
+    "id": "L02",
+    "date": "2025-06-06",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 38.97,
+    "amount": 38.97,
+    "code": "36415"
+   },
+   {
+    "id": "L03",
+    "date": "2025-06-06",
+    "description": "INJECTION IM OR SUBQ",
+    "qty": 1,
+    "unitPrice": 87.87,
+    "amount": 87.87,
+    "code": "96372"
+   },
+   {
+    "id": "L04",
+    "date": "2025-06-06",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 109.09,
+    "amount": 218.18,
+    "code": "J1030"
+   },
+   {
+    "id": "L05",
+    "date": "2025-06-06",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 176.8,
+    "amount": 176.8,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L06",
+    "date": "2025-06-06",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 176.8,
+    "amount": 176.8,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "firstBillDate": "2025-06-27",
+  "state": "OK",
+  "insurerName": "State Medicaid",
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 3353.82
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96372": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99204": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "hn:cr-legit",
+  "variant:bilateral-same-price",
+  "plant:MCD-01:no-eob",
+  "variant:medicaid-no-eob"
+ ]
+}

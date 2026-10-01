@@ -1,0 +1,142 @@
+{
+ "id": "fc-v1-273",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22422888,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 273",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0110064",
+   "totalCharges": 493.24,
+   "statementDate": "2026-05-19",
+   "payments": 91.96,
+   "adjustments": 136.71,
+   "balanceDue": 264.57
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-13",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 325.2,
+    "amount": 325.2,
+    "code": "99214"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-13",
+    "description": "FLU TEST RAPID",
+    "qty": 1,
+    "unitPrice": 32.08,
+    "amount": 32.08,
+    "code": "87804",
+    "notReceived": true
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-13",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 17.98,
+    "amount": 17.98,
+    "code": "81003"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-13",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 17.98,
+    "amount": 17.98,
+    "code": "81003"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-13",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "firstBillDate": "2026-04-18",
+  "state": "AZ",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": []
+ },
+ "data": {
+  "mue": {
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87804": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L03",
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L02"
+   ]
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01",
+  "CANC-01",
+  "DUP-01"
+ ],
+ "tags": [
+  "hn:rounding",
+  "plant:CANC-01:user-marked",
+  "plant:DUP-01",
+  "variant:eob-line-level-co",
+  "plant:MCD-01:no-eob",
+  "variant:medicaid-no-eob"
+ ]
+}

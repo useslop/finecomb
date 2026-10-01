@@ -1,0 +1,156 @@
+{
+ "id": "fc-v1-243",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22185318,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 243",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0108954",
+   "totalCharges": 3023.41,
+   "statementDate": "2025-07-27",
+   "payments": 0,
+   "adjustments": 848.42,
+   "balanceDue": 2174.99
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-06-25",
+    "description": "OFFICE VISIT EST LEVEL 3",
+    "qty": 1,
+    "unitPrice": 238.56,
+    "amount": 238.56,
+    "code": "99213",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L02",
+    "date": "2025-06-25",
+    "description": "STREP TEST RAPID",
+    "qty": 1,
+    "unitPrice": 34.08,
+    "amount": 34.08,
+    "code": "87880",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L03",
+    "date": "2025-06-25",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 161.94,
+    "amount": 161.94,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ],
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L04",
+    "date": "2025-06-25",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 161.94,
+    "amount": 161.94,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ],
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L05",
+    "date": "2025-06-25",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L06",
+    "date": "2025-06-25",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2326.89,
+    "amount": 2326.89,
+    "code": "74177",
+    "provider": "Sample Internal Medicine Group"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-05-14",
+  "state": "AL",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Sample Internal Medicine Group",
+    "total": 2191.37
+   }
+  ],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 7662.95
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "87880": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99213": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-121-days",
+  "hn:cr-legit",
+  "hn:bilateral",
+  "hn:rounding",
+  "variant:bilateral-same-price"
+ ]
+}

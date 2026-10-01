@@ -1,0 +1,510 @@
+{
+ "id": "fc-v1-099",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 21044982,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 099",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0103626",
+   "admitDate": "2026-08-18",
+   "dischargeDate": "2026-08-21",
+   "totalCharges": 13259.11,
+   "statementDate": "2026-09-22",
+   "payments": 4238.91,
+   "adjustments": 7334.41,
+   "balanceDue": 1685.79
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-18",
+    "description": "PRIVATE RM DAILY",
+    "qty": 3,
+    "unitPrice": 3788.57,
+    "amount": 11365.71,
+    "revCode": "0110"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-18",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 25.32,
+    "amount": 25.32,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-19",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 226.19,
+    "amount": 226.19,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-19",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 47.54,
+    "amount": 47.54,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-19",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 74.53,
+    "amount": 74.53,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-08-20",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 97.98,
+    "amount": 97.98,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-08-21",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 52.86,
+    "amount": 52.86,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2026-08-21",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 87.51,
+    "amount": 87.51,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-08-18",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 112.06,
+    "amount": 112.06,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2026-08-19",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 10,
+    "unitPrice": 16.54,
+    "amount": 165.4,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-08-18",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 21.3,
+    "amount": 106.5,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-08-19",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 89.71,
+    "amount": 179.42,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-08-21",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 25.14,
+    "amount": 125.7,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2026-08-18",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 222.83,
+    "amount": 222.83,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L15",
+    "date": "2026-08-18",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 149.94,
+    "amount": 149.94,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L16",
+    "date": "2026-08-18",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 153.08,
+    "amount": 153.08,
+    "revCode": "0272"
+   },
+   {
+    "id": "L17",
+    "date": "2026-08-18",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 62.34,
+    "amount": 62.34,
+    "revCode": "0270"
+   },
+   {
+    "id": "L18",
+    "date": "2026-08-18",
+    "description": "ACETAMINOPHEN 325MG TAB",
+    "qty": 1,
+    "unitPrice": 0.12,
+    "amount": 0.12,
+    "revCode": "0250",
+    "ndc": "94760438994"
+   },
+   {
+    "id": "L19",
+    "date": "2026-08-18",
+    "description": "ACETAMINOPHEN 325MG TAB",
+    "qty": 4,
+    "unitPrice": 1.02,
+    "amount": 4.08,
+    "revCode": "0250",
+    "ndc": "33439703169"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-09-10",
+  "firstBillDate": "2026-08-29",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 13259.11,
+   "allowed": 5924.7,
+   "planPaid": 4706.14,
+   "deductible": 42.02,
+   "copay": 0,
+   "coinsurance": 1176.54,
+   "patientResponsibility": 1218.56,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 6287.05,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 14.01,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 125.12,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 26.3,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 41.23,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 54.2,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 29.24,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 48.41,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 61.99,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 91.49,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 58.91,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 99.25,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 69.53,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 123.26,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 82.94,
+     "lineId": "L15"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 84.68,
+     "lineId": "L16"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 34.48,
+     "lineId": "L17"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 0.07,
+     "lineId": "L18"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2.25,
+     "lineId": "L19"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 42.02
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1176.54
+    }
+   ]
+  },
+  "onCreditReport": false,
+  "paidInFull": true,
+  "originalBalance": 1884.07
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "94760438994": {
+    "unitPrice": 0.012181,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   },
+   "33439703169": {
+    "unitPrice": 0.023327,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "L19"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-01",
+  "RX-01"
+ ],
+ "tags": [
+  "hn:rx-below-10",
+  "hn:cr-not-reported",
+  "plant:RX-01",
+  "variant:eob-line-level-co",
+  "plant:EOB-01:unposted-payment"
+ ]
+}

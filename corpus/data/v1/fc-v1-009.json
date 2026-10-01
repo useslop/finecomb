@@ -1,0 +1,440 @@
+{
+ "id": "fc-v1-009",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20332272,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 009",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0100296",
+   "admitDate": "2026-03-16",
+   "dischargeDate": "2026-03-18",
+   "totalCharges": 33024.92,
+   "statementDate": "2026-04-03",
+   "payments": 16240.49,
+   "adjustments": 12332.87,
+   "balanceDue": 4451.56
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-16",
+    "description": "ED VISIT LVL 5",
+    "qty": 1,
+    "unitPrice": 4285.08,
+    "amount": 4285.08,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-16",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 3755.36,
+    "amount": 3755.36,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-17",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 3755.36,
+    "amount": 3755.36,
+    "revCode": "0110"
+   },
+   {
+    "id": "L25",
+    "date": "2026-03-18",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 3755.36,
+    "amount": 3755.36,
+    "revCode": "0110"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-16",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 5507.14,
+    "amount": 5507.14,
+    "revCode": "0360"
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-16",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 5,
+    "unitPrice": 798.17,
+    "amount": 3990.85,
+    "revCode": "0360"
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-16",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1715.33,
+    "amount": 1715.33,
+    "revCode": "0710"
+   },
+   {
+    "id": "L07",
+    "date": "2026-03-16",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2409.94,
+    "amount": 2409.94,
+    "revCode": "0370"
+   },
+   {
+    "id": "L08",
+    "date": "2026-03-16",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1762.81,
+    "amount": 1762.81,
+    "revCode": "0272"
+   },
+   {
+    "id": "L09",
+    "date": "2026-03-16",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 171.32,
+    "amount": 171.32,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L10",
+    "date": "2026-03-17",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 50.49,
+    "amount": 50.49,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L11",
+    "date": "2026-03-17",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 36.5,
+    "amount": 36.5,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-03-17",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 41.67,
+    "amount": 41.67,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2026-03-16",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 18.16,
+    "amount": 127.12,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L22",
+    "date": "2026-03-16",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 18.16,
+    "amount": 127.12,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2026-03-18",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 10,
+    "unitPrice": 7.64,
+    "amount": 76.4,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L24",
+    "date": "2026-03-18",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 10,
+    "unitPrice": 9.94,
+    "amount": 99.4,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2026-03-17",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 6,
+    "unitPrice": 28.2,
+    "amount": 169.2,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2026-03-18",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 8,
+    "unitPrice": 92.47,
+    "amount": 739.76,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L17",
+    "date": "2026-03-17",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 13.66,
+    "amount": 95.62,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L18",
+    "date": "2026-03-17",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 62.57,
+    "amount": 125.14,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L19",
+    "date": "2026-03-16",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 47.99,
+    "amount": 95.98,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L20",
+    "date": "2026-03-16",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 42.06,
+    "amount": 42.06,
+    "revCode": "0270"
+   },
+   {
+    "id": "L21",
+    "date": "2026-03-16",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 217.03,
+    "amount": 217.03,
+    "revCode": "0270"
+   },
+   {
+    "id": "L23",
+    "date": "2026-03-22",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 18.16,
+    "amount": -127.12,
+    "code": "J1100",
+    "revCode": "0636"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-04-04",
+  "firstBillDate": "2026-04-10",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Medicare",
+  "eob": {
+   "billed": 33024.92,
+   "allowed": 20692.05,
+   "planPaid": 16240.49,
+   "deductible": 391.44,
+   "copay": 0,
+   "coinsurance": 4060.12,
+   "patientResponsibility": 4451.56,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 12332.87
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 391.44
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 4060.12
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L14",
+    "L24"
+   ]
+  },
+  {
+   "ruleId": "RB-01",
+   "lineIds": [
+    "L02",
+    "L03",
+    "L25"
+   ]
+  },
+  {
+   "ruleId": "DATE-01",
+   "lineIds": [
+    "L23"
+   ]
+  }
+ ],
+ "plants": [
+  "DUP-02",
+  "RB-01"
+ ],
+ "tags": [
+  "hn:credit-reversal",
+  "hn:repeat-mod",
+  "variant:credit:posqty",
+  "variant:credit-posted-later",
+  "plant:DUP-02:price",
+  "plant:RB-01:discharge-day-line"
+ ]
+}

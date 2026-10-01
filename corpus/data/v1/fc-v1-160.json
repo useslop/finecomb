@@ -1,0 +1,394 @@
+{
+ "id": "fc-v1-160",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21528041,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 160",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0105883",
+   "admitDate": "2025-12-02",
+   "dischargeDate": "2025-12-03",
+   "totalCharges": 8886.2,
+   "statementDate": "2026-01-03",
+   "payments": 3323.03,
+   "adjustments": 0,
+   "balanceDue": 5563.17
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-12-02",
+    "description": "ER VISIT LEVEL 5",
+    "qty": 1,
+    "unitPrice": 2974.08,
+    "amount": 2974.08,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-12-02",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 117.14,
+    "amount": 117.14,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-12-02",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 238.91,
+    "amount": 238.91,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-12-02",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 44.35,
+    "amount": 44.35,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2025-12-02",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 310.96,
+    "amount": 310.96,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L06",
+    "date": "2025-12-02",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 402.62,
+    "amount": 402.62,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2025-12-02",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 2,
+    "unitPrice": 151.05,
+    "amount": 302.1,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2025-12-02",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 21.8,
+    "amount": 21.8,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2025-12-02",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 19,
+    "unitPrice": 112.08,
+    "amount": 2129.52,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L10",
+    "date": "2025-12-03",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 14,
+    "unitPrice": 135.71,
+    "amount": 1899.94,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L11",
+    "date": "2025-12-03",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 92.7,
+    "amount": 92.7,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2025-12-03",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 168.03,
+    "amount": 168.03,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2025-12-02",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 99.21,
+    "amount": 99.21,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L14",
+    "date": "2025-12-02",
+    "description": "BLOOD COUNT COMPLETE NO DIFF",
+    "qty": 1,
+    "unitPrice": 84.84,
+    "amount": 84.84,
+    "code": "85027",
+    "revCode": "0305"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2025-12-12",
+  "firstBillDate": "2025-12-11",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 8886.2,
+   "allowed": 5258.2,
+   "planPaid": 3323.03,
+   "deductible": 439.58,
+   "copay": 50,
+   "coinsurance": 1445.59,
+   "patientResponsibility": 1935.17,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 3628
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 439.58
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1445.59
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-02-22",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85027": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   },
+   {
+    "col1": "85025",
+    "col2": "85027",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L13",
+    "L14"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-01",
+  "NCCI-01"
+ ],
+ "tags": [
+  "hn:eca-agency-referral",
+  "hn:obs-room-hours",
+  "plant:NCCI-01:mi0"
+ ]
+}

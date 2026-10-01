@@ -1,0 +1,90 @@
+{
+ "id": "fc-v1-231",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 22090290,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 231",
+   "providerName": "Sample Anesthesia Associates",
+   "accountNumber": "TEST-0108510",
+   "totalCharges": 4289.29,
+   "statementDate": "2026-05-21",
+   "payments": 1678.94,
+   "adjustments": 0,
+   "balanceDue": 2610.35
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-06",
+    "description": "ANESTHESIA SERVICES",
+    "qty": 1,
+    "unitPrice": 4289.29,
+    "amount": 4289.29,
+    "code": "00790"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": false,
+  "emergency": false,
+  "firstBillDate": "2026-05-20",
+  "state": "KS",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "anesthesia"
+  ],
+  "eob": {
+   "billed": 4289.29,
+   "allowed": 2558.62,
+   "planPaid": 1678.94,
+   "deductible": 459.95,
+   "copay": 0,
+   "coinsurance": 419.73,
+   "patientResponsibility": 879.68,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 1730.67
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 459.95
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 419.73
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-02"
+ ],
+ "tags": []
+}

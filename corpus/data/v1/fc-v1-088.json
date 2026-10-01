@@ -1,0 +1,457 @@
+{
+ "id": "fc-v1-088",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20957873,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 088",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0103219",
+   "admitDate": "2025-09-21",
+   "dischargeDate": "2025-09-24",
+   "totalCharges": 17757.21,
+   "statementDate": "2025-10-23",
+   "payments": 5915.06,
+   "adjustments": 11842.15,
+   "balanceDue": 0
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-09-21",
+    "description": "ER VISIT LEVEL 3",
+    "qty": 1,
+    "unitPrice": 959.1,
+    "amount": 959.1,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-09-21",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 3801.97,
+    "amount": 3801.97,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2025-09-22",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 3801.97,
+    "amount": 3801.97,
+    "revCode": "0110"
+   },
+   {
+    "id": "L04",
+    "date": "2025-09-23",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 3801.97,
+    "amount": 3801.97,
+    "revCode": "0110"
+   },
+   {
+    "id": "L05",
+    "date": "2025-09-21",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 84.66,
+    "amount": 84.66,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2025-09-21",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 110.46,
+    "amount": 110.46,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L07",
+    "date": "2025-09-25",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 73.29,
+    "amount": 73.29,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L08",
+    "date": "2025-09-22",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 124.75,
+    "amount": 124.75,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2025-09-22",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 32.89,
+    "amount": 32.89,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2025-09-23",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 196.11,
+    "amount": 196.11,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2025-09-23",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 146.63,
+    "amount": 146.63,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L12",
+    "date": "2025-09-23",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 81.04,
+    "amount": 81.04,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2025-09-23",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 24.26,
+    "amount": 194.08,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2025-09-22",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 10,
+    "unitPrice": 12.05,
+    "amount": 120.5,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2025-09-21",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 55.19,
+    "amount": 110.38,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2025-09-21",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 98.41,
+    "amount": 98.41,
+    "revCode": "0272"
+   },
+   {
+    "id": "L17",
+    "date": "2025-09-21",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 76.37,
+    "amount": 76.37,
+    "revCode": "0270"
+   },
+   {
+    "id": "L18",
+    "date": "2025-09-21",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 3,
+    "unitPrice": 1314.21,
+    "amount": 3942.63,
+    "revCode": "0731"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-10-13",
+  "firstBillDate": "2025-10-03",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 17757.21,
+   "allowed": 5915.06,
+   "planPaid": 5915.06,
+   "deductible": 0,
+   "copay": 0,
+   "coinsurance": 0,
+   "patientResponsibility": 0,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 639.62,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2535.51,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2535.51,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2535.51,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 56.46,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 73.66,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 48.88,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 83.19,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 21.93,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 130.78,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 97.79,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 54.04,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 129.43,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 80.36,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 73.61,
+     "lineId": "L15"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 65.63,
+     "lineId": "L16"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 50.93,
+     "lineId": "L17"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2629.31,
+     "lineId": "L18"
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2025-11-17",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DATE-01",
+   "lineIds": [
+    "L07"
+   ]
+  }
+ ],
+ "plants": [
+  "DATE-01"
+ ],
+ "tags": [
+  "hn:eca-agency-referral",
+  "hn:telemetry-monitor",
+  "plant:DATE-01:moved",
+  "variant:eob-line-level-co"
+ ]
+}

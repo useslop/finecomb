@@ -1,0 +1,687 @@
+{
+ "id": "fc-v1-092",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20989549,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 092",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0103367",
+   "admitDate": "2026-03-22",
+   "dischargeDate": "2026-03-28",
+   "totalCharges": 29400.82,
+   "statementDate": "2026-04-07",
+   "payments": 8749.66,
+   "adjustments": 18165.15,
+   "balanceDue": 2486.01
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-22",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4412.4,
+    "amount": 4412.4,
+    "revCode": "0110"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-23",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4412.4,
+    "amount": 4412.4,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-24",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4412.4,
+    "amount": 4412.4,
+    "revCode": "0110"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-25",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4412.4,
+    "amount": 4412.4,
+    "revCode": "0110"
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-26",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4412.4,
+    "amount": 4412.4,
+    "revCode": "0110"
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-27",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4412.4,
+    "amount": 4412.4,
+    "revCode": "0110"
+   },
+   {
+    "id": "L07",
+    "date": "2026-03-22",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 213.99,
+    "amount": 213.99,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2026-03-22",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 169.95,
+    "amount": 169.95,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-03-22",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 37.67,
+    "amount": 37.67,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2026-03-23",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 59.69,
+    "amount": 59.69,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L11",
+    "date": "2026-03-23",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 162.1,
+    "amount": 162.1,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-03-24",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 119.35,
+    "amount": 119.35,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L13",
+    "date": "2026-03-24",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 54.66,
+    "amount": 54.66,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2026-03-25",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 70,
+    "amount": 70,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L15",
+    "date": "2026-03-25",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 76.45,
+    "amount": 76.45,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L16",
+    "date": "2026-03-26",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 131.5,
+    "amount": 131.5,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L17",
+    "date": "2026-03-26",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 55.01,
+    "amount": 55.01,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L18",
+    "date": "2026-03-27",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 71.35,
+    "amount": 71.35,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L19",
+    "date": "2026-03-28",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 49.34,
+    "amount": 49.34,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L20",
+    "date": "2026-03-24",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 132.28,
+    "amount": 132.28,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L21",
+    "date": "2026-03-28",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 132.92,
+    "amount": 132.92,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L22",
+    "date": "2026-03-27",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 78.6,
+    "amount": 157.2,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L29",
+    "date": "2026-03-27",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 78.6,
+    "amount": 157.2,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L23",
+    "date": "2026-03-24",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 28.52,
+    "amount": 28.52,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L24",
+    "date": "2026-03-28",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 217.89,
+    "amount": 435.78,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L25",
+    "date": "2026-03-23",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 142.21,
+    "amount": 142.21,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L26",
+    "date": "2026-03-28",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 76.24,
+    "amount": 381.2,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L27",
+    "date": "2026-03-22",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 150.06,
+    "amount": 150.06,
+    "revCode": "0272",
+    "notReceived": true
+   },
+   {
+    "id": "L28",
+    "date": "2026-03-22",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 95.19,
+    "amount": 95.19,
+    "revCode": "0270"
+   },
+   {
+    "id": "L30",
+    "date": "2026-03-27",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": -2,
+    "unitPrice": 78.6,
+    "amount": -157.2,
+    "code": "J2270",
+    "revCode": "0636"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-04-07",
+  "firstBillDate": "2026-04-05",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 29400.82,
+   "allowed": 11235.67,
+   "planPaid": 8749.66,
+   "deductible": 1513.82,
+   "copay": 0,
+   "coinsurance": 972.19,
+   "patientResponsibility": 2486.01,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2726.18,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2726.18,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2726.18,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2726.18,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2726.18,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2726.18,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 132.21,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 105,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 23.27,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 36.88,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 100.15,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 73.74,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 33.77,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 43.25,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 47.23,
+     "lineId": "L15"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 81.25,
+     "lineId": "L16"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 33.99,
+     "lineId": "L17"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 44.08,
+     "lineId": "L18"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 30.48,
+     "lineId": "L19"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 81.73,
+     "lineId": "L20"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 82.12,
+     "lineId": "L21"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 97.13,
+     "lineId": "L22"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 97.13,
+     "lineId": "L29"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 17.62,
+     "lineId": "L23"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 269.24,
+     "lineId": "L24"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 87.86,
+     "lineId": "L25"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 235.52,
+     "lineId": "L26"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 92.71,
+     "lineId": "L27"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1513.82
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 972.19
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L27"
+   ]
+  }
+ ],
+ "plants": [
+  "CANC-01"
+ ],
+ "tags": [
+  "hn:credit-reversal",
+  "variant:credit:negqty",
+  "plant:CANC-01:user-marked",
+  "variant:eob-line-level-co"
+ ]
+}

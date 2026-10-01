@@ -1,0 +1,268 @@
+{
+ "id": "fc-v1-190",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21765611,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 190",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0106993",
+   "admitDate": "2024-12-20",
+   "dischargeDate": "2024-12-20",
+   "totalCharges": 4364,
+   "statementDate": "2025-01-21",
+   "payments": 1163.09,
+   "adjustments": 0,
+   "balanceDue": 3200.91
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2024-12-20",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 2643.55,
+    "amount": 2643.55,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2024-12-20",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 134.91,
+    "amount": 134.91,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L03",
+    "date": "2024-12-20",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 154.74,
+    "amount": 154.74,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2024-12-20",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 112.34,
+    "amount": 112.34,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2024-12-20",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 70.07,
+    "amount": 70.07,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2024-12-20",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 22.52,
+    "amount": 22.52,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2024-12-20",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 559.64,
+    "amount": 559.64,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L08",
+    "date": "2024-12-20",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 227.19,
+    "amount": 227.19,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L09",
+    "date": "2024-12-20",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 147.92,
+    "amount": 295.84,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2024-12-20",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 43.2,
+    "amount": 43.2,
+    "revCode": "0270"
+   },
+   {
+    "id": "L11",
+    "date": "2024-12-20",
+    "description": "PHARMACY MISC",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2025-01-01",
+  "firstBillDate": "2024-12-25",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 3840.38
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01"
+ ],
+ "tags": [
+  "hn:rounding",
+  "hn:cr-legit",
+  "plant:MCD-01:no-eob",
+  "variant:medicaid-no-eob"
+ ]
+}

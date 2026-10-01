@@ -1,0 +1,309 @@
+{
+ "id": "fc-v1-199",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21836882,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 199",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0107326",
+   "totalCharges": 6542.72,
+   "statementDate": "2026-08-24",
+   "payments": 2678.31,
+   "adjustments": 2558.62,
+   "balanceDue": 1305.79
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-19",
+    "description": "EMERGENCY ROOM LVL 5",
+    "qty": 1,
+    "unitPrice": 4152.96,
+    "amount": 4152.96,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-19",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 51.49,
+    "amount": 51.49,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-19",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 71.4,
+    "amount": 71.4,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-19",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 178.47,
+    "amount": 178.47,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-19",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 147.19,
+    "amount": 147.19,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-19",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 59.45,
+    "amount": 59.45,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-19",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 2,
+    "unitPrice": 127.87,
+    "amount": 255.74,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-19",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 528.71,
+    "amount": 528.71,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-19",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 365.03,
+    "amount": 365.03,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-19",
+    "description": "IV PUSH EACH ADDL DRUG",
+    "qty": 2,
+    "unitPrice": 268.22,
+    "amount": 536.44,
+    "code": "96375",
+    "revCode": "0260"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-19",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 9,
+    "unitPrice": 21.76,
+    "amount": 195.84,
+    "code": "J1100",
+    "revCode": "0636"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-07-24",
+  "firstBillDate": "2026-07-30",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 6542.72,
+   "allowed": 3984.1,
+   "planPaid": 3090.12,
+   "deductible": 121.45,
+   "copay": 0,
+   "coinsurance": 772.53,
+   "patientResponsibility": 893.98,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2558.62
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 121.45
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 772.53
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96375": {
+    "practitioner": {
+     "mue": 6,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 6,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-01"
+ ],
+ "tags": [
+  "hn:mue-setting",
+  "plant:EOB-01:unposted-payment"
+ ]
+}

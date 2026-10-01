@@ -1,0 +1,322 @@
+{
+ "id": "fc-v1-154",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21480527,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 154",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0105661",
+   "admitDate": "2026-02-03",
+   "dischargeDate": "2026-02-04",
+   "totalCharges": 10540.92,
+   "statementDate": "2026-03-10",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 10540.92
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-02-03",
+    "description": "ED VISIT LVL 4",
+    "qty": 2,
+    "unitPrice": 2182.65,
+    "amount": 4365.3,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-02-03",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 102.7,
+    "amount": 102.7,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L03",
+    "date": "2026-02-03",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 27.37,
+    "amount": 27.37,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-02-03",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 621.05,
+    "amount": 621.05,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L05",
+    "date": "2026-02-03",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 506.85,
+    "amount": 506.85,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "XU"
+    ]
+   },
+   {
+    "id": "L06",
+    "date": "2026-02-03",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 3,
+    "unitPrice": 93.97,
+    "amount": 281.91,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-02-03",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 29.86,
+    "amount": 209.02,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-02-03",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 149.21,
+    "amount": 298.42,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L09",
+    "date": "2026-02-03",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 68.21,
+    "amount": 136.42,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-02-03",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 21,
+    "unitPrice": 135.83,
+    "amount": 2852.43,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L11",
+    "date": "2026-02-04",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 17,
+    "unitPrice": 64.13,
+    "amount": 1090.21,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L12",
+    "date": "2026-02-04",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 49.24,
+    "amount": 49.24,
+    "code": "81003",
+    "revCode": "0300"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-02-21",
+  "firstBillDate": "2026-02-23",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Medicare",
+  "fapApplied": true,
+  "fapAppliedDate": "2026-05-05",
+  "collections": [
+   {
+    "date": "2026-07-19",
+    "kind": "credit_report",
+    "noticeDate": "2026-05-26"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L01"
+   ]
+  },
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "ECA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MUE-01",
+  "INS-01",
+  "ECA-01"
+ ],
+ "tags": [
+  "hn:hourly-overlap",
+  "hn:ncci-mi1-59",
+  "plant:MUE-01",
+  "plant:ECA-01:fap-pending"
+ ]
+}

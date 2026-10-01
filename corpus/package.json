@@ -1,0 +1,15 @@
+{
+  "name": "@finecomb/corpus",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Synthetic bill corpus, ground-truth labeler and accuracy evaluator for the Finecomb engine.",
+  "scripts": {
+    "generate": "vite-node src/run-generate.ts",
+    "evaluate": "vite-node src/run-evaluate.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": { "@finecomb/engine": "^0.1.0" },
+  "devDependencies": { "typescript": "^5.7.0", "vitest": "^2.1.0" }
+}

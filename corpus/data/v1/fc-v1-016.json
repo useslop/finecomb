@@ -1,0 +1,377 @@
+{
+ "id": "fc-v1-016",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20387705,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 016",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0100555",
+   "admitDate": "2026-05-28",
+   "dischargeDate": "2026-05-29",
+   "totalCharges": 9406.39,
+   "statementDate": "2026-06-19",
+   "payments": 1913.52,
+   "adjustments": 0,
+   "balanceDue": 7492.87
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-28",
+    "description": "ER VISIT LEVEL 3",
+    "qty": 1,
+    "unitPrice": 1282.33,
+    "amount": 1282.33,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-28",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4950.77,
+    "amount": 4950.77,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-28",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 138.29,
+    "amount": 138.29,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-28",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 140.78,
+    "amount": 140.78,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-28",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 176.96,
+    "amount": 176.96,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-29",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 75.45,
+    "amount": 75.45,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L18",
+    "date": "2026-05-29",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 75.45,
+    "amount": 75.45,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-29",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 70.86,
+    "amount": 70.86,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-29",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 96.67,
+    "amount": 193.34,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-05-29",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 8,
+    "unitPrice": 56.54,
+    "amount": 452.32,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-05-28",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 7,
+    "unitPrice": 86.35,
+    "amount": 604.45,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-05-28",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 58.75,
+    "amount": 58.75,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-05-29",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 74.49,
+    "amount": 148.98,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-05-29",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 29.01,
+    "amount": 116.04,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2026-05-28",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 25.43,
+    "amount": 152.58,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2026-05-28",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 65.51,
+    "amount": 65.51,
+    "revCode": "0270"
+   },
+   {
+    "id": "L16",
+    "date": "2026-05-29",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 642.77,
+    "amount": 642.77,
+    "revCode": "0424"
+   },
+   {
+    "id": "L17",
+    "date": "2026-05-29",
+    "description": "CEFTRIAXONE WASTAGE",
+    "qty": 2,
+    "unitPrice": 56.54,
+    "amount": 113.08,
+    "code": "J0696",
+    "revCode": "0636",
+    "modifiers": [
+     "JW"
+    ]
+   },
+   {
+    "id": "L19",
+    "date": "2026-05-29",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 75.45,
+    "amount": -75.45,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L20",
+    "date": "2026-06-02",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 23.13,
+    "amount": 23.13,
+    "code": "83735",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-06-09",
+  "firstBillDate": "2026-06-17",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": []
+ },
+ "data": {
+  "mue": {
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DATE-01",
+   "lineIds": [
+    "L20"
+   ]
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01",
+  "DATE-01"
+ ],
+ "tags": [
+  "hn:jw-waste",
+  "hn:credit-reversal",
+  "variant:jw-wastage",
+  "variant:credit:posqty",
+  "plant:DATE-01:added",
+  "variant:eob-line-level-co",
+  "plant:MCD-01:no-eob",
+  "variant:medicaid-no-eob"
+ ]
+}

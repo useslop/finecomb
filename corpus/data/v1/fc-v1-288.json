@@ -1,0 +1,105 @@
+{
+ "id": "fc-v1-288",
+ "kind": "professional",
+ "sub": "air",
+ "seed": 22541673,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 288",
+   "providerName": "Example Air Medical Transport",
+   "accountNumber": "TEST-0110619",
+   "totalCharges": 66127.19,
+   "statementDate": "2026-09-29",
+   "payments": 24658.43,
+   "adjustments": 34609.64,
+   "balanceDue": 6859.12
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-31",
+    "description": "ROTOR AIR TRANSPORT BASE",
+    "qty": 1,
+    "unitPrice": 51091.19,
+    "amount": 51091.19,
+    "code": "A0431"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-31",
+    "description": "ROTOR AIR MILES",
+    "qty": 35,
+    "unitPrice": 429.6,
+    "amount": 15036,
+    "code": "A0436"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "airAmbulance": true,
+  "emergency": true,
+  "firstBillDate": "2026-09-24",
+  "state": "OK",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 66127.19,
+   "allowed": 31517.55,
+   "planPaid": 24658.43,
+   "deductible": 694.51,
+   "copay": 0,
+   "coinsurance": 6164.61,
+   "patientResponsibility": 6859.12,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 34609.64
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 694.51
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 6164.61
+    }
+   ]
+  },
+  "onCreditReport": false,
+  "paidInFull": true,
+  "originalBalance": 2868.93
+ },
+ "data": {
+  "mue": {
+   "A0431": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "A0436": {
+    "practitioner": {
+     "mue": 250,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:nsa-compliant",
+  "hn:cr-not-reported"
+ ]
+}

@@ -1,0 +1,273 @@
+{
+ "id": "fc-v1-046",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20625275,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 046",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0101665",
+   "admitDate": "2026-07-11",
+   "dischargeDate": "2026-07-12",
+   "totalCharges": 21832.44,
+   "statementDate": "2026-07-31",
+   "payments": 6029.86,
+   "adjustments": 15800.58,
+   "balanceDue": 2
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-11",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 3121.2,
+    "amount": 3121.2,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-11",
+    "description": "ICU DAILY CHARGE",
+    "qty": 1,
+    "unitPrice": 8648.71,
+    "amount": 8648.71,
+    "revCode": "0200"
+   },
+   {
+    "id": "L13",
+    "date": "2026-07-12",
+    "description": "ICU DAILY CHARGE",
+    "qty": 1,
+    "unitPrice": 8648.71,
+    "amount": 8648.71,
+    "revCode": "0200"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-11",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 93.37,
+    "amount": 93.37,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-11",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 57.57,
+    "amount": 57.57,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-11",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 7,
+    "unitPrice": 51.77,
+    "amount": 362.39,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-12",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 6,
+    "unitPrice": 26.97,
+    "amount": 161.82,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-12",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 72.75,
+    "amount": 145.5,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-11",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 135.85,
+    "amount": 135.85,
+    "revCode": "0270"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-11",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 85,
+    "amount": 85,
+    "revCode": "0272"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-11",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 104.36,
+    "amount": 104.36,
+    "revCode": "0270"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-11",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 3,
+    "unitPrice": 44.76,
+    "amount": 134.28,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-12",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 4,
+    "unitPrice": 33.42,
+    "amount": 133.68,
+    "code": "82962",
+    "revCode": "0300"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-07-21",
+  "firstBillDate": "2026-07-31",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 21832.44,
+   "allowed": 6031.86,
+   "planPaid": 6029.86,
+   "deductible": 0,
+   "copay": 2,
+   "coinsurance": 0,
+   "patientResponsibility": 2,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 15800.58
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 2
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "82962": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "RB-01",
+   "lineIds": [
+    "L02",
+    "L13"
+   ]
+  }
+ ],
+ "plants": [
+  "RB-01"
+ ],
+ "tags": [
+  "hn:mue-inpatient",
+  "plant:RB-01:discharge-day-line"
+ ]
+}

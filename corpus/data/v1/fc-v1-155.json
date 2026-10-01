@@ -1,0 +1,382 @@
+{
+ "id": "fc-v1-155",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21488446,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 155",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0105698",
+   "admitDate": "2026-01-28",
+   "dischargeDate": "2026-01-28",
+   "totalCharges": 2713.49,
+   "statementDate": "2026-02-18",
+   "payments": 491.26,
+   "adjustments": 0,
+   "balanceDue": 2222.23
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-01-28",
+    "description": "ER VISIT LEVEL 3",
+    "qty": 1,
+    "unitPrice": 1279.04,
+    "amount": 1279.04,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-01-28",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 51.01,
+    "amount": 51.01,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-01-28",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 45.71,
+    "amount": 45.71,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-01-28",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 169.42,
+    "amount": 169.42,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2026-01-28",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 192.05,
+    "amount": 192.05,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-01-28",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 53.34,
+    "amount": 53.34,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-01-28",
+    "description": "CAPILLARY BLOOD DRAW",
+    "qty": 1,
+    "unitPrice": 28.27,
+    "amount": 28.27,
+    "code": "36416",
+    "revCode": "0300"
+   },
+   {
+    "id": "L08",
+    "date": "2026-01-28",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 306.68,
+    "amount": 306.68,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2026-01-28",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 35.13,
+    "amount": 281.04,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-01-28",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 30.1,
+    "amount": 150.5,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-01-28",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 69.48,
+    "amount": 69.48,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-01-28",
+    "description": "ONDANSETRON 4MG ODT",
+    "qty": 2,
+    "unitPrice": 2.3,
+    "amount": 4.6,
+    "revCode": "0250",
+    "ndc": "46534583825"
+   },
+   {
+    "id": "L13",
+    "date": "2026-01-28",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 82.35,
+    "amount": 82.35,
+    "code": "80048",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-02-16",
+  "firstBillDate": "2026-02-08",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 2713.49,
+   "allowed": 491.26,
+   "planPaid": 491.26,
+   "deductible": 0,
+   "copay": 0,
+   "coinsurance": 0,
+   "patientResponsibility": 0,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2222.23
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-04-18",
+    "kind": "late_fee"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "36416": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   },
+   {
+    "col1": "36415",
+    "col2": "36416",
+    "mi": 9,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {
+   "46534583825": {
+    "unitPrice": 0.103628,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L05",
+    "L13"
+   ]
+  },
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "L12"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "RX-01",
+  "NCCI-01",
+  "MCD-01"
+ ],
+ "tags": [
+  "hn:ncci-mi9",
+  "hn:eca-late-fee",
+  "plant:RX-01",
+  "plant:NCCI-01:mi0",
+  "plant:MCD-01:with-eob"
+ ]
+}

@@ -1,0 +1,234 @@
+{
+ "id": "fc-v1-037",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20554004,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 037",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0101332",
+   "admitDate": "2026-06-02",
+   "dischargeDate": "2026-06-02",
+   "totalCharges": 4452.75,
+   "statementDate": "2026-06-23",
+   "payments": 868.57,
+   "adjustments": 1765.91,
+   "balanceDue": 1818.27
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-02",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 2259.58,
+    "amount": 2259.58,
+    "revCode": "0121"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-02",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 49.68,
+    "amount": 49.68,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-02",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 39.21,
+    "amount": 78.42,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-02",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 118.15,
+    "amount": 236.3,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-02",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 47.58,
+    "amount": 95.16,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-02",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 97.51,
+    "amount": 390.04,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-06-02",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 1157.96,
+    "amount": 1157.96,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L08",
+    "date": "2026-06-02",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 36.77,
+    "amount": 36.77,
+    "revCode": "0270"
+   },
+   {
+    "id": "L09",
+    "date": "2026-06-02",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 32.56,
+    "amount": 32.56,
+    "revCode": "0272"
+   },
+   {
+    "id": "L10",
+    "date": "2026-06-02",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 116.28,
+    "amount": 116.28,
+    "revCode": "0270"
+   },
+   {
+    "id": "L11",
+    "date": "2026-06-02",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 52.54,
+    "amount": 52.54,
+    "revCode": "0250"
+   },
+   {
+    "id": "L12",
+    "date": "2026-06-02",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 52.54,
+    "amount": -52.54,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-06-07",
+  "firstBillDate": "2026-06-23",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": []
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:same-day-admit-discharge",
+  "hn:ins-paid-no-eob",
+  "hn:cancel-reversed",
+  "variant:cancel-credit:posqty",
+  "variant:eob-line-level-co"
+ ]
+}

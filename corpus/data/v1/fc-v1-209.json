@@ -1,0 +1,84 @@
+{
+ "id": "fc-v1-209",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 21916072,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 209",
+   "providerName": "Sample Surgical Associates",
+   "accountNumber": "TEST-0107696",
+   "totalCharges": 1119.03,
+   "statementDate": "2026-06-12",
+   "payments": 375.2,
+   "adjustments": 574.44,
+   "balanceDue": 169.39
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-26",
+    "description": "ASSISTANT AT SURGERY KNEE",
+    "qty": 1,
+    "unitPrice": 1119.03,
+    "amount": 1119.03,
+    "code": "27447",
+    "modifiers": [
+     "80"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": false,
+  "emergency": false,
+  "firstBillDate": "2026-06-20",
+  "state": "AL",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "anesthesia"
+  ],
+  "eob": {
+   "billed": 1119.03,
+   "allowed": 544.59,
+   "planPaid": 375.2,
+   "deductible": 127.7,
+   "copay": 0,
+   "coinsurance": 41.69,
+   "patientResponsibility": 169.39,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 574.44
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 127.7
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 41.69
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:nsa02-compliant"
+ ]
+}

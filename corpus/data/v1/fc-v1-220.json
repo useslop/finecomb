@@ -1,0 +1,95 @@
+{
+ "id": "fc-v1-220",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 22003181,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 220",
+   "providerName": "Sample Radiology Associates",
+   "accountNumber": "TEST-0108103",
+   "totalCharges": 431.63,
+   "statementDate": "2026-08-01",
+   "payments": 56.97,
+   "adjustments": 190.23,
+   "balanceDue": 184.43
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-27",
+    "description": "CT HEAD PROFESSIONAL READ",
+    "qty": 1,
+    "unitPrice": 431.63,
+    "amount": 431.63,
+    "code": "70450",
+    "modifiers": [
+     "26"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": false,
+  "emergency": false,
+  "firstBillDate": "2026-07-04",
+  "state": "IN",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "radiology"
+  ],
+  "eob": {
+   "billed": 431.63,
+   "allowed": 241.4,
+   "planPaid": 56.97,
+   "deductible": 160.01,
+   "copay": 0,
+   "coinsurance": 24.42,
+   "patientResponsibility": 184.43,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 190.23
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 160.01
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 24.42
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:nsa02-compliant"
+ ]
+}

@@ -1,0 +1,341 @@
+{
+ "id": "fc-v1-108",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21116253,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 108",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0103959",
+   "admitDate": "2026-08-31",
+   "dischargeDate": "2026-09-01",
+   "totalCharges": 9588.61,
+   "statementDate": "2026-09-29",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 9588.61
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-31",
+    "description": "ED VISIT LVL 5",
+    "qty": 1,
+    "unitPrice": 4213.26,
+    "amount": 4213.26,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-31",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 32.1,
+    "amount": 32.1,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-31",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 181.3,
+    "amount": 181.3,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-31",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 28.13,
+    "amount": 28.13,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-31",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 394.88,
+    "amount": 394.88,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L06",
+    "date": "2026-08-31",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 526.34,
+    "amount": 526.34,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-08-31",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 625.98,
+    "amount": 625.98,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "59"
+    ]
+   },
+   {
+    "id": "L08",
+    "date": "2026-08-31",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 2,
+    "unitPrice": 185.06,
+    "amount": 370.12,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2026-08-31",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 15.1,
+    "amount": 60.4,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-08-31",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 17.8,
+    "amount": 106.8,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-08-31",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 156.37,
+    "amount": 156.37,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L12",
+    "date": "2026-08-31",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 125.27,
+    "amount": 125.27,
+    "revCode": "0270"
+   },
+   {
+    "id": "L13",
+    "date": "2026-08-31",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 23,
+    "unitPrice": 81.87,
+    "amount": 1883.01,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L14",
+    "date": "2026-09-01",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 10,
+    "unitPrice": 86.02,
+    "amount": 860.2,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L15",
+    "date": "2026-09-01",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 24.45,
+    "amount": 24.45,
+    "code": "81003",
+    "revCode": "0300"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-09-08",
+  "firstBillDate": "2026-09-26",
+  "state": "TX",
+  "hospitalCcn": "990102"
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:ncci-mi1-59",
+  "hn:obs-room-hours",
+  "hn:hourly-overlap"
+ ]
+}

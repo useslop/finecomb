@@ -1,0 +1,452 @@
+{
+ "id": "fc-v1-103",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21076658,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 103",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0103774",
+   "totalCharges": 16333.37,
+   "statementDate": "2026-06-07",
+   "payments": 4040.42,
+   "adjustments": 0,
+   "balanceDue": 12292.95
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-07",
+    "description": "ED VISIT LVL 5",
+    "qty": 1,
+    "unitPrice": 4287.39,
+    "amount": 4287.39,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-07",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 118.86,
+    "amount": 118.86,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-07",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 33.34,
+    "amount": 33.34,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-07",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 62.47,
+    "amount": 62.47,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-07",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 60.55,
+    "amount": 60.55,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-07",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 18.7,
+    "amount": 18.7,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-07",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 229.98,
+    "amount": 229.98,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-07",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 260.53,
+    "amount": 260.53,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "XU"
+    ]
+   },
+   {
+    "id": "L09",
+    "date": "2026-05-07",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 12.24,
+    "amount": 85.68,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-05-07",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 31.78,
+    "amount": 127.12,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-05-07",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 29,
+    "amount": 29,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-05-07",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 8,
+    "unitPrice": 85.29,
+    "amount": 682.32,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2026-05-08",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 75,
+    "unitPrice": 132.74,
+    "amount": 9955.5,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L14",
+    "date": "2026-05-08",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 193.49,
+    "amount": 193.49,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L15",
+    "date": "2026-05-08",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 59.37,
+    "amount": 59.37,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L16",
+    "date": "2026-05-07",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 53.14,
+    "amount": 53.14,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L17",
+    "date": "2026-05-07",
+    "description": "BLOOD COUNT COMPLETE NO DIFF",
+    "qty": 1,
+    "unitPrice": 75.93,
+    "amount": 75.93,
+    "code": "85027",
+    "revCode": "0305"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-05-22",
+  "firstBillDate": "2026-05-14",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 16333.37,
+   "allowed": 6005.97,
+   "planPaid": 4040.42,
+   "deductible": 91.08,
+   "copay": 100,
+   "coinsurance": 1774.47,
+   "patientResponsibility": 1965.55,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 10327.4
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 91.08
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1774.47
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 100
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85027": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "85025",
+    "col2": "85027",
+    "mi": 0,
+    "effective": "2020-01-01"
+   },
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L13"
+   ]
+  },
+  {
+   "ruleId": "QTY-01",
+   "lineIds": [
+    "L13"
+   ]
+  },
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L16",
+    "L17"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MUE-01",
+  "NSA-01",
+  "NCCI-01"
+ ],
+ "tags": [
+  "hn:ncci-mi1-59",
+  "plant:MUE-01",
+  "plant:NCCI-01:mi0"
+ ]
+}

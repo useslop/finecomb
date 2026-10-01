@@ -1,0 +1,138 @@
+{
+ "id": "fc-v1-295",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 22597106,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 295",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0110878",
+   "totalCharges": 2834.07,
+   "statementDate": "2026-06-05",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 2834.07
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-02",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 261.84,
+    "amount": 261.84,
+    "code": "99214",
+    "modifiers": [
+     "25"
+    ],
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-02",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 317.82,
+    "amount": 317.82,
+    "code": "20610",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-02",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 4,
+    "unitPrice": 30.34,
+    "amount": 121.36,
+    "code": "J3301",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-02",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2133.05,
+    "amount": 2133.05,
+    "code": "74177",
+    "provider": "Sample Internal Medicine Group"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-05-20",
+  "state": "GA",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Sample Internal Medicine Group",
+    "total": 1442.41
+   }
+  ],
+  "onCreditReport": false,
+  "paidInFull": false,
+  "originalBalance": 1207.57
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "20610",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-121-days",
+  "hn:ncci-mod25",
+  "hn:cr-not-reported"
+ ]
+}

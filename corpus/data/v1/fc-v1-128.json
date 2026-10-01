@@ -1,0 +1,169 @@
+{
+ "id": "fc-v1-128",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21274633,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 128",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0104699",
+   "totalCharges": 6145.44,
+   "statementDate": "2026-07-16",
+   "payments": 81.92,
+   "adjustments": 0,
+   "balanceDue": 6063.52
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-25",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2638.17,
+    "amount": 2638.17,
+    "revCode": "0360",
+    "provider": "Example Valley Hospital"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-25",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 869.9,
+    "amount": 869.9,
+    "revCode": "0710",
+    "provider": "Example Valley Hospital"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-25",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 306.91,
+    "amount": 306.91,
+    "revCode": "0272",
+    "provider": "Example Valley Hospital"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-25",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 22.59,
+    "amount": 180.72,
+    "code": "J2405",
+    "revCode": "0636",
+    "provider": "Example Valley Hospital"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-25",
+    "description": "ANESTHESIA SERVICES",
+    "qty": 1,
+    "unitPrice": 2149.74,
+    "amount": 2149.74,
+    "code": "00790",
+    "provider": "Sample Anesthesia Associates"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-25",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 112.96,
+    "amount": 112.96,
+    "revCode": "0250",
+    "provider": "Example Valley Hospital"
+   },
+   {
+    "id": "L07",
+    "date": "2026-06-25",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 112.96,
+    "amount": -112.96,
+    "revCode": "0250",
+    "provider": "Example Valley Hospital"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-07-12",
+  "firstBillDate": "2026-07-04",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "gfe": [
+   {
+    "provider": "Example Valley Hospital",
+    "total": 3252.43
+   },
+   {
+    "provider": "Sample Anesthesia Associates",
+    "total": 2414.26
+   }
+  ],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 5418.09
+ },
+ "data": {
+  "mue": {
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "GFE-01",
+   "lineIds": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L06",
+    "L07"
+   ]
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "GFE-01",
+  "CR-01"
+ ],
+ "tags": [
+  "hn:cancel-reversed",
+  "variant:sched-surgery-2-providers",
+  "variant:cancel-credit:posqty",
+  "plant:GFE-01",
+  "plant:CR-01:recent"
+ ]
+}

@@ -1,0 +1,308 @@
+{
+ "id": "fc-v1-135",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21330066,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 135",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0104958",
+   "totalCharges": 9182.55,
+   "statementDate": "2026-04-23",
+   "payments": 3871.61,
+   "adjustments": 3553.63,
+   "balanceDue": 1757.31
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-03",
+    "description": "ER VISIT LEVEL 5",
+    "qty": 1,
+    "unitPrice": 4808.42,
+    "amount": 4808.42,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-03",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 153.94,
+    "amount": 153.94,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-03",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 84.93,
+    "amount": 84.93,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-03",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 36.46,
+    "amount": 36.46,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-03",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 2,
+    "unitPrice": 161.64,
+    "amount": 323.28,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-03",
+    "description": "CAPILLARY BLOOD DRAW",
+    "qty": 1,
+    "unitPrice": 28.98,
+    "amount": 28.98,
+    "code": "36416",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-03",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 2587.92,
+    "amount": 2587.92,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-03",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 322.23,
+    "amount": 322.23,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-03",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 687.94,
+    "amount": 687.94,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "59"
+    ]
+   },
+   {
+    "id": "L10",
+    "date": "2026-04-03",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 106,
+    "amount": 106,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L11",
+    "date": "2026-04-03",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 42.45,
+    "amount": 42.45,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "firstPostDischargeStatementDate": "2026-04-22",
+  "firstBillDate": "2026-04-28",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 9182.55,
+   "allowed": 5628.92,
+   "planPaid": 3871.61,
+   "deductible": 1327.13,
+   "copay": 0,
+   "coinsurance": 430.18,
+   "patientResponsibility": 1757.31,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 3553.63
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1327.13
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 430.18
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "36416": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   },
+   {
+    "col1": "36415",
+    "col2": "36416",
+    "mi": 9,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:mue-setting",
+  "hn:ncci-mi9",
+  "hn:nsa-compliant",
+  "hn:ncci-mi1-59"
+ ]
+}

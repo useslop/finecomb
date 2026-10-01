@@ -1,0 +1,390 @@
+{
+ "id": "fc-v1-050",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20656951,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 050",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0101813",
+   "admitDate": "2026-07-27",
+   "dischargeDate": "2026-07-29",
+   "totalCharges": 26290.85,
+   "statementDate": "2026-08-24",
+   "payments": 4758.42,
+   "adjustments": 21532.43,
+   "balanceDue": 0
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-27",
+    "description": "ER VISIT LEVEL 3",
+    "qty": 1,
+    "unitPrice": 1254.96,
+    "amount": 1254.96,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-27",
+    "description": "PRIVATE RM DAILY",
+    "qty": 2,
+    "unitPrice": 4395.27,
+    "amount": 8790.54,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-28",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 5097.7,
+    "amount": 5097.7,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-28",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 5,
+    "unitPrice": 682.4,
+    "amount": 3412,
+    "revCode": "0360"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-28",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1281.51,
+    "amount": 1281.51,
+    "revCode": "0710"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-28",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN CANCELLED",
+    "qty": 1,
+    "unitPrice": 2182.29,
+    "amount": 2182.29,
+    "revCode": "0370"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-28",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1788.77,
+    "amount": 1788.77,
+    "revCode": "0272"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-27",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 26.18,
+    "amount": 26.18,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-28",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 58.69,
+    "amount": 58.69,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-28",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 80.45,
+    "amount": 80.45,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-27",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 65.2,
+    "amount": 65.2,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-29",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 34.83,
+    "amount": 34.83,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-07-29",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 23.04,
+    "amount": 46.08,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2026-07-28",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 11.5,
+    "amount": 57.5,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2026-07-27",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 25.55,
+    "amount": 204.4,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2026-07-27",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 515.26,
+    "amount": 515.26,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L17",
+    "date": "2026-07-27",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 109.21,
+    "amount": 109.21,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L18",
+    "date": "2026-07-27",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 110.32,
+    "amount": 110.32,
+    "revCode": "0270"
+   },
+   {
+    "id": "L19",
+    "date": "2026-07-27",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 37.28,
+    "amount": 37.28,
+    "revCode": "0270"
+   },
+   {
+    "id": "L20",
+    "date": "2026-07-27",
+    "description": "OXYGEN PER DAY",
+    "qty": 4,
+    "unitPrice": 280.35,
+    "amount": 1121.4,
+    "revCode": "0412"
+   },
+   {
+    "id": "L21",
+    "date": "2026-07-27",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 152.74,
+    "amount": 152.74,
+    "revCode": "0250"
+   },
+   {
+    "id": "L22",
+    "date": "2026-07-27",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": -1,
+    "unitPrice": 152.74,
+    "amount": -152.74,
+    "revCode": "0250"
+   },
+   {
+    "id": "L23",
+    "date": "2026-07-27",
+    "description": "OXYCODONE 5MG TAB",
+    "qty": 2,
+    "unitPrice": 8.14,
+    "amount": 16.28,
+    "revCode": "0250",
+    "ndc": "82866628634"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-08-16",
+  "firstBillDate": "2026-08-18",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": []
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "82866628634": {
+    "unitPrice": 0.13481700000000002,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "QTY-01",
+   "lineIds": [
+    "L20"
+   ]
+  },
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L06"
+   ]
+  },
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "L23"
+   ]
+  }
+ ],
+ "plants": [
+  "CANC-01",
+  "RX-01",
+  "QTY-01"
+ ],
+ "tags": [
+  "hn:cancel-reversed",
+  "variant:cancel-credit:negqty",
+  "plant:CANC-01:keyword",
+  "plant:RX-01",
+  "plant:QTY-01:per-day",
+  "variant:eob-line-level-co",
+  "variant:medicaid-no-eob"
+ ]
+}

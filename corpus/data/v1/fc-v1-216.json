@@ -1,0 +1,115 @@
+{
+ "id": "fc-v1-216",
+ "kind": "professional",
+ "sub": "air",
+ "seed": 21971505,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 216",
+   "providerName": "Example Air Medical Transport",
+   "accountNumber": "TEST-0107955",
+   "totalCharges": 71690.62,
+   "statementDate": "2026-07-08",
+   "payments": 30970.24,
+   "adjustments": 0,
+   "balanceDue": 40720.38
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-31",
+    "description": "ROTOR AIR TRANSPORT BASE",
+    "qty": 1,
+    "unitPrice": 53678.5,
+    "amount": 53678.5,
+    "code": "A0431"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-31",
+    "description": "ROTOR AIR MILES",
+    "qty": 42,
+    "unitPrice": 428.86,
+    "amount": 18012.12,
+    "code": "A0436"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "airAmbulance": true,
+  "emergency": true,
+  "firstBillDate": "2026-06-24",
+  "state": "AZ",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 71690.62,
+   "allowed": 36391.21,
+   "planPaid": 30970.24,
+   "deductible": 1979.83,
+   "copay": 0,
+   "coinsurance": 3441.14,
+   "patientResponsibility": 5420.97,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 35299.41
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1979.83
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 3441.14
+    }
+   ]
+  },
+  "onCreditReport": false,
+  "paidInFull": false,
+  "originalBalance": 1937.46
+ },
+ "data": {
+  "mue": {
+   "A0431": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "A0436": {
+    "practitioner": {
+     "mue": 250,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-01"
+ ],
+ "tags": [
+  "hn:cr-not-reported"
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "id": "fc-v1-147",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21425094,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 147",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0105402",
+   "totalCharges": 11447.67,
+   "statementDate": "2026-07-18",
+   "payments": 235.94,
+   "adjustments": 0,
+   "balanceDue": 11211.73
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-21",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 5974.62,
+    "amount": 5974.62,
+    "revCode": "0360",
+    "provider": "Example Regional Medical Center"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-21",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1194.08,
+    "amount": 1194.08,
+    "revCode": "0710",
+    "provider": "Example Regional Medical Center"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-21",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1194.08,
+    "amount": 1194.08,
+    "revCode": "0710",
+    "provider": "Example Regional Medical Center"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-21",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1545.76,
+    "amount": 1545.76,
+    "revCode": "0272",
+    "provider": "Example Regional Medical Center"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-21",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 33.93,
+    "amount": 237.51,
+    "code": "J2405",
+    "revCode": "0636",
+    "provider": "Example Regional Medical Center"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-21",
+    "description": "ANESTHESIA SERVICES",
+    "qty": 1,
+    "unitPrice": 2495.7,
+    "amount": 2495.7,
+    "code": "00790",
+    "provider": "Sample Anesthesia Associates"
+   },
+   {
+    "id": "L07",
+    "date": "2026-06-21",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1194.08,
+    "amount": -1194.08,
+    "revCode": "0710",
+    "provider": "Example Regional Medical Center"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-07-08",
+  "firstBillDate": "2026-06-28",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "gfe": [
+   {
+    "provider": "Example Regional Medical Center",
+    "total": 9204.92
+   },
+   {
+    "provider": "Sample Anesthesia Associates",
+    "total": 2101.04
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-399",
+  "hn:credit-reversal",
+  "variant:sched-surgery-2-providers",
+  "variant:credit:posqty"
+ ]
+}

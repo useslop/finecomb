@@ -1,0 +1,356 @@
+{
+ "id": "fc-v1-115",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21171686,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 115",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0104218",
+   "totalCharges": 11107.07,
+   "statementDate": "2026-08-04",
+   "payments": 1920.31,
+   "adjustments": 0,
+   "balanceDue": 9186.76
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-11",
+    "description": "EMERGENCY ROOM LVL 5",
+    "qty": 1,
+    "unitPrice": 4817.4,
+    "amount": 4817.4,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-11",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 109.31,
+    "amount": 109.31,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-11",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 148.87,
+    "amount": 148.87,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-11",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 4,
+    "unitPrice": 162.33,
+    "amount": 649.32,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-11",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 116.01,
+    "amount": 116.01,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-11",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 51.72,
+    "amount": 51.72,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-11",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 549.31,
+    "amount": 549.31,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-11",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 338.45,
+    "amount": 338.45,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "59"
+    ]
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-11",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 36.91,
+    "amount": 36.91,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-11",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 39.99,
+    "amount": 39.99,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-11",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 17,
+    "unitPrice": 157.07,
+    "amount": 2670.19,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-12",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 12,
+    "unitPrice": 125.05,
+    "amount": 1500.6,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2026-07-12",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 78.99,
+    "amount": 78.99,
+    "code": "83735",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-07-26",
+  "firstBillDate": "2026-07-17",
+  "state": "AZ",
+  "hospitalCcn": "990104",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 11107.07,
+   "allowed": 3399.73,
+   "planPaid": 1920.31,
+   "deductible": 656.43,
+   "copay": 0,
+   "coinsurance": 822.99,
+   "patientResponsibility": 1479.42,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 7707.34
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 656.43
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 822.99
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-01",
+  "MUE-01"
+ ],
+ "tags": [
+  "hn:ncci-mi1-59",
+  "plant:MUE-01"
+ ]
+}

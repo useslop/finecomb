@@ -1,0 +1,283 @@
+{
+ "id": "fc-v1-008",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20324353,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 008",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0100259",
+   "admitDate": "2026-06-28",
+   "dischargeDate": "2026-06-28",
+   "totalCharges": 14890.26,
+   "statementDate": "2026-08-04",
+   "payments": 3754.9,
+   "adjustments": 0,
+   "balanceDue": 11135.36
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-28",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2415.46,
+    "amount": 2415.46,
+    "revCode": "0120"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-28",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2570.46,
+    "amount": 2570.46,
+    "revCode": "0360"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-28",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 2,
+    "unitPrice": 1049.88,
+    "amount": 2099.76,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-28",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1202.83,
+    "amount": 1202.83,
+    "revCode": "0710"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-28",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1427.04,
+    "amount": 1427.04,
+    "revCode": "0370"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-28",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1104.93,
+    "amount": 1104.93,
+    "revCode": "0272"
+   },
+   {
+    "id": "L07",
+    "date": "2026-06-28",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 169.76,
+    "amount": 169.76,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L08",
+    "date": "2026-06-28",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 67.89,
+    "amount": 67.89,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L09",
+    "date": "2026-06-28",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 27.75,
+    "amount": 55.5,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-06-28",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 44.23,
+    "amount": 44.23,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L11",
+    "date": "2026-06-28",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 3189.65,
+    "amount": 3189.65,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L12",
+    "date": "2026-06-28",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 392.6,
+    "amount": 392.6,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L13",
+    "date": "2026-06-28",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 60.91,
+    "amount": 60.91,
+    "revCode": "0270"
+   },
+   {
+    "id": "L14",
+    "date": "2026-06-28",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 89.24,
+    "amount": 89.24,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-07-15",
+  "firstBillDate": "2026-07-08",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "State Medicaid",
+  "eob": {
+   "billed": 14890.26,
+   "allowed": 3756.9,
+   "planPaid": 3754.9,
+   "deductible": 0,
+   "copay": 2,
+   "coinsurance": 0,
+   "patientResponsibility": 2,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 11133.36
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 2
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01"
+ ],
+ "tags": [
+  "hn:same-day-admit-discharge",
+  "plant:MCD-01:with-eob"
+ ]
+}

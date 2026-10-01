@@ -1,0 +1,343 @@
+{
+ "id": "fc-v1-096",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 21021225,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 096",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0103515",
+   "admitDate": "2026-07-27",
+   "dischargeDate": "2026-07-31",
+   "totalCharges": 33734.91,
+   "statementDate": "2026-09-08",
+   "payments": 15115.07,
+   "adjustments": 14498.2,
+   "balanceDue": 4121.64
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-27",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2883.89,
+    "amount": 2883.89,
+    "revCode": "0120"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-28",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2883.89,
+    "amount": 2883.89,
+    "revCode": "0120"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-29",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2883.89,
+    "amount": 2883.89,
+    "revCode": "0120"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-30",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2883.89,
+    "amount": 2883.89,
+    "revCode": "0120"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-27",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 5792.79,
+    "amount": 5792.79,
+    "revCode": "0360"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-27",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 8,
+    "unitPrice": 1380.15,
+    "amount": 11041.2,
+    "revCode": "0360"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-27",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1142.4,
+    "amount": 1142.4,
+    "revCode": "0710"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-27",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1640.79,
+    "amount": 1640.79,
+    "revCode": "0370"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-27",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1493.68,
+    "amount": 1493.68,
+    "revCode": "0272"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-27",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 56.24,
+    "amount": 56.24,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L21",
+    "date": "2026-07-27",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 80.99,
+    "amount": 80.99,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-28",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 59.27,
+    "amount": 59.27,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-28",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 70.14,
+    "amount": 70.14,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L13",
+    "date": "2026-07-29",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 34.95,
+    "amount": 34.95,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L14",
+    "date": "2026-07-30",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 84.55,
+    "amount": 84.55,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L15",
+    "date": "2026-07-31",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 77.93,
+    "amount": 77.93,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L16",
+    "date": "2026-07-27",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 85.34,
+    "amount": 170.68,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L20",
+    "date": "2026-07-27",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 85.34,
+    "amount": 170.68,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L17",
+    "date": "2026-07-30",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 82.34,
+    "amount": 82.34,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L18",
+    "date": "2026-07-27",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 119.59,
+    "amount": 119.59,
+    "revCode": "0272"
+   },
+   {
+    "id": "L19",
+    "date": "2026-07-27",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 81.13,
+    "amount": 81.13,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-08-12",
+  "firstBillDate": "2026-08-09",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Marketplace Plan"
+ },
+ "data": {
+  "mue": {
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L16",
+    "L20"
+   ]
+  },
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L10",
+    "L21"
+   ]
+  }
+ ],
+ "plants": [
+  "DUP-01",
+  "DUP-02"
+ ],
+ "tags": [
+  "hn:ins-paid-no-eob",
+  "plant:DUP-01",
+  "plant:DUP-02:price"
+ ]
+}

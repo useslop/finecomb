@@ -1,0 +1,248 @@
+{
+ "id": "fc-v1-047",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20633194,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 047",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0101702",
+   "admitDate": "2025-10-06",
+   "dischargeDate": "2025-10-08",
+   "totalCharges": 9565.85,
+   "statementDate": "2025-10-27",
+   "payments": 1691.75,
+   "adjustments": 6371.31,
+   "balanceDue": 1502.79
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-10-06",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 3920.67,
+    "amount": 3920.67,
+    "revCode": "0121"
+   },
+   {
+    "id": "L02",
+    "date": "2025-10-07",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 3920.67,
+    "amount": 3920.67,
+    "revCode": "0121"
+   },
+   {
+    "id": "L03",
+    "date": "2025-10-06",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 20.07,
+    "amount": 20.07,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-10-07",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 136.77,
+    "amount": 136.77,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2025-10-07",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 22.95,
+    "amount": 114.75,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L06",
+    "date": "2025-10-07",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 22.53,
+    "amount": 45.06,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2025-10-06",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 1036.87,
+    "amount": 1036.87,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L08",
+    "date": "2025-10-06",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 85.75,
+    "amount": 85.75,
+    "revCode": "0270"
+   },
+   {
+    "id": "L09",
+    "date": "2025-10-06",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 141.4,
+    "amount": 141.4,
+    "revCode": "0272"
+   },
+   {
+    "id": "L10",
+    "date": "2025-10-06",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 74.99,
+    "amount": 74.99,
+    "revCode": "0270"
+   },
+   {
+    "id": "L11",
+    "date": "2025-10-07",
+    "description": "DEXAMETHASONE WASTAGE",
+    "qty": 3,
+    "unitPrice": 22.95,
+    "amount": 68.85,
+    "code": "J1100",
+    "revCode": "0636",
+    "modifiers": [
+     "JW"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2025-10-26",
+  "firstBillDate": "2025-10-30",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 9565.85,
+   "allowed": 3194.54,
+   "planPaid": 1691.75,
+   "deductible": 777.75,
+   "copay": 0,
+   "coinsurance": 725.04,
+   "patientResponsibility": 1502.79,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 6371.31
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 777.75
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 725.04
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-01-02",
+    "kind": "credit_report"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:eca-forprofit",
+  "hn:jw-waste",
+  "variant:jw-wastage"
+ ]
+}

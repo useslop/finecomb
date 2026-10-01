@@ -1,0 +1,97 @@
+{
+ "id": "fc-v1-265",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 22359536,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 265",
+   "providerName": "Sample Emergency Physicians",
+   "accountNumber": "TEST-0109768",
+   "totalCharges": 517.8,
+   "statementDate": "2026-09-29",
+   "payments": 0,
+   "adjustments": 259.11,
+   "balanceDue": 258.69
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-09-03",
+    "description": "EMERGENCY PHYSICIAN LEVEL 3",
+    "qty": 1,
+    "unitPrice": 517.8,
+    "amount": 517.8,
+    "code": "99283"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": false,
+  "emergency": true,
+  "firstBillDate": "2026-09-21",
+  "state": "TN",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "emergency medicine"
+  ],
+  "eob": {
+   "billed": 517.8,
+   "allowed": 258.69,
+   "planPaid": 0,
+   "deductible": 83.55,
+   "copay": 140.11,
+   "coinsurance": 35.03,
+   "patientResponsibility": 258.69,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 259.11
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 83.55
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 35.03
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 140.11
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:nsa02-compliant"
+ ]
+}

@@ -1,0 +1,326 @@
+{
+ "id": "fc-v1-024",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20451057,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 024",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0100851",
+   "admitDate": "2026-05-11",
+   "dischargeDate": "2026-05-12",
+   "totalCharges": 21993.08,
+   "statementDate": "2026-06-11",
+   "payments": 4997.11,
+   "adjustments": 16992.97,
+   "balanceDue": 3
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-11",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2798.46,
+    "amount": 2798.46,
+    "revCode": "0120"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-12",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 6671.8,
+    "amount": 6671.8,
+    "revCode": "0360"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-12",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 5,
+    "unitPrice": 1348.32,
+    "amount": 6741.6,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-12",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 716.63,
+    "amount": 716.63,
+    "revCode": "0710"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-12",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 918.34,
+    "amount": 918.34,
+    "revCode": "0370"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-12",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 624.53,
+    "amount": 624.53,
+    "revCode": "0272"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-11",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 133.88,
+    "amount": 133.88,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-11",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 65.68,
+    "amount": 65.68,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-05-11",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 20.91,
+    "amount": 104.55,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-05-12",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 10,
+    "unitPrice": 23.2,
+    "amount": 232,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-05-11",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 6,
+    "unitPrice": 100.32,
+    "amount": 601.92,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-05-11",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 559.84,
+    "amount": 559.84,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L13",
+    "date": "2026-05-11",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 133.19,
+    "amount": 133.19,
+    "revCode": "0270"
+   },
+   {
+    "id": "L14",
+    "date": "2026-05-11",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 87.43,
+    "amount": 87.43,
+    "revCode": "0272"
+   },
+   {
+    "id": "L15",
+    "date": "2026-05-11",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 1,
+    "unitPrice": 1036.94,
+    "amount": 1036.94,
+    "revCode": "0731"
+   },
+   {
+    "id": "L16",
+    "date": "2026-05-12",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 297.41,
+    "amount": 297.41,
+    "revCode": "0424"
+   },
+   {
+    "id": "L17",
+    "date": "2026-05-11",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 6,
+    "unitPrice": 33.33,
+    "amount": 199.98,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L18",
+    "date": "2026-05-12",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 5,
+    "unitPrice": 12.7,
+    "amount": 63.5,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L19",
+    "date": "2026-05-11",
+    "description": "ONDANSETRON 4MG ODT",
+    "qty": 4,
+    "unitPrice": 1.35,
+    "amount": 5.4,
+    "revCode": "0250",
+    "ndc": "60986770923"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-05-22",
+  "firstBillDate": "2026-05-20",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 21993.08,
+   "allowed": 5000.11,
+   "planPaid": 4997.11,
+   "deductible": 0,
+   "copay": 3,
+   "coinsurance": 0,
+   "patientResponsibility": 3,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 16992.97
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 3
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "82962": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "60986770923": {
+    "unitPrice": 0.138914,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:telemetry-monitor",
+  "hn:rx-below-10",
+  "hn:medicaid-copay",
+  "hn:mue-inpatient"
+ ]
+}

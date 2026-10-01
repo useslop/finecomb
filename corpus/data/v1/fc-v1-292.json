@@ -1,0 +1,181 @@
+{
+ "id": "fc-v1-292",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22573349,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 292",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0110767",
+   "totalCharges": 496.8,
+   "statementDate": "2026-07-03",
+   "payments": 69.4,
+   "adjustments": 253.3,
+   "balanceDue": 174.1
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-26",
+    "description": "OFFICE VISIT NEW LEVEL 3",
+    "qty": 1,
+    "unitPrice": 295.66,
+    "amount": 295.66,
+    "code": "99203"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-26",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 50.57,
+    "amount": 50.57,
+    "code": "36415"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-26",
+    "description": "BLOOD DRAW VENOUS ADDL",
+    "qty": 1,
+    "unitPrice": 50.57,
+    "amount": 50.57,
+    "code": "36415"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-26",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "firstBillDate": "2026-06-02",
+  "state": "KS",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 496.8,
+   "allowed": 243.5,
+   "planPaid": 138.81,
+   "deductible": 45.2,
+   "copay": 0,
+   "coinsurance": 59.49,
+   "patientResponsibility": 104.69,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 150.75,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 25.78,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 25.78,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 50.99,
+     "lineId": "L03"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 45.2
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 59.49
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": true,
+  "originalBalance": 4175.32
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "99203": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L02",
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L02",
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L02",
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-01",
+  "DUP-02",
+  "CR-01"
+ ],
+ "tags": [
+  "hn:rounding",
+  "plant:DUP-02:desc",
+  "variant:eob-line-level-co",
+  "plant:EOB-01:unposted-payment",
+  "plant:CR-01:paid"
+ ]
+}

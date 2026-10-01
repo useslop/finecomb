@@ -1,0 +1,95 @@
+{
+ "id": "fc-v1-244",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22193237,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 244",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0108991",
+   "totalCharges": 471.03,
+   "statementDate": "2025-05-27",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 471.03
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-04-20",
+    "description": "OFFICE VISIT EST LEVEL 3",
+    "qty": 1,
+    "unitPrice": 303.86,
+    "amount": 303.86,
+    "code": "99213"
+   },
+   {
+    "id": "L02",
+    "date": "2025-04-20",
+    "description": "FLU TEST RAPID",
+    "qty": 1,
+    "unitPrice": 67.17,
+    "amount": 67.17,
+    "code": "87804"
+   },
+   {
+    "id": "L03",
+    "date": "2025-04-20",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "firstBillDate": "2025-05-14",
+  "state": "TN",
+  "insurerName": "Medicare",
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 6519.2
+ },
+ "data": {
+  "mue": {
+   "87804": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99213": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01"
+ ],
+ "tags": [
+  "hn:cr-legit",
+  "hn:rounding"
+ ]
+}

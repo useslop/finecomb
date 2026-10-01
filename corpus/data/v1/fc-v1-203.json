@@ -1,0 +1,144 @@
+{
+ "id": "fc-v1-203",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 21868558,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 203",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0107474",
+   "totalCharges": 2577.29,
+   "statementDate": "2026-05-03",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 2577.29
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-20",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 434.43,
+    "amount": 434.43,
+    "code": "20610",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-20",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 217.22,
+    "amount": 217.22,
+    "code": "20610",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-20",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 4,
+    "unitPrice": 32.62,
+    "amount": 163.1,
+    "code": "J3301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-20",
+    "description": "CT ABD PELVIS W CONTRAST D/C'D",
+    "qty": 1,
+    "unitPrice": 1762.54,
+    "amount": 1762.54,
+    "code": "74177"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-06-08",
+  "state": "TN",
+  "ppdrFiledDate": "2026-08-21",
+  "collections": [
+   {
+    "date": "2026-08-27",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L03"
+   ]
+  },
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01",
+  "CANC-01",
+  "MATH-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "variant:bilateral-discounted",
+  "plant:CANC-01:keyword",
+  "plant:MATH-01:extra-unit",
+  "plant:PPDR-01"
+ ]
+}

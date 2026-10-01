@@ -1,0 +1,144 @@
+{
+ "id": "fc-v1-140",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21369661,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 140",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0105143",
+   "totalCharges": 7167.23,
+   "statementDate": "2026-05-15",
+   "payments": 0,
+   "adjustments": 2226.14,
+   "balanceDue": 4941.09
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-28",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 7083.73,
+    "amount": 7083.73,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-28",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 15.64,
+    "amount": 15.64,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-28",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 67.86,
+    "amount": 67.86,
+    "code": "83735",
+    "revCode": "0301",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-28",
+    "description": "IV BAG NOT GIVEN",
+    "qty": 1,
+    "unitPrice": 153.57,
+    "amount": 153.57,
+    "revCode": "0250",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-28",
+    "description": "IV BAG NOT GIVEN",
+    "qty": -1,
+    "unitPrice": 153.57,
+    "amount": -153.57,
+    "revCode": "0250",
+    "provider": "Example Lakeside Hospital"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-05-12",
+  "firstBillDate": "2026-05-10",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "gfe": [
+   {
+    "provider": "Example Lakeside Hospital",
+    "total": 5860.75
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-121-days",
+  "hn:cancel-reversed",
+  "variant:sched-imaging",
+  "variant:cancel-credit:negqty"
+ ]
+}

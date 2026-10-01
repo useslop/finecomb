@@ -1,0 +1,414 @@
+{
+ "id": "fc-v1-045",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20617356,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 045",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0101628",
+   "admitDate": "2026-07-29",
+   "dischargeDate": "2026-08-02",
+   "totalCharges": 23523.18,
+   "statementDate": "2026-09-06",
+   "payments": 10962.16,
+   "adjustments": 0,
+   "balanceDue": 12561.02
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-29",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 1256.4,
+    "amount": 1256.4,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-29",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 4123.8,
+    "amount": 4123.8,
+    "revCode": "0121"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-30",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 4123.8,
+    "amount": 4123.8,
+    "revCode": "0121"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-31",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 4123.8,
+    "amount": 4123.8,
+    "revCode": "0121"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-01",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 4123.8,
+    "amount": 4123.8,
+    "revCode": "0121"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-29",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 75,
+    "amount": 75,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-30",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 46.27,
+    "amount": 46.27,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-30",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 24.14,
+    "amount": 24.14,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-31",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 30.69,
+    "amount": 30.69,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L10",
+    "date": "2026-08-01",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 54.07,
+    "amount": 54.07,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2026-08-01",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 180.24,
+    "amount": 180.24,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-08-02",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 31.07,
+    "amount": 31.07,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L13",
+    "date": "2026-08-02",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 63.61,
+    "amount": 63.61,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L14",
+    "date": "2026-08-02",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 54.37,
+    "amount": 54.37,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L15",
+    "date": "2026-07-30",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 210.62,
+    "amount": 210.62,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L16",
+    "date": "2026-07-31",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 79.32,
+    "amount": 158.64,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L17",
+    "date": "2026-08-02",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 23.28,
+    "amount": 23.28,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L18",
+    "date": "2026-07-31",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 69.06,
+    "amount": 138.12,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L19",
+    "date": "2026-07-29",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 66.31,
+    "amount": 66.31,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L20",
+    "date": "2026-07-29",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 74.25,
+    "amount": 74.25,
+    "revCode": "0270"
+   },
+   {
+    "id": "L21",
+    "date": "2026-07-29",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 79.7,
+    "amount": 79.7,
+    "revCode": "0270"
+   },
+   {
+    "id": "L22",
+    "date": "2026-07-29",
+    "description": "OXYGEN PER DAY",
+    "qty": 8,
+    "unitPrice": 116.7,
+    "amount": 933.6,
+    "revCode": "0412"
+   },
+   {
+    "id": "L23",
+    "date": "2026-07-29",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 4,
+    "unitPrice": 881.9,
+    "amount": 3527.6,
+    "revCode": "0731"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-08-19",
+  "firstBillDate": "2026-08-13",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 23523.18,
+   "allowed": 13053.58,
+   "planPaid": 10962.16,
+   "deductible": 873.4,
+   "copay": 0,
+   "coinsurance": 1218.02,
+   "patientResponsibility": 2091.42,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 10469.6
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 873.4
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1218.02
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "QTY-01",
+   "lineIds": [
+    "L22"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02",
+  "QTY-01"
+ ],
+ "tags": [
+  "hn:per-day-multi",
+  "plant:QTY-01:per-day",
+  "plant:EOB-02:co-billed"
+ ]
+}

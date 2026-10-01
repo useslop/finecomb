@@ -1,0 +1,141 @@
+{
+ "id": "fc-v1-247",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 22216994,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 247",
+   "providerName": "Example Urgent Care",
+   "accountNumber": "TEST-0109102",
+   "totalCharges": 631.51,
+   "statementDate": "2026-04-16",
+   "payments": 157.29,
+   "adjustments": 0,
+   "balanceDue": 474.22
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-06",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 273.96,
+    "amount": 273.96,
+    "code": "99214",
+    "modifiers": [
+     "25"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-06",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 286.84,
+    "amount": 286.84,
+    "code": "20610"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-06",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 3,
+    "unitPrice": 23.57,
+    "amount": 70.71,
+    "code": "J3301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "firstBillDate": "2026-04-30",
+  "state": "MO",
+  "insurerName": "State Medicaid",
+  "eob": {
+   "billed": 631.51,
+   "allowed": 159.29,
+   "planPaid": 157.29,
+   "deductible": 0,
+   "copay": 2,
+   "coinsurance": 0,
+   "patientResponsibility": 2,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 472.22
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 2
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "20610",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01"
+ ],
+ "tags": [
+  "hn:ncci-mod25",
+  "plant:MCD-01:with-eob"
+ ]
+}

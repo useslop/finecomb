@@ -1,0 +1,173 @@
+{
+ "id": "fc-v1-289",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22549592,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 289",
+   "providerName": "Sample Family Clinic",
+   "accountNumber": "TEST-0110656",
+   "totalCharges": 704.15,
+   "statementDate": "2025-08-03",
+   "payments": 39.77,
+   "adjustments": 0,
+   "balanceDue": 664.38
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-07-10",
+    "description": "OFFICE VISIT EST LEVEL 3",
+    "qty": 1,
+    "unitPrice": 305.29,
+    "amount": 610.58,
+    "code": "99213",
+    "notReceived": true
+   },
+   {
+    "id": "L02",
+    "date": "2025-07-10",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 38.98,
+    "amount": 38.98,
+    "code": "36415"
+   },
+   {
+    "id": "L03",
+    "date": "2025-07-10",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 54.59,
+    "amount": 54.59,
+    "code": "81003"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "firstBillDate": "2025-07-23",
+  "state": "KS",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 704.15,
+   "allowed": 246.69,
+   "planPaid": 39.77,
+   "deductible": 134.48,
+   "copay": 50,
+   "coinsurance": 22.44,
+   "patientResponsibility": 206.92,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 396.67,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 25.32,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 35.47,
+     "lineId": "L03"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 134.48
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 22.44
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 2477.24
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99213": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L01"
+   ]
+  },
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L01"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02",
+  "MATH-01",
+  "CANC-01"
+ ],
+ "tags": [
+  "hn:cr-legit",
+  "plant:MATH-01:extra-unit",
+  "plant:CANC-01:user-marked",
+  "variant:eob-line-level-co",
+  "plant:EOB-02:co-billed"
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "id": "fc-v1-260",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 22319941,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 260",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0109583",
+   "totalCharges": 2678.61,
+   "statementDate": "2026-06-27",
+   "payments": 0,
+   "adjustments": 960.82,
+   "balanceDue": 1717.79
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-20",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 258.68,
+    "amount": 258.68,
+    "code": "99214",
+    "modifiers": [
+     "25"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-20",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 446.04,
+    "amount": 446.04,
+    "code": "20610"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-20",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 2,
+    "unitPrice": 28.63,
+    "amount": 57.26,
+    "code": "J3301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-20",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2153.35,
+    "amount": 2153.35,
+    "code": "74177",
+    "notReceived": true
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-06-18",
+  "state": "MO",
+  "ppdrFiledDate": "2026-09-13",
+  "collections": [
+   {
+    "date": "2026-09-13",
+    "kind": "credit_report"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "20610",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01",
+  "MATH-02",
+  "CANC-01"
+ ],
+ "tags": [
+  "hn:ncci-mod25",
+  "plant:CANC-01:user-marked",
+  "plant:MATH-02:total-off",
+  "plant:PPDR-01"
+ ]
+}

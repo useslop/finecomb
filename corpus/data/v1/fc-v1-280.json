@@ -1,0 +1,176 @@
+{
+ "id": "fc-v1-280",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22478321,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 280",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0110323",
+   "totalCharges": 2713.86,
+   "statementDate": "2025-06-07",
+   "payments": 177.94,
+   "adjustments": 0,
+   "balanceDue": 2535.92
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-05-06",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 1,
+    "unitPrice": 183.42,
+    "amount": 183.42,
+    "code": "99204",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L02",
+    "date": "2025-05-06",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 52.07,
+    "amount": 52.07,
+    "code": "36415",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L03",
+    "date": "2025-05-06",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 84.87,
+    "amount": 84.87,
+    "code": "85025",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L04",
+    "date": "2025-05-06",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 138.62,
+    "amount": 138.62,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ],
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L05",
+    "date": "2025-05-06",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 138.62,
+    "amount": 138.62,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ],
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L06",
+    "date": "2025-05-06",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L07",
+    "date": "2025-05-06",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2016.26,
+    "amount": 2016.26,
+    "code": "74177",
+    "provider": "Sample Internal Medicine Group"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-05-11",
+  "state": "MO",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Sample Internal Medicine Group",
+    "total": 2075.35
+   }
+  ],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 7940.16
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99204": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-121-days",
+  "hn:cr-legit",
+  "hn:rounding",
+  "hn:bilateral",
+  "variant:bilateral-same-price"
+ ]
+}

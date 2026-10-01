@@ -1,0 +1,168 @@
+{
+ "id": "fc-v1-196",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21813125,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 196",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0107215",
+   "totalCharges": 5264.18,
+   "statementDate": "2026-05-24",
+   "payments": 145.59,
+   "adjustments": 0,
+   "balanceDue": 5118.59
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-29",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 5143.14,
+    "amount": 5143.14,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example General Hospital"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-29",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 37.38,
+    "amount": 37.38,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example General Hospital"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-29",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 37.38,
+    "amount": 37.38,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example General Hospital"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-29",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 83.66,
+    "amount": 83.66,
+    "code": "83735",
+    "revCode": "0301",
+    "provider": "Example General Hospital"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-29",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 37.38,
+    "amount": -37.38,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example General Hospital"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-29",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 164.95,
+    "amount": 164.95,
+    "revCode": "0250",
+    "provider": "Example General Hospital"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-29",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 164.95,
+    "amount": -164.95,
+    "revCode": "0250",
+    "provider": "Example General Hospital"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-05-04",
+  "firstBillDate": "2026-05-08",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "gfe": [
+   {
+    "provider": "Example General Hospital",
+    "total": 4059.47
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-121-days",
+  "hn:credit-reversal",
+  "hn:cancel-reversed",
+  "variant:sched-imaging",
+  "variant:credit:posqty",
+  "variant:cancel-credit:posqty"
+ ]
+}

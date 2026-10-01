@@ -1,0 +1,380 @@
+{
+ "id": "fc-v1-151",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21456770,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 151",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0105550",
+   "totalCharges": 4604.98,
+   "statementDate": "2025-02-28",
+   "payments": 924.27,
+   "adjustments": 1859.4,
+   "balanceDue": 1821.31
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-01-24",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 1,
+    "unitPrice": 1829.57,
+    "amount": 1829.57,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-01-24",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 93.78,
+    "amount": 93.78,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-01-24",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 37.58,
+    "amount": 37.58,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-01-24",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 59.18,
+    "amount": 59.18,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2025-01-24",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 2,
+    "unitPrice": 161.1,
+    "amount": 322.2,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L06",
+    "date": "2025-01-24",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 1248.65,
+    "amount": 1248.65,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L07",
+    "date": "2025-01-24",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 316.04,
+    "amount": 316.04,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2025-01-24",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 2,
+    "unitPrice": 231.2,
+    "amount": 462.4,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2025-01-24",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 50.72,
+    "amount": 50.72,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2025-01-24",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 69.52,
+    "amount": 139.04,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2025-01-24",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 45.69,
+    "amount": 45.69,
+    "revCode": "0270"
+   },
+   {
+    "id": "L12",
+    "date": "2025-01-24",
+    "description": "ACETAMINOPHEN 325MG TAB",
+    "qty": 1,
+    "unitPrice": 0.13,
+    "amount": 0.13,
+    "revCode": "0250",
+    "ndc": "70577994153"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2025-02-02",
+  "firstBillDate": "2025-02-07",
+  "state": "AZ",
+  "hospitalCcn": "990104",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 4604.98,
+   "allowed": 2744.89,
+   "planPaid": 924.27,
+   "deductible": 1424.51,
+   "copay": 0,
+   "coinsurance": 396.11,
+   "patientResponsibility": 1820.62,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 739.02,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 37.88,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 15.18,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 23.9,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 130.15,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 504.37,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 127.66,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 186.78,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 20.49,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 56.16,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 18.46,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 0.04,
+     "lineId": "L12"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1424.51
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 396.11
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 1605.95
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "70577994153": {
+    "unitPrice": 0.01349,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:eob-under-1",
+  "hn:rx-below-10",
+  "hn:mue-setting",
+  "hn:cr-legit",
+  "variant:eob-line-level-co"
+ ]
+}

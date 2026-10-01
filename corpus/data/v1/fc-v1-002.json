@@ -1,0 +1,326 @@
+{
+ "id": "fc-v1-002",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20276839,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 002",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0100037",
+   "admitDate": "2026-06-29",
+   "dischargeDate": "2026-06-30",
+   "totalCharges": 28521.87,
+   "statementDate": "2026-07-18",
+   "payments": 6358.2,
+   "adjustments": 19377.55,
+   "balanceDue": 2786.12
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-29",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 1,
+    "unitPrice": 2370.19,
+    "amount": 2370.19,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-29",
+    "description": "ICU DAILY CHARGE",
+    "qty": 1,
+    "unitPrice": 7874.6,
+    "amount": 7874.6,
+    "revCode": "0200"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-29",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2790.76,
+    "amount": 2790.76,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-29",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 5,
+    "unitPrice": 1366.1,
+    "amount": 6830.5,
+    "revCode": "0360"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-29",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2029.29,
+    "amount": 2029.29,
+    "revCode": "0710"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-29",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2347.9,
+    "amount": 2347.9,
+    "revCode": "0370"
+   },
+   {
+    "id": "L07",
+    "date": "2026-06-29",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 800.42,
+    "amount": 800.42,
+    "revCode": "0272"
+   },
+   {
+    "id": "L08",
+    "date": "2026-06-29",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 23.52,
+    "amount": 23.52,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-06-29",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 76.19,
+    "amount": 76.19,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2026-06-29",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 90.21,
+    "amount": 90.21,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2026-06-29",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 103.42,
+    "amount": 103.42,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-06-30",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 34.44,
+    "amount": 34.44,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-06-30",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 23.54,
+    "amount": 117.7,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2026-06-29",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 2836.39,
+    "amount": 2836.39,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L15",
+    "date": "2026-06-29",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 146.31,
+    "amount": 146.31,
+    "revCode": "0272"
+   },
+   {
+    "id": "L16",
+    "date": "2026-07-03",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 50.03,
+    "amount": 50.03,
+    "code": "83735",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-07-09",
+  "firstBillDate": "2026-07-15",
+  "state": "AZ",
+  "hospitalCcn": "990104",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 28521.87,
+   "allowed": 9144.32,
+   "planPaid": 6940.34,
+   "deductible": 343.89,
+   "copay": 100,
+   "coinsurance": 1760.09,
+   "patientResponsibility": 2203.98,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 19377.55
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 343.89
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1760.09
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 100
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DATE-01",
+   "lineIds": [
+    "L16"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "DATE-01",
+  "EOB-01"
+ ],
+ "tags": [
+  "hn:repeat-mod",
+  "plant:DATE-01:added",
+  "plant:EOB-01:unposted-payment"
+ ]
+}

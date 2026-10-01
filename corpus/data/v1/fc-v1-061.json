@@ -1,0 +1,401 @@
+{
+ "id": "fc-v1-061",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20744060,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 061",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0102220",
+   "admitDate": "2025-05-05",
+   "dischargeDate": "2025-05-09",
+   "totalCharges": 27536.41,
+   "statementDate": "2025-05-31",
+   "payments": 11035.55,
+   "adjustments": 14702.01,
+   "balanceDue": 1798.85
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-05-05",
+    "description": "ED VISIT LVL 3",
+    "qty": 1,
+    "unitPrice": 1517.94,
+    "amount": 1517.94,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-05-05",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 4,
+    "unitPrice": 4096.66,
+    "amount": 16386.64,
+    "revCode": "0120"
+   },
+   {
+    "id": "L03",
+    "date": "2025-05-05",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 138.86,
+    "amount": 138.86,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-05-05",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 43.58,
+    "amount": 43.58,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2025-05-06",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 159.02,
+    "amount": 159.02,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2025-05-06",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 21.06,
+    "amount": 21.06,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L07",
+    "date": "2025-05-07",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 147.51,
+    "amount": 147.51,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L08",
+    "date": "2025-05-08",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 49.94,
+    "amount": 49.94,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L09",
+    "date": "2025-05-08",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 70.24,
+    "amount": 70.24,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2025-05-08",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 88.8,
+    "amount": 88.8,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2025-05-08",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 25.86,
+    "amount": 181.02,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2025-05-09",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 10,
+    "unitPrice": 13.06,
+    "amount": 130.6,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2025-05-08",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 77.01,
+    "amount": 308.04,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2025-05-06",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 70.58,
+    "amount": 141.16,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2025-05-09",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 43,
+    "amount": 43,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2025-05-05",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 2334.66,
+    "amount": 2334.66,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L17",
+    "date": "2025-05-05",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 111.34,
+    "amount": 111.34,
+    "revCode": "0272"
+   },
+   {
+    "id": "L18",
+    "date": "2025-05-05",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 131.26,
+    "amount": 131.26,
+    "revCode": "0270"
+   },
+   {
+    "id": "L19",
+    "date": "2025-05-05",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 89.2,
+    "amount": 89.2,
+    "revCode": "0270"
+   },
+   {
+    "id": "L20",
+    "date": "2025-05-05",
+    "description": "OXYGEN PER DAY",
+    "qty": 4,
+    "unitPrice": 162.26,
+    "amount": 649.04,
+    "revCode": "0412"
+   },
+   {
+    "id": "L21",
+    "date": "2025-05-05",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 4,
+    "unitPrice": 1134.63,
+    "amount": 4538.52,
+    "revCode": "0731"
+   },
+   {
+    "id": "L22",
+    "date": "2025-05-06",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 254.98,
+    "amount": 254.98,
+    "revCode": "0424"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-05-15",
+  "firstBillDate": "2025-05-30",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 7703.4
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:cr-legit",
+  "hn:ins-paid-no-eob",
+  "hn:per-day-multi"
+ ]
+}

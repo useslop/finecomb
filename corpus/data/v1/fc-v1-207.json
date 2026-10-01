@@ -1,0 +1,108 @@
+{
+ "id": "fc-v1-207",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 21900234,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 207",
+   "providerName": "Sample Surgical Associates",
+   "accountNumber": "TEST-0107622",
+   "totalCharges": 2441.03,
+   "statementDate": "2026-08-29",
+   "payments": 579.1,
+   "adjustments": 0,
+   "balanceDue": 1861.93
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-05",
+    "description": "ASSISTANT AT SURGERY KNEE",
+    "qty": 1,
+    "unitPrice": 2441.03,
+    "amount": 2441.03,
+    "code": "27447",
+    "modifiers": [
+     "80"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": false,
+  "emergency": false,
+  "firstBillDate": "2026-08-14",
+  "state": "AZ",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "anesthesia"
+  ],
+  "eob": {
+   "billed": 2441.03,
+   "allowed": 1548.34,
+   "planPaid": 579.1,
+   "deductible": 578.2,
+   "copay": 100,
+   "coinsurance": 291.04,
+   "patientResponsibility": 969.24,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 892.69
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 578.2
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 291.04
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 100
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": true,
+  "originalBalance": 4314.46
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-02",
+  "CR-01"
+ ],
+ "tags": [
+  "plant:CR-01:paid"
+ ]
+}

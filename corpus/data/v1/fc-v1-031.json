@@ -1,0 +1,430 @@
+{
+ "id": "fc-v1-031",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20506490,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 031",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0101110",
+   "admitDate": "2026-01-23",
+   "dischargeDate": "2026-01-29",
+   "totalCharges": 28129.09,
+   "statementDate": "2026-02-09",
+   "payments": 8977.57,
+   "adjustments": 19151.52,
+   "balanceDue": 0
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-01-23",
+    "description": "ED VISIT LVL 3",
+    "qty": 1,
+    "unitPrice": 1578.23,
+    "amount": 1578.23,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-01-23",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 6,
+    "unitPrice": 4000.69,
+    "amount": 24004.14,
+    "revCode": "0206"
+   },
+   {
+    "id": "L03",
+    "date": "2026-01-23",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 64.3,
+    "amount": 64.3,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-01-23",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 106.87,
+    "amount": 106.87,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2026-01-23",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 101.79,
+    "amount": 101.79,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-01-24",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 55.41,
+    "amount": 55.41,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L07",
+    "date": "2026-01-24",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 113.18,
+    "amount": 113.18,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2026-01-24",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 16.5,
+    "amount": 16.5,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L09",
+    "date": "2026-01-25",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 100.16,
+    "amount": 100.16,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L10",
+    "date": "2026-01-26",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 64.95,
+    "amount": 64.95,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L11",
+    "date": "2026-01-27",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 34.27,
+    "amount": 34.27,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-01-27",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 93.81,
+    "amount": 93.81,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2026-01-28",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 207.9,
+    "amount": 207.9,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L14",
+    "date": "2026-01-28",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 59.03,
+    "amount": 59.03,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L15",
+    "date": "2026-01-28",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 74.45,
+    "amount": 74.45,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L16",
+    "date": "2026-01-29",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 160.56,
+    "amount": 160.56,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L17",
+    "date": "2026-01-29",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 128.43,
+    "amount": 128.43,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L18",
+    "date": "2026-01-29",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 83.56,
+    "amount": 334.24,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L19",
+    "date": "2026-01-29",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 39.2,
+    "amount": 78.4,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L20",
+    "date": "2026-01-26",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 29.16,
+    "amount": 58.32,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L21",
+    "date": "2026-01-27",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 171.67,
+    "amount": 343.34,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L22",
+    "date": "2026-01-28",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 149.29,
+    "amount": 298.58,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L23",
+    "date": "2026-01-23",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 52.23,
+    "amount": 52.23,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-02-03",
+  "firstBillDate": "2026-02-03",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "collections": [
+   {
+    "date": "2026-05-06",
+    "kind": "wage_garnishment"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "ECA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "ECA-01"
+ ],
+ "tags": [
+  "hn:repeat-mod",
+  "variant:eob-line-level-co",
+  "variant:medicaid-no-eob",
+  "plant:ECA-01:early"
+ ]
+}

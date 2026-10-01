@@ -1,0 +1,193 @@
+{
+ "id": "fc-v1-250",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22240751,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 250",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0109213",
+   "totalCharges": 4976.73,
+   "statementDate": "2026-05-28",
+   "payments": 0,
+   "adjustments": 1477.92,
+   "balanceDue": 3498.81
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-08",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 1,
+    "unitPrice": 404.33,
+    "amount": 404.33,
+    "code": "99204",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-08",
+    "description": "FLU TEST RAPID",
+    "qty": 1,
+    "unitPrice": 80.71,
+    "amount": 80.71,
+    "code": "87804",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-08",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 135.79,
+    "amount": 135.79,
+    "code": "85025",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-08",
+    "description": "STREP TEST RAPID",
+    "qty": 1,
+    "unitPrice": 61.17,
+    "amount": 61.17,
+    "code": "87880",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-08",
+    "description": "INJECTION IM OR SUBQ",
+    "qty": 1,
+    "unitPrice": 43.35,
+    "amount": 43.35,
+    "code": "96372",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-08",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 87.06,
+    "amount": 87.06,
+    "code": "J1030",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-08",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 2,
+    "unitPrice": 2082.16,
+    "amount": 4164.32,
+    "code": "74177",
+    "provider": "Sample Internal Medicine Group"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-05-15",
+  "state": "KS",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Sample Internal Medicine Group",
+    "total": 3222.96
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87804": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87880": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96372": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99204": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L07"
+   ]
+  }
+ ],
+ "plants": [
+  "MUE-01"
+ ],
+ "tags": [
+  "hn:gfe-121-days",
+  "plant:MUE-01"
+ ]
+}

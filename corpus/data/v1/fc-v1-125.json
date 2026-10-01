@@ -1,0 +1,301 @@
+{
+ "id": "fc-v1-125",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21250876,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 125",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0104588",
+   "admitDate": "2026-04-16",
+   "dischargeDate": "2026-04-17",
+   "totalCharges": 8735.45,
+   "statementDate": "2026-05-03",
+   "payments": 3098.82,
+   "adjustments": 0,
+   "balanceDue": 5636.63
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-16",
+    "description": "ED VISIT LVL 5",
+    "qty": 1,
+    "unitPrice": 3550.28,
+    "amount": 3550.28,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-16",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 73.05,
+    "amount": 73.05,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-16",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 49.33,
+    "amount": 49.33,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-16",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 36.47,
+    "amount": 36.47,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-16",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 698.34,
+    "amount": 698.34,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-16",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 3,
+    "unitPrice": 259.31,
+    "amount": 777.93,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-16",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 87.18,
+    "amount": 174.36,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-16",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 22,
+    "unitPrice": 98.01,
+    "amount": 2156.22,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-17",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 11,
+    "unitPrice": 99.23,
+    "amount": 1091.53,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L10",
+    "date": "2026-04-17",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 92.21,
+    "amount": 92.21,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2026-04-17",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 35.73,
+    "amount": 35.73,
+    "code": "85610",
+    "revCode": "0305"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-04-23",
+  "firstBillDate": "2026-05-04",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 8735.45,
+   "allowed": 4690.07,
+   "planPaid": 3098.82,
+   "deductible": 1246.94,
+   "copay": 0,
+   "coinsurance": 344.31,
+   "patientResponsibility": 1591.25,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 4045.38
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1246.94
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 344.31
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-01"
+ ],
+ "tags": [
+  "hn:obs-room-hours",
+  "hn:hourly-overlap"
+ ]
+}

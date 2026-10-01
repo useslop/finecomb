@@ -1,0 +1,183 @@
+{
+ "id": "fc-v1-263",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 22343698,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 263",
+   "providerName": "Example Urgent Care",
+   "accountNumber": "TEST-0109694",
+   "totalCharges": 550.71,
+   "statementDate": "2024-08-15",
+   "payments": 99.14,
+   "adjustments": 228.43,
+   "balanceDue": 223.14
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2024-08-03",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 227.72,
+    "amount": 204.95,
+    "code": "99214",
+    "modifiers": [
+     "25"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2024-08-03",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 205.27,
+    "amount": 205.27,
+    "code": "20610"
+   },
+   {
+    "id": "L03",
+    "date": "2024-08-03",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 9,
+    "unitPrice": 15.61,
+    "amount": 140.49,
+    "code": "J3301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "firstBillDate": "2024-08-22",
+  "state": "KS",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 550.71,
+   "allowed": 186.88,
+   "planPaid": 99.14,
+   "deductible": 9.54,
+   "copay": 25,
+   "coinsurance": 53.2,
+   "patientResponsibility": 87.74,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 135.4,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 135.61,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 92.82,
+     "lineId": "L03"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 9.54
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 53.2
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 25
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 539.76
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "20610",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L01"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L03"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02",
+  "MATH-01",
+  "MUE-01"
+ ],
+ "tags": [
+  "hn:ncci-mod25",
+  "hn:cr-legit",
+  "plant:MATH-01:wrong-total",
+  "plant:MUE-01",
+  "variant:eob-line-level-co",
+  "plant:EOB-02:co-billed"
+ ]
+}

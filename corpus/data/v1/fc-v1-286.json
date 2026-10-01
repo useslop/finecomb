@@ -1,0 +1,98 @@
+{
+ "id": "fc-v1-286",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22525835,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 286",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0110545",
+   "totalCharges": 2203.36,
+   "statementDate": "2026-06-10",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 2203.36
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-22",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 1,
+    "unitPrice": 333.42,
+    "amount": 333.42,
+    "code": "99204"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-22",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-22",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 1769.94,
+    "amount": 1769.94,
+    "code": "74177"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-05-18",
+  "state": "IN",
+  "ppdrFiledDate": "2026-08-19",
+  "collections": [
+   {
+    "date": "2026-09-02",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99204": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01"
+ ],
+ "tags": [
+  "hn:rounding",
+  "plant:PPDR-01"
+ ]
+}

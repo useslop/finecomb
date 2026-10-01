@@ -1,0 +1,556 @@
+{
+ "id": "fc-v1-058",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20720303,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 058",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0102109",
+   "admitDate": "2026-09-05",
+   "dischargeDate": "2026-09-11",
+   "totalCharges": 67477.21,
+   "statementDate": "2026-09-29",
+   "payments": 17316.9,
+   "adjustments": 45268.95,
+   "balanceDue": 4891.36
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-09-05",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 1249.26,
+    "amount": 1249.26,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-09-05",
+    "description": "ICU DAILY CHARGE",
+    "qty": 1,
+    "unitPrice": 7985.41,
+    "amount": 7985.41,
+    "revCode": "0200"
+   },
+   {
+    "id": "L03",
+    "date": "2026-09-06",
+    "description": "ICU DAILY CHARGE",
+    "qty": 1,
+    "unitPrice": 7985.41,
+    "amount": 7985.41,
+    "revCode": "0200"
+   },
+   {
+    "id": "L04",
+    "date": "2026-09-07",
+    "description": "ICU DAILY CHARGE",
+    "qty": 1,
+    "unitPrice": 7985.41,
+    "amount": 7985.41,
+    "revCode": "0200"
+   },
+   {
+    "id": "L05",
+    "date": "2026-09-08",
+    "description": "ICU DAILY CHARGE",
+    "qty": 1,
+    "unitPrice": 7985.41,
+    "amount": 7985.41,
+    "revCode": "0200"
+   },
+   {
+    "id": "L06",
+    "date": "2026-09-09",
+    "description": "ICU DAILY CHARGE",
+    "qty": 1,
+    "unitPrice": 7985.41,
+    "amount": 7985.41,
+    "revCode": "0200"
+   },
+   {
+    "id": "L07",
+    "date": "2026-09-10",
+    "description": "ICU DAILY CHARGE",
+    "qty": 1,
+    "unitPrice": 7985.41,
+    "amount": 7985.41,
+    "revCode": "0200"
+   },
+   {
+    "id": "L08",
+    "date": "2026-09-05",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 4332.21,
+    "amount": 4332.21,
+    "revCode": "0360"
+   },
+   {
+    "id": "L09",
+    "date": "2026-09-05",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 6,
+    "unitPrice": 716.12,
+    "amount": 4296.72,
+    "revCode": "0360"
+   },
+   {
+    "id": "L10",
+    "date": "2026-09-05",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2007.64,
+    "amount": 2007.64,
+    "revCode": "0710"
+   },
+   {
+    "id": "L11",
+    "date": "2026-09-05",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2265.77,
+    "amount": 2265.77,
+    "revCode": "0370"
+   },
+   {
+    "id": "L12",
+    "date": "2026-09-05",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 388.53,
+    "amount": 388.53,
+    "revCode": "0272"
+   },
+   {
+    "id": "L13",
+    "date": "2026-09-05",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 94.02,
+    "amount": 94.02,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2026-09-05",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 116.92,
+    "amount": 116.92,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L15",
+    "date": "2026-09-05",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 50.67,
+    "amount": 50.67,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L16",
+    "date": "2026-09-06",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 68.03,
+    "amount": 68.03,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L17",
+    "date": "2026-09-07",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 128.26,
+    "amount": 128.26,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L18",
+    "date": "2026-09-07",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 85.04,
+    "amount": 85.04,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L19",
+    "date": "2026-09-07",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 74.7,
+    "amount": 74.7,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L20",
+    "date": "2026-09-08",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 89.24,
+    "amount": 89.24,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L21",
+    "date": "2026-09-09",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 220.23,
+    "amount": 220.23,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L22",
+    "date": "2026-09-09",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 243.78,
+    "amount": 243.78,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L23",
+    "date": "2026-09-09",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 41.36,
+    "amount": 41.36,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L24",
+    "date": "2026-09-10",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 45.38,
+    "amount": 45.38,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L25",
+    "date": "2026-09-11",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 150.28,
+    "amount": 150.28,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L26",
+    "date": "2026-09-07",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 59.71,
+    "amount": 119.42,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L27",
+    "date": "2026-09-08",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 63.29,
+    "amount": 63.29,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L28",
+    "date": "2026-09-10",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 46.77,
+    "amount": 46.77,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L29",
+    "date": "2026-09-11",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 70.85,
+    "amount": 141.7,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L30",
+    "date": "2026-09-05",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 2919.39,
+    "amount": 2919.39,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L31",
+    "date": "2026-09-05",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 108.19,
+    "amount": 108.19,
+    "revCode": "0270"
+   },
+   {
+    "id": "L32",
+    "date": "2026-09-05",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 166.13,
+    "amount": 166.13,
+    "revCode": "0270"
+   },
+   {
+    "id": "L33",
+    "date": "2026-09-05",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 50.38,
+    "amount": 50.38,
+    "revCode": "0270"
+   },
+   {
+    "id": "L34",
+    "date": "2026-09-05",
+    "description": "OXYCODONE 5MG TAB",
+    "qty": 2,
+    "unitPrice": 0.72,
+    "amount": 1.44,
+    "revCode": "0250",
+    "ndc": "27690234085"
+   },
+   {
+    "id": "L35",
+    "date": "2026-09-05",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 122.87,
+    "amount": 122.87,
+    "revCode": "0250"
+   },
+   {
+    "id": "L36",
+    "date": "2026-09-05",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": -1,
+    "unitPrice": 122.87,
+    "amount": -122.87,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-09-18",
+  "firstBillDate": "2026-09-21",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 67477.21,
+   "allowed": 22208.26,
+   "planPaid": 17316.9,
+   "deductible": 249.64,
+   "copay": 250,
+   "coinsurance": 4391.72,
+   "patientResponsibility": 4891.36,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 45268.95
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 249.64
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 4391.72
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 250
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {
+   "27690234085": {
+    "unitPrice": 0.08005599999999999,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:rx-below-10",
+  "hn:cancel-reversed",
+  "variant:cancel-credit:negqty"
+ ]
+}

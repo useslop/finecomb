@@ -1,0 +1,338 @@
+{
+ "id": "fc-v1-153",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21472608,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 153",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0105624",
+   "totalCharges": 10507.93,
+   "statementDate": "2026-01-08",
+   "payments": 1084.5,
+   "adjustments": 7051.69,
+   "balanceDue": 2371.74
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-12-17",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 2433.52,
+    "amount": 2433.52,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-12-17",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 77.07,
+    "amount": 77.07,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-12-17",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 174.76,
+    "amount": 174.76,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-12-17",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 36.91,
+    "amount": 36.91,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2025-12-17",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 38.56,
+    "amount": 38.56,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2025-12-17",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 35.75,
+    "amount": 35.75,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2025-12-17",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 6649.6,
+    "amount": 6649.6,
+    "code": "74177",
+    "revCode": "0352"
+   },
+   {
+    "id": "L08",
+    "date": "2025-12-17",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 622.05,
+    "amount": 622.05,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2025-12-17",
+    "description": "IV PUSH EACH ADDL DRUG",
+    "qty": 2,
+    "unitPrice": 103.99,
+    "amount": 207.98,
+    "code": "96375",
+    "revCode": "0260"
+   },
+   {
+    "id": "L10",
+    "date": "2025-12-17",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 36.6,
+    "amount": 36.6,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2025-12-17",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 10.57,
+    "amount": 84.56,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2025-12-17",
+    "description": "ONDANSETRON WASTAGE",
+    "qty": 1,
+    "unitPrice": 10.57,
+    "amount": 10.57,
+    "code": "J2405",
+    "revCode": "0636",
+    "modifiers": [
+     "JW"
+    ]
+   },
+   {
+    "id": "L13",
+    "date": "2025-12-17",
+    "description": "PHARMACY MISC",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2025-12-27",
+  "firstBillDate": "2026-01-01",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 10507.93,
+   "allowed": 3456.24,
+   "planPaid": 1084.5,
+   "deductible": 1835.52,
+   "copay": 50,
+   "coinsurance": 486.22,
+   "patientResponsibility": 2371.74,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 7051.69
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1835.52
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 486.22
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-03-09",
+    "kind": "late_fee"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96375": {
+    "practitioner": {
+     "mue": 6,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 6,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:rounding",
+  "hn:nsa-compliant",
+  "hn:eca-late-fee",
+  "hn:jw-waste",
+  "variant:jw-wastage"
+ ]
+}

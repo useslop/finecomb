@@ -1,0 +1,419 @@
+{
+ "id": "fc-v1-141",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21377580,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 141",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0105180",
+   "totalCharges": 9506.9,
+   "statementDate": "2026-05-03",
+   "payments": 3573.42,
+   "adjustments": 3965.38,
+   "balanceDue": 1968.1
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-04",
+    "description": "EMERGENCY ROOM LVL 4",
+    "qty": 1,
+    "unitPrice": 1319.54,
+    "amount": 1319.54,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-04",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 229.71,
+    "amount": 229.71,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-04",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 46.04,
+    "amount": 46.04,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-04",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 90.74,
+    "amount": 90.74,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-04",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 53.51,
+    "amount": 53.51,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-04",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 56.5,
+    "amount": 56.5,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-04",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 552.05,
+    "amount": 552.05,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-04",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 10,
+    "unitPrice": 246.84,
+    "amount": 2468.4,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-04",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 47.76,
+    "amount": 95.52,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-04-04",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 34,
+    "unitPrice": 84.44,
+    "amount": 2870.96,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L11",
+    "date": "2026-04-05",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 17,
+    "unitPrice": 90.53,
+    "amount": 1539.01,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L12",
+    "date": "2026-04-05",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 137.65,
+    "amount": 137.65,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2026-04-05",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 47.27,
+    "amount": 47.27,
+    "code": "85610",
+    "revCode": "0305"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-04-15",
+  "firstBillDate": "2026-04-18",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 9506.9,
+   "allowed": 5297.06,
+   "planPaid": 3573.42,
+   "deductible": 830.29,
+   "copay": 0,
+   "coinsurance": 893.35,
+   "patientResponsibility": 1723.64,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 584.32,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 101.72,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 20.39,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 40.18,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 23.7,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 25.02,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 244.46,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1093.06,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 42.3,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1271.32,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 681.5,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 60.95,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 20.92,
+     "lineId": "L13"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 830.29
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 893.35
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L08"
+   ]
+  },
+  {
+   "ruleId": "QTY-01",
+   "lineIds": [
+    "L10"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02",
+  "QTY-01",
+  "MUE-01"
+ ],
+ "tags": [
+  "hn:hourly-overlap",
+  "plant:QTY-01:hourly",
+  "plant:MUE-01",
+  "variant:eob-line-level-co",
+  "plant:EOB-02:co-billed"
+ ]
+}

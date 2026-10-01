@@ -1,0 +1,363 @@
+{
+ "id": "fc-v1-136",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21337985,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 136",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0104995",
+   "admitDate": "2026-06-26",
+   "dischargeDate": "2026-06-27",
+   "totalCharges": 14177.48,
+   "statementDate": "2026-07-13",
+   "payments": 3972.22,
+   "adjustments": 8748.76,
+   "balanceDue": 1456.5
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-26",
+    "description": "EMERGENCY ROOM LVL 5",
+    "qty": 1,
+    "unitPrice": 3441.94,
+    "amount": 3441.94,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-26",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 22.52,
+    "amount": 22.52,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-26",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 54.93,
+    "amount": 54.93,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-26",
+    "description": "CAPILLARY BLOOD DRAW",
+    "qty": 1,
+    "unitPrice": 25.5,
+    "amount": 25.5,
+    "code": "36416",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-26",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 6075.49,
+    "amount": 6075.49,
+    "code": "74177",
+    "revCode": "0352"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-26",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 659.87,
+    "amount": 659.87,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-06-26",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 2,
+    "unitPrice": 103.6,
+    "amount": 207.2,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2026-06-26",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 42.28,
+    "amount": 42.28,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-06-26",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 197.02,
+    "amount": 394.04,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2026-06-26",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 15.74,
+    "amount": 78.7,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-06-26",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 21,
+    "unitPrice": 60.33,
+    "amount": 1266.93,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L12",
+    "date": "2026-06-27",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 10,
+    "unitPrice": 155.95,
+    "amount": 1559.5,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2026-06-27",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 137.87,
+    "amount": 137.87,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L14",
+    "date": "2026-06-27",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 210.71,
+    "amount": 210.71,
+    "code": "80053",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-07-05",
+  "firstBillDate": "2026-07-19",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 14177.48,
+   "allowed": 5428.72,
+   "planPaid": 3972.22,
+   "deductible": 400.94,
+   "copay": 50,
+   "coinsurance": 1005.56,
+   "patientResponsibility": 1456.5,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 8748.76
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 400.94
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1005.56
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "36416": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "36415",
+    "col2": "36416",
+    "mi": 9,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:hourly-overlap",
+  "hn:obs-room-hours",
+  "hn:ncci-mi9"
+ ]
+}

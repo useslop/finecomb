@@ -1,0 +1,440 @@
+{
+ "id": "fc-v1-086",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20942035,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 086",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0103145",
+   "admitDate": "2025-11-13",
+   "dischargeDate": "2025-11-16",
+   "totalCharges": 18292.84,
+   "statementDate": "2025-11-29",
+   "payments": 3875.55,
+   "adjustments": 14415.29,
+   "balanceDue": 2
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-11-13",
+    "description": "EMERGENCY ROOM LVL 4",
+    "qty": 1,
+    "unitPrice": 2352.05,
+    "amount": 2352.05,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-11-13",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 3,
+    "unitPrice": 4580.6,
+    "amount": 13741.8,
+    "revCode": "0206"
+   },
+   {
+    "id": "L03",
+    "date": "2025-11-13",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 71.37,
+    "amount": 71.37,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2025-11-14",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 108.14,
+    "amount": 108.14,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L05",
+    "date": "2025-11-14",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 167.79,
+    "amount": 167.79,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2025-11-14",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 71.47,
+    "amount": 71.47,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2025-11-15",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 78,
+    "amount": 78,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L08",
+    "date": "2025-11-15",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 149.88,
+    "amount": 149.88,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2025-11-16",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 123.56,
+    "amount": 123.56,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L10",
+    "date": "2025-11-16",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 46.78,
+    "amount": 46.78,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L11",
+    "date": "2025-11-15",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 59.7,
+    "amount": 119.4,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2025-11-15",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 103.41,
+    "amount": 413.64,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2025-11-15",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 217.89,
+    "amount": 217.89,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L14",
+    "date": "2025-11-16",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 49.8,
+    "amount": 99.6,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L15",
+    "date": "2025-11-13",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 84.81,
+    "amount": 84.81,
+    "revCode": "0270"
+   },
+   {
+    "id": "L16",
+    "date": "2025-11-14",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 446.66,
+    "amount": 446.66,
+    "revCode": "0424"
+   },
+   {
+    "id": "L17",
+    "date": "2025-11-13",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 139.59,
+    "amount": 139.59,
+    "revCode": "0250"
+   },
+   {
+    "id": "L18",
+    "date": "2025-11-13",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": -1,
+    "unitPrice": 139.59,
+    "amount": -139.59,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-11-21",
+  "firstBillDate": "2025-12-04",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 18292.84,
+   "allowed": 3877.55,
+   "planPaid": 3875.55,
+   "deductible": 0,
+   "copay": 2,
+   "coinsurance": 0,
+   "patientResponsibility": 2,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1853.48,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 10828.94,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 56.24,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 85.22,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 132.22,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 56.32,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 61.47,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 118.11,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 97.37,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 36.86,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 94.09,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 325.96,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 171.7,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 78.49,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 66.83,
+     "lineId": "L15"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 351.98,
+     "lineId": "L16"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 0.01,
+     "lineId": "L17"
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 2
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2025-12-17",
+    "kind": "credit_report"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:cancel-reversed",
+  "hn:eca-forprofit",
+  "hn:medicaid-copay",
+  "hn:room-word",
+  "variant:cancel-credit:negqty",
+  "variant:eob-line-level-co"
+ ]
+}

@@ -1,0 +1,323 @@
+{
+ "id": "fc-v1-035",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20538166,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 035",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0101258",
+   "admitDate": "2024-12-17",
+   "dischargeDate": "2024-12-18",
+   "totalCharges": 19772.36,
+   "statementDate": "2025-01-09",
+   "payments": 7289.02,
+   "adjustments": 7925.42,
+   "balanceDue": 4557.92
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2024-12-17",
+    "description": "ICU DAILY CHARGE",
+    "qty": 1,
+    "unitPrice": 5929.21,
+    "amount": 5929.21,
+    "revCode": "0200"
+   },
+   {
+    "id": "L02",
+    "date": "2024-12-17",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2634.05,
+    "amount": 2634.05,
+    "revCode": "0360"
+   },
+   {
+    "id": "L03",
+    "date": "2024-12-17",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 8,
+    "unitPrice": 634.03,
+    "amount": 5072.24,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2024-12-17",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2062.52,
+    "amount": 2062.52,
+    "revCode": "0710"
+   },
+   {
+    "id": "L05",
+    "date": "2024-12-17",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1442.83,
+    "amount": 1442.83,
+    "revCode": "0370"
+   },
+   {
+    "id": "L06",
+    "date": "2024-12-17",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1468.01,
+    "amount": 1468.01,
+    "revCode": "0272"
+   },
+   {
+    "id": "L07",
+    "date": "2024-12-17",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 69.1,
+    "amount": 69.1,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2024-12-18",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 195.87,
+    "amount": 195.87,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2024-12-18",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 106.71,
+    "amount": 106.71,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2024-12-18",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 154.94,
+    "amount": 154.94,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L11",
+    "date": "2024-12-18",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 24.16,
+    "amount": 169.12,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2024-12-18",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 55.09,
+    "amount": 110.18,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L13",
+    "date": "2024-12-17",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 54.07,
+    "amount": 108.14,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L14",
+    "date": "2024-12-17",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 109.13,
+    "amount": 109.13,
+    "revCode": "0270"
+   },
+   {
+    "id": "L15",
+    "date": "2024-12-17",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 64.77,
+    "amount": 64.77,
+    "revCode": "0270"
+   },
+   {
+    "id": "L16",
+    "date": "2024-12-17",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 36.72,
+    "amount": 36.72,
+    "revCode": "0270"
+   },
+   {
+    "id": "L17",
+    "date": "2024-12-18",
+    "description": "ONDANSETRON WASTAGE",
+    "qty": 3,
+    "unitPrice": 24.16,
+    "amount": 72.48,
+    "code": "J2405",
+    "revCode": "0636",
+    "modifiers": [
+     "JW"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2024-12-25",
+  "firstBillDate": "2024-12-29",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Medicare",
+  "eob": {
+   "billed": 19806.02,
+   "allowed": 11880.6,
+   "planPaid": 7757.58,
+   "deductible": 2183.63,
+   "copay": 0,
+   "coinsurance": 1939.39,
+   "patientResponsibility": 4123.02,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 7925.42
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 2183.63
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1939.39
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 3402.26
+ },
+ "data": {
+  "mue": {
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MATH-02",
+  "EOB-01"
+ ],
+ "tags": [
+  "hn:jw-waste",
+  "hn:cr-legit",
+  "variant:jw-wastage",
+  "plant:EOB-01:unposted-payment",
+  "plant:MATH-02:total-off"
+ ]
+}

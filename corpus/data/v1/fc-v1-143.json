@@ -1,0 +1,303 @@
+{
+ "id": "fc-v1-143",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21393418,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 143",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0105254",
+   "totalCharges": 4421.64,
+   "statementDate": "2026-02-05",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 4421.64
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-12-27",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 1,
+    "unitPrice": 3188.86,
+    "amount": 3188.86,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-12-27",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 124.69,
+    "amount": 124.69,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L03",
+    "date": "2025-12-27",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 65.62,
+    "amount": 65.62,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-12-27",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 54.77,
+    "amount": 54.77,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2025-12-27",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 33.83,
+    "amount": 33.83,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2025-12-27",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 40.9,
+    "amount": 40.9,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2025-12-27",
+    "description": "CAPILLARY BLOOD DRAW",
+    "qty": 1,
+    "unitPrice": 13.07,
+    "amount": 13.07,
+    "code": "36416",
+    "revCode": "0300"
+   },
+   {
+    "id": "L08",
+    "date": "2025-12-27",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 289.78,
+    "amount": 289.78,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2025-12-27",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 449.31,
+    "amount": 449.31,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "XU"
+    ]
+   },
+   {
+    "id": "L10",
+    "date": "2025-12-27",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 57.89,
+    "amount": 57.89,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2025-12-27",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 102.92,
+    "amount": 102.92,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-01-01",
+  "firstBillDate": "2026-01-02",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "fapApplied": true,
+  "fapAppliedDate": "2026-04-06",
+  "collections": [
+   {
+    "date": "2026-05-26",
+    "kind": "wage_garnishment",
+    "noticeDate": "2026-04-11"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "36416": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   },
+   {
+    "col1": "36415",
+    "col2": "36416",
+    "mi": 9,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "ECA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01",
+  "ECA-01"
+ ],
+ "tags": [
+  "hn:ncci-mi9",
+  "hn:ncci-mi1-59",
+  "plant:ECA-01:fap-pending"
+ ]
+}

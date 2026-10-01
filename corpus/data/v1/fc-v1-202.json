@@ -1,0 +1,181 @@
+{
+ "id": "fc-v1-202",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21860639,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 202",
+   "providerName": "Sample Family Clinic",
+   "accountNumber": "TEST-0107437",
+   "totalCharges": 3156.31,
+   "statementDate": "2026-07-07",
+   "payments": 0,
+   "adjustments": 1013.34,
+   "balanceDue": 2142.97
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-10",
+    "description": "OFFICE VISIT NEW LEVEL 3",
+    "qty": 1,
+    "unitPrice": 299.12,
+    "amount": 299.12,
+    "code": "99203"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-10",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 41.89,
+    "amount": 41.89,
+    "code": "36415"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-10",
+    "description": "INJECTION IM OR SUBQ",
+    "qty": 1,
+    "unitPrice": 30.89,
+    "amount": 30.89,
+    "code": "96372"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-10",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 101.87,
+    "amount": 101.87,
+    "code": "J1030"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-10",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 107.25,
+    "amount": 107.25,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-10",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 107.25,
+    "amount": 107.25,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L07",
+    "date": "2026-06-10",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2468.04,
+    "amount": 2468.04,
+    "code": "74177"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-05-20",
+  "state": "AL",
+  "ppdrFiledDate": "2026-08-21",
+  "collections": [
+   {
+    "date": "2026-08-21",
+    "kind": "late_fee"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96372": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99203": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "variant:bilateral-same-price",
+  "plant:PPDR-01"
+ ]
+}

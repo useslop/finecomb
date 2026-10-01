@@ -1,0 +1,102 @@
+{
+ "id": "fc-v1-291",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 22565430,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 291",
+   "providerName": "Sample Anesthesia Associates",
+   "accountNumber": "TEST-0110730",
+   "totalCharges": 2577.59,
+   "statementDate": "2026-08-25",
+   "payments": 1240.7,
+   "adjustments": 0,
+   "balanceDue": 1336.89
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-30",
+    "description": "ANESTHESIA SERVICES",
+    "qty": 1,
+    "unitPrice": 2994.76,
+    "amount": 2994.76,
+    "code": "00790"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": false,
+  "emergency": false,
+  "firstBillDate": "2026-08-22",
+  "state": "TX",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "anesthesia"
+  ],
+  "eob": {
+   "billed": 2994.76,
+   "allowed": 1908.99,
+   "planPaid": 1240.7,
+   "deductible": 65.13,
+   "copay": 50,
+   "coinsurance": 553.16,
+   "patientResponsibility": 668.29,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 1085.77
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 65.13
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 553.16
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-02",
+  "MATH-02"
+ ],
+ "tags": [
+  "plant:MATH-02:total-off"
+ ]
+}

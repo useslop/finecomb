@@ -1,0 +1,436 @@
+{
+ "id": "fc-v1-087",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20949954,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 087",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0103182",
+   "admitDate": "2025-08-30",
+   "dischargeDate": "2025-09-01",
+   "totalCharges": 12411.02,
+   "statementDate": "2025-09-14",
+   "payments": 3713.67,
+   "adjustments": 7045.31,
+   "balanceDue": 1652.04
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-08-30",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 1,
+    "unitPrice": 2116.92,
+    "amount": 2116.92,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-08-30",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4168.42,
+    "amount": 4168.42,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2025-08-31",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4168.42,
+    "amount": 4168.42,
+    "revCode": "0110"
+   },
+   {
+    "id": "L04",
+    "date": "2025-08-30",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 109.62,
+    "amount": 109.62,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2025-08-30",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 96.11,
+    "amount": 96.11,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L06",
+    "date": "2025-08-31",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 89.29,
+    "amount": 89.29,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2025-09-01",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 122.41,
+    "amount": 122.41,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L08",
+    "date": "2025-09-01",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 45.45,
+    "amount": 45.45,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L09",
+    "date": "2025-08-30",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 15.55,
+    "amount": 93.3,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2025-08-31",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 29.22,
+    "amount": 146.1,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2025-08-30",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 55.69,
+    "amount": 55.69,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L12",
+    "date": "2025-09-01",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 74.51,
+    "amount": 149.02,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L13",
+    "date": "2025-08-30",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 187.08,
+    "amount": 187.08,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L14",
+    "date": "2025-08-30",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 213.19,
+    "amount": 213.19,
+    "revCode": "0270"
+   },
+   {
+    "id": "L15",
+    "date": "2025-08-30",
+    "description": "IV START KIT",
+    "qty": 2,
+    "unitPrice": 137.96,
+    "amount": 275.92,
+    "revCode": "0270"
+   },
+   {
+    "id": "L16",
+    "date": "2025-08-31",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 374.08,
+    "amount": 374.08,
+    "revCode": "0424"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-09-06",
+  "firstBillDate": "2025-09-17",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Example Benefit Trust",
+  "eob": {
+   "billed": 12411.02,
+   "allowed": 5365.29,
+   "planPaid": 3713.67,
+   "deductible": 60.05,
+   "copay": 0,
+   "coinsurance": 1591.57,
+   "patientResponsibility": 1651.62,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1201.77,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2366.41,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2366.41,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 62.23,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 54.56,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 50.69,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 69.49,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 25.8,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 52.97,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 82.94,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 31.62,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 84.6,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 106.21,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 121.03,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 156.64,
+     "lineId": "L15"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 212.36,
+     "lineId": "L16"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 60.05
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1591.57
+    }
+   ]
+  },
+  "fapApplied": true,
+  "fapAppliedDate": "2025-10-26",
+  "collections": [
+   {
+    "date": "2026-01-21",
+    "kind": "credit_report",
+    "noticeDate": "2025-11-23"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "ECA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "ECA-01"
+ ],
+ "tags": [
+  "hn:eob-under-1",
+  "hn:kit-multi",
+  "variant:iv-kit-x2",
+  "variant:eob-line-level-co",
+  "plant:ECA-01:fap-pending"
+ ]
+}

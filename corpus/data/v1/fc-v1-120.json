@@ -1,0 +1,375 @@
+{
+ "id": "fc-v1-120",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21211281,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 120",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0104403",
+   "admitDate": "2026-08-23",
+   "dischargeDate": "2026-08-24",
+   "totalCharges": 9389.94,
+   "statementDate": "2026-09-29",
+   "payments": 2907.81,
+   "adjustments": 0,
+   "balanceDue": 6482.13
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-23",
+    "description": "EMERGENCY ROOM LVL 4",
+    "qty": 1,
+    "unitPrice": 2086.97,
+    "amount": 2086.97,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-23",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 43.4,
+    "amount": 43.4,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-23",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 35.24,
+    "amount": 35.24,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-23",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 241.19,
+    "amount": 241.19,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-23",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 169.85,
+    "amount": 169.85,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-08-23",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 32.9,
+    "amount": 32.9,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-08-23",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 2097.91,
+    "amount": 2097.91,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L08",
+    "date": "2026-08-23",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 387.49,
+    "amount": 387.49,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2026-08-23",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 3,
+    "unitPrice": 172.73,
+    "amount": 518.19,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L10",
+    "date": "2026-08-23",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 182.75,
+    "amount": 182.75,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L11",
+    "date": "2026-08-23",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 49.49,
+    "amount": 98.98,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-08-23",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 23,
+    "unitPrice": 110.78,
+    "amount": 2547.94,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2026-08-24",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 9,
+    "unitPrice": 89.89,
+    "amount": 809.01,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L14",
+    "date": "2026-08-24",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 105.83,
+    "amount": 105.83,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L15",
+    "date": "2026-08-24",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 32.29,
+    "amount": 32.29,
+    "code": "83735",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-09-12",
+  "firstBillDate": "2026-09-16",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 9389.94,
+   "allowed": 4808.95,
+   "planPaid": 2907.81,
+   "deductible": 1111.69,
+   "copay": 50,
+   "coinsurance": 739.45,
+   "patientResponsibility": 1901.14,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 4580.99
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1111.69
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 739.45
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-01"
+ ],
+ "tags": [
+  "hn:hourly-overlap"
+ ]
+}

@@ -1,0 +1,348 @@
+{
+ "id": "fc-v1-051",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20664870,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 051",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0101850",
+   "admitDate": "2025-10-13",
+   "dischargeDate": "2025-10-17",
+   "totalCharges": 26074.3,
+   "statementDate": "2025-10-30",
+   "payments": 5392.58,
+   "adjustments": 20677.72,
+   "balanceDue": 4
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-10-13",
+    "description": "ED VISIT LVL 3",
+    "qty": 1,
+    "unitPrice": 1876.38,
+    "amount": 1876.38,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-10-13",
+    "description": "ICU DAILY CHARGE",
+    "qty": 1,
+    "unitPrice": 5690.45,
+    "amount": 5690.45,
+    "revCode": "0200"
+   },
+   {
+    "id": "L03",
+    "date": "2025-10-14",
+    "description": "ICU DAILY CHARGE",
+    "qty": 1,
+    "unitPrice": 5690.45,
+    "amount": 5690.45,
+    "revCode": "0200"
+   },
+   {
+    "id": "L04",
+    "date": "2025-10-15",
+    "description": "ICU DAILY CHARGE",
+    "qty": 1,
+    "unitPrice": 5690.45,
+    "amount": 5690.45,
+    "revCode": "0200"
+   },
+   {
+    "id": "L05",
+    "date": "2025-10-16",
+    "description": "ICU DAILY CHARGE",
+    "qty": 1,
+    "unitPrice": 5690.45,
+    "amount": 5690.45,
+    "revCode": "0200"
+   },
+   {
+    "id": "L06",
+    "date": "2025-10-13",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 42.34,
+    "amount": 42.34,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2025-10-13",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 50.43,
+    "amount": 50.43,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L08",
+    "date": "2025-10-13",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 138.31,
+    "amount": 138.31,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L09",
+    "date": "2025-10-14",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 59.77,
+    "amount": 59.77,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L10",
+    "date": "2025-10-15",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 38.44,
+    "amount": 38.44,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2025-10-16",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 71.1,
+    "amount": 71.1,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2025-10-17",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 213.31,
+    "amount": 213.31,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2025-10-17",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 207.71,
+    "amount": 207.71,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L14",
+    "date": "2025-10-17",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 134.27,
+    "amount": 268.54,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L15",
+    "date": "2025-10-16",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 52.93,
+    "amount": 52.93,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2025-10-17",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 68.24,
+    "amount": 136.48,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L17",
+    "date": "2025-10-13",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 65.99,
+    "amount": 65.99,
+    "revCode": "0270"
+   },
+   {
+    "id": "L18",
+    "date": "2025-10-13",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 90.77,
+    "amount": 90.77,
+    "revCode": "0272"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-11-06",
+  "firstBillDate": "2025-11-11",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 26074.3,
+   "allowed": 5396.58,
+   "planPaid": 5392.58,
+   "deductible": 0,
+   "copay": 4,
+   "coinsurance": 0,
+   "patientResponsibility": 4,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 20677.72
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 4
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2025-11-27",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:medicaid-copay",
+  "hn:eca-agency-referral"
+ ]
+}

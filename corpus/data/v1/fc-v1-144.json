@@ -1,0 +1,295 @@
+{
+ "id": "fc-v1-144",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21401337,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 144",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0105291",
+   "admitDate": "2026-07-29",
+   "dischargeDate": "2026-07-30",
+   "totalCharges": 9575.51,
+   "statementDate": "2026-08-31",
+   "payments": 4343.85,
+   "adjustments": 3849.66,
+   "balanceDue": 1382
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-29",
+    "description": "ED VISIT LVL 5",
+    "qty": 1,
+    "unitPrice": 3110.15,
+    "amount": 3110.15,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-29",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 71.16,
+    "amount": 71.16,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-29",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 152.43,
+    "amount": 152.43,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-29",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 104.55,
+    "amount": 104.55,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-29",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 52.78,
+    "amount": 52.78,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-29",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 442.02,
+    "amount": 442.02,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-29",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 2,
+    "unitPrice": 159.19,
+    "amount": 318.38,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-29",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 54.98,
+    "amount": 109.96,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-29",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 17.89,
+    "amount": 17.89,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-29",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 95.32,
+    "amount": 95.32,
+    "revCode": "0270"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-29",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 23,
+    "unitPrice": 120.38,
+    "amount": 2768.74,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-30",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 14,
+    "unitPrice": 145.11,
+    "amount": 2031.54,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2026-07-30",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 194.35,
+    "amount": 194.35,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2026-07-30",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 106.24,
+    "amount": 106.24,
+    "code": "83605",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-08-15",
+  "firstBillDate": "2026-08-15",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": []
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:ins-paid-no-eob",
+  "hn:hourly-overlap",
+  "hn:obs-room-hours",
+  "variant:eob-line-level-co"
+ ]
+}

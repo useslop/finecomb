@@ -1,0 +1,405 @@
+{
+ "id": "fc-v1-072",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20831169,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 072",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0102627",
+   "admitDate": "2026-05-02",
+   "dischargeDate": "2026-05-05",
+   "totalCharges": 18017.98,
+   "statementDate": "2026-06-11",
+   "payments": 7677.22,
+   "adjustments": 7906.89,
+   "balanceDue": 2433.87
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-02",
+    "description": "ER VISIT LEVEL 5",
+    "qty": 1,
+    "unitPrice": 2513.74,
+    "amount": 2513.74,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-02",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 3,
+    "unitPrice": 4117.48,
+    "amount": 12352.44,
+    "revCode": "0120"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-02",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 156.89,
+    "amount": 156.89,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-02",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 171.11,
+    "amount": 171.11,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-02",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 104.73,
+    "amount": 104.73,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-03",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 21.99,
+    "amount": 21.99,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-03",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 96.71,
+    "amount": 96.71,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-03",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 49.86,
+    "amount": 49.86,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L09",
+    "date": "2026-05-04",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 66,
+    "amount": 66,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2026-05-04",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 94.65,
+    "amount": 94.65,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2026-05-02",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 26.97,
+    "amount": 53.94,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-05-03",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 23.49,
+    "amount": 187.92,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-05-05",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 10,
+    "unitPrice": 8.72,
+    "amount": 87.2,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2026-05-04",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 104.16,
+    "amount": 208.32,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L15",
+    "date": "2026-05-02",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 1467.09,
+    "amount": 1467.09,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L16",
+    "date": "2026-05-02",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 45.92,
+    "amount": 45.92,
+    "revCode": "0270"
+   },
+   {
+    "id": "L17",
+    "date": "2026-05-02",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 139.16,
+    "amount": 139.16,
+    "revCode": "0270"
+   },
+   {
+    "id": "L18",
+    "date": "2026-05-02",
+    "description": "PHARMACY MISC",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "revCode": "0250"
+   },
+   {
+    "id": "L20",
+    "date": "2026-05-02",
+    "description": "PHARMACY MISC",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "revCode": "0250"
+   },
+   {
+    "id": "L19",
+    "date": "2026-05-02",
+    "description": "ATORVASTATIN 40MG TAB",
+    "qty": 1,
+    "unitPrice": 0.31,
+    "amount": 0.31,
+    "revCode": "0250",
+    "ndc": "51917401044"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-05-18",
+  "firstBillDate": "2026-05-29",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 18017.98,
+   "allowed": 10111.09,
+   "planPaid": 7677.22,
+   "deductible": 1580.85,
+   "copay": 0,
+   "coinsurance": 853.02,
+   "patientResponsibility": 2433.87,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 7906.89
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1580.85
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 853.02
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "51917401044": {
+    "unitPrice": 0.040998,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L18",
+    "L20"
+   ]
+  }
+ ],
+ "plants": [
+  "DUP-01"
+ ],
+ "tags": [
+  "hn:rounding",
+  "hn:rx-below-10",
+  "plant:DUP-01"
+ ]
+}

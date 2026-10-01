@@ -1,0 +1,151 @@
+{
+ "id": "fc-v1-248",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 22224913,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 248",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0109139",
+   "totalCharges": 781.75,
+   "statementDate": "2026-09-01",
+   "payments": 9.09,
+   "adjustments": 0,
+   "balanceDue": 772.66
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-25",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 300.31,
+    "amount": 300.31,
+    "code": "99214",
+    "modifiers": [
+     "25"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-25",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 373.41,
+    "amount": 373.41,
+    "code": "20610"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-25",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 3,
+    "unitPrice": 36.01,
+    "amount": 108.03,
+    "code": "J3301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "firstBillDate": "2026-08-04",
+  "state": "KS",
+  "insurerName": "Example Benefit Trust",
+  "eob": {
+   "billed": 781.75,
+   "allowed": 467.57,
+   "planPaid": 9.09,
+   "deductible": 97.44,
+   "copay": 250,
+   "coinsurance": 111.04,
+   "patientResponsibility": 458.48,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 314.18
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 97.44
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 111.04
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 250
+    }
+   ]
+  },
+  "onCreditReport": false,
+  "paidInFull": true,
+  "originalBalance": 1530
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "20610",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02"
+ ],
+ "tags": [
+  "hn:ncci-mod25",
+  "hn:cr-not-reported",
+  "plant:EOB-02:co-billed"
+ ]
+}

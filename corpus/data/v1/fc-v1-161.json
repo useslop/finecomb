@@ -1,0 +1,381 @@
+{
+ "id": "fc-v1-161",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21535960,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 161",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0105920",
+   "admitDate": "2026-03-25",
+   "dischargeDate": "2026-03-25",
+   "totalCharges": 6709.91,
+   "statementDate": "2026-04-21",
+   "payments": 905.69,
+   "adjustments": 3750.44,
+   "balanceDue": 2053.78
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-25",
+    "description": "ED VISIT LVL 5",
+    "qty": 1,
+    "unitPrice": 4113.25,
+    "amount": 4113.25,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-25",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 67.9,
+    "amount": 67.9,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-25",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 100.02,
+    "amount": 100.02,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-25",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 26.26,
+    "amount": 26.26,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-25",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 174.7,
+    "amount": 174.7,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-25",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 29.31,
+    "amount": 29.31,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-03-25",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 535.75,
+    "amount": 535.75,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L08",
+    "date": "2026-03-25",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 626.97,
+    "amount": 626.97,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2026-03-25",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 557.03,
+    "amount": 557.03,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "XU"
+    ]
+   },
+   {
+    "id": "L10",
+    "date": "2026-03-25",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 8,
+    "unitPrice": 47.34,
+    "amount": 378.72,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-03-25",
+    "description": "PHARMACY MISC",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "emergency": true,
+  "admitted": false,
+  "firstPostDischargeStatementDate": "2026-03-30",
+  "firstBillDate": "2026-04-16",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 6709.91,
+   "allowed": 2959.47,
+   "planPaid": 1591.1,
+   "deductible": 686.47,
+   "copay": 0,
+   "coinsurance": 681.9,
+   "patientResponsibility": 1368.37,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2299.06,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 37.95,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 55.91,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 14.68,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 97.65,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 16.38,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 299.45,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 350.44,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 311.35,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 211.68,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 55.89,
+     "lineId": "L11"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 686.47
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 681.9
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 5743.31
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-01",
+  "CR-01"
+ ],
+ "tags": [
+  "hn:rounding",
+  "hn:ncci-mi1-59",
+  "variant:eob-line-level-co",
+  "plant:EOB-01:unposted-payment",
+  "plant:CR-01:recent"
+ ]
+}

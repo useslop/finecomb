@@ -1,0 +1,4892 @@
+{
+ "engineCommit": "9492552",
+ "rules": [
+  {
+   "ruleId": "DUP-01",
+   "positives": 27,
+   "findings": 43,
+   "tp": 27,
+   "fp": 16,
+   "fn": 0,
+   "precision": 0.628,
+   "recall": 1,
+   "f1": 0.771,
+   "fpPerCleanBill": 0.044,
+   "skippedOnBills": 0,
+   "shipAs": "low",
+   "topFalsePositiveCauses": [
+    [
+     "hn:credit-reversal",
+     16
+    ],
+    [
+     "variant:credit:negqty",
+     16
+    ],
+    [
+     "hn:cancel-reversed",
+     8
+    ],
+    [
+     "variant:cancel-credit:negqty",
+     7
+    ]
+   ],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "DUP-02",
+   "positives": 26,
+   "findings": 71,
+   "tp": 26,
+   "fp": 45,
+   "fn": 0,
+   "precision": 0.366,
+   "recall": 1,
+   "f1": 0.536,
+   "fpPerCleanBill": 0.133,
+   "skippedOnBills": 0,
+   "shipAs": "off",
+   "topFalsePositiveCauses": [
+    [
+     "hn:credit-reversal",
+     25
+    ],
+    [
+     "hn:jw-waste",
+     14
+    ],
+    [
+     "variant:credit:negqty",
+     13
+    ],
+    [
+     "variant:credit:posqty",
+     12
+    ]
+   ],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "MATH-01",
+   "positives": 23,
+   "findings": 56,
+   "tp": 23,
+   "fp": 33,
+   "fn": 0,
+   "precision": 0.411,
+   "recall": 1,
+   "f1": 0.582,
+   "fpPerCleanBill": 0.1,
+   "skippedOnBills": 0,
+   "shipAs": "off",
+   "topFalsePositiveCauses": [
+    [
+     "hn:credit-reversal",
+     23
+    ],
+    [
+     "variant:credit:posqty",
+     22
+    ],
+    [
+     "hn:cancel-reversed",
+     18
+    ],
+    [
+     "variant:cancel-credit:posqty",
+     15
+    ]
+   ],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "MATH-02",
+   "positives": 22,
+   "findings": 22,
+   "tp": 22,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1,
+   "f1": 1,
+   "fpPerCleanBill": 0,
+   "skippedOnBills": 0,
+   "shipAs": "as-specified",
+   "topFalsePositiveCauses": [],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "MUE-01",
+   "positives": 32,
+   "findings": 49,
+   "tp": 32,
+   "fp": 17,
+   "fn": 0,
+   "precision": 0.653,
+   "recall": 1,
+   "f1": 0.79,
+   "fpPerCleanBill": 0.111,
+   "skippedOnBills": 0,
+   "shipAs": "low",
+   "topFalsePositiveCauses": [
+    [
+     "hn:mue-setting",
+     13
+    ],
+    [
+     "hn:nsa-compliant",
+     6
+    ],
+    [
+     "hn:credit-reversal",
+     4
+    ],
+    [
+     "variant:credit:posqty",
+     4
+    ]
+   ],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "QTY-01",
+   "positives": 13,
+   "findings": 37,
+   "tp": 13,
+   "fp": 24,
+   "fn": 0,
+   "precision": 0.351,
+   "recall": 1,
+   "f1": 0.52,
+   "fpPerCleanBill": 0.167,
+   "skippedOnBills": 0,
+   "shipAs": "off",
+   "topFalsePositiveCauses": [
+    [
+     "hn:kit-multi",
+     10
+    ],
+    [
+     "hn:hourly-overlap",
+     10
+    ],
+    [
+     "hn:per-day-multi",
+     8
+    ],
+    [
+     "variant:iv-kit-x2",
+     6
+    ]
+   ],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "RB-01",
+   "positives": 9,
+   "findings": 44,
+   "tp": 9,
+   "fp": 35,
+   "fn": 0,
+   "precision": 0.205,
+   "recall": 1,
+   "f1": 0.34,
+   "fpPerCleanBill": 0.2,
+   "skippedOnBills": 163,
+   "shipAs": "off",
+   "topFalsePositiveCauses": [
+    [
+     "hn:obs-room-hours",
+     13
+    ],
+    [
+     "hn:per-day-multi",
+     8
+    ],
+    [
+     "hn:telemetry-monitor",
+     7
+    ],
+    [
+     "hn:hourly-overlap",
+     7
+    ]
+   ],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "DATE-01",
+   "positives": 9,
+   "findings": 9,
+   "tp": 9,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1,
+   "f1": 1,
+   "fpPerCleanBill": 0,
+   "skippedOnBills": 200,
+   "shipAs": "as-specified",
+   "topFalsePositiveCauses": [],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "NCCI-01",
+   "positives": 26,
+   "findings": 62,
+   "tp": 26,
+   "fp": 32,
+   "fn": 0,
+   "precision": 0.448,
+   "recall": 1,
+   "f1": 0.619,
+   "fpPerCleanBill": 0.056,
+   "skippedOnBills": 0,
+   "shipAs": "off",
+   "topFalsePositiveCauses": [
+    [
+     "hn:ncci-mod25",
+     32
+    ],
+    [
+     "hn:bilateral",
+     20
+    ],
+    [
+     "variant:bilateral-same-price",
+     16
+    ],
+    [
+     "variant:bilateral-discounted",
+     4
+    ]
+   ],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "CANC-01",
+   "positives": 21,
+   "findings": 37,
+   "tp": 21,
+   "fp": 16,
+   "fn": 0,
+   "precision": 0.568,
+   "recall": 1,
+   "f1": 0.724,
+   "fpPerCleanBill": 0.067,
+   "skippedOnBills": 0,
+   "shipAs": "off",
+   "topFalsePositiveCauses": [
+    [
+     "hn:cancel-reversed",
+     16
+    ],
+    [
+     "variant:cancel-credit:negqty",
+     16
+    ],
+    [
+     "hn:credit-reversal",
+     10
+    ],
+    [
+     "variant:credit:negqty",
+     7
+    ]
+   ],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "RX-01",
+   "positives": 13,
+   "findings": 13,
+   "tp": 13,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1,
+   "f1": 1,
+   "fpPerCleanBill": 0,
+   "skippedOnBills": 277,
+   "shipAs": "as-specified",
+   "topFalsePositiveCauses": [],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "EOB-01",
+   "positives": 86,
+   "findings": 86,
+   "tp": 86,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1,
+   "f1": 1,
+   "fpPerCleanBill": 0,
+   "skippedOnBills": 121,
+   "shipAs": "as-specified",
+   "topFalsePositiveCauses": [],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "positives": 29,
+   "findings": 21,
+   "tp": 21,
+   "fp": 0,
+   "fn": 8,
+   "precision": 1,
+   "recall": 0.724,
+   "f1": 0.84,
+   "fpPerCleanBill": 0,
+   "skippedOnBills": 121,
+   "shipAs": "as-specified",
+   "topFalsePositiveCauses": [],
+   "topMissCauses": [
+    [
+     "plant:EOB-02:co-billed",
+     5
+    ],
+    [
+     "collateral (label not planted for EOB-02)",
+     3
+    ]
+   ]
+  },
+  {
+   "ruleId": "INS-01",
+   "positives": 20,
+   "findings": 49,
+   "tp": 20,
+   "fp": 29,
+   "fn": 0,
+   "precision": 0.408,
+   "recall": 1,
+   "f1": 0.58,
+   "fpPerCleanBill": 0.133,
+   "skippedOnBills": 0,
+   "shipAs": "off",
+   "topFalsePositiveCauses": [
+    [
+     "variant:medicaid-no-eob",
+     16
+    ],
+    [
+     "hn:ins-paid-no-eob",
+     13
+    ],
+    [
+     "hn:same-day-admit-discharge",
+     5
+    ],
+    [
+     "hn:eca-proper",
+     4
+    ]
+   ],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "MCD-01",
+   "positives": 20,
+   "findings": 20,
+   "tp": 20,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1,
+   "f1": 1,
+   "fpPerCleanBill": 0,
+   "skippedOnBills": 0,
+   "shipAs": "as-specified",
+   "topFalsePositiveCauses": [],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "positives": 19,
+   "findings": 19,
+   "tp": 19,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1,
+   "f1": 1,
+   "fpPerCleanBill": 0,
+   "skippedOnBills": 159,
+   "shipAs": "as-specified",
+   "topFalsePositiveCauses": [],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "NSA-02",
+   "positives": 16,
+   "findings": 16,
+   "tp": 16,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1,
+   "f1": 1,
+   "fpPerCleanBill": 0,
+   "skippedOnBills": 114,
+   "shipAs": "as-specified",
+   "topFalsePositiveCauses": [],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "GFE-01",
+   "positives": 20,
+   "findings": 20,
+   "tp": 20,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1,
+   "f1": 1,
+   "fpPerCleanBill": 0,
+   "skippedOnBills": 33,
+   "shipAs": "as-specified",
+   "topFalsePositiveCauses": [],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "ECA-01",
+   "positives": 13,
+   "findings": 35,
+   "tp": 10,
+   "fp": 25,
+   "fn": 3,
+   "precision": 0.286,
+   "recall": 0.769,
+   "f1": 0.417,
+   "fpPerCleanBill": 0.144,
+   "skippedOnBills": 174,
+   "shipAs": "off",
+   "topFalsePositiveCauses": [
+    [
+     "hn:eca-agency-referral",
+     13
+    ],
+    [
+     "hn:eca-late-fee",
+     12
+    ],
+    [
+     "hn:ins-paid-no-eob",
+     4
+    ],
+    [
+     "hn:eob-under-1",
+     4
+    ]
+   ],
+   "topMissCauses": [
+    [
+     "plant:ECA-01:short-notice",
+     3
+    ]
+   ]
+  },
+  {
+   "ruleId": "PPDR-01",
+   "positives": 21,
+   "findings": 21,
+   "tp": 21,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1,
+   "f1": 1,
+   "fpPerCleanBill": 0,
+   "skippedOnBills": 276,
+   "shipAs": "as-specified",
+   "topFalsePositiveCauses": [],
+   "topMissCauses": []
+  },
+  {
+   "ruleId": "CR-01",
+   "positives": 23,
+   "findings": 23,
+   "tp": 23,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1,
+   "f1": 1,
+   "fpPerCleanBill": 0,
+   "skippedOnBills": 217,
+   "shipAs": "as-specified",
+   "topFalsePositiveCauses": [],
+   "topMissCauses": []
+  }
+ ],
+ "confusion": {
+  "DUP-01": {
+   "falsePositives": [
+    {
+     "bill": "fc-v1-001",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:same-day-admit-discharge",
+      "hn:repeat-mod",
+      "hn:ins-paid-no-eob",
+      "variant:credit:negqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L08",
+      "L10"
+     ],
+     "detail": "2 identical charges on 2026-04-02 | These 2 lines have the same date, item, quantity and price."
+    },
+    {
+     "bill": "fc-v1-011",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:same-day-admit-discharge",
+      "hn:credit-reversal",
+      "hn:repeat-mod",
+      "hn:eca-late-fee",
+      "variant:credit:negqty"
+     ],
+     "lineIds": [
+      "L05",
+      "L09"
+     ],
+     "detail": "2 identical charges on 2026-01-14 | These 2 lines have the same date, item, quantity and price."
+    },
+    {
+     "bill": "fc-v1-027",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:same-day-admit-discharge",
+      "hn:credit-reversal",
+      "variant:credit:negqty",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob",
+      "plant:CR-01:small"
+     ],
+     "lineIds": [
+      "L07",
+      "L13"
+     ],
+     "detail": "2 identical charges on 2026-07-01 | These 2 lines have the same date, item, quantity and price."
+    },
+    {
+     "bill": "fc-v1-034",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:rounding",
+      "hn:eob-under-1",
+      "hn:credit-reversal",
+      "variant:credit:negqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L05",
+      "L12"
+     ],
+     "detail": "2 identical charges on 2026-09-08 | These 2 lines have the same date, item, quantity and price."
+    },
+    {
+     "bill": "fc-v1-080",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:per-day-multi",
+      "hn:eob-under-1",
+      "variant:credit:negqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L11",
+      "L17"
+     ],
+     "detail": "2 identical charges on 2026-05-03 | These 2 lines have the same date, item, quantity and price."
+    },
+    {
+     "bill": "fc-v1-092",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:credit:negqty",
+      "plant:CANC-01:user-marked",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L22",
+      "L29"
+     ],
+     "detail": "2 identical charges on 2026-03-27 | These 2 lines have the same date, item, quantity and price."
+    },
+    {
+     "bill": "fc-v1-101",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "hn:credit-reversal",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:negqty",
+      "variant:cancel-credit:negqty",
+      "plant:CANC-01:user-marked",
+      "plant:MATH-02:balance",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L05",
+      "L06"
+     ],
+     "detail": "2 identical charges on 2026-05-03 | These 2 lines have the same date, item, quantity and price."
+    },
+    {
+     "bill": "fc-v1-105",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:negqty",
+      "variant:cancel-credit:negqty",
+      "plant:GFE-01:day-120"
+     ],
+     "lineIds": [
+      "L04",
+      "L06"
+     ],
+     "detail": "2 identical charges on 2026-05-25 | These 2 lines have the same date, item, quantity and price."
+    },
+    {
+     "bill": "fc-v1-110",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:sched-imaging",
+      "variant:credit:negqty",
+      "plant:DUP-01",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L01",
+      "L04"
+     ],
+     "detail": "2 identical charges on 2026-05-20 | These 2 lines have the same date, item, quantity and price."
+    },
+    {
+     "bill": "fc-v1-126",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:negqty",
+      "variant:credit-posted-later",
+      "plant:DUP-02:desc",
+      "plant:DUP-01",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L03",
+      "L06"
+     ],
+     "detail": "2 identical charges on 2026-04-01 | These 2 lines have the same date, item, quantity and price."
+    },
+    {
+     "bill": "fc-v1-127",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "hn:credit-reversal",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:negqty",
+      "variant:credit-posted-later",
+      "variant:cancel-credit:negqty",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L02",
+      "L06"
+     ],
+     "detail": "2 identical charges on 2026-05-24 | These 2 lines have the same date, item, quantity and price."
+    },
+    {
+     "bill": "fc-v1-134",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:credit:negqty",
+      "variant:cancel-credit:posqty",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L03",
+      "L04"
+     ],
+     "detail": "2 identical charges on 2026-05-18 | These 2 lines have the same date, item, quantity and price."
+    },
+    {
+     "bill": "fc-v1-138",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:negqty",
+      "variant:credit-posted-later",
+      "variant:cancel-credit:negqty",
+      "plant:MATH-02:total-off",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L05",
+      "L06"
+     ],
+     "detail": "2 identical charges on 2026-05-21 | These 2 lines have the same date, item, quantity and price."
+    },
+    {
+     "bill": "fc-v1-142",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:negqty",
+      "variant:cancel-credit:negqty",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L05",
+      "L06"
+     ],
+     "detail": "2 identical charges on 2026-06-14 | These 2 lines have the same date, item, quantity and price."
+    },
+    {
+     "bill": "fc-v1-150",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "hn:credit-reversal",
+      "variant:sched-imaging",
+      "variant:credit:negqty",
+      "variant:cancel-credit:negqty",
+      "plant:DUP-02:price",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L02",
+      "L04"
+     ],
+     "detail": "2 identical charges on 2026-04-30 | These 2 lines have the same date, item, quantity and price."
+    },
+    {
+     "bill": "fc-v1-166",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "hn:credit-reversal",
+      "variant:sched-imaging",
+      "variant:credit:negqty",
+      "variant:cancel-credit:negqty",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L03",
+      "L04"
+     ],
+     "detail": "2 identical charges on 2026-07-03 | These 2 lines have the same date, item, quantity and price."
+    }
+   ],
+   "misses": []
+  },
+  "DUP-02": {
+   "falsePositives": [
+    {
+     "bill": "fc-v1-001",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:same-day-admit-discharge",
+      "hn:repeat-mod",
+      "hn:ins-paid-no-eob",
+      "variant:credit:negqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L08",
+      "L10",
+      "L11"
+     ],
+     "detail": "Same code, different price or description on 2026-04-02 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-006",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:credit:posqty",
+      "plant:DUP-01",
+      "plant:RX-01",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L14",
+      "L21",
+      "L22"
+     ],
+     "detail": "Same code, different price or description on 2026-04-30 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-010",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:repeat-mod",
+      "hn:credit-reversal",
+      "variant:credit:posqty"
+     ],
+     "lineIds": [
+      "L10",
+      "L24",
+      "L25"
+     ],
+     "detail": "Same code, different price or description on 2026-07-09 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-011",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:same-day-admit-discharge",
+      "hn:credit-reversal",
+      "hn:repeat-mod",
+      "hn:eca-late-fee",
+      "variant:credit:negqty"
+     ],
+     "lineIds": [
+      "L05",
+      "L09",
+      "L10"
+     ],
+     "detail": "Same code, different price or description on 2026-01-14 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-016",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:jw-waste",
+      "hn:credit-reversal",
+      "variant:jw-wastage",
+      "variant:credit:posqty",
+      "plant:DATE-01:added",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [
+      "L09",
+      "L17"
+     ],
+     "detail": "Same code, different price or description on 2026-05-29 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-016",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:jw-waste",
+      "hn:credit-reversal",
+      "variant:jw-wastage",
+      "variant:credit:posqty",
+      "plant:DATE-01:added",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [
+      "L06",
+      "L18",
+      "L19"
+     ],
+     "detail": "Same code, different price or description on 2026-05-29 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-025",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:jw-waste",
+      "variant:jw-discarded",
+      "plant:MATH-01:wrong-total",
+      "plant:CR-01:small"
+     ],
+     "lineIds": [
+      "L19",
+      "L20"
+     ],
+     "detail": "Same code, different price or description on 2026-04-15 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-027",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:same-day-admit-discharge",
+      "hn:credit-reversal",
+      "variant:credit:negqty",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob",
+      "plant:CR-01:small"
+     ],
+     "lineIds": [
+      "L07",
+      "L13",
+      "L14"
+     ],
+     "detail": "Same code, different price or description on 2026-07-01 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-034",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:rounding",
+      "hn:eob-under-1",
+      "hn:credit-reversal",
+      "variant:credit:negqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L05",
+      "L12",
+      "L13"
+     ],
+     "detail": "Same code, different price or description on 2026-09-08 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-035",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:jw-waste",
+      "hn:cr-legit",
+      "variant:jw-wastage",
+      "plant:EOB-01:unposted-payment",
+      "plant:MATH-02:total-off"
+     ],
+     "lineIds": [
+      "L11",
+      "L17"
+     ],
+     "detail": "Same code, different price or description on 2024-12-18 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-042",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-late-fee",
+      "hn:credit-reversal",
+      "variant:credit:posqty",
+      "plant:EOB-01:unposted-payment"
+     ],
+     "lineIds": [
+      "L02",
+      "L13",
+      "L14"
+     ],
+     "detail": "Same code, different price or description on 2026-02-19 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-047",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-forprofit",
+      "hn:jw-waste",
+      "variant:jw-wastage"
+     ],
+     "lineIds": [
+      "L05",
+      "L11"
+     ],
+     "detail": "Same code, different price or description on 2025-10-07 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-062",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eob-prepaid",
+      "hn:jw-waste",
+      "hn:eca-agency-referral",
+      "hn:kit-multi",
+      "variant:iv-kit-x2",
+      "variant:jw-discarded"
+     ],
+     "lineIds": [
+      "L06",
+      "L14"
+     ],
+     "detail": "Same code, different price or description on 2025-09-09 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-066",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-forprofit",
+      "hn:jw-waste",
+      "variant:jw-discarded",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:with-eob"
+     ],
+     "lineIds": [
+      "L13",
+      "L21"
+     ],
+     "detail": "Same code, different price or description on 2025-11-12 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-068",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:credit:posqty",
+      "plant:DUP-02:price",
+      "plant:CANC-01:user-marked",
+      "variant:eob-line-level-co",
+      "plant:ECA-01:fap-pending"
+     ],
+     "lineIds": [
+      "L06",
+      "L12",
+      "L13"
+     ],
+     "detail": "Same code, different price or description on 2025-10-13 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-078",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:jw-waste",
+      "variant:jw-wastage",
+      "plant:RX-01",
+      "plant:EOB-01:unposted-payment"
+     ],
+     "lineIds": [
+      "L18",
+      "L24"
+     ],
+     "detail": "Same code, different price or description on 2026-04-01 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-080",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:per-day-multi",
+      "hn:eob-under-1",
+      "variant:credit:negqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L11",
+      "L17",
+      "L18"
+     ],
+     "detail": "Same code, different price or description on 2026-05-03 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-091",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-proper",
+      "hn:cancel-reversed",
+      "hn:jw-waste",
+      "hn:same-day-admit-discharge",
+      "variant:jw-discarded",
+      "variant:cancel-credit:posqty"
+     ],
+     "lineIds": [
+      "L05",
+      "L11"
+     ],
+     "detail": "Same code, different price or description on 2025-09-04 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-092",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:credit:negqty",
+      "plant:CANC-01:user-marked",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L22",
+      "L29",
+      "L30"
+     ],
+     "detail": "Same code, different price or description on 2026-03-27 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-101",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "hn:credit-reversal",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:negqty",
+      "variant:cancel-credit:negqty",
+      "plant:CANC-01:user-marked",
+      "plant:MATH-02:balance",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L05",
+      "L06",
+      "L07"
+     ],
+     "detail": "Same code, different price or description on 2026-05-03 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-105",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:negqty",
+      "variant:cancel-credit:negqty",
+      "plant:GFE-01:day-120"
+     ],
+     "lineIds": [
+      "L04",
+      "L06",
+      "L07"
+     ],
+     "detail": "Same code, different price or description on 2026-05-25 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-110",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:sched-imaging",
+      "variant:credit:negqty",
+      "plant:DUP-01",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L01",
+      "L04",
+      "L05"
+     ],
+     "detail": "Same code, different price or description on 2026-05-20 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-122",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:posqty",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L04",
+      "L06",
+      "L07"
+     ],
+     "detail": "Same code, different price or description on 2026-05-26 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-131",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:gfe-399",
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:credit:posqty",
+      "variant:cancel-credit:negqty"
+     ],
+     "lineIds": [
+      "L01",
+      "L04",
+      "L05"
+     ],
+     "detail": "Same code, different price or description on 2026-07-24 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-134",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:credit:negqty",
+      "variant:cancel-credit:posqty",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L03",
+      "L04",
+      "L05"
+     ],
+     "detail": "Same code, different price or description on 2026-05-18 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-139",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:mue-setting",
+      "hn:jw-waste",
+      "variant:jw-wastage",
+      "plant:MUE-01",
+      "plant:NCCI-01:mi1-no-modifier"
+     ],
+     "lineIds": [
+      "L09",
+      "L10"
+     ],
+     "detail": "Same code, different price or description on 2026-05-11 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-142",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:negqty",
+      "variant:cancel-credit:negqty",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L05",
+      "L06",
+      "L07"
+     ],
+     "detail": "Same code, different price or description on 2026-06-14 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-146",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:credit:posqty",
+      "variant:cancel-credit:posqty",
+      "plant:CANC-01:keyword",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L02",
+      "L04",
+      "L05"
+     ],
+     "detail": "Same code, different price or description on 2026-06-21 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-150",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "hn:credit-reversal",
+      "variant:sched-imaging",
+      "variant:credit:negqty",
+      "variant:cancel-credit:negqty",
+      "plant:DUP-02:price",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L02",
+      "L04",
+      "L05"
+     ],
+     "detail": "Same code, different price or description on 2026-04-30 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-153",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:rounding",
+      "hn:nsa-compliant",
+      "hn:eca-late-fee",
+      "hn:jw-waste",
+      "variant:jw-wastage"
+     ],
+     "lineIds": [
+      "L11",
+      "L12"
+     ],
+     "detail": "Same code, different price or description on 2025-12-17 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-166",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "hn:credit-reversal",
+      "variant:sched-imaging",
+      "variant:credit:negqty",
+      "variant:cancel-credit:negqty",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L03",
+      "L04",
+      "L05"
+     ],
+     "detail": "Same code, different price or description on 2026-07-03 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-168",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:hourly-overlap",
+      "hn:jw-waste",
+      "variant:jw-discarded",
+      "plant:MATH-01:extra-unit",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob",
+      "plant:ECA-01:short-notice"
+     ],
+     "lineIds": [
+      "L10",
+      "L14"
+     ],
+     "detail": "Same code, different price or description on 2026-03-05 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-174",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:eob-prepaid",
+      "hn:eca-forprofit",
+      "hn:jw-waste",
+      "hn:ncci-mi1-59",
+      "variant:jw-wastage",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L07",
+      "L10"
+     ],
+     "detail": "Same code, different price or description on 2026-01-14 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-177",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:sched-imaging",
+      "variant:credit:posqty",
+      "plant:CANC-01:keyword",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L01",
+      "L04",
+      "L05"
+     ],
+     "detail": "Same code, different price or description on 2026-06-11 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-195",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:eob-under-1",
+      "hn:jw-waste",
+      "variant:jw-wastage",
+      "plant:CANC-01:user-marked",
+      "plant:RX-01",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L07",
+      "L11"
+     ],
+     "detail": "Same code, different price or description on 2026-07-18 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-196",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:gfe-121-days",
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:credit:posqty",
+      "variant:cancel-credit:posqty"
+     ],
+     "lineIds": [
+      "L02",
+      "L04",
+      "L05"
+     ],
+     "detail": "Same code, different price or description on 2026-04-29 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-203",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:bilateral",
+      "variant:bilateral-discounted",
+      "plant:CANC-01:keyword",
+      "plant:MATH-01:extra-unit",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L01",
+      "L02"
+     ],
+     "detail": "Same code, different price or description on 2026-04-20 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-206",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:bilateral",
+      "hn:ncci-mod25",
+      "variant:bilateral-discounted",
+      "plant:MUE-01",
+      "plant:NCCI-01:mi1-no-modifier",
+      "plant:EOB-02:co-billed"
+     ],
+     "lineIds": [
+      "L02",
+      "L03"
+     ],
+     "detail": "Same code, different price or description on 2026-04-09 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-208",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:bilateral",
+      "variant:bilateral-discounted",
+      "plant:DUP-02:desc",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [
+      "L01",
+      "L02"
+     ],
+     "detail": "Same code, different price or description on 2026-05-21 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-227",
+     "kind": "professional/office",
+     "tags": [
+      "hn:bilateral",
+      "hn:rounding",
+      "variant:bilateral-discounted",
+      "plant:MUE-01",
+      "variant:eob-line-level-co",
+      "plant:EOB-02:co-billed"
+     ],
+     "lineIds": [
+      "L04",
+      "L05"
+     ],
+     "detail": "Same code, different price or description on 2026-07-14 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-238",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "hn:bilateral",
+      "variant:bilateral-discounted",
+      "plant:MATH-01:wrong-total"
+     ],
+     "lineIds": [
+      "L02",
+      "L03"
+     ],
+     "detail": "Same code, different price or description on 2026-08-08 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-252",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "hn:bilateral",
+      "variant:bilateral-discounted",
+      "plant:CANC-01:user-marked",
+      "plant:MUE-01",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L02",
+      "L03"
+     ],
+     "detail": "Same code, different price or description on 2026-04-25 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-267",
+     "kind": "professional/office",
+     "tags": [
+      "hn:bilateral",
+      "variant:bilateral-discounted",
+      "plant:EOB-01:unposted-payment",
+      "plant:CR-01:paid"
+     ],
+     "lineIds": [
+      "L02",
+      "L03"
+     ],
+     "detail": "Same code, different price or description on 2026-05-03 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-277",
+     "kind": "professional/office",
+     "tags": [
+      "hn:gfe-121-days",
+      "hn:cr-legit",
+      "hn:bilateral",
+      "variant:bilateral-discounted"
+     ],
+     "lineIds": [
+      "L07",
+      "L08"
+     ],
+     "detail": "Same code, different price or description on 2024-09-25 | The same billing code appears twice on the same date with different amounts or descriptions."
+    },
+    {
+     "bill": "fc-v1-297",
+     "kind": "professional/office",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:credit:posqty",
+      "variant:credit-posted-later",
+      "plant:MATH-01:extra-unit",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L02",
+      "L05"
+     ],
+     "detail": "Same code, different price or description on 2026-05-05 | The same billing code appears twice on the same date with different amounts or descriptions."
+    }
+   ],
+   "misses": []
+  },
+  "MATH-01": {
+   "falsePositives": [
+    {
+     "bill": "fc-v1-004",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:credit:posqty",
+      "plant:QTY-01:kit",
+      "plant:ECA-01:no-notice"
+     ],
+     "lineIds": [
+      "L29"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $60.84 = $60.84, but the line charges $-60.84."
+    },
+    {
+     "bill": "fc-v1-006",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:credit:posqty",
+      "plant:DUP-01",
+      "plant:RX-01",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L22"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $81.68 = $81.68, but the line charges $-81.68."
+    },
+    {
+     "bill": "fc-v1-009",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:repeat-mod",
+      "variant:credit:posqty",
+      "variant:credit-posted-later",
+      "plant:DUP-02:price",
+      "plant:RB-01:discharge-day-line"
+     ],
+     "lineIds": [
+      "L23"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 7 × $18.16 = $127.12, but the line charges $-127.12."
+    },
+    {
+     "bill": "fc-v1-010",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:repeat-mod",
+      "hn:credit-reversal",
+      "variant:credit:posqty"
+     ],
+     "lineIds": [
+      "L25"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $169.73 = $169.73, but the line charges $-169.73."
+    },
+    {
+     "bill": "fc-v1-015",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:cancel-reversed",
+      "hn:eob-under-1",
+      "variant:cancel-credit:posqty",
+      "plant:QTY-01:per-day"
+     ],
+     "lineIds": [
+      "L20"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $127.67 = $127.67, but the line charges $-127.67."
+    },
+    {
+     "bill": "fc-v1-016",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:jw-waste",
+      "hn:credit-reversal",
+      "variant:jw-wastage",
+      "variant:credit:posqty",
+      "plant:DATE-01:added",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [
+      "L19"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $75.45 = $75.45, but the line charges $-75.45."
+    },
+    {
+     "bill": "fc-v1-022",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-agency-referral",
+      "hn:rounding",
+      "hn:cancel-reversed",
+      "variant:cancel-credit:posqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L24"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $34.38 = $34.38, but the line charges $-34.38."
+    },
+    {
+     "bill": "fc-v1-037",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:same-day-admit-discharge",
+      "hn:ins-paid-no-eob",
+      "hn:cancel-reversed",
+      "variant:cancel-credit:posqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L12"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $52.54 = $52.54, but the line charges $-52.54."
+    },
+    {
+     "bill": "fc-v1-042",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-late-fee",
+      "hn:credit-reversal",
+      "variant:credit:posqty",
+      "plant:EOB-01:unposted-payment"
+     ],
+     "lineIds": [
+      "L14"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $74.39 = $74.39, but the line charges $-74.39."
+    },
+    {
+     "bill": "fc-v1-056",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-proper",
+      "hn:credit-reversal",
+      "variant:credit:posqty",
+      "plant:DUP-01",
+      "plant:EOB-01:unposted-payment"
+     ],
+     "lineIds": [
+      "L32"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $909.43 = $909.43, but the line charges $-909.43."
+    },
+    {
+     "bill": "fc-v1-068",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:credit:posqty",
+      "plant:DUP-02:price",
+      "plant:CANC-01:user-marked",
+      "variant:eob-line-level-co",
+      "plant:ECA-01:fap-pending"
+     ],
+     "lineIds": [
+      "L13"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 2 × $152.84 = $305.68, but the line charges $-305.68."
+    },
+    {
+     "bill": "fc-v1-075",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-late-fee",
+      "hn:eob-under-1",
+      "hn:cancel-reversed",
+      "hn:rx-below-10",
+      "variant:cancel-credit:posqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L20"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $86.14 = $86.14, but the line charges $-86.14."
+    },
+    {
+     "bill": "fc-v1-091",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-proper",
+      "hn:cancel-reversed",
+      "hn:jw-waste",
+      "hn:same-day-admit-discharge",
+      "variant:jw-discarded",
+      "variant:cancel-credit:posqty"
+     ],
+     "lineIds": [
+      "L13"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $143.38 = $143.38, but the line charges $-143.38."
+    },
+    {
+     "bill": "fc-v1-109",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:posqty",
+      "variant:cancel-credit:negqty",
+      "plant:DUP-02:price",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L07"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $1136.06 = $1136.06, but the line charges $-1136.06."
+    },
+    {
+     "bill": "fc-v1-113",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:cancel-credit:posqty",
+      "plant:MATH-01:wrong-total",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L05"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $46.01 = $46.01, but the line charges $-46.01."
+    },
+    {
+     "bill": "fc-v1-122",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:posqty",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L07"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 8 × $6.88 = $55.04, but the line charges $-55.04."
+    },
+    {
+     "bill": "fc-v1-128",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "variant:sched-surgery-2-providers",
+      "variant:cancel-credit:posqty",
+      "plant:GFE-01",
+      "plant:CR-01:recent"
+     ],
+     "lineIds": [
+      "L07"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $112.96 = $112.96, but the line charges $-112.96."
+    },
+    {
+     "bill": "fc-v1-131",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:gfe-399",
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:credit:posqty",
+      "variant:cancel-credit:negqty"
+     ],
+     "lineIds": [
+      "L05"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $5173.17 = $5173.17, but the line charges $-5173.17."
+    },
+    {
+     "bill": "fc-v1-134",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:credit:negqty",
+      "variant:cancel-credit:posqty",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L07"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $75.59 = $75.59, but the line charges $-75.59."
+    },
+    {
+     "bill": "fc-v1-146",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:credit:posqty",
+      "variant:cancel-credit:posqty",
+      "plant:CANC-01:keyword",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L07"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $80.49 = $80.49, but the line charges $-80.49."
+    },
+    {
+     "bill": "fc-v1-146",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:credit:posqty",
+      "variant:cancel-credit:posqty",
+      "plant:CANC-01:keyword",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L05"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $32.30 = $32.30, but the line charges $-32.30."
+    },
+    {
+     "bill": "fc-v1-147",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:gfe-399",
+      "hn:credit-reversal",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:posqty"
+     ],
+     "lineIds": [
+      "L07"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $1194.08 = $1194.08, but the line charges $-1194.08."
+    },
+    {
+     "bill": "fc-v1-149",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:posqty",
+      "plant:GFE-01",
+      "plant:CR-01:paid"
+     ],
+     "lineIds": [
+      "L07"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $1820.47 = $1820.47, but the line charges $-1820.47."
+    },
+    {
+     "bill": "fc-v1-169",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "variant:sched-surgery-2-providers",
+      "variant:cancel-credit:posqty",
+      "plant:MATH-02:total-off",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L07"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $130.76 = $130.76, but the line charges $-130.76."
+    },
+    {
+     "bill": "fc-v1-175",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:gfe-121-days",
+      "hn:cancel-reversed",
+      "hn:credit-reversal",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:posqty",
+      "variant:cancel-credit:negqty"
+     ],
+     "lineIds": [
+      "L07"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $809.37 = $809.37, but the line charges $-809.37."
+    },
+    {
+     "bill": "fc-v1-176",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:cancel-credit:posqty",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L05"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $88.85 = $88.85, but the line charges $-88.85."
+    },
+    {
+     "bill": "fc-v1-177",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:sched-imaging",
+      "variant:credit:posqty",
+      "plant:CANC-01:keyword",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L05"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $6474.45 = $6474.45, but the line charges $-6474.45."
+    },
+    {
+     "bill": "fc-v1-181",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:posqty",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L07"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $1530.49 = $1530.49, but the line charges $-1530.49."
+    },
+    {
+     "bill": "fc-v1-184",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "variant:sched-surgery-2-providers",
+      "variant:cancel-credit:posqty",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L07"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $63.56 = $63.56, but the line charges $-63.56."
+    },
+    {
+     "bill": "fc-v1-188",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:posqty",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L07"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $6292.89 = $6292.89, but the line charges $-6292.89."
+    },
+    {
+     "bill": "fc-v1-196",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:gfe-121-days",
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:credit:posqty",
+      "variant:cancel-credit:posqty"
+     ],
+     "lineIds": [
+      "L07"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $164.95 = $164.95, but the line charges $-164.95."
+    },
+    {
+     "bill": "fc-v1-196",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:gfe-121-days",
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:credit:posqty",
+      "variant:cancel-credit:posqty"
+     ],
+     "lineIds": [
+      "L05"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $37.38 = $37.38, but the line charges $-37.38."
+    },
+    {
+     "bill": "fc-v1-297",
+     "kind": "professional/office",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:credit:posqty",
+      "variant:credit-posted-later",
+      "plant:MATH-01:extra-unit",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L06"
+     ],
+     "detail": "Quantity × price doesn't match the line total | 1 × $67.26 = $67.26, but the line charges $-67.26."
+    }
+   ],
+   "misses": []
+  },
+  "MATH-02": {
+   "falsePositives": [],
+   "misses": []
+  },
+  "MUE-01": {
+   "falsePositives": [
+    {
+     "bill": "fc-v1-106",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:ncci-mi1-59",
+      "hn:mue-setting",
+      "plant:NCCI-01:mi0"
+     ],
+     "lineIds": [
+      "L07"
+     ],
+     "detail": "85025: more units billed than Medicare's usual daily maximum | 2 units of 85025 were billed on 2026-03-21; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    },
+    {
+     "bill": "fc-v1-114",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:mue-setting",
+      "hn:ncci-mi9"
+     ],
+     "lineIds": [
+      "L06"
+     ],
+     "detail": "85025: more units billed than Medicare's usual daily maximum | 2 units of 85025 were billed on 2026-08-02; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    },
+    {
+     "bill": "fc-v1-119",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:mue-setting",
+      "hn:ncci-mi1-59",
+      "hn:nsa-compliant"
+     ],
+     "lineIds": [
+      "L04"
+     ],
+     "detail": "85025: more units billed than Medicare's usual daily maximum | 2 units of 85025 were billed on 2026-04-01; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    },
+    {
+     "bill": "fc-v1-123",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:mue-setting",
+      "hn:nsa-compliant"
+     ],
+     "lineIds": [
+      "L04"
+     ],
+     "detail": "36415: more units billed than Medicare's usual daily maximum | 2 units of 36415 were billed on 2026-07-20; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    },
+    {
+     "bill": "fc-v1-130",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:mue-setting",
+      "hn:nsa-compliant"
+     ],
+     "lineIds": [
+      "L04"
+     ],
+     "detail": "85025: more units billed than Medicare's usual daily maximum | 2 units of 85025 were billed on 2026-06-28; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    },
+    {
+     "bill": "fc-v1-131",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:gfe-399",
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:credit:posqty",
+      "variant:cancel-credit:negqty"
+     ],
+     "lineIds": [
+      "L01",
+      "L04",
+      "L05"
+     ],
+     "detail": "74177: more units billed than Medicare's usual daily maximum | 3 units of 74177 were billed on 2026-07-24; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    },
+    {
+     "bill": "fc-v1-135",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:mue-setting",
+      "hn:ncci-mi9",
+      "hn:nsa-compliant",
+      "hn:ncci-mi1-59"
+     ],
+     "lineIds": [
+      "L05"
+     ],
+     "detail": "85025: more units billed than Medicare's usual daily maximum | 2 units of 85025 were billed on 2026-04-03; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    },
+    {
+     "bill": "fc-v1-137",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:mue-setting",
+      "hn:nsa-compliant",
+      "plant:MUE-01"
+     ],
+     "lineIds": [
+      "L06"
+     ],
+     "detail": "85025: more units billed than Medicare's usual daily maximum | 2 units of 85025 were billed on 2026-07-22; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    },
+    {
+     "bill": "fc-v1-139",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:mue-setting",
+      "hn:jw-waste",
+      "variant:jw-wastage",
+      "plant:MUE-01",
+      "plant:NCCI-01:mi1-no-modifier"
+     ],
+     "lineIds": [
+      "L04"
+     ],
+     "detail": "85025: more units billed than Medicare's usual daily maximum | 2 units of 85025 were billed on 2026-05-11; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    },
+    {
+     "bill": "fc-v1-146",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:credit:posqty",
+      "variant:cancel-credit:posqty",
+      "plant:CANC-01:keyword",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L02",
+      "L04",
+      "L05"
+     ],
+     "detail": "36415: more units billed than Medicare's usual daily maximum | 3 units of 36415 were billed on 2026-06-21; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    },
+    {
+     "bill": "fc-v1-151",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:eob-under-1",
+      "hn:rx-below-10",
+      "hn:mue-setting",
+      "hn:cr-legit",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L05"
+     ],
+     "detail": "85025: more units billed than Medicare's usual daily maximum | 2 units of 85025 were billed on 2025-01-24; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    },
+    {
+     "bill": "fc-v1-158",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:eob-prepaid",
+      "hn:mue-setting",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L06"
+     ],
+     "detail": "36415: more units billed than Medicare's usual daily maximum | 2 units of 36415 were billed on 2026-04-24; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    },
+    {
+     "bill": "fc-v1-167",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:nsa-compliant",
+      "hn:eca-proper",
+      "hn:mue-setting"
+     ],
+     "lineIds": [
+      "L06"
+     ],
+     "detail": "36415: more units billed than Medicare's usual daily maximum | 2 units of 36415 were billed on 2026-02-28; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    },
+    {
+     "bill": "fc-v1-177",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "variant:sched-imaging",
+      "variant:credit:posqty",
+      "plant:CANC-01:keyword",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L01",
+      "L04",
+      "L05"
+     ],
+     "detail": "74177: more units billed than Medicare's usual daily maximum | 3 units of 74177 were billed on 2026-06-11; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    },
+    {
+     "bill": "fc-v1-179",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:cr-legit",
+      "hn:mue-setting",
+      "plant:RX-01",
+      "plant:NCCI-01:mi0"
+     ],
+     "lineIds": [
+      "L07"
+     ],
+     "detail": "85025: more units billed than Medicare's usual daily maximum | 2 units of 85025 were billed on 2024-12-24; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    },
+    {
+     "bill": "fc-v1-196",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:gfe-121-days",
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:credit:posqty",
+      "variant:cancel-credit:posqty"
+     ],
+     "lineIds": [
+      "L02",
+      "L04",
+      "L05"
+     ],
+     "detail": "36415: more units billed than Medicare's usual daily maximum | 3 units of 36415 were billed on 2026-04-29; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    },
+    {
+     "bill": "fc-v1-199",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:mue-setting",
+      "plant:EOB-01:unposted-payment"
+     ],
+     "lineIds": [
+      "L07"
+     ],
+     "detail": "85025: more units billed than Medicare's usual daily maximum | 2 units of 85025 were billed on 2026-07-19; Medicare's Medically Unlikely Edit for this code and setting is 1."
+    }
+   ],
+   "misses": []
+  },
+  "QTY-01": {
+   "falsePositives": [
+    {
+     "bill": "fc-v1-014",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:rx-below-10",
+      "hn:kit-multi",
+      "hn:eca-agency-referral",
+      "hn:medicaid-copay",
+      "variant:admission+iv-kit",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L14",
+      "L15"
+     ],
+     "detail": "A per-stay kit was billed more than once | 2 units of a per-stay kit item were billed."
+    },
+    {
+     "bill": "fc-v1-021",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:per-day-multi",
+      "hn:eca-late-fee",
+      "hn:ins-paid-no-eob"
+     ],
+     "lineIds": [
+      "L16",
+      "L17"
+     ],
+     "detail": "A per-day item is billed more times than your stay lasted | 8 units were billed, but your stay was 4 day(s)."
+    },
+    {
+     "bill": "fc-v1-028",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:repeat-mod",
+      "hn:cr-not-reported",
+      "hn:per-day-multi",
+      "hn:kit-multi",
+      "variant:iv-kit-x2",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L16",
+      "L17"
+     ],
+     "detail": "A per-day item is billed more times than your stay lasted | 2 units were billed, but your stay was 1 day(s)."
+    },
+    {
+     "bill": "fc-v1-028",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:repeat-mod",
+      "hn:cr-not-reported",
+      "hn:per-day-multi",
+      "hn:kit-multi",
+      "variant:iv-kit-x2",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L15"
+     ],
+     "detail": "A per-stay kit was billed more than once | 2 units of a per-stay kit item were billed."
+    },
+    {
+     "bill": "fc-v1-029",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:cr-legit",
+      "hn:eob-under-1",
+      "hn:kit-multi",
+      "variant:admission+iv-kit",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L17",
+      "L18"
+     ],
+     "detail": "A per-stay kit was billed more than once | 2 units of a per-stay kit item were billed."
+    },
+    {
+     "bill": "fc-v1-043",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:kit-multi",
+      "hn:same-day-admit-discharge",
+      "variant:iv-kit-x2",
+      "plant:DATE-01:added",
+      "plant:DUP-01",
+      "variant:eob-line-level-co",
+      "variant:medicaid-no-eob",
+      "plant:ECA-01:no-notice"
+     ],
+     "lineIds": [
+      "L11"
+     ],
+     "detail": "A per-stay kit was billed more than once | 2 units of a per-stay kit item were billed."
+    },
+    {
+     "bill": "fc-v1-061",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:cr-legit",
+      "hn:ins-paid-no-eob",
+      "hn:per-day-multi"
+     ],
+     "lineIds": [
+      "L20",
+      "L21"
+     ],
+     "detail": "A per-day item is billed more times than your stay lasted | 8 units were billed, but your stay was 4 day(s)."
+    },
+    {
+     "bill": "fc-v1-062",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eob-prepaid",
+      "hn:jw-waste",
+      "hn:eca-agency-referral",
+      "hn:kit-multi",
+      "variant:iv-kit-x2",
+      "variant:jw-discarded"
+     ],
+     "lineIds": [
+      "L13"
+     ],
+     "detail": "A per-stay kit was billed more than once | 2 units of a per-stay kit item were billed."
+    },
+    {
+     "bill": "fc-v1-073",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:per-day-multi",
+      "hn:mue-inpatient",
+      "hn:cr-not-reported",
+      "hn:kit-multi",
+      "variant:admission+iv-kit"
+     ],
+     "lineIds": [
+      "L16",
+      "L17"
+     ],
+     "detail": "A per-day item is billed more times than your stay lasted | 4 units were billed, but your stay was 2 day(s)."
+    },
+    {
+     "bill": "fc-v1-073",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:per-day-multi",
+      "hn:mue-inpatient",
+      "hn:cr-not-reported",
+      "hn:kit-multi",
+      "variant:admission+iv-kit"
+     ],
+     "lineIds": [
+      "L14",
+      "L15"
+     ],
+     "detail": "A per-stay kit was billed more than once | 2 units of a per-stay kit item were billed."
+    },
+    {
+     "bill": "fc-v1-080",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:per-day-multi",
+      "hn:eob-under-1",
+      "variant:credit:negqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L15",
+      "L16"
+     ],
+     "detail": "A per-day item is billed more times than your stay lasted | 4 units were billed, but your stay was 2 day(s)."
+    },
+    {
+     "bill": "fc-v1-083",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:mue-inpatient",
+      "hn:eca-proper",
+      "hn:kit-multi",
+      "variant:iv-kit-x2"
+     ],
+     "lineIds": [
+      "L20"
+     ],
+     "detail": "A per-stay kit was billed more than once | 2 units of a per-stay kit item were billed."
+    },
+    {
+     "bill": "fc-v1-087",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eob-under-1",
+      "hn:kit-multi",
+      "variant:iv-kit-x2",
+      "variant:eob-line-level-co",
+      "plant:ECA-01:fap-pending"
+     ],
+     "lineIds": [
+      "L15"
+     ],
+     "detail": "A per-stay kit was billed more than once | 2 units of a per-stay kit item were billed."
+    },
+    {
+     "bill": "fc-v1-097",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:per-day-multi",
+      "plant:EOB-01:unposted-payment",
+      "plant:CR-01:paid"
+     ],
+     "lineIds": [
+      "L12",
+      "L13"
+     ],
+     "detail": "A per-day item is billed more times than your stay lasted | 4 units were billed, but your stay was 2 day(s)."
+    },
+    {
+     "bill": "fc-v1-108",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:ncci-mi1-59",
+      "hn:obs-room-hours",
+      "hn:hourly-overlap"
+     ],
+     "lineIds": [
+      "L07",
+      "L08",
+      "L13"
+     ],
+     "detail": "More than 24 hourly units on one day | 26 hourly units were billed on 2026-08-31."
+    },
+    {
+     "bill": "fc-v1-116",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:obs-room-hours",
+      "hn:hourly-overlap",
+      "plant:NCCI-01:mi0",
+      "plant:MUE-01"
+     ],
+     "lineIds": [
+      "L08",
+      "L09",
+      "L12"
+     ],
+     "detail": "More than 24 hourly units on one day | 25 hourly units were billed on 2026-06-19."
+    },
+    {
+     "bill": "fc-v1-118",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:hourly-overlap",
+      "hn:obs-room-hours",
+      "plant:NCCI-01:mi0"
+     ],
+     "lineIds": [
+      "L05",
+      "L06",
+      "L08"
+     ],
+     "detail": "More than 24 hourly units on one day | 25 hourly units were billed on 2026-07-12."
+    },
+    {
+     "bill": "fc-v1-120",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:hourly-overlap"
+     ],
+     "lineIds": [
+      "L08",
+      "L09",
+      "L12"
+     ],
+     "detail": "More than 24 hourly units on one day | 27 hourly units were billed on 2026-08-23."
+    },
+    {
+     "bill": "fc-v1-125",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:obs-room-hours",
+      "hn:hourly-overlap"
+     ],
+     "lineIds": [
+      "L05",
+      "L06",
+      "L08"
+     ],
+     "detail": "More than 24 hourly units on one day | 26 hourly units were billed on 2026-04-16."
+    },
+    {
+     "bill": "fc-v1-129",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:ncci-mi1-59",
+      "hn:hourly-overlap",
+      "hn:obs-room-hours",
+      "hn:ncci-mi9",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L07",
+      "L08",
+      "L12"
+     ],
+     "detail": "More than 24 hourly units on one day | 25 hourly units were billed on 2026-04-04."
+    },
+    {
+     "bill": "fc-v1-144",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:ins-paid-no-eob",
+      "hn:hourly-overlap",
+      "hn:obs-room-hours",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L06",
+      "L07",
+      "L11"
+     ],
+     "detail": "More than 24 hourly units on one day | 26 hourly units were billed on 2026-07-29."
+    },
+    {
+     "bill": "fc-v1-154",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:hourly-overlap",
+      "hn:ncci-mi1-59",
+      "plant:MUE-01",
+      "plant:ECA-01:fap-pending"
+     ],
+     "lineIds": [
+      "L05",
+      "L06",
+      "L10"
+     ],
+     "detail": "More than 24 hourly units on one day | 25 hourly units were billed on 2026-02-03."
+    },
+    {
+     "bill": "fc-v1-168",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:hourly-overlap",
+      "hn:jw-waste",
+      "variant:jw-discarded",
+      "plant:MATH-01:extra-unit",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob",
+      "plant:ECA-01:short-notice"
+     ],
+     "lineIds": [
+      "L07",
+      "L08",
+      "L11"
+     ],
+     "detail": "More than 24 hourly units on one day | 25 hourly units were billed on 2026-03-05."
+    },
+    {
+     "bill": "fc-v1-200",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:eca-proper",
+      "hn:ins-paid-no-eob",
+      "hn:hourly-overlap",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L05",
+      "L06",
+      "L10"
+     ],
+     "detail": "More than 24 hourly units on one day | 25 hourly units were billed on 2025-11-05."
+    }
+   ],
+   "misses": []
+  },
+  "RB-01": {
+   "falsePositives": [
+    {
+     "bill": "fc-v1-015",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:cancel-reversed",
+      "hn:eob-under-1",
+      "variant:cancel-credit:posqty",
+      "plant:QTY-01:per-day"
+     ],
+     "lineIds": [
+      "L02",
+      "L03",
+      "L04",
+      "L05",
+      "L21"
+     ],
+     "detail": "More room days billed than nights stayed | 10 room-and-board units were billed for a 4-night stay (2026-05-21 to 2026-05-25)."
+    },
+    {
+     "bill": "fc-v1-019",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:cr-not-reported",
+      "hn:room-word",
+      "variant:eob-line-level-co",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [
+      "L01",
+      "L02",
+      "L03",
+      "L04",
+      "L05"
+     ],
+     "detail": "More room days billed than nights stayed | 5 room-and-board units were billed for a 4-night stay (2026-07-07 to 2026-07-11)."
+    },
+    {
+     "bill": "fc-v1-020",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-proper",
+      "hn:rounding",
+      "hn:repeat-mod",
+      "hn:telemetry-monitor",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [
+      "L02",
+      "L03",
+      "L04",
+      "L19"
+     ],
+     "detail": "More room days billed than nights stayed | 6 room-and-board units were billed for a 3-night stay (2025-10-29 to 2025-11-01)."
+    },
+    {
+     "bill": "fc-v1-021",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:per-day-multi",
+      "hn:eca-late-fee",
+      "hn:ins-paid-no-eob"
+     ],
+     "lineIds": [
+      "L01",
+      "L17"
+     ],
+     "detail": "More room days billed than nights stayed | 8 room-and-board units were billed for a 4-night stay (2026-02-27 to 2026-03-03)."
+    },
+    {
+     "bill": "fc-v1-024",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:telemetry-monitor",
+      "hn:rx-below-10",
+      "hn:medicaid-copay",
+      "hn:mue-inpatient"
+     ],
+     "lineIds": [
+      "L01",
+      "L15"
+     ],
+     "detail": "More room days billed than nights stayed | 2 room-and-board units were billed for a 1-night stay (2026-05-11 to 2026-05-12)."
+    },
+    {
+     "bill": "fc-v1-026",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:room-word",
+      "plant:ECA-01:short-notice"
+     ],
+     "lineIds": [
+      "L01",
+      "L02"
+     ],
+     "detail": "More room days billed than nights stayed | 3 room-and-board units were billed for a 2-night stay (2025-09-29 to 2025-10-01)."
+    },
+    {
+     "bill": "fc-v1-028",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:repeat-mod",
+      "hn:cr-not-reported",
+      "hn:per-day-multi",
+      "hn:kit-multi",
+      "variant:iv-kit-x2",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L01",
+      "L17"
+     ],
+     "detail": "More room days billed than nights stayed | 2 room-and-board units were billed for a 1-night stay (2026-03-30 to 2026-03-31)."
+    },
+    {
+     "bill": "fc-v1-033",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:per-day-multi",
+      "plant:MATH-01:wrong-total",
+      "plant:QTY-01:per-day"
+     ],
+     "lineIds": [
+      "L02",
+      "L18"
+     ],
+     "detail": "More room days billed than nights stayed | 8 room-and-board units were billed for a 4-night stay (2026-03-19 to 2026-03-23)."
+    },
+    {
+     "bill": "fc-v1-044",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:telemetry-monitor",
+      "hn:eob-prepaid",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L02",
+      "L03",
+      "L19"
+     ],
+     "detail": "More room days billed than nights stayed | 4 room-and-board units were billed for a 2-night stay (2026-09-05 to 2026-09-07)."
+    },
+    {
+     "bill": "fc-v1-045",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:per-day-multi",
+      "plant:QTY-01:per-day",
+      "plant:EOB-02:co-billed"
+     ],
+     "lineIds": [
+      "L02",
+      "L03",
+      "L04",
+      "L05",
+      "L23"
+     ],
+     "detail": "More room days billed than nights stayed | 8 room-and-board units were billed for a 4-night stay (2026-07-29 to 2026-08-02)."
+    },
+    {
+     "bill": "fc-v1-048",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:room-word",
+      "plant:MATH-01:wrong-total",
+      "plant:MCD-01:with-eob",
+      "plant:CR-01:recent"
+     ],
+     "lineIds": [
+      "L01",
+      "L02",
+      "L03",
+      "L04",
+      "L05",
+      "L06"
+     ],
+     "detail": "More room days billed than nights stayed | 6 room-and-board units were billed for a 5-night stay (2026-05-31 to 2026-06-05)."
+    },
+    {
+     "bill": "fc-v1-057",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:telemetry-monitor",
+      "plant:MATH-01:extra-unit",
+      "plant:DATE-01:moved",
+      "variant:eob-line-level-co",
+      "plant:EOB-02:co-billed"
+     ],
+     "lineIds": [
+      "L01",
+      "L17"
+     ],
+     "detail": "More room days billed than nights stayed | 6 room-and-board units were billed for a 3-night stay (2026-04-08 to 2026-04-11)."
+    },
+    {
+     "bill": "fc-v1-059",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:room-word",
+      "hn:repeat-mod",
+      "plant:ECA-01:short-notice"
+     ],
+     "lineIds": [
+      "L01",
+      "L02",
+      "L03",
+      "L04"
+     ],
+     "detail": "More room days billed than nights stayed | 11 room-and-board units were billed for a 2-night stay (2025-08-16 to 2025-08-18)."
+    },
+    {
+     "bill": "fc-v1-061",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:cr-legit",
+      "hn:ins-paid-no-eob",
+      "hn:per-day-multi"
+     ],
+     "lineIds": [
+      "L02",
+      "L21"
+     ],
+     "detail": "More room days billed than nights stayed | 8 room-and-board units were billed for a 4-night stay (2025-05-05 to 2025-05-09)."
+    },
+    {
+     "bill": "fc-v1-069",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-agency-referral",
+      "hn:ins-paid-no-eob",
+      "hn:room-word",
+      "hn:telemetry-monitor",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L01",
+      "L02",
+      "L17"
+     ],
+     "detail": "More room days billed than nights stayed | 3 room-and-board units were billed for a 1-night stay (2025-10-28 to 2025-10-29)."
+    },
+    {
+     "bill": "fc-v1-073",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:per-day-multi",
+      "hn:mue-inpatient",
+      "hn:cr-not-reported",
+      "hn:kit-multi",
+      "variant:admission+iv-kit"
+     ],
+     "lineIds": [
+      "L01",
+      "L17"
+     ],
+     "detail": "More room days billed than nights stayed | 4 room-and-board units were billed for a 2-night stay (2026-07-29 to 2026-07-31)."
+    },
+    {
+     "bill": "fc-v1-079",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eob-prepaid",
+      "plant:QTY-01:per-day",
+      "plant:MATH-01:extra-unit"
+     ],
+     "lineIds": [
+      "L02",
+      "L14"
+     ],
+     "detail": "More room days billed than nights stayed | 6 room-and-board units were billed for a 1-night stay (2026-04-10 to 2026-04-11)."
+    },
+    {
+     "bill": "fc-v1-080",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:per-day-multi",
+      "hn:eob-under-1",
+      "variant:credit:negqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L02",
+      "L03",
+      "L16"
+     ],
+     "detail": "More room days billed than nights stayed | 4 room-and-board units were billed for a 2-night stay (2026-05-01 to 2026-05-03)."
+    },
+    {
+     "bill": "fc-v1-081",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:cr-legit",
+      "hn:telemetry-monitor",
+      "plant:CANC-01:user-marked",
+      "plant:EOB-02:co-billed",
+      "plant:MATH-02:total-off"
+     ],
+     "lineIds": [
+      "L01",
+      "L21"
+     ],
+     "detail": "More room days billed than nights stayed | 4 room-and-board units were billed for a 2-night stay (2025-06-27 to 2025-06-29)."
+    },
+    {
+     "bill": "fc-v1-086",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:cancel-reversed",
+      "hn:eca-forprofit",
+      "hn:medicaid-copay",
+      "hn:room-word",
+      "variant:cancel-credit:negqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L01",
+      "L02"
+     ],
+     "detail": "More room days billed than nights stayed | 4 room-and-board units were billed for a 3-night stay (2025-11-13 to 2025-11-16)."
+    },
+    {
+     "bill": "fc-v1-088",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-agency-referral",
+      "hn:telemetry-monitor",
+      "plant:DATE-01:moved",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L02",
+      "L03",
+      "L04",
+      "L18"
+     ],
+     "detail": "More room days billed than nights stayed | 6 room-and-board units were billed for a 3-night stay (2025-09-21 to 2025-09-24)."
+    },
+    {
+     "bill": "fc-v1-097",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:per-day-multi",
+      "plant:EOB-01:unposted-payment",
+      "plant:CR-01:paid"
+     ],
+     "lineIds": [
+      "L02",
+      "L13"
+     ],
+     "detail": "More room days billed than nights stayed | 4 room-and-board units were billed for a 2-night stay (2026-08-14 to 2026-08-16)."
+    },
+    {
+     "bill": "fc-v1-108",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:ncci-mi1-59",
+      "hn:obs-room-hours",
+      "hn:hourly-overlap"
+     ],
+     "lineIds": [
+      "L13",
+      "L14"
+     ],
+     "detail": "More room days billed than nights stayed | 33 room-and-board units were billed for a 1-night stay (2026-08-31 to 2026-09-01)."
+    },
+    {
+     "bill": "fc-v1-116",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:obs-room-hours",
+      "hn:hourly-overlap",
+      "plant:NCCI-01:mi0",
+      "plant:MUE-01"
+     ],
+     "lineIds": [
+      "L01",
+      "L12",
+      "L13"
+     ],
+     "detail": "More room days billed than nights stayed | 28 room-and-board units were billed for a 1-night stay (2026-06-19 to 2026-06-20)."
+    },
+    {
+     "bill": "fc-v1-118",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:hourly-overlap",
+      "hn:obs-room-hours",
+      "plant:NCCI-01:mi0"
+     ],
+     "lineIds": [
+      "L08",
+      "L09"
+     ],
+     "detail": "More room days billed than nights stayed | 29 room-and-board units were billed for a 1-night stay (2026-07-12 to 2026-07-13)."
+    },
+    {
+     "bill": "fc-v1-124",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:ncci-mi1-59",
+      "hn:obs-room-hours",
+      "hn:ncci-mi9"
+     ],
+     "lineIds": [
+      "L11",
+      "L12"
+     ],
+     "detail": "More room days billed than nights stayed | 33 room-and-board units were billed for a 1-night stay (2026-07-27 to 2026-07-28)."
+    },
+    {
+     "bill": "fc-v1-125",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:obs-room-hours",
+      "hn:hourly-overlap"
+     ],
+     "lineIds": [
+      "L08",
+      "L09"
+     ],
+     "detail": "More room days billed than nights stayed | 33 room-and-board units were billed for a 1-night stay (2026-04-16 to 2026-04-17)."
+    },
+    {
+     "bill": "fc-v1-129",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:ncci-mi1-59",
+      "hn:hourly-overlap",
+      "hn:obs-room-hours",
+      "hn:ncci-mi9",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L01",
+      "L12",
+      "L13"
+     ],
+     "detail": "More room days billed than nights stayed | 40 room-and-board units were billed for a 1-night stay (2026-04-04 to 2026-04-05)."
+    },
+    {
+     "bill": "fc-v1-133",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:obs-room-hours",
+      "hn:ncci-mi1-59",
+      "plant:NCCI-01:mi0"
+     ],
+     "lineIds": [
+      "L11",
+      "L12"
+     ],
+     "detail": "More room days billed than nights stayed | 32 room-and-board units were billed for a 1-night stay (2026-03-15 to 2026-03-16)."
+    },
+    {
+     "bill": "fc-v1-136",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:hourly-overlap",
+      "hn:obs-room-hours",
+      "hn:ncci-mi9"
+     ],
+     "lineIds": [
+      "L01",
+      "L11",
+      "L12"
+     ],
+     "detail": "More room days billed than nights stayed | 32 room-and-board units were billed for a 1-night stay (2026-06-26 to 2026-06-27)."
+    },
+    {
+     "bill": "fc-v1-144",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:ins-paid-no-eob",
+      "hn:hourly-overlap",
+      "hn:obs-room-hours",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L11",
+      "L12"
+     ],
+     "detail": "More room days billed than nights stayed | 37 room-and-board units were billed for a 1-night stay (2026-07-29 to 2026-07-30)."
+    },
+    {
+     "bill": "fc-v1-160",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:eca-agency-referral",
+      "hn:obs-room-hours",
+      "plant:NCCI-01:mi0"
+     ],
+     "lineIds": [
+      "L09",
+      "L10"
+     ],
+     "detail": "More room days billed than nights stayed | 33 room-and-board units were billed for a 1-night stay (2025-12-02 to 2025-12-03)."
+    },
+    {
+     "bill": "fc-v1-165",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:eca-proper",
+      "hn:obs-room-hours",
+      "hn:ins-paid-no-eob",
+      "hn:ncci-mi9",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L11",
+      "L12"
+     ],
+     "detail": "More room days billed than nights stayed | 28 room-and-board units were billed for a 1-night stay (2025-09-07 to 2025-09-08)."
+    },
+    {
+     "bill": "fc-v1-189",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:ins-paid-no-eob",
+      "hn:eca-agency-referral",
+      "hn:obs-room-hours"
+     ],
+     "lineIds": [
+      "L01",
+      "L07",
+      "L08"
+     ],
+     "detail": "More room days billed than nights stayed | 18 room-and-board units were billed for a 1-night stay (2025-12-20 to 2025-12-21)."
+    },
+    {
+     "bill": "fc-v1-192",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:obs-room-hours",
+      "plant:NCCI-01:mi0",
+      "plant:ECA-01:early"
+     ],
+     "lineIds": [
+      "L01",
+      "L11",
+      "L12"
+     ],
+     "detail": "More room days billed than nights stayed | 25 room-and-board units were billed for a 1-night stay (2026-01-21 to 2026-01-22)."
+    }
+   ],
+   "misses": []
+  },
+  "DATE-01": {
+   "falsePositives": [],
+   "misses": []
+  },
+  "NCCI-01": {
+   "falsePositives": [
+    {
+     "bill": "fc-v1-201",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:bilateral",
+      "hn:gfe-121-days",
+      "hn:ncci-mod25",
+      "hn:cr-legit",
+      "variant:bilateral-same-price"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2025-03-21) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-201",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:bilateral",
+      "hn:gfe-121-days",
+      "hn:ncci-mod25",
+      "hn:cr-legit",
+      "variant:bilateral-same-price"
+     ],
+     "lineIds": [
+      "L03",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2025-03-21) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-211",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:bilateral",
+      "hn:ncci-mod25",
+      "variant:bilateral-same-price",
+      "plant:CANC-01:keyword",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-05-26) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-211",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:bilateral",
+      "hn:ncci-mod25",
+      "variant:bilateral-same-price",
+      "plant:CANC-01:keyword",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L03",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-05-26) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-214",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:bilateral",
+      "hn:ncci-mod25",
+      "variant:bilateral-same-price"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-06-03) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-214",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:bilateral",
+      "hn:ncci-mod25",
+      "variant:bilateral-same-price"
+     ],
+     "lineIds": [
+      "L03",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-06-03) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-221",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "plant:MATH-01:extra-unit",
+      "plant:EOB-01:unposted-payment"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-06-10) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-224",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:bilateral",
+      "hn:ncci-mod25",
+      "variant:bilateral-same-price",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-06-04) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-224",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:bilateral",
+      "hn:ncci-mod25",
+      "variant:bilateral-same-price",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L03",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-06-04) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-225",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:bilateral",
+      "hn:ncci-mod25",
+      "variant:bilateral-same-price",
+      "plant:DUP-02:desc",
+      "plant:MATH-02:balance",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-05-30) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-225",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:bilateral",
+      "hn:ncci-mod25",
+      "variant:bilateral-same-price",
+      "plant:DUP-02:desc",
+      "plant:MATH-02:balance",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L03",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-05-30) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-232",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "hn:bilateral",
+      "variant:bilateral-same-price",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-05-22) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-232",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "hn:bilateral",
+      "variant:bilateral-same-price",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L03",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-05-22) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-236",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "hn:bilateral",
+      "variant:bilateral-same-price",
+      "plant:DUP-01",
+      "variant:eob-line-level-co",
+      "plant:EOB-02:co-billed",
+      "plant:MATH-02:total-off"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-05-13) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-236",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "hn:bilateral",
+      "variant:bilateral-same-price",
+      "plant:DUP-01",
+      "variant:eob-line-level-co",
+      "plant:EOB-02:co-billed",
+      "plant:MATH-02:total-off"
+     ],
+     "lineIds": [
+      "L03",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-05-13) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-238",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "hn:bilateral",
+      "variant:bilateral-discounted",
+      "plant:MATH-01:wrong-total"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-08-08) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-238",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "hn:bilateral",
+      "variant:bilateral-discounted",
+      "plant:MATH-01:wrong-total"
+     ],
+     "lineIds": [
+      "L03",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-08-08) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-240",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "hn:rounding",
+      "plant:DUP-01",
+      "plant:EOB-01:unposted-payment",
+      "plant:CR-01:small"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-08-08) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-240",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "hn:rounding",
+      "plant:DUP-01",
+      "plant:EOB-01:unposted-payment",
+      "plant:CR-01:small"
+     ],
+     "lineIds": [
+      "L05",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-08-08) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-247",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "plant:MCD-01:with-eob"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-04-06) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-248",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "hn:cr-not-reported",
+      "plant:EOB-02:co-billed"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-07-25) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-252",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "hn:bilateral",
+      "variant:bilateral-discounted",
+      "plant:CANC-01:user-marked",
+      "plant:MUE-01",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-04-25) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-252",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "hn:bilateral",
+      "variant:bilateral-discounted",
+      "plant:CANC-01:user-marked",
+      "plant:MUE-01",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L03",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-04-25) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-260",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "plant:CANC-01:user-marked",
+      "plant:MATH-02:total-off",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-05-20) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-263",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "hn:cr-legit",
+      "plant:MATH-01:wrong-total",
+      "plant:MUE-01",
+      "variant:eob-line-level-co",
+      "plant:EOB-02:co-billed"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2024-08-03) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-271",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "plant:GFE-01:day-120"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-05-23) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-278",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ppdr-before",
+      "hn:ncci-mod25",
+      "hn:rounding",
+      "hn:bilateral",
+      "variant:bilateral-same-price"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-03-19) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-278",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ppdr-before",
+      "hn:ncci-mod25",
+      "hn:rounding",
+      "hn:bilateral",
+      "variant:bilateral-same-price"
+     ],
+     "lineIds": [
+      "L03",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-03-19) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-279",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "plant:MATH-01:extra-unit",
+      "plant:DUP-02:price",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-03-21) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-294",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "plant:DUP-01",
+      "plant:MUE-01",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-06-09) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-294",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "plant:DUP-01",
+      "plant:MUE-01",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L05",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-06-09) and have an active NCCI edit."
+    },
+    {
+     "bill": "fc-v1-295",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:gfe-121-days",
+      "hn:ncci-mod25",
+      "hn:cr-not-reported"
+     ],
+     "lineIds": [
+      "L02",
+      "L01"
+     ],
+     "detail": "99214 is normally bundled into 20610 | 20610 and 99214 were billed on the same date (2026-05-02) and have an active NCCI edit."
+    }
+   ],
+   "misses": []
+  },
+  "CANC-01": {
+   "falsePositives": [
+    {
+     "bill": "fc-v1-050",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:cancel-reversed",
+      "variant:cancel-credit:negqty",
+      "plant:CANC-01:keyword",
+      "plant:RX-01",
+      "plant:QTY-01:per-day",
+      "variant:eob-line-level-co",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [
+      "L21"
+     ],
+     "detail": "Description mentions a cancellation | \"MED RETURNED TO PHARMACY\" suggests this may have been canceled, not given, or returned."
+    },
+    {
+     "bill": "fc-v1-058",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:rx-below-10",
+      "hn:cancel-reversed",
+      "variant:cancel-credit:negqty"
+     ],
+     "lineIds": [
+      "L35"
+     ],
+     "detail": "Description mentions a cancellation | \"MED RETURNED TO PHARMACY\" suggests this may have been canceled, not given, or returned."
+    },
+    {
+     "bill": "fc-v1-086",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:cancel-reversed",
+      "hn:eca-forprofit",
+      "hn:medicaid-copay",
+      "hn:room-word",
+      "variant:cancel-credit:negqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [
+      "L17"
+     ],
+     "detail": "Description mentions a cancellation | \"PHARMACY ITEM CANCELLED\" suggests this may have been canceled, not given, or returned."
+    },
+    {
+     "bill": "fc-v1-101",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "hn:credit-reversal",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:negqty",
+      "variant:cancel-credit:negqty",
+      "plant:CANC-01:user-marked",
+      "plant:MATH-02:balance",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L08"
+     ],
+     "detail": "Description mentions a cancellation | \"MED RETURNED TO PHARMACY\" suggests this may have been canceled, not given, or returned."
+    },
+    {
+     "bill": "fc-v1-105",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:negqty",
+      "variant:cancel-credit:negqty",
+      "plant:GFE-01:day-120"
+     ],
+     "lineIds": [
+      "L08"
+     ],
+     "detail": "Description mentions a cancellation | \"IV BAG NOT GIVEN\" suggests this may have been canceled, not given, or returned."
+    },
+    {
+     "bill": "fc-v1-109",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:posqty",
+      "variant:cancel-credit:negqty",
+      "plant:DUP-02:price",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L08"
+     ],
+     "detail": "Description mentions a cancellation | \"MED RETURNED TO PHARMACY\" suggests this may have been canceled, not given, or returned."
+    },
+    {
+     "bill": "fc-v1-111",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "variant:sched-surgery-2-providers",
+      "variant:cancel-credit:negqty",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L06"
+     ],
+     "detail": "Description mentions a cancellation | \"MED RETURNED TO PHARMACY\" suggests this may have been canceled, not given, or returned."
+    },
+    {
+     "bill": "fc-v1-127",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "hn:credit-reversal",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:negqty",
+      "variant:credit-posted-later",
+      "variant:cancel-credit:negqty",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L08"
+     ],
+     "detail": "Description mentions a cancellation | \"PHARMACY ITEM CANCELLED\" suggests this may have been canceled, not given, or returned."
+    },
+    {
+     "bill": "fc-v1-131",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:gfe-399",
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:credit:posqty",
+      "variant:cancel-credit:negqty"
+     ],
+     "lineIds": [
+      "L06"
+     ],
+     "detail": "Description mentions a cancellation | \"PHARMACY ITEM CANCELLED\" suggests this may have been canceled, not given, or returned."
+    },
+    {
+     "bill": "fc-v1-138",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:negqty",
+      "variant:credit-posted-later",
+      "variant:cancel-credit:negqty",
+      "plant:MATH-02:total-off",
+      "plant:GFE-01"
+     ],
+     "lineIds": [
+      "L08"
+     ],
+     "detail": "Description mentions a cancellation | \"PHARMACY ITEM CANCELLED\" suggests this may have been canceled, not given, or returned."
+    },
+    {
+     "bill": "fc-v1-140",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:gfe-121-days",
+      "hn:cancel-reversed",
+      "variant:sched-imaging",
+      "variant:cancel-credit:negqty"
+     ],
+     "lineIds": [
+      "L04"
+     ],
+     "detail": "Description mentions a cancellation | \"IV BAG NOT GIVEN\" suggests this may have been canceled, not given, or returned."
+    },
+    {
+     "bill": "fc-v1-142",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:cancel-reversed",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:negqty",
+      "variant:cancel-credit:negqty",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L08"
+     ],
+     "detail": "Description mentions a cancellation | \"MED RETURNED TO PHARMACY\" suggests this may have been canceled, not given, or returned."
+    },
+    {
+     "bill": "fc-v1-150",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "hn:credit-reversal",
+      "variant:sched-imaging",
+      "variant:credit:negqty",
+      "variant:cancel-credit:negqty",
+      "plant:DUP-02:price",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L06"
+     ],
+     "detail": "Description mentions a cancellation | \"PHARMACY ITEM CANCELLED\" suggests this may have been canceled, not given, or returned."
+    },
+    {
+     "bill": "fc-v1-166",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:cancel-reversed",
+      "hn:credit-reversal",
+      "variant:sched-imaging",
+      "variant:credit:negqty",
+      "variant:cancel-credit:negqty",
+      "plant:PPDR-01"
+     ],
+     "lineIds": [
+      "L06"
+     ],
+     "detail": "Description mentions a cancellation | \"IV BAG NOT GIVEN\" suggests this may have been canceled, not given, or returned."
+    },
+    {
+     "bill": "fc-v1-175",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:gfe-121-days",
+      "hn:cancel-reversed",
+      "hn:credit-reversal",
+      "variant:sched-surgery-2-providers",
+      "variant:credit:posqty",
+      "variant:cancel-credit:negqty"
+     ],
+     "lineIds": [
+      "L08"
+     ],
+     "detail": "Description mentions a cancellation | \"IV BAG NOT GIVEN\" suggests this may have been canceled, not given, or returned."
+    },
+    {
+     "bill": "fc-v1-185",
+     "kind": "ed/sched",
+     "tags": [
+      "hn:gfe-399",
+      "hn:cancel-reversed",
+      "variant:sched-surgery-2-providers",
+      "variant:cancel-credit:negqty"
+     ],
+     "lineIds": [
+      "L06"
+     ],
+     "detail": "Description mentions a cancellation | \"IV BAG NOT GIVEN\" suggests this may have been canceled, not given, or returned."
+    }
+   ],
+   "misses": []
+  },
+  "RX-01": {
+   "falsePositives": [],
+   "misses": []
+  },
+  "EOB-01": {
+   "falsePositives": [],
+   "misses": []
+  },
+  "EOB-02": {
+   "falsePositives": [],
+   "misses": [
+    {
+     "bill": "fc-v1-057",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:telemetry-monitor",
+      "plant:MATH-01:extra-unit",
+      "plant:DATE-01:moved",
+      "variant:eob-line-level-co",
+      "plant:EOB-02:co-billed"
+     ],
+     "lineIds": [],
+     "detail": "engine ran, no matching finding"
+    },
+    {
+     "bill": "fc-v1-085",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:repeat-mod",
+      "hn:rounding",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:with-eob",
+      "plant:CR-01:paid"
+     ],
+     "lineIds": [],
+     "detail": "engine ran, no matching finding"
+    },
+    {
+     "bill": "fc-v1-093",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:mue-inpatient",
+      "hn:eca-late-fee",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:with-eob",
+      "plant:MATH-02:total-off"
+     ],
+     "lineIds": [],
+     "detail": "engine ran, no matching finding"
+    },
+    {
+     "bill": "fc-v1-141",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:hourly-overlap",
+      "plant:QTY-01:hourly",
+      "plant:MUE-01",
+      "variant:eob-line-level-co",
+      "plant:EOB-02:co-billed"
+     ],
+     "lineIds": [],
+     "detail": "engine ran, no matching finding"
+    },
+    {
+     "bill": "fc-v1-163",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:eca-forprofit",
+      "variant:eob-line-level-co",
+      "plant:EOB-02:co-billed"
+     ],
+     "lineIds": [],
+     "detail": "engine ran, no matching finding"
+    },
+    {
+     "bill": "fc-v1-227",
+     "kind": "professional/office",
+     "tags": [
+      "hn:bilateral",
+      "hn:rounding",
+      "variant:bilateral-discounted",
+      "plant:MUE-01",
+      "variant:eob-line-level-co",
+      "plant:EOB-02:co-billed"
+     ],
+     "lineIds": [],
+     "detail": "engine ran, no matching finding"
+    },
+    {
+     "bill": "fc-v1-263",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:ncci-mod25",
+      "hn:cr-legit",
+      "plant:MATH-01:wrong-total",
+      "plant:MUE-01",
+      "variant:eob-line-level-co",
+      "plant:EOB-02:co-billed"
+     ],
+     "lineIds": [],
+     "detail": "engine ran, no matching finding"
+    },
+    {
+     "bill": "fc-v1-268",
+     "kind": "professional/office",
+     "tags": [
+      "hn:cr-not-reported",
+      "plant:DUP-02:price",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:with-eob"
+     ],
+     "lineIds": [],
+     "detail": "engine ran, no matching finding"
+    }
+   ]
+  },
+  "INS-01": {
+   "falsePositives": [
+    {
+     "bill": "fc-v1-001",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:credit-reversal",
+      "hn:same-day-admit-discharge",
+      "hn:repeat-mod",
+      "hn:ins-paid-no-eob",
+      "variant:credit:negqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-016",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:jw-waste",
+      "hn:credit-reversal",
+      "variant:jw-wastage",
+      "variant:credit:posqty",
+      "plant:DATE-01:added",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-019",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:cr-not-reported",
+      "hn:room-word",
+      "variant:eob-line-level-co",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-020",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-proper",
+      "hn:rounding",
+      "hn:repeat-mod",
+      "hn:telemetry-monitor",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-021",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:per-day-multi",
+      "hn:eca-late-fee",
+      "hn:ins-paid-no-eob"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-027",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:same-day-admit-discharge",
+      "hn:credit-reversal",
+      "variant:credit:negqty",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob",
+      "plant:CR-01:small"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-031",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:repeat-mod",
+      "variant:eob-line-level-co",
+      "variant:medicaid-no-eob",
+      "plant:ECA-01:early"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-032",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-proper",
+      "plant:DATE-01:added",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-037",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:same-day-admit-discharge",
+      "hn:ins-paid-no-eob",
+      "hn:cancel-reversed",
+      "variant:cancel-credit:posqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-043",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:kit-multi",
+      "hn:same-day-admit-discharge",
+      "variant:iv-kit-x2",
+      "plant:DATE-01:added",
+      "plant:DUP-01",
+      "variant:eob-line-level-co",
+      "variant:medicaid-no-eob",
+      "plant:ECA-01:no-notice"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-050",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:cancel-reversed",
+      "variant:cancel-credit:negqty",
+      "plant:CANC-01:keyword",
+      "plant:RX-01",
+      "plant:QTY-01:per-day",
+      "variant:eob-line-level-co",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-053",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:ins-paid-no-eob",
+      "hn:cr-not-reported",
+      "plant:RB-01:discharge-day-line",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-061",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:cr-legit",
+      "hn:ins-paid-no-eob",
+      "hn:per-day-multi"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-069",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-agency-referral",
+      "hn:ins-paid-no-eob",
+      "hn:room-word",
+      "hn:telemetry-monitor",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-082",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-late-fee",
+      "hn:ins-paid-no-eob",
+      "hn:same-day-admit-discharge"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-096",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:ins-paid-no-eob",
+      "plant:DUP-01",
+      "plant:DUP-02:price"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-100",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-agency-referral",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-144",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:ins-paid-no-eob",
+      "hn:hourly-overlap",
+      "hn:obs-room-hours",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-164",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:ins-paid-no-eob",
+      "plant:QTY-01:hourly"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-165",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:eca-proper",
+      "hn:obs-room-hours",
+      "hn:ins-paid-no-eob",
+      "hn:ncci-mi9",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-168",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:hourly-overlap",
+      "hn:jw-waste",
+      "variant:jw-discarded",
+      "plant:MATH-01:extra-unit",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob",
+      "plant:ECA-01:short-notice"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-189",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:ins-paid-no-eob",
+      "hn:eca-agency-referral",
+      "hn:obs-room-hours"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-190",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:rounding",
+      "hn:cr-legit",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-200",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:eca-proper",
+      "hn:ins-paid-no-eob",
+      "hn:hourly-overlap",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-208",
+     "kind": "professional/proc",
+     "tags": [
+      "hn:bilateral",
+      "variant:bilateral-discounted",
+      "plant:DUP-02:desc",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-219",
+     "kind": "professional/office",
+     "tags": [
+      "hn:bilateral",
+      "hn:cr-legit",
+      "variant:bilateral-same-price",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-230",
+     "kind": "professional/office",
+     "tags": [
+      "hn:bilateral",
+      "variant:bilateral-same-price",
+      "plant:MATH-01:wrong-total",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-273",
+     "kind": "professional/office",
+     "tags": [
+      "hn:rounding",
+      "plant:CANC-01:user-marked",
+      "plant:DUP-01",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    },
+    {
+     "bill": "fc-v1-293",
+     "kind": "professional/office",
+     "tags": [
+      "hn:cr-legit",
+      "hn:bilateral",
+      "variant:bilateral-same-price",
+      "plant:NCCI-01:mi0",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [],
+     "detail": "This may not have been billed to insurance | You have insurance, but there is no insurance payment or adjustment on this bill, and no EOB was entered."
+    }
+   ],
+   "misses": []
+  },
+  "MCD-01": {
+   "falsePositives": [],
+   "misses": []
+  },
+  "NSA-01": {
+   "falsePositives": [],
+   "misses": []
+  },
+  "NSA-02": {
+   "falsePositives": [],
+   "misses": []
+  },
+  "GFE-01": {
+   "falsePositives": [],
+   "misses": []
+  },
+  "ECA-01": {
+   "falsePositives": [
+    {
+     "bill": "fc-v1-011",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:same-day-admit-discharge",
+      "hn:credit-reversal",
+      "hn:repeat-mod",
+      "hn:eca-late-fee",
+      "variant:credit:negqty"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a late fee action on 2026-04-23, before the 120-day waiting period ended (2026-06-01)"
+    },
+    {
+     "bill": "fc-v1-014",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:rx-below-10",
+      "hn:kit-multi",
+      "hn:eca-agency-referral",
+      "hn:medicaid-copay",
+      "variant:admission+iv-kit",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a collections action on 2025-11-27, before the 120-day waiting period ended (2025-12-28)"
+    },
+    {
+     "bill": "fc-v1-021",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:per-day-multi",
+      "hn:eca-late-fee",
+      "hn:ins-paid-no-eob"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a late fee action on 2026-05-01, before the 120-day waiting period ended (2026-07-18)"
+    },
+    {
+     "bill": "fc-v1-022",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-agency-referral",
+      "hn:rounding",
+      "hn:cancel-reversed",
+      "variant:cancel-credit:posqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a collections action on 2026-03-15, before the 120-day waiting period ended (2026-06-01)"
+    },
+    {
+     "bill": "fc-v1-041",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:mue-inpatient",
+      "hn:eca-agency-referral",
+      "plant:DUP-02:price",
+      "variant:eob-line-level-co",
+      "plant:MATH-02:total-off"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a collections action on 2026-04-28, before the 120-day waiting period ended (2026-07-24)"
+    },
+    {
+     "bill": "fc-v1-042",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-late-fee",
+      "hn:credit-reversal",
+      "variant:credit:posqty",
+      "plant:EOB-01:unposted-payment"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a late fee action on 2026-04-01, before the 120-day waiting period ended (2026-06-30)"
+    },
+    {
+     "bill": "fc-v1-051",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:medicaid-copay",
+      "hn:eca-agency-referral"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a collections action on 2025-11-27, before the 120-day waiting period ended (2026-03-06)"
+    },
+    {
+     "bill": "fc-v1-055",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eob-under-1",
+      "hn:eca-late-fee",
+      "plant:DUP-02:price",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a late fee action on 2026-01-10, before the 120-day waiting period ended (2026-03-25)"
+    },
+    {
+     "bill": "fc-v1-062",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eob-prepaid",
+      "hn:jw-waste",
+      "hn:eca-agency-referral",
+      "hn:kit-multi",
+      "variant:iv-kit-x2",
+      "variant:jw-discarded"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a collections action on 2025-12-26, before the 120-day waiting period ended (2026-01-28)"
+    },
+    {
+     "bill": "fc-v1-065",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-late-fee",
+      "hn:eob-under-1",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a late fee action on 2025-11-03, before the 120-day waiting period ended (2026-02-11)"
+    },
+    {
+     "bill": "fc-v1-069",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-agency-referral",
+      "hn:ins-paid-no-eob",
+      "hn:room-word",
+      "hn:telemetry-monitor",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a collections action on 2025-12-25, before the 120-day waiting period ended (2026-03-14)"
+    },
+    {
+     "bill": "fc-v1-075",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-late-fee",
+      "hn:eob-under-1",
+      "hn:cancel-reversed",
+      "hn:rx-below-10",
+      "variant:cancel-credit:posqty",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a late fee action on 2026-06-17, before the 120-day waiting period ended (2026-07-03)"
+    },
+    {
+     "bill": "fc-v1-082",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-late-fee",
+      "hn:ins-paid-no-eob",
+      "hn:same-day-admit-discharge"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a late fee action on 2026-01-10, before the 120-day waiting period ended (2026-04-17)"
+    },
+    {
+     "bill": "fc-v1-088",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-agency-referral",
+      "hn:telemetry-monitor",
+      "plant:DATE-01:moved",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a collections action on 2025-11-17, before the 120-day waiting period ended (2026-02-10)"
+    },
+    {
+     "bill": "fc-v1-093",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:mue-inpatient",
+      "hn:eca-late-fee",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:with-eob",
+      "plant:MATH-02:total-off"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a late fee action on 2026-02-08, before the 120-day waiting period ended (2026-04-27)"
+    },
+    {
+     "bill": "fc-v1-098",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-agency-referral",
+      "hn:medicaid-copay",
+      "plant:MATH-01:wrong-total",
+      "plant:RB-01:extra-unit"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a collections action on 2026-02-22, before the 120-day waiting period ended (2026-03-21)"
+    },
+    {
+     "bill": "fc-v1-100",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:eca-agency-referral",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a collections action on 2026-06-23, before the 120-day waiting period ended (2026-07-19)"
+    },
+    {
+     "bill": "fc-v1-153",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:rounding",
+      "hn:nsa-compliant",
+      "hn:eca-late-fee",
+      "hn:jw-waste",
+      "variant:jw-wastage"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a late fee action on 2026-03-09, before the 120-day waiting period ended (2026-04-26)"
+    },
+    {
+     "bill": "fc-v1-155",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:ncci-mi9",
+      "hn:eca-late-fee",
+      "plant:RX-01",
+      "plant:NCCI-01:mi0",
+      "plant:MCD-01:with-eob"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a late fee action on 2026-04-18, before the 120-day waiting period ended (2026-06-16)"
+    },
+    {
+     "bill": "fc-v1-160",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:eca-agency-referral",
+      "hn:obs-room-hours",
+      "plant:NCCI-01:mi0"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a collections action on 2026-02-22, before the 120-day waiting period ended (2026-04-11)"
+    },
+    {
+     "bill": "fc-v1-172",
+     "kind": "ed/ed",
+     "tags": [
+      "hn:eca-late-fee",
+      "hn:rounding",
+      "plant:DUP-01",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:with-eob"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a late fee action on 2026-04-12, before the 120-day waiting period ended (2026-07-03)"
+    },
+    {
+     "bill": "fc-v1-173",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:eca-agency-referral",
+      "hn:repeat-mod",
+      "variant:troponin-91",
+      "plant:QTY-01:hourly"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a collections action on 2026-01-29, before the 120-day waiting period ended (2026-02-23)"
+    },
+    {
+     "bill": "fc-v1-178",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:eca-late-fee",
+      "plant:EOB-02:co-billed"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a late fee action on 2026-03-21, before the 120-day waiting period ended (2026-03-31)"
+    },
+    {
+     "bill": "fc-v1-189",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:ins-paid-no-eob",
+      "hn:eca-agency-referral",
+      "hn:obs-room-hours"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a collections action on 2026-04-18, before the 120-day waiting period ended (2026-05-10)"
+    },
+    {
+     "bill": "fc-v1-198",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:eca-agency-referral",
+      "hn:eob-under-1",
+      "hn:ncci-mi1-59",
+      "hn:repeat-mod",
+      "variant:ekg-76",
+      "variant:eob-line-level-co"
+     ],
+     "lineIds": [],
+     "detail": "Possible early or improper collection action by a nonprofit hospital | a collections action on 2026-01-07, before the 120-day waiting period ended (2026-04-02)"
+    }
+   ],
+   "misses": [
+    {
+     "bill": "fc-v1-026",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:room-word",
+      "plant:ECA-01:short-notice"
+     ],
+     "lineIds": [],
+     "detail": "engine ran, no matching finding"
+    },
+    {
+     "bill": "fc-v1-059",
+     "kind": "inpatient/stay",
+     "tags": [
+      "hn:room-word",
+      "hn:repeat-mod",
+      "plant:ECA-01:short-notice"
+     ],
+     "lineIds": [],
+     "detail": "engine ran, no matching finding"
+    },
+    {
+     "bill": "fc-v1-168",
+     "kind": "ed/obs",
+     "tags": [
+      "hn:hourly-overlap",
+      "hn:jw-waste",
+      "variant:jw-discarded",
+      "plant:MATH-01:extra-unit",
+      "variant:eob-line-level-co",
+      "plant:MCD-01:no-eob",
+      "variant:medicaid-no-eob",
+      "plant:ECA-01:short-notice"
+     ],
+     "lineIds": [],
+     "detail": "engine ran, no matching finding"
+    }
+   ]
+  },
+  "PPDR-01": {
+   "falsePositives": [],
+   "misses": []
+  },
+  "CR-01": {
+   "falsePositives": [],
+   "misses": []
+  }
+ }
+}

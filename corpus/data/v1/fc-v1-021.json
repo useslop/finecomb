@@ -1,0 +1,297 @@
+{
+ "id": "fc-v1-021",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20427300,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 021",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0100740",
+   "admitDate": "2026-02-27",
+   "dischargeDate": "2026-03-03",
+   "totalCharges": 24193.52,
+   "statementDate": "2026-04-12",
+   "payments": 10023.82,
+   "adjustments": 11079.04,
+   "balanceDue": 3090.66
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-02-27",
+    "description": "PRIVATE RM DAILY",
+    "qty": 4,
+    "unitPrice": 4555.62,
+    "amount": 18222.48,
+    "revCode": "0110"
+   },
+   {
+    "id": "L02",
+    "date": "2026-02-27",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 88.88,
+    "amount": 88.88,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-02-27",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 25.86,
+    "amount": 25.86,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2026-02-28",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 88.5,
+    "amount": 88.5,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-01",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 107.12,
+    "amount": 107.12,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-01",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 161.59,
+    "amount": 161.59,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-03-02",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 36.29,
+    "amount": 36.29,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L08",
+    "date": "2026-03-02",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 57.65,
+    "amount": 57.65,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-03-02",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 103.13,
+    "amount": 103.13,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2026-02-27",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 33.79,
+    "amount": 270.32,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-02-28",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 10.3,
+    "amount": 82.4,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-03-01",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 36.51,
+    "amount": 36.51,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-02-27",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 31.31,
+    "amount": 31.31,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2026-02-27",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 53.69,
+    "amount": 53.69,
+    "revCode": "0270"
+   },
+   {
+    "id": "L15",
+    "date": "2026-02-27",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 93.39,
+    "amount": 93.39,
+    "revCode": "0270"
+   },
+   {
+    "id": "L16",
+    "date": "2026-02-27",
+    "description": "OXYGEN PER DAY",
+    "qty": 4,
+    "unitPrice": 184.27,
+    "amount": 737.08,
+    "revCode": "0412"
+   },
+   {
+    "id": "L17",
+    "date": "2026-02-27",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 4,
+    "unitPrice": 999.33,
+    "amount": 3997.32,
+    "revCode": "0731"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-03-20",
+  "firstBillDate": "2026-03-20",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Marketplace Plan",
+  "collections": [
+   {
+    "date": "2026-05-01",
+    "kind": "late_fee"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:per-day-multi",
+  "hn:eca-late-fee",
+  "hn:ins-paid-no-eob"
+ ]
+}

@@ -1,0 +1,258 @@
+{
+ "id": "fc-v1-038",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20561923,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 038",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0101369",
+   "admitDate": "2026-09-01",
+   "dischargeDate": "2026-09-02",
+   "totalCharges": 3405.86,
+   "statementDate": "2026-09-17",
+   "payments": 1436.58,
+   "adjustments": 1301.19,
+   "balanceDue": 668.09
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-09-01",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 2446.23,
+    "amount": 2446.23,
+    "revCode": "0121"
+   },
+   {
+    "id": "L02",
+    "date": "2026-09-01",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 54.32,
+    "amount": 54.32,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2026-09-01",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 29.25,
+    "amount": 29.25,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-09-01",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 99.02,
+    "amount": 198.04,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L05",
+    "date": "2026-09-01",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 68.14,
+    "amount": 136.28,
+    "code": "J1885",
+    "revCode": "0636",
+    "notReceived": true
+   },
+   {
+    "id": "L06",
+    "date": "2026-09-02",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 24.21,
+    "amount": 24.21,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-09-02",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 7,
+    "unitPrice": 28.84,
+    "amount": 201.88,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-09-01",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 44.49,
+    "amount": 177.96,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-09-01",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 122.93,
+    "amount": 122.93,
+    "revCode": "0272"
+   },
+   {
+    "id": "L10",
+    "date": "2026-09-01",
+    "description": "PANTOPRAZOLE 40MG TAB",
+    "qty": 4,
+    "unitPrice": 3.69,
+    "amount": 14.76,
+    "revCode": "0250",
+    "ndc": "39254524164"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-09-22",
+  "firstBillDate": "2026-09-09",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 3405.86,
+   "allowed": 2104.67,
+   "planPaid": 1436.58,
+   "deductible": 308.94,
+   "copay": 0,
+   "coinsurance": 359.15,
+   "patientResponsibility": 668.09,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1301.19
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 308.94
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 359.15
+    }
+   ]
+  },
+  "onCreditReport": false,
+  "paidInFull": false,
+  "originalBalance": 2900.31
+ },
+ "data": {
+  "mue": {
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "39254524164": {
+    "unitPrice": 0.052572,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "L10"
+   ]
+  }
+ ],
+ "plants": [
+  "RX-01",
+  "CANC-01"
+ ],
+ "tags": [
+  "hn:cr-not-reported",
+  "plant:RX-01",
+  "plant:CANC-01:user-marked"
+ ]
+}

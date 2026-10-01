@@ -1,0 +1,136 @@
+{
+ "id": "fc-v1-267",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22375374,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 267",
+   "providerName": "Example Urgent Care",
+   "accountNumber": "TEST-0109842",
+   "totalCharges": 384.5,
+   "statementDate": "2026-05-13",
+   "payments": 48.41,
+   "adjustments": 246.69,
+   "balanceDue": 89.4
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-03",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 1,
+    "unitPrice": 243.74,
+    "amount": 243.74,
+    "code": "99204"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-03",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 93.84,
+    "amount": 93.84,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-03",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 46.92,
+    "amount": 46.92,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "firstBillDate": "2026-05-14",
+  "state": "AZ",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 384.5,
+   "allowed": 137.81,
+   "planPaid": 96.82,
+   "deductible": 30.23,
+   "copay": 0,
+   "coinsurance": 10.76,
+   "patientResponsibility": 40.99,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 246.69
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 30.23
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 10.76
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": true,
+  "originalBalance": 1259.77
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99204": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-01",
+  "CR-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "variant:bilateral-discounted",
+  "plant:EOB-01:unposted-payment",
+  "plant:CR-01:paid"
+ ]
+}

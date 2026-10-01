@@ -1,0 +1,254 @@
+{
+ "id": "fc-v1-052",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20672789,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 052",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0101887",
+   "admitDate": "2025-12-06",
+   "dischargeDate": "2025-12-07",
+   "totalCharges": 3783.25,
+   "statementDate": "2026-01-09",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 3783.25
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-12-06",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2446.49,
+    "amount": 2446.49,
+    "revCode": "0120"
+   },
+   {
+    "id": "L02",
+    "date": "2025-12-06",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 40.4,
+    "amount": 40.4,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-12-06",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 118.7,
+    "amount": 118.7,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2025-12-07",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 110.48,
+    "amount": 110.48,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2025-12-07",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 55.46,
+    "amount": 110.92,
+    "code": "J1030",
+    "revCode": "0636",
+    "notReceived": true
+   },
+   {
+    "id": "L06",
+    "date": "2025-12-06",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 11.11,
+    "amount": 77.77,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2025-12-06",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 585.57,
+    "amount": 585.57,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L08",
+    "date": "2025-12-06",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 267.2,
+    "amount": 267.2,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L09",
+    "date": "2025-12-06",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 24.61,
+    "amount": 24.61,
+    "revCode": "0270"
+   },
+   {
+    "id": "L10",
+    "date": "2025-12-06",
+    "description": "CEPHALEXIN 500MG CAP",
+    "qty": 1,
+    "unitPrice": 1.11,
+    "amount": 1.11,
+    "revCode": "0250",
+    "ndc": "53475757543"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2025-12-18",
+  "firstBillDate": "2026-01-01",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "collections": [
+   {
+    "date": "2026-05-09",
+    "kind": "lawsuit",
+    "noticeDate": "2026-03-15"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "53475757543": {
+    "unitPrice": 0.11956800000000001,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01",
+  "CANC-01"
+ ],
+ "tags": [
+  "hn:eca-proper",
+  "hn:rx-below-10",
+  "plant:CANC-01:user-marked"
+ ]
+}

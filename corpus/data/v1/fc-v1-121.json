@@ -1,0 +1,280 @@
+{
+ "id": "fc-v1-121",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21219200,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 121",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0104440",
+   "admitDate": "2026-04-05",
+   "dischargeDate": "2026-04-05",
+   "totalCharges": 7535.91,
+   "statementDate": "2026-05-10",
+   "payments": 3030.67,
+   "adjustments": 3284.85,
+   "balanceDue": 1220.39
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-05",
+    "description": "ER VISIT LEVEL 3",
+    "qty": 4,
+    "unitPrice": 1611.05,
+    "amount": 6444.2,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-05",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 106.18,
+    "amount": 106.18,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-05",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 146.49,
+    "amount": 146.49,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-05",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 41.83,
+    "amount": 41.83,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-05",
+    "description": "CAPILLARY BLOOD DRAW",
+    "qty": 1,
+    "unitPrice": 23.54,
+    "amount": 23.54,
+    "code": "36416",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-05",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 363.4,
+    "amount": 363.4,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-05",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 20.1,
+    "amount": 20.1,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-05",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 7,
+    "unitPrice": 40.55,
+    "amount": 283.85,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-05",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 106.32,
+    "amount": 106.32,
+    "code": "J1030",
+    "revCode": "0636"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-04-21",
+  "firstBillDate": "2026-04-14",
+  "state": "AZ",
+  "hospitalCcn": "990104",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 7535.91,
+   "allowed": 4251.06,
+   "planPaid": 3030.67,
+   "deductible": 462.72,
+   "copay": 0,
+   "coinsurance": 757.67,
+   "patientResponsibility": 1220.39,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 3284.85
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 462.72
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 757.67
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "36416": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "36415",
+    "col2": "36416",
+    "mi": 9,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L01"
+   ]
+  }
+ ],
+ "plants": [
+  "MUE-01"
+ ],
+ "tags": [
+  "hn:ncci-mi9",
+  "plant:MUE-01"
+ ]
+}

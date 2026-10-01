@@ -1,0 +1,239 @@
+{
+ "id": "fc-v1-011",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20348110,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 011",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0100370",
+   "admitDate": "2026-01-14",
+   "dischargeDate": "2026-01-14",
+   "totalCharges": 7567.4,
+   "statementDate": "2026-02-09",
+   "payments": 2377.94,
+   "adjustments": 2999.23,
+   "balanceDue": 2190.23
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-01-14",
+    "description": "ICU DAILY CHARGE",
+    "qty": 1,
+    "unitPrice": 6971.65,
+    "amount": 6971.65,
+    "revCode": "0200"
+   },
+   {
+    "id": "L02",
+    "date": "2026-01-14",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 83.29,
+    "amount": 83.29,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-01-14",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 42.08,
+    "amount": 42.08,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-01-14",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 138.99,
+    "amount": 138.99,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L05",
+    "date": "2026-01-14",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 61.27,
+    "amount": 122.54,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L09",
+    "date": "2026-01-14",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 61.27,
+    "amount": 122.54,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L06",
+    "date": "2026-01-14",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 35.88,
+    "amount": 35.88,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-01-14",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 55.89,
+    "amount": 55.89,
+    "revCode": "0272"
+   },
+   {
+    "id": "L08",
+    "date": "2026-01-14",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 117.08,
+    "amount": 117.08,
+    "revCode": "0270"
+   },
+   {
+    "id": "L10",
+    "date": "2026-01-14",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": -2,
+    "unitPrice": 61.27,
+    "amount": -122.54,
+    "code": "J7120",
+    "revCode": "0258"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-02-01",
+  "firstBillDate": "2026-02-08",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 7567.4,
+   "allowed": 4568.17,
+   "planPaid": 2377.94,
+   "deductible": 1926.01,
+   "copay": 0,
+   "coinsurance": 264.22,
+   "patientResponsibility": 2190.23,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2999.23
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1926.01
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 264.22
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-04-23",
+    "kind": "late_fee"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:same-day-admit-discharge",
+  "hn:credit-reversal",
+  "hn:repeat-mod",
+  "hn:eca-late-fee",
+  "variant:credit:negqty"
+ ]
+}

@@ -1,0 +1,308 @@
+{
+ "id": "fc-v1-043",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20601518,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 043",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0101554",
+   "admitDate": "2026-02-02",
+   "dischargeDate": "2026-02-02",
+   "totalCharges": 9291.5,
+   "statementDate": "2026-03-03",
+   "payments": 2529.3,
+   "adjustments": 6762.2,
+   "balanceDue": 0
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-02-02",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 2830.32,
+    "amount": 2830.32,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-02-02",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4908.68,
+    "amount": 4908.68,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2026-02-02",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 98.67,
+    "amount": 98.67,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-02-02",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 45.48,
+    "amount": 45.48,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L13",
+    "date": "2026-02-02",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 45.48,
+    "amount": 45.48,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2026-02-02",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 32.4,
+    "amount": 32.4,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L06",
+    "date": "2026-02-02",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 34.62,
+    "amount": 138.48,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-02-02",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 208.74,
+    "amount": 417.48,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L08",
+    "date": "2026-02-02",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 78.91,
+    "amount": 157.82,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L09",
+    "date": "2026-02-02",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 399.45,
+    "amount": 399.45,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L10",
+    "date": "2026-02-02",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 37.5,
+    "amount": 37.5,
+    "revCode": "0272"
+   },
+   {
+    "id": "L11",
+    "date": "2026-02-02",
+    "description": "IV START KIT",
+    "qty": 2,
+    "unitPrice": 77.63,
+    "amount": 155.26,
+    "revCode": "0270"
+   },
+   {
+    "id": "L12",
+    "date": "2026-02-05",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 24.48,
+    "amount": 24.48,
+    "code": "83735",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-02-14",
+  "firstBillDate": "2026-02-09",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "collections": [
+   {
+    "date": "2026-07-08",
+    "kind": "lawsuit"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L04",
+    "L13"
+   ]
+  },
+  {
+   "ruleId": "DATE-01",
+   "lineIds": [
+    "L12"
+   ]
+  },
+  {
+   "ruleId": "ECA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "DATE-01",
+  "DUP-01",
+  "ECA-01"
+ ],
+ "tags": [
+  "hn:kit-multi",
+  "hn:same-day-admit-discharge",
+  "variant:iv-kit-x2",
+  "plant:DATE-01:added",
+  "plant:DUP-01",
+  "variant:eob-line-level-co",
+  "variant:medicaid-no-eob",
+  "plant:ECA-01:no-notice"
+ ]
+}

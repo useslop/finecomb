@@ -1,0 +1,388 @@
+{
+ "id": "fc-v1-195",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21805206,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 195",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0107178",
+   "totalCharges": 2412.67,
+   "statementDate": "2026-08-11",
+   "payments": 579.52,
+   "adjustments": 1257.84,
+   "balanceDue": 575.31
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-18",
+    "description": "ER VISIT LEVEL 3",
+    "qty": 1,
+    "unitPrice": 817.89,
+    "amount": 817.89,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-18",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 91.11,
+    "amount": 91.11,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-18",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 115.14,
+    "amount": 115.14,
+    "code": "80053",
+    "revCode": "0301",
+    "notReceived": true
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-18",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 26.14,
+    "amount": 26.14,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-18",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 244.18,
+    "amount": 244.18,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-18",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 398.16,
+    "amount": 398.16,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-18",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 24.88,
+    "amount": 149.28,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-18",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 218.91,
+    "amount": 218.91,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-18",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 20.98,
+    "amount": 167.84,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-18",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 105.47,
+    "amount": 105.47,
+    "revCode": "0270"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-18",
+    "description": "DEXAMETHASONE WASTAGE",
+    "qty": 3,
+    "unitPrice": 24.88,
+    "amount": 74.64,
+    "code": "J1100",
+    "revCode": "0636",
+    "modifiers": [
+     "JW"
+    ]
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-18",
+    "description": "IBUPROFEN 600MG TAB",
+    "qty": 1,
+    "unitPrice": 3.91,
+    "amount": 3.91,
+    "revCode": "0250",
+    "ndc": "30539102868"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-07-30",
+  "firstBillDate": "2026-07-25",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 2412.67,
+   "allowed": 1154.32,
+   "planPaid": 579.52,
+   "deductible": 326.43,
+   "copay": 0,
+   "coinsurance": 248.37,
+   "patientResponsibility": 574.8,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 426.58,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 47.52,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 60.05,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 13.63,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 127.35,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 207.66,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 77.86,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 114.17,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 87.54,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 55.01,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 38.93,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2.05,
+     "lineId": "L12"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 326.43
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 248.37
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "30539102868": {
+    "unitPrice": 0.064794,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L03"
+   ]
+  },
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "L12"
+   ]
+  }
+ ],
+ "plants": [
+  "CANC-01",
+  "RX-01"
+ ],
+ "tags": [
+  "hn:eob-under-1",
+  "hn:jw-waste",
+  "variant:jw-wastage",
+  "plant:CANC-01:user-marked",
+  "plant:RX-01",
+  "variant:eob-line-level-co"
+ ]
+}

@@ -1,0 +1,155 @@
+{
+ "id": "fc-v1-297",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22612944,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 297",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0110952",
+   "totalCharges": 2603.81,
+   "statementDate": "2026-05-26",
+   "payments": 44.04,
+   "adjustments": 552.9,
+   "balanceDue": 2006.87
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-05",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 1,
+    "unitPrice": 294.1,
+    "amount": 294.1,
+    "code": "99204"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-05",
+    "description": "STREP TEST RAPID",
+    "qty": 1,
+    "unitPrice": 67.26,
+    "amount": 67.26,
+    "code": "87880"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-05",
+    "description": "STREP TEST RAPID",
+    "qty": 1,
+    "unitPrice": 67.26,
+    "amount": 134.52,
+    "code": "87880"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-05",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 92.36,
+    "amount": 92.36,
+    "code": "85025"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-05",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2082.83,
+    "amount": 2082.83,
+    "code": "74177"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-23",
+    "description": "STREP TEST RAPID",
+    "qty": 1,
+    "unitPrice": 67.26,
+    "amount": -67.26,
+    "code": "87880"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-07-22",
+  "state": "AL",
+  "ppdrFiledDate": "2026-08-03",
+  "collections": [
+   {
+    "date": "2026-08-15",
+    "kind": "credit_report"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87880": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99204": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01",
+  "MATH-01"
+ ],
+ "tags": [
+  "hn:credit-reversal",
+  "variant:credit:posqty",
+  "variant:credit-posted-later",
+  "plant:MATH-01:extra-unit",
+  "plant:PPDR-01"
+ ]
+}

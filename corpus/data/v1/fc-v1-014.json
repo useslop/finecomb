@@ -1,0 +1,436 @@
+{
+ "id": "fc-v1-014",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20371867,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 014",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0100481",
+   "admitDate": "2025-08-15",
+   "dischargeDate": "2025-08-17",
+   "totalCharges": 9481.73,
+   "statementDate": "2025-09-04",
+   "payments": 1862.89,
+   "adjustments": 7615.84,
+   "balanceDue": 3
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-08-15",
+    "description": "MED SURG BED DAILY",
+    "qty": 2,
+    "unitPrice": 3784.14,
+    "amount": 7568.28,
+    "revCode": "0121"
+   },
+   {
+    "id": "L02",
+    "date": "2025-08-15",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 62.4,
+    "amount": 62.4,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-08-15",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 83.08,
+    "amount": 83.08,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-08-16",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 82.13,
+    "amount": 82.13,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2025-08-16",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 68.57,
+    "amount": 68.57,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2025-08-17",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 149.31,
+    "amount": 149.31,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L07",
+    "date": "2025-08-17",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 48.05,
+    "amount": 48.05,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2025-08-17",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 39.23,
+    "amount": 39.23,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L09",
+    "date": "2025-08-15",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 90.83,
+    "amount": 181.66,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2025-08-17",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 21.49,
+    "amount": 150.43,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2025-08-16",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 14.48,
+    "amount": 101.36,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2025-08-15",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 376.4,
+    "amount": 376.4,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L13",
+    "date": "2025-08-15",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 37.37,
+    "amount": 37.37,
+    "revCode": "0270"
+   },
+   {
+    "id": "L14",
+    "date": "2025-08-15",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 106.48,
+    "amount": 106.48,
+    "revCode": "0270"
+   },
+   {
+    "id": "L15",
+    "date": "2025-08-15",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 67.16,
+    "amount": 67.16,
+    "revCode": "0270"
+   },
+   {
+    "id": "L16",
+    "date": "2025-08-16",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 356.62,
+    "amount": 356.62,
+    "revCode": "0424"
+   },
+   {
+    "id": "L17",
+    "date": "2025-08-15",
+    "description": "ONDANSETRON 4MG ODT",
+    "qty": 2,
+    "unitPrice": 1.6,
+    "amount": 3.2,
+    "revCode": "0250",
+    "ndc": "88293486634"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2025-08-30",
+  "firstBillDate": "2025-08-25",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 9481.73,
+   "allowed": 1865.89,
+   "planPaid": 1862.89,
+   "deductible": 0,
+   "copay": 3,
+   "coinsurance": 0,
+   "patientResponsibility": 3,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 6078.93,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 50.12,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 66.73,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 65.97,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 55.08,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 119.93,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 38.59,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 31.51,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 145.91,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 120.83,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 81.41,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 302.33,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 30.02,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 85.53,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 53.94,
+     "lineId": "L15"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 286.44,
+     "lineId": "L16"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2.57,
+     "lineId": "L17"
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 3
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2025-11-27",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "88293486634": {
+    "unitPrice": 0.16724,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:rx-below-10",
+  "hn:kit-multi",
+  "hn:eca-agency-referral",
+  "hn:medicaid-copay",
+  "variant:admission+iv-kit",
+  "variant:eob-line-level-co"
+ ]
+}

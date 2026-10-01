@@ -1,0 +1,323 @@
+{
+ "id": "fc-v1-062",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20751979,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 062",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0102257",
+   "admitDate": "2025-09-08",
+   "dischargeDate": "2025-09-10",
+   "totalCharges": 11095.39,
+   "statementDate": "2025-10-06",
+   "payments": 3050,
+   "adjustments": 6072.8,
+   "balanceDue": 1972.59
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-09-08",
+    "description": "ER VISIT LEVEL 5",
+    "qty": 1,
+    "unitPrice": 4288.44,
+    "amount": 4288.44,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-09-08",
+    "description": "MED SURG BED DAILY",
+    "qty": 2,
+    "unitPrice": 2391.86,
+    "amount": 4783.72,
+    "revCode": "0121"
+   },
+   {
+    "id": "L03",
+    "date": "2025-09-08",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 69.34,
+    "amount": 69.34,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L04",
+    "date": "2025-09-08",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 40.76,
+    "amount": 40.76,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2025-09-09",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 187.73,
+    "amount": 187.73,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2025-09-09",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 6.23,
+    "amount": 49.84,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2025-09-08",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 25.89,
+    "amount": 155.34,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2025-09-10",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 109.51,
+    "amount": 438.04,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2025-09-09",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 63.04,
+    "amount": 126.08,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2025-09-08",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 446.7,
+    "amount": 446.7,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L11",
+    "date": "2025-09-08",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 117.7,
+    "amount": 117.7,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L12",
+    "date": "2025-09-08",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 107.34,
+    "amount": 107.34,
+    "revCode": "0270"
+   },
+   {
+    "id": "L13",
+    "date": "2025-09-08",
+    "description": "IV START KIT",
+    "qty": 2,
+    "unitPrice": 135.95,
+    "amount": 271.9,
+    "revCode": "0270"
+   },
+   {
+    "id": "L14",
+    "date": "2025-09-09",
+    "description": "ONDANSETRON DISCARDED",
+    "qty": 2,
+    "unitPrice": 6.23,
+    "amount": 12.46,
+    "code": "J2405",
+    "revCode": "0636",
+    "modifiers": [
+     "JW"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-09-30",
+  "firstBillDate": "2025-09-17",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 11095.39,
+   "allowed": 5022.59,
+   "planPaid": 2925.65,
+   "deductible": 1365.53,
+   "copay": 0,
+   "coinsurance": 731.41,
+   "patientResponsibility": 2096.94,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 6072.8
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1365.53
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 731.41
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2025-12-26",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:eob-prepaid",
+  "hn:jw-waste",
+  "hn:eca-agency-referral",
+  "hn:kit-multi",
+  "variant:iv-kit-x2",
+  "variant:jw-discarded"
+ ]
+}

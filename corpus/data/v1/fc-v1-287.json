@@ -1,0 +1,97 @@
+{
+ "id": "fc-v1-287",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 22533754,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 287",
+   "providerName": "Sample Pathology Associates",
+   "accountNumber": "TEST-0110582",
+   "totalCharges": 767.55,
+   "statementDate": "2026-06-18",
+   "payments": 54.62,
+   "adjustments": 508.33,
+   "balanceDue": 204.6
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-03",
+    "description": "TISSUE EXAM SURGICAL",
+    "qty": 3,
+    "unitPrice": 255.85,
+    "amount": 767.55,
+    "code": "88305"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": false,
+  "emergency": false,
+  "firstBillDate": "2026-06-28",
+  "state": "OH",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "pathology"
+  ],
+  "eob": {
+   "billed": 767.55,
+   "allowed": 259.22,
+   "planPaid": 54.62,
+   "deductible": 38.33,
+   "copay": 100,
+   "coinsurance": 66.27,
+   "patientResponsibility": 204.6,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 508.33
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 38.33
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 66.27
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 100
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "88305": {
+    "practitioner": {
+     "mue": 6,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 6,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:nsa02-compliant"
+ ]
+}

@@ -1,0 +1,214 @@
+{
+ "id": "fc-v1-197",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21821044,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 197",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0107252",
+   "totalCharges": 2089.58,
+   "statementDate": "2026-09-12",
+   "payments": 594.11,
+   "adjustments": 1494.47,
+   "balanceDue": 1
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-09-02",
+    "description": "ED VISIT LVL 3",
+    "qty": 1,
+    "unitPrice": 1369.41,
+    "amount": 1369.41,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-09-02",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 215.13,
+    "amount": 215.13,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L03",
+    "date": "2026-09-02",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 31.67,
+    "amount": 31.67,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-09-02",
+    "description": "CAPILLARY BLOOD DRAW",
+    "qty": 1,
+    "unitPrice": 16.62,
+    "amount": 16.62,
+    "code": "36416",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-09-02",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 5,
+    "unitPrice": 65.25,
+    "amount": 326.25,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L06",
+    "date": "2026-09-02",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 65.25,
+    "amount": 130.5,
+    "code": "J7120",
+    "revCode": "0258"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-09-15",
+  "firstBillDate": "2026-09-07",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 2089.58,
+   "allowed": 595.11,
+   "planPaid": 594.11,
+   "deductible": 0,
+   "copay": 1,
+   "coinsurance": 0,
+   "patientResponsibility": 1,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1494.47
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 1
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "36416": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "36415",
+    "col2": "36416",
+    "mi": 9,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L05",
+    "L06"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L05",
+    "L06"
+   ]
+  }
+ ],
+ "plants": [
+  "DUP-01",
+  "MUE-01"
+ ],
+ "tags": [
+  "hn:medicaid-copay",
+  "hn:ncci-mi9",
+  "plant:DUP-01",
+  "plant:MUE-01"
+ ]
+}

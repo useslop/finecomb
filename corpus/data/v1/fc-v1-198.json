@@ -1,0 +1,471 @@
+{
+ "id": "fc-v1-198",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21828963,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 198",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0107289",
+   "totalCharges": 12319.35,
+   "statementDate": "2025-12-29",
+   "payments": 4664.62,
+   "adjustments": 4805.01,
+   "balanceDue": 2849.72
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-11-26",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 1,
+    "unitPrice": 2917.39,
+    "amount": 2917.39,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-11-26",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 65.59,
+    "amount": 65.59,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L03",
+    "date": "2025-11-26",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 15.86,
+    "amount": 15.86,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2025-11-26",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 369.08,
+    "amount": 369.08,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L05",
+    "date": "2025-11-26",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 369.08,
+    "amount": 369.08,
+    "code": "93005",
+    "revCode": "0730",
+    "modifiers": [
+     "76"
+    ]
+   },
+   {
+    "id": "L06",
+    "date": "2025-11-26",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 3395.33,
+    "amount": 3395.33,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L07",
+    "date": "2025-11-26",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 485.2,
+    "amount": 485.2,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2025-11-26",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 345.01,
+    "amount": 345.01,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "59"
+    ]
+   },
+   {
+    "id": "L09",
+    "date": "2025-11-26",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 55.83,
+    "amount": 111.66,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2025-11-26",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 206.05,
+    "amount": 412.1,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L11",
+    "date": "2025-11-26",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 95.9,
+    "amount": 95.9,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L12",
+    "date": "2025-11-26",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 19,
+    "unitPrice": 115.98,
+    "amount": 2203.62,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2025-11-27",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 17,
+    "unitPrice": 68.96,
+    "amount": 1172.32,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L14",
+    "date": "2025-11-27",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 226.81,
+    "amount": 226.81,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L15",
+    "date": "2025-11-27",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 134.4,
+    "amount": 134.4,
+    "code": "85025",
+    "revCode": "0305"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2025-12-03",
+  "firstBillDate": "2025-12-05",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 12319.35,
+   "allowed": 7513.44,
+   "planPaid": 4664.62,
+   "deductible": 1651.41,
+   "copay": 25,
+   "coinsurance": 1172.41,
+   "patientResponsibility": 2848.82,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1138.11,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 25.59,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 6.19,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 143.98,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 143.98,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1324.56,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 189.28,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 134.59,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 43.56,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 160.76,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 37.41,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 859.66,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 457.33,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 88.48,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 52.43,
+     "lineId": "L15"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1651.41
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1172.41
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 25
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-01-07",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:eca-agency-referral",
+  "hn:eob-under-1",
+  "hn:ncci-mi1-59",
+  "hn:repeat-mod",
+  "variant:ekg-76",
+  "variant:eob-line-level-co"
+ ]
+}

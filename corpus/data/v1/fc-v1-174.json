@@ -1,0 +1,350 @@
+{
+ "id": "fc-v1-174",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21638907,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 174",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0106401",
+   "totalCharges": 4153.06,
+   "statementDate": "2026-02-07",
+   "payments": 743.15,
+   "adjustments": 2864.74,
+   "balanceDue": 545.17
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-01-14",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 2157.5,
+    "amount": 2157.5,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-01-14",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 142.86,
+    "amount": 142.86,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-01-14",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 53.39,
+    "amount": 53.39,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-01-14",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 286.8,
+    "amount": 286.8,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L05",
+    "date": "2026-01-14",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 636.1,
+    "amount": 636.1,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L06",
+    "date": "2026-01-14",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 385.42,
+    "amount": 385.42,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "XU"
+    ]
+   },
+   {
+    "id": "L07",
+    "date": "2026-01-14",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 11.05,
+    "amount": 66.3,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-01-14",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 10,
+    "unitPrice": 23.45,
+    "amount": 234.5,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-01-14",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 78.52,
+    "amount": 157.04,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-01-14",
+    "description": "ONDANSETRON WASTAGE",
+    "qty": 3,
+    "unitPrice": 11.05,
+    "amount": 33.15,
+    "code": "J2405",
+    "revCode": "0636",
+    "modifiers": [
+     "JW"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-01-23",
+  "firstBillDate": "2026-02-03",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 4153.06,
+   "allowed": 1288.32,
+   "planPaid": 717.71,
+   "deductible": 263.02,
+   "copay": 0,
+   "coinsurance": 307.59,
+   "patientResponsibility": 570.61,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1488.22,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 98.54,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 36.83,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 197.83,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 438.77,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 265.86,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 45.73,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 161.76,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 108.32,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 22.88,
+     "lineId": "L10"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 263.02
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 307.59
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-05-07",
+    "kind": "credit_report"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:eob-prepaid",
+  "hn:eca-forprofit",
+  "hn:jw-waste",
+  "hn:ncci-mi1-59",
+  "variant:jw-wastage",
+  "variant:eob-line-level-co"
+ ]
+}

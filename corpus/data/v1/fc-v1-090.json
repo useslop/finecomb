@@ -1,0 +1,429 @@
+{
+ "id": "fc-v1-090",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20973711,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 090",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0103293",
+   "admitDate": "2024-12-29",
+   "dischargeDate": "2024-12-31",
+   "totalCharges": 27648.87,
+   "statementDate": "2025-01-23",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 27648.87
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2024-12-29",
+    "description": "ER VISIT LEVEL 3",
+    "qty": 1,
+    "unitPrice": 1883.71,
+    "amount": 1883.71,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2024-12-29",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4304.31,
+    "amount": 4304.31,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2024-12-30",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4304.31,
+    "amount": 4304.31,
+    "revCode": "0110"
+   },
+   {
+    "id": "L04",
+    "date": "2024-12-30",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 4444.15,
+    "amount": 4444.15,
+    "revCode": "0360"
+   },
+   {
+    "id": "L05",
+    "date": "2024-12-30",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 3,
+    "unitPrice": 862.71,
+    "amount": 2588.13,
+    "revCode": "0360"
+   },
+   {
+    "id": "L06",
+    "date": "2024-12-30",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2037.73,
+    "amount": 2037.73,
+    "revCode": "0710"
+   },
+   {
+    "id": "L07",
+    "date": "2024-12-30",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2492.93,
+    "amount": 2492.93,
+    "revCode": "0370"
+   },
+   {
+    "id": "L08",
+    "date": "2024-12-30",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1377.88,
+    "amount": 1377.88,
+    "revCode": "0272"
+   },
+   {
+    "id": "L09",
+    "date": "2024-12-29",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 97.63,
+    "amount": 97.63,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2024-12-29",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 24.52,
+    "amount": 49.04,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L11",
+    "date": "2024-12-30",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 39.84,
+    "amount": 39.84,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2024-12-30",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 144.51,
+    "amount": 144.51,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2024-12-30",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 91.59,
+    "amount": 91.59,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2024-12-29",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 91.49,
+    "amount": 182.98,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2024-12-30",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 7,
+    "unitPrice": 81.44,
+    "amount": 570.08,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2024-12-31",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 32.6,
+    "amount": 130.4,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L17",
+    "date": "2024-12-31",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 12.93,
+    "amount": 12.93,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L18",
+    "date": "2024-12-29",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 38.45,
+    "amount": 76.9,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L19",
+    "date": "2024-12-31",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 10,
+    "unitPrice": 9.36,
+    "amount": 93.6,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L20",
+    "date": "2024-12-29",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 24.34,
+    "amount": 170.38,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L21",
+    "date": "2024-12-29",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 2329.58,
+    "amount": 2329.58,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L22",
+    "date": "2024-12-29",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 168.21,
+    "amount": 168.21,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L23",
+    "date": "2024-12-29",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 44.7,
+    "amount": 44.7,
+    "revCode": "0270"
+   },
+   {
+    "id": "L24",
+    "date": "2024-12-29",
+    "description": "CEPHALEXIN 500MG CAP",
+    "qty": 3,
+    "unitPrice": 4.45,
+    "amount": 13.35,
+    "revCode": "0250",
+    "ndc": "35611810523"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-01-18",
+  "firstBillDate": "2025-01-11",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Example Marketplace Plan",
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 500
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "35611810523": {
+    "unitPrice": 0.065778,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L10"
+   ]
+  },
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "L24"
+   ]
+  },
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MATH-01",
+  "RX-01",
+  "INS-01"
+ ],
+ "tags": [
+  "hn:cr-legit",
+  "hn:repeat-mod",
+  "plant:MATH-01:extra-unit",
+  "plant:RX-01"
+ ]
+}

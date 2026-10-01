@@ -1,0 +1,268 @@
+{
+ "id": "fc-v1-162",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21543879,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 162",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0105957",
+   "totalCharges": 5144.1,
+   "statementDate": "2026-09-14",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 5144.1
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-22",
+    "description": "ED VISIT LVL 5",
+    "qty": 1,
+    "unitPrice": 4331.78,
+    "amount": 4331.78,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-22",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 70.55,
+    "amount": 70.55,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-22",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 105.66,
+    "amount": 105.66,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-08-22",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 105.66,
+    "amount": 105.66,
+    "code": "84484",
+    "revCode": "0301",
+    "modifiers": [
+     "91"
+    ]
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-22",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 30.8,
+    "amount": 30.8,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-22",
+    "description": "LIPASE LEVEL",
+    "qty": 4,
+    "unitPrice": 37.65,
+    "amount": 150.6,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-08-22",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 36.94,
+    "amount": 36.94,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L08",
+    "date": "2026-08-22",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 10,
+    "unitPrice": 7.57,
+    "amount": 75.7,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-08-22",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 6,
+    "unitPrice": 25.83,
+    "amount": 154.98,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-08-22",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 81.43,
+    "amount": 81.43,
+    "code": "J7120",
+    "revCode": "0258"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-08-30",
+  "firstBillDate": "2026-09-07",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "onCreditReport": false,
+  "paidInFull": true,
+  "originalBalance": 2461.92
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MUE-01",
+  "INS-01"
+ ],
+ "tags": [
+  "hn:cr-not-reported",
+  "hn:repeat-mod",
+  "variant:troponin-91",
+  "plant:MUE-01"
+ ]
+}

@@ -1,0 +1,155 @@
+{
+ "id": "fc-v1-290",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22557511,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 290",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0110693",
+   "totalCharges": 684.4,
+   "statementDate": "2026-07-15",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 684.4
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-14",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 339.83,
+    "amount": 339.83,
+    "code": "99214"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-14",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 46.95,
+    "amount": 46.95,
+    "code": "85025"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-14",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 55.45,
+    "amount": 55.45,
+    "code": "81003"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-14",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 20.97,
+    "amount": 20.97,
+    "code": "36415"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-14",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 110.6,
+    "amount": 110.6,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-14",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 110.6,
+    "amount": 110.6,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "firstBillDate": "2026-06-21",
+  "state": "AL",
+  "insurerName": "Example Marketplace Plan"
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "variant:bilateral-same-price"
+ ]
+}

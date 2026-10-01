@@ -1,0 +1,110 @@
+{
+ "id": "fc-v1-226",
+ "kind": "professional",
+ "sub": "air",
+ "seed": 22050695,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 226",
+   "providerName": "Example Air Medical Transport",
+   "accountNumber": "TEST-0108325",
+   "totalCharges": 53160.14,
+   "statementDate": "2026-07-02",
+   "payments": 17778.69,
+   "adjustments": 27083.79,
+   "balanceDue": 8297.66
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-21",
+    "description": "ROTOR AIR TRANSPORT BASE",
+    "qty": 1,
+    "unitPrice": 42096.68,
+    "amount": 42096.68,
+    "code": "A0431"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-21",
+    "description": "ROTOR AIR MILES",
+    "qty": 23,
+    "unitPrice": 481.02,
+    "amount": 11063.46,
+    "code": "A0436"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "airAmbulance": true,
+  "emergency": true,
+  "firstBillDate": "2026-06-30",
+  "state": "KS",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 53160.14,
+   "allowed": 26076.35,
+   "planPaid": 17778.69,
+   "deductible": 321.08,
+   "copay": 250,
+   "coinsurance": 7726.58,
+   "patientResponsibility": 8297.66,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 27083.79
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 321.08
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 7726.58
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 250
+    }
+   ]
+  },
+  "onCreditReport": false,
+  "paidInFull": false,
+  "originalBalance": 2107.81
+ },
+ "data": {
+  "mue": {
+   "A0431": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "A0436": {
+    "practitioner": {
+     "mue": 250,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:nsa-compliant",
+  "hn:cr-not-reported"
+ ]
+}

@@ -1,0 +1,478 @@
+{
+ "id": "fc-v1-017",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20395624,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 017",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0100592",
+   "admitDate": "2026-04-21",
+   "dischargeDate": "2026-04-25",
+   "totalCharges": 46500.07,
+   "statementDate": "2026-06-03",
+   "payments": 17808.92,
+   "adjustments": 23380.72,
+   "balanceDue": 5310.43
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-21",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 2421.44,
+    "amount": 2421.44,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-21",
+    "description": "MED SURG BED DAILY",
+    "qty": 4,
+    "unitPrice": 3355.72,
+    "amount": 13422.88,
+    "revCode": "0121"
+   },
+   {
+    "id": "L28",
+    "date": "2026-04-25",
+    "description": "MED SURG BED DAILY",
+    "qty": 4,
+    "unitPrice": 3355.72,
+    "amount": 13422.88,
+    "revCode": "0121"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-21",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 3455.41,
+    "amount": 3455.41,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-21",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 8,
+    "unitPrice": 991.16,
+    "amount": 7929.28,
+    "revCode": "0360"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-21",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1282.92,
+    "amount": 1282.92,
+    "revCode": "0710"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-21",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1458.06,
+    "amount": 1458.06,
+    "revCode": "0370"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-21",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 745.37,
+    "amount": 745.37,
+    "revCode": "0272"
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-21",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 192.47,
+    "amount": 192.47,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-21",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 199.98,
+    "amount": 199.98,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L10",
+    "date": "2026-04-22",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 36.81,
+    "amount": 36.81,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2026-04-22",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 87.98,
+    "amount": 87.98,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-04-23",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 101.19,
+    "amount": 101.19,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2026-04-23",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 81.22,
+    "amount": 81.22,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2026-04-23",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 155.06,
+    "amount": 155.06,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L15",
+    "date": "2026-04-24",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 75.95,
+    "amount": 75.95,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L16",
+    "date": "2026-04-25",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 162.92,
+    "amount": 162.92,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L17",
+    "date": "2026-04-21",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 3.79,
+    "amount": 15.16,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L18",
+    "date": "2026-04-22",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 13.69,
+    "amount": 109.52,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L19",
+    "date": "2026-04-21",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 6.6,
+    "amount": 52.8,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L20",
+    "date": "2026-04-21",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 157.57,
+    "amount": 157.57,
+    "revCode": "0270"
+   },
+   {
+    "id": "L21",
+    "date": "2026-04-21",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 159.8,
+    "amount": 159.8,
+    "revCode": "0272"
+   },
+   {
+    "id": "L27",
+    "date": "2026-04-21",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 159.8,
+    "amount": 159.8,
+    "revCode": "0272"
+   },
+   {
+    "id": "L22",
+    "date": "2026-04-21",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 6,
+    "unitPrice": 28.22,
+    "amount": 169.32,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L23",
+    "date": "2026-04-22",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 6,
+    "unitPrice": 28.52,
+    "amount": 171.12,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L24",
+    "date": "2026-04-23",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 4,
+    "unitPrice": 28.8,
+    "amount": 115.2,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L25",
+    "date": "2026-04-24",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 4,
+    "unitPrice": 24.45,
+    "amount": 97.8,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L26",
+    "date": "2026-04-25",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 4,
+    "unitPrice": 15.04,
+    "amount": 60.16,
+    "code": "82962",
+    "revCode": "0300"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-05-03",
+  "firstBillDate": "2026-05-14",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 46500.07,
+   "allowed": 23119.35,
+   "planPaid": 17908.75,
+   "deductible": 733.41,
+   "copay": 0,
+   "coinsurance": 4477.19,
+   "patientResponsibility": 5210.6,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 23380.72
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 733.41
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 4477.19
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "82962": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L21",
+    "L27"
+   ]
+  },
+  {
+   "ruleId": "RB-01",
+   "lineIds": [
+    "L02",
+    "L28"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "DUP-01",
+  "EOB-01",
+  "RB-01"
+ ],
+ "tags": [
+  "hn:mue-inpatient",
+  "plant:DUP-01",
+  "plant:RB-01:discharge-day-line",
+  "plant:EOB-01:unposted-payment"
+ ]
+}

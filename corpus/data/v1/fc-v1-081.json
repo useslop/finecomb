@@ -1,0 +1,404 @@
+{
+ "id": "fc-v1-081",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20902440,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 081",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0102960",
+   "admitDate": "2025-06-27",
+   "dischargeDate": "2025-06-29",
+   "totalCharges": 19665.26,
+   "statementDate": "2025-08-01",
+   "payments": 6806.3,
+   "adjustments": 0,
+   "balanceDue": 12858.96
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-06-27",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 2,
+    "unitPrice": 2371.76,
+    "amount": 4743.52,
+    "revCode": "0120"
+   },
+   {
+    "id": "L02",
+    "date": "2025-06-28",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 5569.21,
+    "amount": 5569.21,
+    "revCode": "0360"
+   },
+   {
+    "id": "L03",
+    "date": "2025-06-28",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 3,
+    "unitPrice": 845.55,
+    "amount": 2536.65,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2025-06-28",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2131.52,
+    "amount": 2131.52,
+    "revCode": "0710"
+   },
+   {
+    "id": "L05",
+    "date": "2025-06-28",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1361.19,
+    "amount": 1361.19,
+    "revCode": "0370"
+   },
+   {
+    "id": "L06",
+    "date": "2025-06-28",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 465.72,
+    "amount": 465.72,
+    "revCode": "0272"
+   },
+   {
+    "id": "L07",
+    "date": "2025-06-27",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 52.92,
+    "amount": 52.92,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L08",
+    "date": "2025-06-27",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 68.27,
+    "amount": 68.27,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2025-06-28",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 95.66,
+    "amount": 95.66,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2025-06-28",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 105.02,
+    "amount": 105.02,
+    "code": "80053",
+    "revCode": "0301",
+    "notReceived": true
+   },
+   {
+    "id": "L11",
+    "date": "2025-06-29",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 103.05,
+    "amount": 412.2,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2025-06-28",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 8,
+    "unitPrice": 27.9,
+    "amount": 223.2,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2025-06-27",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 13.02,
+    "amount": 78.12,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2025-06-29",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 23.58,
+    "amount": 117.9,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2025-06-29",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 50.15,
+    "amount": 50.15,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2025-06-28",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 73.07,
+    "amount": 73.07,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L17",
+    "date": "2025-06-29",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 27.67,
+    "amount": 27.67,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L18",
+    "date": "2025-06-28",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 30.05,
+    "amount": 30.05,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L19",
+    "date": "2025-06-27",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 66.1,
+    "amount": 66.1,
+    "revCode": "0270"
+   },
+   {
+    "id": "L20",
+    "date": "2025-06-27",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 119.91,
+    "amount": 119.91,
+    "revCode": "0270"
+   },
+   {
+    "id": "L21",
+    "date": "2025-06-27",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 2,
+    "unitPrice": 890.09,
+    "amount": 1780.18,
+    "revCode": "0731"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2025-07-05",
+  "firstBillDate": "2025-07-15",
+  "state": "AZ",
+  "hospitalCcn": "990104",
+  "insurerName": "Medicare",
+  "eob": {
+   "billed": 20108.23,
+   "allowed": 8942.32,
+   "planPaid": 6806.3,
+   "deductible": 371.94,
+   "copay": 50,
+   "coinsurance": 1714.08,
+   "patientResponsibility": 2136.02,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 11165.91
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 371.94
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1714.08
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 7435.52
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L10"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02",
+  "CANC-01",
+  "MATH-02"
+ ],
+ "tags": [
+  "hn:cr-legit",
+  "hn:telemetry-monitor",
+  "plant:CANC-01:user-marked",
+  "plant:EOB-02:co-billed",
+  "plant:MATH-02:total-off"
+ ]
+}

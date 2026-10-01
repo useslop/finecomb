@@ -1,0 +1,146 @@
+{
+ "id": "fc-v1-221",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 22011100,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 221",
+   "providerName": "Sample Family Clinic",
+   "accountNumber": "TEST-0108140",
+   "totalCharges": 747.84,
+   "statementDate": "2026-06-27",
+   "payments": 111.89,
+   "adjustments": 354.41,
+   "balanceDue": 281.54
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-10",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 322.56,
+    "amount": 322.56,
+    "code": "99214",
+    "modifiers": [
+     "25"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-10",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 195.74,
+    "amount": 391.48,
+    "code": "20610"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-10",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 4,
+    "unitPrice": 8.45,
+    "amount": 33.8,
+    "code": "J3301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "firstBillDate": "2026-06-27",
+  "state": "AZ",
+  "insurerName": "Example Benefit Trust",
+  "eob": {
+   "billed": 747.84,
+   "allowed": 393.43,
+   "planPaid": 223.78,
+   "deductible": 73.75,
+   "copay": 0,
+   "coinsurance": 95.9,
+   "patientResponsibility": 169.65,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 354.41
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 73.75
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 95.9
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "20610",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L02"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MATH-01",
+  "EOB-01"
+ ],
+ "tags": [
+  "hn:ncci-mod25",
+  "plant:MATH-01:extra-unit",
+  "plant:EOB-01:unposted-payment"
+ ]
+}

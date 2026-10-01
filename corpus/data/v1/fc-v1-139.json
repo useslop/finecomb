@@ -1,0 +1,332 @@
+{
+ "id": "fc-v1-139",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21361742,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 139",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0105106",
+   "admitDate": "2026-05-11",
+   "dischargeDate": "2026-05-11",
+   "totalCharges": 5028.25,
+   "statementDate": "2026-06-09",
+   "payments": 1467.12,
+   "adjustments": 0,
+   "balanceDue": 3561.13
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-11",
+    "description": "ED VISIT LVL 5",
+    "qty": 1,
+    "unitPrice": 3398.97,
+    "amount": 3398.97,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-11",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 62.49,
+    "amount": 62.49,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-11",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 56.78,
+    "amount": 56.78,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-11",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 2,
+    "unitPrice": 145.33,
+    "amount": 290.66,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-11",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 254.51,
+    "amount": 254.51,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-11",
+    "description": "IV PUSH EACH ADDL DRUG",
+    "qty": 1,
+    "unitPrice": 258.64,
+    "amount": 258.64,
+    "code": "96375",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-11",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 7,
+    "unitPrice": 37.51,
+    "amount": 262.57,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-11",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 29.92,
+    "amount": 59.84,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-05-11",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 25.05,
+    "amount": 100.2,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-05-11",
+    "description": "ONDANSETRON WASTAGE",
+    "qty": 1,
+    "unitPrice": 25.05,
+    "amount": 25.05,
+    "code": "J2405",
+    "revCode": "0636",
+    "modifiers": [
+     "JW"
+    ]
+   },
+   {
+    "id": "L11",
+    "date": "2026-05-11",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 258.54,
+    "amount": 258.54,
+    "code": "96360",
+    "revCode": "0260"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "emergency": true,
+  "admitted": false,
+  "firstPostDischargeStatementDate": "2026-05-16",
+  "firstBillDate": "2026-05-30",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 5028.25,
+   "allowed": 1913.18,
+   "planPaid": 1467.12,
+   "deductible": 283.05,
+   "copay": 0,
+   "coinsurance": 163.01,
+   "patientResponsibility": 446.06,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 3115.07
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 283.05
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 163.01
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96375": {
+    "practitioner": {
+     "mue": 6,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 6,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L07"
+   ]
+  },
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L05",
+    "L11"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MUE-01",
+  "NCCI-01",
+  "NSA-01"
+ ],
+ "tags": [
+  "hn:mue-setting",
+  "hn:jw-waste",
+  "variant:jw-wastage",
+  "plant:MUE-01",
+  "plant:NCCI-01:mi1-no-modifier"
+ ]
+}

@@ -1,0 +1,417 @@
+{
+ "id": "fc-v1-067",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20791574,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 067",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0102442",
+   "admitDate": "2026-08-16",
+   "dischargeDate": "2026-08-20",
+   "totalCharges": 20733.34,
+   "statementDate": "2026-09-29",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 20733.34
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-16",
+    "description": "ER VISIT LEVEL 3",
+    "qty": 1,
+    "unitPrice": 880.64,
+    "amount": 880.64,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-16",
+    "description": "MED SURG BED DAILY",
+    "qty": 4,
+    "unitPrice": 4166.79,
+    "amount": 16667.16,
+    "revCode": "0121"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-16",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 134.77,
+    "amount": 134.77,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-16",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 96.9,
+    "amount": 96.9,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-16",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 55.69,
+    "amount": 55.69,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-08-17",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 185.86,
+    "amount": 185.86,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-08-17",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 52.15,
+    "amount": 52.15,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L08",
+    "date": "2026-08-18",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 85.5,
+    "amount": 85.5,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-08-19",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 156.96,
+    "amount": 156.96,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2026-08-19",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 42.73,
+    "amount": 42.73,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L11",
+    "date": "2026-08-20",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 26.95,
+    "amount": 26.95,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L12",
+    "date": "2026-08-20",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 195.61,
+    "amount": 195.61,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2026-08-20",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 105.02,
+    "amount": 105.02,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2026-08-18",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 53.91,
+    "amount": 215.64,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2026-08-19",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 12.56,
+    "amount": 87.92,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2026-08-17",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 26.24,
+    "amount": 26.24,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L17",
+    "date": "2026-08-20",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 64.55,
+    "amount": 129.1,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L18",
+    "date": "2026-08-18",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 28.28,
+    "amount": 56.56,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L19",
+    "date": "2026-08-19",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 31.83,
+    "amount": 63.66,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L20",
+    "date": "2026-08-16",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 45.46,
+    "amount": 45.46,
+    "revCode": "0270"
+   },
+   {
+    "id": "L21",
+    "date": "2026-08-16",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 30.38,
+    "amount": 30.38,
+    "revCode": "0270"
+   },
+   {
+    "id": "L22",
+    "date": "2026-08-16",
+    "description": "OXYGEN PER DAY",
+    "qty": 4,
+    "unitPrice": 195.74,
+    "amount": 782.96,
+    "revCode": "0412"
+   },
+   {
+    "id": "L23",
+    "date": "2026-08-17",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 609.48,
+    "amount": 609.48,
+    "revCode": "0424"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-09-01",
+  "firstBillDate": "2026-09-12",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 2276.91
+ },
+ "data": {
+  "mue": {
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "CR-01",
+  "INS-01"
+ ],
+ "tags": [
+  "hn:repeat-mod",
+  "plant:CR-01:recent"
+ ]
+}

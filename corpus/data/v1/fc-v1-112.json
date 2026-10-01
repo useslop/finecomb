@@ -1,0 +1,427 @@
+{
+ "id": "fc-v1-112",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21147929,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 112",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0104107",
+   "totalCharges": 12127.55,
+   "statementDate": "2026-04-29",
+   "payments": 1424.94,
+   "adjustments": 8372.87,
+   "balanceDue": 2329.74
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-25",
+    "description": "ED VISIT LVL 5",
+    "qty": 1,
+    "unitPrice": 4223.01,
+    "amount": 4223.01,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-25",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 43.22,
+    "amount": 43.22,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-25",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 83.05,
+    "amount": 83.05,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-25",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 102.73,
+    "amount": 102.73,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-25",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 233.89,
+    "amount": 233.89,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-25",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 33.61,
+    "amount": 33.61,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-03-25",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 408.98,
+    "amount": 408.98,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L08",
+    "date": "2026-03-25",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 621.72,
+    "amount": 621.72,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2026-03-25",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 305.31,
+    "amount": 305.31,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "XU"
+    ]
+   },
+   {
+    "id": "L10",
+    "date": "2026-03-25",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 81.61,
+    "amount": 408.05,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-03-25",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 6,
+    "unitPrice": 222.96,
+    "amount": 1337.76,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L12",
+    "date": "2026-03-25",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 22.91,
+    "amount": 22.91,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-03-25",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 66.76,
+    "amount": 66.76,
+    "revCode": "0270"
+   },
+   {
+    "id": "L14",
+    "date": "2026-03-25",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 19,
+    "unitPrice": 146.97,
+    "amount": 2792.43,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L15",
+    "date": "2026-03-26",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 10,
+    "unitPrice": 121.08,
+    "amount": 1210.8,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L16",
+    "date": "2026-03-26",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 119.7,
+    "amount": 119.7,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L17",
+    "date": "2026-03-26",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 113.62,
+    "amount": 113.62,
+    "code": "87040",
+    "revCode": "0306"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-04-12",
+  "firstBillDate": "2026-04-14",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 12127.55,
+   "allowed": 3754.68,
+   "planPaid": 1424.94,
+   "deductible": 1683.33,
+   "copay": 25,
+   "coinsurance": 621.41,
+   "patientResponsibility": 2329.74,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 8372.87
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1683.33
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 621.41
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 25
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   },
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L11"
+   ]
+  }
+ ],
+ "plants": [
+  "MUE-01"
+ ],
+ "tags": [
+  "hn:ncci-mi1-59",
+  "plant:MUE-01"
+ ]
+}

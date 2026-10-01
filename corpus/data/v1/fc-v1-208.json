@@ -1,0 +1,129 @@
+{
+ "id": "fc-v1-208",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 21908153,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 208",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0107659",
+   "totalCharges": 771.58,
+   "statementDate": "2026-06-06",
+   "payments": 208.34,
+   "adjustments": 0,
+   "balanceDue": 563.24
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-21",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 308.2,
+    "amount": 308.2,
+    "code": "20610",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-21",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 154.1,
+    "amount": 154.1,
+    "code": "20610",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-21",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 4,
+    "unitPrice": 38.66,
+    "amount": 154.64,
+    "code": "J3301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-21",
+    "description": "TRIAMCINOLONE INJ PER 10MG ADDL",
+    "qty": 4,
+    "unitPrice": 38.66,
+    "amount": 154.64,
+    "code": "J3301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "firstBillDate": "2026-06-15",
+  "state": "GA",
+  "insurerName": "State Medicaid"
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L03",
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L03",
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01",
+  "DUP-02"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "variant:bilateral-discounted",
+  "plant:DUP-02:desc",
+  "plant:MCD-01:no-eob",
+  "variant:medicaid-no-eob"
+ ]
+}

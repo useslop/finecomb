@@ -1,0 +1,196 @@
+{
+ "id": "fc-v1-245",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22201156,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 245",
+   "providerName": "Sample Family Clinic",
+   "accountNumber": "TEST-0109028",
+   "totalCharges": 2853.09,
+   "statementDate": "2025-07-28",
+   "payments": 0,
+   "adjustments": 650.11,
+   "balanceDue": 2202.98
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-06-21",
+    "description": "OFFICE VISIT NEW LEVEL 3",
+    "qty": 1,
+    "unitPrice": 350.59,
+    "amount": 350.59,
+    "code": "99203",
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L02",
+    "date": "2025-06-21",
+    "description": "FLU TEST RAPID",
+    "qty": 1,
+    "unitPrice": 85.05,
+    "amount": 85.05,
+    "code": "87804",
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L03",
+    "date": "2025-06-21",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 94.52,
+    "amount": 94.52,
+    "code": "85025",
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L04",
+    "date": "2025-06-21",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 55.6,
+    "amount": 55.6,
+    "code": "36415",
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L05",
+    "date": "2025-06-21",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 274.13,
+    "amount": 274.13,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ],
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L06",
+    "date": "2025-06-21",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 274.13,
+    "amount": 274.13,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ],
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L07",
+    "date": "2025-06-21",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402",
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L08",
+    "date": "2025-06-21",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 1619.07,
+    "amount": 1619.07,
+    "code": "74177",
+    "provider": "Sample Family Clinic"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-07-02",
+  "state": "AZ",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Sample Family Clinic",
+    "total": 2472.45
+   }
+  ],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 2639.49
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87804": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99203": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-399",
+  "hn:cr-legit",
+  "hn:bilateral",
+  "hn:rounding",
+  "variant:bilateral-same-price"
+ ]
+}

@@ -1,0 +1,273 @@
+{
+ "id": "fc-v1-171",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21615150,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 171",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0106290",
+   "totalCharges": 2994.68,
+   "statementDate": "2026-07-19",
+   "payments": 697.93,
+   "adjustments": 2295.75,
+   "balanceDue": 1
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-13",
+    "description": "ER VISIT LEVEL 3",
+    "qty": 1,
+    "unitPrice": 1815.26,
+    "amount": 1815.26,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-13",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 102.84,
+    "amount": 102.84,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-13",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 15.37,
+    "amount": 15.37,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-13",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 290.14,
+    "amount": 290.14,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-13",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 219,
+    "amount": 219,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-13",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 43.58,
+    "amount": 87.16,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-06-13",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 108.08,
+    "amount": 216.16,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-06-13",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 68.76,
+    "amount": 137.52,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-06-13",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 107.99,
+    "amount": 107.99,
+    "revCode": "0270"
+   },
+   {
+    "id": "L10",
+    "date": "2026-06-13",
+    "description": "OXYCODONE 5MG TAB",
+    "qty": 3,
+    "unitPrice": 1.08,
+    "amount": 3.24,
+    "revCode": "0250",
+    "ndc": "10211641842"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-06-27",
+  "firstBillDate": "2026-06-18",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 2994.68,
+   "allowed": 698.93,
+   "planPaid": 697.93,
+   "deductible": 0,
+   "copay": 1,
+   "coinsurance": 0,
+   "patientResponsibility": 1,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2295.75
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 1
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 4062.85
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "10211641842": {
+    "unitPrice": 0.139895,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "CR-01"
+ ],
+ "tags": [
+  "hn:medicaid-copay",
+  "hn:rx-below-10",
+  "plant:CR-01:recent"
+ ]
+}

@@ -1,0 +1,181 @@
+{
+ "id": "fc-v1-234",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 22114047,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 234",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0108621",
+   "totalCharges": 3650.61,
+   "statementDate": "2026-09-17",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 3650.61
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-09-06",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 286.34,
+    "amount": 286.34,
+    "code": "99214",
+    "provider": "Sample Orthopedic Clinic"
+   },
+   {
+    "id": "L02",
+    "date": "2026-09-06",
+    "description": "FLU TEST RAPID",
+    "qty": 1,
+    "unitPrice": 43.34,
+    "amount": 43.34,
+    "code": "87804",
+    "provider": "Sample Orthopedic Clinic"
+   },
+   {
+    "id": "L03",
+    "date": "2026-09-06",
+    "description": "INJECTION IM OR SUBQ",
+    "qty": 1,
+    "unitPrice": 64.94,
+    "amount": 64.94,
+    "code": "96372",
+    "provider": "Sample Orthopedic Clinic"
+   },
+   {
+    "id": "L04",
+    "date": "2026-09-06",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 52.11,
+    "amount": 52.11,
+    "code": "J1030",
+    "provider": "Sample Orthopedic Clinic"
+   },
+   {
+    "id": "L05",
+    "date": "2026-09-06",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 197.48,
+    "amount": 197.48,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ],
+    "provider": "Sample Orthopedic Clinic"
+   },
+   {
+    "id": "L06",
+    "date": "2026-09-06",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 197.48,
+    "amount": 197.48,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ],
+    "provider": "Sample Orthopedic Clinic"
+   },
+   {
+    "id": "L07",
+    "date": "2026-09-06",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2808.92,
+    "amount": 2808.92,
+    "code": "74177",
+    "provider": "Sample Orthopedic Clinic"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-09-15",
+  "state": "KS",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Sample Orthopedic Clinic",
+    "total": 3269.52
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "87804": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96372": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-399",
+  "hn:bilateral",
+  "variant:bilateral-same-price"
+ ]
+}

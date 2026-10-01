@@ -1,0 +1,349 @@
+{
+ "id": "fc-v1-053",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20680708,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 053",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0101924",
+   "admitDate": "2026-07-02",
+   "dischargeDate": "2026-07-07",
+   "totalCharges": 16468.2,
+   "statementDate": "2026-08-04",
+   "payments": 4357.53,
+   "adjustments": 9364.8,
+   "balanceDue": 2745.87
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-02",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2467.38,
+    "amount": 2467.38,
+    "revCode": "0120"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-03",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2467.38,
+    "amount": 2467.38,
+    "revCode": "0120"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-04",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2467.38,
+    "amount": 2467.38,
+    "revCode": "0120"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-05",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2467.38,
+    "amount": 2467.38,
+    "revCode": "0120"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-06",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2467.38,
+    "amount": 2467.38,
+    "revCode": "0120"
+   },
+   {
+    "id": "L19",
+    "date": "2026-07-07",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2467.38,
+    "amount": 2467.38,
+    "revCode": "0120"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-02",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 95.3,
+    "amount": 95.3,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-03",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 64.24,
+    "amount": 64.24,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-04",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 208.47,
+    "amount": 208.47,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-04",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 73.59,
+    "amount": 73.59,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-05",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 82.1,
+    "amount": 82.1,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-05",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 43.97,
+    "amount": 43.97,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-05",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 100.34,
+    "amount": 100.34,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2026-07-06",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 112.32,
+    "amount": 112.32,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2026-07-02",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 59.96,
+    "amount": 119.92,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2026-07-04",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 16.45,
+    "amount": 32.9,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2026-07-06",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 168.06,
+    "amount": 336.12,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L17",
+    "date": "2026-07-07",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 79.47,
+    "amount": 317.88,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L18",
+    "date": "2026-07-02",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 76.77,
+    "amount": 76.77,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-07-21",
+  "firstBillDate": "2026-07-12",
+  "state": "AZ",
+  "hospitalCcn": "990104",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "onCreditReport": false,
+  "paidInFull": true,
+  "originalBalance": 1565.2
+ },
+ "data": {
+  "mue": {
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "RB-01",
+   "lineIds": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05",
+    "L19"
+   ]
+  }
+ ],
+ "plants": [
+  "RB-01"
+ ],
+ "tags": [
+  "hn:ins-paid-no-eob",
+  "hn:cr-not-reported",
+  "plant:RB-01:discharge-day-line",
+  "variant:eob-line-level-co"
+ ]
+}

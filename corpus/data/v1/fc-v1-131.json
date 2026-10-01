@@ -1,0 +1,168 @@
+{
+ "id": "fc-v1-131",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21298390,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 131",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0104810",
+   "totalCharges": 5387.63,
+   "statementDate": "2026-08-12",
+   "payments": 0,
+   "adjustments": 1696.79,
+   "balanceDue": 3690.84
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-24",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 5173.17,
+    "amount": 5173.17,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example Valley Hospital"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-24",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 5173.17,
+    "amount": 5173.17,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example Valley Hospital"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-24",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 58.29,
+    "amount": 58.29,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example Valley Hospital"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-24",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 156.17,
+    "amount": 156.17,
+    "code": "80048",
+    "revCode": "0301",
+    "provider": "Example Valley Hospital"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-24",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 5173.17,
+    "amount": -5173.17,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example Valley Hospital"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-24",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 41.88,
+    "amount": 41.88,
+    "revCode": "0250",
+    "provider": "Example Valley Hospital"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-24",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": -1,
+    "unitPrice": 41.88,
+    "amount": -41.88,
+    "revCode": "0250",
+    "provider": "Example Valley Hospital"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-08-02",
+  "firstBillDate": "2026-08-07",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "gfe": [
+   {
+    "provider": "Example Valley Hospital",
+    "total": 4987.64
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-399",
+  "hn:credit-reversal",
+  "hn:cancel-reversed",
+  "variant:sched-imaging",
+  "variant:credit:posqty",
+  "variant:cancel-credit:negqty"
+ ]
+}

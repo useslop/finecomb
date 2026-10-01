@@ -1,0 +1,103 @@
+{
+ "id": "fc-v1-215",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 21963586,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 215",
+   "providerName": "Sample Surgical Associates",
+   "accountNumber": "TEST-0107918",
+   "totalCharges": 2470.54,
+   "statementDate": "2026-08-25",
+   "payments": 848.25,
+   "adjustments": 0,
+   "balanceDue": 1622.29
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-03",
+    "description": "ASSISTANT AT SURGERY KNEE",
+    "qty": 1,
+    "unitPrice": 2470.54,
+    "amount": 2470.54,
+    "code": "27447",
+    "modifiers": [
+     "80"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": false,
+  "emergency": false,
+  "firstBillDate": "2026-08-09",
+  "state": "TX",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "anesthesia"
+  ],
+  "eob": {
+   "billed": 2470.54,
+   "allowed": 985.26,
+   "planPaid": 848.25,
+   "deductible": 42.76,
+   "copay": 0,
+   "coinsurance": 94.25,
+   "patientResponsibility": 137.01,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 1485.28
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 42.76
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 94.25
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": true,
+  "originalBalance": 1178.74
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-02",
+  "CR-01"
+ ],
+ "tags": [
+  "plant:CR-01:paid"
+ ]
+}

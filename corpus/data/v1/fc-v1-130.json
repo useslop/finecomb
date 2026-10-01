@@ -1,0 +1,182 @@
+{
+ "id": "fc-v1-130",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21290471,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 130",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0104773",
+   "totalCharges": 1792.39,
+   "statementDate": "2026-07-17",
+   "payments": 337.12,
+   "adjustments": 1030.34,
+   "balanceDue": 424.93
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-28",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 1457.11,
+    "amount": 1457.11,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-28",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 18.72,
+    "amount": 18.72,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-28",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 58.77,
+    "amount": 58.77,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-28",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 2,
+    "unitPrice": 62.22,
+    "amount": 124.44,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-28",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 19.05,
+    "amount": 133.35,
+    "code": "J2405",
+    "revCode": "0636"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-07-15",
+  "firstBillDate": "2026-07-08",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 1792.39,
+   "allowed": 762.05,
+   "planPaid": 337.12,
+   "deductible": 387.47,
+   "copay": 0,
+   "coinsurance": 37.46,
+   "patientResponsibility": 424.93,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 1030.34
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 387.47
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 37.46
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:mue-setting",
+  "hn:nsa-compliant"
+ ]
+}

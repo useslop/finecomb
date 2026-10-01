@@ -1,0 +1,352 @@
+{
+ "id": "fc-v1-178",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21670583,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 178",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0106549",
+   "admitDate": "2025-11-20",
+   "dischargeDate": "2025-11-21",
+   "totalCharges": 4470,
+   "statementDate": "2025-12-30",
+   "payments": 1454.87,
+   "adjustments": 0,
+   "balanceDue": 3015.13
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-11-20",
+    "description": "EMERGENCY ROOM LVL 3",
+    "qty": 1,
+    "unitPrice": 1315.23,
+    "amount": 1315.23,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-11-20",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 108.85,
+    "amount": 108.85,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2025-11-20",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 151.17,
+    "amount": 151.17,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-11-20",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 93.4,
+    "amount": 93.4,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2025-11-20",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 48.05,
+    "amount": 48.05,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2025-11-20",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 29.66,
+    "amount": 29.66,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2025-11-20",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 226.67,
+    "amount": 226.67,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2025-11-20",
+    "description": "IV PUSH EACH ADDL DRUG",
+    "qty": 2,
+    "unitPrice": 113.98,
+    "amount": 227.96,
+    "code": "96375",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2025-11-20",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 164.26,
+    "amount": 328.52,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2025-11-20",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 65.34,
+    "amount": 130.68,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2025-11-20",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 9,
+    "unitPrice": 128,
+    "amount": 1152,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L12",
+    "date": "2025-11-21",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 7,
+    "unitPrice": 84.32,
+    "amount": 590.24,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2025-11-21",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 67.57,
+    "amount": 67.57,
+    "code": "80048",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2025-12-01",
+  "firstBillDate": "2025-12-16",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 4470,
+   "allowed": 2153.92,
+   "planPaid": 1454.87,
+   "deductible": 22.83,
+   "copay": 250,
+   "coinsurance": 426.22,
+   "patientResponsibility": 699.05,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2316.08
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 22.83
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 426.22
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 250
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-03-21",
+    "kind": "late_fee"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96375": {
+    "practitioner": {
+     "mue": 6,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 6,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02"
+ ],
+ "tags": [
+  "hn:eca-late-fee",
+  "plant:EOB-02:co-billed"
+ ]
+}

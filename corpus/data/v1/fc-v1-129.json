@@ -1,0 +1,466 @@
+{
+ "id": "fc-v1-129",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21282552,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 129",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0104736",
+   "admitDate": "2026-04-04",
+   "dischargeDate": "2026-04-05",
+   "totalCharges": 8929.39,
+   "statementDate": "2026-05-09",
+   "payments": 2203.43,
+   "adjustments": 5731.13,
+   "balanceDue": 994.83
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-04",
+    "description": "EMERGENCY ROOM LVL 5",
+    "qty": 1,
+    "unitPrice": 2508.07,
+    "amount": 2508.07,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-04",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 123.48,
+    "amount": 123.48,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-04",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 65.44,
+    "amount": 65.44,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-04",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 26.7,
+    "amount": 26.7,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-04",
+    "description": "CAPILLARY BLOOD DRAW",
+    "qty": 1,
+    "unitPrice": 21.19,
+    "amount": 21.19,
+    "code": "36416",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-04",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 293.68,
+    "amount": 293.68,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-04",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 276.49,
+    "amount": 276.49,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "59"
+    ]
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-04",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 3,
+    "unitPrice": 142.18,
+    "amount": 426.54,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-04",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 148.48,
+    "amount": 296.96,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2026-04-04",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 24.73,
+    "amount": 24.73,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-04-04",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 78.3,
+    "amount": 78.3,
+    "revCode": "0270"
+   },
+   {
+    "id": "L12",
+    "date": "2026-04-04",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 21,
+    "unitPrice": 120.4,
+    "amount": 2528.4,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2026-04-05",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 18,
+    "unitPrice": 109.73,
+    "amount": 1975.14,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L14",
+    "date": "2026-04-05",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 97.73,
+    "amount": 97.73,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L15",
+    "date": "2026-04-05",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 186.54,
+    "amount": 186.54,
+    "code": "87040",
+    "revCode": "0306"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-04-10",
+  "firstBillDate": "2026-04-30",
+  "state": "AZ",
+  "hospitalCcn": "990104",
+  "insurerName": "Example Benefit Trust",
+  "eob": {
+   "billed": 8929.39,
+   "allowed": 3198.26,
+   "planPaid": 2203.43,
+   "deductible": 694.45,
+   "copay": 50,
+   "coinsurance": 250.38,
+   "patientResponsibility": 994.83,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1609.75,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 79.25,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 42,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 17.14,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 13.6,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 188.49,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 177.46,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 273.77,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 190.6,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 15.87,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 50.26,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1622.8,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1267.7,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 62.73,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 119.71,
+     "lineId": "L15"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 694.45
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 250.38
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "36416": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   },
+   {
+    "col1": "36415",
+    "col2": "36416",
+    "mi": 9,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:ncci-mi1-59",
+  "hn:hourly-overlap",
+  "hn:obs-room-hours",
+  "hn:ncci-mi9",
+  "variant:eob-line-level-co"
+ ]
+}

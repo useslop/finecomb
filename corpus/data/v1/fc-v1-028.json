@@ -1,0 +1,406 @@
+{
+ "id": "fc-v1-028",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20482733,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 028",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0100999",
+   "admitDate": "2026-03-30",
+   "dischargeDate": "2026-03-31",
+   "totalCharges": 25671.21,
+   "statementDate": "2026-05-04",
+   "payments": 7618.47,
+   "adjustments": 13223.62,
+   "balanceDue": 4829.12
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-30",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 5183.9,
+    "amount": 5183.9,
+    "revCode": "0206"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-31",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 6129.09,
+    "amount": 6129.09,
+    "revCode": "0360"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-31",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 7,
+    "unitPrice": 715.97,
+    "amount": 5011.79,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-31",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1204.24,
+    "amount": 1204.24,
+    "revCode": "0710"
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-31",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2329.54,
+    "amount": 2329.54,
+    "revCode": "0370"
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-31",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1539.76,
+    "amount": 1539.76,
+    "revCode": "0272"
+   },
+   {
+    "id": "L07",
+    "date": "2026-03-30",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 99.83,
+    "amount": 99.83,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2026-03-31",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 87.96,
+    "amount": 87.96,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L09",
+    "date": "2026-03-30",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 229.49,
+    "amount": 458.98,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2026-03-31",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 9,
+    "unitPrice": 17.83,
+    "amount": 160.47,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-03-30",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 21.91,
+    "amount": 87.64,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-03-30",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 1821.68,
+    "amount": 1821.68,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L13",
+    "date": "2026-03-30",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 56.82,
+    "amount": 56.82,
+    "revCode": "0270"
+   },
+   {
+    "id": "L14",
+    "date": "2026-03-30",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 110.04,
+    "amount": 110.04,
+    "revCode": "0272"
+   },
+   {
+    "id": "L15",
+    "date": "2026-03-30",
+    "description": "IV START KIT",
+    "qty": 2,
+    "unitPrice": 95.83,
+    "amount": 191.66,
+    "revCode": "0270"
+   },
+   {
+    "id": "L16",
+    "date": "2026-03-30",
+    "description": "OXYGEN PER DAY",
+    "qty": 1,
+    "unitPrice": 175.46,
+    "amount": 175.46,
+    "revCode": "0412"
+   },
+   {
+    "id": "L17",
+    "date": "2026-03-30",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 1,
+    "unitPrice": 552.22,
+    "amount": 552.22,
+    "revCode": "0731"
+   },
+   {
+    "id": "L18",
+    "date": "2026-03-31",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 470.13,
+    "amount": 470.13,
+    "revCode": "0424"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-04-16",
+  "firstBillDate": "2026-04-19",
+  "state": "AZ",
+  "hospitalCcn": "990104",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 25671.21,
+   "allowed": 12447.59,
+   "planPaid": 7618.47,
+   "deductible": 1492.63,
+   "copay": 50,
+   "coinsurance": 3286.49,
+   "patientResponsibility": 4829.12,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2670.3,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 3157.18,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2581.65,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 620.32,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1199.98,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 793.15,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 51.42,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 45.31,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 236.43,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 82.66,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 45.14,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 938.37,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 29.27,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 56.68,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 98.73,
+     "lineId": "L15"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 90.38,
+     "lineId": "L16"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 284.46,
+     "lineId": "L17"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 242.19,
+     "lineId": "L18"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1492.63
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 3286.49
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  },
+  "onCreditReport": false,
+  "paidInFull": false,
+  "originalBalance": 1406.19
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:repeat-mod",
+  "hn:cr-not-reported",
+  "hn:per-day-multi",
+  "hn:kit-multi",
+  "variant:iv-kit-x2",
+  "variant:eob-line-level-co"
+ ]
+}

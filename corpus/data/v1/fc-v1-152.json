@@ -1,0 +1,337 @@
+{
+ "id": "fc-v1-152",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 21464689,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 152",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0105587",
+   "admitDate": "2025-08-24",
+   "dischargeDate": "2025-08-25",
+   "totalCharges": 6360.19,
+   "statementDate": "2025-09-15",
+   "payments": 1223.16,
+   "adjustments": 4087.65,
+   "balanceDue": 1049.38
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-08-24",
+    "description": "EMERGENCY ROOM LVL 4",
+    "qty": 1,
+    "unitPrice": 1448.86,
+    "amount": 1448.86,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-08-24",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 75.08,
+    "amount": 75.08,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2025-08-24",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 47.19,
+    "amount": 47.19,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2025-08-24",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 337.99,
+    "amount": 337.99,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L05",
+    "date": "2025-08-24",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 7.99,
+    "amount": 39.95,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L06",
+    "date": "2025-08-24",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 49.35,
+    "amount": 49.35,
+    "revCode": "0270"
+   },
+   {
+    "id": "L07",
+    "date": "2025-08-24",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 34,
+    "unitPrice": 92.4,
+    "amount": 3141.6,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L08",
+    "date": "2025-08-25",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 15,
+    "unitPrice": 67.57,
+    "amount": 1013.55,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L09",
+    "date": "2025-08-25",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 160.77,
+    "amount": 160.77,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2025-08-25",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 45.85,
+    "amount": 45.85,
+    "code": "81003",
+    "revCode": "0300"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2025-08-31",
+  "firstBillDate": "2025-09-06",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 6360.19,
+   "allowed": 2272.54,
+   "planPaid": 1736.49,
+   "deductible": 343.11,
+   "copay": 0,
+   "coinsurance": 192.94,
+   "patientResponsibility": 536.05,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 931.17,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 48.25,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 30.33,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 217.22,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 25.68,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 31.72,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2019.08,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 651.4,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 103.33,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 29.47,
+     "lineId": "L10"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 343.11
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 192.94
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-03-08",
+    "kind": "lawsuit",
+    "noticeDate": "2026-01-24"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "QTY-01",
+   "lineIds": [
+    "L07"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-01",
+  "QTY-01"
+ ],
+ "tags": [
+  "hn:eca-proper",
+  "plant:QTY-01:hourly",
+  "variant:eob-line-level-co",
+  "plant:EOB-01:unposted-payment"
+ ]
+}

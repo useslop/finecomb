@@ -1,0 +1,142 @@
+{
+ "id": "fc-v1-176",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21654745,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 176",
+   "providerName": "Example Outpatient Imaging Center",
+   "accountNumber": "TEST-0106475",
+   "totalCharges": 2793.11,
+   "statementDate": "2026-07-23",
+   "payments": 0,
+   "adjustments": 936.19,
+   "balanceDue": 1856.92
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-01",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2649.91,
+    "amount": 2649.91,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-01",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 39.01,
+    "amount": 39.01,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-01",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 104.19,
+    "amount": 104.19,
+    "code": "83605",
+    "revCode": "0301",
+    "provider": "Example Outpatient Imaging Center"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-01",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 88.85,
+    "amount": 88.85,
+    "revCode": "0250"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-01",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 88.85,
+    "amount": -88.85,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-07-12",
+  "firstBillDate": "2026-07-06",
+  "state": "TX",
+  "ppdrFiledDate": "2026-09-04",
+  "collections": [
+   {
+    "date": "2026-09-08",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01"
+ ],
+ "tags": [
+  "hn:cancel-reversed",
+  "variant:sched-imaging",
+  "variant:cancel-credit:posqty",
+  "plant:PPDR-01"
+ ]
+}

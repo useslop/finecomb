@@ -1,0 +1,122 @@
+{
+ "id": "fc-v1-296",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 22605025,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 296",
+   "providerName": "Sample Radiology Associates",
+   "accountNumber": "TEST-0110915",
+   "totalCharges": 382.91,
+   "statementDate": "2026-06-30",
+   "payments": 0,
+   "adjustments": 267.33,
+   "balanceDue": 115.58
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-15",
+    "description": "CT HEAD PROFESSIONAL READ",
+    "qty": 1,
+    "unitPrice": 311.11,
+    "amount": 311.11,
+    "code": "70450",
+    "modifiers": [
+     "26"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-15",
+    "description": "CHEST XRAY PROFESSIONAL READ",
+    "qty": 1,
+    "unitPrice": 71.8,
+    "amount": 71.8,
+    "code": "71046",
+    "modifiers": [
+     "26"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": false,
+  "emergency": false,
+  "firstBillDate": "2026-06-20",
+  "state": "IN",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "radiology"
+  ],
+  "eob": {
+   "billed": 382.91,
+   "allowed": 115.58,
+   "planPaid": 0,
+   "deductible": 77.15,
+   "copay": 34.59,
+   "coinsurance": 3.84,
+   "patientResponsibility": 115.58,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 267.33
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 77.15
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 3.84
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 34.59
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:nsa02-compliant"
+ ]
+}

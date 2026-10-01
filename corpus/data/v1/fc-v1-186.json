@@ -1,0 +1,279 @@
+{
+ "id": "fc-v1-186",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21733935,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 186",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0106845",
+   "admitDate": "2026-02-03",
+   "dischargeDate": "2026-02-03",
+   "totalCharges": 5725.34,
+   "statementDate": "2026-03-01",
+   "payments": 2031.41,
+   "adjustments": 2611.99,
+   "balanceDue": 1081.94
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-02-03",
+    "description": "EMERGENCY ROOM LVL 3",
+    "qty": 1,
+    "unitPrice": 1899.85,
+    "amount": 1899.85,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-02-03",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 141.32,
+    "amount": 141.32,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-02-03",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 147.55,
+    "amount": 147.55,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-02-03",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 93.87,
+    "amount": 93.87,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-02-03",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 45.85,
+    "amount": 45.85,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2026-02-03",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 2693.67,
+    "amount": 2693.67,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L07",
+    "date": "2026-02-03",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 348.65,
+    "amount": 348.65,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2026-02-03",
+    "description": "IV PUSH EACH ADDL DRUG",
+    "qty": 1,
+    "unitPrice": 197.79,
+    "amount": 197.79,
+    "code": "96375",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2026-02-03",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 38.21,
+    "amount": 38.21,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-02-03",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 118.58,
+    "amount": 118.58,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-02-23",
+  "firstBillDate": "2026-02-24",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 5725.34,
+   "allowed": 3113.35,
+   "planPaid": 2031.41,
+   "deductible": 211.33,
+   "copay": 0,
+   "coinsurance": 870.61,
+   "patientResponsibility": 1081.94,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 2611.99
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 211.33
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 870.61
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-03-28",
+    "kind": "credit_report"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96375": {
+    "practitioner": {
+     "mue": 6,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 6,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:nsa-compliant",
+  "hn:eca-forprofit"
+ ]
+}
