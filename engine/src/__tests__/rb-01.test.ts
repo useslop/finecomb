@@ -38,3 +38,34 @@ describe('RB-01 room-and-board days exceed nights', () => {
     expect(result.skipped?.needs).toBeDefined();
   });
 });
+
+describe('RB-01 hard negatives (F1)', () => {
+  const stay = { admitDate: '2026-05-01', dischargeDate: '2026-05-02' };
+  it('does not count observation hours as room days', () => {
+    const b = bill([
+      line({ date: '2026-05-01', code: 'G0378', revCode: '0762', description: 'OBSERVATION ROOM HOURLY', qty: 18, unitPrice: 90, amount: 1620 }),
+      line({ date: '2026-05-02', code: 'G0378', revCode: '0762', description: 'OBSERVATION ROOM HOURLY', qty: 10, unitPrice: 90, amount: 900 }),
+    ], stay);
+    expect(evaluate(b, ctx({ observation: true }), {}).findings).toHaveLength(0);
+  });
+
+  it('does not count ER, OR, recovery-room or telemetry lines (with or without revenue codes)', () => {
+    const b = bill([
+      line({ date: '2026-05-01', revCode: '0120', description: 'SEMI PRIV RM DAILY', qty: 1, unitPrice: 3000, amount: 3000 }),
+      line({ date: '2026-05-01', revCode: '0450', description: 'EMERGENCY ROOM LVL 4', qty: 1, amount: 2000 }),
+      line({ date: '2026-05-01', revCode: '0731', description: 'TELEMETRY MONITOR PER DAY', qty: 1, amount: 900 }),
+      line({ date: '2026-05-01', description: 'OPERATING ROOM FIRST 30 MIN', qty: 1, amount: 4000 }),
+      line({ date: '2026-05-01', description: 'RECOVERY ROOM FIRST 30 MIN', qty: 1, amount: 1200 }),
+    ], stay);
+    expect(evaluate(b, ctx({ admitted: true }), {}).findings).toHaveLength(0);
+  });
+
+  it('does not count a room day that was reversed by a credit', () => {
+    const b = bill([
+      line({ date: '2026-05-01', revCode: '0120', description: 'SEMI PRIV RM DAILY', qty: 1, unitPrice: 3000, amount: 3000 }),
+      line({ date: '2026-05-02', revCode: '0120', description: 'SEMI PRIV RM DAILY', qty: 1, unitPrice: 3000, amount: 3000 }),
+      line({ date: '2026-05-02', revCode: '0120', description: 'SEMI PRIV RM DAILY', qty: -1, unitPrice: 3000, amount: -3000 }),
+    ], stay);
+    expect(evaluate(b, ctx({ admitted: true }), {}).findings).toHaveLength(0);
+  });
+});

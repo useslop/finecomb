@@ -82,14 +82,19 @@ export function hasSeparatingModifier(mods: string[] | undefined): boolean {
 
 export const ROOM_REV_CODE_MIN = 10; // 010X
 export const ROOM_REV_CODE_MAX = 21; // 021X
-const ROOM_KEYWORDS = /\b(ROOM|R\s*&\s*B|SEMI[- ]?PRIV|PRIVATE ROOM|MED\s*\/?\s*SURG|TELEMETRY|ICU|CCU|NURSERY)\b/i;
+const ROOM_KEYWORDS = /\b(ROOM\s*(AND|&)\s*BOARD|R\s*&\s*B|SEMI[- ]?PRIV\w*|PRIVATE\s+(ROOM|RM)|MED\s*\/?\s*SURG|ICU|CCU|NICU|NURSERY|STEP\s*DOWN|(ROOM|RM|BED)\s+DAILY|ROOM)\b/i;
+// "Room" wording that is not room and board: ER/OR/recovery rooms, observation hours, monitoring.
+const NOT_ROOM_AND_BOARD = /\b(EMERGENCY|ER|ED|OPERATING|OR|RECOVERY|PACU|OBSERVATION|OBS|HOURLY|HOURS?|HR|PER\s+HOUR|MONITOR\w*|TELEMETRY|TREATMENT|PROCEDURE|LABOR|DELIVERY)\b/i;
 
+/** Room-and-board lines. A printed revenue code decides on its own (010X-021X, SPEC RB-01); wording is a
+ * fallback only for lines without one, and never counts ER/OR/recovery rooms or observation hours. */
 export function isRoomLine(l: BillLine): boolean {
-  if (l.revCode && /^\d{4}$/.test(l.revCode)) {
-    const fam = Number(l.revCode.slice(0, 3));
-    if (fam >= ROOM_REV_CODE_MIN && fam <= ROOM_REV_CODE_MAX) return true;
+  if (l.revCode && /^\d{3,4}$/.test(l.revCode.trim())) {
+    const rc = l.revCode.trim().padStart(4, '0');
+    const fam = Number(rc.slice(0, 3));
+    return fam >= ROOM_REV_CODE_MIN && fam <= ROOM_REV_CODE_MAX;
   }
-  return ROOM_KEYWORDS.test(l.description);
+  return ROOM_KEYWORDS.test(l.description) && !NOT_ROOM_AND_BOARD.test(l.description);
 }
 
 const FACILITY_FEE_KEYWORDS = /\b(FACILITY FEE|CLINIC FEE)\b/i;
