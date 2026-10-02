@@ -26,15 +26,17 @@ function NavBar() {
         <Link to="/" className="nav__brand">
           Finecomb
         </Link>
-        <ul className="nav__links">
-          {NAV_LINKS.map(([to, label]) => (
-            <li key={to}>
-              <Link to={to} aria-current={path === to ? 'page' : undefined}>
-                {label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <nav aria-label="Main" className="nav__nav">
+          <ul className="nav__links">
+            {NAV_LINKS.map(([to, label]) => (
+              <li key={to}>
+                <Link to={to} aria-current={path === to ? 'page' : undefined}>
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
     </header>
   );

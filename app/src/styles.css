@@ -652,3 +652,7 @@ details > summary {
   border-bottom: 1px solid var(--color-border);
   vertical-align: top;
 }
+
+.nav__nav {
+  margin-left: auto;
+}
