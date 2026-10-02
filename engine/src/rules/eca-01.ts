@@ -1,8 +1,15 @@
 import type { Bill, Context, Datasets, Finding, Skipped } from '../types.js';
-import { addDays, mkFinding } from '../lib/util.js';
+import { addDays, daysBetween, mkFinding } from '../lib/util.js';
+import type { CollectionEvent } from '../types.js';
 import { cite } from '../citations.js';
 
 export const id = 'ECA-01';
+
+// Extraordinary collection actions under 26 CFR 1.501(r)-6(b) (RESEARCH §ECA): credit reporting and
+// actions needing a legal or judicial process (suits, liens, garnishment). Referral to a collection agency
+// and late fees are not ECAs on their own, so they are not judged by the 120-day and notice tests.
+const ECA_KINDS = new Set<CollectionEvent['kind']>(['credit_report', 'lawsuit', 'wage_garnishment']);
+const NOTICE_DAYS = 30;
 
 export function evaluate(_bill: Bill, ctx: Context, data: Datasets): { findings: Finding[]; skipped?: Skipped } {
   const hospital = ctx.hospitalCcn && data.hospital ? data.hospital(ctx.hospitalCcn) : undefined;
@@ -19,17 +26,20 @@ export function evaluate(_bill: Bill, ctx: Context, data: Datasets): { findings:
   const reasons: string[] = [];
   const evidenceDates: string[] = [];
   for (const ev of ctx.collections!) {
+    if (!ECA_KINDS.has(ev.kind)) continue;
+    const what = `a ${ev.kind.replace('_', ' ')} action on ${ev.date}`;
+    const before = reasons.length;
     if (ev.date < cutoff) {
-      reasons.push(`a ${ev.kind.replace('_', ' ')} action on ${ev.date}, before the 120-day waiting period ended (${cutoff})`);
-      evidenceDates.push(ev.date);
+      reasons.push(`${what}, before the 120-day waiting period ended (${cutoff})`);
     } else if (!ev.noticeDate) {
-      reasons.push(`a ${ev.kind.replace('_', ' ')} action on ${ev.date} with no recorded 30-day written notice`);
-      evidenceDates.push(ev.date);
+      reasons.push(`${what} with no recorded 30-day written notice`);
+    } else if (daysBetween(ev.noticeDate, ev.date) < NOTICE_DAYS) {
+      reasons.push(`${what}, only ${daysBetween(ev.noticeDate, ev.date)} days after the written notice (${ev.noticeDate}); the notice must come at least ${NOTICE_DAYS} days ahead`);
     }
     if (ctx.fapApplied === true && ctx.fapAppliedDate && ev.date >= ctx.fapAppliedDate) {
-      reasons.push(`a ${ev.kind.replace('_', ' ')} action on ${ev.date} while your financial-assistance application was pending`);
-      evidenceDates.push(ev.date);
+      reasons.push(`${what} while your financial-assistance application was pending`);
     }
+    if (reasons.length > before) evidenceDates.push(ev.date);
   }
   if (reasons.length === 0) return { findings: [] };
 
