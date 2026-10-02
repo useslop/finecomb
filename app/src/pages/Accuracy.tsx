@@ -6,9 +6,9 @@ import { ruleTitle } from '../lib/rulesMeta';
 
 const STATUS_LABEL: Record<string, string> = {
   'as-specified': 'Shown',
-  low: 'Shown as Low confidence',
-  off: 'Off: still tuning',
-  untested: 'Not yet tested',
+  low: 'Low confidence',
+  off: 'Off (tuning)',
+  untested: 'Untested',
 };
 
 function pct(n: number | null): string {
@@ -34,8 +34,7 @@ export default function Accuracy() {
           <caption>Precision and recall for each check</caption>
           <thead>
             <tr>
-              <th scope="col">Rule</th>
-              <th scope="col">What it checks</th>
+              <th scope="col">Check</th>
               <th scope="col">Precision</th>
               <th scope="col">Recall</th>
               <th scope="col">Status</th>
@@ -45,12 +44,13 @@ export default function Accuracy() {
             {sb.rules.map((r) => (
               <tr key={r.ruleId}>
                 <td>
-                  <code>{r.ruleId}</code>
+                  {ruleTitle(r.ruleId)}
+                  <br />
+                  <code className="score-table__id">{r.ruleId}</code>
                 </td>
-                <td>{ruleTitle(r.ruleId)}</td>
                 <td>{pct(r.precision)}</td>
                 <td>{pct(r.recall)}</td>
-                <td>{STATUS_LABEL[r.shipAs] ?? 'Off: still tuning'}</td>
+                <td>{STATUS_LABEL[r.shipAs] ?? 'Off (tuning)'}</td>
               </tr>
             ))}
           </tbody>

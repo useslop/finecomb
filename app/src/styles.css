@@ -659,3 +659,15 @@ details > summary {
 .nav__nav {
   margin-left: auto;
 }
+.score-table__id {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+@media (max-width: 480px) {
+  .score-table th,
+  .score-table td {
+    padding: 0.45rem 0.35rem;
+    font-size: 0.85rem;
+  }
+}
