@@ -1,5 +1,6 @@
 import type { Bill, Context, Datasets, Finding } from '../types.js';
-import { CANCEL_KEYWORDS, mkFinding, netCredits } from '../lib/util.js';
+import { CANCEL_KEYWORDS, mkFinding } from '../lib/util.js';
+import { netted } from '../net.js';
 import { cite } from '../citations.js';
 
 export const id = 'CANC-01';
@@ -24,7 +25,7 @@ export function evaluate(bill: Bill, _ctx: Context, _data: Datasets): { findings
     );
   }
 
-  const survivors = new Set(netCredits(bill.lines).map((l) => l.id));
+  const survivors = new Set(netted(bill).charges.map((l) => l.id));
   const markedIds = new Set(marked.map((l) => l.id));
   for (const l of bill.lines) {
     if (markedIds.has(l.id) || l.amount <= 0) continue;

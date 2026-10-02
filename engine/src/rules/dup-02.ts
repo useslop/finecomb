@@ -1,12 +1,13 @@
 import type { Bill, BillLine, Context, Datasets, Finding } from '../types.js';
 import { mkFinding } from '../lib/util.js';
 import { cite } from '../citations.js';
+import { netted } from '../net.js';
 
 export const id = 'DUP-02';
 
 export function evaluate(bill: Bill, _ctx: Context, _data: Datasets): { findings: Finding[] } {
   const byDateCode = new Map<string, BillLine[]>();
-  for (const l of bill.lines) {
+  for (const l of netted(bill).charges) {
     if (!l.code || !l.date) continue;
     const key = `${l.date}|${l.code}`;
     const arr = byDateCode.get(key) ?? [];

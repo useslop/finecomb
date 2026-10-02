@@ -1,5 +1,6 @@
 import type { Bill, BillLine, Context, Datasets, Finding } from '../types.js';
 import { daysBetween, mkFinding, round2 } from '../lib/util.js';
+import { netted } from '../net.js';
 
 export const id = 'QTY-01';
 
@@ -9,9 +10,10 @@ const PER_DAY = /\b(telemetry|daily monitoring|per day)\b/i;
 
 export function evaluate(bill: Bill, ctx: Context, _data: Datasets): { findings: Finding[] } {
   const findings: Finding[] = [];
+  const charges = netted(bill).charges;
 
   const byDate = new Map<string, BillLine[]>();
-  for (const l of bill.lines) {
+  for (const l of charges) {
     if (!l.date || !HOURLY.test(l.description)) continue;
     const arr = byDate.get(l.date) ?? [];
     arr.push(l);
@@ -37,7 +39,7 @@ export function evaluate(bill: Bill, ctx: Context, _data: Datasets): { findings:
     );
   }
 
-  const kitLines = bill.lines.filter((l) => KIT.test(l.description));
+  const kitLines = charges.filter((l) => KIT.test(l.description));
   const totalKitQty = kitLines.reduce((a, l) => a + (l.qty ?? 1), 0);
   if (kitLines.length > 0 && totalKitQty > 1) {
     findings.push(
@@ -58,7 +60,7 @@ export function evaluate(bill: Bill, ctx: Context, _data: Datasets): { findings:
 
   if (ctx.admitted === true && bill.header.admitDate && bill.header.dischargeDate) {
     const nights = Math.max(1, daysBetween(bill.header.admitDate, bill.header.dischargeDate));
-    const perDayLines = bill.lines.filter((l) => PER_DAY.test(l.description));
+    const perDayLines = charges.filter((l) => PER_DAY.test(l.description));
     const totalPerDayQty = perDayLines.reduce((a, l) => a + (l.qty ?? 1), 0);
     if (perDayLines.length > 0 && totalPerDayQty > nights) {
       findings.push(

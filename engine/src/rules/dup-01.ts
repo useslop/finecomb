@@ -1,10 +1,11 @@
 import type { Bill, Context, Datasets, Finding } from '../types.js';
-import { lineKey, mkFinding, modsKey, netCredits, sum } from '../lib/util.js';
+import { lineKey, mkFinding, modsKey, sum } from '../lib/util.js';
+import { netted } from '../net.js';
 
 export const id = 'DUP-01';
 
 export function evaluate(bill: Bill, _ctx: Context, _data: Datasets): { findings: Finding[] } {
-  const survivors = netCredits(bill.lines);
+  const survivors = netted(bill).charges;
   const groups = new Map<string, typeof survivors>();
   for (const l of survivors) {
     const key = `${l.date ?? ''}|${lineKey(l)}|${l.qty ?? 1}|${l.amount}|${modsKey(l.modifiers)}`;

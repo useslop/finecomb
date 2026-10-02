@@ -1,5 +1,7 @@
 export type * from './types.js';
 export { analyze } from './analyze.js';
+export { netLines, isCredit } from './net.js';
+export type { NetResult, NetPair } from './net.js';
 export { CITATIONS, cite } from './citations.js';
 export type { CitationKey } from './citations.js';
 export { screen, fplPercent } from './screener.js';

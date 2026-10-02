@@ -1,5 +1,6 @@
 import type { Bill, Context, Datasets, Finding, Skipped } from '../types.js';
 import { mkFinding, round2 } from '../lib/util.js';
+import { netted } from '../net.js';
 import { cite } from '../citations.js';
 
 export const id = 'MATH-01';
@@ -10,9 +11,12 @@ export function evaluate(bill: Bill, _ctx: Context, _data: Datasets): { findings
     return { findings: [], skipped: { ruleId: id, needs: ['line quantity and unit price for at least one line'] } };
   }
   const findings: Finding[] = [];
+  const { reversedIds } = netted(bill);
   for (const l of applicable) {
+    if (reversedIds.has(l.id)) continue; // a charge and its reversal net to zero
     const calc = round2(l.qty! * l.unitPrice!);
-    const diff = round2(Math.abs(calc - l.amount));
+    // Compare magnitudes: a credit prints as "1 x 45.00 = (45.00)" or "-1 x 45.00 = (45.00)".
+    const diff = round2(Math.abs(Math.abs(calc) - Math.abs(l.amount)));
     const tol = Math.max(0.05, 0.005 * Math.abs(l.amount));
     if (diff <= tol) continue;
     findings.push(

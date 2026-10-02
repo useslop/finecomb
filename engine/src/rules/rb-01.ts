@@ -1,6 +1,7 @@
 import type { Bill, Context, Datasets, Finding, Skipped } from '../types.js';
 import { daysBetween, isRoomLine, mkFinding, round2 } from '../lib/util.js';
 import { cite } from '../citations.js';
+import { netUnits } from '../net.js';
 
 export const id = 'RB-01';
 
@@ -13,10 +14,10 @@ export function evaluate(bill: Bill, ctx: Context, _data: Datasets): { findings:
   if (roomLines.length === 0) return { findings: [] };
 
   const nights = Math.max(1, daysBetween(admitDate, dischargeDate));
-  const totalUnits = roomLines.reduce((a, l) => a + (l.qty ?? 1), 0);
+  const totalUnits = netUnits(roomLines); // a reversed room day doesn't count
   if (totalUnits <= nights) return { findings: [] };
 
-  const sorted = [...roomLines].sort((a, b) => (a.date ?? '').localeCompare(b.date ?? ''));
+  const sorted = roomLines.filter((l) => l.amount > 0).sort((a, b) => (a.date ?? '').localeCompare(b.date ?? ''));
   const last = sorted[sorted.length - 1]!;
   const rate = last.unitPrice ?? (last.qty ? last.amount / last.qty : last.amount);
   const extraDays = totalUnits - nights;
@@ -31,7 +32,7 @@ export function evaluate(bill: Bill, ctx: Context, _data: Datasets): { findings:
         why: `${totalUnits} room-and-board units were billed for a ${nights}-night stay (${admitDate} to ${dischargeDate}).`,
         userText: `You were billed ${totalUnits} room days for ${nights} night(s). Hospitals generally don't count the day you go home. Ask them to remove the extra day(s) ($${extraCost.toFixed(2)}).`,
         verify: 'Ask the hospital to recount room days using the discharge-day exclusion and show you the daily census.',
-        evidenceLineIds: roomLines.map((l) => l.id),
+        evidenceLineIds: sorted.map((l) => l.id),
         confidence: ctx.insurance === 'medicare' ? 'high' : 'medium',
         dollarsAtStake: extraCost,
         citations: cite('S28'),

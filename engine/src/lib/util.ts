@@ -78,26 +78,7 @@ export function hasSeparatingModifier(mods: string[] | undefined): boolean {
   return (mods ?? []).some((m) => SEPARATING_MODIFIERS.has(m.toUpperCase()));
 }
 
-/** Nets credit lines (negative amount) against matching positive lines before duplicate/cancellation logic.
- * Matches on code/description + qty + |amount|, regardless of date (a credit often posts later).
- * Returns the positive lines that "survive" after netting, keyed by their original line. */
-export function netCredits(lines: BillLine[]): BillLine[] {
-  const byKey = new Map<string, BillLine[]>();
-  for (const l of lines) {
-    const key = `${lineKey(l)}|${l.qty ?? 1}|${Math.abs(l.amount)}|${modsKey(l.modifiers)}`;
-    const arr = byKey.get(key) ?? [];
-    arr.push(l);
-    byKey.set(key, arr);
-  }
-  const survivors: BillLine[] = [];
-  for (const group of byKey.values()) {
-    const positives = group.filter((l) => l.amount > 0);
-    const negatives = group.filter((l) => l.amount < 0);
-    const keep = Math.max(0, positives.length - negatives.length);
-    survivors.push(...positives.slice(0, keep));
-  }
-  return survivors;
-}
+// Credit/reversal netting lives in ../net.ts (shared pre-pass used by analyze()).
 
 export const ROOM_REV_CODE_MIN = 10; // 010X
 export const ROOM_REV_CODE_MAX = 21; // 021X

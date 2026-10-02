@@ -21,6 +21,7 @@ import * as eca01 from './rules/eca-01.js';
 import * as ppdr01 from './rules/ppdr-01.js';
 import * as cr01 from './rules/cr-01.js';
 import { fap01, fac01, id01 } from './info-cards.js';
+import { withNetting } from './net.js';
 
 interface RuleModule {
   id: string;
@@ -47,15 +48,18 @@ export function analyze(bill: Bill, ctx: Context, data: Datasets): AnalyzeResult
   const skipped: Skipped[] = [];
   const seen = new Set<string>();
 
-  for (const rule of RULES) {
-    const result = rule.evaluate(bill, ctx, data);
-    for (const f of result.findings) {
-      if (seen.has(f.id)) continue;
-      seen.add(f.id);
-      findings.push(f);
+  // Credits and reversals are paired with their originals once, up front; every rule judges net charges.
+  withNetting(bill, () => {
+    for (const rule of RULES) {
+      const result = rule.evaluate(bill, ctx, data);
+      for (const f of result.findings) {
+        if (seen.has(f.id)) continue;
+        seen.add(f.id);
+        findings.push(f);
+      }
+      if (result.skipped) skipped.push(result.skipped);
     }
-    if (result.skipped) skipped.push(result.skipped);
-  }
+  });
 
   findings.sort((a, b) => {
     const rank = CONFIDENCE_RANK[b.confidence] - CONFIDENCE_RANK[a.confidence];

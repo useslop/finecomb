@@ -1,6 +1,7 @@
 import type { Bill, BillLine, Context, Datasets, Finding, Skipped } from '../types.js';
 import { hasSeparatingModifier, mkFinding } from '../lib/util.js';
 import { cite } from '../citations.js';
+import { netted } from '../net.js';
 
 export const id = 'NCCI-01';
 
@@ -9,7 +10,7 @@ export function evaluate(bill: Bill, _ctx: Context, data: Datasets): { findings:
     return { findings: [], skipped: { ruleId: id, needs: ['NCCI procedure-to-procedure edit data'] } };
   }
   const byDate = new Map<string, BillLine[]>();
-  for (const l of bill.lines) {
+  for (const l of netted(bill).charges) {
     if (!l.date || !l.code) continue;
     const arr = byDate.get(l.date) ?? [];
     arr.push(l);

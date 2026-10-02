@@ -1,5 +1,6 @@
 import type { Bill, BillLine, Context, Datasets, Finding, Skipped } from '../types.js';
 import { mkFinding, round2 } from '../lib/util.js';
+import { netUnits } from '../net.js';
 import { cite } from '../citations.js';
 
 export const id = 'MUE-01';
@@ -28,7 +29,7 @@ export function evaluate(bill: Bill, ctx: Context, data: Datasets): { findings: 
     const [code, date] = key.split('|') as [string, string];
     const lookup = data.mue(code, setting);
     if (!lookup) continue;
-    const totalUnits = group.reduce((a, l) => a + (l.qty ?? 1), 0);
+    const totalUnits = netUnits(group); // reversed units don't count
     if (totalUnits <= lookup.mue) continue;
     const confidence = lookup.mai === 2 ? 'high' : 'medium';
     const unitPrice = group.find((l) => l.unitPrice != null)?.unitPrice ?? null;
@@ -40,7 +41,7 @@ export function evaluate(bill: Bill, ctx: Context, data: Datasets): { findings: 
         why: `${totalUnits} units of ${code} were billed on ${date}; Medicare's Medically Unlikely Edit for this code and setting is ${lookup.mue}.`,
         userText: `${totalUnits} units of ${code} on one day is more than Medicare's usual maximum (${lookup.mue}). Ask for the records supporting this quantity.`,
         verify: 'Ask for the medical record supporting this number of units on this date.',
-        evidenceLineIds: group.map((l) => l.id),
+        evidenceLineIds: group.filter((l) => l.amount > 0).map((l) => l.id),
         confidence,
         dollarsAtStake: unitPrice != null ? round2((totalUnits - lookup.mue) * unitPrice) : null,
         citations: cite('S20'),
