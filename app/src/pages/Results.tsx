@@ -2,6 +2,10 @@ import { useAppState } from '../state/AppState';
 import { Link, useNavigate } from '../router';
 import { NotAdviceBanner } from '../components/Banner';
 import FindingCard from '../components/FindingCard';
+import { rulesStillTuning } from '../lib/shipPolicy';
+import { ruleTitle } from '../lib/rulesMeta';
+
+const stillTuning = rulesStillTuning();
 
 function formatMoney(n: number): string {
   return n.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
@@ -120,6 +124,21 @@ export default function Results() {
             />
           ))}
         </>
+      )}
+
+      {stillTuning.length > 0 && (
+        <details className="card no-print">
+          <summary>Checks we're still tuning ({stillTuning.length})</summary>
+          <p className="field__hint">
+            These checks are hidden until they are accurate enough on our test bills (see{' '}
+            <Link to="/accuracy">Accuracy</Link>). They are not part of your results.
+          </p>
+          <ul>
+            {stillTuning.map((id) => (
+              <li key={id}>{ruleTitle(id)}</li>
+            ))}
+          </ul>
+        </details>
       )}
 
       {result.skipped.length > 0 && (

@@ -2,6 +2,7 @@ import { createContext, useContext, useMemo, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
 import type { AnalyzeResult, Bill, Context as EngineContext, Datasets } from '../types/engine';
 import { analyze } from '../lib/analyze';
+import { applyShipPolicy } from '../lib/shipPolicy';
 import { loadAppData } from '../data';
 import type { AppData } from '../data';
 
@@ -74,8 +75,8 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
   const runAnalysis = async () => {
     const data = await ensureData();
     const datasets: Datasets = data?.datasets ?? {};
-    const r = analyze(bill, ctx, datasets);
-    setResult(r);
+    // The scoreboard's ship policy gates every finding the user (and the letters page) can see.
+    setResult(applyShipPolicy(analyze(bill, ctx, datasets)));
   };
 
   const setFindingAction = (id: string, action: FindingAction) =>
