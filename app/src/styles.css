@@ -628,3 +628,27 @@ details > summary {
     break-inside: avoid;
   }
 }
+
+/* /accuracy scoreboard table */
+.table-scroll {
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+.score-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  font-size: 0.95rem;
+}
+.score-table caption {
+  text-align: left;
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+.score-table th,
+.score-table td {
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
