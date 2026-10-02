@@ -12,7 +12,8 @@
     "preview": "vite preview",
     "test": "vitest run && node scripts/license-gate.mjs --self-test",
     "test:privacy": "node e2e/privacy.mjs",
-    "test:a11y": "node e2e/a11y.mjs"
+    "test:a11y": "node e2e/a11y.mjs",
+    "test:ingest": "node e2e/ingest.mjs"
   },
   "dependencies": {
     "@finecomb/engine": "^0.1.0",
