@@ -101,6 +101,8 @@ export default function Results() {
         </div>
       )}
 
+      {result.findings.length > 0 && <h2>Possible issues to ask about</h2>}
+
       {result.findings.map((f) => (
         <FindingCard
           key={f.id}
