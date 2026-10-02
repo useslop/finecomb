@@ -54,6 +54,16 @@ interface NadacShardRecord {
   classificationForRateSetting: string;
 }
 
+/**
+ * Rules whose reference table is NOT loaded by this app (CPT-keyed CMS files, quarantined in
+ * data/_pending-license and never deployed), so they always land under "Checks we couldn't run".
+ * Keep in sync with the datasets omitted in loadAppData() below.
+ */
+export const RULES_WITHOUT_SHIPPED_DATA: Record<string, string> = {
+  'MUE-01': 'CMS unit-limit (MUE) table',
+  'NCCI-01': 'CMS NCCI edit table',
+};
+
 export interface AppData {
   fpl: FplDoc | null;
   hospitals: HospitalRecord[];

@@ -1,5 +1,6 @@
 import { SCOREBOARD } from '../lib/shipPolicy';
 import { ruleTitle } from '../lib/rulesMeta';
+import { RULES_WITHOUT_SHIPPED_DATA } from '../data';
 
 // The scoreboard is bundled at build time (no fetch), so this page always matches the policy the
 // results page enforces.
@@ -50,12 +51,21 @@ export default function Accuracy() {
                 </td>
                 <td>{pct(r.precision)}</td>
                 <td>{pct(r.recall)}</td>
-                <td>{STATUS_LABEL[r.shipAs] ?? 'Off (tuning)'}</td>
+                <td>
+                  {RULES_WITHOUT_SHIPPED_DATA[r.ruleId]
+                    ? 'Not run here*'
+                    : (STATUS_LABEL[r.shipAs] ?? 'Off (tuning)')}
+                </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+      <p className="field__hint">
+        * Measured with test data, but this app can't run it on your bill: it needs a CMS table
+        ({Object.values(RULES_WITHOUT_SHIPPED_DATA).join(', ')}) that carries licensed AMA codes, so
+        we don't redistribute it. Your results list it under "Checks we couldn't run".
+      </p>
     </div>
   );
 }
