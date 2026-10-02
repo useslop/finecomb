@@ -88,7 +88,7 @@ async function recordRun(browser, base, bill, { offline = false } = {}) {
     },
   });
   const findings = Number(await page.locator('.summary-stats__value').first().innerText());
-  const letterAndScreen = offline ? { letter: '' } : await runLetterAndScreener(page, bill);
+  const letterAndScreen = await runLetterAndScreener(page, bill);
   await Promise.all(pending);
   const serviceWorkers = context.serviceWorkers().length;
   await context.close();
@@ -177,7 +177,8 @@ async function main() {
     for (const s of sa) console.log(`   ${s}`);
 
     const off = await recordRun(browser, base, CANARY_BILL, { offline: true });
-    check(off.findings > 0 && off.failed.length === 0, `offline after first load: analysis still works (${off.findings} findings, ${off.failed.length} failed requests)`);
+    check(off.findings > 0 && off.failed.length === 0 && off.letter.includes('QUOKKA-ZEBRA-7781'),
+      `offline after first load: analysis, letter and screener still work (${off.findings} findings, ${off.failed.length} failed requests)`);
 
     await headerChecks(base);
     if (!live) await distGrep();
