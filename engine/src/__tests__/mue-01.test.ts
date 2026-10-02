@@ -37,3 +37,28 @@ describe('MUE-01 units above the Medically Unlikely Edit', () => {
     expect(findings).toHaveLength(0);
   });
 });
+
+describe('MUE-01 setting inference and hard negatives (F1)', () => {
+  // practitioner limit 1, outpatient-hospital limit 2, like CBC in the corpus
+  const split: Datasets = { mue: (code, setting) => (code === '85025' ? { mue: setting === 'outpatient' ? 2 : 1, mai: 3 } : undefined) };
+
+  it('judges an ED facility bill (revenue codes) against the outpatient limit, observation or not', () => {
+    const b = bill([line({ code: '85025', revCode: '0305', date: '2026-03-21', qty: 2, unitPrice: 50, amount: 100 })]);
+    expect(evaluate(b, ctx({ emergency: true, observation: false }), split).findings).toHaveLength(0);
+    expect(evaluate(b, ctx({ emergency: true }), split).findings).toHaveLength(0);
+  });
+
+  it('judges a clinician bill (no revenue codes) against the practitioner limit even during observation', () => {
+    const b = bill([line({ code: '85025', date: '2026-03-21', qty: 2, unitPrice: 50, amount: 100 })]);
+    expect(evaluate(b, ctx({ observation: true }), split).findings).toHaveLength(1);
+  });
+
+  it('applies an MAI-1 limit per line, not per day', () => {
+    const perLine: Datasets = { mue: () => ({ mue: 1, mai: 1 }) };
+    const b = bill([
+      line({ code: '71046', date: '2026-03-22', qty: 1, unitPrice: 200, amount: 200 }),
+      line({ code: '71046', date: '2026-03-22', qty: 1, unitPrice: 200, amount: 200, modifiers: ['76'] }),
+    ]);
+    expect(evaluate(b, ctx(), perLine).findings).toHaveLength(0);
+  });
+});
