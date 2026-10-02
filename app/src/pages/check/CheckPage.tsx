@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from '../../router';
 import { useAppState } from '../../state/AppState';
 import Step1AddBill from './Step1AddBill';
@@ -9,8 +9,15 @@ const STEP_LABELS = ['Add bill', 'Check lines', 'Context'];
 
 export default function CheckPage() {
   const [step, setStep] = useState<1 | 2 | 3>(1);
-  const { runAnalysis } = useAppState();
+  const { runAnalysis, ensureData } = useAppState();
   const navigate = useNavigate();
+
+  // Start the fixed, bill-independent data download as soon as a check begins, so analysis
+  // still has every dataset if the connection drops (or the user goes offline) mid-check.
+  useEffect(() => {
+    void ensureData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleFinish = async () => {
     await runAnalysis();
