@@ -50,3 +50,33 @@ describe('NCCI-01 unbundling', () => {
     expect(findings).toHaveLength(0);
   });
 });
+
+describe('NCCI-01 hard negatives (F1)', () => {
+  const ptp = { ncciPtp: (c1: string, c2: string) => (c1 === '20610' && c2 === '99214' ? { modifierIndicator: 1 as const } : undefined) };
+  it('honors modifier 25 on the E/M line as an MI-1 bypass (bilateral procedure lines too)', () => {
+    const b = bill([
+      line({ date: '2026-03-01', code: '99214', amount: 250, modifiers: ['25'] }),
+      line({ date: '2026-03-01', code: '20610', amount: 300, modifiers: ['RT'] }),
+      line({ date: '2026-03-01', code: '20610', amount: 300, modifiers: ['LT'] }),
+    ]);
+    expect(evaluate(b, ctx(), ptp).findings).toHaveLength(0);
+  });
+
+  it('honors 57 and an anatomic modifier on the column-2 line', () => {
+    for (const mod of ['57', 'LT', 'XU']) {
+      const b = bill([
+        line({ date: '2026-03-02', code: '20610', amount: 300 }),
+        line({ date: '2026-03-02', code: '99214', amount: 250, modifiers: [mod] }),
+      ]);
+      expect(evaluate(b, ctx(), ptp).findings, mod).toHaveLength(0);
+    }
+  });
+
+  it('still flags MI 1 when the E/M line has no NCCI modifier', () => {
+    const b = bill([
+      line({ date: '2026-03-03', code: '20610', amount: 300, modifiers: ['RT'] }),
+      line({ date: '2026-03-03', code: '99214', amount: 250 }),
+    ]);
+    expect(evaluate(b, ctx(), ptp).findings).toHaveLength(1);
+  });
+});

@@ -1,14 +1,16 @@
 import type { Bill, BillLine, Context, Datasets, Finding, Skipped } from '../types.js';
-import { hasSeparatingModifier, mkFinding } from '../lib/util.js';
+import { hasNcciBypassModifier, isFacilityBill, mkFinding } from '../lib/util.js';
 import { cite } from '../citations.js';
 import { netted } from '../net.js';
 
 export const id = 'NCCI-01';
 
-export function evaluate(bill: Bill, _ctx: Context, data: Datasets): { findings: Finding[]; skipped?: Skipped } {
+export function evaluate(bill: Bill, ctx: Context, data: Datasets): { findings: Finding[]; skipped?: Skipped } {
   if (!data.ncciPtp) {
     return { findings: [], skipped: { ruleId: id, needs: ['NCCI procedure-to-procedure edit data'] } };
   }
+  // PTP edits apply to practitioner and outpatient claims, not to an inpatient hospital stay's facility bill.
+  if (ctx.admitted === true && isFacilityBill(bill.lines)) return { findings: [] };
   const byDate = new Map<string, BillLine[]>();
   for (const l of netted(bill).charges) {
     if (!l.date || !l.code) continue;
@@ -27,7 +29,7 @@ export function evaluate(bill: Bill, _ctx: Context, data: Datasets): { findings:
         const edit = data.ncciPtp(a.code!, b.code!, date);
         if (!edit) continue;
         if (edit.modifierIndicator === 9) continue;
-        if (edit.modifierIndicator === 1 && hasSeparatingModifier(b.modifiers)) continue;
+        if (edit.modifierIndicator === 1 && hasNcciBypassModifier(b.modifiers)) continue;
         findings.push(
           mkFinding({
             ruleId: id,

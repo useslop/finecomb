@@ -78,6 +78,27 @@ export function hasSeparatingModifier(mods: string[] | undefined): boolean {
   return (mods ?? []).some((m) => SEPARATING_MODIFIERS.has(m.toUpperCase()));
 }
 
+/** NCCI-associated modifiers that bypass a modifier-indicator-1 PTP edit when on the column-2 line
+ * (SPEC §3 NCCI-01, RESEARCH E12): E/M 25 and 57, 24, 27, global-period 58/78/79, 59 and X{EPSU}, 91,
+ * and the anatomic modifiers. */
+const NCCI_BYPASS_MODIFIERS = new Set([
+  '24', '25', '27', '57', '58', '59', '78', '79', '91',
+  'XE', 'XS', 'XP', 'XU',
+  'LT', 'RT', 'LC', 'LD', 'LM', 'RC', 'RI',
+  'E1', 'E2', 'E3', 'E4',
+  'FA', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9',
+  'TA', 'T1', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'T8', 'T9',
+]);
+
+export function hasNcciBypassModifier(mods: string[] | undefined): boolean {
+  return (mods ?? []).some((m) => NCCI_BYPASS_MODIFIERS.has(m.trim().toUpperCase()));
+}
+
+/** A facility (UB-04) bill: at least one line carries a revenue code. */
+export function isFacilityBill(lines: BillLine[]): boolean {
+  return lines.some((l) => Boolean(l.revCode));
+}
+
 // Credit/reversal netting lives in ../net.ts (shared pre-pass used by analyze()).
 
 export const ROOM_REV_CODE_MIN = 10; // 010X
