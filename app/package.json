@@ -8,8 +8,9 @@
     "dev": "vite",
     "prebuild": "node scripts/copy-data.mjs",
     "build": "tsc --noEmit && vite build",
+    "postbuild": "node scripts/license-gate.mjs",
     "preview": "vite preview",
-    "test": "vitest run",
+    "test": "vitest run && node scripts/license-gate.mjs --self-test",
     "test:privacy": "node e2e/privacy.mjs",
     "test:a11y": "node e2e/a11y.mjs"
   },

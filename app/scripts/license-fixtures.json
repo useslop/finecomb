@@ -1,0 +1,62 @@
+[
+  {
+    "fragment": "[redacted descriptor fragment]",
+    "source": "AMA CPT E/M family descriptor opening (office/outpatient established patient, 99211-99215)."
+  },
+  {
+    "fragment": "[redacted descriptor fragment]",
+    "source": "AMA CPT E/M family descriptor opening (office/outpatient new patient, 99202-99205)."
+  },
+  {
+    "fragment": "[redacted descriptor fragment]",
+    "source": "NUBC/UB-04 revenue code generic subcategory label, repeated across many categories (e.g. 0100, 0250, 0270 '... [redacted descriptor fragment]')."
+  },
+  {
+    "fragment": "[redacted descriptor fragment]",
+    "source": "NUBC/UB-04 room & board revenue code descriptor (011X '[redacted descriptor fragment]')."
+  },
+  {
+    "fragment": "[redacted descriptor fragment]",
+    "source": "NUBC/UB-04 revenue code 0100 category title ('[redacted descriptor fragment]')."
+  },
+  {
+    "fragment": "[redacted descriptor fragment]",
+    "source": "NUBC/UB-04 revenue code 023X category title."
+  },
+  {
+    "fragment": "[redacted descriptor fragment]",
+    "source": "AMA CPT E/M presenting-problem severity descriptor language."
+  },
+  {
+    "fragment": "[redacted descriptor fragment]",
+    "source": "AMA CPT E/M medical-decision-making level descriptor language."
+  },
+  {
+    "fragment": "[redacted descriptor fragment]",
+    "source": "AMA CPT E/M medical-decision-making level descriptor language."
+  },
+  {
+    "fragment": "[redacted descriptor fragment]",
+    "source": "AMA CPT E/M category title (99221-99223)."
+  },
+  {
+    "fragment": "[redacted descriptor fragment]",
+    "source": "AMA CPT E/M category title (99231-99233)."
+  },
+  {
+    "fragment": "[redacted descriptor fragment]",
+    "source": "AMA CPT critical care descriptor opening (99291)."
+  },
+  {
+    "fragment": "[redacted descriptor fragment]",
+    "source": "AMA CPT anesthesia section descriptor boilerplate."
+  },
+  {
+    "fragment": "[redacted descriptor fragment]",
+    "source": "AMA CPT boilerplate prefix used for unlisted-procedure codes across many specialties."
+  },
+  {
+    "fragment": "[redacted descriptor fragment]",
+    "source": "AMA CPT surgery section descriptor boilerplate (integumentary codes)."
+  }
+]
