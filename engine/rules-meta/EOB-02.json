@@ -1,6 +1,6 @@
 {
   "id": "EOB-02",
-  "version": 1,
+  "version": 2,
   "title": "Provider-liability (CO) amount billed to you",
   "requiredInputs": [
     "EOB group/reason codes"

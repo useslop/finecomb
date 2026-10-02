@@ -1,6 +1,6 @@
 {
   "id": "MATH-01",
-  "version": 1,
+  "version": 2,
   "title": "Line arithmetic error",
   "requiredInputs": [
     "line quantity, unit price and amount"

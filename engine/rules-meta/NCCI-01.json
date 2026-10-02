@@ -1,6 +1,6 @@
 {
   "id": "NCCI-01",
-  "version": 1,
+  "version": 2,
   "title": "Unbundling (NCCI procedure-to-procedure edit)",
   "requiredInputs": [
     "procedure codes, modifiers, dates"

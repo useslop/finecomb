@@ -1,6 +1,6 @@
 {
   "id": "MUE-01",
-  "version": 1,
+  "version": 2,
   "title": "Units above Medicare's Medically Unlikely Edit (MUE)",
   "requiredInputs": [
     "HCPCS code, units, date of service",

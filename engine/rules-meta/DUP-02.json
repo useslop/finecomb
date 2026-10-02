@@ -1,6 +1,6 @@
 {
   "id": "DUP-02",
-  "version": 1,
+  "version": 2,
   "title": "Near-duplicate charge (same code, different price or description)",
   "requiredInputs": [
     "bill lines with codes and dates"

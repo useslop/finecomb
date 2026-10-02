@@ -1,6 +1,6 @@
 {
   "id": "RB-01",
-  "version": 1,
+  "version": 2,
   "title": "Room-and-board days exceed nights stayed (the discharge-day charge)",
   "requiredInputs": [
     "admission and discharge dates",

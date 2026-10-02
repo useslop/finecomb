@@ -1,6 +1,6 @@
 {
   "id": "QTY-01",
-  "version": 1,
+  "version": 2,
   "title": "Implausible quantity for the stay",
   "requiredInputs": [
     "bill lines",

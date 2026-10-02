@@ -1,6 +1,6 @@
 {
   "id": "DUP-01",
-  "version": 1,
+  "version": 2,
   "title": "Exact duplicate charge",
   "requiredInputs": [
     "bill lines"

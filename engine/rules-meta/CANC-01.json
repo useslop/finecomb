@@ -1,6 +1,6 @@
 {
   "id": "CANC-01",
-  "version": 1,
+  "version": 2,
   "title": "Canceled, not received, or phantom service",
   "requiredInputs": [
     "bill lines; user \"not received\" marks"

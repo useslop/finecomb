@@ -1,6 +1,6 @@
 {
   "id": "INS-01",
-  "version": 1,
+  "version": 2,
   "title": "Possibly not billed to insurance",
   "requiredInputs": [
     "insurance status"
