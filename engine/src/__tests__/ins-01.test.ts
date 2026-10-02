@@ -27,3 +27,15 @@ describe('INS-01 possibly not billed to insurance', () => {
     expect(findings).toHaveLength(0);
   });
 });
+
+describe('INS-01 hard negatives (F1)', () => {
+  it('does not flag a Medicaid patient with no EOB when the bill shows a payment and adjustment', () => {
+    const b = bill([line({ amount: 1000 })], { totalCharges: 1000, payments: 250, adjustments: 750, balanceDue: 0 });
+    expect(evaluate(b, ctx({ insurance: 'medicaid' }), {}).findings).toHaveLength(0);
+  });
+
+  it('does not flag an insured bill with a posted insurance payment but no EOB entered', () => {
+    const b = bill([line({ amount: 1000 })], { totalCharges: 1000, payments: 600, adjustments: 0, balanceDue: 400 });
+    expect(evaluate(b, ctx({ insurance: 'commercial' }), {}).findings).toHaveLength(0);
+  });
+});

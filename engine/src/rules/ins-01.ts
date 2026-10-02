@@ -10,6 +10,10 @@ export function evaluate(bill: Bill, ctx: Context, _data: Datasets): { findings:
   if (ctx.insurance === 'none') return { findings: [] };
   const noEobEvidence = !ctx.eob || (ctx.eob.planPaid == null && (ctx.eob.adjustments ?? []).length === 0);
   if (!noEobEvidence) return { findings: [] };
+  // Payer activity printed on the bill itself is evidence the claim went out, EOB or not. Medicaid in
+  // particular often sends no EOB at all; a posted payment or contractual adjustment settles it.
+  const { payments, adjustments } = bill.header;
+  if ((payments ?? 0) > 0 || (adjustments ?? 0) > 0) return { findings: [] };
   return {
     findings: [
       mkFinding({
