@@ -77,22 +77,25 @@ export default function FindingCard({
 
       <p className="field__hint">Rule {finding.ruleId}</p>
 
-      <div className="finding-card__actions no-print">
-        <button
-          type="button"
-          className={`btn btn--secondary ${action === 'dispute' ? 'is-active' : ''}`}
-          onClick={() => onAction('dispute')}
-        >
-          {action === 'dispute' ? '✓ Added to dispute letter' : 'Add to dispute letter'}
-        </button>
-        <button
-          type="button"
-          className={`btn btn--ghost ${action === 'dismissed' ? 'is-active' : ''}`}
-          onClick={() => onAction('dismissed')}
-        >
-          {action === 'dismissed' ? '✓ Marked not an issue' : 'Not an issue'}
-        </button>
-      </div>
+      {/* Info cards are pointers, not disputes: they never go into a dispute letter. */}
+      {finding.confidence !== 'info' && (
+        <div className="finding-card__actions no-print">
+          <button
+            type="button"
+            className={`btn btn--secondary ${action === 'dispute' ? 'is-active' : ''}`}
+            onClick={() => onAction('dispute')}
+          >
+            {action === 'dispute' ? '✓ Added to dispute letter' : 'Add to dispute letter'}
+          </button>
+          <button
+            type="button"
+            className={`btn btn--ghost ${action === 'dismissed' ? 'is-active' : ''}`}
+            onClick={() => onAction('dismissed')}
+          >
+            {action === 'dismissed' ? '✓ Marked not an issue' : 'Not an issue'}
+          </button>
+        </div>
+      )}
     </article>
   );
 }
