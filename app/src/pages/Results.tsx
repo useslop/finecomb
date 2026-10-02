@@ -30,7 +30,13 @@ export default function Results() {
     );
   }
 
-  const dollars = result.findings.reduce((sum, f) => sum + (f.dollarsAtStake ?? 0), 0);
+  // Findings can overlap (an EOB gap and a No Surprises gap can be the same dollars), so the
+  // headline never claims more than the bill itself asks for.
+  const summed = result.findings.reduce((sum, f) => sum + (f.dollarsAtStake ?? 0), 0);
+  const billCap =
+    bill.header.balanceDue ?? bill.header.totalCharges ?? bill.lines.reduce((s, l) => s + Math.max(0, l.amount), 0);
+  const capped = billCap > 0 && summed > billCap;
+  const dollars = capped ? billCap : summed;
   const byConfidence = result.findings.reduce<Record<string, number>>((acc, f) => {
     acc[f.confidence] = (acc[f.confidence] ?? 0) + 1;
     return acc;
@@ -60,8 +66,13 @@ export default function Results() {
           <span className="summary-stats__label">possible issues to ask about</span>
         </div>
         <div className="summary-stats__item">
-          <span className="summary-stats__value">{formatMoney(dollars)}</span>
-          <span className="summary-stats__label">at stake where computable</span>
+          <span className="summary-stats__value">
+            {capped ? 'Up to ' : ''}
+            {formatMoney(dollars)}
+          </span>
+          <span className="summary-stats__label">
+            {capped ? 'at stake; issues overlap, so this is capped at the bill amount' : 'at stake where computable'}
+          </span>
         </div>
         <div className="summary-stats__item">
           <span className="summary-stats__value">
