@@ -1,0 +1,265 @@
+{
+ "id": "fc-holdout-026",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20466896,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 026",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0100925",
+   "admitDate": "2026-06-03",
+   "dischargeDate": "2026-06-05",
+   "totalCharges": 8808.26,
+   "statementDate": "2026-06-22",
+   "payments": 2593,
+   "adjustments": 0,
+   "balanceDue": 6215.26
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-03",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 3711.32,
+    "amount": 3711.32,
+    "revCode": "0120"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-04",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 3711.32,
+    "amount": 3711.32,
+    "revCode": "0120"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-03",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 35.13,
+    "amount": 35.13,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-03",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 149.89,
+    "amount": 149.89,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-04",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 54.28,
+    "amount": 54.28,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-04",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 34.58,
+    "amount": 34.58,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-06-04",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 47.28,
+    "amount": 47.28,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L08",
+    "date": "2026-06-03",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 6,
+    "unitPrice": 59.61,
+    "amount": 357.66,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-06-04",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 120.88,
+    "amount": 120.88,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2026-06-03",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 294.22,
+    "amount": 294.22,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L11",
+    "date": "2026-06-03",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 29.13,
+    "amount": 29.13,
+    "revCode": "0270"
+   },
+   {
+    "id": "L12",
+    "date": "2026-06-03",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 143.35,
+    "amount": 143.35,
+    "revCode": "0270"
+   },
+   {
+    "id": "L13",
+    "date": "2026-06-03",
+    "description": "CEFTRIAXONE WASTAGE",
+    "qty": 2,
+    "unitPrice": 59.61,
+    "amount": 119.22,
+    "code": "J0696",
+    "revCode": "0636",
+    "modifiers": [
+     "JW"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-06-19",
+  "firstBillDate": "2026-06-30",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": []
+ },
+ "data": {
+  "mue": {
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01"
+ ],
+ "tags": [
+  "hn:jw-waste",
+  "variant:jw-wastage",
+  "plant:MCD-01:no-eob",
+  "variant:medicaid-no-eob"
+ ]
+}

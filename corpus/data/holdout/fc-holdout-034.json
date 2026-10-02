@@ -1,0 +1,325 @@
+{
+ "id": "fc-holdout-034",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20530248,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 034",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0101221",
+   "admitDate": "2026-02-07",
+   "dischargeDate": "2026-02-12",
+   "totalCharges": 24425.06,
+   "statementDate": "2026-02-25",
+   "payments": 9686.02,
+   "adjustments": 11608.95,
+   "balanceDue": 3130.09
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-02-07",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4559.31,
+    "amount": 4559.31,
+    "revCode": "0110"
+   },
+   {
+    "id": "L02",
+    "date": "2026-02-08",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4559.31,
+    "amount": 4559.31,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2026-02-09",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4559.31,
+    "amount": 4559.31,
+    "revCode": "0110"
+   },
+   {
+    "id": "L04",
+    "date": "2026-02-10",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4559.31,
+    "amount": 4559.31,
+    "revCode": "0110"
+   },
+   {
+    "id": "L05",
+    "date": "2026-02-11",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4559.31,
+    "amount": 4559.31,
+    "revCode": "0110"
+   },
+   {
+    "id": "L06",
+    "date": "2026-02-07",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 102.61,
+    "amount": 102.61,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-02-07",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 102.86,
+    "amount": 102.86,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2026-02-08",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 36.41,
+    "amount": 36.41,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-02-09",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 100.43,
+    "amount": 100.43,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2026-02-10",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 101.08,
+    "amount": 101.08,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L11",
+    "date": "2026-02-10",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 34.66,
+    "amount": 34.66,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L12",
+    "date": "2026-02-11",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 33.45,
+    "amount": 33.45,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2026-02-11",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 42.46,
+    "amount": 42.46,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L14",
+    "date": "2026-02-08",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 10,
+    "unitPrice": 21.86,
+    "amount": 218.6,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2026-02-11",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 31.46,
+    "amount": 157.3,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2026-02-07",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 331.68,
+    "amount": 331.68,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L17",
+    "date": "2026-02-07",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 113.39,
+    "amount": 113.39,
+    "revCode": "0270"
+   },
+   {
+    "id": "L18",
+    "date": "2026-02-08",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 253.58,
+    "amount": 253.58,
+    "revCode": "0424"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-02-26",
+  "firstBillDate": "2026-02-17",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Marketplace Plan",
+  "collections": [
+   {
+    "date": "2026-04-03",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:eca-agency-referral",
+  "hn:ins-paid-no-eob",
+  "hn:repeat-mod"
+ ]
+}

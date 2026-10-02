@@ -1,0 +1,131 @@
+{
+ "id": "fc-holdout-141",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21377581,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 141",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0105180",
+   "totalCharges": 290.52,
+   "statementDate": "2025-06-22",
+   "payments": 96,
+   "adjustments": 0,
+   "balanceDue": 194.52
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-05-16",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 162.2,
+    "amount": 162.2,
+    "code": "99214"
+   },
+   {
+    "id": "L02",
+    "date": "2025-05-16",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 28.32,
+    "amount": 28.32,
+    "code": "36415"
+   },
+   {
+    "id": "L03",
+    "date": "2025-05-16",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "firstBillDate": "2025-06-04",
+  "state": "TX",
+  "insurerName": "Medicare",
+  "eob": {
+   "billed": 290.52,
+   "allowed": 170.57,
+   "planPaid": 96,
+   "deductible": 19.32,
+   "copay": 25,
+   "coinsurance": 30.25,
+   "patientResponsibility": 74.57,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 119.95
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 19.32
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 30.25
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 25
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 500
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02"
+ ],
+ "tags": [
+  "hn:cr-legit",
+  "hn:rounding",
+  "plant:EOB-02:co-billed"
+ ]
+}

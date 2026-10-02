@@ -1,0 +1,168 @@
+{
+ "id": "fc-holdout-074",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 20847008,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 074",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0102701",
+   "totalCharges": 6838.27,
+   "statementDate": "2026-05-19",
+   "payments": 0,
+   "adjustments": 2695.71,
+   "balanceDue": 4142.56
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-08",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 6756.5,
+    "amount": 6756.5,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example General Hospital"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-08",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 6756.5,
+    "amount": 6756.5,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example General Hospital"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-08",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 36.73,
+    "amount": 36.73,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example General Hospital"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-08",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 45.04,
+    "amount": 45.04,
+    "code": "81003",
+    "revCode": "0300",
+    "provider": "Example General Hospital"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-08",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 6756.5,
+    "amount": -6756.5,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example General Hospital"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-08",
+    "description": "IV BAG NOT GIVEN",
+    "qty": 1,
+    "unitPrice": 178.77,
+    "amount": 178.77,
+    "revCode": "0250",
+    "provider": "Example General Hospital"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-08",
+    "description": "IV BAG NOT GIVEN",
+    "qty": -1,
+    "unitPrice": 178.77,
+    "amount": -178.77,
+    "revCode": "0250",
+    "provider": "Example General Hospital"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-05-19",
+  "firstBillDate": "2026-05-18",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "gfe": [
+   {
+    "provider": "Example General Hospital",
+    "total": 6311.1
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-121-days",
+  "hn:credit-reversal",
+  "hn:cancel-reversed",
+  "variant:sched-imaging",
+  "variant:credit:posqty",
+  "variant:cancel-credit:negqty"
+ ]
+}

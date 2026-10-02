@@ -1,0 +1,136 @@
+{
+ "id": "fc-holdout-136",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21337986,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 136",
+   "providerName": "Example Urgent Care",
+   "accountNumber": "TEST-0104995",
+   "totalCharges": 3210.34,
+   "statementDate": "2026-09-29",
+   "payments": 0,
+   "adjustments": 1088.93,
+   "balanceDue": 2121.41
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-09-05",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 1,
+    "unitPrice": 150.89,
+    "amount": 150.89,
+    "code": "99204",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L02",
+    "date": "2026-09-05",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 217.81,
+    "amount": 217.81,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ],
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L03",
+    "date": "2026-09-05",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 217.81,
+    "amount": 217.81,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ],
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L04",
+    "date": "2026-09-05",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L05",
+    "date": "2026-09-05",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2523.83,
+    "amount": 2523.83,
+    "code": "74177",
+    "provider": "Example Urgent Care"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-09-21",
+  "state": "AL",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Example Urgent Care",
+    "total": 2820.75
+   }
+  ],
+  "onCreditReport": false,
+  "paidInFull": true,
+  "originalBalance": 596.22
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99204": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-399",
+  "hn:bilateral",
+  "hn:cr-not-reported",
+  "hn:rounding",
+  "variant:bilateral-same-price"
+ ]
+}

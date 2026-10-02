@@ -1,0 +1,161 @@
+{
+ "id": "fc-holdout-102",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21068740,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 102",
+   "providerName": "Example Urgent Care",
+   "accountNumber": "TEST-0103737",
+   "totalCharges": 2905.53,
+   "statementDate": "2026-06-04",
+   "payments": 0,
+   "adjustments": 443.98,
+   "balanceDue": 2461.55
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-25",
+    "description": "OFFICE VISIT NEW LEVEL 3",
+    "qty": 1,
+    "unitPrice": 363.73,
+    "amount": 363.73,
+    "code": "99203",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-25",
+    "description": "FLU TEST RAPID",
+    "qty": 1,
+    "unitPrice": 61.49,
+    "amount": 61.49,
+    "code": "87804",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-25",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 58.13,
+    "amount": 58.13,
+    "code": "81003",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-25",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 177.97,
+    "amount": 177.97,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ],
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-25",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 177.97,
+    "amount": 177.97,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ],
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-25",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2066.24,
+    "amount": 2066.24,
+    "code": "74177",
+    "provider": "Example Urgent Care"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-05-12",
+  "state": "GA",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Example Urgent Care",
+    "total": 2294.18
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87804": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99203": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:bilateral",
+  "hn:gfe-121-days",
+  "variant:bilateral-same-price"
+ ]
+}

@@ -1,0 +1,175 @@
+{
+ "id": "fc-holdout-105",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21092497,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 105",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0103848",
+   "totalCharges": 2514.7,
+   "statementDate": "2026-07-10",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 2514.7
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-05",
+    "description": "OFFICE VISIT EST LEVEL 3",
+    "qty": 1,
+    "unitPrice": 174.44,
+    "amount": 174.44,
+    "code": "99213",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-05",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 62.83,
+    "amount": 62.83,
+    "code": "85025",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-05",
+    "description": "STREP TEST RAPID",
+    "qty": 1,
+    "unitPrice": 70.46,
+    "amount": 70.46,
+    "code": "87880",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-05",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 146.95,
+    "amount": 146.95,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ],
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-05",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 73.47,
+    "amount": 73.47,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ],
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-05",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 1986.55,
+    "amount": 1986.55,
+    "code": "74177",
+    "provider": "Sample Internal Medicine Group"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-06-16",
+  "state": "OK",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Sample Internal Medicine Group",
+    "total": 1966.96
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87880": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99213": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "GFE-01",
+   "lineIds": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05",
+    "L06"
+   ]
+  }
+ ],
+ "plants": [
+  "GFE-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "variant:bilateral-discounted",
+  "plant:GFE-01"
+ ]
+}

@@ -1,0 +1,188 @@
+{
+ "id": "fc-holdout-147",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21425095,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 147",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0105402",
+   "totalCharges": 618.43,
+   "statementDate": "2024-09-21",
+   "payments": 198.74,
+   "adjustments": 0,
+   "balanceDue": 419.69
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2024-08-15",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 1,
+    "unitPrice": 201.78,
+    "amount": 201.78,
+    "code": "99204"
+   },
+   {
+    "id": "L02",
+    "date": "2024-08-15",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 44.68,
+    "amount": 44.68,
+    "code": "81003"
+   },
+   {
+    "id": "L03",
+    "date": "2024-08-15",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 177.19,
+    "amount": 177.19,
+    "code": "85025"
+   },
+   {
+    "id": "L04",
+    "date": "2024-08-15",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402",
+    "notReceived": true
+   },
+   {
+    "id": "L05",
+    "date": "2024-08-15",
+    "description": "BLOOD COUNT COMPLETE NO DIFF",
+    "qty": 1,
+    "unitPrice": 94.78,
+    "amount": 94.78,
+    "code": "85027"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "firstBillDate": "2024-09-06",
+  "state": "MO",
+  "insurerName": "State Medicaid",
+  "eob": {
+   "billed": 618.43,
+   "allowed": 199.74,
+   "planPaid": 198.74,
+   "deductible": 0,
+   "copay": 1,
+   "coinsurance": 0,
+   "patientResponsibility": 1,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 418.69
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 1
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 3049.89
+ },
+ "data": {
+  "mue": {
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85027": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99204": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "85025",
+    "col2": "85027",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L03",
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01",
+  "NCCI-01",
+  "CANC-01"
+ ],
+ "tags": [
+  "hn:rounding",
+  "hn:cr-legit",
+  "plant:NCCI-01:mi0",
+  "plant:CANC-01:user-marked",
+  "plant:MCD-01:with-eob"
+ ]
+}

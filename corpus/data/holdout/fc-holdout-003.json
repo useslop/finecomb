@@ -1,0 +1,271 @@
+{
+ "id": "fc-holdout-003",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20284759,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 003",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0100074",
+   "admitDate": "2026-07-02",
+   "dischargeDate": "2026-07-02",
+   "totalCharges": 19552.88,
+   "statementDate": "2026-07-28",
+   "payments": 8245.59,
+   "adjustments": 9041.5,
+   "balanceDue": 2265.79
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-02",
+    "description": "ED VISIT LVL 3",
+    "qty": 1,
+    "unitPrice": 796.04,
+    "amount": 796.04,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-02",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2776.19,
+    "amount": 2776.19,
+    "revCode": "0120"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-02",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 5970.93,
+    "amount": 5970.93,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-02",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 7,
+    "unitPrice": 716.09,
+    "amount": 5012.63,
+    "revCode": "0360"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-02",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1661.11,
+    "amount": 1661.11,
+    "revCode": "0710"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-02",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1691.69,
+    "amount": 1691.69,
+    "revCode": "0370"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-02",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 624.08,
+    "amount": 624.08,
+    "revCode": "0272"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-02",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 102.06,
+    "amount": 102.06,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-02",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 97.01,
+    "amount": 485.05,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-02",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 131.94,
+    "amount": 131.94,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-02",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 29.88,
+    "amount": 149.4,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-02",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 122.08,
+    "amount": 122.08,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L13",
+    "date": "2026-07-02",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 29.68,
+    "amount": 29.68,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-07-09",
+  "firstBillDate": "2026-07-08",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 19552.88,
+   "allowed": 10511.38,
+   "planPaid": 8245.59,
+   "deductible": 1321.84,
+   "copay": 25,
+   "coinsurance": 918.95,
+   "patientResponsibility": 2265.79,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 9041.5
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1321.84
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 918.95
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 25
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:repeat-mod",
+  "hn:same-day-admit-discharge"
+ ]
+}

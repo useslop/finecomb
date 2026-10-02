@@ -1,0 +1,283 @@
+{
+ "id": "fc-holdout-055",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 20696547,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 055",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0101998",
+   "totalCharges": 5423.15,
+   "statementDate": "2026-05-30",
+   "payments": 596.85,
+   "adjustments": 0,
+   "balanceDue": 4826.3
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-14",
+    "description": "ER VISIT LEVEL 3",
+    "qty": 1,
+    "unitPrice": 1401.31,
+    "amount": 1401.31,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-14",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 174.41,
+    "amount": 174.41,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-14",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 181.52,
+    "amount": 181.52,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-14",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 38.4,
+    "amount": 38.4,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-14",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 2,
+    "unitPrice": 105.09,
+    "amount": 210.18,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-14",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 1719.3,
+    "amount": 1719.3,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-14",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 465.86,
+    "amount": 465.86,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-14",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 577.81,
+    "amount": 577.81,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "59"
+    ]
+   },
+   {
+    "id": "L09",
+    "date": "2026-05-14",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 6,
+    "unitPrice": 109.06,
+    "amount": 654.36,
+    "code": "J0696",
+    "revCode": "0636"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-06-02",
+  "firstBillDate": "2026-06-02",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 5423.15,
+   "allowed": 1800.75,
+   "planPaid": 596.85,
+   "deductible": 1054.69,
+   "copay": 0,
+   "coinsurance": 149.21,
+   "patientResponsibility": 1203.9,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 3622.4
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1054.69
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 149.21
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-01"
+ ],
+ "tags": [
+  "hn:ncci-mi1-59",
+  "hn:mue-setting"
+ ]
+}

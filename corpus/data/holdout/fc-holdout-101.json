@@ -1,0 +1,225 @@
+{
+ "id": "fc-holdout-101",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21060821,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 101",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0103700",
+   "totalCharges": 3175.36,
+   "statementDate": "2026-05-18",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 3175.36
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-09",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 340.9,
+    "amount": 340.9,
+    "code": "99214"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-09",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 36.93,
+    "amount": 36.93,
+    "code": "81003"
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-09",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 56.83,
+    "amount": 56.83,
+    "code": "81003"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-09",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 165.34,
+    "amount": 165.34,
+    "code": "85025"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-09",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 174.9,
+    "amount": 174.9,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-09",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 174.9,
+    "amount": 174.9,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-09",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-09",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2017.5,
+    "amount": 2017.5,
+    "code": "74177"
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-09",
+    "description": "BLOOD COUNT COMPLETE NO DIFF",
+    "qty": 1,
+    "unitPrice": 108.06,
+    "amount": 108.06,
+    "code": "85027"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-08-10",
+  "state": "TN",
+  "ppdrFiledDate": "2026-09-01",
+  "collections": [
+   {
+    "date": "2026-09-01",
+    "kind": "credit_report"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85027": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "85025",
+    "col2": "85027",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L02",
+    "L08"
+   ]
+  },
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L03",
+    "L09"
+   ]
+  },
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01",
+  "DUP-02",
+  "NCCI-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "hn:rounding",
+  "variant:bilateral-same-price",
+  "plant:DUP-02:price",
+  "plant:NCCI-01:mi0",
+  "plant:PPDR-01"
+ ]
+}

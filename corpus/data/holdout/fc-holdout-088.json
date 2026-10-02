@@ -1,0 +1,144 @@
+{
+ "id": "fc-holdout-088",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 20957874,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 088",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0103219",
+   "totalCharges": 3193.42,
+   "statementDate": "2026-06-16",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 3193.42
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-14",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2974.28,
+    "amount": 2974.28,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example Valley Hospital"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-14",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 24.28,
+    "amount": 24.28,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example Valley Hospital"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-14",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 194.86,
+    "amount": 194.86,
+    "code": "87040",
+    "revCode": "0306",
+    "provider": "Example Valley Hospital"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-14",
+    "description": "IV BAG NOT GIVEN",
+    "qty": 1,
+    "unitPrice": 63.01,
+    "amount": 63.01,
+    "revCode": "0250",
+    "provider": "Example Valley Hospital"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-14",
+    "description": "IV BAG NOT GIVEN",
+    "qty": -1,
+    "unitPrice": 63.01,
+    "amount": -63.01,
+    "revCode": "0250",
+    "provider": "Example Valley Hospital"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-05-27",
+  "firstBillDate": "2026-05-28",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "gfe": [
+   {
+    "provider": "Example Valley Hospital",
+    "total": 2634.67
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-121-days",
+  "hn:cancel-reversed",
+  "variant:sched-imaging",
+  "variant:cancel-credit:negqty"
+ ]
+}

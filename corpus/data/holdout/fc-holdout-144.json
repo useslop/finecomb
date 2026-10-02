@@ -1,0 +1,117 @@
+{
+ "id": "fc-holdout-144",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 21401338,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 144",
+   "providerName": "Sample Family Clinic",
+   "accountNumber": "TEST-0105291",
+   "totalCharges": 584.31,
+   "statementDate": "2026-05-07",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 584.31
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-13",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 272.84,
+    "amount": 272.84,
+    "code": "99214",
+    "modifiers": [
+     "25"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-13",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 206.71,
+    "amount": 206.71,
+    "code": "20610"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-13",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 3,
+    "unitPrice": 34.92,
+    "amount": 104.76,
+    "code": "J3301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "firstBillDate": "2026-05-03",
+  "state": "KS",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "onCreditReport": false,
+  "paidInFull": true,
+  "originalBalance": 351.05
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "20610",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01"
+ ],
+ "tags": [
+  "hn:ncci-mod25",
+  "hn:cr-not-reported"
+ ]
+}

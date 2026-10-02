@@ -1,0 +1,225 @@
+{
+ "id": "fc-holdout-077",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 20870765,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 077",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0102812",
+   "totalCharges": 2928.63,
+   "statementDate": "2025-08-30",
+   "payments": 855.09,
+   "adjustments": 0,
+   "balanceDue": 2073.54
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-08-14",
+    "description": "EMERGENCY ROOM LVL 3",
+    "qty": 1,
+    "unitPrice": 1811.14,
+    "amount": 1811.14,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-08-14",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 52.87,
+    "amount": 52.87,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-08-14",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 36.51,
+    "amount": 36.51,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2025-08-14",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 267.01,
+    "amount": 534.02,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L05",
+    "date": "2025-08-14",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 91.86,
+    "amount": 183.72,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L08",
+    "date": "2025-08-14",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 91.86,
+    "amount": 183.72,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L06",
+    "date": "2025-08-14",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 18.06,
+    "amount": 18.06,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2025-08-14",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 108.59,
+    "amount": 108.59,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2025-08-23",
+  "firstBillDate": "2025-08-25",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "State Medicaid",
+  "collections": [
+   {
+    "date": "2025-10-14",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L05",
+    "L08"
+   ]
+  },
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01",
+  "MATH-01",
+  "DUP-01"
+ ],
+ "tags": [
+  "hn:eca-agency-referral",
+  "plant:MATH-01:extra-unit",
+  "plant:DUP-01",
+  "variant:eob-line-level-co",
+  "plant:MCD-01:no-eob",
+  "variant:medicaid-no-eob"
+ ]
+}

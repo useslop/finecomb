@@ -1,0 +1,296 @@
+{
+ "id": "fc-holdout-057",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 20712385,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 057",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0102072",
+   "totalCharges": 4099.53,
+   "statementDate": "2026-07-01",
+   "payments": 1051.16,
+   "adjustments": 0,
+   "balanceDue": 3048.37
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-08",
+    "description": "EMERGENCY ROOM LVL 4",
+    "qty": 1,
+    "unitPrice": 3025.89,
+    "amount": 3025.89,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-08",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 160.62,
+    "amount": 160.62,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-08",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 95.71,
+    "amount": 95.71,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-08",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 38.73,
+    "amount": 38.73,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-08",
+    "description": "CAPILLARY BLOOD DRAW",
+    "qty": 4,
+    "unitPrice": 28.53,
+    "amount": 114.12,
+    "code": "36416",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-08",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 220.69,
+    "amount": 220.69,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-06-08",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 227.48,
+    "amount": 227.48,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2026-06-08",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 15.05,
+    "amount": 120.4,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-06-08",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 95.89,
+    "amount": 95.89,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "emergency": true,
+  "admitted": false,
+  "firstPostDischargeStatementDate": "2026-06-16",
+  "firstBillDate": "2026-07-01",
+  "state": "AZ",
+  "hospitalCcn": "990104",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 4099.53,
+   "allowed": 1828.92,
+   "planPaid": 1051.16,
+   "deductible": 184.4,
+   "copay": 100,
+   "coinsurance": 493.36,
+   "patientResponsibility": 777.76,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 2270.61
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 184.4
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 493.36
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 100
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "36416": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   },
+   {
+    "col1": "36415",
+    "col2": "36416",
+    "mi": 9,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L06",
+    "L07"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NCCI-01",
+  "MUE-01",
+  "NSA-01"
+ ],
+ "tags": [
+  "hn:ncci-mi1-59",
+  "hn:ncci-mi9",
+  "plant:NCCI-01:mi1-no-modifier",
+  "plant:MUE-01"
+ ]
+}

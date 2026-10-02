@@ -1,0 +1,346 @@
+{
+ "id": "fc-holdout-069",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 20807413,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 069",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0102516",
+   "totalCharges": 4345.36,
+   "statementDate": "2025-12-14",
+   "payments": 797.65,
+   "adjustments": 0,
+   "balanceDue": 3547.71
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-11-15",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 1,
+    "unitPrice": 2073.67,
+    "amount": 2073.67,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-11-15",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 115.52,
+    "amount": 115.52,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-11-15",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 175.9,
+    "amount": 175.9,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-11-15",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 35.19,
+    "amount": 35.19,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2025-11-15",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 56.8,
+    "amount": 56.8,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2025-11-15",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 244.81,
+    "amount": 244.81,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L07",
+    "date": "2025-11-15",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 643.38,
+    "amount": 643.38,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2025-11-15",
+    "description": "IV PUSH EACH ADDL DRUG",
+    "qty": 2,
+    "unitPrice": 289.23,
+    "amount": 578.46,
+    "code": "96375",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2025-11-15",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 27.25,
+    "amount": 54.5,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2025-11-15",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 146,
+    "amount": 292,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L11",
+    "date": "2025-11-15",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 12.08,
+    "amount": 60.4,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2025-11-15",
+    "description": "ONDANSETRON 4MG ODT",
+    "qty": 1,
+    "unitPrice": 14.73,
+    "amount": 14.73,
+    "revCode": "0250",
+    "ndc": "82561461451"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "emergency": true,
+  "admitted": false,
+  "firstPostDischargeStatementDate": "2025-12-01",
+  "firstBillDate": "2025-12-05",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 4345.36,
+   "allowed": 1355.44,
+   "planPaid": 797.65,
+   "deductible": 358.05,
+   "copay": 100,
+   "coinsurance": 99.74,
+   "patientResponsibility": 557.79,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 2989.92
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 358.05
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 99.74
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 100
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-03-01",
+    "kind": "late_fee"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96375": {
+    "practitioner": {
+     "mue": 6,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 6,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "82561461451": {
+    "unitPrice": 0.21726399999999998,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "L12"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-01",
+  "RX-01"
+ ],
+ "tags": [
+  "hn:eca-late-fee",
+  "plant:RX-01"
+ ]
+}

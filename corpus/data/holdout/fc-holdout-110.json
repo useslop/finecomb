@@ -1,0 +1,143 @@
+{
+ "id": "fc-holdout-110",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21132092,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 110",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0104033",
+   "totalCharges": 3498.58,
+   "statementDate": "2026-07-10",
+   "payments": 242.25,
+   "adjustments": 645.39,
+   "balanceDue": 2610.94
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-22",
+    "description": "OFFICE VISIT NEW LEVEL 3",
+    "qty": 1,
+    "unitPrice": 389.4,
+    "amount": 389.4,
+    "code": "99203"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-22",
+    "description": "STREP TEST RAPID",
+    "qty": 1,
+    "unitPrice": 62.09,
+    "amount": 62.09,
+    "code": "87880"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-22",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 250.14,
+    "amount": 250.14,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-22",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 125.07,
+    "amount": 125.07,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-22",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2671.88,
+    "amount": 2671.88,
+    "code": "74177"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-06-27",
+  "state": "KS",
+  "ppdrFiledDate": "2026-08-11",
+  "collections": [
+   {
+    "date": "2026-08-11",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "87880": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99203": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "variant:bilateral-discounted",
+  "plant:PPDR-01"
+ ]
+}

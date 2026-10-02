@@ -1,0 +1,196 @@
+{
+ "id": "fc-holdout-103",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21076659,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 103",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0103774",
+   "totalCharges": 2488.18,
+   "statementDate": "2025-02-24",
+   "payments": 83.4,
+   "adjustments": 645.42,
+   "balanceDue": 1759.36
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-01-25",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 381.45,
+    "amount": 381.45,
+    "code": "99214",
+    "provider": "Sample Orthopedic Clinic"
+   },
+   {
+    "id": "L02",
+    "date": "2025-01-25",
+    "description": "STREP TEST RAPID",
+    "qty": 1,
+    "unitPrice": 46.58,
+    "amount": 46.58,
+    "code": "87880",
+    "provider": "Sample Orthopedic Clinic"
+   },
+   {
+    "id": "L03",
+    "date": "2025-01-25",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 22.3,
+    "amount": 22.3,
+    "code": "81003",
+    "provider": "Sample Orthopedic Clinic"
+   },
+   {
+    "id": "L04",
+    "date": "2025-01-25",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 59.35,
+    "amount": 59.35,
+    "code": "85025",
+    "provider": "Sample Orthopedic Clinic"
+   },
+   {
+    "id": "L05",
+    "date": "2025-01-25",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 132.83,
+    "amount": 132.83,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ],
+    "provider": "Sample Orthopedic Clinic"
+   },
+   {
+    "id": "L06",
+    "date": "2025-01-25",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 132.83,
+    "amount": 132.83,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ],
+    "provider": "Sample Orthopedic Clinic"
+   },
+   {
+    "id": "L07",
+    "date": "2025-01-25",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402",
+    "provider": "Sample Orthopedic Clinic"
+   },
+   {
+    "id": "L08",
+    "date": "2025-01-25",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 1612.84,
+    "amount": 1612.84,
+    "code": "74177",
+    "provider": "Sample Orthopedic Clinic"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-07-31",
+  "state": "OK",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Sample Orthopedic Clinic",
+    "total": 2092.62
+   }
+  ],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 3833.31
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87880": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:bilateral",
+  "hn:gfe-399",
+  "hn:cr-legit",
+  "hn:rounding",
+  "variant:bilateral-same-price"
+ ]
+}

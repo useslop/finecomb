@@ -1,0 +1,176 @@
+{
+ "id": "fc-holdout-128",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21274634,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 128",
+   "providerName": "Example Urgent Care",
+   "accountNumber": "TEST-0104699",
+   "totalCharges": 3568.79,
+   "statementDate": "2024-10-09",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 3568.79
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2024-09-23",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 1,
+    "unitPrice": 351.34,
+    "amount": 351.34,
+    "code": "99204",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L02",
+    "date": "2024-09-23",
+    "description": "INJECTION IM OR SUBQ",
+    "qty": 1,
+    "unitPrice": 84.93,
+    "amount": 84.93,
+    "code": "96372",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L03",
+    "date": "2024-09-23",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 63.03,
+    "amount": 252.12,
+    "code": "J0696",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L04",
+    "date": "2024-09-23",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 193.37,
+    "amount": 193.37,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ],
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L05",
+    "date": "2024-09-23",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 193.37,
+    "amount": 193.37,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ],
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L06",
+    "date": "2024-09-23",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L07",
+    "date": "2024-09-23",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2393.66,
+    "amount": 2393.66,
+    "code": "74177",
+    "provider": "Example Urgent Care"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-09-10",
+  "state": "MO",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Example Urgent Care",
+    "total": 3170.71
+   }
+  ],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 5021.93
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96372": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99204": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-399",
+  "hn:bilateral",
+  "hn:cr-legit",
+  "hn:rounding",
+  "variant:bilateral-same-price"
+ ]
+}

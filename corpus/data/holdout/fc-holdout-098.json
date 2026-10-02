@@ -1,0 +1,168 @@
+{
+ "id": "fc-holdout-098",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21037064,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 098",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0103589",
+   "totalCharges": 6572.8,
+   "statementDate": "2026-09-09",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 6572.8
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-02",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 6494.08,
+    "amount": 6494.08,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example County Hospital"
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-02",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 6494.08,
+    "amount": 6494.08,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example County Hospital"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-02",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 24.83,
+    "amount": 24.83,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example County Hospital"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-02",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 53.89,
+    "amount": 53.89,
+    "code": "85610",
+    "revCode": "0305",
+    "provider": "Example County Hospital"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-02",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 6494.08,
+    "amount": -6494.08,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example County Hospital"
+   },
+   {
+    "id": "L06",
+    "date": "2026-08-02",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 60.46,
+    "amount": 60.46,
+    "revCode": "0250",
+    "provider": "Example County Hospital"
+   },
+   {
+    "id": "L07",
+    "date": "2026-08-02",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": -1,
+    "unitPrice": 60.46,
+    "amount": -60.46,
+    "revCode": "0250",
+    "provider": "Example County Hospital"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-08-16",
+  "firstBillDate": "2026-08-09",
+  "state": "AZ",
+  "hospitalCcn": "990104",
+  "gfe": [
+   {
+    "provider": "Example County Hospital",
+    "total": 6182.16
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-399",
+  "hn:cancel-reversed",
+  "hn:credit-reversal",
+  "variant:sched-imaging",
+  "variant:credit:posqty",
+  "variant:cancel-credit:negqty"
+ ]
+}

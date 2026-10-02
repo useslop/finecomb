@@ -1,0 +1,434 @@
+{
+ "id": "fc-holdout-070",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 20815332,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 070",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0102553",
+   "admitDate": "2026-03-02",
+   "dischargeDate": "2026-03-02",
+   "totalCharges": 4633.22,
+   "statementDate": "2026-03-24",
+   "payments": 1439.74,
+   "adjustments": 0,
+   "balanceDue": 3193.48
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-02",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 2973.22,
+    "amount": 2973.22,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-02",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 91.8,
+    "amount": 91.8,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-02",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 58.36,
+    "amount": 58.36,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-02",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 24.33,
+    "amount": 24.33,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-02",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 95.82,
+    "amount": 95.82,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-02",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 43.92,
+    "amount": 43.92,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-03-02",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 247.33,
+    "amount": 247.33,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2026-03-02",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 497.31,
+    "amount": 497.31,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "XU"
+    ]
+   },
+   {
+    "id": "L09",
+    "date": "2026-03-02",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 22.99,
+    "amount": 114.95,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-03-02",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 196.79,
+    "amount": 393.58,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L11",
+    "date": "2026-03-02",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 26.08,
+    "amount": 26.08,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-03-02",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 26.08,
+    "amount": 26.08,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-03-02",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 40.44,
+    "amount": 40.44,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-03-22",
+  "firstBillDate": "2026-03-16",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 4633.22,
+   "allowed": 2003.43,
+   "planPaid": 1439.74,
+   "deductible": 203.75,
+   "copay": 0,
+   "coinsurance": 359.94,
+   "patientResponsibility": 563.69,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1687.59,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 52.11,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 33.12,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 13.81,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 54.39,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 24.93,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 140.38,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 282.27,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 65.25,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 223.39,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 14.8,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 14.8,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 22.95,
+     "lineId": "L12"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 203.75
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 359.94
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-07-04",
+    "kind": "credit_report"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L11",
+    "L13"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02",
+  "DUP-01"
+ ],
+ "tags": [
+  "hn:eca-forprofit",
+  "hn:ncci-mi1-59",
+  "plant:DUP-01",
+  "variant:eob-line-level-co",
+  "plant:EOB-02:co-billed"
+ ]
+}

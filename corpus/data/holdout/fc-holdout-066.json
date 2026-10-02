@@ -1,0 +1,381 @@
+{
+ "id": "fc-holdout-066",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 20783656,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 066",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0102405",
+   "admitDate": "2025-10-19",
+   "dischargeDate": "2025-10-20",
+   "totalCharges": 8592.9,
+   "statementDate": "2025-11-24",
+   "payments": 3479.9,
+   "adjustments": 4131.77,
+   "balanceDue": 981.23
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-10-19",
+    "description": "EMERGENCY ROOM LVL 5",
+    "qty": 1,
+    "unitPrice": 3274.71,
+    "amount": 3274.71,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-10-19",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 73.22,
+    "amount": 73.22,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2025-10-19",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 82.42,
+    "amount": 82.42,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2025-10-19",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 23.62,
+    "amount": 23.62,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2025-10-19",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 583.12,
+    "amount": 583.12,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L06",
+    "date": "2025-10-19",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 239.61,
+    "amount": 239.61,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2025-10-19",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 3,
+    "unitPrice": 109.87,
+    "amount": 329.61,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2025-10-19",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 78.09,
+    "amount": 78.09,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2025-10-19",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 96.38,
+    "amount": 96.38,
+    "revCode": "0270"
+   },
+   {
+    "id": "L10",
+    "date": "2025-10-19",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 21,
+    "unitPrice": 87.69,
+    "amount": 1841.49,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L11",
+    "date": "2025-10-20",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 17,
+    "unitPrice": 112.28,
+    "amount": 1908.76,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L12",
+    "date": "2025-10-20",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 61.87,
+    "amount": 61.87,
+    "code": "87040",
+    "revCode": "0306"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2025-11-09",
+  "firstBillDate": "2025-11-01",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 8592.9,
+   "allowed": 4461.13,
+   "planPaid": 3479.9,
+   "deductible": 111.25,
+   "copay": 0,
+   "coinsurance": 869.98,
+   "patientResponsibility": 981.23,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1574.6,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 35.21,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 39.63,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 11.36,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 280.38,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 115.21,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 158.49,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 37.55,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 46.34,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 885.45,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 917.8,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 29.75,
+     "lineId": "L12"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 111.25
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 869.98
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-05-04",
+    "kind": "credit_report"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "ECA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "ECA-01"
+ ],
+ "tags": [
+  "hn:hourly-overlap",
+  "hn:obs-room-hours",
+  "variant:eob-line-level-co",
+  "plant:ECA-01:no-notice"
+ ]
+}

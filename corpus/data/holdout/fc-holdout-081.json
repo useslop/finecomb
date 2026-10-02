@@ -1,0 +1,450 @@
+{
+ "id": "fc-holdout-081",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 20902441,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 081",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0102960",
+   "admitDate": "2026-08-06",
+   "dischargeDate": "2026-08-07",
+   "totalCharges": 11307.85,
+   "statementDate": "2026-09-13",
+   "payments": 2331.43,
+   "adjustments": 7762.29,
+   "balanceDue": 1214.13
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-06",
+    "description": "EMERGENCY ROOM LVL 5",
+    "qty": 1,
+    "unitPrice": 3529.38,
+    "amount": 3529.38,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-06",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 44.92,
+    "amount": 44.92,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-06",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 47.85,
+    "amount": 47.85,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-06",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 44.02,
+    "amount": 44.02,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-06",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 78.12,
+    "amount": 78.12,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L06",
+    "date": "2026-08-06",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 5,
+    "unitPrice": 42.45,
+    "amount": 2122.5,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-08-06",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 509.32,
+    "amount": 509.32,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L08",
+    "date": "2026-08-06",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 53.05,
+    "amount": 106.1,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-08-06",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 63.12,
+    "amount": 63.12,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-08-06",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 67.54,
+    "amount": 337.7,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-08-06",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 107.14,
+    "amount": 107.14,
+    "revCode": "0270"
+   },
+   {
+    "id": "L12",
+    "date": "2026-08-06",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 32,
+    "unitPrice": 79.6,
+    "amount": 2547.2,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2026-08-07",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 18,
+    "unitPrice": 92.76,
+    "amount": 1669.68,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L14",
+    "date": "2026-08-07",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 68.71,
+    "amount": 68.71,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L15",
+    "date": "2026-08-07",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 32.09,
+    "amount": 32.09,
+    "code": "81003",
+    "revCode": "0300"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-08-17",
+  "firstBillDate": "2026-08-23",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 11307.85,
+   "allowed": 3545.09,
+   "planPaid": 2331.43,
+   "deductible": 954.61,
+   "copay": 0,
+   "coinsurance": 259.05,
+   "patientResponsibility": 1213.66,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2422.89,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 30.84,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 32.85,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 30.22,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 53.63,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1457.08,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 349.64,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 72.84,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 43.33,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 231.83,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 73.55,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1748.63,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1146.22,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 47.17,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 22.04,
+     "lineId": "L15"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 954.61
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 259.05
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L06"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L06"
+   ]
+  },
+  {
+   "ruleId": "QTY-01",
+   "lineIds": [
+    "L12"
+   ]
+  }
+ ],
+ "plants": [
+  "QTY-01",
+  "MUE-01",
+  "MATH-01"
+ ],
+ "tags": [
+  "hn:eob-under-1",
+  "plant:QTY-01:hourly",
+  "plant:MUE-01",
+  "plant:MATH-01:wrong-total",
+  "variant:eob-line-level-co"
+ ]
+}

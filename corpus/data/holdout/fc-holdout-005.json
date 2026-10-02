@@ -1,0 +1,354 @@
+{
+ "id": "fc-holdout-005",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20300597,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 005",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0100148",
+   "admitDate": "2026-09-03",
+   "dischargeDate": "2026-09-05",
+   "totalCharges": 21729.59,
+   "statementDate": "2026-09-28",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 21729.59
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-09-03",
+    "description": "ER VISIT LEVEL 5",
+    "qty": 1,
+    "unitPrice": 4150.73,
+    "amount": 4150.73,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-09-03",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4891.99,
+    "amount": 4891.99,
+    "revCode": "0206"
+   },
+   {
+    "id": "L03",
+    "date": "2026-09-04",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4891.99,
+    "amount": 4891.99,
+    "revCode": "0206"
+   },
+   {
+    "id": "L20",
+    "date": "2026-09-05",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4891.99,
+    "amount": 4891.99,
+    "revCode": "0206"
+   },
+   {
+    "id": "L04",
+    "date": "2026-09-03",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 22.89,
+    "amount": 22.89,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-09-04",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 52.62,
+    "amount": 52.62,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L19",
+    "date": "2026-09-04",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 73.7,
+    "amount": 73.7,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L06",
+    "date": "2026-09-05",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 101.72,
+    "amount": 101.72,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-09-05",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 52.35,
+    "amount": 52.35,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L08",
+    "date": "2026-09-05",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 84.01,
+    "amount": 84.01,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-09-04",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 158.04,
+    "amount": 158.04,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2026-09-03",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 129.55,
+    "amount": 259.1,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L11",
+    "date": "2026-09-03",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 53.59,
+    "amount": 267.95,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-09-04",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 8,
+    "unitPrice": 27.91,
+    "amount": 223.28,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-09-03",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 190.17,
+    "amount": 190.17,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L14",
+    "date": "2026-09-03",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 21.72,
+    "amount": 21.72,
+    "revCode": "0270"
+   },
+   {
+    "id": "L15",
+    "date": "2026-09-03",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 117.81,
+    "amount": 117.81,
+    "revCode": "0270"
+   },
+   {
+    "id": "L16",
+    "date": "2026-09-03",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 157.91,
+    "amount": 157.91,
+    "revCode": "0270"
+   },
+   {
+    "id": "L17",
+    "date": "2026-09-03",
+    "description": "OXYGEN PER DAY",
+    "qty": 2,
+    "unitPrice": 226.62,
+    "amount": 453.24,
+    "revCode": "0412"
+   },
+   {
+    "id": "L18",
+    "date": "2026-09-04",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 666.38,
+    "amount": 666.38,
+    "revCode": "0424"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-09-16",
+  "firstBillDate": "2026-09-11",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": []
+ },
+ "data": {
+  "mue": {
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L05",
+    "L19"
+   ]
+  },
+  {
+   "ruleId": "RB-01",
+   "lineIds": [
+    "L02",
+    "L03",
+    "L20"
+   ]
+  },
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01",
+  "DUP-02",
+  "RB-01"
+ ],
+ "tags": [
+  "hn:repeat-mod",
+  "plant:DUP-02:price",
+  "plant:RB-01:discharge-day-line"
+ ]
+}

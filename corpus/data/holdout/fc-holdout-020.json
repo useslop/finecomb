@@ -1,0 +1,446 @@
+{
+ "id": "fc-holdout-020",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20419382,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 020",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0100703",
+   "admitDate": "2025-11-26",
+   "dischargeDate": "2025-12-01",
+   "totalCharges": 24016.83,
+   "statementDate": "2025-12-12",
+   "payments": 7211.91,
+   "adjustments": 0,
+   "balanceDue": 16804.92
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-11-26",
+    "description": "ED VISIT LVL 3",
+    "qty": 1,
+    "unitPrice": 797.33,
+    "amount": 797.33,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-11-26",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4295.21,
+    "amount": 4295.21,
+    "revCode": "0206"
+   },
+   {
+    "id": "L03",
+    "date": "2025-11-27",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4295.21,
+    "amount": 4295.21,
+    "revCode": "0206"
+   },
+   {
+    "id": "L04",
+    "date": "2025-11-28",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4295.21,
+    "amount": 4295.21,
+    "revCode": "0206"
+   },
+   {
+    "id": "L05",
+    "date": "2025-11-29",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4295.21,
+    "amount": 4295.21,
+    "revCode": "0206"
+   },
+   {
+    "id": "L06",
+    "date": "2025-11-30",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4295.21,
+    "amount": 4295.21,
+    "revCode": "0206"
+   },
+   {
+    "id": "L07",
+    "date": "2025-11-26",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 56.32,
+    "amount": 56.32,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L08",
+    "date": "2025-11-26",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 40.64,
+    "amount": 40.64,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2025-11-27",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 173.23,
+    "amount": 173.23,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2025-11-27",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 80.09,
+    "amount": 80.09,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2025-11-28",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 46.73,
+    "amount": 46.73,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L12",
+    "date": "2025-11-29",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 116.48,
+    "amount": 116.48,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L13",
+    "date": "2025-11-30",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 66.98,
+    "amount": 66.98,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2025-11-30",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 91.07,
+    "amount": 91.07,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L15",
+    "date": "2025-11-29",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 197.24,
+    "amount": 197.24,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L16",
+    "date": "2025-11-28",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 153,
+    "amount": 306,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L17",
+    "date": "2025-11-30",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 98.18,
+    "amount": 98.18,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L18",
+    "date": "2025-11-29",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 73.08,
+    "amount": 146.16,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L19",
+    "date": "2025-11-28",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 12.12,
+    "amount": 48.48,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L20",
+    "date": "2025-11-26",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 37.56,
+    "amount": 37.56,
+    "revCode": "0272"
+   },
+   {
+    "id": "L21",
+    "date": "2025-11-26",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 47.17,
+    "amount": 47.17,
+    "revCode": "0270"
+   },
+   {
+    "id": "L22",
+    "date": "2025-11-26",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 190.18,
+    "amount": 190.18,
+    "revCode": "0270"
+   },
+   {
+    "id": "L23",
+    "date": "2025-11-26",
+    "description": "IBUPROFEN 600MG TAB",
+    "qty": 2,
+    "unitPrice": 0.47,
+    "amount": 0.94,
+    "revCode": "0250",
+    "ndc": "42545342964"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-12-16",
+  "firstBillDate": "2025-12-20",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 24016.83,
+   "allowed": 10402.57,
+   "planPaid": 7211.91,
+   "deductible": 1356.43,
+   "copay": 25,
+   "coinsurance": 1809.23,
+   "patientResponsibility": 3190.66,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 13614.26
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1356.43
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1809.23
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 25
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-01-31",
+    "kind": "wage_garnishment"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {
+   "42545342964": {
+    "unitPrice": 0.055973,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "ECA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "ECA-01",
+  "EOB-02"
+ ],
+ "tags": [
+  "hn:rx-below-10",
+  "plant:EOB-02:co-billed",
+  "plant:ECA-01:early"
+ ]
+}

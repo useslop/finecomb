@@ -1,0 +1,181 @@
+{
+ "id": "fc-holdout-121",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21219201,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 121",
+   "providerName": "Sample Family Clinic",
+   "accountNumber": "TEST-0104440",
+   "totalCharges": 2906.07,
+   "statementDate": "2026-06-12",
+   "payments": 0,
+   "adjustments": 563.17,
+   "balanceDue": 2342.9
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-15",
+    "description": "OFFICE VISIT EST LEVEL 3",
+    "qty": 1,
+    "unitPrice": 264.33,
+    "amount": 264.33,
+    "code": "99213",
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-15",
+    "description": "STREP TEST RAPID",
+    "qty": 1,
+    "unitPrice": 36.42,
+    "amount": 36.42,
+    "code": "87880",
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-15",
+    "description": "INJECTION IM OR SUBQ",
+    "qty": 1,
+    "unitPrice": 85.02,
+    "amount": 85.02,
+    "code": "96372",
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-15",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 95.11,
+    "amount": 380.44,
+    "code": "J0696",
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-15",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 177.53,
+    "amount": 177.53,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ],
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-15",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 177.53,
+    "amount": 177.53,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ],
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-15",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 1784.8,
+    "amount": 1784.8,
+    "code": "74177",
+    "provider": "Sample Family Clinic"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-06-01",
+  "state": "AZ",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Sample Family Clinic",
+    "total": 2428.64
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "87880": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96372": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99213": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-121-days",
+  "hn:bilateral",
+  "variant:bilateral-same-price"
+ ]
+}

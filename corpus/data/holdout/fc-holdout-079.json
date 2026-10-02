@@ -1,0 +1,144 @@
+{
+ "id": "fc-holdout-079",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 20886603,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 079",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0102886",
+   "totalCharges": 4176.52,
+   "statementDate": "2026-09-10",
+   "payments": 0,
+   "adjustments": 1250.98,
+   "balanceDue": 2925.54
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-16",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 4035.43,
+    "amount": 4035.43,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example Community Medical Center"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-16",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 16.13,
+    "amount": 16.13,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example Community Medical Center"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-16",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 124.96,
+    "amount": 124.96,
+    "code": "85025",
+    "revCode": "0305",
+    "provider": "Example Community Medical Center"
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-16",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 83.79,
+    "amount": 83.79,
+    "revCode": "0250",
+    "provider": "Example Community Medical Center"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-16",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 83.79,
+    "amount": -83.79,
+    "revCode": "0250",
+    "provider": "Example Community Medical Center"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-08-25",
+  "firstBillDate": "2026-09-03",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "gfe": [
+   {
+    "provider": "Example Community Medical Center",
+    "total": 3778.09
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-399",
+  "hn:cancel-reversed",
+  "variant:sched-imaging",
+  "variant:cancel-credit:posqty"
+ ]
+}

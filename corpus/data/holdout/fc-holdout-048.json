@@ -1,0 +1,298 @@
+{
+ "id": "fc-holdout-048",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20641114,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 048",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0101739",
+   "admitDate": "2025-08-08",
+   "dischargeDate": "2025-08-09",
+   "totalCharges": 6229.24,
+   "statementDate": "2025-09-11",
+   "payments": 973.15,
+   "adjustments": 5253.09,
+   "balanceDue": 3
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-08-08",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 3870.87,
+    "amount": 3870.87,
+    "revCode": "0206"
+   },
+   {
+    "id": "L02",
+    "date": "2025-08-08",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 116.78,
+    "amount": 116.78,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2025-08-08",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 241.72,
+    "amount": 241.72,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-08-08",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 21.94,
+    "amount": 21.94,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2025-08-08",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 86.84,
+    "amount": 86.84,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L06",
+    "date": "2025-08-09",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 81.14,
+    "amount": 162.28,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2025-08-08",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 7.99,
+    "amount": 47.94,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2025-08-09",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 9.1,
+    "amount": 36.4,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2025-08-09",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 94.08,
+    "amount": 470.4,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2025-08-08",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 6,
+    "unitPrice": 25.35,
+    "amount": 152.1,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2025-08-08",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 68.54,
+    "amount": 68.54,
+    "revCode": "0272"
+   },
+   {
+    "id": "L12",
+    "date": "2025-08-08",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 20.51,
+    "amount": 20.51,
+    "revCode": "0270"
+   },
+   {
+    "id": "L13",
+    "date": "2025-08-08",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 58.75,
+    "amount": 58.75,
+    "revCode": "0270"
+   },
+   {
+    "id": "L14",
+    "date": "2025-08-08",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 135.49,
+    "amount": 135.49,
+    "revCode": "0270"
+   },
+   {
+    "id": "L15",
+    "date": "2025-08-08",
+    "description": "OXYGEN PER DAY",
+    "qty": 1,
+    "unitPrice": 245.81,
+    "amount": 245.81,
+    "revCode": "0412"
+   },
+   {
+    "id": "L16",
+    "date": "2025-08-08",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 1,
+    "unitPrice": 492.87,
+    "amount": 492.87,
+    "revCode": "0731"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2025-08-14",
+  "firstBillDate": "2025-08-16",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "State Medicaid",
+  "eob": {
+   "billed": 6229.24,
+   "allowed": 976.15,
+   "planPaid": 973.15,
+   "deductible": 0,
+   "copay": 3,
+   "coinsurance": 0,
+   "patientResponsibility": 3,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 5253.09
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 3
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2025-11-21",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:eca-agency-referral",
+  "hn:telemetry-monitor",
+  "hn:per-day-multi",
+  "hn:kit-multi",
+  "variant:admission+iv-kit"
+ ]
+}

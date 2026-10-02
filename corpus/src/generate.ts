@@ -11,6 +11,11 @@ import type { CorpusItem, FixtureData, Kind, MueEntry } from './types.js';
 
 export const CORPUS_VERSION = 'v1';
 export const BASE_SEED = 20261001;
+// Hold-out (lane F1): same generator and labeler, a different seed, half the size. Never tuned against;
+// it is the overfit check reported next to v1.
+export const HOLDOUT_VERSION = 'holdout';
+export const HOLDOUT_SEED = 20261002;
+export const HOLDOUT_PER_KIND = 50;
 export const TODAY = '2026-10-01';
 
 export class Rng {
@@ -162,7 +167,7 @@ const HN_GFE = new Set(['gfe-399', 'gfe-121-days', 'ppdr-before']);
 const HN_COLL = new Set(['eca-proper', 'eca-agency-referral', 'eca-late-fee', 'eca-forprofit', 'cr-legit', 'cr-not-reported', 'ppdr-before']);
 const HN_NIGHTS = new Set(['telemetry-monitor', 'per-day-multi']);
 
-interface Plan { i: number; seed: number; kind: Kind; sub: string; clean: boolean; plants: string[]; hns: string[]; insurance: Insurance }
+interface Plan { i: number; seed: number; kind: Kind; sub: string; clean: boolean; plants: string[]; hns: string[]; insurance: Insurance; version: string }
 
 const SUBS: Record<Kind, [string, number][]> = {
   inpatient: [['stay', 1]],
@@ -170,15 +175,15 @@ const SUBS: Record<Kind, [string, number][]> = {
   professional: [['office', 0.4], ['proc', 0.25], ['ancillary', 0.25], ['air', 0.1]],
 };
 
-export function makePlans(seed = BASE_SEED): Plan[] {
+export function makePlans(seed = BASE_SEED, perKind = 100, version = CORPUS_VERSION): Plan[] {
   const r = new Rng(seed);
   const kinds: Kind[] = ['inpatient', 'ed', 'professional'];
   const cleanIdx = new Set<number>();
-  for (let k = 0; k < 3; k++) r.shuffle([...Array(100).keys()]).slice(0, 30).forEach((j) => cleanIdx.add(k * 100 + j));
+  for (let k = 0; k < 3; k++) r.shuffle([...Array(perKind).keys()]).slice(0, Math.round(perKind * 0.3)).forEach((j) => cleanIdx.add(k * perKind + j));
   const plantCount: Record<string, number> = {}; const hnCount: Record<string, number> = {};
   const plans: Plan[] = [];
-  for (let i = 0; i < 300; i++) {
-    const kind = kinds[Math.floor(i / 100)]!;
+  for (let i = 0; i < 3 * perKind; i++) {
+    const kind = kinds[Math.floor(i / perKind)]!;
     let x = r.next(); let sub = SUBS[kind][0]![0];
     for (const [s, w] of SUBS[kind]) { if (x < w) { sub = s; break; } x -= w; }
     const clean = cleanIdx.has(i);
@@ -222,7 +227,7 @@ export function makePlans(seed = BASE_SEED): Plan[] {
       else if (sub === 'ancillary' || sub === 'air') insurance = r.pick(['commercial', 'commercial', 'marketplace', 'medicare', 'none'] as const);
       else insurance = r.pick(['none', 'none', 'commercial', 'commercial', 'commercial', 'marketplace', 'medicare', 'medicare', 'medicaid', 'other'] as const);
     }
-    plans.push({ i, seed: seed + 7919 * (i + 1), kind, sub, clean, plants, hns, insurance });
+    plans.push({ i, seed: seed + 7919 * (i + 1), kind, sub, clean, plants, hns, insurance, version });
   }
   return plans;
 }
@@ -686,23 +691,27 @@ export function buildItem(p: Plan): CorpusItem {
   const bill: Bill = { header, lines, confirmed: true };
   const labels = labelBill(bill, ctx, data);
   return {
-    id: `fc-${CORPUS_VERSION}-${String(p.i + 1).padStart(3, '0')}`, kind: p.kind, sub: p.sub, seed: p.seed,
+    id: `fc-${p.version}-${String(p.i + 1).padStart(3, '0')}`, kind: p.kind, sub: p.sub, seed: p.seed,
     clean: labels.length === 0, bill, ctx, data, labels, plants: p.plants, tags: d.tags,
   };
 }
 const tagged = (d: Draft, t: string) => d.tags.includes(t);
 
-export function generateCorpus(seed = BASE_SEED): CorpusItem[] {
-  return makePlans(seed).map(buildItem);
+export function generateCorpus(seed = BASE_SEED, perKind = 100, version = CORPUS_VERSION): CorpusItem[] {
+  return makePlans(seed, perKind, version).map(buildItem);
 }
 
-export function writeCorpus(items: CorpusItem[], dir: string) {
+export function generateHoldout(): CorpusItem[] {
+  return generateCorpus(HOLDOUT_SEED, HOLDOUT_PER_KIND, HOLDOUT_VERSION);
+}
+
+export function writeCorpus(items: CorpusItem[], dir: string, meta: { version: string; seed: number } = { version: CORPUS_VERSION, seed: BASE_SEED }) {
   rmSync(dir, { recursive: true, force: true });
   mkdirSync(dir, { recursive: true });
   for (const item of items) writeFileSync(join(dir, `${item.id}.json`), JSON.stringify(item, null, 1) + '\n');
   const count = (f: (i: CorpusItem) => string[]) => items.flatMap(f).reduce<Record<string, number>>((a, k) => ((a[k] = (a[k] ?? 0) + 1), a), {});
   const manifest = {
-    corpusVersion: CORPUS_VERSION, seed: BASE_SEED, today: TODAY, bills: items.length,
+    corpusVersion: meta.version, seed: meta.seed, today: TODAY, bills: items.length,
     byKind: count((i) => [i.kind]), bySub: count((i) => [`${i.kind}/${i.sub}`]),
     clean: items.filter((i) => i.clean).length,
     labels: items.reduce((a, i) => a + i.labels.length, 0),
@@ -718,3 +727,4 @@ export function writeCorpus(items: CorpusItem[], dir: string) {
 }
 
 export const CORPUS_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'data', CORPUS_VERSION);
+export const HOLDOUT_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'data', HOLDOUT_VERSION);

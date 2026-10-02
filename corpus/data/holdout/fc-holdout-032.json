@@ -1,0 +1,539 @@
+{
+ "id": "fc-holdout-032",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20514410,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 032",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0101147",
+   "admitDate": "2025-11-11",
+   "dischargeDate": "2025-11-14",
+   "totalCharges": 25819.44,
+   "statementDate": "2025-12-07",
+   "payments": 6683.66,
+   "adjustments": 15008.8,
+   "balanceDue": 4126.98
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-11-11",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 2299.14,
+    "amount": 2299.14,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-11-11",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 3,
+    "unitPrice": 6155.64,
+    "amount": 18466.92,
+    "revCode": "0206"
+   },
+   {
+    "id": "L03",
+    "date": "2025-11-11",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 133.74,
+    "amount": 133.74,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-11-11",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 115.97,
+    "amount": 115.97,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2025-11-11",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 61.16,
+    "amount": 61.16,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2025-11-12",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 33.31,
+    "amount": 33.31,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2025-11-12",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 83.25,
+    "amount": 83.25,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L08",
+    "date": "2025-11-13",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 120.95,
+    "amount": 120.95,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2025-11-13",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 84.2,
+    "amount": 84.2,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2025-11-14",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 95.63,
+    "amount": 95.63,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L19",
+    "date": "2025-11-14",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 95.63,
+    "amount": 95.63,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L11",
+    "date": "2025-11-14",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 58.91,
+    "amount": 58.91,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L12",
+    "date": "2025-11-13",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 37.56,
+    "amount": 37.56,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2025-11-11",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 24.21,
+    "amount": 24.21,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2025-11-13",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 60.79,
+    "amount": 182.37,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2025-11-13",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 75.45,
+    "amount": 150.9,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L16",
+    "date": "2025-11-12",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 89.75,
+    "amount": 179.5,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L17",
+    "date": "2025-11-11",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 431.54,
+    "amount": 431.54,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L18",
+    "date": "2025-11-11",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 91.95,
+    "amount": 91.95,
+    "revCode": "0270"
+   },
+   {
+    "id": "L20",
+    "date": "2025-11-11",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 5,
+    "unitPrice": 614.52,
+    "amount": 3072.6,
+    "revCode": "0731"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-11-20",
+  "firstBillDate": "2025-11-29",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 25819.44,
+   "allowed": 10810.64,
+   "planPaid": 6683.66,
+   "deductible": 1262.55,
+   "copay": 0,
+   "coinsurance": 2864.43,
+   "patientResponsibility": 4126.98,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1336.49,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 10734.79,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 77.74,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 67.41,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 35.55,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 19.36,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 48.39,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 70.31,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 48.95,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 55.59,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 55.59,
+     "lineId": "L19"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 34.24,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 21.83,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 14.07,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 106.01,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 87.72,
+     "lineId": "L15"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 104.34,
+     "lineId": "L16"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 250.85,
+     "lineId": "L17"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 53.45,
+     "lineId": "L18"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1786.12,
+     "lineId": "L20"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1262.55
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 2864.43
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-06-05",
+    "kind": "lawsuit",
+    "noticeDate": "2026-04-30"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L10",
+    "L19"
+   ]
+  },
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L14"
+   ]
+  },
+  {
+   "ruleId": "QTY-01",
+   "lineIds": [
+    "L20"
+   ]
+  }
+ ],
+ "plants": [
+  "MATH-01",
+  "DUP-01",
+  "QTY-01"
+ ],
+ "tags": [
+  "hn:eca-proper",
+  "plant:MATH-01:extra-unit",
+  "plant:DUP-01",
+  "plant:QTY-01:per-day",
+  "variant:eob-line-level-co"
+ ]
+}

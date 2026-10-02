@@ -1,0 +1,280 @@
+{
+ "id": "fc-holdout-065",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 20775737,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 065",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0102368",
+   "admitDate": "2026-08-19",
+   "dischargeDate": "2026-08-20",
+   "totalCharges": 9105.81,
+   "statementDate": "2026-09-18",
+   "payments": 0,
+   "adjustments": 3077.59,
+   "balanceDue": 6028.22
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-19",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 1,
+    "unitPrice": 3097.55,
+    "amount": 3097.55,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-19",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 64.75,
+    "amount": 64.75,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-19",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 235.5,
+    "amount": 235.5,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-19",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 140.74,
+    "amount": 140.74,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-19",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 151.74,
+    "amount": 151.74,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L06",
+    "date": "2026-08-19",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 31.1,
+    "amount": 31.1,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-08-19",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 350.33,
+    "amount": 350.33,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2026-08-19",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 2,
+    "unitPrice": 135.28,
+    "amount": 270.56,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2026-08-19",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 62.61,
+    "amount": 125.22,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2026-08-19",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 131.26,
+    "amount": 131.26,
+    "revCode": "0270"
+   },
+   {
+    "id": "L11",
+    "date": "2026-08-19",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 21,
+    "unitPrice": 138.48,
+    "amount": 2908.08,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L12",
+    "date": "2026-08-20",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 13,
+    "unitPrice": 113.68,
+    "amount": 1477.84,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2026-08-20",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 121.14,
+    "amount": 121.14,
+    "code": "80048",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-09-02",
+  "firstBillDate": "2026-09-01",
+  "state": "AZ",
+  "hospitalCcn": "990104"
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:obs-room-hours",
+  "hn:hourly-overlap"
+ ]
+}

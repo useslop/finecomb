@@ -1,0 +1,502 @@
+{
+ "id": "fc-holdout-018",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20403544,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 018",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0100629",
+   "admitDate": "2025-12-15",
+   "dischargeDate": "2025-12-20",
+   "totalCharges": 33600.77,
+   "statementDate": "2026-01-09",
+   "payments": 13404.03,
+   "adjustments": 12406.62,
+   "balanceDue": 7790.12
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-12-15",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 1514.83,
+    "amount": 1514.83,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-12-15",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 2806.57,
+    "amount": 2806.57,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2025-12-16",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 2806.57,
+    "amount": 2806.57,
+    "revCode": "0110"
+   },
+   {
+    "id": "L04",
+    "date": "2025-12-17",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 2806.57,
+    "amount": 2806.57,
+    "revCode": "0110"
+   },
+   {
+    "id": "L05",
+    "date": "2025-12-18",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 2806.57,
+    "amount": 2806.57,
+    "revCode": "0110"
+   },
+   {
+    "id": "L06",
+    "date": "2025-12-19",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 2806.57,
+    "amount": 2806.57,
+    "revCode": "0110"
+   },
+   {
+    "id": "L07",
+    "date": "2025-12-16",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2712.51,
+    "amount": 2712.51,
+    "revCode": "0360"
+   },
+   {
+    "id": "L08",
+    "date": "2025-12-16",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 6,
+    "unitPrice": 1269.57,
+    "amount": 7617.42,
+    "revCode": "0360"
+   },
+   {
+    "id": "L09",
+    "date": "2025-12-16",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2110.65,
+    "amount": 2110.65,
+    "revCode": "0710"
+   },
+   {
+    "id": "L10",
+    "date": "2025-12-16",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2525.9,
+    "amount": 2525.9,
+    "revCode": "0370"
+   },
+   {
+    "id": "L11",
+    "date": "2025-12-16",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 712.02,
+    "amount": 712.02,
+    "revCode": "0272"
+   },
+   {
+    "id": "L12",
+    "date": "2025-12-15",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 196.08,
+    "amount": 196.08,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2025-12-15",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 175.24,
+    "amount": 175.24,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L14",
+    "date": "2025-12-15",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 30.65,
+    "amount": 30.65,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L15",
+    "date": "2025-12-16",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 88.7,
+    "amount": 88.7,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L16",
+    "date": "2025-12-16",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 68.35,
+    "amount": 68.35,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L17",
+    "date": "2025-12-16",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 53.2,
+    "amount": 53.2,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L18",
+    "date": "2025-12-17",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 87.73,
+    "amount": 87.73,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L19",
+    "date": "2025-12-17",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 125.98,
+    "amount": 125.98,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L20",
+    "date": "2025-12-17",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 159.94,
+    "amount": 159.94,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L21",
+    "date": "2025-12-18",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 147.15,
+    "amount": 147.15,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L22",
+    "date": "2025-12-19",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 126.02,
+    "amount": 126.02,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L23",
+    "date": "2025-12-19",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 24.22,
+    "amount": 169.54,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L24",
+    "date": "2025-12-16",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 77.11,
+    "amount": 154.22,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L25",
+    "date": "2025-12-19",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 159.37,
+    "amount": 159.37,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L26",
+    "date": "2025-12-23",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 490.47,
+    "amount": 490.47,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L27",
+    "date": "2025-12-15",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 25.44,
+    "amount": 25.44,
+    "revCode": "0270"
+   },
+   {
+    "id": "L28",
+    "date": "2025-12-15",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 46.88,
+    "amount": 46.88,
+    "revCode": "0272"
+   },
+   {
+    "id": "L29",
+    "date": "2025-12-15",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 69.63,
+    "amount": 69.63,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-01-08",
+  "firstBillDate": "2025-12-29",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 33600.77,
+   "allowed": 21194.15,
+   "planPaid": 13404.03,
+   "deductible": 2045.54,
+   "copay": 0,
+   "coinsurance": 5744.58,
+   "patientResponsibility": 7790.12,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 12406.62
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 2045.54
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 5744.58
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-03-15",
+    "kind": "credit_report"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DATE-01",
+   "lineIds": [
+    "L26"
+   ]
+  }
+ ],
+ "plants": [
+  "DATE-01"
+ ],
+ "tags": [
+  "hn:eca-forprofit",
+  "plant:DATE-01:moved"
+ ]
+}

@@ -1,0 +1,281 @@
+{
+ "id": "fc-holdout-039",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20569843,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 039",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0101406",
+   "admitDate": "2026-04-30",
+   "dischargeDate": "2026-04-30",
+   "totalCharges": 16206.49,
+   "statementDate": "2026-05-25",
+   "payments": 6222.78,
+   "adjustments": 6663.72,
+   "balanceDue": 3319.99
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-30",
+    "description": "ER VISIT LEVEL 3",
+    "qty": 1,
+    "unitPrice": 946.04,
+    "amount": 946.04,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-30",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2697.65,
+    "amount": 2697.65,
+    "revCode": "0120"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-30",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 4938.91,
+    "amount": 4938.91,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-30",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 3,
+    "unitPrice": 703.03,
+    "amount": 2109.09,
+    "revCode": "0360"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-30",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1672.07,
+    "amount": 1672.07,
+    "revCode": "0710"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-30",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1472.28,
+    "amount": 1472.28,
+    "revCode": "0370"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-30",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 709.75,
+    "amount": 709.75,
+    "revCode": "0272"
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-30",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 178.69,
+    "amount": 178.69,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-30",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 9,
+    "unitPrice": 9.89,
+    "amount": 89.01,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-04-30",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 85.79,
+    "amount": 85.79,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-04-30",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 1137.74,
+    "amount": 1137.74,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L12",
+    "date": "2026-04-30",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 100.6,
+    "amount": 100.6,
+    "revCode": "0272"
+   },
+   {
+    "id": "L13",
+    "date": "2026-04-30",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 63.54,
+    "amount": 63.54,
+    "revCode": "0270"
+   },
+   {
+    "id": "L14",
+    "date": "2026-04-30",
+    "description": "CEPHALEXIN 500MG CAP",
+    "qty": 1,
+    "unitPrice": 5.33,
+    "amount": 5.33,
+    "revCode": "0250",
+    "ndc": "94960711662"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-05-16",
+  "firstBillDate": "2026-05-25",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 16206.49,
+   "allowed": 9542.13,
+   "planPaid": 6222.78,
+   "deductible": 1763.66,
+   "copay": 0,
+   "coinsurance": 1555.69,
+   "patientResponsibility": 3319.35,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 6664.36
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1763.66
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1555.69
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "94960711662": {
+    "unitPrice": 0.07651000000000001,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "L14"
+   ]
+  }
+ ],
+ "plants": [
+  "RX-01"
+ ],
+ "tags": [
+  "hn:same-day-admit-discharge",
+  "hn:eob-under-1",
+  "plant:RX-01"
+ ]
+}

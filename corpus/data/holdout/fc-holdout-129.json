@@ -1,0 +1,120 @@
+{
+ "id": "fc-holdout-129",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 21282553,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 129",
+   "providerName": "Sample Family Clinic",
+   "accountNumber": "TEST-0104736",
+   "totalCharges": 639.72,
+   "statementDate": "2026-04-19",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 639.72
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-22",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 312.59,
+    "amount": 312.59,
+    "code": "99214",
+    "modifiers": [
+     "25"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-22",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 285.83,
+    "amount": 285.83,
+    "code": "20610"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-22",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 2,
+    "unitPrice": 20.65,
+    "amount": 41.3,
+    "code": "J3301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "firstBillDate": "2026-04-10",
+  "state": "KS",
+  "insurerName": "Medicare",
+  "onCreditReport": true,
+  "paidInFull": true,
+  "originalBalance": 2140.45
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "20610",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01",
+  "CR-01"
+ ],
+ "tags": [
+  "hn:ncci-mod25",
+  "plant:CR-01:paid"
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "id": "fc-holdout-113",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 21155849,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 113",
+   "providerName": "Sample Emergency Physicians",
+   "accountNumber": "TEST-0104144",
+   "totalCharges": 1088.88,
+   "statementDate": "2026-05-16",
+   "payments": 360.7,
+   "adjustments": 0,
+   "balanceDue": 728.18
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-13",
+    "description": "EMERGENCY PHYSICIAN LEVEL 5",
+    "qty": 1,
+    "unitPrice": 1088.88,
+    "amount": 1088.88,
+    "code": "99285"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": false,
+  "emergency": true,
+  "firstBillDate": "2026-05-04",
+  "state": "AZ",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "emergency medicine"
+  ],
+  "eob": {
+   "billed": 1088.88,
+   "allowed": 664.01,
+   "planPaid": 360.7,
+   "deductible": 213.13,
+   "copay": 0,
+   "coinsurance": 90.18,
+   "patientResponsibility": 303.31,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 424.87
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 213.13
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 90.18
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-02"
+ ],
+ "tags": []
+}

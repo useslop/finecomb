@@ -1,0 +1,336 @@
+{
+ "id": "fc-holdout-036",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20546086,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 036",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0101295",
+   "admitDate": "2026-07-18",
+   "dischargeDate": "2026-07-20",
+   "totalCharges": 12868.36,
+   "statementDate": "2026-08-26",
+   "payments": 6073.99,
+   "adjustments": 0,
+   "balanceDue": 6794.37
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-18",
+    "description": "ED VISIT LVL 3",
+    "qty": 1,
+    "unitPrice": 1750.28,
+    "amount": 1750.28,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-18",
+    "description": "PRIVATE RM DAILY",
+    "qty": 2,
+    "unitPrice": 3297.56,
+    "amount": 6595.12,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-18",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 105.27,
+    "amount": 105.27,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-18",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 209.95,
+    "amount": 209.95,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-18",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 156.86,
+    "amount": 156.86,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-19",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 35.3,
+    "amount": 35.3,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-19",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 47.9,
+    "amount": 95.8,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-18",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 184.24,
+    "amount": 184.24,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-19",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 22.58,
+    "amount": 158.06,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-18",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 22.77,
+    "amount": 182.16,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-19",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 78.7,
+    "amount": 78.7,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-18",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 36.47,
+    "amount": 36.47,
+    "revCode": "0270"
+   },
+   {
+    "id": "L13",
+    "date": "2026-07-18",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 47.88,
+    "amount": 47.88,
+    "revCode": "0270"
+   },
+   {
+    "id": "L14",
+    "date": "2026-07-18",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 120.23,
+    "amount": 120.23,
+    "revCode": "0270"
+   },
+   {
+    "id": "L15",
+    "date": "2026-07-18",
+    "description": "OXYGEN PER DAY",
+    "qty": 2,
+    "unitPrice": 272.31,
+    "amount": 544.62,
+    "revCode": "0412"
+   },
+   {
+    "id": "L16",
+    "date": "2026-07-18",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 2,
+    "unitPrice": 1283.71,
+    "amount": 2567.42,
+    "revCode": "0731"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-08-04",
+  "firstBillDate": "2026-08-01",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Marketplace Plan",
+  "eob": {
+   "billed": 12868.36,
+   "allowed": 8222.02,
+   "planPaid": 6073.99,
+   "deductible": 1473.14,
+   "copay": 0,
+   "coinsurance": 674.89,
+   "patientResponsibility": 2148.03,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 4646.34
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1473.14
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 674.89
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02"
+ ],
+ "tags": [
+  "hn:per-day-multi",
+  "plant:EOB-02:co-billed"
+ ]
+}

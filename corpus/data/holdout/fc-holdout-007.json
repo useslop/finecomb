@@ -1,0 +1,301 @@
+{
+ "id": "fc-holdout-007",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20316435,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 007",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0100222",
+   "admitDate": "2026-07-21",
+   "dischargeDate": "2026-07-21",
+   "totalCharges": 3492.87,
+   "statementDate": "2026-08-01",
+   "payments": 299.45,
+   "adjustments": 2345.93,
+   "balanceDue": 847.49
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-21",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2807.15,
+    "amount": 2807.15,
+    "revCode": "0120"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-21",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 48.19,
+    "amount": 48.19,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-21",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 87.41,
+    "amount": 87.41,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-21",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 59.81,
+    "amount": 65.79,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-21",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 72.19,
+    "amount": 72.19,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-21",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 87.77,
+    "amount": 87.77,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-21",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 23.35,
+    "amount": 23.35,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-21",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 206.28,
+    "amount": 206.28,
+    "revCode": "0270"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-21",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 94.74,
+    "amount": 94.74,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-07-27",
+  "firstBillDate": "2026-07-27",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 3492.87,
+   "allowed": 1146.94,
+   "planPaid": 598.9,
+   "deductible": 255.66,
+   "copay": 25,
+   "coinsurance": 267.38,
+   "patientResponsibility": 548.04,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1885.38,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 32.37,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 58.71,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 44.19,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 48.49,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 58.95,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 15.68,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 138.54,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 63.62,
+     "lineId": "L09"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 255.66
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 267.38
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 25
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-01",
+  "MATH-01"
+ ],
+ "tags": [
+  "hn:repeat-mod",
+  "hn:same-day-admit-discharge",
+  "plant:MATH-01:wrong-total",
+  "variant:eob-line-level-co",
+  "plant:EOB-01:unposted-payment"
+ ]
+}

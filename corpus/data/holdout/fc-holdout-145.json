@@ -1,0 +1,120 @@
+{
+ "id": "fc-holdout-145",
+ "kind": "professional",
+ "sub": "air",
+ "seed": 21409257,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 145",
+   "providerName": "Example Air Medical Transport",
+   "accountNumber": "TEST-0105328",
+   "totalCharges": 57052.54,
+   "statementDate": "2026-04-22",
+   "payments": 16991.53,
+   "adjustments": 0,
+   "balanceDue": 40061.01
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-06",
+    "description": "ROTOR AIR TRANSPORT BASE",
+    "qty": 1,
+    "unitPrice": 35254.55,
+    "amount": 35254.55,
+    "code": "A0431"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-06",
+    "description": "ROTOR AIR MILES",
+    "qty": 43,
+    "unitPrice": 506.93,
+    "amount": 21797.99,
+    "code": "A0436"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "airAmbulance": true,
+  "emergency": true,
+  "firstBillDate": "2026-04-24",
+  "state": "IN",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 57052.54,
+   "allowed": 26827.7,
+   "planPaid": 16991.53,
+   "deductible": 2482.66,
+   "copay": 50,
+   "coinsurance": 7303.51,
+   "patientResponsibility": 9836.17,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 30224.84
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 2482.66
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 7303.51
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  },
+  "onCreditReport": false,
+  "paidInFull": true,
+  "originalBalance": 2642.29
+ },
+ "data": {
+  "mue": {
+   "A0431": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "A0436": {
+    "practitioner": {
+     "mue": 250,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-01"
+ ],
+ "tags": [
+  "hn:cr-not-reported"
+ ]
+}

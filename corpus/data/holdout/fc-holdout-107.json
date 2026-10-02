@@ -1,0 +1,214 @@
+{
+ "id": "fc-holdout-107",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21108335,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 107",
+   "providerName": "Example Urgent Care",
+   "accountNumber": "TEST-0103922",
+   "totalCharges": 5449.32,
+   "statementDate": "2025-03-06",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 5449.32
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-02-07",
+    "description": "OFFICE VISIT NEW LEVEL 3",
+    "qty": 1,
+    "unitPrice": 380.12,
+    "amount": 380.12,
+    "code": "99203",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L02",
+    "date": "2025-02-07",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 42.8,
+    "amount": 42.8,
+    "code": "36415",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L03",
+    "date": "2025-02-07",
+    "description": "STREP TEST RAPID NOT GIVEN",
+    "qty": 1,
+    "unitPrice": 45.98,
+    "amount": 45.98,
+    "code": "87880",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L04",
+    "date": "2025-02-07",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 234.49,
+    "amount": 234.49,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ],
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L05",
+    "date": "2025-02-07",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 117.25,
+    "amount": 117.25,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ],
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L06",
+    "date": "2025-02-07",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2075.09,
+    "amount": 2075.09,
+    "code": "74177",
+    "provider": "Example Urgent Care"
+   },
+   {
+    "id": "L07",
+    "date": "2025-02-07",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2553.59,
+    "amount": 2553.59,
+    "code": "74177",
+    "provider": "Example Urgent Care"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-08-08",
+  "state": "MO",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Example Urgent Care",
+    "total": 2447.62
+   }
+  ],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 500
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "87880": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99203": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L06",
+    "L07"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L06",
+    "L07"
+   ]
+  },
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L03"
+   ]
+  },
+  {
+   "ruleId": "GFE-01",
+   "lineIds": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05",
+    "L06",
+    "L07"
+   ]
+  }
+ ],
+ "plants": [
+  "GFE-01",
+  "CANC-01",
+  "DUP-02"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "hn:cr-legit",
+  "variant:bilateral-discounted",
+  "plant:CANC-01:keyword",
+  "plant:DUP-02:price",
+  "plant:GFE-01"
+ ]
+}

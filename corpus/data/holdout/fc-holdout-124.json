@@ -1,0 +1,234 @@
+{
+ "id": "fc-holdout-124",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21242958,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 124",
+   "providerName": "Example Urgent Care",
+   "accountNumber": "TEST-0104551",
+   "totalCharges": 2794.53,
+   "statementDate": "2026-05-12",
+   "payments": 0,
+   "adjustments": 774.64,
+   "balanceDue": 2019.89
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-24",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 242.04,
+    "amount": 242.04,
+    "code": "99214"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-24",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 66.37,
+    "amount": 66.37,
+    "code": "85025"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-24",
+    "description": "INJECTION IM OR SUBQ",
+    "qty": 1,
+    "unitPrice": 67.81,
+    "amount": 67.81,
+    "code": "96372"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-24",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 55.83,
+    "amount": 111.66,
+    "code": "J1885"
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-24",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 66.67,
+    "amount": 133.34,
+    "code": "J1885"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-24",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 111.17,
+    "amount": 111.17,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-24",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 55.59,
+    "amount": 55.59,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-24",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 1871.46,
+    "amount": 1871.46,
+    "code": "74177"
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-24",
+    "description": "BLOOD COUNT COMPLETE NO DIFF",
+    "qty": 1,
+    "unitPrice": 135.09,
+    "amount": 135.09,
+    "code": "85027"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-06-17",
+  "state": "OK",
+  "ppdrFiledDate": "2026-08-30",
+  "collections": [
+   {
+    "date": "2026-09-10",
+    "kind": "late_fee"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85027": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96372": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "85025",
+    "col2": "85027",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L04",
+    "L08"
+   ]
+  },
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L02",
+    "L09"
+   ]
+  },
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01",
+  "DUP-02",
+  "NCCI-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "variant:bilateral-discounted",
+  "plant:DUP-02:price",
+  "plant:NCCI-01:mi0",
+  "plant:PPDR-01"
+ ]
+}

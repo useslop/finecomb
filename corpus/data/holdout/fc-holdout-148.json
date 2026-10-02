@@ -1,0 +1,246 @@
+{
+ "id": "fc-holdout-148",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21433014,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 148",
+   "providerName": "Example Urgent Care",
+   "accountNumber": "TEST-0105439",
+   "totalCharges": 4862.67,
+   "statementDate": "2026-06-30",
+   "payments": 0,
+   "adjustments": 1700.37,
+   "balanceDue": 3162.3
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-04",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 1,
+    "unitPrice": 232.33,
+    "amount": 232.33,
+    "code": "99204"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-04",
+    "description": "FLU TEST RAPID",
+    "qty": 1,
+    "unitPrice": 66.35,
+    "amount": 66.35,
+    "code": "87804"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-04",
+    "description": "STREP TEST RAPID",
+    "qty": 1,
+    "unitPrice": 53.55,
+    "amount": 53.55,
+    "code": "87880"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-04",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 160.42,
+    "amount": 160.42,
+    "code": "85025"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-04",
+    "description": "INJECTION IM OR SUBQ",
+    "qty": 1,
+    "unitPrice": 88.57,
+    "amount": 88.57,
+    "code": "96372"
+   },
+   {
+    "id": "L10",
+    "date": "2026-06-04",
+    "description": "INJECTION IM OR SUBQ ADDL",
+    "qty": 7,
+    "unitPrice": 88.57,
+    "amount": 619.99,
+    "code": "96372"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-04",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 98.2,
+    "amount": 491,
+    "code": "J0696"
+   },
+   {
+    "id": "L07",
+    "date": "2026-06-04",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 158.56,
+    "amount": 158.56,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L08",
+    "date": "2026-06-04",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 158.56,
+    "amount": 158.56,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L09",
+    "date": "2026-06-04",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2833.34,
+    "amount": 2833.34,
+    "code": "74177"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-06-04",
+  "state": "AZ",
+  "ppdrFiledDate": "2026-09-11",
+  "collections": [
+   {
+    "date": "2026-09-25",
+    "kind": "late_fee"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87804": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87880": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96372": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99204": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L05",
+    "L10"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L05",
+    "L10"
+   ]
+  },
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01",
+  "DUP-02",
+  "MUE-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "variant:bilateral-same-price",
+  "plant:DUP-02:desc",
+  "plant:MUE-01",
+  "plant:PPDR-01"
+ ]
+}

@@ -1,0 +1,335 @@
+{
+ "id": "fc-holdout-092",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 20989550,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 092",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0103367",
+   "admitDate": "2026-07-29",
+   "dischargeDate": "2026-07-30",
+   "totalCharges": 16560.56,
+   "statementDate": "2026-08-15",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 16560.56
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-29",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 1,
+    "unitPrice": 2973.26,
+    "amount": 2973.26,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-29",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 87.94,
+    "amount": 87.94,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-29",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 70.73,
+    "amount": 70.73,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-29",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 17.01,
+    "amount": 17.01,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-29",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 50.3,
+    "amount": 50.3,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-29",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 7047.35,
+    "amount": 7047.35,
+    "code": "74177",
+    "revCode": "0352"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-29",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 2,
+    "unitPrice": 449.68,
+    "amount": 899.36,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-29",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 3,
+    "unitPrice": 195.27,
+    "amount": 585.81,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-29",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 65.66,
+    "amount": 65.66,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-29",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 45.91,
+    "amount": 45.91,
+    "revCode": "0270"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-29",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 29,
+    "unitPrice": 99.78,
+    "amount": 2893.62,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-30",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 16,
+    "unitPrice": 97.36,
+    "amount": 1557.76,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2026-07-30",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 149.56,
+    "amount": 149.56,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L14",
+    "date": "2026-07-30",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 116.29,
+    "amount": 116.29,
+    "code": "80053",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-08-10",
+  "firstBillDate": "2026-08-17",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": []
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L07"
+   ]
+  },
+  {
+   "ruleId": "QTY-01",
+   "lineIds": [
+    "L11"
+   ]
+  },
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01",
+  "QTY-01",
+  "MUE-01"
+ ],
+ "tags": [
+  "hn:hourly-overlap",
+  "plant:QTY-01:hourly",
+  "plant:MUE-01"
+ ]
+}

@@ -1,0 +1,161 @@
+{
+ "id": "fc-holdout-139",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21361743,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 139",
+   "providerName": "Sample Family Clinic",
+   "accountNumber": "TEST-0105106",
+   "totalCharges": 809.93,
+   "statementDate": "2025-05-17",
+   "payments": 43.51,
+   "adjustments": 483.12,
+   "balanceDue": 283.3
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-04-25",
+    "description": "OFFICE VISIT EST LEVEL 3",
+    "qty": 1,
+    "unitPrice": 353.99,
+    "amount": 353.99,
+    "code": "99213"
+   },
+   {
+    "id": "L04",
+    "date": "2025-04-25",
+    "description": "OFFICE VISIT EST LEVEL 3",
+    "qty": 1,
+    "unitPrice": 353.99,
+    "amount": 353.99,
+    "code": "99213"
+   },
+   {
+    "id": "L02",
+    "date": "2025-04-25",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 65.59,
+    "amount": 65.59,
+    "code": "81003"
+   },
+   {
+    "id": "L03",
+    "date": "2025-04-25",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 36.36,
+    "amount": 36.36,
+    "code": "36415"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "firstBillDate": "2025-05-03",
+  "state": "IN",
+  "insurerName": "Example Health Plan",
+  "eob": {
+   "billed": 809.93,
+   "allowed": 326.81,
+   "planPaid": 87.03,
+   "deductible": 93.02,
+   "copay": 100,
+   "coinsurance": 46.76,
+   "patientResponsibility": 239.78,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 483.12
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 93.02
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 46.76
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 100
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 500
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99213": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L01",
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L01",
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-01",
+  "DUP-01"
+ ],
+ "tags": [
+  "hn:cr-legit",
+  "plant:DUP-01",
+  "plant:EOB-01:unposted-payment"
+ ]
+}

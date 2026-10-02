@@ -1,0 +1,219 @@
+{
+ "id": "fc-holdout-125",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 21250877,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 125",
+   "providerName": "Sample Family Clinic",
+   "accountNumber": "TEST-0104588",
+   "totalCharges": 5898.13,
+   "statementDate": "2026-08-02",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 5898.13
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-10",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 354.98,
+    "amount": 354.98,
+    "code": "99214",
+    "modifiers": [
+     "25"
+    ],
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-10",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 292.67,
+    "amount": 292.67,
+    "code": "20610",
+    "modifiers": [
+     "RT"
+    ],
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-10",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 146.34,
+    "amount": 146.34,
+    "code": "20610",
+    "modifiers": [
+     "LT"
+    ],
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-10",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 4,
+    "unitPrice": 24.17,
+    "amount": 96.68,
+    "code": "J3301",
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-10",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 4,
+    "unitPrice": 24.17,
+    "amount": 96.68,
+    "code": "J3301",
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-10",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2455.39,
+    "amount": 2455.39,
+    "code": "74177",
+    "provider": "Sample Family Clinic"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-10",
+    "description": "CT ABD PELVIS W CONTRAST ADDL",
+    "qty": 1,
+    "unitPrice": 2455.39,
+    "amount": 2455.39,
+    "code": "74177",
+    "provider": "Sample Family Clinic"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-07-18",
+  "state": "MO",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Sample Family Clinic",
+    "total": 4203.03
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "20610",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L04",
+    "L06"
+   ]
+  },
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L05",
+    "L07"
+   ]
+  },
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L05",
+    "L07"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L05",
+    "L07"
+   ]
+  },
+  {
+   "ruleId": "GFE-01",
+   "lineIds": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L06",
+    "L05",
+    "L07"
+   ]
+  }
+ ],
+ "plants": [
+  "GFE-01",
+  "DUP-01",
+  "DUP-02"
+ ],
+ "tags": [
+  "hn:ncci-mod25",
+  "hn:bilateral",
+  "variant:bilateral-discounted",
+  "plant:DUP-01",
+  "plant:DUP-02:desc",
+  "plant:GFE-01"
+ ]
+}

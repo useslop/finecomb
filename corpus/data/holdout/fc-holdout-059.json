@@ -1,0 +1,258 @@
+{
+ "id": "fc-holdout-059",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 20728223,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 059",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0102146",
+   "admitDate": "2026-05-31",
+   "dischargeDate": "2026-05-31",
+   "totalCharges": 4327.3,
+   "statementDate": "2026-06-14",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 4327.3
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-31",
+    "description": "ED VISIT LVL 3",
+    "qty": 2,
+    "unitPrice": 1379.26,
+    "amount": 2758.52,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-31",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 26.93,
+    "amount": 26.93,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-31",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 20.59,
+    "amount": 20.59,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-31",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 342.78,
+    "amount": 342.78,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-31",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 675.99,
+    "amount": 675.99,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "59"
+    ]
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-31",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 113.8,
+    "amount": 113.8,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-31",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 59.76,
+    "amount": 59.76,
+    "revCode": "0270"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-31",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 163.78,
+    "amount": 163.78,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-05-31",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 165.15,
+    "amount": 165.15,
+    "code": "80048",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-06-16",
+  "firstBillDate": "2026-06-21",
+  "state": "GA",
+  "hospitalCcn": "990103"
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   },
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L01"
+   ]
+  },
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L08",
+    "L09"
+   ]
+  }
+ ],
+ "plants": [
+  "MUE-01",
+  "NCCI-01"
+ ],
+ "tags": [
+  "hn:ncci-mi1-59",
+  "plant:MUE-01",
+  "plant:NCCI-01:mi0"
+ ]
+}

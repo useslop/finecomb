@@ -1,0 +1,119 @@
+{
+ "id": "fc-holdout-143",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 21393419,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 143",
+   "providerName": "Sample Emergency Physicians",
+   "accountNumber": "TEST-0105254",
+   "totalCharges": 6527.89,
+   "statementDate": "2026-09-24",
+   "payments": 1215.65,
+   "adjustments": 0,
+   "balanceDue": 5312.24
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-27",
+    "description": "EMERGENCY PHYSICIAN LEVEL 3",
+    "qty": 1,
+    "unitPrice": 650.7,
+    "amount": 6507,
+    "code": "99283"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-27",
+    "description": "EKG INTERPRETATION",
+    "qty": 1,
+    "unitPrice": 20.89,
+    "amount": 20.89,
+    "code": "93010"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": false,
+  "emergency": true,
+  "firstBillDate": "2026-09-17",
+  "state": "OK",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "emergency medicine"
+  ],
+  "eob": {
+   "billed": 6527.89,
+   "allowed": 3440.5,
+   "planPaid": 1215.65,
+   "deductible": 1920.94,
+   "copay": 0,
+   "coinsurance": 303.91,
+   "patientResponsibility": 2224.85,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 3087.39
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1920.94
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 303.91
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L01"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-02",
+  "MATH-01"
+ ],
+ "tags": [
+  "plant:MATH-01:wrong-total"
+ ]
+}

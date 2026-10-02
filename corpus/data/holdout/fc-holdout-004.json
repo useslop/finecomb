@@ -1,0 +1,315 @@
+{
+ "id": "fc-holdout-004",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20292678,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 004",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0100111",
+   "admitDate": "2026-05-26",
+   "dischargeDate": "2026-05-26",
+   "totalCharges": 9145.28,
+   "statementDate": "2026-06-22",
+   "payments": 2224.31,
+   "adjustments": 7500.4,
+   "balanceDue": -579.43
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-26",
+    "description": "ER VISIT LEVEL 5",
+    "qty": 1,
+    "unitPrice": 4998.57,
+    "amount": 4998.57,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-26",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2685.53,
+    "amount": 2685.53,
+    "revCode": "0120"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-26",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 51.6,
+    "amount": 51.6,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-26",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 21.62,
+    "amount": 151.34,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-26",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 35.04,
+    "amount": 280.32,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-26",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 22.93,
+    "amount": 114.65,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-05-26",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 22.93,
+    "amount": 114.65,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-26",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 21.11,
+    "amount": 42.22,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-26",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 339.85,
+    "amount": 339.85,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L09",
+    "date": "2026-05-26",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 185.34,
+    "amount": 185.34,
+    "revCode": "0270"
+   },
+   {
+    "id": "L10",
+    "date": "2026-05-26",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 94.45,
+    "amount": 94.45,
+    "revCode": "0270"
+   },
+   {
+    "id": "L12",
+    "date": "2026-05-26",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 22.93,
+    "amount": -114.65,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-05-26",
+    "description": "ONDANSETRON 4MG ODT",
+    "qty": 1,
+    "unitPrice": 11.56,
+    "amount": 11.56,
+    "revCode": "0250",
+    "ndc": "88348517620"
+   },
+   {
+    "id": "L14",
+    "date": "2026-05-26",
+    "description": "OXYGEN PER DAY",
+    "qty": 4,
+    "unitPrice": 192.57,
+    "amount": 770.28,
+    "revCode": "0412"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-06-01",
+  "firstBillDate": "2026-06-16",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 9725.71,
+   "allowed": 2225.31,
+   "planPaid": 2224.31,
+   "deductible": 0,
+   "copay": 1,
+   "coinsurance": 0,
+   "patientResponsibility": 1,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 7500.4
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 1
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "88348517620": {
+    "unitPrice": 0.15396600000000002,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "QTY-01",
+   "lineIds": [
+    "L14"
+   ]
+  },
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "L13"
+   ]
+  }
+ ],
+ "plants": [
+  "RX-01",
+  "QTY-01",
+  "MATH-02"
+ ],
+ "tags": [
+  "hn:same-day-admit-discharge",
+  "hn:credit-reversal",
+  "variant:credit:posqty",
+  "plant:RX-01",
+  "plant:QTY-01:per-day",
+  "plant:MATH-02:total-off"
+ ]
+}

@@ -1,0 +1,346 @@
+{
+ "id": "fc-holdout-094",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21005388,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 094",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0103441",
+   "totalCharges": 5553.71,
+   "statementDate": "2025-12-05",
+   "payments": 1098.68,
+   "adjustments": 3785.5,
+   "balanceDue": 669.53
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-11-17",
+    "description": "EMERGENCY ROOM LVL 3",
+    "qty": 1,
+    "unitPrice": 1552.92,
+    "amount": 1552.92,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-11-17",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 181.5,
+    "amount": 181.5,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-11-17",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 38.44,
+    "amount": 38.44,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2025-11-17",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 43.84,
+    "amount": 43.84,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2025-11-17",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2304.52,
+    "amount": 2304.52,
+    "code": "74177",
+    "revCode": "0352"
+   },
+   {
+    "id": "L06",
+    "date": "2025-11-17",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 489.87,
+    "amount": 489.87,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2025-11-17",
+    "description": "IV PUSH EACH ADDL DRUG",
+    "qty": 1,
+    "unitPrice": 218.02,
+    "amount": 436.04,
+    "code": "96375",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2025-11-17",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 104.07,
+    "amount": 208.14,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2025-11-17",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 104.07,
+    "amount": 208.14,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L09",
+    "date": "2025-11-17",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 90.3,
+    "amount": 90.3,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2025-11-29",
+  "firstBillDate": "2025-12-08",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 5553.71,
+   "allowed": 1768.21,
+   "planPaid": 1098.68,
+   "deductible": 436.34,
+   "copay": 100,
+   "coinsurance": 133.19,
+   "patientResponsibility": 669.53,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1058.5,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 123.71,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 26.2,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 29.88,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1570.8,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 333.9,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 297.21,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 141.87,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 141.87,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 61.56,
+     "lineId": "L09"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 436.34
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 133.19
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 100
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-01-23",
+    "kind": "credit_report"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96375": {
+    "practitioner": {
+     "mue": 6,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 6,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L08",
+    "L10"
+   ]
+  },
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L07"
+   ]
+  }
+ ],
+ "plants": [
+  "MATH-01",
+  "DUP-01"
+ ],
+ "tags": [
+  "hn:eca-forprofit",
+  "plant:MATH-01:extra-unit",
+  "plant:DUP-01",
+  "variant:eob-line-level-co"
+ ]
+}

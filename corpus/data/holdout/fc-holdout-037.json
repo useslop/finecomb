@@ -1,0 +1,298 @@
+{
+ "id": "fc-holdout-037",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20554005,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 037",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0101332",
+   "admitDate": "2024-12-30",
+   "dischargeDate": "2025-01-01",
+   "totalCharges": 11690.72,
+   "statementDate": "2025-01-31",
+   "payments": 3378.49,
+   "adjustments": 6221.23,
+   "balanceDue": 2091
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2024-12-30",
+    "description": "ER VISIT LEVEL 5",
+    "qty": 1,
+    "unitPrice": 3233.34,
+    "amount": 3233.34,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2024-12-30",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2571.46,
+    "amount": 2571.46,
+    "revCode": "0120"
+   },
+   {
+    "id": "L03",
+    "date": "2024-12-31",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 2571.46,
+    "amount": 2571.46,
+    "revCode": "0120"
+   },
+   {
+    "id": "L04",
+    "date": "2024-12-30",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 107.92,
+    "amount": 107.92,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2024-12-30",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 158,
+    "amount": 158,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L06",
+    "date": "2024-12-30",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 116.46,
+    "amount": 116.46,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2024-12-31",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 52.99,
+    "amount": 52.99,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L08",
+    "date": "2024-12-31",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 55.47,
+    "amount": 55.47,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2024-12-31",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 72.65,
+    "amount": 72.65,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2025-01-01",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 39.29,
+    "amount": 39.29,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2025-01-01",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 39.29,
+    "amount": 39.29,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2024-12-31",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 7,
+    "unitPrice": 31.11,
+    "amount": 217.77,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2024-12-30",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 43.28,
+    "amount": 216.4,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2024-12-30",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 35.13,
+    "amount": 35.13,
+    "revCode": "0270"
+   },
+   {
+    "id": "L14",
+    "date": "2024-12-30",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 188.1,
+    "amount": 188.1,
+    "revCode": "0270"
+   },
+   {
+    "id": "L15",
+    "date": "2024-12-30",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 2,
+    "unitPrice": 1027.14,
+    "amount": 2054.28,
+    "revCode": "0731"
+   },
+   {
+    "id": "L17",
+    "date": "2025-01-01",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 39.29,
+    "amount": -39.29,
+    "code": "J1030",
+    "revCode": "0636"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-01-16",
+  "firstBillDate": "2025-01-16",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 7606.8
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:credit-reversal",
+  "hn:cr-legit",
+  "hn:ins-paid-no-eob",
+  "hn:telemetry-monitor",
+  "variant:credit:posqty"
+ ]
+}

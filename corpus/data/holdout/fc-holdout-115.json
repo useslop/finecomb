@@ -1,0 +1,117 @@
+{
+ "id": "fc-holdout-115",
+ "kind": "professional",
+ "sub": "air",
+ "seed": 21171687,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 115",
+   "providerName": "Example Air Medical Transport",
+   "accountNumber": "TEST-0104218",
+   "totalCharges": 75393.85,
+   "statementDate": "2026-08-12",
+   "payments": 40134.69,
+   "adjustments": 28953.01,
+   "balanceDue": 6306.15
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-17",
+    "description": "ROTOR AIR TRANSPORT BASE",
+    "qty": 1,
+    "unitPrice": 58833.61,
+    "amount": 58833.61,
+    "code": "A0431"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-17",
+    "description": "ROTOR AIR MILES",
+    "qty": 26,
+    "unitPrice": 616.08,
+    "amount": 16018.08,
+    "code": "A0436"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "airAmbulance": true,
+  "emergency": true,
+  "firstBillDate": "2026-07-27",
+  "state": "AZ",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 74851.69,
+   "allowed": 45898.68,
+   "planPaid": 40134.69,
+   "deductible": 1304.58,
+   "copay": 0,
+   "coinsurance": 4459.41,
+   "patientResponsibility": 5763.99,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 28953.01
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1304.58
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 4459.41
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "A0431": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "A0436": {
+    "practitioner": {
+     "mue": 250,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MATH-02"
+ ],
+ "tags": [
+  "hn:nsa-compliant",
+  "plant:MATH-02:total-off"
+ ]
+}

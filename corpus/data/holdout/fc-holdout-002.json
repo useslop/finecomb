@@ -1,0 +1,361 @@
+{
+ "id": "fc-holdout-002",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20276840,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 002",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0100037",
+   "admitDate": "2025-08-31",
+   "dischargeDate": "2025-09-02",
+   "totalCharges": 36197.95,
+   "statementDate": "2025-10-04",
+   "payments": 9651.05,
+   "adjustments": 21941.2,
+   "balanceDue": 4605.7
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-08-31",
+    "description": "ICU DAILY CHARGE",
+    "qty": 2,
+    "unitPrice": 7740.99,
+    "amount": 15481.98,
+    "revCode": "0200"
+   },
+   {
+    "id": "L02",
+    "date": "2025-08-31",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 6386.48,
+    "amount": 6386.48,
+    "revCode": "0360"
+   },
+   {
+    "id": "L03",
+    "date": "2025-08-31",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 7,
+    "unitPrice": 1055.35,
+    "amount": 7387.45,
+    "revCode": "0360"
+   },
+   {
+    "id": "L18",
+    "date": "2025-08-31",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 7,
+    "unitPrice": 1055.35,
+    "amount": 7387.45,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2025-08-31",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1111.17,
+    "amount": 1111.17,
+    "revCode": "0710"
+   },
+   {
+    "id": "L05",
+    "date": "2025-08-31",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2150.37,
+    "amount": 2150.37,
+    "revCode": "0370"
+   },
+   {
+    "id": "L06",
+    "date": "2025-08-31",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1645.64,
+    "amount": 1645.64,
+    "revCode": "0272"
+   },
+   {
+    "id": "L07",
+    "date": "2025-08-31",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 106.69,
+    "amount": 106.69,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2025-09-01",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 37.79,
+    "amount": 37.79,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2025-09-02",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 56.54,
+    "amount": 56.54,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2025-09-01",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 61.81,
+    "amount": 61.81,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L11",
+    "date": "2025-08-31",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 6,
+    "unitPrice": 41.59,
+    "amount": 249.54,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2025-09-01",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 8,
+    "unitPrice": 21.85,
+    "amount": 174.8,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2025-08-31",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 83.38,
+    "amount": 166.76,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2025-08-31",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 520.26,
+    "amount": 520.26,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L15",
+    "date": "2025-08-31",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 33.52,
+    "amount": 33.52,
+    "revCode": "0272"
+   },
+   {
+    "id": "L16",
+    "date": "2025-08-31",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 105.77,
+    "amount": 105.77,
+    "revCode": "0270"
+   },
+   {
+    "id": "L17",
+    "date": "2025-08-31",
+    "description": "OXYGEN PER DAY",
+    "qty": 2,
+    "unitPrice": 260.69,
+    "amount": 521.38,
+    "revCode": "0412"
+   },
+   {
+    "id": "L19",
+    "date": "2025-09-20",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 7,
+    "unitPrice": 1055.35,
+    "amount": -7387.45,
+    "revCode": "0360"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2025-09-07",
+  "firstBillDate": "2025-09-19",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 36197.95,
+   "allowed": 14256.75,
+   "planPaid": 9651.05,
+   "deductible": 433.82,
+   "copay": 25,
+   "coinsurance": 4146.88,
+   "patientResponsibility": 4605.7,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 21941.2
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 433.82
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 4146.88
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 25
+    }
+   ]
+  },
+  "fapApplied": true,
+  "fapAppliedDate": "2025-10-17",
+  "collections": [
+   {
+    "date": "2026-02-12",
+    "kind": "wage_garnishment",
+    "noticeDate": "2026-01-05"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DATE-01",
+   "lineIds": [
+    "L19"
+   ]
+  },
+  {
+   "ruleId": "ECA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "ECA-01"
+ ],
+ "tags": [
+  "hn:credit-reversal",
+  "variant:credit:posqty",
+  "variant:credit-posted-later",
+  "plant:ECA-01:fap-pending"
+ ]
+}

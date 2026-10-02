@@ -1,0 +1,98 @@
+{
+ "id": "fc-holdout-134",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 21322148,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 134",
+   "providerName": "Sample Surgical Associates",
+   "accountNumber": "TEST-0104921",
+   "totalCharges": 2430.57,
+   "statementDate": "2026-07-26",
+   "payments": 416.25,
+   "adjustments": 0,
+   "balanceDue": 2014.32
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-28",
+    "description": "ASSISTANT AT SURGERY KNEE",
+    "qty": 1,
+    "unitPrice": 2430.57,
+    "amount": 2430.57,
+    "code": "27447",
+    "modifiers": [
+     "80"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": false,
+  "emergency": false,
+  "firstBillDate": "2026-07-21",
+  "state": "TN",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "anesthesia"
+  ],
+  "eob": {
+   "billed": 2430.57,
+   "allowed": 998.54,
+   "planPaid": 416.25,
+   "deductible": 415.73,
+   "copay": 50,
+   "coinsurance": 116.56,
+   "patientResponsibility": 582.29,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 1432.03
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 415.73
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 116.56
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-02"
+ ],
+ "tags": []
+}

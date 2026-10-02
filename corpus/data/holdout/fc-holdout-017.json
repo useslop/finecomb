@@ -1,0 +1,330 @@
+{
+ "id": "fc-holdout-017",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20395625,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 017",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0100592",
+   "admitDate": "2026-01-16",
+   "dischargeDate": "2026-01-18",
+   "totalCharges": 11786.07,
+   "statementDate": "2026-02-24",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 12075.8
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-01-16",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 3979,
+    "amount": 3979,
+    "revCode": "0110"
+   },
+   {
+    "id": "L02",
+    "date": "2026-01-17",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 3979,
+    "amount": 3979,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2026-01-16",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 67.28,
+    "amount": 67.28,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L04",
+    "date": "2026-01-16",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 42.8,
+    "amount": 42.8,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-01-16",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 200.01,
+    "amount": 200.01,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-01-17",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 66.73,
+    "amount": 66.73,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-01-17",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 211.32,
+    "amount": 211.32,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2026-01-16",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 20.37,
+    "amount": 40.74,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-01-17",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 6,
+    "unitPrice": 89.87,
+    "amount": 539.22,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-01-18",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 8,
+    "unitPrice": 33.09,
+    "amount": 264.72,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-01-18",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 88.94,
+    "amount": 177.88,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L12",
+    "date": "2026-01-17",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 39.91,
+    "amount": 79.82,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-01-16",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 69.79,
+    "amount": 139.58,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2026-01-16",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 96.95,
+    "amount": 96.95,
+    "revCode": "0270"
+   },
+   {
+    "id": "L15",
+    "date": "2026-01-16",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 47.35,
+    "amount": 47.35,
+    "revCode": "0272"
+   },
+   {
+    "id": "L16",
+    "date": "2026-01-16",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 55.97,
+    "amount": 55.97,
+    "revCode": "0270"
+   },
+   {
+    "id": "L17",
+    "date": "2026-01-16",
+    "description": "OXYGEN PER DAY",
+    "qty": 6,
+    "unitPrice": 96.4,
+    "amount": 578.4,
+    "revCode": "0412"
+   },
+   {
+    "id": "L18",
+    "date": "2026-01-16",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 2,
+    "unitPrice": 609.65,
+    "amount": 1219.3,
+    "revCode": "0731"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-02-06",
+  "firstBillDate": "2026-01-31",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "collections": [
+   {
+    "date": "2026-08-12",
+    "kind": "lawsuit",
+    "noticeDate": "2026-06-21"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "QTY-01",
+   "lineIds": [
+    "L17"
+   ]
+  }
+ ],
+ "plants": [
+  "QTY-01",
+  "MATH-02"
+ ],
+ "tags": [
+  "hn:eca-proper",
+  "hn:per-day-multi",
+  "plant:QTY-01:per-day",
+  "plant:MATH-02:balance"
+ ]
+}

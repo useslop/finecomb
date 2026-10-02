@@ -1,0 +1,677 @@
+{
+ "id": "fc-holdout-013",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20363949,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 013",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0100444",
+   "admitDate": "2026-05-11",
+   "dischargeDate": "2026-05-16",
+   "totalCharges": 45610.05,
+   "statementDate": "2026-06-08",
+   "payments": 22171.75,
+   "adjustments": 0,
+   "balanceDue": 23438.3
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-11",
+    "description": "ED VISIT LVL 5",
+    "qty": 1,
+    "unitPrice": 1950.69,
+    "amount": 1950.69,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-11",
+    "description": "PRIVATE RM DAILY",
+    "qty": 6,
+    "unitPrice": 2987.61,
+    "amount": 17925.66,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-11",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 5186.35,
+    "amount": 5186.35,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-11",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 5,
+    "unitPrice": 1121.67,
+    "amount": 5608.35,
+    "revCode": "0360"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-11",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1707.31,
+    "amount": 1707.31,
+    "revCode": "0710"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-11",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2383.6,
+    "amount": 2383.6,
+    "revCode": "0370"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-11",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1364.16,
+    "amount": 1364.16,
+    "revCode": "0272"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-11",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 211.93,
+    "amount": 211.93,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-05-12",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 48.4,
+    "amount": 48.4,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L10",
+    "date": "2026-05-12",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 60.86,
+    "amount": 60.86,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L11",
+    "date": "2026-05-13",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 34.34,
+    "amount": 34.34,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-05-13",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 153.13,
+    "amount": 153.13,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2026-05-14",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 43.46,
+    "amount": 43.46,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L14",
+    "date": "2026-05-14",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 111.13,
+    "amount": 111.13,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L15",
+    "date": "2026-05-14",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 131.81,
+    "amount": 131.81,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L16",
+    "date": "2026-05-15",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 202.58,
+    "amount": 202.58,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L17",
+    "date": "2026-05-15",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 46.63,
+    "amount": 46.63,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L18",
+    "date": "2026-05-15",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 232.21,
+    "amount": 232.21,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L19",
+    "date": "2026-05-16",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 53.49,
+    "amount": 53.49,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L20",
+    "date": "2026-05-16",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 42.22,
+    "amount": 42.22,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L21",
+    "date": "2026-05-16",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 165.47,
+    "amount": 165.47,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L22",
+    "date": "2026-05-11",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 37.76,
+    "amount": 302.08,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L23",
+    "date": "2026-05-14",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 7.59,
+    "amount": 37.95,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L24",
+    "date": "2026-05-12",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 8,
+    "unitPrice": 83.75,
+    "amount": 670,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L25",
+    "date": "2026-05-11",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 64.46,
+    "amount": 64.46,
+    "revCode": "0272"
+   },
+   {
+    "id": "L26",
+    "date": "2026-05-11",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 193.43,
+    "amount": 193.43,
+    "revCode": "0270"
+   },
+   {
+    "id": "L27",
+    "date": "2026-05-11",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 54.67,
+    "amount": 54.67,
+    "revCode": "0270"
+   },
+   {
+    "id": "L28",
+    "date": "2026-05-11",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 7,
+    "unitPrice": 946.24,
+    "amount": 6623.68,
+    "revCode": "0731"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-05-29",
+  "firstBillDate": "2026-06-09",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 45610.05,
+   "allowed": 24954.66,
+   "planPaid": 22171.75,
+   "deductible": 208.27,
+   "copay": 100,
+   "coinsurance": 2474.64,
+   "patientResponsibility": 2782.91,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 883.41,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 8117.98,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2348.74,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2539.85,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 773.19,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1079.46,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 617.79,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 95.98,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 21.92,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 27.56,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 15.55,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 69.35,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 19.68,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 50.33,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 59.69,
+     "lineId": "L15"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 91.74,
+     "lineId": "L16"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 21.12,
+     "lineId": "L17"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 105.16,
+     "lineId": "L18"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 24.22,
+     "lineId": "L19"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 19.12,
+     "lineId": "L20"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 74.94,
+     "lineId": "L21"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 136.8,
+     "lineId": "L22"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 17.19,
+     "lineId": "L23"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 303.42,
+     "lineId": "L24"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 29.19,
+     "lineId": "L25"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 87.6,
+     "lineId": "L26"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 24.76,
+     "lineId": "L27"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2999.65,
+     "lineId": "L28"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 208.27
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 2474.64
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 100
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "QTY-01",
+   "lineIds": [
+    "L28"
+   ]
+  },
+  {
+   "ruleId": "RB-01",
+   "lineIds": [
+    "L02"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02",
+  "RB-01",
+  "QTY-01"
+ ],
+ "tags": [
+  "hn:kit-multi",
+  "variant:admission+iv-kit",
+  "plant:RB-01:extra-unit",
+  "plant:QTY-01:per-day",
+  "variant:eob-line-level-co",
+  "plant:EOB-02:co-billed"
+ ]
+}

@@ -1,0 +1,214 @@
+{
+ "id": "fc-holdout-127",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21266715,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 127",
+   "providerName": "Example Urgent Care",
+   "accountNumber": "TEST-0104662",
+   "totalCharges": 692.72,
+   "statementDate": "2024-12-25",
+   "payments": 97.57,
+   "adjustments": 396.23,
+   "balanceDue": 198.92
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2024-12-08",
+    "description": "OFFICE VISIT EST LEVEL 3",
+    "qty": 1,
+    "unitPrice": 279.36,
+    "amount": 279.36,
+    "code": "99213"
+   },
+   {
+    "id": "L02",
+    "date": "2024-12-08",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 35.88,
+    "amount": 35.88,
+    "code": "81003"
+   },
+   {
+    "id": "L03",
+    "date": "2024-12-08",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 159.77,
+    "amount": 159.77,
+    "code": "85025"
+   },
+   {
+    "id": "L04",
+    "date": "2024-12-08",
+    "description": "INJECTION IM OR SUBQ",
+    "qty": 1,
+    "unitPrice": 42.03,
+    "amount": 42.03,
+    "code": "96372"
+   },
+   {
+    "id": "L05",
+    "date": "2024-12-08",
+    "description": "METHYLPREDNISOLONE INJ 40MG RETURNED",
+    "qty": 2,
+    "unitPrice": 87.84,
+    "amount": 175.68,
+    "code": "J1030"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "firstBillDate": "2024-12-22",
+  "state": "IN",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 692.72,
+   "allowed": 270.9,
+   "planPaid": 97.57,
+   "deductible": 23.94,
+   "copay": 100,
+   "coinsurance": 49.39,
+   "patientResponsibility": 173.33,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 170.11,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 21.85,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 97.29,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 25.59,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 106.98,
+     "lineId": "L05"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 23.94
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 49.39
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 100
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 500
+ },
+ "data": {
+  "mue": {
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96372": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99213": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02",
+  "CANC-01"
+ ],
+ "tags": [
+  "hn:cr-legit",
+  "plant:CANC-01:keyword",
+  "variant:eob-line-level-co",
+  "plant:EOB-02:co-billed"
+ ]
+}

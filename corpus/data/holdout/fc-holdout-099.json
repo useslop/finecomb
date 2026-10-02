@@ -1,0 +1,316 @@
+{
+ "id": "fc-holdout-099",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21044983,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 099",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0103626",
+   "admitDate": "2026-05-05",
+   "dischargeDate": "2026-05-05",
+   "totalCharges": 5539.89,
+   "statementDate": "2026-06-05",
+   "payments": 669.1,
+   "adjustments": 3577.89,
+   "balanceDue": 1292.9
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-05",
+    "description": "ER VISIT LEVEL 5",
+    "qty": 1,
+    "unitPrice": 3292.63,
+    "amount": 3292.63,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-05",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 36.96,
+    "amount": 36.96,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-05",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 131.27,
+    "amount": 131.27,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-05",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 55.43,
+    "amount": 55.43,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-05",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 1514.68,
+    "amount": 1514.68,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-05",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 201.28,
+    "amount": 402.56,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-05",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 9,
+    "unitPrice": 4.77,
+    "amount": 42.93,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-05",
+    "description": "CREATININE LEVEL",
+    "qty": 1,
+    "unitPrice": 63.43,
+    "amount": 63.43,
+    "code": "82565",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-05-18",
+  "firstBillDate": "2026-05-18",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Health Plan",
+  "eob": {
+   "billed": 5539.89,
+   "allowed": 1934.06,
+   "planPaid": 669.1,
+   "deductible": 978.2,
+   "copay": 0,
+   "coinsurance": 286.76,
+   "patientResponsibility": 1264.96,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2143.12,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 24.06,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 85.44,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 36.08,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 985.88,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 262.02,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 27.94,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 41.29,
+     "lineId": "L08"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 978.2
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 286.76
+    }
+   ]
+  },
+  "onCreditReport": false,
+  "paidInFull": true,
+  "originalBalance": 2542.46
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "82565": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "82565",
+    "mi": 0,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L03",
+    "L08"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02",
+  "NCCI-01"
+ ],
+ "tags": [
+  "hn:cr-not-reported",
+  "plant:NCCI-01:mi0",
+  "variant:eob-line-level-co",
+  "plant:EOB-02:co-billed"
+ ]
+}

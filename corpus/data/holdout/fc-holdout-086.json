@@ -1,0 +1,192 @@
+{
+ "id": "fc-holdout-086",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 20942036,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 086",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0103145",
+   "totalCharges": 2847.41,
+   "statementDate": "2026-07-04",
+   "payments": 284.62,
+   "adjustments": 0,
+   "balanceDue": 2562.79
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-18",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2720.73,
+    "amount": 2720.73,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-18",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 37.78,
+    "amount": 37.78,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-18",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 37.78,
+    "amount": 37.78,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-18",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 88.9,
+    "amount": 88.9,
+    "code": "85025",
+    "revCode": "0305",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-18",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 37.78,
+    "amount": -37.78,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-18",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 81.41,
+    "amount": 81.41,
+    "revCode": "0250",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L07",
+    "date": "2026-06-18",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 81.41,
+    "amount": -81.41,
+    "revCode": "0250",
+    "provider": "Example Lakeside Hospital"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-06-26",
+  "firstBillDate": "2026-06-30",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "gfe": [
+   {
+    "provider": "Example Lakeside Hospital",
+    "total": 1405.53
+   }
+  ],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 4675.75
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "GFE-01",
+   "lineIds": [
+    "L01",
+    "L02",
+    "L04",
+    "L03",
+    "L05",
+    "L06",
+    "L07"
+   ]
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "GFE-01",
+  "CR-01"
+ ],
+ "tags": [
+  "hn:cancel-reversed",
+  "hn:credit-reversal",
+  "variant:sched-imaging",
+  "variant:credit:posqty",
+  "variant:cancel-credit:posqty",
+  "plant:GFE-01",
+  "plant:CR-01:recent"
+ ]
+}

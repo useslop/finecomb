@@ -1,0 +1,397 @@
+{
+ "id": "fc-holdout-022",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20435220,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 022",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0100777",
+   "admitDate": "2025-10-11",
+   "dischargeDate": "2025-10-13",
+   "totalCharges": 30215.54,
+   "statementDate": "2025-11-07",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 30215.54
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-10-11",
+    "description": "EMERGENCY ROOM LVL 4",
+    "qty": 1,
+    "unitPrice": 3154.92,
+    "amount": 3154.92,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-10-11",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 2,
+    "unitPrice": 4629.14,
+    "amount": 9258.28,
+    "revCode": "0206"
+   },
+   {
+    "id": "L03",
+    "date": "2025-10-12",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 3055.22,
+    "amount": 3055.22,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2025-10-12",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 8,
+    "unitPrice": 714.24,
+    "amount": 5713.92,
+    "revCode": "0360"
+   },
+   {
+    "id": "L05",
+    "date": "2025-10-12",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1339.1,
+    "amount": 1339.1,
+    "revCode": "0710"
+   },
+   {
+    "id": "L06",
+    "date": "2025-10-12",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1980.53,
+    "amount": 1980.53,
+    "revCode": "0370"
+   },
+   {
+    "id": "L07",
+    "date": "2025-10-12",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 619.75,
+    "amount": 619.75,
+    "revCode": "0272"
+   },
+   {
+    "id": "L08",
+    "date": "2025-10-11",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 140.64,
+    "amount": 140.64,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L09",
+    "date": "2025-10-11",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 88.26,
+    "amount": 88.26,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2025-10-11",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 76.79,
+    "amount": 76.79,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2025-10-12",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 71.65,
+    "amount": 71.65,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L12",
+    "date": "2025-10-11",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 158.82,
+    "amount": 158.82,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L13",
+    "date": "2025-10-13",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 38.45,
+    "amount": 230.7,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2025-10-12",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 36.66,
+    "amount": 256.62,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2025-10-12",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 20.52,
+    "amount": 102.6,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2025-10-11",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 9,
+    "unitPrice": 5.77,
+    "amount": 51.93,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L17",
+    "date": "2025-10-11",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 64.95,
+    "amount": 129.9,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L18",
+    "date": "2025-10-13",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 29.7,
+    "amount": 59.4,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L19",
+    "date": "2025-10-11",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 2289.64,
+    "amount": 2289.64,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L20",
+    "date": "2025-10-11",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 62.95,
+    "amount": 62.95,
+    "revCode": "0270"
+   },
+   {
+    "id": "L21",
+    "date": "2025-10-11",
+    "description": "OXYGEN PER DAY",
+    "qty": 2,
+    "unitPrice": 284.79,
+    "amount": 569.58,
+    "revCode": "0412"
+   },
+   {
+    "id": "L22",
+    "date": "2025-10-12",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 402.17,
+    "amount": 402.17,
+    "revCode": "0424"
+   },
+   {
+    "id": "L23",
+    "date": "2025-10-12",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 402.17,
+    "amount": 402.17,
+    "revCode": "0424"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-10-23",
+  "firstBillDate": "2025-11-05",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Medicare",
+  "collections": [
+   {
+    "date": "2026-02-07",
+    "kind": "late_fee"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L22",
+    "L23"
+   ]
+  },
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01",
+  "DUP-01"
+ ],
+ "tags": [
+  "hn:eca-late-fee",
+  "hn:room-word",
+  "plant:DUP-01"
+ ]
+}

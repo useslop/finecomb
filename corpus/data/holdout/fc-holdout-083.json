@@ -1,0 +1,313 @@
+{
+ "id": "fc-holdout-083",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 20918279,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 083",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0103034",
+   "admitDate": "2026-07-25",
+   "dischargeDate": "2026-07-26",
+   "totalCharges": 5810.98,
+   "statementDate": "2026-08-24",
+   "payments": 1593.42,
+   "adjustments": 0,
+   "balanceDue": 4217.56
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-25",
+    "description": "EMERGENCY ROOM LVL 4",
+    "qty": 1,
+    "unitPrice": 2116.77,
+    "amount": 2116.77,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-25",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 51.47,
+    "amount": 51.47,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-25",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 204.87,
+    "amount": 204.87,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-25",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 109.8,
+    "amount": 109.8,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-25",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 17.28,
+    "amount": 17.28,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-25",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 568.97,
+    "amount": 568.97,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-25",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 18.4,
+    "amount": 128.8,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-25",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 38.92,
+    "amount": 38.92,
+    "revCode": "0270"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-25",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 13,
+    "unitPrice": 73.44,
+    "amount": 954.72,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-26",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 14,
+    "unitPrice": 105.26,
+    "amount": 1473.64,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-26",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 141.39,
+    "amount": 141.39,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-25",
+    "description": "IBUPROFEN 600MG TAB",
+    "qty": 1,
+    "unitPrice": 4.35,
+    "amount": 4.35,
+    "revCode": "0250",
+    "ndc": "92026235773"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-08-02",
+  "firstBillDate": "2026-08-05",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 5810.98,
+   "allowed": 1594.42,
+   "planPaid": 1593.42,
+   "deductible": 0,
+   "copay": 1,
+   "coinsurance": 0,
+   "patientResponsibility": 1,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 4216.56
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 1
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "92026235773": {
+    "unitPrice": 0.079742,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "L12"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01",
+  "RX-01"
+ ],
+ "tags": [
+  "hn:obs-room-hours",
+  "plant:RX-01",
+  "plant:MCD-01:with-eob"
+ ]
+}

@@ -1,0 +1,197 @@
+{
+ "id": "fc-holdout-104",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21084578,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 104",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0103811",
+   "totalCharges": 4045.27,
+   "statementDate": "2026-04-27",
+   "payments": 74.89,
+   "adjustments": 1402.82,
+   "balanceDue": 2567.56
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-26",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 1,
+    "unitPrice": 303.22,
+    "amount": 303.22,
+    "code": "99204"
+   },
+   {
+    "id": "L08",
+    "date": "2026-03-26",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 1,
+    "unitPrice": 303.22,
+    "amount": 303.22,
+    "code": "99204"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-26",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 30.32,
+    "amount": 30.32,
+    "code": "36415"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-26",
+    "description": "FLU TEST RAPID",
+    "qty": 1,
+    "unitPrice": 78.91,
+    "amount": 78.91,
+    "code": "87804"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-26",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 212.19,
+    "amount": 212.19,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-26",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 106.1,
+    "amount": 106.1,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-26",
+    "description": "STERILE GAUZE PAD",
+    "qty": 3,
+    "unitPrice": 33.33,
+    "amount": 100,
+    "code": "A6402"
+   },
+   {
+    "id": "L07",
+    "date": "2026-03-26",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2911.31,
+    "amount": 2911.31,
+    "code": "74177"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-05-07",
+  "state": "GA",
+  "ppdrFiledDate": "2026-08-12",
+  "collections": [
+   {
+    "date": "2026-08-22",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "87804": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99204": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L01",
+    "L08"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L01",
+    "L08"
+   ]
+  },
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01",
+  "DUP-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "hn:rounding",
+  "variant:bilateral-discounted",
+  "plant:DUP-01",
+  "plant:PPDR-01"
+ ]
+}

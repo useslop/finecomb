@@ -1,0 +1,313 @@
+{
+ "id": "fc-holdout-043",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20601519,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 043",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0101554",
+   "admitDate": "2026-02-04",
+   "dischargeDate": "2026-02-06",
+   "totalCharges": 12073.43,
+   "statementDate": "2026-02-19",
+   "payments": 3294.92,
+   "adjustments": 8777.51,
+   "balanceDue": 1
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-02-04",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 1,
+    "unitPrice": 1468.21,
+    "amount": 1468.21,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-02-04",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 3080.52,
+    "amount": 3080.52,
+    "revCode": "0121"
+   },
+   {
+    "id": "L03",
+    "date": "2026-02-05",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 3080.52,
+    "amount": 3080.52,
+    "revCode": "0121"
+   },
+   {
+    "id": "L11",
+    "date": "2026-02-06",
+    "description": "MED SURG BED DAILY",
+    "qty": 1,
+    "unitPrice": 3080.52,
+    "amount": 3080.52,
+    "revCode": "0121"
+   },
+   {
+    "id": "L04",
+    "date": "2026-02-04",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 168.51,
+    "amount": 168.51,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-02-05",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 44.34,
+    "amount": 44.34,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-02-04",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 7,
+    "unitPrice": 105.79,
+    "amount": 740.53,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-02-05",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 7,
+    "unitPrice": 23.04,
+    "amount": 161.28,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-02-06",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 26.58,
+    "amount": 106.32,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-02-04",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 8.49,
+    "amount": 50.94,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-02-04",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 91.74,
+    "amount": 91.74,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-02-26",
+  "firstBillDate": "2026-02-12",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "State Medicaid",
+  "eob": {
+   "billed": 12073.43,
+   "allowed": 3295.92,
+   "planPaid": 3294.92,
+   "deductible": 0,
+   "copay": 1,
+   "coinsurance": 0,
+   "patientResponsibility": 1,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1067.4,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2239.57,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2239.57,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2239.57,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 122.51,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 32.24,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 538.37,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 117.25,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 77.3,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 37.03,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 66.7,
+     "lineId": "L10"
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 1
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-09-13",
+    "kind": "credit_report",
+    "noticeDate": "2026-08-05"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "RB-01",
+   "lineIds": [
+    "L02",
+    "L03",
+    "L11"
+   ]
+  }
+ ],
+ "plants": [
+  "RB-01"
+ ],
+ "tags": [
+  "hn:eca-proper",
+  "hn:room-word",
+  "plant:RB-01:discharge-day-line",
+  "variant:eob-line-level-co"
+ ]
+}

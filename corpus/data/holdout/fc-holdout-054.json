@@ -1,0 +1,341 @@
+{
+ "id": "fc-holdout-054",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 20688628,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 054",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0101961",
+   "admitDate": "2026-06-07",
+   "dischargeDate": "2026-06-08",
+   "totalCharges": 9800.81,
+   "statementDate": "2026-07-17",
+   "payments": 3169.87,
+   "adjustments": 6630.94,
+   "balanceDue": 0
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-07",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 1,
+    "unitPrice": 3157.16,
+    "amount": 3157.16,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-07",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 94.32,
+    "amount": 94.32,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-07",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 80.23,
+    "amount": 80.23,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-07",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 22.96,
+    "amount": 22.96,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-07",
+    "description": "CAPILLARY BLOOD DRAW",
+    "qty": 1,
+    "unitPrice": 21.01,
+    "amount": 21.01,
+    "code": "36416",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-07",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 435.54,
+    "amount": 435.54,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-06-07",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 620.03,
+    "amount": 620.03,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "59"
+    ]
+   },
+   {
+    "id": "L08",
+    "date": "2026-06-07",
+    "description": "IV HYDRATION ADDL HOUR",
+    "qty": 2,
+    "unitPrice": 251.58,
+    "amount": 503.16,
+    "code": "96361",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2026-06-07",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 97.46,
+    "amount": 389.84,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-06-07",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 99.04,
+    "amount": 99.04,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-06-07",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 22,
+    "unitPrice": 124.28,
+    "amount": 2734.16,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L12",
+    "date": "2026-06-08",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 12,
+    "unitPrice": 114.82,
+    "amount": 1377.84,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2026-06-08",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 82.3,
+    "amount": 82.3,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2026-06-08",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 183.22,
+    "amount": 183.22,
+    "code": "80048",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-06-14",
+  "firstBillDate": "2026-06-16",
+  "state": "AZ",
+  "hospitalCcn": "990104",
+  "insurerName": "State Medicaid"
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "36416": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96361": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   },
+   {
+    "col1": "36415",
+    "col2": "36416",
+    "mi": 9,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:ncci-mi1-59",
+  "hn:obs-room-hours",
+  "hn:hourly-overlap",
+  "hn:ncci-mi9",
+  "variant:medicaid-no-eob"
+ ]
+}

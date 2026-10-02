@@ -1,0 +1,226 @@
+{
+ "id": "fc-holdout-064",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 20767818,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 064",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0102331",
+   "admitDate": "2025-01-28",
+   "dischargeDate": "2025-01-28",
+   "totalCharges": 3164.08,
+   "statementDate": "2025-02-21",
+   "payments": 574.71,
+   "adjustments": 0,
+   "balanceDue": 2589.37
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-01-28",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 1,
+    "unitPrice": 2145.87,
+    "amount": 2145.87,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-01-28",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 126.21,
+    "amount": 126.21,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-01-28",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 39.17,
+    "amount": 39.17,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2025-01-28",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 300.09,
+    "amount": 300.09,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L05",
+    "date": "2025-01-28",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 211.69,
+    "amount": 211.69,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L06",
+    "date": "2025-01-28",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 19.11,
+    "amount": 38.22,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2025-01-28",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 88.3,
+    "amount": 88.3,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2025-01-28",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 214.53,
+    "amount": 214.53,
+    "code": "J7030",
+    "revCode": "0258"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "emergency": true,
+  "admitted": false,
+  "firstPostDischargeStatementDate": "2025-02-13",
+  "firstBillDate": "2025-02-22",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "State Medicaid",
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 6659.17
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01"
+ ],
+ "tags": [
+  "hn:cr-legit",
+  "plant:MCD-01:no-eob",
+  "variant:medicaid-no-eob"
+ ]
+}

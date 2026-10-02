@@ -1,0 +1,167 @@
+{
+ "id": "fc-holdout-095",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 21013307,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 095",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0103478",
+   "totalCharges": 6522.1,
+   "statementDate": "2026-08-02",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 6522.1
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-12",
+    "description": "CT ABD PELVIS W CONTRAST CANCELLED",
+    "qty": 1,
+    "unitPrice": 6325.93,
+    "amount": 6325.93,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example General Hospital"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-12",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 6325.93,
+    "amount": 6325.93,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example General Hospital"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-12",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 16.23,
+    "amount": 16.23,
+    "code": "36415",
+    "revCode": "0300",
+    "provider": "Example General Hospital"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-12",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 179.94,
+    "amount": 179.94,
+    "code": "84484",
+    "revCode": "0301",
+    "provider": "Example General Hospital"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-12",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 6325.93,
+    "amount": -6325.93,
+    "code": "74177",
+    "revCode": "0352",
+    "provider": "Example General Hospital"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-07-17",
+  "firstBillDate": "2026-07-25",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "gfe": [
+   {
+    "provider": "Example General Hospital",
+    "total": 6122.1
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "L01"
+   ]
+  },
+  {
+   "ruleId": "GFE-01",
+   "lineIds": [
+    "L01",
+    "L04",
+    "L02",
+    "L03",
+    "L05"
+   ]
+  }
+ ],
+ "plants": [
+  "GFE-01",
+  "CANC-01"
+ ],
+ "tags": [
+  "hn:credit-reversal",
+  "variant:sched-imaging",
+  "variant:credit:posqty",
+  "plant:CANC-01:keyword",
+  "plant:GFE-01"
+ ]
+}

@@ -1,0 +1,405 @@
+{
+ "id": "fc-holdout-050",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20656952,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 050",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0101813",
+   "admitDate": "2026-07-20",
+   "dischargeDate": "2026-07-22",
+   "totalCharges": 10008.33,
+   "statementDate": "2026-08-31",
+   "payments": 2835.76,
+   "adjustments": 7171.57,
+   "balanceDue": 1
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-20",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4393.81,
+    "amount": 4393.81,
+    "revCode": "0110"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-21",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4393.81,
+    "amount": 4393.81,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-20",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 23.13,
+    "amount": 23.13,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-20",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 75.14,
+    "amount": 75.14,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-21",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 215.11,
+    "amount": 215.11,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-21",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 85.36,
+    "amount": 85.36,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-21",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 75.51,
+    "amount": 75.51,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-21",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 56.58,
+    "amount": 56.58,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-22",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 98.87,
+    "amount": 197.74,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-21",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 89.75,
+    "amount": 89.75,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-22",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 54.29,
+    "amount": 54.29,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-21",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 18.75,
+    "amount": 75,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-07-20",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 9,
+    "unitPrice": 22.86,
+    "amount": 205.74,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2026-07-20",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 65.56,
+    "amount": 65.56,
+    "revCode": "0270"
+   },
+   {
+    "id": "L15",
+    "date": "2026-07-20",
+    "description": "ACETAMINOPHEN 325MG TAB",
+    "qty": 4,
+    "unitPrice": 0.45,
+    "amount": 1.8,
+    "revCode": "0250",
+    "ndc": "70104556516"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-07-31",
+  "firstBillDate": "2026-08-12",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "State Medicaid",
+  "eob": {
+   "billed": 10008.33,
+   "allowed": 2836.76,
+   "planPaid": 2835.76,
+   "deductible": 0,
+   "copay": 1,
+   "coinsurance": 0,
+   "patientResponsibility": 1,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 3148.43,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 3148.43,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 16.57,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 53.84,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 154.14,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 61.17,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 54.11,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 40.54,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 141.69,
+     "lineId": "L09"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 64.31,
+     "lineId": "L10"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 38.9,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 53.74,
+     "lineId": "L12"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 147.43,
+     "lineId": "L13"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 46.98,
+     "lineId": "L14"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1.29,
+     "lineId": "L15"
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 1
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "70104556516": {
+    "unitPrice": 0.017491,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "L15"
+   ]
+  }
+ ],
+ "plants": [
+  "RX-01"
+ ],
+ "tags": [
+  "hn:medicaid-copay",
+  "hn:repeat-mod",
+  "plant:RX-01",
+  "variant:eob-line-level-co"
+ ]
+}

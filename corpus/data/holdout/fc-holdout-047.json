@@ -1,0 +1,462 @@
+{
+ "id": "fc-holdout-047",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20633195,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 047",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0101702",
+   "admitDate": "2026-08-25",
+   "dischargeDate": "2026-08-29",
+   "totalCharges": 33308.34,
+   "statementDate": "2026-09-29",
+   "payments": 7672.48,
+   "adjustments": 21357.6,
+   "balanceDue": 4278.26
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-25",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 3727.84,
+    "amount": 3727.84,
+    "revCode": "0120"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-26",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 3727.84,
+    "amount": 3727.84,
+    "revCode": "0120"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-27",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 3727.84,
+    "amount": 3727.84,
+    "revCode": "0120"
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-28",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 1,
+    "unitPrice": 3727.84,
+    "amount": 3727.84,
+    "revCode": "0120"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-26",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 4683.56,
+    "amount": 4683.56,
+    "revCode": "0360"
+   },
+   {
+    "id": "L06",
+    "date": "2026-08-26",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 6,
+    "unitPrice": 958.51,
+    "amount": 5751.06,
+    "revCode": "0360"
+   },
+   {
+    "id": "L07",
+    "date": "2026-08-26",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2019.53,
+    "amount": 2019.53,
+    "revCode": "0710"
+   },
+   {
+    "id": "L08",
+    "date": "2026-08-26",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1793.05,
+    "amount": 1793.05,
+    "revCode": "0370"
+   },
+   {
+    "id": "L09",
+    "date": "2026-08-26",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 833.23,
+    "amount": 833.23,
+    "revCode": "0272"
+   },
+   {
+    "id": "L10",
+    "date": "2026-08-25",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 36.35,
+    "amount": 36.35,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L11",
+    "date": "2026-08-25",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 113.65,
+    "amount": 113.65,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-08-25",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 18.87,
+    "amount": 18.87,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L13",
+    "date": "2026-08-26",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 60.16,
+    "amount": 60.16,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2026-08-26",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 32.31,
+    "amount": 32.31,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L15",
+    "date": "2026-08-26",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 41.86,
+    "amount": 83.72,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L16",
+    "date": "2026-08-27",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 106.73,
+    "amount": 106.73,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L17",
+    "date": "2026-08-27",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 122.49,
+    "amount": 122.49,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L18",
+    "date": "2026-08-28",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 80.74,
+    "amount": 80.74,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L19",
+    "date": "2026-08-28",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 54.31,
+    "amount": 54.31,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L20",
+    "date": "2026-08-27",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 229.43,
+    "amount": 229.43,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L26",
+    "date": "2026-08-27",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 287.42,
+    "amount": 287.42,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L21",
+    "date": "2026-08-28",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 16.5,
+    "amount": 33,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L22",
+    "date": "2026-08-29",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 58.52,
+    "amount": 117.04,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L23",
+    "date": "2026-08-25",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 1830.17,
+    "amount": 1830.17,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L24",
+    "date": "2026-08-25",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 108.05,
+    "amount": 108.05,
+    "revCode": "0270"
+   },
+   {
+    "id": "L25",
+    "date": "2026-08-25",
+    "description": "ONDANSETRON 4MG ODT",
+    "qty": 1,
+    "unitPrice": 2.11,
+    "amount": 2.11,
+    "revCode": "0250",
+    "ndc": "60393315680"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-09-04",
+  "firstBillDate": "2026-09-13",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 33308.34,
+   "allowed": 11950.74,
+   "planPaid": 7672.48,
+   "deductible": 2297.64,
+   "copay": 50,
+   "coinsurance": 1930.62,
+   "patientResponsibility": 4278.26,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 21357.6
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 2297.64
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1930.62
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "60393315680": {
+    "unitPrice": 0.262374,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L20",
+    "L26"
+   ]
+  },
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L15"
+   ]
+  }
+ ],
+ "plants": [
+  "DUP-02",
+  "MATH-01"
+ ],
+ "tags": [
+  "hn:rx-below-10",
+  "plant:DUP-02:price",
+  "plant:MATH-01:extra-unit"
+ ]
+}

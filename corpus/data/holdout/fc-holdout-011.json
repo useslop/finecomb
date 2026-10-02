@@ -1,0 +1,435 @@
+{
+ "id": "fc-holdout-011",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20348111,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 011",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0100370",
+   "admitDate": "2026-07-09",
+   "dischargeDate": "2026-07-12",
+   "totalCharges": 32737.77,
+   "statementDate": "2026-08-05",
+   "payments": 5631.26,
+   "adjustments": 0,
+   "balanceDue": 27106.51
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-09",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 3,
+    "unitPrice": 4674.12,
+    "amount": 14022.36,
+    "revCode": "0206"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-10",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 4639.56,
+    "amount": 4639.56,
+    "revCode": "0360"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-10",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 7,
+    "unitPrice": 888.4,
+    "amount": 6218.8,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-10",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1775.79,
+    "amount": 1775.79,
+    "revCode": "0710"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-10",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2043.18,
+    "amount": 2043.18,
+    "revCode": "0370"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-10",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1528.72,
+    "amount": 1528.72,
+    "revCode": "0272"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-09",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 48.63,
+    "amount": 48.63,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-10",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 34.87,
+    "amount": 34.87,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-10",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 116.33,
+    "amount": 116.33,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-11",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 60.29,
+    "amount": 60.29,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-11",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 49.22,
+    "amount": 49.22,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-10",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 38.42,
+    "amount": 192.1,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2026-07-09",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 34.72,
+    "amount": 138.88,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2026-07-11",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 4,
+    "unitPrice": 46.97,
+    "amount": 187.88,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2026-07-12",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 74.68,
+    "amount": 74.68,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2026-07-09",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 49.1,
+    "amount": 49.1,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L17",
+    "date": "2026-07-10",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 101.89,
+    "amount": 101.89,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L18",
+    "date": "2026-07-09",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 72.96,
+    "amount": 72.96,
+    "revCode": "0270"
+   },
+   {
+    "id": "L19",
+    "date": "2026-07-09",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 63.92,
+    "amount": 63.92,
+    "revCode": "0270"
+   },
+   {
+    "id": "L20",
+    "date": "2026-07-09",
+    "description": "OXYGEN PER DAY",
+    "qty": 3,
+    "unitPrice": 200.86,
+    "amount": 602.58,
+    "revCode": "0412"
+   },
+   {
+    "id": "L21",
+    "date": "2026-07-09",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 6,
+    "unitPrice": 44.79,
+    "amount": 268.74,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L22",
+    "date": "2026-07-10",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 5,
+    "unitPrice": 39.89,
+    "amount": 199.45,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L23",
+    "date": "2026-07-11",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 3,
+    "unitPrice": 27.66,
+    "amount": 82.98,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L24",
+    "date": "2026-07-12",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 5,
+    "unitPrice": 32.27,
+    "amount": 161.35,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L25",
+    "date": "2026-07-09",
+    "description": "ONDANSETRON 4MG ODT",
+    "qty": 1,
+    "unitPrice": 3.51,
+    "amount": 3.51,
+    "revCode": "0250",
+    "ndc": "15042833355"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-07-30",
+  "firstBillDate": "2026-08-02",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "State Medicaid",
+  "eob": {
+   "billed": 32737.77,
+   "allowed": 5633.26,
+   "planPaid": 5631.26,
+   "deductible": 0,
+   "copay": 2,
+   "coinsurance": 0,
+   "patientResponsibility": 2,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 27104.51
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 2
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 2102.44
+ },
+ "data": {
+  "mue": {
+   "82962": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "15042833355": {
+    "unitPrice": 0.148322,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "L25"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "CR-01",
+  "MCD-01",
+  "RX-01"
+ ],
+ "tags": [
+  "hn:mue-inpatient",
+  "plant:RX-01",
+  "plant:MCD-01:with-eob",
+  "plant:CR-01:recent"
+ ]
+}

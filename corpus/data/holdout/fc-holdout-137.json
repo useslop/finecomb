@@ -1,0 +1,151 @@
+{
+ "id": "fc-holdout-137",
+ "kind": "professional",
+ "sub": "proc",
+ "seed": 21345905,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 137",
+   "providerName": "Sample Orthopedic Clinic",
+   "accountNumber": "TEST-0105032",
+   "totalCharges": 2962.97,
+   "statementDate": "2026-06-11",
+   "payments": 221.68,
+   "adjustments": 0,
+   "balanceDue": 2741.29
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-05",
+    "description": "OFFICE VISIT EST LEVEL 4",
+    "qty": 1,
+    "unitPrice": 347.96,
+    "amount": 347.96,
+    "code": "99214"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-05",
+    "description": "JOINT INJECTION MAJOR",
+    "qty": 1,
+    "unitPrice": 203.25,
+    "amount": 203.25,
+    "code": "20610"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-05",
+    "description": "TRIAMCINOLONE INJ PER 10MG",
+    "qty": 10,
+    "unitPrice": 37.71,
+    "amount": 377.1,
+    "code": "J3301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-05",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2034.66,
+    "amount": 2034.66,
+    "code": "74177"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-09-04",
+  "state": "OH",
+  "ppdrFiledDate": "2026-09-16",
+  "collections": [
+   {
+    "date": "2026-09-17",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "20610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 2
+    }
+   },
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99214": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J3301": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "20610",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L03"
+   ]
+  },
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L02",
+    "L01"
+   ]
+  },
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "PPDR-01",
+  "NCCI-01",
+  "MUE-01"
+ ],
+ "tags": [
+  "hn:ncci-mod25",
+  "plant:NCCI-01:mi1-no-modifier",
+  "plant:MUE-01",
+  "plant:PPDR-01"
+ ]
+}

@@ -1,0 +1,280 @@
+{
+ "id": "fc-holdout-049",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20649033,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 049",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0101776",
+   "admitDate": "2026-09-07",
+   "dischargeDate": "2026-09-08",
+   "totalCharges": 6135.05,
+   "statementDate": "2026-09-29",
+   "payments": 1866.31,
+   "adjustments": 3107.65,
+   "balanceDue": 1161.09
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-09-07",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4827.88,
+    "amount": 4827.88,
+    "revCode": "0110"
+   },
+   {
+    "id": "L02",
+    "date": "2026-09-07",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 77.24,
+    "amount": 77.24,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-09-07",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 58.61,
+    "amount": 58.61,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-09-08",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 152.75,
+    "amount": 152.75,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-09-07",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 48.38,
+    "amount": 48.38,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L06",
+    "date": "2026-09-08",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 29.42,
+    "amount": 29.42,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-09-07",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 10.09,
+    "amount": 50.45,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-09-08",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 31.78,
+    "amount": 158.9,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-09-07",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 47.92,
+    "amount": 95.84,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2026-09-08",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 58.32,
+    "amount": 116.64,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L11",
+    "date": "2026-09-07",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 237.23,
+    "amount": 237.23,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L12",
+    "date": "2026-09-07",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 84.41,
+    "amount": 84.41,
+    "revCode": "0270"
+   },
+   {
+    "id": "L13",
+    "date": "2026-09-07",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 197.3,
+    "amount": 197.3,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-09-22",
+  "firstBillDate": "2026-09-14",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 6135.05,
+   "allowed": 3026.89,
+   "planPaid": 1866.31,
+   "deductible": 694,
+   "copay": 0,
+   "coinsurance": 466.58,
+   "patientResponsibility": 1160.58,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 3108.16
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 694
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 466.58
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 374.53
+ },
+ "data": {
+  "mue": {
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "CR-01"
+ ],
+ "tags": [
+  "hn:eob-under-1",
+  "plant:CR-01:small"
+ ]
+}

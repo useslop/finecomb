@@ -1,0 +1,141 @@
+{
+ "id": "fc-holdout-126",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21258796,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 126",
+   "providerName": "Sample Family Clinic",
+   "accountNumber": "TEST-0104625",
+   "totalCharges": 581.6,
+   "statementDate": "2026-06-18",
+   "payments": 79.54,
+   "adjustments": 349.88,
+   "balanceDue": 152.18
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-25",
+    "description": "OFFICE VISIT NEW LEVEL 4",
+    "qty": 1,
+    "unitPrice": 325.28,
+    "amount": 325.28,
+    "code": "99204"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-25",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 170.88,
+    "amount": 170.88,
+    "code": "73562",
+    "modifiers": [
+     "RT"
+    ]
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-25",
+    "description": "KNEE XRAY 3 VIEWS",
+    "qty": 1,
+    "unitPrice": 85.44,
+    "amount": 85.44,
+    "code": "73562",
+    "modifiers": [
+     "LT"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "firstBillDate": "2026-06-17",
+  "state": "IN",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 581.6,
+   "allowed": 231.72,
+   "planPaid": 159.08,
+   "deductible": 32.87,
+   "copay": 0,
+   "coinsurance": 39.77,
+   "patientResponsibility": 72.64,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 195.69,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 102.8,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 51.39,
+     "lineId": "L03"
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 32.87
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 39.77
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "73562": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99204": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-01"
+ ],
+ "tags": [
+  "hn:bilateral",
+  "variant:bilateral-discounted",
+  "variant:eob-line-level-co",
+  "plant:EOB-01:unposted-payment"
+ ]
+}

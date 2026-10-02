@@ -1,0 +1,289 @@
+{
+ "id": "fc-holdout-062",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 20751980,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 062",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0102257",
+   "admitDate": "2026-09-07",
+   "dischargeDate": "2026-09-07",
+   "totalCharges": 6862.53,
+   "statementDate": "2026-09-29",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 6862.53
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-09-07",
+    "description": "ER VISIT LEVEL 5",
+    "qty": 1,
+    "unitPrice": 4953.23,
+    "amount": 4953.23,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-09-07",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 161.24,
+    "amount": 161.24,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2026-09-07",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 42.48,
+    "amount": 42.48,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-09-07",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 641.9,
+    "amount": 641.9,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L05",
+    "date": "2026-09-07",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 396,
+    "amount": 396,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "59"
+    ]
+   },
+   {
+    "id": "L06",
+    "date": "2026-09-07",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 69.6,
+    "amount": 69.6,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L07",
+    "date": "2026-09-07",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 12.71,
+    "amount": 76.26,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-09-07",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 55.58,
+    "amount": 277.9,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-09-07",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 104.39,
+    "amount": 104.39,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2026-09-07",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 139.53,
+    "amount": 139.53,
+    "code": "80048",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-09-19",
+  "firstBillDate": "2026-09-16",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": []
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "80048",
+    "mi": 0,
+    "effective": "2020-01-01"
+   },
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L09",
+    "L10"
+   ]
+  },
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01",
+  "NCCI-01"
+ ],
+ "tags": [
+  "hn:ncci-mi1-59",
+  "plant:NCCI-01:mi0"
+ ]
+}

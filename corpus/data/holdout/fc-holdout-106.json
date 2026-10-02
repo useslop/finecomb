@@ -1,0 +1,124 @@
+{
+ "id": "fc-holdout-106",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 21100416,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 106",
+   "providerName": "Sample Radiology Associates",
+   "accountNumber": "TEST-0103885",
+   "totalCharges": 432.52,
+   "statementDate": "2026-09-29",
+   "payments": 230.55,
+   "adjustments": 0,
+   "balanceDue": 201.97
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-09-08",
+    "description": "CT HEAD PROFESSIONAL READ",
+    "qty": 1,
+    "unitPrice": 395.8,
+    "amount": 593.7,
+    "code": "70450",
+    "modifiers": [
+     "26"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": false,
+  "emergency": false,
+  "firstBillDate": "2026-09-13",
+  "state": "MO",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "radiology"
+  ],
+  "eob": {
+   "billed": 593.7,
+   "allowed": 294.25,
+   "planPaid": 230.55,
+   "deductible": 10.3,
+   "copay": 25,
+   "coinsurance": 28.4,
+   "patientResponsibility": 63.7,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 299.45
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 10.3
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 28.4
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 25
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L01"
+   ]
+  },
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-02",
+  "MATH-01",
+  "MATH-02"
+ ],
+ "tags": [
+  "plant:MATH-01:wrong-total",
+  "plant:MATH-02:total-off"
+ ]
+}

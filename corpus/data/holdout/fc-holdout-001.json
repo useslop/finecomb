@@ -1,0 +1,324 @@
+{
+ "id": "fc-holdout-001",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20268921,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 001",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0100000",
+   "admitDate": "2026-05-09",
+   "dischargeDate": "2026-05-09",
+   "totalCharges": 12592.03,
+   "statementDate": "2026-06-10",
+   "payments": 3711.82,
+   "adjustments": 8876.21,
+   "balanceDue": 4
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-09",
+    "description": "ED VISIT LVL 5",
+    "qty": 1,
+    "unitPrice": 3782.14,
+    "amount": 3782.14,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-09",
+    "description": "PRIVATE RM DAILY",
+    "qty": 1,
+    "unitPrice": 4161.68,
+    "amount": 4161.68,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-09",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 58.35,
+    "amount": 58.35,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-09",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 6,
+    "unitPrice": 45.06,
+    "amount": 270.36,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-09",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 58.31,
+    "amount": 58.31,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-09",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 91.27,
+    "amount": 91.27,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-09",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 3603.06,
+    "amount": 3603.06,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L11",
+    "date": "2026-05-09",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 3603.06,
+    "amount": 3603.06,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-09",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 405.97,
+    "amount": 405.97,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L09",
+    "date": "2026-05-09",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 86.15,
+    "amount": 86.15,
+    "revCode": "0270"
+   },
+   {
+    "id": "L10",
+    "date": "2026-05-09",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 74.74,
+    "amount": 74.74,
+    "revCode": "0272"
+   },
+   {
+    "id": "L12",
+    "date": "2026-05-09",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": -1,
+    "unitPrice": 3603.06,
+    "amount": -3603.06,
+    "code": "70450",
+    "revCode": "0350"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-05-19",
+  "firstBillDate": "2026-05-15",
+  "state": "AZ",
+  "hospitalCcn": "990104",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 12592.03,
+   "allowed": 3715.82,
+   "planPaid": 3711.82,
+   "deductible": 0,
+   "copay": 4,
+   "coinsurance": 0,
+   "patientResponsibility": 4,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2666.06,
+     "lineId": "L01"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2933.6,
+     "lineId": "L02"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 41.13,
+     "lineId": "L03"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 190.58,
+     "lineId": "L04"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 41.1,
+     "lineId": "L05"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 64.34,
+     "lineId": "L06"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2539.82,
+     "lineId": "L07"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2539.82,
+     "lineId": "L11"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 286.17,
+     "lineId": "L08"
+    },
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 60.73,
+     "lineId": "L09"
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 4
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:credit-reversal",
+  "hn:same-day-admit-discharge",
+  "hn:repeat-mod",
+  "hn:medicaid-copay",
+  "variant:credit:negqty",
+  "variant:eob-line-level-co"
+ ]
+}

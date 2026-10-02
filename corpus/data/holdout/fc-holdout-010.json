@@ -1,0 +1,215 @@
+{
+ "id": "fc-holdout-010",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20340192,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 010",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0100333",
+   "admitDate": "2026-04-27",
+   "dischargeDate": "2026-04-27",
+   "totalCharges": 5775.9,
+   "statementDate": "2026-05-23",
+   "payments": 1504.75,
+   "adjustments": 2428.04,
+   "balanceDue": 1843.11
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-27",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4954.1,
+    "amount": 4954.1,
+    "revCode": "0206"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-27",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 96.58,
+    "amount": 96.58,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-27",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 6,
+    "unitPrice": 22.21,
+    "amount": 133.26,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-27",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 216.03,
+    "amount": 432.06,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-29",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 47.3,
+    "amount": 94.6,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-27",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 65.3,
+    "amount": 65.3,
+    "revCode": "0270"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-27",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 152.33,
+    "amount": 152.33,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-05-03",
+  "firstBillDate": "2026-05-09",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 5928.23,
+   "allowed": 3499.87,
+   "planPaid": 1504.75,
+   "deductible": 1618.93,
+   "copay": 0,
+   "coinsurance": 376.19,
+   "patientResponsibility": 1995.12,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2428.36
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1618.93
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 376.19
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 95.02
+ },
+ "data": {
+  "mue": {
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "DATE-01",
+   "lineIds": [
+    "L05"
+   ]
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "CR-01",
+  "DATE-01",
+  "MATH-02"
+ ],
+ "tags": [
+  "hn:same-day-admit-discharge",
+  "hn:eob-under-1",
+  "plant:DATE-01:moved",
+  "plant:MATH-02:line-left-out",
+  "plant:CR-01:small"
+ ]
+}

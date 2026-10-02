@@ -1,0 +1,356 @@
+{
+ "id": "fc-holdout-097",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21029145,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 097",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0103552",
+   "totalCharges": 4580.5,
+   "statementDate": "2025-11-04",
+   "payments": 781.33,
+   "adjustments": 0,
+   "balanceDue": 3799.17
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-10-13",
+    "description": "EMERGENCY ROOM LVL 4",
+    "qty": 1,
+    "unitPrice": 1804.49,
+    "amount": 1804.49,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-10-13",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 70.04,
+    "amount": 70.04,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2025-10-13",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 67.01,
+    "amount": 67.01,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-10-13",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 32.79,
+    "amount": 32.79,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2025-10-13",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 26.84,
+    "amount": 26.84,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2025-10-13",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 1346.01,
+    "amount": 1346.01,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L07",
+    "date": "2025-10-13",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 217.78,
+    "amount": 217.78,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2025-10-13",
+    "description": "IV PUSH EACH ADDL DRUG",
+    "qty": 2,
+    "unitPrice": 206.99,
+    "amount": 413.98,
+    "code": "96375",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2025-10-13",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 7,
+    "unitPrice": 52.92,
+    "amount": 370.44,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2025-10-13",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 9.53,
+    "amount": 57.18,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2025-10-13",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 46.36,
+    "amount": 92.72,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L12",
+    "date": "2025-10-13",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 77.48,
+    "amount": 77.48,
+    "revCode": "0270"
+   },
+   {
+    "id": "L13",
+    "date": "2025-10-13",
+    "description": "IBUPROFEN 600MG TAB",
+    "qty": 2,
+    "unitPrice": 1.87,
+    "amount": 3.74,
+    "revCode": "0250",
+    "ndc": "26818647726"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2025-10-24",
+  "firstBillDate": "2025-10-28",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 4580.5,
+   "allowed": 2467.52,
+   "planPaid": 781.33,
+   "deductible": 1571.6,
+   "copay": 25,
+   "coinsurance": 89.59,
+   "patientResponsibility": 1686.19,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 2112.98
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1571.6
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 89.59
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 25
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-01-01",
+    "kind": "credit_report"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96375": {
+    "practitioner": {
+     "mue": 6,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 6,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "26818647726": {
+    "unitPrice": 0.032839,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "L13"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-01",
+  "RX-01"
+ ],
+ "tags": [
+  "hn:eca-forprofit",
+  "plant:RX-01"
+ ]
+}

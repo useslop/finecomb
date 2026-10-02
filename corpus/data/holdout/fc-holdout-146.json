@@ -1,0 +1,135 @@
+{
+ "id": "fc-holdout-146",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 21417176,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 146",
+   "providerName": "Sample Emergency Physicians",
+   "accountNumber": "TEST-0105365",
+   "totalCharges": 2697.24,
+   "statementDate": "2026-09-29",
+   "payments": 873.76,
+   "adjustments": 0,
+   "balanceDue": 1823.48
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-09-11",
+    "description": "EMERGENCY PHYSICIAN LEVEL 5",
+    "qty": 1,
+    "unitPrice": 899.08,
+    "amount": 899.08,
+    "code": "99285"
+   },
+   {
+    "id": "L02",
+    "date": "2026-09-11",
+    "description": "EMERGENCY PHYSICIAN LEVEL 5",
+    "qty": 1,
+    "unitPrice": 899.08,
+    "amount": 1798.16,
+    "code": "99285"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": false,
+  "emergency": true,
+  "firstBillDate": "2026-09-16",
+  "state": "TN",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "emergency medicine"
+  ],
+  "eob": {
+   "billed": 2697.24,
+   "allowed": 1258.47,
+   "planPaid": 873.76,
+   "deductible": 287.63,
+   "copay": 0,
+   "coinsurance": 97.08,
+   "patientResponsibility": 384.71,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 1438.77
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 287.63
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 97.08
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L01",
+    "L02"
+   ]
+  },
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "L02"
+   ]
+  },
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L01",
+    "L02"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-02",
+  "DUP-01",
+  "MATH-01"
+ ],
+ "tags": [
+  "plant:DUP-01",
+  "plant:MATH-01:extra-unit"
+ ]
+}

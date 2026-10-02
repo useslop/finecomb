@@ -1,0 +1,271 @@
+{
+ "id": "fc-holdout-033",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20522329,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 033",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0101184",
+   "admitDate": "2026-08-28",
+   "dischargeDate": "2026-08-29",
+   "totalCharges": 7193.79,
+   "statementDate": "2026-09-29",
+   "payments": 1504.46,
+   "adjustments": 4827.03,
+   "balanceDue": 862.3
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-08-28",
+    "description": "ED VISIT LVL 3",
+    "qty": 1,
+    "unitPrice": 1505.55,
+    "amount": 1505.55,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-08-28",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 3976.37,
+    "amount": 3976.37,
+    "revCode": "0206"
+   },
+   {
+    "id": "L03",
+    "date": "2026-08-28",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 101.08,
+    "amount": 101.08,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2026-08-29",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 36.81,
+    "amount": 73.62,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L05",
+    "date": "2026-08-28",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 82.54,
+    "amount": 82.54,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L06",
+    "date": "2026-08-28",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 16.76,
+    "amount": 117.32,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2026-08-29",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 104.58,
+    "amount": 104.58,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2026-08-28",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 33.29,
+    "amount": 199.74,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2026-08-29",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 10.48,
+    "amount": 83.84,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-08-28",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 83.14,
+    "amount": 83.14,
+    "revCode": "0270"
+   },
+   {
+    "id": "L11",
+    "date": "2026-08-28",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 100.77,
+    "amount": 100.77,
+    "revCode": "0270"
+   },
+   {
+    "id": "L12",
+    "date": "2026-08-28",
+    "description": "OXYGEN PER DAY",
+    "qty": 1,
+    "unitPrice": 303.31,
+    "amount": 303.31,
+    "revCode": "0412"
+   },
+   {
+    "id": "L13",
+    "date": "2026-08-28",
+    "description": "TELEMETRY MONITOR PER DAY",
+    "qty": 1,
+    "unitPrice": 461.93,
+    "amount": 461.93,
+    "revCode": "0731"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "other",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-09-09",
+  "firstBillDate": "2026-09-21",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Benefit Trust",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 7193.79,
+   "allowed": 2366.76,
+   "planPaid": 1504.46,
+   "deductible": 486.19,
+   "copay": 0,
+   "coinsurance": 376.11,
+   "patientResponsibility": 862.3,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 4827.03
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 486.19
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 376.11
+    }
+   ]
+  },
+  "onCreditReport": false,
+  "paidInFull": false,
+  "originalBalance": 215.96
+ },
+ "data": {
+  "mue": {
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:cr-not-reported",
+  "hn:per-day-multi"
+ ]
+}

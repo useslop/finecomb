@@ -1,0 +1,299 @@
+{
+ "id": "fc-holdout-063",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 20759899,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 063",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0102294",
+   "totalCharges": 10236.12,
+   "statementDate": "2026-01-09",
+   "payments": 2599.84,
+   "adjustments": 0,
+   "balanceDue": 7636.28
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-12-23",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 3,
+    "unitPrice": 2172.74,
+    "amount": 6518.22,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-12-23",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 18,
+    "amount": 18,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L03",
+    "date": "2025-12-23",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 57.75,
+    "amount": 57.75,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2025-12-23",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 66.5,
+    "amount": 66.5,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L05",
+    "date": "2025-12-23",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 87.31,
+    "amount": 87.31,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2025-12-23",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 36.14,
+    "amount": 36.14,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2025-12-23",
+    "description": "CT HEAD NO CONTRAST",
+    "qty": 1,
+    "unitPrice": 2615.33,
+    "amount": 2615.33,
+    "code": "70450",
+    "revCode": "0350"
+   },
+   {
+    "id": "L08",
+    "date": "2025-12-23",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 35.22,
+    "amount": 246.54,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2025-12-23",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 7,
+    "unitPrice": 78.41,
+    "amount": 548.87,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2025-12-23",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 41.46,
+    "amount": 41.46,
+    "revCode": "0270"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "firstPostDischargeStatementDate": "2026-01-07",
+  "firstBillDate": "2026-01-03",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Health Plan",
+  "eob": {
+   "billed": 10236.12,
+   "allowed": 4030.53,
+   "planPaid": 2599.84,
+   "deductible": 1086.26,
+   "copay": 50,
+   "coinsurance": 294.43,
+   "patientResponsibility": 1430.69,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 6205.59
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1086.26
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 294.43
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-07-07",
+    "kind": "lawsuit",
+    "noticeDate": "2026-06-02"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L01"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-02",
+  "MUE-01"
+ ],
+ "tags": [
+  "hn:eca-proper",
+  "plant:MUE-01",
+  "plant:EOB-02:co-billed"
+ ]
+}

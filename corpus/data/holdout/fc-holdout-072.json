@@ -1,0 +1,337 @@
+{
+ "id": "fc-holdout-072",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 20831170,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 072",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0102627",
+   "totalCharges": 3320.11,
+   "statementDate": "2025-08-28",
+   "payments": 349.88,
+   "adjustments": 2249.64,
+   "balanceDue": 720.59
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-08-08",
+    "description": "EMERGENCY ROOM LVL 3",
+    "qty": 1,
+    "unitPrice": 1519.42,
+    "amount": 1519.42,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-08-08",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 5,
+    "unitPrice": 60.17,
+    "amount": 300.85,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-08-08",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 125.06,
+    "amount": 125.06,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2025-08-08",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 48.16,
+    "amount": 48.16,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2025-08-08",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 99.43,
+    "amount": 99.43,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2025-08-08",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 43.83,
+    "amount": 43.83,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2025-08-08",
+    "description": "CAPILLARY BLOOD DRAW",
+    "qty": 1,
+    "unitPrice": 20.49,
+    "amount": 20.49,
+    "code": "36416",
+    "revCode": "0300"
+   },
+   {
+    "id": "L08",
+    "date": "2025-08-08",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 339.93,
+    "amount": 339.93,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L09",
+    "date": "2025-08-08",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 261.36,
+    "amount": 261.36,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L10",
+    "date": "2025-08-08",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 5.93,
+    "amount": 35.58,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2025-08-08",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 105.2,
+    "amount": 526,
+    "code": "J0696",
+    "revCode": "0636"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2025-08-16",
+  "firstBillDate": "2025-08-25",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 3320.11,
+   "allowed": 1070.47,
+   "planPaid": 699.76,
+   "deductible": 133.27,
+   "copay": 50,
+   "coinsurance": 187.44,
+   "patientResponsibility": 370.71,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2249.64
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 133.27
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 187.44
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-01-05",
+    "kind": "credit_report",
+    "noticeDate": "2025-11-18"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "36416": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "36415",
+    "col2": "36416",
+    "mi": 9,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L02"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "EOB-01",
+  "MUE-01"
+ ],
+ "tags": [
+  "hn:ncci-mi9",
+  "hn:eca-proper",
+  "plant:MUE-01",
+  "plant:EOB-01:unposted-payment"
+ ]
+}

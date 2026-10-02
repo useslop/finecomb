@@ -1,0 +1,210 @@
+{
+ "id": "fc-holdout-051",
+ "kind": "ed",
+ "sub": "sched",
+ "seed": 20664871,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 051",
+   "providerName": "Example Lakeside Hospital",
+   "accountNumber": "TEST-0101850",
+   "totalCharges": 9265.44,
+   "statementDate": "2026-08-29",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 9265.44
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-21",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 4028.83,
+    "amount": 4028.83,
+    "revCode": "0360",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-21",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 4028.83,
+    "amount": 4028.83,
+    "revCode": "0360",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-21",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2135.49,
+    "amount": 2135.49,
+    "revCode": "0710",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-21",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1184.52,
+    "amount": 1184.52,
+    "revCode": "0272",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-21",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 28.98,
+    "amount": 173.88,
+    "code": "J2405",
+    "revCode": "0636",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-21",
+    "description": "ONDANSETRON INJ PER 1MG ADDL",
+    "qty": 6,
+    "unitPrice": 28.98,
+    "amount": 173.88,
+    "code": "J2405",
+    "revCode": "0636",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-21",
+    "description": "ANESTHESIA SERVICES",
+    "qty": 1,
+    "unitPrice": 1973.39,
+    "amount": 1973.39,
+    "code": "00790",
+    "provider": "Sample Anesthesia Associates"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-21",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": -1,
+    "unitPrice": 4028.83,
+    "amount": -4028.83,
+    "revCode": "0360",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-21",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 127.91,
+    "amount": 127.91,
+    "revCode": "0250",
+    "provider": "Example Lakeside Hospital"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-21",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 127.91,
+    "amount": -127.91,
+    "revCode": "0250",
+    "provider": "Example Lakeside Hospital"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "emergency": false,
+  "admitted": false,
+  "scheduledAhead": true,
+  "firstPostDischargeStatementDate": "2026-08-01",
+  "firstBillDate": "2026-08-01",
+  "state": "MO",
+  "hospitalCcn": "990106",
+  "gfe": [
+   {
+    "provider": "Example Lakeside Hospital",
+    "total": 7836.28
+   },
+   {
+    "provider": "Sample Anesthesia Associates",
+    "total": 1502.94
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990106": {
+    "name": "Example Lakeside Hospital",
+    "state": "MO",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "L04",
+    "L10"
+   ]
+  },
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L04",
+    "L10"
+   ]
+  },
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "GFE-01",
+   "lineIds": [
+    "L05"
+   ]
+  }
+ ],
+ "plants": [
+  "GFE-01",
+  "MATH-02",
+  "DUP-02"
+ ],
+ "tags": [
+  "hn:cancel-reversed",
+  "hn:credit-reversal",
+  "variant:sched-surgery-2-providers",
+  "variant:credit:negqty",
+  "variant:cancel-credit:posqty",
+  "plant:DUP-02:desc",
+  "plant:MATH-02:total-off",
+  "plant:GFE-01"
+ ]
+}

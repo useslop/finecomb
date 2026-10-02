@@ -6,6 +6,7 @@
   "description": "Synthetic bill corpus, ground-truth labeler and accuracy evaluator for the Finecomb engine.",
   "scripts": {
     "generate": "vite-node src/run-generate.ts",
+    "generate:holdout": "vite-node src/run-holdout.ts",
     "evaluate": "vite-node src/run-evaluate.ts",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json --noEmit"

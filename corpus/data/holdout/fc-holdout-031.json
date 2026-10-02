@@ -1,0 +1,223 @@
+{
+ "id": "fc-holdout-031",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20506491,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 031",
+   "providerName": "Example Valley Hospital",
+   "accountNumber": "TEST-0101110",
+   "admitDate": "2026-05-01",
+   "dischargeDate": "2026-05-01",
+   "totalCharges": 6220.99,
+   "statementDate": "2026-06-02",
+   "payments": 924.97,
+   "adjustments": 2909.41,
+   "balanceDue": 2386.61
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-01",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 5050.5,
+    "amount": 5050.5,
+    "revCode": "0206"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-01",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 140.94,
+    "amount": 140.94,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-01",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 44.81,
+    "amount": 89.62,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-01",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 19.12,
+    "amount": 114.72,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-01",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 411.68,
+    "amount": 411.68,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-01",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 78.46,
+    "amount": 78.46,
+    "revCode": "0270"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-01",
+    "description": "IV BAG NOT GIVEN",
+    "qty": 1,
+    "unitPrice": 177.61,
+    "amount": 177.61,
+    "revCode": "0250"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-01",
+    "description": "IV BAG NOT GIVEN",
+    "qty": -1,
+    "unitPrice": 177.61,
+    "amount": -177.61,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-05-18",
+  "firstBillDate": "2026-05-12",
+  "state": "TN",
+  "hospitalCcn": "990105",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 5885.92,
+   "allowed": 2976.51,
+   "planPaid": 1536.64,
+   "deductible": 781.31,
+   "copay": 0,
+   "coinsurance": 658.56,
+   "patientResponsibility": 1439.87,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 2909.41
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 781.31
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 658.56
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": true,
+  "originalBalance": 4040.48
+ },
+ "data": {
+  "mue": {
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990105": {
+    "name": "Example Valley Hospital",
+    "state": "TN",
+    "ownership": "Proprietary",
+    "ownershipCategory": "proprietary"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MATH-02",
+  "EOB-01",
+  "CR-01"
+ ],
+ "tags": [
+  "hn:same-day-admit-discharge",
+  "hn:cancel-reversed",
+  "variant:cancel-credit:negqty",
+  "plant:EOB-01:unposted-payment",
+  "plant:MATH-02:total-off",
+  "plant:CR-01:paid"
+ ]
+}

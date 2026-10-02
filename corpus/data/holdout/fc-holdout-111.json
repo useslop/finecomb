@@ -1,0 +1,141 @@
+{
+ "id": "fc-holdout-111",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 21140011,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 111",
+   "providerName": "Sample Radiology Associates",
+   "accountNumber": "TEST-0104070",
+   "totalCharges": 273.37,
+   "statementDate": "2026-08-10",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 273.37
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-16",
+    "description": "CT HEAD PROFESSIONAL READ",
+    "qty": 1,
+    "unitPrice": 193.22,
+    "amount": 193.22,
+    "code": "70450",
+    "modifiers": [
+     "26"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-16",
+    "description": "CHEST XRAY PROFESSIONAL READ",
+    "qty": 1,
+    "unitPrice": 80.15,
+    "amount": 80.15,
+    "code": "71046",
+    "modifiers": [
+     "26"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": false,
+  "emergency": false,
+  "firstBillDate": "2026-07-22",
+  "state": "OK",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "radiology"
+  ],
+  "eob": {
+   "billed": 273.37,
+   "allowed": 148.88,
+   "planPaid": 0,
+   "deductible": 38.72,
+   "copay": 88.13,
+   "coinsurance": 22.03,
+   "patientResponsibility": 148.88,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 124.49
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 38.72
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 22.03
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 88.13
+    }
+   ]
+  },
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 317.76
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-02",
+  "CR-01"
+ ],
+ "tags": [
+  "plant:CR-01:small"
+ ]
+}

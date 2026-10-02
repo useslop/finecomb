@@ -1,0 +1,355 @@
+{
+ "id": "fc-holdout-100",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 21052902,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 100",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0103663",
+   "totalCharges": 3677.99,
+   "statementDate": "2025-11-29",
+   "payments": 615.19,
+   "adjustments": 1812.33,
+   "balanceDue": 1250.47
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-11-14",
+    "description": "EMERGENCY ROOM LVL 4",
+    "qty": 1,
+    "unitPrice": 1282.31,
+    "amount": 1282.31,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-11-14",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 246.7,
+    "amount": 246.7,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-11-14",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 177.88,
+    "amount": 177.88,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L04",
+    "date": "2025-11-14",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 30.93,
+    "amount": 30.93,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2025-11-14",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 41.7,
+    "amount": 41.7,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2025-11-14",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 17.86,
+    "amount": 17.86,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2025-11-14",
+    "description": "CAPILLARY BLOOD DRAW",
+    "qty": 1,
+    "unitPrice": 29.1,
+    "amount": 29.1,
+    "code": "36416",
+    "revCode": "0300"
+   },
+   {
+    "id": "L08",
+    "date": "2025-11-14",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 626.08,
+    "amount": 626.08,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L09",
+    "date": "2025-11-14",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 492.01,
+    "amount": 492.01,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L10",
+    "date": "2025-11-14",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 140.01,
+    "amount": 280.02,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L11",
+    "date": "2025-11-14",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 211.3,
+    "amount": 211.3,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L12",
+    "date": "2025-11-14",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 17.36,
+    "amount": 17.36,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L13",
+    "date": "2025-11-14",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 115.48,
+    "amount": 115.48,
+    "revCode": "0270"
+   },
+   {
+    "id": "L14",
+    "date": "2025-11-14",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 12.14,
+    "amount": 72.84,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2025-11-14",
+    "description": "ONDANSETRON DISCARDED",
+    "qty": 3,
+    "unitPrice": 12.14,
+    "amount": 36.42,
+    "code": "J2405",
+    "revCode": "0636",
+    "modifiers": [
+     "JW"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2025-11-24",
+  "firstBillDate": "2025-11-27",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "collections": [
+   {
+    "date": "2026-05-13",
+    "kind": "credit_report",
+    "noticeDate": "2026-04-12"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "36416": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "36415",
+    "col2": "36416",
+    "mi": 9,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:ins-paid-no-eob",
+  "hn:eca-proper",
+  "hn:jw-waste",
+  "hn:ncci-mi9",
+  "variant:jw-discarded"
+ ]
+}

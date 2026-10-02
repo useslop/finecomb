@@ -1,0 +1,461 @@
+{
+ "id": "fc-holdout-012",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20356030,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 012",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0100407",
+   "admitDate": "2025-10-23",
+   "dischargeDate": "2025-10-27",
+   "totalCharges": 42725.35,
+   "statementDate": "2025-11-20",
+   "payments": 14090.38,
+   "adjustments": 22803.33,
+   "balanceDue": 5831.64
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-10-23",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4381.5,
+    "amount": 4381.5,
+    "revCode": "0206"
+   },
+   {
+    "id": "L02",
+    "date": "2025-10-24",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4381.5,
+    "amount": 4381.5,
+    "revCode": "0206"
+   },
+   {
+    "id": "L03",
+    "date": "2025-10-25",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4381.5,
+    "amount": 4381.5,
+    "revCode": "0206"
+   },
+   {
+    "id": "L04",
+    "date": "2025-10-26",
+    "description": "STEP DOWN BED DAILY",
+    "qty": 1,
+    "unitPrice": 4381.5,
+    "amount": 4381.5,
+    "revCode": "0206"
+   },
+   {
+    "id": "L05",
+    "date": "2025-10-24",
+    "description": "OPERATING ROOM FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 5038.93,
+    "amount": 5038.93,
+    "revCode": "0360"
+   },
+   {
+    "id": "L06",
+    "date": "2025-10-24",
+    "description": "OPERATING ROOM EA ADDL 15 MIN",
+    "qty": 8,
+    "unitPrice": 1430.82,
+    "amount": 11446.56,
+    "revCode": "0360"
+   },
+   {
+    "id": "L07",
+    "date": "2025-10-24",
+    "description": "RECOVERY ROOM FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1991.97,
+    "amount": 1991.97,
+    "revCode": "0710"
+   },
+   {
+    "id": "L08",
+    "date": "2025-10-24",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2226.6,
+    "amount": 2226.6,
+    "revCode": "0370"
+   },
+   {
+    "id": "L09",
+    "date": "2025-10-24",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 1594.84,
+    "amount": 1594.84,
+    "revCode": "0272"
+   },
+   {
+    "id": "L10",
+    "date": "2025-10-23",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 75,
+    "amount": 75,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L11",
+    "date": "2025-10-24",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 115.29,
+    "amount": 115.29,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L12",
+    "date": "2025-10-24",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 121.01,
+    "amount": 121.01,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L13",
+    "date": "2025-10-25",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 30.89,
+    "amount": 30.89,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L14",
+    "date": "2025-10-25",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 38.19,
+    "amount": 38.19,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L15",
+    "date": "2025-10-26",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 53.69,
+    "amount": 53.69,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L16",
+    "date": "2025-10-26",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 160.72,
+    "amount": 160.72,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L17",
+    "date": "2025-10-27",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 63.3,
+    "amount": 63.3,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L18",
+    "date": "2025-10-27",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 46.42,
+    "amount": 46.42,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L19",
+    "date": "2025-10-25",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 46.4,
+    "amount": 46.4,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L20",
+    "date": "2025-10-25",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 5,
+    "unitPrice": 7.95,
+    "amount": 39.75,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L21",
+    "date": "2025-10-24",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 18.02,
+    "amount": 72.08,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L22",
+    "date": "2025-10-24",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 25.94,
+    "amount": 207.52,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L23",
+    "date": "2025-10-25",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 7,
+    "unitPrice": 20.62,
+    "amount": 144.34,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L24",
+    "date": "2025-10-23",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 517.41,
+    "amount": 517.41,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L25",
+    "date": "2025-10-23",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 62.95,
+    "amount": 62.95,
+    "revCode": "0270"
+   },
+   {
+    "id": "L26",
+    "date": "2025-10-23",
+    "description": "ADMISSION KIT",
+    "qty": 1,
+    "unitPrice": 140.61,
+    "amount": 140.61,
+    "revCode": "0270"
+   },
+   {
+    "id": "L27",
+    "date": "2025-10-23",
+    "description": "OXYGEN PER DAY",
+    "qty": 4,
+    "unitPrice": 130.44,
+    "amount": 521.76,
+    "revCode": "0412"
+   },
+   {
+    "id": "L28",
+    "date": "2025-10-24",
+    "description": "PHYSICAL THERAPY EVAL",
+    "qty": 1,
+    "unitPrice": 443.12,
+    "amount": 443.12,
+    "revCode": "0424"
+   },
+   {
+    "id": "L29",
+    "date": "2025-10-23",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 76.48,
+    "amount": 76.48,
+    "revCode": "0250"
+   },
+   {
+    "id": "L30",
+    "date": "2025-10-23",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 76.48,
+    "amount": -76.48,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2025-11-02",
+  "firstBillDate": "2025-11-09",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Medicare",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [],
+  "collections": [
+   {
+    "date": "2026-01-08",
+    "kind": "collections"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:eca-agency-referral",
+  "hn:ins-paid-no-eob",
+  "hn:room-word",
+  "hn:cancel-reversed",
+  "variant:cancel-credit:posqty"
+ ]
+}

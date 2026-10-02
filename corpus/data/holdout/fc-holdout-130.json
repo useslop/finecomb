@@ -1,0 +1,106 @@
+{
+ "id": "fc-holdout-130",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 21290472,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 130",
+   "providerName": "Sample Emergency Physicians",
+   "accountNumber": "TEST-0104773",
+   "totalCharges": 1123.44,
+   "statementDate": "2026-07-05",
+   "payments": 0,
+   "adjustments": 763.59,
+   "balanceDue": 359.85
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-13",
+    "description": "EMERGENCY PHYSICIAN LEVEL 4",
+    "qty": 1,
+    "unitPrice": 1073.96,
+    "amount": 1073.96,
+    "code": "99284"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-13",
+    "description": "EKG INTERPRETATION",
+    "qty": 1,
+    "unitPrice": 49.48,
+    "amount": 49.48,
+    "code": "93010"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": false,
+  "emergency": true,
+  "firstBillDate": "2026-07-04",
+  "state": "GA",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "emergency medicine"
+  ],
+  "eob": {
+   "billed": 1123.44,
+   "allowed": 359.85,
+   "planPaid": 0,
+   "deductible": 231.24,
+   "copay": 90.03,
+   "coinsurance": 38.58,
+   "patientResponsibility": 359.85,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 763.59
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 231.24
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 38.58
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 90.03
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:nsa02-compliant"
+ ]
+}

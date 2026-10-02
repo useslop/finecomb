@@ -1,0 +1,133 @@
+{
+ "id": "fc-holdout-119",
+ "kind": "professional",
+ "sub": "ancillary",
+ "seed": 21203363,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 119",
+   "providerName": "Sample Radiology Associates",
+   "accountNumber": "TEST-0104366",
+   "totalCharges": 864.52,
+   "statementDate": "2026-07-15",
+   "payments": 72.51,
+   "adjustments": 0,
+   "balanceDue": 792.01
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-23",
+    "description": "CT HEAD PROFESSIONAL READ",
+    "qty": 1,
+    "unitPrice": 304.77,
+    "amount": 304.77,
+    "code": "70450",
+    "modifiers": [
+     "26"
+    ]
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-23",
+    "description": "CHEST XRAY PROFESSIONAL READ",
+    "qty": 1,
+    "unitPrice": 103.39,
+    "amount": 103.39,
+    "code": "71046",
+    "modifiers": [
+     "26"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "admitted": false,
+  "emergency": false,
+  "firstBillDate": "2026-06-28",
+  "state": "MO",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "radiology"
+  ],
+  "eob": {
+   "billed": 408.16,
+   "allowed": 169.38,
+   "planPaid": 72.51,
+   "deductible": 65.79,
+   "copay": 0,
+   "coinsurance": 31.08,
+   "patientResponsibility": 96.87,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 238.78
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 65.79
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 31.08
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "70450": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-02",
+  "MATH-02"
+ ],
+ "tags": [
+  "plant:MATH-02:total-off"
+ ]
+}

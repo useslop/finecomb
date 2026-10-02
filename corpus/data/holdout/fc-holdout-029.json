@@ -1,0 +1,381 @@
+{
+ "id": "fc-holdout-029",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20490653,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 029",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0101036",
+   "admitDate": "2026-07-26",
+   "dischargeDate": "2026-07-29",
+   "totalCharges": 28650.6,
+   "statementDate": "2026-08-25",
+   "payments": 8405.02,
+   "adjustments": 20243.58,
+   "balanceDue": 2
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-26",
+    "description": "ER VISIT LEVEL 4",
+    "qty": 1,
+    "unitPrice": 2584.19,
+    "amount": 2584.19,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-26",
+    "description": "ICU DAILY CHARGE",
+    "qty": 3,
+    "unitPrice": 8107.83,
+    "amount": 24323.49,
+    "revCode": "0200"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-26",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 51.52,
+    "amount": 51.52,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-26",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 133.09,
+    "amount": 133.09,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-27",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 126.71,
+    "amount": 126.71,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-27",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 63.5,
+    "amount": 63.5,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-28",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 176.87,
+    "amount": 176.87,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-28",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 103.27,
+    "amount": 103.27,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-28",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 59.92,
+    "amount": 59.92,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-28",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 52.12,
+    "amount": 52.12,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-29",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 110.09,
+    "amount": 110.09,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-27",
+    "description": "SALINE IV 1000ML",
+    "qty": 2,
+    "unitPrice": 210.79,
+    "amount": 421.58,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L13",
+    "date": "2026-07-26",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 5,
+    "unitPrice": 28.4,
+    "amount": 142,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L14",
+    "date": "2026-07-27",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 68.81,
+    "amount": 68.81,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L15",
+    "date": "2026-07-28",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 2,
+    "unitPrice": 28.61,
+    "amount": 57.22,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L16",
+    "date": "2026-07-26",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 86.17,
+    "amount": 86.17,
+    "revCode": "0270"
+   },
+   {
+    "id": "L17",
+    "date": "2026-07-26",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 41.72,
+    "amount": 41.72,
+    "revCode": "0272"
+   },
+   {
+    "id": "L18",
+    "date": "2026-07-26",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 48.33,
+    "amount": 48.33,
+    "revCode": "0270"
+   },
+   {
+    "id": "L19",
+    "date": "2026-07-26",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 175.52,
+    "amount": 175.52,
+    "revCode": "0250"
+   },
+   {
+    "id": "L20",
+    "date": "2026-07-26",
+    "description": "MED RETURNED TO PHARMACY",
+    "qty": 1,
+    "unitPrice": 175.52,
+    "amount": -175.52,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-08-16",
+  "firstBillDate": "2026-08-18",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "State Medicaid",
+  "eob": {
+   "billed": 28650.6,
+   "allowed": 8407.02,
+   "planPaid": 8405.02,
+   "deductible": 0,
+   "copay": 2,
+   "coinsurance": 0,
+   "patientResponsibility": 2,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 20243.58
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 2
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:cancel-reversed",
+  "hn:medicaid-copay",
+  "variant:cancel-credit:posqty"
+ ]
+}

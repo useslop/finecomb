@@ -1,0 +1,107 @@
+{
+ "id": "fc-holdout-150",
+ "kind": "professional",
+ "sub": "office",
+ "seed": 21448852,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 150",
+   "providerName": "Sample Internal Medicine Group",
+   "accountNumber": "TEST-0105513",
+   "totalCharges": 2975.24,
+   "statementDate": "2025-06-04",
+   "payments": 0,
+   "adjustments": 1048.13,
+   "balanceDue": 1927.11
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-05-09",
+    "description": "OFFICE VISIT EST LEVEL 3",
+    "qty": 1,
+    "unitPrice": 392.38,
+    "amount": 392.38,
+    "code": "99213",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L02",
+    "date": "2025-05-09",
+    "description": "STREP TEST RAPID",
+    "qty": 1,
+    "unitPrice": 60.67,
+    "amount": 60.67,
+    "code": "87880",
+    "provider": "Sample Internal Medicine Group"
+   },
+   {
+    "id": "L03",
+    "date": "2025-05-09",
+    "description": "CT ABD PELVIS W CONTRAST",
+    "qty": 1,
+    "unitPrice": 2522.19,
+    "amount": 2522.19,
+    "code": "74177",
+    "provider": "Sample Internal Medicine Group"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "none",
+  "firstBillDate": "2026-08-29",
+  "state": "AL",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Sample Internal Medicine Group",
+    "total": 2586.58
+   }
+  ],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 500
+ },
+ "data": {
+  "mue": {
+   "74177": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "87880": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99213": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:gfe-399",
+  "hn:cr-legit"
+ ]
+}

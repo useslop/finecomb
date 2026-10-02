@@ -1,0 +1,366 @@
+{
+ "id": "fc-holdout-056",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 20704466,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 056",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0102035",
+   "admitDate": "2026-07-08",
+   "dischargeDate": "2026-07-09",
+   "totalCharges": 7214.75,
+   "statementDate": "2026-07-25",
+   "payments": 2150.68,
+   "adjustments": 0,
+   "balanceDue": 5064.07
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-07-08",
+    "description": "EMERGENCY ROOM LVL 4",
+    "qty": 1,
+    "unitPrice": 2406.27,
+    "amount": 2406.27,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-07-08",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 116.98,
+    "amount": 116.98,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L03",
+    "date": "2026-07-08",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 75.27,
+    "amount": 75.27,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-07-08",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 20.17,
+    "amount": 20.17,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-07-08",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 138.07,
+    "amount": 138.07,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L06",
+    "date": "2026-07-08",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 27.28,
+    "amount": 27.28,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-07-08",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 473.23,
+    "amount": 473.23,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L08",
+    "date": "2026-07-08",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 637.46,
+    "amount": 637.46,
+    "code": "96360",
+    "revCode": "0260"
+   },
+   {
+    "id": "L09",
+    "date": "2026-07-08",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 2,
+    "unitPrice": 169.45,
+    "amount": 338.9,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L10",
+    "date": "2026-07-08",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 17.27,
+    "amount": 69.08,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-07-08",
+    "description": "MORPHINE INJ UP TO 10MG",
+    "qty": 1,
+    "unitPrice": 85.15,
+    "amount": 85.15,
+    "code": "J2270",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-07-08",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 9,
+    "unitPrice": 65.19,
+    "amount": 586.71,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L13",
+    "date": "2026-07-09",
+    "description": "OBSERVATION PER HOUR",
+    "qty": 18,
+    "unitPrice": 123.25,
+    "amount": 2218.5,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L14",
+    "date": "2026-07-09",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 21.68,
+    "amount": 21.68,
+    "code": "81003",
+    "revCode": "0300"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2026-07-28",
+  "firstBillDate": "2026-07-22",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 7214.75,
+   "allowed": 3408.42,
+   "planPaid": 2150.68,
+   "deductible": 1018.77,
+   "copay": 0,
+   "coinsurance": 238.97,
+   "patientResponsibility": 1257.74,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 3806.33
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 1018.77
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 238.97
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J2270": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L07",
+    "L08"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NCCI-01",
+  "NSA-01"
+ ],
+ "tags": [
+  "hn:ncci-mi1-59",
+  "plant:NCCI-01:mi1-no-modifier"
+ ]
+}

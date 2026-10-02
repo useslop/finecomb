@@ -1,0 +1,371 @@
+{
+ "id": "fc-holdout-058",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 20720304,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 058",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0102109",
+   "totalCharges": 3319.49,
+   "statementDate": "2026-07-16",
+   "payments": 655.88,
+   "adjustments": 0,
+   "balanceDue": 2663.61
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-06-24",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 1239.38,
+    "amount": 1239.38,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-06-24",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 79.35,
+    "amount": 79.35,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2026-06-24",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 93.62,
+    "amount": 93.62,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-06-24",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 4,
+    "unitPrice": 58.94,
+    "amount": 235.76,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2026-06-24",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 378.65,
+    "amount": 378.65,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L06",
+    "date": "2026-06-24",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 487.08,
+    "amount": 487.08,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-06-24",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 296.38,
+    "amount": 296.38,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "XU"
+    ]
+   },
+   {
+    "id": "L08",
+    "date": "2026-06-24",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 224.1,
+    "amount": 224.1,
+    "code": "J7120",
+    "revCode": "0258"
+   },
+   {
+    "id": "L09",
+    "date": "2026-06-24",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 4,
+    "unitPrice": 14.19,
+    "amount": 56.76,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-06-24",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 19.88,
+    "amount": 39.76,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-06-24",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 113.4,
+    "amount": 113.4,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-06-24",
+    "description": "CREATININE LEVEL",
+    "qty": 1,
+    "unitPrice": 75.25,
+    "amount": 75.25,
+    "code": "82565",
+    "revCode": "0301"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-07-04",
+  "firstBillDate": "2026-07-15",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 3319.49,
+   "allowed": 1306.2,
+   "planPaid": 655.88,
+   "deductible": 333.51,
+   "copay": 25,
+   "coinsurance": 291.81,
+   "patientResponsibility": 650.32,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 2013.29
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 333.51
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 291.81
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 25
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "82565": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "80053",
+    "col2": "82565",
+    "mi": 0,
+    "effective": "2020-01-01"
+   },
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "L04"
+   ]
+  },
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "L11",
+    "L12"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NCCI-01",
+  "MUE-01",
+  "NSA-01"
+ ],
+ "tags": [
+  "hn:ncci-mi1-59",
+  "hn:mue-setting",
+  "plant:NCCI-01:mi0",
+  "plant:MUE-01"
+ ]
+}

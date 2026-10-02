@@ -1,0 +1,238 @@
+{
+ "id": "fc-holdout-076",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 20862846,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 076",
+   "providerName": "Example County Hospital",
+   "accountNumber": "TEST-0102775",
+   "totalCharges": 5863.21,
+   "statementDate": "2026-04-13",
+   "payments": 0,
+   "adjustments": 0,
+   "balanceDue": 5863.21
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-04-03",
+    "description": "EMERGENCY ROOM LVL 5",
+    "qty": 1,
+    "unitPrice": 4748.32,
+    "amount": 4748.32,
+    "code": "99285",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-04-03",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 69.45,
+    "amount": 69.45,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L03",
+    "date": "2026-04-03",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 26.81,
+    "amount": 26.81,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2026-04-03",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 115.76,
+    "amount": 115.76,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-04-03",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 89.89,
+    "amount": 89.89,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L06",
+    "date": "2026-04-03",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 36.55,
+    "amount": 36.55,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L07",
+    "date": "2026-04-03",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 599.22,
+    "amount": 599.22,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L08",
+    "date": "2026-04-03",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 172.85,
+    "amount": 172.85,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L09",
+    "date": "2026-04-03",
+    "description": "OXYCODONE 5MG TAB",
+    "qty": 4,
+    "unitPrice": 1.09,
+    "amount": 4.36,
+    "revCode": "0250",
+    "ndc": "86386660820"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "observation": false,
+  "firstPostDischargeStatementDate": "2026-04-16",
+  "firstBillDate": "2026-04-24",
+  "state": "AZ",
+  "hospitalCcn": "990104",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": []
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "99285": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {
+   "86386660820": {
+    "unitPrice": 0.13038,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {
+   "990104": {
+    "name": "Example County Hospital",
+    "state": "AZ",
+    "ownership": "Government - Hospital District or Authority",
+    "ownershipCategory": "government"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01"
+ ],
+ "tags": [
+  "hn:rx-below-10"
+ ]
+}

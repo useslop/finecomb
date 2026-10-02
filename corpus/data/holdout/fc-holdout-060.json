@@ -1,0 +1,296 @@
+{
+ "id": "fc-holdout-060",
+ "kind": "ed",
+ "sub": "ed",
+ "seed": 20736142,
+ "clean": true,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 060",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0102183",
+   "totalCharges": 3437.06,
+   "statementDate": "2026-04-23",
+   "payments": 885.12,
+   "adjustments": 1647,
+   "balanceDue": 904.94
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-20",
+    "description": "ED VISIT LVL 3",
+    "qty": 1,
+    "unitPrice": 1401.69,
+    "amount": 1401.69,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-20",
+    "description": "METABOLIC PANEL BASIC",
+    "qty": 1,
+    "unitPrice": 61.29,
+    "amount": 61.29,
+    "code": "80048",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-20",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 27,
+    "amount": 27,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-20",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 2,
+    "unitPrice": 108.7,
+    "amount": 217.4,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-20",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 283.65,
+    "amount": 283.65,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-20",
+    "description": "IV PUSH FIRST DRUG",
+    "qty": 1,
+    "unitPrice": 401.23,
+    "amount": 401.23,
+    "code": "96374",
+    "revCode": "0260"
+   },
+   {
+    "id": "L07",
+    "date": "2026-03-20",
+    "description": "IV HYDRATION FIRST HOUR",
+    "qty": 1,
+    "unitPrice": 566.45,
+    "amount": 566.45,
+    "code": "96360",
+    "revCode": "0260",
+    "modifiers": [
+     "59"
+    ]
+   },
+   {
+    "id": "L08",
+    "date": "2026-03-20",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 103.1,
+    "amount": 103.1,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L09",
+    "date": "2026-03-20",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 2,
+    "unitPrice": 76.31,
+    "amount": 152.62,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-03-20",
+    "description": "LACTATED RINGERS 1000ML",
+    "qty": 1,
+    "unitPrice": 222.63,
+    "amount": 222.63,
+    "code": "J7120",
+    "revCode": "0258"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "emergency": true,
+  "admitted": false,
+  "firstPostDischargeStatementDate": "2026-03-27",
+  "firstBillDate": "2026-04-06",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Health Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 3437.06,
+   "allowed": 1790.06,
+   "planPaid": 885.12,
+   "deductible": 525.61,
+   "copay": 0,
+   "coinsurance": 379.33,
+   "patientResponsibility": 904.94,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 1647
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 525.61
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 379.33
+    }
+   ]
+  },
+  "onCreditReport": false,
+  "paidInFull": true,
+  "originalBalance": 2333.65
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80048": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "96360": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96374": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J7120": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [
+   {
+    "col1": "96374",
+    "col2": "96360",
+    "mi": 1,
+    "effective": "2020-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "hn:ncci-mi1-59",
+  "hn:nsa-compliant",
+  "hn:cr-not-reported",
+  "hn:mue-setting"
+ ]
+}

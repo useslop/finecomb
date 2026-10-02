@@ -1,0 +1,273 @@
+{
+ "id": "fc-holdout-042",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20593600,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 042",
+   "providerName": "Example Community Medical Center",
+   "accountNumber": "TEST-0101517",
+   "admitDate": "2025-09-20",
+   "dischargeDate": "2025-09-22",
+   "totalCharges": 16384.21,
+   "statementDate": "2025-10-06",
+   "payments": 8255.32,
+   "adjustments": 6859.63,
+   "balanceDue": 1269.26
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-09-20",
+    "description": "EMERGENCY ROOM LVL 4",
+    "qty": 1,
+    "unitPrice": 2024.99,
+    "amount": 2024.99,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-09-20",
+    "description": "ICU DAILY CHARGE",
+    "qty": 2,
+    "unitPrice": 6774.45,
+    "amount": 13548.9,
+    "revCode": "0200"
+   },
+   {
+    "id": "L03",
+    "date": "2025-09-20",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 27.3,
+    "amount": 27.3,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-09-21",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 129.97,
+    "amount": 129.97,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L05",
+    "date": "2025-09-21",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 119.87,
+    "amount": 119.87,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L06",
+    "date": "2025-09-20",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 66.44,
+    "amount": 132.88,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L07",
+    "date": "2025-09-20",
+    "description": "SALINE IV 1000ML",
+    "qty": 1,
+    "unitPrice": 82.56,
+    "amount": 82.56,
+    "code": "J7030",
+    "revCode": "0258"
+   },
+   {
+    "id": "L08",
+    "date": "2025-09-20",
+    "description": "PULSE OX SENSOR",
+    "qty": 1,
+    "unitPrice": 93.38,
+    "amount": 93.38,
+    "revCode": "0270"
+   },
+   {
+    "id": "L09",
+    "date": "2025-09-20",
+    "description": "WOUND DRESSING STERILE",
+    "qty": 1,
+    "unitPrice": 144.36,
+    "amount": 144.36,
+    "revCode": "0272"
+   },
+   {
+    "id": "L10",
+    "date": "2025-09-20",
+    "description": "IV START KIT",
+    "qty": 1,
+    "unitPrice": 80,
+    "amount": 80,
+    "revCode": "0270"
+   },
+   {
+    "id": "L11",
+    "date": "2025-09-20",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 169.3,
+    "amount": 169.3,
+    "revCode": "0250"
+   },
+   {
+    "id": "L12",
+    "date": "2025-09-20",
+    "description": "PHARMACY ITEM CANCELLED",
+    "qty": 1,
+    "unitPrice": 169.3,
+    "amount": -169.3,
+    "revCode": "0250"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "commercial",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2025-10-03",
+  "firstBillDate": "2025-10-02",
+  "state": "TX",
+  "hospitalCcn": "990102",
+  "insurerName": "Example Health Plan",
+  "eob": {
+   "billed": 16384.21,
+   "allowed": 9524.58,
+   "planPaid": 8255.32,
+   "deductible": 352,
+   "copay": 0,
+   "coinsurance": 917.26,
+   "patientResponsibility": 1269.26,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 6859.63
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 352
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 917.26
+    }
+   ]
+  },
+  "fapApplied": true,
+  "fapAppliedDate": "2025-11-20",
+  "collections": [
+   {
+    "date": "2026-02-11",
+    "kind": "lawsuit",
+    "noticeDate": "2026-01-05"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J7030": {
+    "practitioner": {
+     "mue": 5,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 5,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990102": {
+    "name": "Example Community Medical Center",
+    "state": "TX",
+    "ownership": "Voluntary non-profit - Church",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "ECA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "ECA-01"
+ ],
+ "tags": [
+  "hn:room-word",
+  "hn:cancel-reversed",
+  "variant:cancel-credit:posqty",
+  "plant:ECA-01:fap-pending"
+ ]
+}

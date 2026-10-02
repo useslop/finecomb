@@ -1,0 +1,440 @@
+{
+ "id": "fc-holdout-008",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20324354,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 008",
+   "providerName": "Example General Hospital",
+   "accountNumber": "TEST-0100259",
+   "admitDate": "2026-05-28",
+   "dischargeDate": "2026-06-03",
+   "totalCharges": 35249.92,
+   "statementDate": "2026-07-06",
+   "payments": 8969.33,
+   "adjustments": 0,
+   "balanceDue": 26280.59
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-05-28",
+    "description": "SEMI PRIV RM DAILY",
+    "qty": 6,
+    "unitPrice": 2794.18,
+    "amount": 16765.08,
+    "revCode": "0120"
+   },
+   {
+    "id": "L02",
+    "date": "2026-05-29",
+    "description": "OR TIME FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 4715.2,
+    "amount": 4715.2,
+    "revCode": "0360"
+   },
+   {
+    "id": "L03",
+    "date": "2026-05-29",
+    "description": "OR TIME EA ADDL 15 MIN",
+    "qty": 5,
+    "unitPrice": 1360.62,
+    "amount": 6803.1,
+    "revCode": "0360"
+   },
+   {
+    "id": "L04",
+    "date": "2026-05-29",
+    "description": "PACU FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 1795.18,
+    "amount": 1795.18,
+    "revCode": "0710"
+   },
+   {
+    "id": "L05",
+    "date": "2026-05-29",
+    "description": "ANESTHESIA FACILITY FIRST 30 MIN",
+    "qty": 1,
+    "unitPrice": 2137.34,
+    "amount": 2137.34,
+    "revCode": "0370"
+   },
+   {
+    "id": "L06",
+    "date": "2026-05-29",
+    "description": "SURGICAL SUPPLY PACK",
+    "qty": 1,
+    "unitPrice": 391.27,
+    "amount": 391.27,
+    "revCode": "0272"
+   },
+   {
+    "id": "L07",
+    "date": "2026-05-28",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 60.59,
+    "amount": 60.59,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L08",
+    "date": "2026-05-29",
+    "description": "BLOOD COUNT COMPLETE W DIFF",
+    "qty": 1,
+    "unitPrice": 133.31,
+    "amount": 133.31,
+    "code": "85025",
+    "revCode": "0305"
+   },
+   {
+    "id": "L09",
+    "date": "2026-05-30",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 73.21,
+    "amount": 73.21,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L10",
+    "date": "2026-05-30",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 196.82,
+    "amount": 196.82,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L11",
+    "date": "2026-05-31",
+    "description": "LACTIC ACID",
+    "qty": 1,
+    "unitPrice": 48.36,
+    "amount": 48.36,
+    "code": "83605",
+    "revCode": "0301"
+   },
+   {
+    "id": "L12",
+    "date": "2026-05-31",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 211.2,
+    "amount": 211.2,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L13",
+    "date": "2026-05-31",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 58.71,
+    "amount": 58.71,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L26",
+    "date": "2026-05-31",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 58.71,
+    "amount": 58.71,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L14",
+    "date": "2026-06-01",
+    "description": "LIPASE LEVEL",
+    "qty": 1,
+    "unitPrice": 91.26,
+    "amount": 91.26,
+    "code": "83690",
+    "revCode": "0301"
+   },
+   {
+    "id": "L15",
+    "date": "2026-06-01",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 150.17,
+    "amount": 150.17,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L16",
+    "date": "2026-06-01",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 131.97,
+    "amount": 131.97,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L17",
+    "date": "2026-06-02",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 157.31,
+    "amount": 157.31,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L18",
+    "date": "2026-06-02",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 55.87,
+    "amount": 55.87,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L19",
+    "date": "2026-05-28",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 31.05,
+    "amount": 248.4,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L20",
+    "date": "2026-05-30",
+    "description": "ONDANSETRON INJ PER 1MG",
+    "qty": 6,
+    "unitPrice": 33.28,
+    "amount": 199.68,
+    "code": "J2405",
+    "revCode": "0636"
+   },
+   {
+    "id": "L21",
+    "date": "2026-05-31",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 2,
+    "unitPrice": 48.33,
+    "amount": 96.66,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L22",
+    "date": "2026-05-28",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 56.09,
+    "amount": 56.09,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L23",
+    "date": "2026-05-28",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 56.56,
+    "amount": 56.56,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L24",
+    "date": "2026-05-28",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 556.32,
+    "amount": 556.32,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L25",
+    "date": "2026-05-28",
+    "description": "SUCTION CANISTER",
+    "qty": 1,
+    "unitPrice": 60.26,
+    "amount": 60.26,
+    "revCode": "0270"
+   },
+   {
+    "id": "L27",
+    "date": "2026-05-31",
+    "description": "PROTIME INR",
+    "qty": -1,
+    "unitPrice": 58.71,
+    "amount": -58.71,
+    "code": "85610",
+    "revCode": "0305"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicaid",
+  "admitted": true,
+  "emergency": false,
+  "firstPostDischargeStatementDate": "2026-06-12",
+  "firstBillDate": "2026-06-17",
+  "state": "OH",
+  "hospitalCcn": "990101",
+  "insurerName": "State Medicaid",
+  "facilityInNetwork": true,
+  "oonClinicianTypes": []
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "83605": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83690": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 32,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 32,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990101": {
+    "name": "Example General Hospital",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01"
+ ],
+ "tags": [
+  "hn:repeat-mod",
+  "hn:credit-reversal",
+  "variant:credit:negqty",
+  "plant:MCD-01:no-eob",
+  "variant:medicaid-no-eob"
+ ]
+}

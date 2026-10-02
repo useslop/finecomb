@@ -1,0 +1,333 @@
+{
+ "id": "fc-holdout-071",
+ "kind": "ed",
+ "sub": "obs",
+ "seed": 20823251,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 071",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0102590",
+   "admitDate": "2025-11-06",
+   "dischargeDate": "2025-11-07",
+   "totalCharges": 4399.66,
+   "statementDate": "2025-12-11",
+   "payments": 751.34,
+   "adjustments": 0,
+   "balanceDue": 3648.32
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2025-11-06",
+    "description": "ER VISIT LEVEL 3",
+    "qty": 1,
+    "unitPrice": 1223.07,
+    "amount": 1223.07,
+    "code": "99283",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2025-11-06",
+    "description": "TROPONIN QUANT",
+    "qty": 1,
+    "unitPrice": 124.62,
+    "amount": 124.62,
+    "code": "84484",
+    "revCode": "0301"
+   },
+   {
+    "id": "L03",
+    "date": "2025-11-06",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 78.31,
+    "amount": 78.31,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L04",
+    "date": "2025-11-06",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 24.6,
+    "amount": 24.6,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L05",
+    "date": "2025-11-06",
+    "description": "BLOOD DRAW VENOUS",
+    "qty": 1,
+    "unitPrice": 36.47,
+    "amount": 36.47,
+    "code": "36415",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2025-11-06",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 393.13,
+    "amount": 393.13,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L07",
+    "date": "2025-11-06",
+    "description": "DEXAMETHASONE INJ PER 1MG",
+    "qty": 8,
+    "unitPrice": 8.05,
+    "amount": 64.4,
+    "code": "J1100",
+    "revCode": "0636"
+   },
+   {
+    "id": "L08",
+    "date": "2025-11-06",
+    "description": "KETOROLAC INJ PER 15MG",
+    "qty": 1,
+    "unitPrice": 60.07,
+    "amount": 60.07,
+    "code": "J1885",
+    "revCode": "0636"
+   },
+   {
+    "id": "L09",
+    "date": "2025-11-06",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 16,
+    "unitPrice": 111.18,
+    "amount": 1778.88,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L10",
+    "date": "2025-11-07",
+    "description": "OBSERVATION ROOM HOURLY",
+    "qty": 7,
+    "unitPrice": 80.98,
+    "amount": 566.86,
+    "code": "G0378",
+    "revCode": "0762"
+   },
+   {
+    "id": "L11",
+    "date": "2025-11-07",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 25.1,
+    "amount": 25.1,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L12",
+    "date": "2025-11-06",
+    "description": "DEXAMETHASONE WASTAGE",
+    "qty": 3,
+    "unitPrice": 8.05,
+    "amount": 24.15,
+    "code": "J1100",
+    "revCode": "0636",
+    "modifiers": [
+     "JW"
+    ]
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "marketplace",
+  "emergency": true,
+  "admitted": false,
+  "observation": true,
+  "firstPostDischargeStatementDate": "2025-11-17",
+  "firstBillDate": "2025-11-29",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Example Marketplace Plan",
+  "facilityInNetwork": false,
+  "oonClinicianTypes": [],
+  "eob": {
+   "billed": 4399.66,
+   "allowed": 1352.54,
+   "planPaid": 751.34,
+   "deductible": 100.87,
+   "copay": 250,
+   "coinsurance": 250.33,
+   "patientResponsibility": 601.2,
+   "adjustments": [
+    {
+     "group": "OA",
+     "reason": "45",
+     "amount": 3047.12
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 100.87
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 250.33
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 250
+    }
+   ]
+  },
+  "collections": [
+   {
+    "date": "2026-04-26",
+    "kind": "credit_report",
+    "noticeDate": "2026-04-20"
+   }
+  ]
+ },
+ "data": {
+  "mue": {
+   "36415": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "84484": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "99283": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   },
+   "J1885": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "G0378": {
+    "outpatient": {
+     "mue": 72,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "ECA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "ECA-01",
+  "NSA-01"
+ ],
+ "tags": [
+  "hn:obs-room-hours",
+  "hn:jw-waste",
+  "variant:jw-wastage",
+  "plant:ECA-01:short-notice"
+ ]
+}

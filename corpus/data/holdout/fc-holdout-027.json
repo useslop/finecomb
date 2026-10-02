@@ -1,0 +1,394 @@
+{
+ "id": "fc-holdout-027",
+ "kind": "inpatient",
+ "sub": "stay",
+ "seed": 20474815,
+ "clean": false,
+ "bill": {
+  "header": {
+   "patientName": "Test Patient 027",
+   "providerName": "Example Regional Medical Center",
+   "accountNumber": "TEST-0100962",
+   "admitDate": "2026-03-26",
+   "dischargeDate": "2026-03-29",
+   "totalCharges": 15796.19,
+   "statementDate": "2026-04-18",
+   "payments": 7357.99,
+   "adjustments": 5913.81,
+   "balanceDue": 2524.39
+  },
+  "lines": [
+   {
+    "id": "L01",
+    "date": "2026-03-26",
+    "description": "ED VISIT LVL 4",
+    "qty": 1,
+    "unitPrice": 1581.81,
+    "amount": 1581.81,
+    "code": "99284",
+    "revCode": "0450"
+   },
+   {
+    "id": "L02",
+    "date": "2026-03-26",
+    "description": "PRIVATE RM DAILY",
+    "qty": 3,
+    "unitPrice": 3701.21,
+    "amount": 11103.63,
+    "revCode": "0110"
+   },
+   {
+    "id": "L03",
+    "date": "2026-03-26",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 48.58,
+    "amount": 48.58,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L04",
+    "date": "2026-03-27",
+    "description": "METABOLIC PANEL FULL",
+    "qty": 1,
+    "unitPrice": 146.47,
+    "amount": 146.47,
+    "code": "80053",
+    "revCode": "0301"
+   },
+   {
+    "id": "L05",
+    "date": "2026-03-27",
+    "description": "URINALYSIS AUTO",
+    "qty": 1,
+    "unitPrice": 60.46,
+    "amount": 60.46,
+    "code": "81003",
+    "revCode": "0300"
+   },
+   {
+    "id": "L06",
+    "date": "2026-03-27",
+    "description": "PROTIME INR",
+    "qty": 1,
+    "unitPrice": 25.48,
+    "amount": 25.48,
+    "code": "85610",
+    "revCode": "0305"
+   },
+   {
+    "id": "L07",
+    "date": "2026-03-28",
+    "description": "BLOOD CULTURE",
+    "qty": 1,
+    "unitPrice": 152.78,
+    "amount": 152.78,
+    "code": "87040",
+    "revCode": "0306"
+   },
+   {
+    "id": "L08",
+    "date": "2026-03-28",
+    "description": "MAGNESIUM LEVEL",
+    "qty": 1,
+    "unitPrice": 38.51,
+    "amount": 38.51,
+    "code": "83735",
+    "revCode": "0301"
+   },
+   {
+    "id": "L09",
+    "date": "2026-03-27",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 7,
+    "unitPrice": 85.8,
+    "amount": 600.6,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L10",
+    "date": "2026-03-29",
+    "description": "CEFTRIAXONE INJ PER 250MG",
+    "qty": 8,
+    "unitPrice": 69.95,
+    "amount": 559.6,
+    "code": "J0696",
+    "revCode": "0636"
+   },
+   {
+    "id": "L11",
+    "date": "2026-03-26",
+    "description": "METHYLPREDNISOLONE INJ 40MG",
+    "qty": 1,
+    "unitPrice": 91.92,
+    "amount": 91.92,
+    "code": "J1030",
+    "revCode": "0636"
+   },
+   {
+    "id": "L12",
+    "date": "2026-03-26",
+    "description": "CHEST XRAY 2 VIEWS",
+    "qty": 1,
+    "unitPrice": 238.94,
+    "amount": 238.94,
+    "code": "71046",
+    "revCode": "0324"
+   },
+   {
+    "id": "L13",
+    "date": "2026-03-26",
+    "description": "EKG TRACING",
+    "qty": 1,
+    "unitPrice": 279.04,
+    "amount": 279.04,
+    "code": "93005",
+    "revCode": "0730"
+   },
+   {
+    "id": "L14",
+    "date": "2026-03-26",
+    "description": "FOLEY CATH TRAY",
+    "qty": 1,
+    "unitPrice": 140.22,
+    "amount": 140.22,
+    "revCode": "0270"
+   },
+   {
+    "id": "L15",
+    "date": "2026-03-26",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 6,
+    "unitPrice": 24.65,
+    "amount": 147.9,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L16",
+    "date": "2026-03-27",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 5,
+    "unitPrice": 32.32,
+    "amount": 161.6,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L19",
+    "date": "2026-03-27",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 5,
+    "unitPrice": 49.35,
+    "amount": 246.75,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L17",
+    "date": "2026-03-28",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 5,
+    "unitPrice": 22.62,
+    "amount": 113.1,
+    "code": "82962",
+    "revCode": "0300"
+   },
+   {
+    "id": "L18",
+    "date": "2026-03-29",
+    "description": "GLUCOSE FINGERSTICK",
+    "qty": 4,
+    "unitPrice": 14.7,
+    "amount": 58.8,
+    "code": "82962",
+    "revCode": "0300"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-01",
+  "insurance": "medicare",
+  "admitted": true,
+  "emergency": true,
+  "firstPostDischargeStatementDate": "2026-04-14",
+  "firstBillDate": "2026-04-04",
+  "state": "GA",
+  "hospitalCcn": "990103",
+  "insurerName": "Medicare",
+  "eob": {
+   "billed": 15796.19,
+   "allowed": 9882.38,
+   "planPaid": 7357.99,
+   "deductible": 622.39,
+   "copay": 50,
+   "coinsurance": 1852,
+   "patientResponsibility": 2524.39,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 5913.81
+    },
+    {
+     "group": "PR",
+     "reason": "1",
+     "amount": 622.39
+    },
+    {
+     "group": "PR",
+     "reason": "2",
+     "amount": 1852
+    },
+    {
+     "group": "PR",
+     "reason": "3",
+     "amount": 50
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {
+   "71046": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "80053": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "81003": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "82962": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "83735": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "85610": {
+    "practitioner": {
+     "mue": 2,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 2,
+     "mai": 3
+    }
+   },
+   "87040": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   },
+   "93005": {
+    "practitioner": {
+     "mue": 3,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 3,
+     "mai": 3
+    }
+   },
+   "99284": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "J0696": {
+    "practitioner": {
+     "mue": 16,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 16,
+     "mai": 3
+    }
+   },
+   "J1030": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 4,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "990103": {
+    "name": "Example Regional Medical Center",
+    "state": "GA",
+    "ownership": "Voluntary non-profit - Other",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-02",
+   "lineIds": [
+    "L16",
+    "L19"
+   ]
+  }
+ ],
+ "plants": [
+  "DUP-02"
+ ],
+ "tags": [
+  "hn:mue-inpatient",
+  "plant:DUP-02:price"
+ ]
+}
