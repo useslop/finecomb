@@ -1,5 +1,5 @@
 import type { Bill, BillLine, Context, Datasets, Finding } from '../types.js';
-import { mkFinding } from '../lib/util.js';
+import { isDrugWaste, mkFinding, modsKey } from '../lib/util.js';
 import { cite } from '../citations.js';
 import { netted } from '../net.js';
 
@@ -9,7 +9,9 @@ export function evaluate(bill: Bill, _ctx: Context, _data: Datasets): { findings
   const byDateCode = new Map<string, BillLine[]>();
   for (const l of netted(bill).charges) {
     if (!l.code || !l.date) continue;
-    const key = `${l.date}|${l.code}`;
+    if (isDrugWaste(l)) continue; // JW/JZ: the discarded part of a single-dose vial is billed on its own line
+    // Lines that differ by modifier (LT/RT, 76, 91, 25…) are separate services, not a repeat.
+    const key = `${l.date}|${l.code}|${modsKey(l.modifiers)}`;
     const arr = byDateCode.get(key) ?? [];
     arr.push(l);
     byDateCode.set(key, arr);

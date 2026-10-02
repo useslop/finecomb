@@ -98,4 +98,10 @@ export function isFacilityFeeLine(l: BillLine): boolean {
   return FACILITY_FEE_KEYWORDS.test(l.description);
 }
 
-export const CANCEL_KEYWORDS = /\bCANCEL\w*|\bCANC\b|D\/?C'?D|\bNOT GIVEN\b|\bRETURNED\b|\bWASTE\w*/i;
+// SPEC §3 CANC-01 keywords. Not "CANCELLATION" (a no-show fee is a real charge) and not drug waste (JW is billable).
+export const CANCEL_KEYWORDS = /\bCANCEL(?:L?ED)?\b|\bCANC\b|\bD\/?C'?D\b|\bNOT GIVEN\b|\bRETURNED\b/i;
+
+/** Drug-waste lines: modifier JW (amount discarded) or JZ (none discarded) — billable, never a duplicate or a cancellation. */
+export function isDrugWaste(l: BillLine): boolean {
+  return (l.modifiers ?? []).some((m) => /^(JW|JZ)$/i.test(m.trim()));
+}

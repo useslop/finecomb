@@ -32,3 +32,13 @@ describe('CANC-01 canceled, not received, or phantom service', () => {
     expect(findings).toHaveLength(0);
   });
 });
+
+describe('CANC-01 hard negatives (F1)', () => {
+  it('does not treat drug wastage or a cancellation fee as a canceled item', () => {
+    const b = bill([
+      line({ date: '2026-02-01', code: 'J2405', amount: 24, description: 'ONDANSETRON WASTE', modifiers: ['JW'] }),
+      line({ date: '2026-02-01', amount: 40, description: 'LATE CANCELLATION FEE' }),
+    ]);
+    expect(evaluate(b, ctx(), {}).findings).toHaveLength(0);
+  });
+});

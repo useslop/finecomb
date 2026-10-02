@@ -40,3 +40,23 @@ describe('DUP-02 near-duplicate charge', () => {
     expect(findings).toHaveLength(0);
   });
 });
+
+describe('DUP-02 hard negatives (F1)', () => {
+  it('does not flag a JW drug-waste line (or JZ) next to the administered dose', () => {
+    const b = bill([
+      line({ date: '2026-02-01', code: 'J2405', qty: 4, unitPrice: 12, amount: 48, description: 'ONDANSETRON INJ PER 1MG' }),
+      line({ date: '2026-02-01', code: 'J2405', qty: 2, unitPrice: 12, amount: 24, description: 'ONDANSETRON WASTAGE', modifiers: ['JW'] }),
+      line({ date: '2026-02-01', code: 'J1100', qty: 4, unitPrice: 5, amount: 20, description: 'DEXAMETHASONE INJ', modifiers: ['JZ'] }),
+      line({ date: '2026-02-01', code: 'J1100', qty: 4, unitPrice: 6, amount: 24, description: 'DEXAMETHASONE INJ' }),
+    ]);
+    expect(evaluate(b, ctx(), {}).findings).toHaveLength(0);
+  });
+
+  it('does not flag bilateral lines with a discounted second side (RT full, LT half)', () => {
+    const b = bill([
+      line({ date: '2026-02-02', code: '20610', amount: 300, description: 'JOINT INJECTION MAJOR', modifiers: ['RT'] }),
+      line({ date: '2026-02-02', code: '20610', amount: 150, description: 'JOINT INJECTION MAJOR', modifiers: ['LT'] }),
+    ]);
+    expect(evaluate(b, ctx(), {}).findings).toHaveLength(0);
+  });
+});
