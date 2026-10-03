@@ -358,6 +358,61 @@ function deadlines(ctx: Context): ScreenerDeadline[] {
   return out;
 }
 
+/** Who each verified state law covers beyond income, read from its `who` and `hospitalsCovered`
+ * text in state-charity.json. "May qualify" needs every condition confirmed by the user's answers;
+ * a state missing here never gets "may qualify". `unconfirmable` = a condition the screener doesn't
+ * ask about (so the result stays "worth asking" and names it). */
+interface LawConditionSpec {
+  insurance: 'any' | 'uninsured';
+  resident: boolean;
+  hospital: 'in_state' | 'nonprofit_in_state';
+  unconfirmable?: string;
+}
+export const LAW_CONDITIONS: Record<string, LawConditionSpec> = {
+  WA: { insurance: 'any', resident: false, hospital: 'in_state' },
+  // Insured patients count only with "high medical costs" (over 10% of family income), which the screener doesn't ask.
+  CA: { insurance: 'uninsured', resident: false, hospital: 'in_state' },
+  NY: { insurance: 'uninsured', resident: false, hospital: 'in_state' },
+  IL: { insurance: 'uninsured', resident: true, hospital: 'in_state' },
+  MD: { insurance: 'any', resident: false, hospital: 'in_state' },
+  // The 115% cap: any uninsured NJ resident under 500% FPL.
+  NJ: { insurance: 'uninsured', resident: true, hospital: 'in_state' },
+  CO: { insurance: 'any', resident: true, hospital: 'in_state' },
+  // The discount tiers bind nonprofit hospitals only.
+  OR: { insurance: 'any', resident: false, hospital: 'nonprofit_in_state' },
+  CT: { insurance: 'uninsured', resident: false, hospital: 'in_state', unconfirmable: 'that you applied for Medicaid and were denied' },
+  MA: { insurance: 'any', resident: true, hospital: 'in_state' },
+  RI: { insurance: 'uninsured', resident: true, hospital: 'in_state', unconfirmable: "that you aren't eligible for state, federal or employer coverage" },
+  ME: { insurance: 'uninsured', resident: true, hospital: 'in_state', unconfirmable: "that you aren't eligible for public coverage" },
+  NM: { insurance: 'any', resident: false, hospital: 'in_state' },
+  DE: { insurance: 'any', resident: true, hospital: 'in_state' },
+};
+
+function lawConditions(row: StateCharityRow, ctx: Context, data: Datasets, pct: number): { met: string[]; unmet: string[] } {
+  const met = [`household income about ${pct}% of the federal poverty guideline (the law reaches ${row.mandateMaxPct}%)`];
+  const unmet: string[] = [];
+  const spec = LAW_CONDITIONS[row.state];
+  if (!spec) return { met, unmet: [`the conditions in ${row.citation}, which this screener doesn't check yet`] };
+
+  if (spec.insurance === 'uninsured') {
+    if (ctx.insurance === 'none') met.push('no health insurance');
+    else unmet.push(ctx.insurance ? 'no health insurance (you said you have coverage)' : 'no health insurance (you haven\'t said)');
+  }
+  if (spec.resident) {
+    if (ctx.stateResident === true) met.push(`you live in ${row.state}`);
+    else unmet.push(`that you live in ${row.state}`);
+  }
+  const h = ctx.hospitalCcn && data.hospital ? data.hospital(ctx.hospitalCcn) : undefined;
+  const nonprofit = spec.hospital === 'nonprofit_in_state';
+  const hospitalLabel = `${nonprofit ? 'a nonprofit hospital' : 'a hospital'} in ${row.state}`;
+  if (!h) unmet.push(`${hospitalLabel} (pick your hospital above)`);
+  else if (h.state !== row.state) unmet.push(`${hospitalLabel} (${h.name} is in ${h.state})`);
+  else if (nonprofit && h.ownershipCategory !== 'nonprofit') unmet.push(`${hospitalLabel} (${h.name} isn't listed as nonprofit)`);
+  else met.push(`${h.name} is ${hospitalLabel}`);
+  if (spec.unconfirmable) unmet.push(spec.unconfirmable);
+  return { met, unmet };
+}
+
 export function screen(
   ctx: Context,
   data: Datasets,
@@ -375,15 +430,19 @@ export function screen(
     if (stateRow.effectiveDate && stateRow.effectiveDate > ctx.today) return false;
     return pct <= stateRow.mandateMaxPct;
   })();
+  const conditions = stateMandateApplies && stateRow!.verified ? lawConditions(stateRow!, ctx, data, pct!) : null;
 
   let wording: ScreenerWording;
   let wordingText: string;
   let wordingCitations: Citation[] = [];
 
-  if (stateMandateApplies && stateRow!.verified) {
+  if (conditions && conditions.unmet.length === 0) {
     wording = 'may_qualify';
-    wordingText = `You may qualify for ${stateRow!.mechanism === 'collection_bar' ? 'protection from collection actions' : 'free or discounted care'} under ${stateRow!.state}'s law (${stateRow!.citation}), based on ${pct}% of the federal poverty guideline${stateRow!.who ? `, if you also meet its other conditions (${stateRow!.who.replace(/\.$/, '')})` : ''}.`;
+    wordingText = `You may qualify for ${stateRow!.mechanism === 'collection_bar' ? 'protection from collection actions' : 'free or discounted care'} under ${stateRow!.state}'s law (${stateRow!.citation}). Your answers meet each condition it sets: ${conditions.met.join('; ')}. The hospital makes the decision, so apply in writing.`;
     wordingCitations = [];
+  } else if (conditions) {
+    wording = 'worth_asking';
+    wordingText = `Worth asking: your income is under ${stateRow!.state}'s threshold (${stateRow!.citation}), but the law also requires ${conditions.unmet.join('; ')}, and your answers don't confirm ${conditions.unmet.length === 1 ? 'it' : 'all of them'}.${conditions.met.length > 1 ? ` Met: ${conditions.met.join('; ')}.` : ''}`;
   } else if (
     hospital?.ownershipCategory === 'nonprofit' ||
     (pct != null && pct <= 400) ||

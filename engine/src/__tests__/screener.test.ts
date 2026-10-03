@@ -102,10 +102,20 @@ describe('screen() — state tiers (WA has two tiers)', () => {
     expect(result.stateScreen?.found).toBe(true);
     expect(result.stateScreen?.caveats.join(' ')).toMatch(/Tier A/);
     expect(result.stateScreen?.caveats.join(' ')).toMatch(/Tier B/);
-    // 350% is within WA's overall mandated range (up to 400% at Tier A hospitals) and verified -> may_qualify.
-    expect(result.wording).toBe('may_qualify');
-    expect(result.wordingText).not.toMatch(/you qualify/i); // never the bare, unhedged phrase
-    expect(result.wordingText).toMatch(/you may qualify/i);
+    // 350% is within WA's overall mandated range (up to 400% at Tier A hospitals), but no hospital
+    // was picked, so the law's hospital condition is unconfirmed -> worth asking, naming it.
+    expect(result.wording).toBe('worth_asking');
+    expect(result.wordingText).toMatch(/a hospital in WA/);
+    // With a WA hospital picked, every condition is met -> may_qualify, hedged and specific.
+    const withHospital = screen(
+      ctx({ state: 'WA', householdSize: 1, annualIncome: 55_860, hospitalCcn: 'NONPROFIT1' }),
+      HOSPITAL_DATA, FPL, STATE_CHARITY,
+    );
+    expect(withHospital.wording).toBe('may_qualify');
+    expect(withHospital.wordingText).not.toMatch(/you qualify/i); // never the bare, unhedged phrase
+    expect(withHospital.wordingText).toMatch(/you may qualify/i);
+    expect(withHospital.wordingText).toMatch(/350% of the federal poverty guideline/);
+    expect(withHospital.wordingText).toMatch(/Test Nonprofit is a hospital in WA/);
   });
 
   it('does not claim "may qualify" once income is above every WA tier', () => {

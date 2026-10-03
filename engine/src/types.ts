@@ -44,6 +44,7 @@ export interface Context {
   ppdrFiledDate?: ISODate; fapApplied?: boolean; fapAppliedDate?: ISODate;
   onCreditReport?: boolean; paidInFull?: boolean; originalBalance?: Money;
   state?: string;                      // 2-letter
+  stateResident?: boolean;             // the user says they live in `state` (screener residency condition)
   hospitalCcn?: string;
   householdSize?: number; annualIncome?: Money;
 }

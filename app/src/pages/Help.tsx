@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useAppState } from '../state/AppState';
 import { screen } from '@finecomb/engine';
-import type { ScreenResult } from '../types/engine';
-import { TextField, NumberField, SelectField, DateField } from '../components/fields';
+import type { Insurance, ScreenResult } from '../types/engine';
+import { TextField, NumberField, SelectField, DateField, CheckboxField } from '../components/fields';
 import { US_STATES } from '../data/usStates';
 import { Link } from '../router';
 
@@ -92,8 +92,8 @@ export default function Help() {
       <h1>Charity care &amp; assistance screener</h1>
       <p className="field__hint">
         This checks for financial assistance worth asking about. It never says "you qualify"; it
-        says "you may qualify" only when your income is under a verified state threshold, with a
-        citation. Not legal, medical or financial advice.
+        says "you may qualify" only when your answers meet every condition of a verified state law
+        (income, insurance, where you live, which hospital), with a citation. Not legal, medical or financial advice.
         {dataLoading && ' Loading reference data…'}
       </p>
 
@@ -119,7 +119,27 @@ export default function Help() {
             onChange={(v) => setCtx({ state: v })}
             options={US_STATES.map(([code, name]) => ({ value: code, label: `${name} (${code})` }))}
           />
+          <SelectField
+            id="help-insurance"
+            label="Health insurance"
+            value={ctx.insurance ?? ''}
+            onChange={(v) => setCtx({ insurance: (v || undefined) as Insurance | undefined })}
+            options={[
+              { value: 'none', label: 'None (uninsured / self-pay)' },
+              { value: 'commercial', label: 'Employer or private plan' },
+              { value: 'marketplace', label: 'Marketplace (ACA) plan' },
+              { value: 'medicare', label: 'Medicare' },
+              { value: 'medicaid', label: 'Medicaid' },
+              { value: 'other', label: 'Other' },
+            ]}
+          />
         </div>
+        <CheckboxField
+          id="help-resident"
+          label={ctx.state ? `I live in ${ctx.state}` : 'I live in this state'}
+          checked={Boolean(ctx.stateResident)}
+          onChange={(v) => setCtx({ stateResident: v || undefined })}
+        />
 
         <label className="field" htmlFor="help-hospital-search">
           <span className="field__label">Hospital (search by name, city or ZIP)</span>
