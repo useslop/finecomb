@@ -80,3 +80,11 @@ describe('NCCI-01 hard negatives (F1)', () => {
     expect(evaluate(b, ctx(), ptp).findings).toHaveLength(1);
   });
 });
+
+describe('NCCI-01 confidence (Q1)', () => {
+  it('is Low for a modifier-indicator-1 pair with no modifier printed (statements often drop 25/59)', () => {
+    const b = bill([line({ date: '2026-09-09', code: '11102', amount: 310 }), line({ date: '2026-09-09', code: '99214', amount: 245 })]);
+    const { findings } = evaluate(b, ctx({}), { ncciPtp: (c1, c2) => (c1 === '11102' && c2 === '99214' ? { modifierIndicator: 1 } : undefined) });
+    expect(findings[0]!.confidence).toBe('low');
+  });
+});

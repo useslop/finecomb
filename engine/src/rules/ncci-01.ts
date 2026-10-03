@@ -39,7 +39,8 @@ export function evaluate(bill: Bill, ctx: Context, data: Datasets): { findings: 
             userText: `${b.code} is normally included in ${a.code} when billed on the same day. Ask why it was billed separately.`,
             verify: 'Ask for the claim form (UB-04/CMS-1500) to check which modifiers, if any, were submitted.',
             evidenceLineIds: [a.id, b.id],
-            confidence: 'medium',
+            // Q1: MI 1 pairs are allowed with a modifier that patient statements often leave off (RESEARCH E12).
+            confidence: edit.modifierIndicator === 1 ? 'low' : 'medium',
             dollarsAtStake: b.amount,
             citations: cite('S19'),
           }),
