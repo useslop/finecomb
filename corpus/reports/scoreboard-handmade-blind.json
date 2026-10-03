@@ -1,0 +1,221 @@
+{
+ "engineCommit": "4cff9ce",
+ "bills": 15,
+ "clean": 1,
+ "overall": {
+  "tp": 23,
+  "fp": 4,
+  "fn": 2,
+  "precision": 0.852,
+  "recall": 0.92,
+  "f1": 0.885,
+  "fpPerCleanBill": 0
+ },
+ "rules": [
+  {
+   "ruleId": "DUP-01",
+   "positives": 1,
+   "tp": 1,
+   "fp": 1,
+   "fn": 0,
+   "precision": 0.5,
+   "recall": 1
+  },
+  {
+   "ruleId": "MATH-01",
+   "positives": 1,
+   "tp": 1,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1
+  },
+  {
+   "ruleId": "MATH-02",
+   "positives": 1,
+   "tp": 1,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1
+  },
+  {
+   "ruleId": "MUE-01",
+   "positives": 2,
+   "tp": 2,
+   "fp": 1,
+   "fn": 0,
+   "precision": 0.667,
+   "recall": 1
+  },
+  {
+   "ruleId": "RB-01",
+   "positives": 1,
+   "tp": 1,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1
+  },
+  {
+   "ruleId": "DATE-01",
+   "positives": 1,
+   "tp": 1,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1
+  },
+  {
+   "ruleId": "NCCI-01",
+   "positives": 1,
+   "tp": 1,
+   "fp": 1,
+   "fn": 0,
+   "precision": 0.5,
+   "recall": 1
+  },
+  {
+   "ruleId": "CANC-01",
+   "positives": 1,
+   "tp": 1,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1
+  },
+  {
+   "ruleId": "RX-01",
+   "positives": 3,
+   "tp": 3,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1
+  },
+  {
+   "ruleId": "EOB-01",
+   "positives": 3,
+   "tp": 3,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1
+  },
+  {
+   "ruleId": "EOB-02",
+   "positives": 1,
+   "tp": 1,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1
+  },
+  {
+   "ruleId": "INS-01",
+   "positives": 1,
+   "tp": 0,
+   "fp": 0,
+   "fn": 1,
+   "precision": null,
+   "recall": 0
+  },
+  {
+   "ruleId": "MCD-01",
+   "positives": 1,
+   "tp": 1,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1
+  },
+  {
+   "ruleId": "NSA-01",
+   "positives": 1,
+   "tp": 0,
+   "fp": 0,
+   "fn": 1,
+   "precision": null,
+   "recall": 0
+  },
+  {
+   "ruleId": "NSA-02",
+   "positives": 1,
+   "tp": 1,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1
+  },
+  {
+   "ruleId": "GFE-01",
+   "positives": 1,
+   "tp": 1,
+   "fp": 1,
+   "fn": 0,
+   "precision": 0.5,
+   "recall": 1
+  },
+  {
+   "ruleId": "ECA-01",
+   "positives": 2,
+   "tp": 2,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1
+  },
+  {
+   "ruleId": "PPDR-01",
+   "positives": 1,
+   "tp": 1,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1
+  },
+  {
+   "ruleId": "CR-01",
+   "positives": 1,
+   "tp": 1,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1
+  }
+ ],
+ "falsePositives": [
+  {
+   "ruleId": "DUP-01",
+   "bill": "hm-04",
+   "detail": "2 identical charges on 2026-09-02 | These 2 lines have the same date, item, quantity and price."
+  },
+  {
+   "ruleId": "MUE-01",
+   "bill": "hm-11b",
+   "detail": "J2405: more units billed than Medicare's usual daily maximum | 8 units of J2405 were billed on 2026-09-15; Medicare's Medically Unlikely Edit for this code and setting is 4."
+  },
+  {
+   "ruleId": "NCCI-01",
+   "bill": "hm-10",
+   "detail": "99214 is normally bundled into 11102 | 11102 and 99214 were billed on the same date (2026-09-09) and have an active NCCI edit."
+  },
+  {
+   "ruleId": "GFE-01",
+   "bill": "hm-07",
+   "detail": "Valley Anesthesia Associates billed well over its Good Faith Estimate | Valley Anesthesia Associates estimated $900.00 and billed $5100.00, a gap of $4200.00."
+  }
+ ],
+ "misses": [
+  {
+   "ruleId": "INS-01",
+   "bill": "hm-14",
+   "detail": "engine ran, no matching finding"
+  },
+  {
+   "ruleId": "NSA-01",
+   "bill": "hm-03",
+   "detail": "engine ran, no matching finding"
+  }
+ ]
+}
