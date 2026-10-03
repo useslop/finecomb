@@ -259,6 +259,16 @@ function buildLine(row: Row, idx: number, warnings: string[]): BillLine | null {
   const modifiers: string[] = [];
   const descParts: string[] = [];
 
+  // Q1: a 2-digit number after the code is ambiguous (modifier 25 or quantity 22). It is the quantity when it times
+  // the next price on the row equals the line amount (22 x 95.00 = 2,090.00); otherwise it stays a modifier.
+  const isQtyByMath = (i: number, t: string): boolean => {
+    if (qty !== undefined || !/^\d{2}$/.test(t)) return false;
+    const next = cells.slice(i + 1).find((c, k) => i + 1 + k !== amountIdx && MONEY_RE.test(c.text.trim()));
+    const unit = next ? parseMoney(next.text.trim()) : null;
+    if (unit === null || unit === 0) return false;
+    return Math.abs(Number(t) * unit - amount) <= Math.max(0.05, Math.abs(amount) * 0.005);
+  };
+
   cells.forEach((cell, i) => {
     if (i === amountIdx) return;
     const t = cell.text.trim();
@@ -283,7 +293,7 @@ function buildLine(row: Row, idx: number, warnings: string[]): BillLine | null {
         return;
       }
     }
-    if (code && modifiers.length < 4 && MODIFIER_RE.test(upper) && upper !== code) {
+    if (code && modifiers.length < 4 && MODIFIER_RE.test(upper) && upper !== code && !isQtyByMath(i, t)) {
       modifiers.push(upper);
       return;
     }

@@ -275,3 +275,18 @@ describe('parse accuracy across the synthetic corpus', () => {
     expect(amountFillRate).toBe(1);
   });
 });
+
+describe('parseText: 2-digit quantity vs numeric modifier (Q1)', () => {
+  it('reads 22 and 10 as quantities when quantity x price equals the amount', () => {
+    const { bill } = parseText(
+      ['09/02/2026   0762   G0378   OBSERVATION PER HR   22   95.00   2090.00', '06/10/2026   0636   J1100   DEXAMETHASONE INJ 1MG   10   3.10   31.00'].join('\n'),
+    );
+    expect(bill.lines.map((l) => [l.qty, l.modifiers ?? []])).toEqual([[22, []], [10, []]]);
+  });
+
+  it('keeps 25 as a modifier when the math does not support a quantity', () => {
+    const { bill } = parseText('09/09/2026   99214   25   1   245.00   245.00');
+    expect(bill.lines[0]!.modifiers).toEqual(['25']);
+    expect(bill.lines[0]!.qty).toBe(1);
+  });
+});
