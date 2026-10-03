@@ -22,6 +22,11 @@ export interface ParseResult {
 
 const ROW_Y_TOLERANCE = 6;
 const CELL_X_GAP = 14;
+// F2 (QA 22): a wrapped table cell prints as extra visual lines that sit inside the same row band (Chrome centres
+// cells vertically, so a 2-line description lands ~0.56 line-heights above/below the money cells). A text-only
+// row whose baseline is within this fraction of a line height of a money row is part of that row. Pasted text is
+// spaced exactly 1 line height apart, so it never merges.
+const WRAP_MAX_OFFSET = 0.75;
 
 interface Cell {
   text: string;
@@ -33,6 +38,10 @@ interface Row {
   page: number;
   y: number;
   cells: Cell[];
+  /** Baseline range and tallest item of the visual line(s) grouped into this row. */
+  yMin: number;
+  yMax: number;
+  height: number;
 }
 
 /** Plain pasted text -> synthetic positions: one row per line, cells split on 2+ spaces or tabs. */
@@ -77,9 +86,10 @@ export function parseBill(items: PositionedItem[]): ParseResult {
     if (isTableHeaderRow(row)) continue;
     tableRows.push(row);
   }
+  const lineRows = mergeWrappedRows(tableRows);
 
   const lines: BillLine[] = [];
-  tableRows.forEach((row, idx) => {
+  lineRows.forEach((row, idx) => {
     const line = buildLine(row, idx, warnings);
     if (line) lines.push(line);
   });
@@ -89,8 +99,92 @@ export function parseBill(items: PositionedItem[]): ParseResult {
   return {
     bill: { header, lines, confirmed: false },
     warnings,
-    stats: { lineCount: lines.length, rowsConsidered: tableRows.length },
+    stats: { lineCount: lines.length, rowsConsidered: lineRows.length },
   };
+}
+
+const hasMoneyCell = (row: Row): boolean => row.cells.some((c) => MONEY_RE.test(c.text));
+
+/** Join two halves of a wrapped cell; a trailing hyphen ("00536-" + "1327-01") joins without a space. */
+const joinWrapped = (first: string, second: string): string => (/-$/.test(first) ? `${first}${second}` : `${first} ${second}`);
+
+/**
+ * Fold text-only visual lines of a wrapped table row (description, NDC split across 2+ lines) back into the money
+ * row they belong to. A fragment has no money and no date, and its baseline sits within WRAP_MAX_OFFSET line heights
+ * of a money row on the same page; each fragment cell joins the money-row cell it overlaps horizontally (or becomes
+ * a new cell in its column). Anything else, e.g. a separate line that lost its amount, is left alone.
+ */
+function mergeWrappedRows(rows: Row[]): Row[] {
+  const isAnchor = rows.map(hasMoneyCell);
+  const attached = new Map<number, number[]>();
+  const absorbed = new Set<number>();
+  rows.forEach((row, i) => {
+    if (isAnchor[i] || row.cells.some((c) => DATE_RE.test(c.text))) return;
+    let best = -1;
+    let bestGap = Infinity;
+    rows.forEach((cand, j) => {
+      if (!isAnchor[j] || cand.page !== row.page) return;
+      const gap = Math.max(0, row.yMin - cand.yMax, cand.yMin - row.yMax);
+      if (gap <= WRAP_MAX_OFFSET * Math.max(row.height, cand.height) && gap < bestGap) {
+        best = j;
+        bestGap = gap;
+      }
+    });
+    if (best === -1) return;
+    attached.set(best, [...(attached.get(best) ?? []), i]);
+    absorbed.add(i);
+  });
+  if (absorbed.size === 0) return rows;
+
+  const out: Row[] = [];
+  rows.forEach((row, i) => {
+    if (absorbed.has(i)) return;
+    const frags = (attached.get(i) ?? []).map((k) => rows[k]).filter((r): r is Row => r !== undefined);
+    if (frags.length === 0) {
+      out.push(row);
+      return;
+    }
+    const cells: Cell[] = row.cells.map((c) => ({ ...c }));
+    // Closest fragment first, so lines above are prepended and lines below appended in reading order.
+    const above = frags.filter((f) => f.y < row.y).sort((a, b) => b.y - a.y);
+    const below = frags.filter((f) => f.y >= row.y).sort((a, b) => a.y - b.y);
+    const fold = (frag: Row, prepend: boolean) => {
+      const byTarget = new Map<Cell, Cell[]>();
+      for (const fc of frag.cells) {
+        let target: Cell | undefined;
+        let bestOverlap = 0;
+        for (const c of cells) {
+          if (MONEY_RE.test(c.text)) continue; // never splice text into an amount or unit price
+          const overlap = Math.min(c.x + c.width, fc.x + fc.width) - Math.max(c.x, fc.x);
+          if (overlap > bestOverlap) {
+            bestOverlap = overlap;
+            target = c;
+          }
+        }
+        if (target) byTarget.set(target, [...(byTarget.get(target) ?? []), fc]);
+        else cells.push({ ...fc });
+      }
+      for (const [target, parts] of byTarget) {
+        const text = parts.map((p) => p.text).join(' ');
+        target.text = prepend ? joinWrapped(text, target.text) : joinWrapped(target.text, text);
+        const minX = Math.min(target.x, ...parts.map((p) => p.x));
+        const maxX = Math.max(target.x + target.width, ...parts.map((p) => p.x + p.width));
+        target.x = minX;
+        target.width = maxX - minX;
+      }
+      cells.sort((a, b) => a.x - b.x);
+    };
+    for (const f of above) fold(f, true);
+    for (const f of below) fold(f, false);
+    out.push({
+      ...row,
+      cells,
+      yMin: Math.min(row.yMin, ...frags.map((f) => f.yMin)),
+      yMax: Math.max(row.yMax, ...frags.map((f) => f.yMax)),
+      height: Math.max(row.height, ...frags.map((f) => f.height)),
+    });
+  });
+  return out;
 }
 
 function groupRows(items: PositionedItem[]): Row[] {
@@ -110,7 +204,15 @@ function groupRows(items: PositionedItem[]): Row[] {
     const flush = () => {
       if (bucket.length === 0) return;
       const sortedByX = [...bucket].sort((a, b) => a.x - b.x);
-      rows.push({ page, y: bucketY ?? 0, cells: groupCells(sortedByX) });
+      const ys = bucket.map((i) => i.y);
+      rows.push({
+        page,
+        y: bucketY ?? 0,
+        cells: groupCells(sortedByX),
+        yMin: Math.min(...ys),
+        yMax: Math.max(...ys),
+        height: Math.max(...bucket.map((i) => i.height || 0)),
+      });
       bucket = [];
     };
     for (const it of sorted) {
