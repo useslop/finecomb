@@ -83,7 +83,8 @@
  "labels": [
   {
    "ruleId": "GFE-01",
-   "lineIds": []
+   "lineIds": [],
+   "textIncludes": "Riverside Surgery Center"
   },
   {
    "ruleId": "PPDR-01",
@@ -97,5 +98,5 @@
  "tags": [
   "handmade"
  ],
- "notes": "Must NOT flag: INS-01 (uninsured), any EOB rule."
+ "notes": "Must NOT flag: INS-01 (uninsured), any EOB rule. textIncludes added after the blind run: it encodes the provider this label was always about (see the comment above); without it, bill-level matching hid a GFE-01 finding about Valley Anesthesia."
 }

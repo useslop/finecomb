@@ -157,8 +157,8 @@ bill('hm-07', 'Uninsured surgery-center bill with a Good Faith Estimate', 'sched
   ],
   { insurance: 'none', scheduledAhead: true, gfe: [{ provider: 'Riverside Surgery Center', total: 4200 }, { provider: 'Valley Anesthesia Associates', total: 900 }],
     firstBillDate: '2026-07-10', ppdrFiledDate: '2026-09-08', collections: [{ date: '2026-09-25', kind: 'late_fee' }], state: 'FL' },
-  [{ ruleId: 'GFE-01', lineIds: [] }, { ruleId: 'PPDR-01', lineIds: [] }],
-  'Must NOT flag: INS-01 (uninsured), any EOB rule.');
+  [{ ruleId: 'GFE-01', lineIds: [], textIncludes: 'Riverside Surgery Center' }, { ruleId: 'PPDR-01', lineIds: [] }],
+  'Must NOT flag: INS-01 (uninsured), any EOB rule. textIncludes added after the blind run: it encodes the provider this label was always about (see the comment above); without it, bill-level matching hid a GFE-01 finding about Valley Anesthesia.');
 
 // HM08: same patient, anesthesia group, $350 over its GFE (under the $400 line). Clean bill (hard negative).
 bill('hm-08', 'Uninsured anesthesia bill under the GFE threshold', 'sched',

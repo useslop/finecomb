@@ -24,7 +24,11 @@ export interface Evaluation {
 }
 
 const matches = (f: Finding, l: Label) =>
-  l.lineIds.length === 0 || f.evidenceLineIds.length === 0 || f.evidenceLineIds.some((id) => l.lineIds.includes(id));
+  (!l.textIncludes || `${f.title} ${f.userText}`.includes(l.textIncludes)) &&
+  (l.lineIds.length === 0 || f.evidenceLineIds.length === 0 || f.evidenceLineIds.some((id) => l.lineIds.includes(id)));
+const RANK = { info: 0, low: 1, medium: 2, high: 3 } as const;
+/** An optional label absorbs a finding only at or below its maxConfidence (v1/hold-out have no optional labels). */
+const absorbs = (f: Finding, l: Label) => matches(f, l) && (!l.maxConfidence || RANK[f.confidence] <= RANK[l.maxConfidence]);
 const round = (n: number | null) => (n == null ? null : Math.round(n * 1000) / 1000);
 const causeTags = (item: CorpusItem, ruleId: string, miss: boolean) => {
   const t = item.tags.filter((x) => (miss ? x.startsWith(`plant:${ruleId}`) : (x.startsWith('hn:') || x.startsWith('variant:')) && !/eob-line-level-co|variant:sched-/.test(x)));
@@ -50,7 +54,8 @@ export function evaluateCorpus(items: CorpusItem[]): Evaluation {
     for (const id of RULE_IDS) {
       const a = acc.get(id)!;
       const F = res.findings.filter((f) => f.ruleId === id);
-      const L = item.labels.filter((l) => l.ruleId === id);
+      const L = item.labels.filter((l) => l.ruleId === id && !l.optional);
+      const O = item.labels.filter((l) => l.ruleId === id && l.optional);
       a.positives += L.length; a.findings += F.length;
       if (res.skipped.some((s) => s.ruleId === id)) a.skipped++;
       for (const l of L) {
@@ -61,7 +66,7 @@ export function evaluateCorpus(items: CorpusItem[]): Evaluation {
           detail: res.skipped.find((s) => s.ruleId === id) ? `engine skipped: needs ${res.skipped.find((s) => s.ruleId === id)!.needs.join('; ')}` : 'engine ran, no matching finding' });
       }
       for (const f of F) {
-        if (L.some((l) => matches(f, l))) continue;
+        if (L.some((l) => matches(f, l)) || O.some((l) => absorbs(f, l))) continue;
         a.fp++; if (item.clean) a.fpClean++;
         for (const c of causeTags(item, id, false)) a.fpCause.set(c, (a.fpCause.get(c) ?? 0) + 1);
         confusion[id]!.falsePositives.push({ bill: item.id, kind: `${item.kind}/${item.sub}`, tags: item.tags, lineIds: f.evidenceLineIds, detail: `${f.title} | ${f.why}` });

@@ -1,9 +1,12 @@
-import type { Bill, Context, Datasets, ISODate } from '@finecomb/engine';
+import type { Bill, Confidence, Context, Datasets, ISODate } from '@finecomb/engine';
 
 export type Kind = 'inpatient' | 'ed' | 'professional';
 
-/** Ground truth: one expected finding. Empty lineIds = a bill-level finding (matched on rule alone). */
-export interface Label { ruleId: string; lineIds: string[] }
+/** Ground truth: one expected finding. Empty lineIds = a bill-level finding (matched on rule alone).
+ * `optional` (hand-made set only): acceptable but not required, never a miss; with `maxConfidence`, a matching
+ * finding above that confidence counts as a false positive. `textIncludes`: the finding's title or text must name it
+ * (e.g. the provider a GFE-01 finding is about). */
+export interface Label { ruleId: string; lineIds: string[]; optional?: boolean; maxConfidence?: Confidence; textIncludes?: string }
 
 export interface MueEntry { mue: number; mai: 1 | 2 | 3 }
 
