@@ -17,18 +17,23 @@ function estimateFplPercent(ctx: Context): number | null {
 export function fap01(_bill: Bill, ctx: Context, data: Datasets): Finding | null {
   const hospital = ctx.hospitalCcn && data.hospital ? data.hospital(ctx.hospitalCcn) : undefined;
   const fpl = estimateFplPercent(ctx);
-  const strong = hospital?.ownershipCategory === 'nonprofit' || (fpl != null && fpl <= 400);
+  const nonprofit = hospital?.ownershipCategory === 'nonprofit';
+  const lowIncome = fpl != null && fpl <= 400;
+  const strong = nonprofit || lowIncome;
   const clearlyNot = hospital !== undefined && hospital.ownershipCategory !== 'nonprofit' && fpl != null && fpl > 400;
   if (clearlyNot) return null;
   return mkFinding({
     ruleId: 'FAP-01',
     discriminator: 'fap',
     title: 'Check charity care and financial assistance',
+    // Q1: "may qualify" is reserved for verified mandated thresholds (the screener); this card only says "worth asking".
     why: strong
-      ? "Nonprofit hospitals must offer financial assistance, and/or your income may fall under a mandated threshold."
+      ? [nonprofit && 'Nonprofit hospitals must have a written financial assistance policy.',
+         lowIncome && "Your household income is at or under 400% of the federal poverty guideline, a range many hospitals' assistance policies cover."]
+          .filter(Boolean).join(' ')
       : 'Many hospitals offer financial assistance regardless of insurance status; it costs nothing to ask.',
     userText: strong
-      ? 'Worth asking: this hospital (or your income level) may qualify you for charity care. Check the charity-care screener.'
+      ? 'Worth asking: ask this hospital for its financial assistance (charity care) policy, and check the charity-care screener.'
       : 'Less likely to be required, but worth asking: check the charity-care screener.',
     verify: "Open the charity-care screener and, if available, ask the hospital for its Financial Assistance Policy.",
     evidenceLineIds: [],

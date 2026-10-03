@@ -9,7 +9,7 @@ export default function Landing() {
 
       <ul className="hero-list">
         <li>Comb through your medical bill for duplicate charges, math errors and billing rules that may not have been followed.</li>
-        <li>Write a dispute letter and check whether you qualify for charity care or other assistance.</li>
+        <li>Write a dispute letter, and see whether charity care or other assistance is worth asking about.</li>
         <li>
           <strong>Your bill never leaves your device.</strong> Parsing and every check run in your
           browser — there's no server to send it to. <Link to="/privacy">Prove it</Link>.
