@@ -14,8 +14,10 @@ function emptyBill(): Bill {
   return { header: {}, lines: [], confirmed: false };
 }
 
+/** The user's own calendar day. toISOString() is UTC, so after 8 pm in New York it was already tomorrow. */
 function todayIso(): string {
-  return new Date().toISOString().slice(0, 10);
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
 
 export type FindingAction = 'dispute' | 'dismissed';
