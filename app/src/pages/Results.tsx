@@ -30,13 +30,10 @@ export default function Results() {
     );
   }
 
-  // Findings can overlap (an EOB gap and a No Surprises gap can be the same dollars), so the
-  // headline never claims more than the bill itself asks for.
-  const summed = result.findings.reduce((sum, f) => sum + (f.dollarsAtStake ?? 0), 0);
-  const billCap =
-    bill.header.balanceDue ?? bill.header.totalCharges ?? bill.lines.reduce((s, l) => s + Math.max(0, l.amount), 0);
-  const capped = billCap > 0 && summed > billCap;
-  const dollars = capped ? billCap : summed;
+  // Findings often overlap (an EOB gap, an insurer write-off and a No Surprises gap can be the same dollars), so
+  // the headline never adds them up: it shows the largest single amount in question (Q1, 2026-10-02).
+  const amounts = result.findings.map((f) => f.dollarsAtStake).filter((d): d is number => d !== null && d > 0);
+  const largest = amounts.length > 0 ? Math.max(...amounts) : null;
   const byConfidence = result.findings.reduce<Record<string, number>>((acc, f) => {
     acc[f.confidence] = (acc[f.confidence] ?? 0) + 1;
     return acc;
@@ -66,12 +63,13 @@ export default function Results() {
           <span className="summary-stats__label">possible issues to ask about</span>
         </div>
         <div className="summary-stats__item">
-          <span className="summary-stats__value">
-            {capped ? 'Up to ' : ''}
-            {formatMoney(dollars)}
-          </span>
+          <span className="summary-stats__value">{largest !== null ? formatMoney(largest) : '–'}</span>
           <span className="summary-stats__label">
-            {capped ? 'at stake; issues overlap, so this is capped at the bill amount' : 'at stake where computable'}
+            {amounts.length > 1
+              ? "largest single amount in question (amounts can overlap, so they aren't added up)"
+              : largest !== null
+                ? 'amount in question'
+                : 'no dollar amount computed'}
           </span>
         </div>
         <div className="summary-stats__item">

@@ -33,7 +33,7 @@ export default function FindingCard({
         <h3 className="finding-card__title">{finding.title}</h3>
         <span className={`badge badge--${finding.confidence}`}>{CONFIDENCE_LABEL[finding.confidence]}</span>
         {finding.dollarsAtStake !== null && (
-          <span className="finding-card__dollars">{formatMoney(finding.dollarsAtStake)} at stake</span>
+          <span className="finding-card__dollars">{formatMoney(finding.dollarsAtStake)} in question</span>
         )}
       </div>
 
