@@ -1,62 +1,96 @@
-[
-  {
-    "fragment": "[redacted descriptor fragment]",
-    "source": "AMA CPT E/M family descriptor opening (office/outpatient established patient, 99211-99215)."
-  },
-  {
-    "fragment": "[redacted descriptor fragment]",
-    "source": "AMA CPT E/M family descriptor opening (office/outpatient new patient, 99202-99205)."
-  },
-  {
-    "fragment": "[redacted descriptor fragment]",
-    "source": "NUBC/UB-04 revenue code generic subcategory label, repeated across many categories (e.g. 0100, 0250, 0270 '... [redacted descriptor fragment]')."
-  },
-  {
-    "fragment": "[redacted descriptor fragment]",
-    "source": "NUBC/UB-04 room & board revenue code descriptor (011X '[redacted descriptor fragment]')."
-  },
-  {
-    "fragment": "[redacted descriptor fragment]",
-    "source": "NUBC/UB-04 revenue code 0100 category title ('[redacted descriptor fragment]')."
-  },
-  {
-    "fragment": "[redacted descriptor fragment]",
-    "source": "NUBC/UB-04 revenue code 023X category title."
-  },
-  {
-    "fragment": "[redacted descriptor fragment]",
-    "source": "AMA CPT E/M presenting-problem severity descriptor language."
-  },
-  {
-    "fragment": "[redacted descriptor fragment]",
-    "source": "AMA CPT E/M medical-decision-making level descriptor language."
-  },
-  {
-    "fragment": "[redacted descriptor fragment]",
-    "source": "AMA CPT E/M medical-decision-making level descriptor language."
-  },
-  {
-    "fragment": "[redacted descriptor fragment]",
-    "source": "AMA CPT E/M category title (99221-99223)."
-  },
-  {
-    "fragment": "[redacted descriptor fragment]",
-    "source": "AMA CPT E/M category title (99231-99233)."
-  },
-  {
-    "fragment": "[redacted descriptor fragment]",
-    "source": "AMA CPT critical care descriptor opening (99291)."
-  },
-  {
-    "fragment": "[redacted descriptor fragment]",
-    "source": "AMA CPT anesthesia section descriptor boilerplate."
-  },
-  {
-    "fragment": "[redacted descriptor fragment]",
-    "source": "AMA CPT boilerplate prefix used for unlisted-procedure codes across many specialties."
-  },
-  {
-    "fragment": "[redacted descriptor fragment]",
-    "source": "AMA CPT surgery section descriptor boilerplate (integumentary codes)."
-  }
-]
+{
+  "note": "Needles for the licensing gate (app/scripts/license-gate.mjs, check 3). Each entry is the sha256 of a short AMA CPT or NUBC/UB-04 descriptor fragment, never the text itself, so this public repo carries no licensed descriptor wording. To add one: normalize the phrase as below, then add its sha256, word count and character count.",
+  "normalization": "lowercase; every run of characters other than a-z and 0-9 becomes one space; trim",
+  "fixtures": [
+    {
+      "sha256": "d6c8eb0c7bc834fe1a00a0d07e1350c90ad319a777ab95dabc852483634d8149",
+      "words": 7,
+      "chars": 51,
+      "source": "AMA CPT E/M family descriptor opening (office/outpatient established patient, 99211-99215)."
+    },
+    {
+      "sha256": "7c16e66ce1e7132906f73abf4e2ad90b09666135b6357822d82fcf1350fe8c63",
+      "words": 7,
+      "chars": 42,
+      "source": "AMA CPT E/M family descriptor opening (office/outpatient new patient, 99202-99205)."
+    },
+    {
+      "sha256": "daa2db20a7cbe0267fa4c9f9fce9038d253847c22b0180653f61971136145704",
+      "words": 2,
+      "chars": 22,
+      "source": "NUBC/UB-04 revenue code generic subcategory label, repeated across many categories (e.g. 0100, 0250, 0270)."
+    },
+    {
+      "sha256": "276dc3663f922eea6c37aec60e6211f998cc32db7740c0878d16d06e757fa627",
+      "words": 4,
+      "chars": 20,
+      "source": "NUBC/UB-04 room-and-board revenue code descriptor (011X)."
+    },
+    {
+      "sha256": "59870c6521288579defce6b060c53d0429e9db707ecd9a5a9d9432537df33389",
+      "words": 3,
+      "chars": 18,
+      "source": "NUBC/UB-04 revenue code 0100 category title."
+    },
+    {
+      "sha256": "0bf27178ac6ceadfeeeb6dc899f48ed9672f761839eee854adeece468d9134a0",
+      "words": 3,
+      "chars": 26,
+      "source": "NUBC/UB-04 revenue code 023X category title."
+    },
+    {
+      "sha256": "7621d29f3125c6a066fcf4e964e0cb7047380d48ca2d8bd475a4514fa917249c",
+      "words": 4,
+      "chars": 21,
+      "source": "AMA CPT E/M presenting-problem severity descriptor language."
+    },
+    {
+      "sha256": "6d651c500369b2aede0275a3b0c93e030321b622574986326621aefc996b17ec",
+      "words": 4,
+      "chars": 39,
+      "source": "AMA CPT E/M medical-decision-making level descriptor language."
+    },
+    {
+      "sha256": "41fcf486e35d5aef3c15c0c67599c203b9705930f1a8e52ebf2cc281f0b2ea15",
+      "words": 4,
+      "chars": 27,
+      "source": "AMA CPT E/M medical-decision-making level descriptor language."
+    },
+    {
+      "sha256": "3a2e9583ea92ef22c370492c5de6206d1ac0c8958094a0da39bfadd3ded5d1ad",
+      "words": 5,
+      "chars": 29,
+      "source": "AMA CPT E/M category title (99221-99223)."
+    },
+    {
+      "sha256": "6b26967e336f26b377e6ca52a911291e5bab1ed019b4301d1e2a9ba90cd47168",
+      "words": 5,
+      "chars": 32,
+      "source": "AMA CPT E/M category title (99231-99233)."
+    },
+    {
+      "sha256": "da42ea1bceb7c1b4ab139ed1ee91273332024d212d18f15a92276917d06b67a9",
+      "words": 5,
+      "chars": 39,
+      "source": "AMA CPT critical care descriptor opening (99291)."
+    },
+    {
+      "sha256": "3827dbe854926e6023497d45a03e264c06724748f3ae7b8089bf910b60a34fae",
+      "words": 4,
+      "chars": 28,
+      "source": "AMA CPT anesthesia section descriptor boilerplate."
+    },
+    {
+      "sha256": "f7b336885617afd1aedbbab424f6a26ec4a224cbf2654c3e2ea5b36cde6f37d0",
+      "words": 2,
+      "chars": 18,
+      "source": "AMA CPT boilerplate prefix used for unlisted-procedure codes across many specialties."
+    },
+    {
+      "sha256": "878357cd10f2f69dd3f79de174c7ac9e1fd075dd2f9f23e3c3f9feb64e555065",
+      "words": 4,
+      "chars": 24,
+      "source": "AMA CPT surgery section descriptor boilerplate (integumentary codes)."
+    }
+  ]
+}

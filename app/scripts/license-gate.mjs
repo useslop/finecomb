@@ -213,17 +213,68 @@ function hashPendingLicenseFiles() {
 // Check 3 — AMA / NUBC descriptor text fixtures.
 // ---------------------------------------------------------------------------
 
+// The fixtures file holds sha256 hashes of the descriptor fragments, never the
+// text, so the public repo carries no licensed wording (lane P1). A fragment
+// and the scanned text are normalized the same way, then every window of the
+// fragment's word count is compared; a window is only hashed when its
+// character count matches, which keeps the scan fast on the 9 MB data files.
+
+export function normalizeForFixtures(text) {
+  return text.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
+export function fixtureFromPhrase(phrase, source) {
+  const n = normalizeForFixtures(phrase);
+  return { sha256: createHash('sha256').update(n).digest('hex'), words: n.split(' ').length, chars: n.length, source };
+}
+
 function loadFixtures() {
   const raw = JSON.parse(fs.readFileSync(fixturesPath, 'utf8'));
-  if (!Array.isArray(raw) || raw.length === 0) {
-    throw new Error(`license-fixtures.json must be a non-empty array (${fixturesPath})`);
+  const list = raw?.fixtures;
+  if (!Array.isArray(list) || list.length === 0) {
+    throw new Error(`license-fixtures.json must have a non-empty "fixtures" array (${fixturesPath})`);
   }
-  for (const entry of raw) {
-    if (!entry || typeof entry.fragment !== 'string' || !entry.fragment) {
-      throw new Error(`license-fixtures.json has an entry missing "fragment": ${JSON.stringify(entry)}`);
+  for (const entry of list) {
+    if (
+      !entry ||
+      !/^[0-9a-f]{64}$/.test(entry.sha256 ?? '') ||
+      !Number.isInteger(entry.words) ||
+      entry.words < 1 ||
+      !Number.isInteger(entry.chars) ||
+      entry.chars < 1
+    ) {
+      throw new Error(`license-fixtures.json has an entry without a valid sha256/words/chars: ${JSON.stringify(entry)}`);
     }
   }
-  return raw;
+  return list;
+}
+
+// Returns the fixtures whose fragment occurs in `text` (after normalization).
+export function findFixtureHits(text, fixtures) {
+  const norm = normalizeForFixtures(text);
+  if (!norm) return [];
+  const tokens = norm.split(' ');
+  const prefix = new Array(tokens.length + 1);
+  prefix[0] = 0;
+  for (let i = 0; i < tokens.length; i++) prefix[i + 1] = prefix[i] + tokens[i].length;
+  const byWords = new Map(); // words -> { chars: Set, hashes: Map(sha256 -> fixture) }
+  for (const f of fixtures) {
+    if (!byWords.has(f.words)) byWords.set(f.words, { chars: new Set(), hashes: new Map() });
+    const group = byWords.get(f.words);
+    group.chars.add(f.chars);
+    group.hashes.set(f.sha256, f);
+  }
+  const hits = new Set();
+  for (const [k, group] of byWords) {
+    for (let i = 0; i + k <= tokens.length; i++) {
+      const len = prefix[i + k] - prefix[i] + (k - 1);
+      if (!group.chars.has(len)) continue;
+      const digest = createHash('sha256').update(tokens.slice(i, i + k).join(' ')).digest('hex');
+      const hit = group.hashes.get(digest);
+      if (hit) hits.add(hit);
+    }
+  }
+  return [...hits];
 }
 
 const TEXT_SCAN_EXTENSIONS = new Set(['.js', '.json', '.html', '.css', '.mjs', '.txt', '.map']);
@@ -232,7 +283,7 @@ const TEXT_SCAN_EXTENSIONS = new Set(['.js', '.json', '.html', '.css', '.mjs', '
 // The gate itself
 // ---------------------------------------------------------------------------
 
-function runGate(distDir) {
+function runGate(distDir, fixtures = loadFixtures()) {
   const errors = [];
   const allFiles = listFiles(distDir);
   if (allFiles.length === 0) {
@@ -298,21 +349,18 @@ function runGate(distDir) {
   }
 
   // --- Check 3: AMA/NUBC descriptor-text fixtures ------------------------
-  const fixtures = loadFixtures();
   for (const file of allFiles) {
     const ext = path.extname(file);
     if (!TEXT_SCAN_EXTENSIONS.has(ext)) continue;
     let text;
     try {
-      text = fs.readFileSync(file, 'utf8').toLowerCase();
+      text = fs.readFileSync(file, 'utf8');
     } catch {
       continue;
     }
     const rel = path.relative(distDir, file);
-    for (const fixture of fixtures) {
-      if (text.includes(fixture.fragment.toLowerCase())) {
-        errors.push(`[licensed descriptor text] ${rel} contains fixture fragment "${fixture.fragment}" (${fixture.source})`);
-      }
+    for (const fixture of findFixtureHits(text, fixtures)) {
+      errors.push(`[licensed descriptor text] ${rel} contains fixture fragment sha256 ${fixture.sha256.slice(0, 12)}… (${fixture.source})`);
     }
   }
 
@@ -348,25 +396,41 @@ function selfTest() {
     report('40-key CPT-shaped bulk table fails', !runGate(bulkDir).ok, runGate(bulkDir));
 
     // (b) A file containing a fixture phrase -> must FAIL (descriptor text).
+    // The fixtures file holds only hashes, so the matcher is exercised with a
+    // synthetic phrase hashed the same way, next to the real fixture list.
     const fixtureDir = path.join(tmpRoot, 'fixture-text');
     fs.mkdirSync(fixtureDir, { recursive: true });
-    const firstFragment = loadFixtures()[0].fragment;
-    fs.writeFileSync(path.join(fixtureDir, 'notes.txt'), `Some plain text mentioning ${firstFragment} inline.`);
-    report('fixture descriptor phrase fails', !runGate(fixtureDir).ok, runGate(fixtureDir));
+    const realFixtures = loadFixtures();
+    const canary = fixtureFromPhrase('Quokka-zebra canary, per day', 'self-test canary');
+    fs.writeFileSync(path.join(fixtureDir, 'notes.txt'), 'Some plain text mentioning QUOKKA ZEBRA canary per day inline.');
+    const withCanary = [...realFixtures, canary];
+    report('fixture descriptor phrase fails', !runGate(fixtureDir, withCanary).ok, runGate(fixtureDir, withCanary));
+    report('fixtures file loads (sha256 needles only)', realFixtures.length > 0, { ok: true, errors: [] });
 
     // (c) A copy of one real _pending-license shard, at a path with none of
     // the banned substrings -> must FAIL (sha256 identity and/or shape).
+    // A clone of the public repo has no quarantined data on disk, so it uses
+    // a synthetic MUE-shaped row (shape check only) instead.
     const pendingScenarioDir = path.join(tmpRoot, 'pending-copy');
     const pendingDataDir = path.join(pendingScenarioDir, 'data');
     fs.mkdirSync(pendingDataDir, { recursive: true });
     const digitShards = listFiles(pendingLicenseDir).filter((f) => /^[0-9]\.json$/.test(path.basename(f)));
     const anyShard = listFiles(pendingLicenseDir).filter((f) => f.endsWith('.json') && path.basename(f) !== 'manifest.json');
     const shardToCopy = digitShards[0] ?? anyShard[0];
-    if (!shardToCopy) {
-      throw new Error(`no real shard found under ${pendingLicenseDir} to exercise the self-test`);
+    if (shardToCopy) {
+      fs.copyFileSync(shardToCopy, path.join(pendingDataDir, 'code-table.json'));
+      report('copy of real _pending-license shard fails', !runGate(pendingScenarioDir).ok, runGate(pendingScenarioDir));
+    } else {
+      fs.writeFileSync(
+        path.join(pendingDataDir, 'code-table.json'),
+        JSON.stringify([{ code: 'X0000', mueValue: 1, adjudicationIndicator: '3', adjudicationLabel: 'synthetic', effectiveDate: '2000-01-01' }]),
+      );
+      report(
+        'MUE-shaped row fails (no local _pending-license data, so no real shard to copy)',
+        !runGate(pendingScenarioDir).ok,
+        runGate(pendingScenarioDir),
+      );
     }
-    fs.copyFileSync(shardToCopy, path.join(pendingDataDir, 'code-table.json'));
-    report('copy of real _pending-license shard fails', !runGate(pendingScenarioDir).ok, runGate(pendingScenarioDir));
 
     // (d) A clean temp dir -> must PASS.
     const cleanDir = path.join(tmpRoot, 'clean');
