@@ -290,7 +290,7 @@ const PROGRAMS: ScreenerProgram[] = [
   {
     id: 'healthwell',
     title: 'HealthWell Foundation',
-    detail: 'For insured patients with a covered disease and household income within 500% FPL: help with copays, premiums, deductibles and other out-of-pocket costs. Some disease funds close when exhausted.',
+    detail: 'For insured patients with a covered disease (income limits vary by fund): help with copays, premiums, deductibles and other out-of-pocket costs. Some disease funds close when exhausted.',
     link: 'https://www.healthwellfoundation.org',
     citations: cite('S33'),
   },
@@ -382,7 +382,7 @@ export function screen(
 
   if (stateMandateApplies && stateRow!.verified) {
     wording = 'may_qualify';
-    wordingText = `You may qualify for ${stateRow!.mechanism === 'collection_bar' ? 'protection from collection actions' : 'free or discounted care'} under ${stateRow!.state}'s law (${stateRow!.citation}), based on ${pct}% of the federal poverty guideline.`;
+    wordingText = `You may qualify for ${stateRow!.mechanism === 'collection_bar' ? 'protection from collection actions' : 'free or discounted care'} under ${stateRow!.state}'s law (${stateRow!.citation}), based on ${pct}% of the federal poverty guideline${stateRow!.who ? `, if you also meet its other conditions (${stateRow!.who.replace(/\.$/, '')})` : ''}.`;
     wordingCitations = [];
   } else if (
     hospital?.ownershipCategory === 'nonprofit' ||

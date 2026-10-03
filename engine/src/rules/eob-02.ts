@@ -38,7 +38,7 @@ export function evaluate(bill: Bill, ctx: Context, _data: Datasets): { findings:
         discriminator: 'co-adjustments',
         title: "Your insurer marked some charges as the provider's responsibility",
         why: `Your EOB shows $${total.toFixed(2)} in "CO" (contractual obligation) adjustments, which are the provider's to absorb, not yours; about $${atStake.toFixed(2)} of it still seems to be in your balance.`,
-        userText: `Your insurer marked $${atStake.toFixed(2)} as the provider's responsibility, not yours.`,
+        userText: `Your EOB marks $${atStake.toFixed(2)} as the provider's responsibility (group code CO). Ask the provider to remove it from your balance.`,
         verify: 'Ask the provider to remove these amounts from your balance; show them the EOB group code.',
         evidenceLineIds,
         confidence: 'medium',

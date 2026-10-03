@@ -69,9 +69,10 @@ export default function Privacy() {
         <h2>Try it yourself</h2>
         <p>
           Open <em>Check a bill</em> once (that downloads the reference data), then turn on
-          airplane mode or your browser's offline switch. Everything after that keeps working,
-          including a full check, a letter and the charity-care screener, because nothing in the
-          flow needs the network.
+          airplane mode or your browser's offline switch. After that, a check on pasted text, a
+          letter and the charity-care screener keep working without the network. The PDF reader and
+          photo reader download the first time you use them, so use each once while online if you
+          want them offline. Reloading the page while offline doesn't work yet.
         </p>
       </div>
 

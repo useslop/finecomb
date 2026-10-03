@@ -4,6 +4,7 @@ import { renderLetter, screen, fplPercent, LETTER_TITLES } from '@finecomb/engin
 import type { LetterId, LetterUser, L6Issue, NsaScenario } from '../types/engine';
 import { TextField, SelectField } from '../components/fields';
 import { Link } from '../router';
+import { NotAdviceBanner } from '../components/Banner';
 
 const ALL_IDS = Object.keys(LETTER_TITLES) as LetterId[];
 
@@ -68,6 +69,7 @@ export default function Letters() {
   return (
     <div className="page page--wide">
       <h1>Dispute &amp; request letters</h1>
+      <NotAdviceBanner />
       <p className="field__hint">
         Everything here is generated and edited on this device — nothing is sent by the app. Mail
         it certified with a return receipt, or send through your patient portal, and keep a copy.

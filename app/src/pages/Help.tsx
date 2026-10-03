@@ -91,8 +91,9 @@ export default function Help() {
     <div className="page page--wide">
       <h1>Charity care &amp; assistance screener</h1>
       <p className="field__hint">
-        This checks for financial assistance you may qualify for — it never says "you qualify,"
-        only what's worth asking about, with a citation. Not legal, medical or financial advice.
+        This checks for financial assistance worth asking about. It never says "you qualify"; it
+        says "you may qualify" only when your income is under a verified state threshold, with a
+        citation. Not legal, medical or financial advice.
         {dataLoading && ' Loading reference data…'}
       </p>
 

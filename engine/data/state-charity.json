@@ -39,18 +39,19 @@
     "NY": {
       "state": "NY",
       "hasMandate": true,
-      "verified": true,
+      "verified": false,
       "mechanism": "discount",
       "mandateMaxPct": 400,
       "summary": "New York hospitals must fully waive charges below 200% FPL for uninsured and underinsured patients, and cap payment at 10% (200-300% FPL) or 20% (301-400% FPL) of what Medicaid would have paid, or of insurance cost-sharing.",
       "who": "Uninsured patients up to 400% FPL; underinsured patients up to 400% FPL (out-of-pocket over 10% of gross income in the past year); patients who exhausted benefits.",
       "hospitalsCovered": "All DOH-licensed hospitals, whether or not they participate in the Indigent Care Pool.",
       "citation": "Public Health Law §2807-k(9-a); DOH DAL 25-04 (eff. 2024-10-20)",
-      "sourceUrl": "https://healthweb-back.health.ny.gov/facilities/hospital/financial_assist/",
+      "sourceUrl": "https://www.health.ny.gov/facilities/hospital/financial_assist/",
       "caveats": [
         "Verified against DOH agency pages and letters; the statute text itself could not be fetched directly.",
         "Under the 2024 rules: assets can't be considered, you can apply any time (including during collections), and no lawsuit is allowed against patients under 400% FPL.",
-        "Payment plans are capped at 5% of gross monthly income; interest capped at 2%."
+        "Payment plans are capped at 5% of gross monthly income; interest capped at 2%.",
+        "Q1 (2026-10-02): the cited DOH page does not state the 200%/10%/20% tiers; marked not verified until PHL §2807-k(9-a) itself is fetched."
       ]
     },
     "IL": {

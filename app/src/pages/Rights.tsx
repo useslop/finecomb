@@ -52,7 +52,7 @@ export default function Rights() {
     <div className="page page--wide">
       <h1>Know your rights</h1>
       <p className="field__hint">
-        Consumer information, not legal advice. Every claim below links to the primary source we
+        Consumer information, not legal, medical or financial advice. Every claim below links to the primary source we
         fetched, with the date we checked it. Unverified items are flagged — ask before relying on them.
       </p>
 
@@ -110,7 +110,7 @@ export default function Rights() {
         <h2>{TOPICS[2]!.title}</h2>
         <p>{TOPICS[2]!.intro}</p>
         <Claim
-          text="If you're uninsured or self-pay and your bill ends up $400 or more above your Good Faith Estimate, you can start a federal dispute (PPDR) within 120 days of your first bill."
+          text="If you're uninsured or self-pay and a provider or facility bills you at least $400 more than its own Good Faith Estimate, you may be able to start a federal dispute (PPDR) within 120 days of receiving the first bill with those charges."
           cites={[CITATIONS.S4]}
         />
         <Claim
@@ -118,7 +118,7 @@ export default function Rights() {
           cites={[CITATIONS.S5]}
         />
         <Claim
-          text="The dispute costs $25, refunded against what you owe if you win. While it's pending, the provider can't send you to collections, must pause any collection already underway, and must suspend late fees."
+          text="The dispute has a $25 non-refundable fee; if the decision goes your way, the $25 is deducted from what you owe the provider. While it's pending, the provider can't send you to collections, must pause any collection already underway, and must suspend late fees."
           cites={[CITATIONS.S3]}
         />
         <p className="field__hint"><Link to="/help">Check your deadline</Link> or use <Link to="/letters">letter L5</Link>.</p>
@@ -181,11 +181,11 @@ export default function Rights() {
           cites={[CITATIONS.CFPBVACATED2025]}
         />
         <Claim
-          text="Separately, the three credit bureaus (Equifax, Experian, TransUnion) still voluntarily exclude paid medical collections, those under $500, and anything reported in the first year — this is a company policy, not a law, and could change."
+          text="Separately, the three credit bureaus (Equifax, Experian, TransUnion) announced in 2022-2023 that they exclude paid medical collections, medical collections under $500, and unpaid medical collections less than a year old. This is a company policy, not a law, and could change."
           cites={[CITATIONS.CRB2023]}
         />
         <Claim
-          text="A 2025 CFPB interpretive rule says federal credit-reporting law generally preempts state medical-debt reporting bans; a Colorado case challenging that state's ban is still pending, so a state ban should be treated as 'applies unless a court rules it preempted,' not a guarantee."
+          text="A 2025 CFPB interpretive rule says federal credit-reporting law generally preempts state medical-debt reporting bans; a Colorado case challenging that state's ban was pending when we checked (2026-10-01), so a state ban should be treated as 'applies unless a court rules it preempted,' not a guarantee."
           cites={[CITATIONS.CFPBPREEMPT2025, CITATIONS.NCLCMEDDEBT]}
         />
       </section>
