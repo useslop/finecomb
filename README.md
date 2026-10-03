@@ -39,6 +39,8 @@ X-Content-Type-Options: nosniff
 Cross-Origin-Opener-Policy: same-origin
 ```
 
+The privacy page, with the dated test result: https://finecomb.vercel.app/privacy
+
 This is proved, not just claimed. `npm run test:privacy -w app` runs a Playwright suite that loads a synthetic bill with canary values, then asserts: no request carries a body; no canary string, code or amount from the bill appears in any URL or header; the request list is identical between two different bills; and analysis still works with the network offline.
 
 ## How to run it
@@ -79,11 +81,14 @@ Finecomb ships no AMA CPT descriptors, no AHA/NUBC revenue-code text, and no bul
 
 ## The scoreboard
 
-Accuracy is measured against a seeded synthetic corpus, not real bills: 300 generated bills (100 inpatient, 100 ED/outpatient, 100 professional), seed `20261001`.
+Accuracy is measured on test bills, never real patient bills. The live breakdown is at https://finecomb.vercel.app/accuracy.
 
-Method: each bill is generated with planted errors and look-alike traps, labeled by an independent reading of the rule spec, then checked by the same engine the app runs. A finding counts as correct when it points at the labeled lines. The corpus deliberately over-samples look-alike traps (credits, bilateral lines, modifiers, overlapping hourly items), so precision here is a stress-test number, not a forecast.
+- **Hand-made set (15 bills):** written by hand by the QA lane in real-world formats (UB-04-style hospital statement, ED facility and physician bills, credits and reversals, Medicaid, an uninsured patient with Good Faith Estimates, collections). The expected findings were committed before the engine ever ran on them. Blind result: precision 0.85 (23 of 27 flags right), recall 0.92 (23 of 25). After the QA fixes it is 0.96 / 0.92, which is no longer a blind number.
+- **Synthetic corpus:** 300 generated bills (100 inpatient, 100 ED/outpatient, 100 professional; seed `20261001`) plus a 150-bill hold-out (seed `20261002`), with planted errors and look-alike traps (credits, bilateral lines, modifiers, overlapping hourly items). The engine scores 1.00 on both, but the generator's labels and the engine follow the same reading of the spec, so that shows agreement with the spec, not real-world accuracy.
 
-**Caveat (shown on /accuracy):** synthetic bills; real-world accuracy may be lower.
+A finding counts as correct when it points at the labeled lines.
+
+**Caveat (shown on /accuracy):** test bills only; real-world accuracy may be lower.
 
 **Ship policy**, per rule, on this corpus:
 
@@ -91,7 +96,7 @@ Method: each bill is generated with planted errors and look-alike traps, labeled
 - Precision 0.6-0.9: ships, shown as "Low confidence."
 - Precision < 0.6: kept off, listed under "Checks we're still tuning."
 
-The numbers change as the engine is tuned, so they aren't repeated here. The app imports `app/public/scoreboard.json` at build time and enforces the policy on every finding; the current breakdown is always at `/accuracy`.
+After the hand-made run, four checks are capped at Low confidence for launch: DUP-01, GFE-01, NCCI-01 and MUE-01. None are turned off. The app imports `app/public/scoreboard.json` at build time and enforces the policy on every finding; the current breakdown is always at `/accuracy`.
 
 ## Credits
 
