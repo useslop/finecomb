@@ -1,6 +1,6 @@
 {
   "id": "GFE-01",
-  "version": 1,
+  "version": 2,
   "title": "Billed charges exceed the Good Faith Estimate by $400+",
   "requiredInputs": [
     "insurance status (uninsured/self-pay)",

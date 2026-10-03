@@ -25,10 +25,27 @@ export function evaluate(bill: Bill, ctx: Context, _data: Datasets): { findings:
     byProvider.set(key, arr);
   }
 
+  // Q1 fix: a GFE entry is compared only with the lines it belongs to. Before, any GFE whose provider wasn't a
+  // line provider fell back to the whole bill, so with two estimates (facility + anesthesia) the smaller one was
+  // "exceeded" by the other provider's bill, at High confidence.
+  const header = norm(bill.header.providerName);
+  const linesFor = (provider: string): BillLine[] => {
+    const exact = byProvider.get(provider);
+    if (exact) return exact;
+    const p = norm(provider);
+    for (const [k, ls] of byProvider) if (k !== '(unspecified)' && sameProvider(norm(k), p)) return ls;
+    if (byProvider.size !== 1) return [];
+    const only = [...byProvider.values()][0]!;
+    // One estimate: compare it with the whole bill, as before. Several: only the one the bill's provider names.
+    if (ctx.gfe!.length === 1) return only;
+    return header && sameProvider(header, p) ? only : [];
+  };
+
   const findings: Finding[] = [];
+  const unmatched: string[] = [];
   for (const gfe of ctx.gfe!) {
-    const lines = byProvider.get(gfe.provider) ?? (byProvider.size === 1 ? [...byProvider.values()][0]! : []);
-    if (lines.length === 0) continue;
+    const lines = linesFor(gfe.provider);
+    if (lines.length === 0) { unmatched.push(gfe.provider); continue; }
     const billed = sum(lines.map((l) => l.amount));
     const gap = round2(billed - gfe.total);
     if (gap < 400) continue;
@@ -48,5 +65,17 @@ export function evaluate(bill: Bill, ctx: Context, _data: Datasets): { findings:
       }),
     );
   }
+  if (findings.length === 0 && unmatched.length === ctx.gfe!.length && ctx.gfe!.length > 1) {
+    return { findings, skipped: { ruleId: id, needs: ['the provider name on this bill, matching one of your Good Faith Estimates'] } };
+  }
   return { findings };
+}
+
+const SUFFIX = /\b(llc|pllc|inc|pc|pa|ltd|corp|co|the)\b/g;
+function norm(s: string | undefined): string {
+  return (s ?? '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9 ]/g, ' ').replace(SUFFIX, ' ').replace(/\s+/g, ' ').trim();
+}
+function sameProvider(a: string, b: string): boolean {
+  if (!a || !b) return false;
+  return a === b || (Math.min(a.length, b.length) >= 4 && (a.includes(b) || b.includes(a)));
 }

@@ -52,3 +52,35 @@ describe('GFE-01 billed charges exceed the Good Faith Estimate by $400+', () => 
     expect(findings).toHaveLength(0);
   });
 });
+
+describe('GFE-01 hard negatives (Q1): two estimates, one bill', () => {
+  const twoGfes = { insurance: 'none' as const, gfe: [{ provider: 'Riverside Surgery Center', total: 4200 }, { provider: 'Valley Anesthesia Associates', total: 900 }], firstBillDate: '2026-09-01' };
+
+  it('compares a pasted bill (no line providers) only with the estimate its header names', () => {
+    const b = bill([line({ amount: 3900 }), line({ amount: 1200 })]);
+    b.header.providerName = 'RIVERSIDE SURGERY CENTER, LLC';
+    const { findings } = evaluate(b, ctx(twoGfes), {});
+    expect(findings).toHaveLength(1);
+    expect(findings[0]!.title).toContain('Riverside');
+    expect(findings[0]!.dollarsAtStake).toBe(900);
+  });
+
+  it('never charges one provider with another provider\'s bill', () => {
+    const b = bill([line({ amount: 5100, provider: 'Riverside Surgery Center' })]);
+    const { findings } = evaluate(b, ctx(twoGfes), {});
+    expect(findings.map((f) => f.title).join(' ')).not.toContain('Valley');
+  });
+
+  it('skips (asks which estimate) when several estimates exist and the bill names none of them', () => {
+    const b = bill([line({ amount: 5100 })]);
+    const r = evaluate(b, ctx(twoGfes), {});
+    expect(r.findings).toHaveLength(0);
+    expect(r.skipped?.needs[0]).toContain('provider name');
+  });
+
+  it('still compares a single estimate with an unattributed bill', () => {
+    const b = bill([line({ amount: 1500 })]);
+    const { findings } = evaluate(b, ctx({ insurance: 'none', gfe: [{ provider: 'Dr. A', total: 1000 }], firstBillDate: '2026-09-01' }), {});
+    expect(findings).toHaveLength(1);
+  });
+});
