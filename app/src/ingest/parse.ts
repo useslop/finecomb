@@ -166,10 +166,11 @@ const HEADER_FIELDS: { key: keyof BillHeader; re: RegExp; kind: HeaderKind }[] =
   { key: 'admitDate', re: /^admit(?:ted|\s*date)?\s*:\s*(.+)$/i, kind: 'date' },
   { key: 'dischargeDate', re: /^discharge(?:d|\s*date)?\s*:\s*(.+)$/i, kind: 'date' },
   { key: 'statementDate', re: /^statement\s*date\s*:\s*(.+)$/i, kind: 'date' },
-  { key: 'totalCharges', re: /^total\s*charges?\s*:\s*(.+)$/i, kind: 'money' },
+  // Q1: the colon is optional on the totals rows (OCR drops it), so a total no longer becomes a phantom line.
+  { key: 'totalCharges', re: /^total\s*charges?\s*[:.;]?\s*(.+)$/i, kind: 'money' },
   { key: 'payments', re: /^payments?\s*:\s*(.+)$/i, kind: 'money' },
   { key: 'adjustments', re: /^adjustments?\s*:\s*(.+)$/i, kind: 'money' },
-  { key: 'balanceDue', re: /^(?:balance\s*due|amount\s*due)\s*:\s*(.+)$/i, kind: 'money' },
+  { key: 'balanceDue', re: /^(?:balance\s*due|amount\s*due)\s*[:.;]?\s*(.+)$/i, kind: 'money' },
 ];
 
 function tryConsumeHeaderRow(row: Row, header: BillHeader): boolean {

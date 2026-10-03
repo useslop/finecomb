@@ -380,7 +380,7 @@ table.grid-table {
 
 .grid-table th {
   background: #f1f4f5;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: var(--color-text-muted);
@@ -398,13 +398,26 @@ table.grid-table {
 }
 
 .grid-table input[type='checkbox'] {
-  width: auto;
-  min-width: 0;
+  width: 1.5rem;
+  min-width: 1.5rem;
+}
+
+/* Q1: native checkboxes and radios rendered at 13 px on phones; WCAG 2.5.8 wants a 24 px target. */
+input[type='checkbox'],
+input[type='radio'] {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
+
+/* Q1: long URLs used as link text pushed /help 11 px past a 390 px screen. */
+.page a {
+  overflow-wrap: anywhere;
 }
 
 .badge {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;

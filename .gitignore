@@ -3,3 +3,6 @@ node_modules/
 dist/
 .vercel/
 *.log
+
+# Licensed CMS data (CPT-keyed); never commit. P1 purges it from history.
+data/_pending-license/

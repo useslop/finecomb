@@ -163,5 +163,9 @@ export async function ocrFile(file: File, warnings: string[]): Promise<Positione
     return [];
   }
   ctx.drawImage(bitmap, 0, 0);
+  // Q1: on a tilted photo, OCR can pair a description with the next row's amount or read a total as a line.
+  warnings.push(
+    `${file.name}: photo reading is new and makes mistakes. Check every row's description and amount against your paper bill, and delete rows that are totals or notes, before you continue.`,
+  );
   return ocrCanvas(canvas, 1);
 }
