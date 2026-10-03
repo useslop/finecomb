@@ -1,0 +1,79 @@
+{
+ "id": "hm-06",
+ "kind": "ed",
+ "sub": "ed",
+ "format": "ED facility bill, Medicaid patient",
+ "seed": 0,
+ "clean": false,
+ "bill": {
+  "header": {
+   "totalCharges": 1994,
+   "payments": 412,
+   "adjustments": 1242,
+   "patientName": "Casey L. Sample",
+   "providerName": "Harbor Point Hospital",
+   "accountNumber": "HM06-1180",
+   "statementDate": "2026-09-10",
+   "balanceDue": 340
+  },
+  "lines": [
+   {
+    "id": "l1",
+    "date": "2026-08-22",
+    "description": "ER VISIT LEVEL 3",
+    "amount": 1640,
+    "revCode": "0450",
+    "code": "99283",
+    "qty": 1,
+    "unitPrice": 1640
+   },
+   {
+    "id": "l2",
+    "date": "2026-08-22",
+    "description": "URINALYSIS AUTO W/SCOPE",
+    "amount": 64,
+    "revCode": "0300",
+    "code": "81001",
+    "qty": 1,
+    "unitPrice": 64
+   },
+   {
+    "id": "l3",
+    "date": "2026-08-22",
+    "description": "XR CHEST 1 VIEW",
+    "amount": 290,
+    "revCode": "0320",
+    "code": "71045",
+    "qty": 1,
+    "unitPrice": 290
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-02",
+  "insurance": "medicaid",
+  "emergency": true,
+  "firstBillDate": "2026-09-10",
+  "state": "NY"
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MCD-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "MCD-01"
+ ],
+ "tags": [
+  "handmade"
+ ],
+ "notes": "Must NOT flag: INS-01 (Medicaid paid), NSA-01/02 (no out-of-network context, no EOB)."
+}

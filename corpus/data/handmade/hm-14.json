@@ -1,0 +1,76 @@
+{
+ "id": "hm-14",
+ "kind": "professional",
+ "sub": "office",
+ "format": "Lab bill never sent to insurance (prompt-pay discount only)",
+ "seed": 0,
+ "clean": false,
+ "bill": {
+  "header": {
+   "totalCharges": 273,
+   "payments": 0,
+   "adjustments": 40.95,
+   "patientName": "Finley S. Sample",
+   "providerName": "Clearwater Diagnostics Lab",
+   "accountNumber": "HM14-2290",
+   "statementDate": "2026-09-12",
+   "balanceDue": 232.05
+  },
+  "lines": [
+   {
+    "id": "l1",
+    "date": "2026-08-30",
+    "description": "LIPID PANEL",
+    "amount": 145,
+    "code": "80061",
+    "qty": 1,
+    "unitPrice": 145
+   },
+   {
+    "id": "l2",
+    "date": "2026-08-30",
+    "description": "HEMOGLOBIN A1C",
+    "amount": 98,
+    "code": "83036",
+    "qty": 1,
+    "unitPrice": 98
+   },
+   {
+    "id": "l3",
+    "date": "2026-08-30",
+    "description": "VENIPUNCTURE",
+    "amount": 30,
+    "code": "36415",
+    "qty": 1,
+    "unitPrice": 30
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-02",
+  "insurance": "commercial",
+  "insurerName": "Bluebird Health Plan",
+  "firstBillDate": "2026-09-12",
+  "state": "OH"
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "INS-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "INS-01"
+ ],
+ "tags": [
+  "handmade"
+ ],
+ "notes": "The only adjustment is a self-pay prompt-pay discount; nothing shows the claim reached the insurer."
+}

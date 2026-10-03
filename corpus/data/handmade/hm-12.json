@@ -1,0 +1,84 @@
+{
+ "id": "hm-12",
+ "kind": "ed",
+ "sub": "ed",
+ "format": "Nonprofit hospital ED bill reported to credit early",
+ "seed": 0,
+ "clean": false,
+ "bill": {
+  "header": {
+   "totalCharges": 980,
+   "payments": 600,
+   "adjustments": 0,
+   "patientName": "Rowan E. Sample",
+   "providerName": "Fairhaven Community Hospital",
+   "accountNumber": "HM12-5150",
+   "statementDate": "2026-04-20",
+   "balanceDue": 380
+  },
+  "lines": [
+   {
+    "id": "l1",
+    "date": "2026-04-02",
+    "description": "ER VISIT LEVEL 2",
+    "amount": 980,
+    "revCode": "0450",
+    "code": "99282",
+    "qty": 1,
+    "unitPrice": 980
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-02",
+  "insurance": "commercial",
+  "insurerName": "Bluebird Health Plan",
+  "emergency": true,
+  "facilityInNetwork": true,
+  "hospitalCcn": "999001",
+  "firstBillDate": "2026-04-20",
+  "firstPostDischargeStatementDate": "2026-04-20",
+  "collections": [
+   {
+    "date": "2026-06-15",
+    "kind": "credit_report"
+   }
+  ],
+  "onCreditReport": true,
+  "paidInFull": false,
+  "originalBalance": 380,
+  "state": "OH"
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "999001": {
+    "name": "FAIRHAVEN COMMUNITY HOSPITAL",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "ECA-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "CR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "ECA-01",
+  "CR-01"
+ ],
+ "tags": [
+  "handmade"
+ ],
+ "notes": "Must NOT flag: INS-01 (insurer paid)."
+}

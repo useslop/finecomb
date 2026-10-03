@@ -1,0 +1,106 @@
+{
+ "id": "hm-13",
+ "kind": "inpatient",
+ "sub": "stay",
+ "format": "Nonprofit hospital inpatient bill in collections",
+ "seed": 0,
+ "clean": false,
+ "bill": {
+  "header": {
+   "totalCharges": 4640,
+   "payments": 0,
+   "adjustments": 0,
+   "patientName": "Emerson B. Sample",
+   "providerName": "Fairhaven Community Hospital",
+   "accountNumber": "HM13-0417",
+   "admitDate": "2026-01-10",
+   "dischargeDate": "2026-01-12",
+   "statementDate": "2026-01-25",
+   "balanceDue": 4640
+  },
+  "lines": [
+   {
+    "id": "l1",
+    "date": "2026-01-10",
+    "description": "ROOM-BOARD/PVT",
+    "amount": 4200,
+    "revCode": "0110",
+    "qty": 2,
+    "unitPrice": 2100
+   },
+   {
+    "id": "l2",
+    "date": "2026-01-11",
+    "description": "BASIC METABOLIC PANEL",
+    "amount": 180,
+    "revCode": "0300",
+    "code": "80048",
+    "qty": 1,
+    "unitPrice": 180
+   },
+   {
+    "id": "l3",
+    "date": "2026-01-11",
+    "description": "PHARMACY",
+    "amount": 260,
+    "revCode": "0250",
+    "qty": 1,
+    "unitPrice": 260
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-02",
+  "insurance": "none",
+  "admitted": true,
+  "emergency": true,
+  "hospitalCcn": "999001",
+  "firstBillDate": "2026-01-25",
+  "firstPostDischargeStatementDate": "2026-01-25",
+  "collections": [
+   {
+    "date": "2026-03-20",
+    "kind": "collections"
+   },
+   {
+    "date": "2026-04-05",
+    "kind": "other"
+   },
+   {
+    "date": "2026-06-10",
+    "kind": "lawsuit",
+    "noticeDate": "2026-05-28"
+   }
+  ],
+  "householdSize": 3,
+  "annualIncome": 38000,
+  "state": "OH"
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {
+   "999001": {
+    "name": "FAIRHAVEN COMMUNITY HOSPITAL",
+    "state": "OH",
+    "ownership": "Voluntary non-profit - Private",
+    "ownershipCategory": "nonprofit"
+   }
+  }
+ },
+ "labels": [
+  {
+   "ruleId": "ECA-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "ECA-01"
+ ],
+ "tags": [
+  "handmade"
+ ],
+ "notes": "ECA-01 is required because of the lawsuit with 13 days notice. Must NOT flag: RB-01 (2 room days, 2 nights)."
+}

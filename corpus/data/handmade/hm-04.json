@@ -1,0 +1,225 @@
+{
+ "id": "hm-04",
+ "kind": "ed",
+ "sub": "ed-obs",
+ "format": "Pharmacy-heavy observation stay (itemized)",
+ "seed": 0,
+ "clean": false,
+ "bill": {
+  "header": {
+   "totalCharges": 3222,
+   "payments": 1160,
+   "adjustments": 1772,
+   "patientName": "Morgan T. Sample",
+   "providerName": "Lakeview Regional Medical Center",
+   "accountNumber": "HM04-5520",
+   "statementDate": "2026-09-20",
+   "balanceDue": 290
+  },
+  "lines": [
+   {
+    "id": "l1",
+    "date": "2026-09-02",
+    "description": "OBSERVATION PER HR",
+    "amount": 2090,
+    "revCode": "0762",
+    "code": "G0378",
+    "qty": 22,
+    "unitPrice": 95
+   },
+   {
+    "id": "l2",
+    "date": "2026-09-02",
+    "description": "ONDANSETRON INJ 1MG",
+    "amount": 75,
+    "revCode": "0636",
+    "code": "J2405",
+    "qty": 4,
+    "unitPrice": 18.75
+   },
+   {
+    "id": "l3",
+    "date": "2026-09-02",
+    "description": "ONDANSETRON INJ 1MG",
+    "amount": 75,
+    "revCode": "0636",
+    "code": "J2405",
+    "qty": 4,
+    "unitPrice": 18.75
+   },
+   {
+    "id": "l4",
+    "date": "2026-09-02",
+    "description": "KETOROLAC INJ 15MG",
+    "amount": 48,
+    "revCode": "0636",
+    "code": "J1885",
+    "qty": 2,
+    "unitPrice": 24
+   },
+   {
+    "id": "l5",
+    "date": "2026-09-02",
+    "description": "FENTANYL CITRATE INJ 0.1MG",
+    "amount": 31,
+    "revCode": "0636",
+    "code": "J3010",
+    "qty": 1,
+    "unitPrice": 31
+   },
+   {
+    "id": "l6",
+    "date": "2026-09-02",
+    "description": "MORPHINE SULFATE INJ 10MG",
+    "amount": 28,
+    "revCode": "0636",
+    "code": "J2270",
+    "qty": 1,
+    "unitPrice": 28
+   },
+   {
+    "id": "l7",
+    "date": "2026-09-02",
+    "description": "CEFTRIAXONE 250MG",
+    "amount": 88,
+    "revCode": "0636",
+    "code": "J0696",
+    "qty": 4,
+    "unitPrice": 22
+   },
+   {
+    "id": "l8",
+    "date": "2026-09-02",
+    "description": "CEFTRIAXONE 250MG WASTE",
+    "amount": 44,
+    "revCode": "0636",
+    "code": "J0696",
+    "modifiers": [
+     "JW"
+    ],
+    "qty": 2,
+    "unitPrice": 22
+   },
+   {
+    "id": "l9",
+    "date": "2026-09-02",
+    "description": "ACETAMINOPHEN 325MG TAB",
+    "amount": 19,
+    "revCode": "0250",
+    "ndc": "00536132701",
+    "qty": 2,
+    "unitPrice": 9.5
+   },
+   {
+    "id": "l10",
+    "date": "2026-09-03",
+    "description": "CEPHALEXIN 500MG CAP",
+    "amount": 500,
+    "revCode": "0250",
+    "ndc": "00093314701",
+    "qty": 4,
+    "unitPrice": 12.5
+   },
+   {
+    "id": "l11",
+    "date": "2026-09-02",
+    "description": "IV SOLUTION NS 1000ML",
+    "amount": 128,
+    "revCode": "0258",
+    "code": "J7030",
+    "qty": 2,
+    "unitPrice": 64
+   },
+   {
+    "id": "l12",
+    "date": "2026-09-02",
+    "description": "CBC W/DIFF",
+    "amount": 96,
+    "revCode": "0300",
+    "code": "85025",
+    "qty": 1,
+    "unitPrice": 96
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-02",
+  "insurance": "commercial",
+  "insurerName": "Bluebird Health Plan",
+  "admitted": false,
+  "observation": true,
+  "facilityInNetwork": true,
+  "firstBillDate": "2026-09-20",
+  "state": "OH",
+  "eob": {
+   "billed": 3222,
+   "allowed": 1450,
+   "planPaid": 1160,
+   "deductible": 200,
+   "coinsurance": 90,
+   "patientResponsibility": 290,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 1772
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {
+   "00536132701": {
+    "unitPrice": 0.02333,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   },
+   "00093314701": {
+    "unitPrice": 0.12004,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MATH-01",
+   "lineIds": [
+    "l10"
+   ]
+  },
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "l9"
+   ]
+  },
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "l10"
+   ]
+  },
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "l2",
+    "l3"
+   ],
+   "optional": true,
+   "maxConfidence": "medium"
+  }
+ ],
+ "plants": [
+  "MATH-01",
+  "RX-01"
+ ],
+ "tags": [
+  "handmade"
+ ],
+ "notes": "DUP-01 on the repeat ondansetron doses is acceptable to ASK about, but only at Medium or lower (repeat doses are routine). Must NOT flag: DUP-02 on l7/l8 (JW waste), QTY-01 on l1 (22 h)."
+}

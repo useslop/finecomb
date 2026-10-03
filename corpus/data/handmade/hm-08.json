@@ -1,0 +1,62 @@
+{
+ "id": "hm-08",
+ "kind": "professional",
+ "sub": "sched",
+ "format": "Uninsured anesthesia bill under the GFE threshold",
+ "seed": 0,
+ "clean": true,
+ "bill": {
+  "header": {
+   "totalCharges": 1250,
+   "payments": 0,
+   "adjustments": 0,
+   "patientName": "Avery K. Sample",
+   "providerName": "Valley Anesthesia Associates",
+   "accountNumber": "HM08-6610",
+   "statementDate": "2026-07-15",
+   "balanceDue": 1250
+  },
+  "lines": [
+   {
+    "id": "l1",
+    "date": "2026-06-18",
+    "description": "ANESTHESIA SERVICES - KNEE",
+    "amount": 1250,
+    "code": "01400",
+    "qty": 1,
+    "unitPrice": 1250,
+    "provider": "Valley Anesthesia Associates"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-02",
+  "insurance": "none",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Riverside Surgery Center",
+    "total": 4200
+   },
+   {
+    "provider": "Valley Anesthesia Associates",
+    "total": 900
+   }
+  ],
+  "firstBillDate": "2026-07-15",
+  "state": "FL"
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [],
+ "plants": [],
+ "tags": [
+  "handmade"
+ ],
+ "notes": "Clean: $350 over the GFE is below the $400 dispute threshold."
+}

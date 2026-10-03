@@ -1,0 +1,126 @@
+{
+ "id": "hm-10",
+ "kind": "professional",
+ "sub": "office",
+ "format": "Physician office bill (self-pay)",
+ "seed": 0,
+ "clean": false,
+ "bill": {
+  "header": {
+   "totalCharges": 895,
+   "payments": 0,
+   "adjustments": 0,
+   "patientName": "Sky N. Sample",
+   "providerName": "Northgate Family Medicine",
+   "accountNumber": "HM10-3021",
+   "statementDate": "2026-09-15",
+   "balanceDue": 895
+  },
+  "lines": [
+   {
+    "id": "l1",
+    "date": "2026-09-09",
+    "description": "OFFICE VISIT EST PT",
+    "amount": 245,
+    "code": "99214",
+    "qty": 1,
+    "unitPrice": 245
+   },
+   {
+    "id": "l2",
+    "date": "2026-09-09",
+    "description": "SKIN BIOPSY",
+    "amount": 310,
+    "code": "11102",
+    "qty": 1,
+    "unitPrice": 310
+   },
+   {
+    "id": "l3",
+    "date": "2026-09-09",
+    "description": "ECG W/INTERPRETATION",
+    "amount": 95,
+    "code": "93000",
+    "qty": 1,
+    "unitPrice": 95
+   },
+   {
+    "id": "l4",
+    "date": "2026-09-09",
+    "description": "ECG INTERP ONLY",
+    "amount": 40,
+    "code": "93010",
+    "qty": 1,
+    "unitPrice": 40
+   },
+   {
+    "id": "l5",
+    "date": "2026-09-09",
+    "description": "VENIPUNCTURE",
+    "amount": 25,
+    "code": "36415",
+    "qty": 1,
+    "unitPrice": 25
+   },
+   {
+    "id": "l6",
+    "date": "2026-09-09",
+    "description": "PATHOLOGY TISSUE EXAM",
+    "amount": 180,
+    "code": "88305",
+    "qty": 1,
+    "unitPrice": 180
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-02",
+  "insurance": "none",
+  "scheduledAhead": false,
+  "firstBillDate": "2026-09-15",
+  "state": "OH"
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [
+   {
+    "col1": "93000",
+    "col2": "93010",
+    "mi": 0,
+    "effective": "2026-01-01"
+   },
+   {
+    "col1": "11102",
+    "col2": "99214",
+    "mi": 1,
+    "effective": "2026-01-01"
+   }
+  ],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "l4"
+   ]
+  },
+  {
+   "ruleId": "NCCI-01",
+   "lineIds": [
+    "l1"
+   ],
+   "optional": true,
+   "maxConfidence": "low"
+  }
+ ],
+ "plants": [
+  "NCCI-01"
+ ],
+ "tags": [
+  "handmade"
+ ],
+ "notes": "NCCI-01 on the office visit (MI 1 pair, no modifier printed) is acceptable only at Low: the claim likely carried modifier 25 even though the statement omits it (RESEARCH E12)."
+}

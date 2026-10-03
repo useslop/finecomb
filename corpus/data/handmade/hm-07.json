@@ -1,0 +1,101 @@
+{
+ "id": "hm-07",
+ "kind": "professional",
+ "sub": "sched",
+ "format": "Uninsured surgery-center bill with a Good Faith Estimate",
+ "seed": 0,
+ "clean": false,
+ "bill": {
+  "header": {
+   "totalCharges": 5100,
+   "payments": 0,
+   "adjustments": 0,
+   "patientName": "Avery K. Sample",
+   "providerName": "Riverside Surgery Center",
+   "accountNumber": "HM07-2209",
+   "statementDate": "2026-07-10",
+   "balanceDue": 5100
+  },
+  "lines": [
+   {
+    "id": "l1",
+    "date": "2026-06-18",
+    "description": "ARTHROSCOPY KNEE - FACILITY",
+    "amount": 3900,
+    "code": "29881",
+    "qty": 1,
+    "unitPrice": 3900,
+    "provider": "Riverside Surgery Center"
+   },
+   {
+    "id": "l2",
+    "date": "2026-06-18",
+    "description": "ANESTHESIA SUPPLIES",
+    "amount": 420,
+    "revCode": "0370",
+    "qty": 1,
+    "unitPrice": 420,
+    "provider": "Riverside Surgery Center"
+   },
+   {
+    "id": "l3",
+    "date": "2026-06-18",
+    "description": "RECOVERY ROOM",
+    "amount": 780,
+    "revCode": "0710",
+    "qty": 1,
+    "unitPrice": 780,
+    "provider": "Riverside Surgery Center"
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-02",
+  "insurance": "none",
+  "scheduledAhead": true,
+  "gfe": [
+   {
+    "provider": "Riverside Surgery Center",
+    "total": 4200
+   },
+   {
+    "provider": "Valley Anesthesia Associates",
+    "total": 900
+   }
+  ],
+  "firstBillDate": "2026-07-10",
+  "ppdrFiledDate": "2026-09-08",
+  "collections": [
+   {
+    "date": "2026-09-25",
+    "kind": "late_fee"
+   }
+  ],
+  "state": "FL"
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "GFE-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "PPDR-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "GFE-01",
+  "PPDR-01"
+ ],
+ "tags": [
+  "handmade"
+ ],
+ "notes": "Must NOT flag: INS-01 (uninsured), any EOB rule."
+}

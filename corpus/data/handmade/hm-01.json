@@ -1,0 +1,167 @@
+{
+ "id": "hm-01",
+ "kind": "inpatient",
+ "sub": "stay",
+ "format": "UB-04-style hospital statement (inpatient)",
+ "seed": 0,
+ "clean": false,
+ "bill": {
+  "header": {
+   "totalCharges": 8913,
+   "payments": 3280,
+   "adjustments": 4813,
+   "patientName": "Dana Q. Sample",
+   "providerName": "Lakeview Regional Medical Center",
+   "accountNumber": "HM01-4471",
+   "admitDate": "2026-08-03",
+   "dischargeDate": "2026-08-06",
+   "statementDate": "2026-08-20",
+   "balanceDue": 820
+  },
+  "lines": [
+   {
+    "id": "l1",
+    "date": "2026-08-03",
+    "description": "ROOM-BOARD/SEMI",
+    "amount": 7400,
+    "revCode": "0120",
+    "qty": 4,
+    "unitPrice": 1850
+   },
+   {
+    "id": "l2",
+    "date": "2026-08-03",
+    "description": "ADMISSION KIT",
+    "amount": 85,
+    "revCode": "0270",
+    "qty": 1,
+    "unitPrice": 85
+   },
+   {
+    "id": "l3",
+    "date": "2026-08-03",
+    "description": "METABOLIC PANEL COMP",
+    "amount": 312,
+    "revCode": "0300",
+    "code": "80053",
+    "qty": 1,
+    "unitPrice": 312
+   },
+   {
+    "id": "l4",
+    "date": "2026-08-04",
+    "description": "CBC W/DIFF",
+    "amount": 98,
+    "revCode": "0300",
+    "code": "85025",
+    "qty": 1,
+    "unitPrice": 98
+   },
+   {
+    "id": "l5",
+    "date": "2026-08-04",
+    "description": "PANTOPRAZOLE 40MG TAB",
+    "amount": 18,
+    "revCode": "0250",
+    "ndc": "00378668910",
+    "qty": 1,
+    "unitPrice": 18
+   },
+   {
+    "id": "l6",
+    "date": "2026-08-03",
+    "description": "PULSE OXIMETRY DAILY",
+    "amount": 180,
+    "revCode": "0460",
+    "qty": 4,
+    "unitPrice": 45
+   },
+   {
+    "id": "l7",
+    "date": "2026-08-05",
+    "description": "XR CHEST 2 VIEWS",
+    "amount": 410,
+    "revCode": "0320",
+    "code": "71046",
+    "qty": 1,
+    "unitPrice": 410
+   },
+   {
+    "id": "l8",
+    "date": "2026-08-08",
+    "description": "XR CHEST 2 VIEWS",
+    "amount": 410,
+    "revCode": "0320",
+    "code": "71046",
+    "qty": 1,
+    "unitPrice": 410
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-02",
+  "insurance": "commercial",
+  "insurerName": "Bluebird Health Plan",
+  "admitted": true,
+  "facilityInNetwork": true,
+  "firstBillDate": "2026-08-20",
+  "state": "OH",
+  "eob": {
+   "billed": 8913,
+   "allowed": 4100,
+   "planPaid": 3280,
+   "deductible": 500,
+   "coinsurance": 320,
+   "patientResponsibility": 820,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 4813
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {
+   "00378668910": {
+    "unitPrice": 0.03577,
+    "unit": "EA",
+    "effective": "2026-09-23"
+   }
+  },
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "RB-01",
+   "lineIds": [
+    "l1"
+   ]
+  },
+  {
+   "ruleId": "DATE-01",
+   "lineIds": [
+    "l8"
+   ]
+  },
+  {
+   "ruleId": "RX-01",
+   "lineIds": [
+    "l5"
+   ]
+  }
+ ],
+ "plants": [
+  "RB-01",
+  "DATE-01",
+  "RX-01"
+ ],
+ "tags": [
+  "handmade"
+ ],
+ "notes": "Must NOT flag: QTY-01 on l6 (per-day item on 4 calendar days), DUP-02 on l7/l8 (different dates)."
+}

@@ -1,0 +1,90 @@
+{
+ "id": "hm-03",
+ "kind": "ed",
+ "sub": "ed",
+ "format": "ED physician bill (out-of-network group)",
+ "seed": 0,
+ "clean": false,
+ "bill": {
+  "header": {
+   "totalCharges": 1450,
+   "payments": 320,
+   "adjustments": 0,
+   "patientName": "Riley M. Sample",
+   "providerName": "Summit Emergency Physicians LLC",
+   "accountNumber": "HM03-77810",
+   "statementDate": "2026-08-05",
+   "balanceDue": 1130
+  },
+  "lines": [
+   {
+    "id": "l1",
+    "date": "2026-07-14",
+    "description": "EMERGENCY DEPT VISIT",
+    "amount": 1380,
+    "code": "99284",
+    "qty": 1,
+    "unitPrice": 1380
+   },
+   {
+    "id": "l2",
+    "date": "2026-07-14",
+    "description": "ECG INTERPRETATION",
+    "amount": 70,
+    "code": "93010",
+    "qty": 1,
+    "unitPrice": 70
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-02",
+  "insurance": "commercial",
+  "insurerName": "Bluebird Health Plan",
+  "emergency": true,
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "emergency medicine"
+  ],
+  "firstBillDate": "2026-08-05",
+  "state": "PA",
+  "eob": {
+   "billed": 1450,
+   "allowed": 420,
+   "planPaid": 320,
+   "copay": 100,
+   "patientResponsibility": 100,
+   "adjustments": []
+  }
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "NSA-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "NSA-02",
+   "lineIds": [],
+   "optional": true
+  }
+ ],
+ "plants": [
+  "NSA-01",
+  "EOB-01"
+ ],
+ "tags": [
+  "handmade"
+ ],
+ "notes": "NSA-02 is optional: emergency medicine at an in-network facility is also an ancillary type, so it is true but redundant with NSA-01."
+}

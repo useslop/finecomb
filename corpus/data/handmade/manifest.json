@@ -1,0 +1,26 @@
+{
+ "seed": 0,
+ "files": [
+  "hm-01.json",
+  "hm-02.json",
+  "hm-03.json",
+  "hm-04.json",
+  "hm-05.json",
+  "hm-06.json",
+  "hm-07.json",
+  "hm-08.json",
+  "hm-09.json",
+  "hm-10.json",
+  "hm-11.json",
+  "hm-11b.json",
+  "hm-12.json",
+  "hm-13.json",
+  "hm-14.json"
+ ],
+ "byKind": {
+  "inpatient": 2,
+  "ed": 5,
+  "professional": 8
+ },
+ "note": "Hand-made by lane Q1 on 2026-10-02 from SPEC §3, labels written before the engine ran. Not generated."
+}

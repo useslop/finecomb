@@ -1,0 +1,165 @@
+{
+ "id": "hm-02",
+ "kind": "ed",
+ "sub": "ed",
+ "format": "ED facility bill",
+ "seed": 0,
+ "clean": false,
+ "bill": {
+  "header": {
+   "totalCharges": 14051,
+   "payments": 3150,
+   "adjustments": 0,
+   "patientName": "Riley M. Sample",
+   "providerName": "St. Brendan Medical Center",
+   "accountNumber": "HM02-0193",
+   "statementDate": "2026-08-01",
+   "balanceDue": 10901
+  },
+  "lines": [
+   {
+    "id": "l1",
+    "date": "2026-07-14",
+    "description": "ER VISIT LEVEL 4",
+    "amount": 2850,
+    "revCode": "0450",
+    "code": "99284",
+    "qty": 1,
+    "unitPrice": 2850
+   },
+   {
+    "id": "l2",
+    "date": "2026-07-14",
+    "description": "CBC W/DIFF",
+    "amount": 96,
+    "revCode": "0300",
+    "code": "85025",
+    "qty": 1,
+    "unitPrice": 96
+   },
+   {
+    "id": "l3",
+    "date": "2026-07-14",
+    "description": "METABOLIC PANEL COMP",
+    "amount": 340,
+    "revCode": "0301",
+    "code": "80053",
+    "qty": 1,
+    "unitPrice": 340
+   },
+   {
+    "id": "l4",
+    "date": "2026-07-14",
+    "description": "CT ABD/PELVIS W CONTRAST",
+    "amount": 4980,
+    "revCode": "0352",
+    "code": "74177",
+    "qty": 1,
+    "unitPrice": 4980
+   },
+   {
+    "id": "l5",
+    "date": "2026-07-14",
+    "description": "CT ABD/PELVIS W CONTRAST",
+    "amount": 4980,
+    "revCode": "0352",
+    "code": "74177",
+    "qty": 1,
+    "unitPrice": 4980
+   },
+   {
+    "id": "l6",
+    "date": "2026-07-14",
+    "description": "ONDANSETRON INJ 1MG",
+    "amount": 75,
+    "revCode": "0636",
+    "code": "J2405",
+    "qty": 4,
+    "unitPrice": 18.75
+   },
+   {
+    "id": "l7",
+    "date": "2026-07-14",
+    "description": "IV PUSH SINGLE/INITIAL",
+    "amount": 610,
+    "revCode": "0260",
+    "code": "96374",
+    "qty": 1,
+    "unitPrice": 610
+   },
+   {
+    "id": "l8",
+    "date": "2026-07-14",
+    "description": "CONTRAST MEDIA PER ML",
+    "amount": 120,
+    "revCode": "0255",
+    "code": "Q9967",
+    "qty": 100,
+    "unitPrice": 1.2
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-02",
+  "insurance": "commercial",
+  "insurerName": "Bluebird Health Plan",
+  "emergency": true,
+  "facilityInNetwork": true,
+  "firstBillDate": "2026-08-01",
+  "state": "PA",
+  "eob": {
+   "billed": 14051,
+   "allowed": 3900,
+   "planPaid": 3150,
+   "deductible": 500,
+   "coinsurance": 250,
+   "patientResponsibility": 750,
+   "adjustments": [
+    {
+     "group": "CO",
+     "reason": "45",
+     "amount": 5171
+    },
+    {
+     "group": "CO",
+     "reason": "18",
+     "amount": 4980,
+     "lineId": "l5"
+    }
+   ]
+  }
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "DUP-01",
+   "lineIds": [
+    "l4",
+    "l5"
+   ]
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "DUP-01",
+  "EOB-01",
+  "EOB-02"
+ ],
+ "tags": [
+  "handmade"
+ ],
+ "notes": "Must NOT flag: NSA-01/NSA-02 (facility in network, no out-of-network clinician), INS-01 (insurer paid)."
+}

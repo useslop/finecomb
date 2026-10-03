@@ -1,0 +1,150 @@
+{
+ "id": "hm-11b",
+ "kind": "professional",
+ "sub": "proc",
+ "format": "Same facility bill after a parser dropped the revenue codes",
+ "seed": 0,
+ "clean": false,
+ "bill": {
+  "header": {
+   "totalCharges": 1630,
+   "payments": 700,
+   "adjustments": 600,
+   "patientName": "Harper J. Sample",
+   "providerName": "Lakeshore Outpatient Pavilion",
+   "accountNumber": "HM11-7781",
+   "statementDate": "2026-09-25",
+   "balanceDue": 330
+  },
+  "lines": [
+   {
+    "id": "l1",
+    "date": "2026-09-15",
+    "description": "ONDANSETRON INJ 1MG",
+    "amount": 150,
+    "code": "J2405",
+    "qty": 8,
+    "unitPrice": 18.75
+   },
+   {
+    "id": "l2",
+    "date": "2026-09-15",
+    "description": "DEXAMETHASONE INJ 1MG",
+    "amount": 124,
+    "code": "J1100",
+    "qty": 40,
+    "unitPrice": 3.1
+   },
+   {
+    "id": "l3",
+    "date": "2026-09-15",
+    "description": "CBC W/DIFF",
+    "amount": 96,
+    "code": "85025",
+    "qty": 1,
+    "unitPrice": 96
+   },
+   {
+    "id": "l4",
+    "date": "2026-09-15",
+    "description": "IV INFUSION INITIAL 1HR",
+    "amount": 720,
+    "code": "96365",
+    "qty": 1,
+    "unitPrice": 720
+   },
+   {
+    "id": "l5",
+    "date": "2026-09-15",
+    "description": "IV INFUSION ADDL HR",
+    "amount": 540,
+    "code": "96366",
+    "qty": 3,
+    "unitPrice": 180
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-02",
+  "insurance": "commercial",
+  "insurerName": "Bluebird Health Plan",
+  "admitted": false,
+  "observation": false,
+  "facilityInNetwork": true,
+  "firstBillDate": "2026-09-25",
+  "state": "OH"
+ },
+ "data": {
+  "mue": {
+   "85025": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96365": {
+    "practitioner": {
+     "mue": 1,
+     "mai": 2
+    },
+    "outpatient": {
+     "mue": 1,
+     "mai": 2
+    }
+   },
+   "96366": {
+    "practitioner": {
+     "mue": 8,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J2405": {
+    "practitioner": {
+     "mue": 4,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 8,
+     "mai": 3
+    }
+   },
+   "J1100": {
+    "practitioner": {
+     "mue": 20,
+     "mai": 3
+    },
+    "outpatient": {
+     "mue": 20,
+     "mai": 3
+    }
+   }
+  },
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "MUE-01",
+   "lineIds": [
+    "l2"
+   ]
+  }
+ ],
+ "plants": [
+  "MUE-01"
+ ],
+ "tags": [
+  "handmade"
+ ],
+ "notes": "Truth is unchanged (facility bill); an MUE-01 on l1 here means the setting came from missing revenue codes."
+}

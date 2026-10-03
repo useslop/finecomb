@@ -1,0 +1,76 @@
+{
+ "id": "hm-09",
+ "kind": "professional",
+ "sub": "proc",
+ "format": "OON anesthesiologist at an in-network hospital",
+ "seed": 0,
+ "clean": false,
+ "bill": {
+  "header": {
+   "totalCharges": 2316,
+   "payments": 544,
+   "adjustments": 0,
+   "patientName": "Quinn R. Sample",
+   "providerName": "Crescent Anesthesia Partners",
+   "accountNumber": "HM09-90412",
+   "statementDate": "2026-09-12",
+   "balanceDue": 1772
+  },
+  "lines": [
+   {
+    "id": "l1",
+    "date": "2026-08-27",
+    "description": "ANESTHESIA SVCS 132 MIN",
+    "amount": 2316,
+    "code": "00790",
+    "qty": 1,
+    "unitPrice": 2316
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-02",
+  "insurance": "commercial",
+  "insurerName": "Bluebird Health Plan",
+  "emergency": false,
+  "facilityInNetwork": true,
+  "oonClinicianTypes": [
+   "anesthesia"
+  ],
+  "firstBillDate": "2026-09-12",
+  "state": "OH",
+  "eob": {
+   "billed": 2316,
+   "allowed": 680,
+   "planPaid": 544,
+   "coinsurance": 136,
+   "patientResponsibility": 136,
+   "adjustments": []
+  }
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "NSA-02",
+   "lineIds": []
+  },
+  {
+   "ruleId": "EOB-01",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "NSA-02",
+  "EOB-01"
+ ],
+ "tags": [
+  "handmade"
+ ],
+ "notes": "Must NOT flag: NSA-01 (not emergency, not air ambulance)."
+}

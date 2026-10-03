@@ -1,0 +1,179 @@
+{
+ "id": "hm-05",
+ "kind": "professional",
+ "sub": "proc",
+ "format": "Outpatient statement with credits and reversals",
+ "seed": 0,
+ "clean": false,
+ "bill": {
+  "header": {
+   "totalCharges": 1252.4,
+   "payments": 610,
+   "adjustments": 340,
+   "patientName": "Jordan P. Sample",
+   "providerName": "Lakeview Regional Medical Center",
+   "accountNumber": "HM05-3308",
+   "statementDate": "2026-07-02",
+   "balanceDue": 552.4
+  },
+  "lines": [
+   {
+    "id": "l1",
+    "date": "2026-06-10",
+    "description": "DEXAMETHASONE INJ 1MG",
+    "amount": 31,
+    "revCode": "0636",
+    "code": "J1100",
+    "qty": 10,
+    "unitPrice": 3.1
+   },
+   {
+    "id": "l2",
+    "date": "2026-06-10",
+    "description": "DEXAMETHASONE INJ 1MG REV",
+    "amount": -31,
+    "revCode": "0636",
+    "code": "J1100",
+    "qty": -10,
+    "unitPrice": 3.1
+   },
+   {
+    "id": "l3",
+    "date": "2026-06-10",
+    "description": "DEXAMETHASONE INJ 1MG",
+    "amount": 12.4,
+    "revCode": "0636",
+    "code": "J1100",
+    "qty": 4,
+    "unitPrice": 3.1
+   },
+   {
+    "id": "l4",
+    "date": "2026-06-10",
+    "description": "XR SHOULDER 2+ VIEWS",
+    "amount": 365,
+    "revCode": "0320",
+    "code": "73030",
+    "modifiers": [
+     "RT"
+    ],
+    "qty": 1,
+    "unitPrice": 365
+   },
+   {
+    "id": "l5",
+    "date": "2026-06-10",
+    "description": "XR SHOULDER 2+ VIEWS",
+    "amount": 365,
+    "revCode": "0320",
+    "code": "73030",
+    "modifiers": [
+     "LT"
+    ],
+    "qty": 1,
+    "unitPrice": 365
+   },
+   {
+    "id": "l6",
+    "date": "2026-06-10",
+    "description": "IV START KIT",
+    "amount": 42,
+    "revCode": "0270",
+    "qty": 1,
+    "unitPrice": 42
+   },
+   {
+    "id": "l7",
+    "date": "2026-06-10",
+    "description": "IV START KIT CR",
+    "amount": -42,
+    "revCode": "0270",
+    "qty": 1,
+    "unitPrice": 42
+   },
+   {
+    "id": "l8",
+    "date": "2026-06-10",
+    "description": "IV START KIT",
+    "amount": 42,
+    "revCode": "0270",
+    "qty": 1,
+    "unitPrice": 42
+   },
+   {
+    "id": "l9",
+    "date": "2026-06-10",
+    "description": "SLING SHOULDER - RETURNED",
+    "amount": 58,
+    "revCode": "0272",
+    "qty": 1,
+    "unitPrice": 58
+   },
+   {
+    "id": "l10",
+    "date": "2026-06-10",
+    "description": "CLINIC VISIT",
+    "amount": 410,
+    "revCode": "0510",
+    "code": "G0463",
+    "qty": 1,
+    "unitPrice": 410
+   },
+   {
+    "id": "l11",
+    "date": "2026-06-10",
+    "description": "PROMETHAZINE INJ 50MG CANCELLED",
+    "amount": 22,
+    "revCode": "0636",
+    "code": "J2550",
+    "qty": 1,
+    "unitPrice": 22
+   },
+   {
+    "id": "l12",
+    "date": "2026-06-10",
+    "description": "PROMETHAZINE INJ 50MG CANCELLED",
+    "amount": -22,
+    "revCode": "0636",
+    "code": "J2550",
+    "qty": -1,
+    "unitPrice": 22
+   }
+  ],
+  "confirmed": true
+ },
+ "ctx": {
+  "today": "2026-10-02",
+  "insurance": "commercial",
+  "insurerName": "Bluebird Health Plan",
+  "facilityInNetwork": true,
+  "firstBillDate": "2026-07-02",
+  "state": "OH"
+ },
+ "data": {
+  "mue": {},
+  "ncciPtp": [],
+  "nadac": {},
+  "hospital": {}
+ },
+ "labels": [
+  {
+   "ruleId": "CANC-01",
+   "lineIds": [
+    "l9"
+   ]
+  },
+  {
+   "ruleId": "MATH-02",
+   "lineIds": []
+  }
+ ],
+ "plants": [
+  "CANC-01",
+  "MATH-02"
+ ],
+ "tags": [
+  "handmade"
+ ],
+ "notes": "Must NOT flag: DUP-01/DUP-02/MATH-01 on any reversal pair (l1-l3, l6-l8, l11-l12), DUP-01 on bilateral l4/l5, CANC-01 on the credited promethazine."
+}
