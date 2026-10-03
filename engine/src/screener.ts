@@ -442,7 +442,7 @@ export function screen(
     wordingCitations = [];
   } else if (conditions) {
     wording = 'worth_asking';
-    wordingText = `Worth asking: your income is under ${stateRow!.state}'s threshold (${stateRow!.citation}), but the law also requires ${conditions.unmet.join('; ')}, and your answers don't confirm ${conditions.unmet.length === 1 ? 'it' : 'all of them'}.${conditions.met.length > 1 ? ` Met: ${conditions.met.join('; ')}.` : ''}`;
+    wordingText = `Your income is under ${stateRow!.state}'s threshold (${stateRow!.citation}), but the law also requires: ${conditions.unmet.join('; ')}. Your answers don't confirm ${conditions.unmet.length === 1 ? 'that' : 'these'} yet.${conditions.met.length > 1 ? ` Met: ${conditions.met.join('; ')}.` : ''}`;
   } else if (
     hospital?.ownershipCategory === 'nonprofit' ||
     (pct != null && pct <= 400) ||
