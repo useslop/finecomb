@@ -45,3 +45,22 @@ describe('DUP-01 exact duplicate charge', () => {
     expect(findings).toHaveLength(0);
   });
 });
+
+describe('DUP-01 repeat doses and serial labs (Q1)', () => {
+  it('keeps a true duplicate (identical CT lines) at High', () => {
+    const b = bill([line({ date: '2026-07-14', code: '74177', revCode: '0352', amount: 4980, qty: 1 }), line({ date: '2026-07-14', code: '74177', revCode: '0352', amount: 4980, qty: 1 })]);
+    expect(evaluate(b, ctx({}), {}).findings[0]!.confidence).toBe('high');
+  });
+
+  it('flags identical same-day drug lines at Medium and mentions repeat doses', () => {
+    const b = bill([line({ date: '2026-09-02', code: 'J2405', revCode: '0636', amount: 75, qty: 4 }), line({ date: '2026-09-02', code: 'J2405', revCode: '0636', amount: 75, qty: 4 })]);
+    const f = evaluate(b, ctx({}), {}).findings[0]!;
+    expect(f.confidence).toBe('medium');
+    expect(f.userText).toContain('more than once a day');
+  });
+
+  it('treats serial labs (lab-shaped code, no modifier 91 printed) as Medium', () => {
+    const b = bill([line({ date: '2026-07-14', code: '84484', amount: 120, qty: 1 }), line({ date: '2026-07-14', code: '84484', amount: 120, qty: 1 })]);
+    expect(evaluate(b, ctx({}), {}).findings[0]!.confidence).toBe('medium');
+  });
+});
