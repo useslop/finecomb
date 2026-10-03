@@ -50,10 +50,11 @@ export default function Step1AddBill({ onNext }: { onNext: () => void }) {
         <h2>Upload a PDF or photo</h2>
         <p className="field__hint">
           PDF text extraction and photo OCR run locally in your browser — self-hosted, no CDN,
-          nothing uploaded.
+          nothing uploaded. Photo reading is in beta: it can pair a description with the wrong
+          amount, so a PDF or pasted text is more reliable.
         </p>
         <label className="field" htmlFor="bill-files">
-          <span className="field__label">PDF or photo</span>
+          <span className="field__label">PDF or photo (beta)</span>
           <input
             id="bill-files"
             type="file"
