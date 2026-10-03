@@ -1,8 +1,9 @@
 {
  "schema": 1,
- "generated": "2026-10-01",
- "commit": "4cff9ce",
- "engineCommit": "4cff9ce",
+ "generated": "2026-10-02",
+ "corpusDate": "2026-10-01",
+ "commit": "39f6da4",
+ "engineCommit": "39f6da4",
  "corpusVersion": "v1",
  "corpus": {
   "bills": 300,
@@ -16,7 +17,7 @@
   "seed": 20261001
  },
  "caveat": "synthetic bills; real-world accuracy may be lower",
- "method": "Each bill is generated with planted errors and look-alike traps, labeled by an independent reading of the rule spec, then checked by the same engine the app runs. A finding counts as correct when it points at the labeled lines. The corpus deliberately over-samples look-alike traps (credits, bilateral lines, modifiers, overlapping hourly items), so precision here is a stress-test number, not a forecast.",
+ "method": "Each synthetic bill is generated with planted errors and look-alike traps, labeled from the rule spec by a separate labeler, then checked by the same engine the app runs. A finding counts as correct when it points at the labeled lines. The engine has since been tuned to the same reading of the spec, so 100% here means the checks match their spec on synthetic bills, not that they are right on real bills. The hand-made bills below are the more honest test.",
  "precisionFloor": 0.9,
  "shipAsKey": {
   "as-specified": "precision >= 0.9",
@@ -46,7 +47,9 @@
    "f1": 1,
    "fpPerCleanBill": 0,
    "skippedOnBills": 0,
-   "shipAs": "as-specified",
+   "shipAs": "low",
+   "corpusShipAs": "as-specified",
+   "shipAsReason": "Hand-made bills: flagged two routine repeat doses as identical at High. Fixed (repeat doses are Medium); capped at Low until re-tested.",
    "mainFalsePositiveCause": null,
    "mainMissCause": null
   },
@@ -110,7 +113,9 @@
    "f1": 1,
    "fpPerCleanBill": 0,
    "skippedOnBills": 0,
-   "shipAs": "as-specified",
+   "shipAs": "low",
+   "corpusShipAs": "as-specified",
+   "shipAsReason": "Hand-made bills: judged a facility bill by the doctor-office limit when revenue codes were missing. Not run here anyway.",
    "mainFalsePositiveCause": null,
    "mainMissCause": null
   },
@@ -174,7 +179,9 @@
    "f1": 1,
    "fpPerCleanBill": 0,
    "skippedOnBills": 0,
-   "shipAs": "as-specified",
+   "shipAs": "low",
+   "corpusShipAs": "as-specified",
+   "shipAsReason": "Hand-made bills: flagged an office visit whose modifier the statement left off. Now Low for that case; not run here anyway.",
    "mainFalsePositiveCause": null,
    "mainMissCause": null
   },
@@ -318,7 +325,9 @@
    "f1": 1,
    "fpPerCleanBill": 0,
    "skippedOnBills": 33,
-   "shipAs": "as-specified",
+   "shipAs": "low",
+   "corpusShipAs": "as-specified",
+   "shipAsReason": "Hand-made bills: compared one provider's Good Faith Estimate with another provider's bill. Fixed; capped at Low until re-tested.",
    "mainFalsePositiveCause": null,
    "mainMissCause": null
   },
@@ -577,6 +586,415 @@
     "recall": 1
    }
   ]
+ },
+ "handmade": {
+  "bills": 15,
+  "clean": 1,
+  "labels": 25,
+  "note": "15 bills written by hand by the QA lane in real-world formats (UB-04-style hospital statement, ED facility and physician bills, a pharmacy-heavy stay, credits and reversals, Medicaid, uninsured with a Good Faith Estimate, an out-of-network anesthesiologist, collections). Expected findings were written and committed before the engine ran on them. Still synthetic: no real patient bills.",
+  "blind": {
+   "engineCommit": "4cff9ce",
+   "overall": {
+    "tp": 23,
+    "fp": 4,
+    "fn": 2,
+    "precision": 0.852,
+    "recall": 0.92,
+    "f1": 0.885,
+    "fpPerCleanBill": 0
+   },
+   "rules": [
+    {
+     "ruleId": "DUP-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 1,
+     "fn": 0,
+     "precision": 0.5,
+     "recall": 1
+    },
+    {
+     "ruleId": "MATH-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "MATH-02",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "MUE-01",
+     "positives": 2,
+     "tp": 2,
+     "fp": 1,
+     "fn": 0,
+     "precision": 0.667,
+     "recall": 1
+    },
+    {
+     "ruleId": "RB-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "DATE-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "NCCI-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 1,
+     "fn": 0,
+     "precision": 0.5,
+     "recall": 1
+    },
+    {
+     "ruleId": "CANC-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "RX-01",
+     "positives": 3,
+     "tp": 3,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "EOB-01",
+     "positives": 3,
+     "tp": 3,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "EOB-02",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "INS-01",
+     "positives": 1,
+     "tp": 0,
+     "fp": 0,
+     "fn": 1,
+     "precision": null,
+     "recall": 0
+    },
+    {
+     "ruleId": "MCD-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "NSA-01",
+     "positives": 1,
+     "tp": 0,
+     "fp": 0,
+     "fn": 1,
+     "precision": null,
+     "recall": 0
+    },
+    {
+     "ruleId": "NSA-02",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "GFE-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 1,
+     "fn": 0,
+     "precision": 0.5,
+     "recall": 1
+    },
+    {
+     "ruleId": "ECA-01",
+     "positives": 2,
+     "tp": 2,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "PPDR-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "CR-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    }
+   ],
+   "falsePositives": [
+    {
+     "ruleId": "DUP-01",
+     "bill": "hm-04",
+     "detail": "2 identical charges on 2026-09-02 | These 2 lines have the same date, item, quantity and price."
+    },
+    {
+     "ruleId": "MUE-01",
+     "bill": "hm-11b",
+     "detail": "J2405: more units billed than Medicare's usual daily maximum | 8 units of J2405 were billed on 2026-09-15; Medicare's Medically Unlikely Edit for this code and setting is 4."
+    },
+    {
+     "ruleId": "NCCI-01",
+     "bill": "hm-10",
+     "detail": "99214 is normally bundled into 11102 | 11102 and 99214 were billed on the same date (2026-09-09) and have an active NCCI edit."
+    },
+    {
+     "ruleId": "GFE-01",
+     "bill": "hm-07",
+     "detail": "Valley Anesthesia Associates billed well over its Good Faith Estimate | Valley Anesthesia Associates estimated $900.00 and billed $5100.00, a gap of $4200.00."
+    }
+   ],
+   "misses": [
+    {
+     "ruleId": "INS-01",
+     "bill": "hm-14",
+     "detail": "engine ran, no matching finding"
+    },
+    {
+     "ruleId": "NSA-01",
+     "bill": "hm-03",
+     "detail": "engine ran, no matching finding"
+    }
+   ]
+  },
+  "current": {
+   "overall": {
+    "tp": 23,
+    "fp": 1,
+    "fn": 2,
+    "precision": 0.958,
+    "recall": 0.92,
+    "f1": 0.939,
+    "fpPerCleanBill": 0
+   },
+   "rules": [
+    {
+     "ruleId": "DUP-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "MATH-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "MATH-02",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "MUE-01",
+     "positives": 2,
+     "tp": 2,
+     "fp": 1,
+     "fn": 0,
+     "precision": 0.667,
+     "recall": 1
+    },
+    {
+     "ruleId": "RB-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "DATE-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "NCCI-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "CANC-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "RX-01",
+     "positives": 3,
+     "tp": 3,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "EOB-01",
+     "positives": 3,
+     "tp": 3,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "EOB-02",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "INS-01",
+     "positives": 1,
+     "tp": 0,
+     "fp": 0,
+     "fn": 1,
+     "precision": null,
+     "recall": 0
+    },
+    {
+     "ruleId": "MCD-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "NSA-01",
+     "positives": 1,
+     "tp": 0,
+     "fp": 0,
+     "fn": 1,
+     "precision": null,
+     "recall": 0
+    },
+    {
+     "ruleId": "NSA-02",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "GFE-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "ECA-01",
+     "positives": 2,
+     "tp": 2,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "PPDR-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    },
+    {
+     "ruleId": "CR-01",
+     "positives": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1,
+     "recall": 1
+    }
+   ]
+  }
  },
  "parser": null,
  "parserNote": "Parser metrics (PDF text vs photo OCR) are not measured yet."

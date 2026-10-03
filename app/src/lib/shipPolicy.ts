@@ -18,10 +18,21 @@ export interface ScoreboardRule {
   precision: number | null;
   recall: number | null;
   shipAs: string;
+  shipAsReason?: string;
+}
+
+export interface HandmadeRule { ruleId: string; positives: number; tp: number; fp: number; fn: number; precision: number | null; recall: number | null }
+export interface HandmadeRun {
+  engineCommit?: string;
+  overall: { tp: number; fp: number; fn: number; precision: number; recall: number };
+  rules: HandmadeRule[];
+  falsePositives?: { ruleId: string; bill: string; detail: string }[];
+  misses?: { ruleId: string; bill: string; detail: string }[];
 }
 
 export interface Scoreboard {
   generated: string;
+  handmade?: { bills: number; clean: number; labels: number; note: string; blind: HandmadeRun | null; current: HandmadeRun } | null;
   commit: string;
   corpusVersion: string;
   corpus: { bills: number; clean: number; labels: number };

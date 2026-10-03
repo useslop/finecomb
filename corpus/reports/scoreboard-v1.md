@@ -1,4 +1,4 @@
-# Finecomb corpus v1 scoreboard (engine 4cff9ce, 2026-10-01)
+# Finecomb corpus v1 scoreboard (engine 39f6da4, 2026-10-01)
 
 300 bills, 90 clean. Synthetic bills; real-world accuracy may be lower.
 

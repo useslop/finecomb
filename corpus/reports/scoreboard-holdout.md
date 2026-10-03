@@ -1,4 +1,4 @@
-# Finecomb corpus holdout scoreboard (engine 4cff9ce, 2026-10-01)
+# Finecomb corpus holdout scoreboard (engine 39f6da4, 2026-10-01)
 
 150 bills, 44 clean. Synthetic bills; real-world accuracy may be lower. Hold-out: a different seed of the same generator and labeler, never tuned against; the published scoreboard stays on v1.
 
