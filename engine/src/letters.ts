@@ -72,7 +72,15 @@ function formatDateLong(iso: string | undefined): string | undefined {
 
 function money(n: Money | null | undefined): string | undefined {
   if (n == null) return undefined;
-  return `$${n.toFixed(2)}`;
+  const [whole, cents] = Math.abs(n).toFixed(2).split('.') as [string, string];
+  return `${n < 0 ? '-' : ''}$${whole.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}.${cents}`;
+}
+
+/** Rule text writes amounts as `$4600.00`; letters use `$4,600.00`. */
+function withCommas(text: string): string {
+  return text.replace(/\$(\d{4,})(\.\d{2})?\b/g, (_m, whole: string, cents?: string) =>
+    `$${whole.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}${cents ?? ''}`,
+  );
 }
 
 /** Missing required fields become `[Label]`, per the brief — never silently blank. */
@@ -108,7 +116,8 @@ function splitIssueRequest(f: Finding): { issuePlain: string; requestPlain: stri
       .replace(/^./, (c) => c.toLowerCase());
     return { issuePlain, requestPlain };
   }
-  return { issuePlain: text, requestPlain: f.verify };
+  // f.verify is written to the user ("Ask the hospital..."), not to the provider.
+  return { issuePlain: text, requestPlain: 'review this item and correct it, or explain it in writing.' };
 }
 
 interface CommonFields {
@@ -194,12 +203,13 @@ ${c.patientName} · ${c.phone}${FOOTER}`;
 function l2(bill: Bill, c: CommonFields, findings: Finding[], user: LetterUser): string {
   const rows = findings.map((f) => {
     const line = bill.lines.find((l) => f.evidenceLineIds.includes(l.id));
-    const lineDate = formatDateLong(line?.date) ?? '[date]';
+    // Bill-level findings (EOB-01, MATH-02, ...) have no single line: use the bill's dates of service.
+    const lineDate = formatDateLong(line?.date) ?? (c.datesOfService.startsWith('[') ? c.statementDate : c.datesOfService);
     const lineDescription = line?.description ?? f.title;
     const lineCode = line?.code ? ` (${line.code})` : '';
-    const lineAmount = line?.amount != null ? money(line.amount)! : f.dollarsAtStake != null ? money(f.dollarsAtStake)! : '[amount]';
+    const lineAmount = line?.amount != null ? money(line.amount) : f.dollarsAtStake != null ? money(f.dollarsAtStake) : undefined;
     const { issuePlain, requestPlain } = splitIssueRequest(f);
-    return `- **${lineDate} — ${lineDescription}${lineCode} — ${lineAmount}.** ${issuePlain} *I am asking you to:* ${requestPlain}`;
+    return `- ${lineDate} — ${lineDescription}${lineCode}${lineAmount ? ` — ${lineAmount}` : ''}. ${withCommas(issuePlain)} I am asking you to: ${withCommas(requestPlain)}`;
   });
   const total = sum(findings.map((f) => f.dollarsAtStake));
   const recordsRequested = req(user.recordsRequested, 'the specific records that would help verify these charges');
@@ -216,9 +226,7 @@ I reviewed my itemized bill dated ${c.statementDate} and have questions about th
 
 ${rows.length > 0 ? rows.join('\n') : '- [No findings were selected — add findings from your results page with "Add to dispute letter."]'}
 
-The total in question is ${total > 0 ? money(total) : '[total amount in question]'}.
-
-To help me check these charges, please also send ${recordsRequested}. I am asking for these under my HIPAA right of access (45 CFR 164.524).
+${total > 0 ? `The total in question is ${money(total)}.\n\n` : ''}To help me check these charges, please also send ${recordsRequested}. I am asking for these under my HIPAA right of access (45 CFR 164.524).
 
 Please send me a corrected itemized bill, or a written explanation for each item. Please do not send this account to collections or report it to a credit bureau while these questions are open.
 
@@ -229,7 +237,7 @@ ${c.patientName} · ${c.phone}${FOOTER}`;
 function l3(c: CommonFields, ctx: Context, user: LetterUser): string {
   const householdSize = ctx.householdSize != null ? String(ctx.householdSize) : '[household size]';
   const annualIncome = money(ctx.annualIncome) ?? '[annual income]';
-  const fplPercent = user.fplPercent != null ? `${user.fplPercent}` : '[FPL %]';
+  const fplPercent = user.fplPercent != null ? `${user.fplPercent}%` : '[percent]';
   const enclosures = req(user.enclosures, 'list your application and supporting documents');
   const stateLawSentence = user.stateLawSentence?.trim() ?? '';
   const isNonprofit = user.isNonprofit501r === true;
@@ -248,7 +256,7 @@ Re: Financial assistance application — ${c.patientName}, account ${c.accountNu
 
 Hello,
 
-I am applying for financial assistance for the bill above. My household has ${householdSize} people and an annual income of about ${annualIncome} (about ${fplPercent}% of the 2026 federal poverty guideline). My completed application and documents are enclosed: ${enclosures}.
+I am applying for financial assistance for the bill above. My household has ${householdSize} people and an annual income of about ${annualIncome} (about ${fplPercent} of the 2026 federal poverty guideline). My completed application and documents are enclosed: ${enclosures}.
 
 If anything is missing, please tell me in writing what you need.
 
@@ -384,7 +392,7 @@ const DEFAULT_RECORDS_LIST =
   'department record; the admission, discharge and transfer times.';
 
 function l7(c: CommonFields, user: LetterUser): string {
-  const recordsList = user.recordsList?.trim() || `*(default: ${DEFAULT_RECORDS_LIST})*`;
+  const recordsList = user.recordsList?.trim() || DEFAULT_RECORDS_LIST.replace(/^the /, 'The ');
   const format = req(user.format, 'PDF by secure email / paper copy by mail');
   const deliverTo = req(user.deliverTo, 'where to send it');
 
