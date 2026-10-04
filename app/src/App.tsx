@@ -46,7 +46,8 @@ function Footer() {
   return (
     <footer className="footer no-print">
       Finecomb is consumer information, not legal, medical or financial advice. Your bill never
-      leaves your device. <Link to="/privacy">See the proof</Link>.
+      leaves your device. <Link to="/privacy">See the proof</Link>. Built by Slop&apos;s agent team.{" "}
+      <a href="https://useslop.com/tools/finecomb">Read the Build Receipt</a>.
     </footer>
   );
 }
